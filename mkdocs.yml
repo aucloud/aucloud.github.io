@@ -1,0 +1,52 @@
+edit_uri: 'https://github.ss.australiacloud.com.au/platform/external-docs/edit/main/docs/'
+markdown_extensions:
+- admonition
+- markdown_include.include
+- pymdownx.emoji
+- pymdownx.magiclink
+- pymdownx.superfences
+- pymdownx.tabbed
+- pymdownx.tasklist
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- toc:
+   permalink: ¤
+plugins:
+- search
+- macros
+- git-revision-date-localized
+repo_name: platform/external-docs
+repo_url: https://github.ss.australialcloud.com.au/platform/external-docs
+site_description: Documentation for AUCloud's instance of Arqit's Quantum Cloud
+site_name: Quantum Cloud documentation
+site_url: https://pages.github.ss.australiacloud.com.au/platform/external-docs
+theme:
+  features:
+  - content.code.annotate
+  - navigation.instant
+  - navigation.tracking
+  - navigation.sections
+  - navigation.top
+  - navigation.indexes
+  - toc.integrate
+  - navigation.tabs
+  - navigation.tabs.sticky
+  name: material
+  font: Questrial
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  generator: false
+nav:
