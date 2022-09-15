@@ -1,24 +1,24 @@
 # AUCloud Documentation
-## Base Services 
-### [Compute as a Service](BaseCaaS.md)
-### [Storage as a Service](BaseSTaaS.md)
-### [Network as a Service](BaseNaaS.md)
+## Core Services 
+### [Compute as a Service](Core Services/BaseCaaS.md)
+### [Storage as a Service](Core Services/BaseSTaaS.md)
+### [Network as a Service](Core Services/BaseNaaS.md)
 ---
 ## Resilience Services 
-### [Backup as a Service](ResBackup.md)
-### [M365 Backup as a Service](ResM365Backup.md)
-### [Disaster Recovery as a Service](ResDR.md)
+### [Backup as a Service](Resilience Services/ResBackup.md)
+### [M365 Backup as a Service](Resilience Services/ResM365Backup.md)
+### [Disaster Recovery as a Service](Resilience Services/ResDR.md)
 ---
 ## Security & Compliance Services
-### [SOC as a Service](SCSOC.md)
-### [Compliance as a Code](SCCaC.md)
+### [SOC as a Service](Security and Compliance Services/SCSOC.md)
+### [Compliance as a Code](Security and Compliance Services/SCCaC.md)
 ---
 ## PROTECTED Digital Workspace
-### [Desktop as a Service](DWDaaS.md)
-### [WorkspaceONE](DWWSONE.md)
+### [Desktop as a Service](Digital Workspace Services/DWDaaS.md)
+### [WorkspaceONE](Digital Workspace Services/DWWSONE.md)
 ---
 ## HPC
-### [GPU as a Service](HPCGPU.md)
+### [GPU as a Service](HPC Services/HPCGPU.md)
 ---
 ## Cloud Native Services
-### [Tanzu](NativeTanzu.md)
+### [Tanzu](Cloud Native Services/NativeTanzu.md)

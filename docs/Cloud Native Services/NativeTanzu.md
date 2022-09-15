@@ -1,5 +1,6 @@
-## HPC 
-### GPU as a Service
+---
+title: Tanzu Kubernetes Grid w/ Cloud Director
+---
 #### About
 #### Get Started
 #### How to
