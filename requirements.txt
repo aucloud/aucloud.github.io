@@ -1,0 +1,14 @@
+# Build dependencies for mkdocs
+PyGithub>=1.55
+pre-commit
+python-semantic-release
+mkdocs
+mkdocs-material
+markdown-include
+pymdown-extensions
+mkdocs-exclude
+mkdocs-macros-plugin
+mkdocs-git-revision-date-localized-plugin
+
+
+

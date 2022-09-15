@@ -17,11 +17,13 @@ plugins:
 - macros
 - git-revision-date-localized
 repo_name: platform/external-docs
-repo_url: https://github.ss.australialcloud.com.au/platform/external-docs
-site_description: Documentation for AUCloud's instance of Arqit's Quantum Cloud
-site_name: Quantum Cloud documentation
+repo_url: https://github.ss.australiacloud.com.au/platform/external-docs
+site_description: AUCloud's technical documentation site
+site_name: AUCloud documentation
 site_url: https://pages.github.ss.australiacloud.com.au/platform/external-docs
 theme:
+  logo: aucloud.svg
+  favicon: images/favicon.ico
   features:
   - content.code.annotate
   - navigation.instant
