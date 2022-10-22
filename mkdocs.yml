@@ -34,6 +34,7 @@ theme:
   - toc.integrate
   - navigation.tabs
   - navigation.tabs.sticky
+  - header.autohide
   name: material
   font: Questrial
   palette:
@@ -51,4 +52,20 @@ theme:
         name: Switch to light mode
 extra:
   generator: false
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    # Internal only
+    property: UA-217577494-1
+
 nav:
+
+copyright: >
+  Copyright &copy; 2022 Sovereign Cloud Australia Pty Ltd. –
+  <a href="#__consent">Change cookie settings</a>
