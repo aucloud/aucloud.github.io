@@ -4,7 +4,7 @@ Project which generates AUCloud's external docs website
 ### Build status
 
 ## Current status
-This project only builds to an internal development [website]() in preparation for an external facing website at
+This project only builds to an internal development [website](https://pages.github.ss.australiacloud.com.au/platform/external-docs/) in preparation for an external facing website at
 `docs.australiacloud.com.au`.
 
 
