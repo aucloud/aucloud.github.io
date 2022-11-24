@@ -2,7 +2,7 @@
 title: Managing User Accounts
 ---
 
-Account administrators are responsible for the management of user accounts. This guide outlines the procedures used in managing users. Users are managed from the Users tab in the ribbon bar.
+Account administrators are responsible for the management of user accounts. This guide outlines the procedures used in managing users. Users are managed from the Users tab in the ribbon bar:
 
 ![Ribbon Users](./assets/ribbon_users.png)
 
@@ -14,7 +14,7 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Enter the user name, email and mobile number.
 
-1. Select  'Enable this user account'.
+1. Select 'Enable this user account'.
 
 1. Select Permissions boxes to grant user the required access.
 
@@ -26,7 +26,7 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Provide the password and memorable word to the user.
 
-![User Management](./assets/user_management.png)
+    ![User Management](./assets/user_management.png)
 
 ### View user details
 
@@ -40,11 +40,11 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Click on the Edit button in the same line as the User you want to edit
 
-![User Edit](./assets/user_edit.png)
+    ![User Edit](./assets/user_edit.png)
 
-2. Make changes to the user details and/or permissions as required.
+1. Make changes to the user details and/or permissions as required.
 
-3. Click Save.
+1. Click Save.
 
 ### User Permissions
 
@@ -64,19 +64,19 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Users may be locked out due to too many incorrect password attempts or a period of inactivity.
 
-2. If a user has been locked out, navigate to the Users page and click on the name of the user who is locked out.
+1. If a user has been locked out, navigate to the Users page and click on the name of the user who is locked out.
 
-![User Page](./assets/users_page.png)
+    ![User Page](./assets/users_page.png)
 
-3. At the bottom of the page, check if the user has any Actions. In this example, the user has exceeded 30 days of inactivity.
+1. At the bottom of the page, check if the user has any Actions. In this example, the user has exceeded 30 days of inactivity.
 
-![User Inactive Example](./assets/user_action_inactivity.png)
+    ![User Inactive Example](./assets/user_action_inactivity.png)
 
-4. To clear this action, click on Delete, then select Yes, delete this action to clear the action.
+1. To clear this action, click on Delete, then select Yes, delete this action to clear the action.
 
-![User Delete Action Example](./assets/users_delete_action.png)
+    ![User Delete Action Example](./assets/users_delete_action.png)
 
-5. Confirm the action has been removed and advise the user their account is no longer locked out.
+1. Confirm the action has been removed and advise the user their account is no longer locked out.
 
 ### User acquires new mobile phone
 

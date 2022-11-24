@@ -2,7 +2,7 @@
 title: AUCloud Platform documentation
 ---
 
-## Landing zone
+### Landing zone
 
 AUCloud Documentation
 
