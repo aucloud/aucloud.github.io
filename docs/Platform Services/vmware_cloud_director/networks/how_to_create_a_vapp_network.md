@@ -66,9 +66,9 @@ When you've created your vApp network and assigned VMs to it, you may want to re
 
 1. The **IP Management** tab lists the IP settings for the network, including static pool and DNS and DHCP. Click **Edit** to adjust these settings.
 
-1. The **Services** tab enables you to set up firewall and NAT rules for your network. For more information, see [How to create firewall rules](todo) and [How to create NAT rules](todo).
+1. The **Services** tab enables you to set up firewall and NAT rules for your network. For more information, see [How to create firewall rules](../edge_gateway/how_to_create_firewall_rules.md) and [How to create NAT rules](../edge_gateway/how_to_create_NAT_rules.md).
 
-1. The **Routing** tab enables you to create static routes for your network. For more information, see [How to create a static route](todo).
+1. The **Routing** tab enables you to create static routes for your network. For more information, see [How to create a static route](../edge_gateway/how_to_create_a_static_route.md).
 
 ### Enabling DHCP
 
@@ -94,7 +94,7 @@ To enable DHCP:
 
     ![vApp Edit Network](./assets/vapp_edit_network.png)
 
-    For more information about DHCP, see [How to create a DHCP pool](todo).
+    For more information about DHCP, see [How to create a DHCP pool](../edge_gateway/how_to_create_a_dhcp_pool.md).
 
 ### Creating firewall rules
 
@@ -118,7 +118,7 @@ To create a firewall rule:
 
     ![Edit Firewall rules](./assets/edit_firewall_rules.png)
 
-    For more about firewall rules, see [How to create firewall rules](todo).
+    For more about firewall rules, see [How to create firewall rules](../edge_gateway/how_to_create_firewall_rules.md).
 
 ### Creating NAT rules
 
@@ -152,7 +152,7 @@ To edit the mapping rules for a VM:
 
     The external IP address will be on the same subnet as the VDC network that connects to the vApp edge.
 
-    For more information about NAT rules, see [How to create NAT rules](todo).
+    For more information about NAT rules, see [How to create NAT rules](../edge_gateway/how_to_create_NAT_rules.md).
 
 ### Creating static routes
 

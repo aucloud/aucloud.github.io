@@ -61,7 +61,7 @@ To upload an ovf/ova file:
 
     ![Catalog](./assets/catalogs.png)
 
-    For detailed instructions, see [How to create a catalog](todo).
+    For detailed instructions, see [How to create a catalog](../catalogs/how_to_create_a_catalog.md).
 
 1. Make sure you are in the correct directory, that is, the directory containing the file you want to import. For ovf files, ensure all the files such as \*.mf , \*.ovf, \*.vmdk and \*.nvram files are in the same directory
 

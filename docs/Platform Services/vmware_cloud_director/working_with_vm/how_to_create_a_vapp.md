@@ -24,9 +24,9 @@ In this guide we'll look at how to create a vApp from scratch.
 
 1. You can now click **Add Virtual Machine** to populate the vApp with VMs. There are several ways to create a VM:
 
-    -   From an existing template see [How to create a VM from a template](todo).
-    -   Catalog creation is covered in [How to create a catalog](todo).
-    -   From scratch, without using a template see [How to create an empty VM](todo).
+    -   From an existing template see [How to create a VM from a template](./how_to_create_a_vm_from_a_template.md).
+    -   Catalog creation is covered in [How to create a catalog](../catalogs/how_to_create_a_catalog.md).
+    -   From scratch, without using a template see [How to create an empty VM](how_to_create_an_empty_vm.md).
 
 1. When you've finished creating your vApp, click **Create**.
 
