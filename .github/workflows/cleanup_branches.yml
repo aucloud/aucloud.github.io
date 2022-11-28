@@ -1,0 +1,30 @@
+---
+name: Test - remove builds
+
+on:
+  delete:
+
+
+jobs:
+  cleanup_website:
+    runs-on: self-hosted
+    # This is very deliberate. There is significant contention risks otherwise
+    concurrency: serialized-build
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: make install
+
+    - name: Print github context
+      run: echo '${{ toJSON(github) }}'
+
+    - name: Mike delete github.ref_name
+      run: echo "NOT COMPLETE"
