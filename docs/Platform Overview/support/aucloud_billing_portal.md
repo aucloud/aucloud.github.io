@@ -37,8 +37,7 @@ This guide is intended for use by administrative and financial staff responsible
     -   **Status:** Shows if the invoice has been paid, is outstanding or is overdue.
     -   **Download:** Provides the option to download a PDF copy of the invoice.  
      
-
-    ![001.png](./assets/billing2.png)
+    ![001.png](./assets/billing2.jpg)
 
 ## Viewing Invoice details
 
@@ -46,7 +45,7 @@ This guide is intended for use by administrative and financial staff responsible
 
 1. The information displayed on the front page of the invoices tab will be shown at the top of the invoice. Under this information you can view usage reports as attachments and view the line items associated with the invoice.
 
-    ![001.png](./assets/billing3.png)
+    ![001.png](./assets/billing3.jpg)
 
 1. Usage reports can be downloaded for each line item by selecting the Download button next to the report. Three reports will be downloaded as .csv files as a .zip into your downloads folder. The reports are broken down into Media, vApp-templates and vms.
 
