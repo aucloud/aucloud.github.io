@@ -3,16 +3,15 @@ name: Build the website
 
 on:
   push:
-    branches:
-      - main
+
 jobs:
   deploy_website:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
       with:
-        lfs: true
-        token: ${{ secrets.WRITE_PAT }} 
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -24,7 +23,13 @@ jobs:
       run: |
         git config --global user.name "semantic-release (via Github actions)"
         git config --global user.email "semantic-release@australiacloud.com.au"
-    - name: Build the docs site.
-      shell: bash    
+    - name: Check the website
+      shell: bash
       run: |
-        make docs-build
+        make docs-validate
+    - name: Generate a release using mike
+      shell: bash
+      run: |
+        export BRANCH=${{ github.ref_name }}
+        echo $BRANCH
+        mike deploy --push ${BRANCH}
