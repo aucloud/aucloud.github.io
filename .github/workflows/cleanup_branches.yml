@@ -24,7 +24,7 @@ jobs:
       run: make install
 
     - name: Print github context
-      run: echo '${{ toJSON(github) }}'
+      run: echo "${{ toJSON(github) }}"
 
     - name: Mike delete github.ref_name
       run: echo "NOT COMPLETE"
