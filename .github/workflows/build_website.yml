@@ -3,12 +3,11 @@ name: Build the website
 
 on:
   push:
-
+# This is very deliberate. There is significant contention risks otherwise
+concurrency: serialized-build
 jobs:
   deploy_website:
     runs-on: self-hosted
-    # This is very deliberate. There is significant contention risks otherwise
-    concurrency: serialized-build
     steps:
     - uses: actions/checkout@v2
       with:
