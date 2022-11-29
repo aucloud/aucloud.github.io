@@ -36,7 +36,7 @@ This guide is intended for use by administrative and financial staff responsible
     -   **Created At:** The date the invoice was created.
     -   **Status:** Shows if the invoice has been paid, is outstanding or is overdue.
     -   **Download:** Provides the option to download a PDF copy of the invoice.  
-     
+
     ![001.png](./assets/billing2.jpg)
 
 ## Viewing Invoice details
