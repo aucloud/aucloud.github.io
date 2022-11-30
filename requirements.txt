@@ -9,6 +9,7 @@ pymdown-extensions
 mkdocs-exclude
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
+mike
 
 
 
