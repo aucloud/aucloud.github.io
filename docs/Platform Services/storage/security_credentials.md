@@ -6,7 +6,7 @@ title: Security Credentials
 
 1. Security Credentials are required to access buckets programmatically [via S3 API's.](./accessing_buckets_from_a_browser.md)
 
-    The AUCloud S3 API endpoint for Sovereignty Zone 1 ODCE is [vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3)
+    The AUCloud S3 API endpoint for Sovereignty Zone 1 ODCE is [vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3)
 
 1. To create user credentials, click **+CREATE**.
 
