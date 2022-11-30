@@ -10,7 +10,10 @@ jobs:
   cleanup_website:
     if: github.server_url	!= 'https://github.com'
     runs-on: self-hosted
-
+    env:
+      SITE_URL: ${{ secrets.SITE_URL }}
+      EDIT_URL: ${{ secrets.EDIT_URL }}
+      REPO_URL: ${{ secrets.REPO_URL }}
     steps:
     - uses: actions/checkout@v2
       with:

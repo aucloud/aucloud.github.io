@@ -1,4 +1,4 @@
-edit_uri: 'https://github.ss.australiacloud.com.au/platform/external-docs/edit/main/docs/'
+edit_uri: !ENV EDIT_URL
 markdown_extensions:
 - admonition
 - markdown_include.include
@@ -18,10 +18,10 @@ plugins:
 - macros
 - git-revision-date-localized
 repo_name: platform/external-docs
-repo_url: https://github.ss.australiacloud.com.au/platform/external-docs
+repo_url: !ENV REPO_URL
 site_description: AUCloud's technical documentation site
 site_name: AUCloud documentation
-site_url: https://pages.github.ss.australiacloud.com.au/platform/external-docs
+site_url: !ENV SITE_URL
 theme:
   logo: aucloud.svg
   favicon: images/favicon.ico

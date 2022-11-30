@@ -1,0 +1,27 @@
+---
+name: Build the website
+
+on:
+  pull_request:
+jobs:
+  validate_website:
+    if: github.server_url	== 'https://github.com'
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://docs.australiacloud.com.au/
+      EDIT_URL: https://github.com/aucloud/docs/edit/main/docs
+      REPO_URL: https://github.com/aucloud/docs
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: make install
+    - name: Check the website
+      shell: bash
+      run: |
+        make docs-validate
