@@ -1,5 +1,5 @@
 ---
-name: Test - remove builds
+name: Cleanup branch based builds
 
 on:
   delete:

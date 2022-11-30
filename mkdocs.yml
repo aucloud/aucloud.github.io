@@ -17,7 +17,7 @@ plugins:
 - search
 - macros
 - git-revision-date-localized
-repo_name: platform/external-docs
+repo_name: aucloud/docs
 repo_url: !ENV REPO_URL
 site_description: AUCloud's technical documentation site
 site_name: AUCloud documentation
