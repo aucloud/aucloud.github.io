@@ -6,7 +6,9 @@ on:
 # This is very deliberate. There is significant contention risks otherwise
 concurrency: serialized-build
 jobs:
+  # This deploys to our test infrastructure
   deploy_website:
+    if: github.server_url	!= 'https://github.com'
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
@@ -34,3 +36,46 @@ jobs:
         export BRANCH=${{ github.ref_name }}
         echo $BRANCH
         mike deploy --push ${BRANCH}
+
+  push_to_public:
+    if: github.server_url	!= 'https://github.com' &&  github.ref == 'refs/heads/main'
+    runs-on: self-hosted
+    needs: deploy_website
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
+    - name: Add the remote
+      run: |
+        bash ./safe_add_remote.sh public ${{ secrets.UPSTREAM }}
+    - name: Push to remote
+      run: |
+        git push public main
+  deploy_website_public:
+    if: github.server_url	== 'https://github.com' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: make install
+    - name: Setup doc deploy
+      run: |
+        git config --global user.name "semantic-release (via Github actions)"
+        git config --global user.email "semantic-release@australiacloud.com.au"
+    - name: Check the website
+      shell: bash
+      run: |
+        make docs-validate
+    - name: Generate a release using mike
+      shell: bash
+      run: |
+        mike deploy --push latest

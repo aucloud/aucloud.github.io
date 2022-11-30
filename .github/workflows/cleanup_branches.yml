@@ -8,6 +8,7 @@ concurrency: serialized-build
 
 jobs:
   cleanup_website:
+    if: github.server_url	!= 'https://github.com'
     runs-on: self-hosted
 
     steps:
