@@ -1,0 +1,136 @@
+edit_uri: !ENV EDIT_URL
+markdown_extensions:
+- admonition
+- footnotes
+- markdown_include.include
+- pymdownx.emoji
+- pymdownx.magiclink
+- pymdownx.superfences
+- pymdownx.tabbed
+- pymdownx.tasklist
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.details
+- pymdownx.critic
+- pymdownx.caret
+- pymdownx.keys
+- pymdownx.mark
+- pymdownx.tilde
+- toc:
+   permalink: ¤
+plugins:
+- exclude:
+    glob:
+      - Blog/blog_template.md
+- blogging:
+    dirs: # The directories to be included
+      - Blog
+- social
+- search
+- table-reader:
+    data_path: "docs"
+- git-revision-date-localized
+- awesome-pages
+- macros
+- unused_files:
+    strict: True
+    excluded_files:
+      - .pages
+      - aucloud.svg
+      - "stylesheets/extra.css"
+      - "images/favicon.ico"
+- htmlproofer:
+    enabled: !ENV [ENABLED_HTMLPROOFER, True]
+    validate_rendered_template: True
+    raise_error: False
+    raise_error_excludes:
+      406: ['https://api-vcd-sz101.portal.australiacloud.com.au/api','https://api-vcd-sz201.portal.australiacloud.com.au/api','https://api-vcd-sz101.eportal.australiacloud.com.au/api','https://api-vcd-sz201.eportal.australiacloud.com.au/api']
+      404:
+        -  "#__consent"
+        - https://vos.s3-sz101.australiacloud.com.au/api/v1/s3
+        - https://vos.s3-esz101.australiacloud.com.au/api/v1/s3
+      403:
+        - https://s3-sz101.australiacloud.com.au
+        - https://s3-esz101.australiacloud.com.au
+        - https://s3-sz201.australiacloud.com.au
+        - https://s3-esz201.australiacloud.com.au
+
+- spellcheck:
+    backends:
+    - symspellpy
+    - codespell:
+        dictionaries: [clear, rare]
+    known_words: ../known-words.txt
+    # ignore words in <code> tags
+    ignore_code: yes
+    # minimum length of words to consider
+    min_length: 3
+    # maximum number of capital letters in a word
+    max_capital: 1
+    # keep unicode characters
+    allow_unicode: no
+    # skip_files:
+    # - credits.md
+    # - coverage.md
+    # whether to only check in strict mode
+    #strict_only: yes
+
+repo_name: aucloud/aucloud.github.io
+repo_url: !ENV REPO_URL
+site_description: AUCloud's technical documentation site, managed as code from GitHub
+site_name: AUCloud Documentation
+site_url: !ENV SITE_URL
+theme:
+
+  locale: en         # The locale for time localizations, default: system's locale
+  time_format: '%Y-%m-%d %H:%M:%S' # The format used to display the time
+  meta_time_format: '%Y-%m-%d %H:%M:%S'
+  logo: aucloud.svg
+  favicon: images/favicon.ico
+  features:
+  - content.code.annotate
+  - navigation.tracking
+  - navigation.top
+  - navigation.indexes
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - header.autohide
+  name: material
+  font:
+    text: Questrial
+    code: Roboto Mono
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  version:
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    # Internal only
+    property: UA-217577494-1
+copyright: >
+  Copyright &copy; 2022 Sovereign Cloud Australia Pty Ltd. –
+  <a href="#__consent">Change cookie settings</a>
+

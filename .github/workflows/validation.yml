@@ -1,0 +1,68 @@
+---
+name: Validate website
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  validate_website_gh_com:
+    if: github.server_url	== 'https://github.com'
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://docs.australiacloud.com.au/
+      EDIT_URL: https://github.com/aucloud/aucloud.github.io/edit/main/docs
+      REPO_URL: https://github.com/aucloud/aucloud.github.io
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install system deps
+      run: make ubuntu-deps
+
+    - name: Install dependencies
+      run: make install
+
+    - name: pre-commit
+      run: |
+        make pre-commit-install
+        make pre-commit-run
+    - name: Check the website
+      env:
+        ENABLED_HTMLPROOFER: "True"
+      shell: bash
+      run: |
+        make docs-validate
+
+  validate_website_ghes:
+    if: github.server_url	!= 'https://github.com'
+    runs-on: self-hosted
+    env:
+      SITE_URL: ${{ secrets.SITE_URL }}
+      EDIT_URL: ${{ secrets.EDIT_URL }}
+      REPO_URL: ${{ secrets.REPO_URL }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: make install
+
+    - name: pre-commit
+      run: |
+        make pre-commit-install
+        make pre-commit-run
+    - name: Check the website
+      env:
+        ENABLED_HTMLPROOFER: "True"
+      run: make docs-validate

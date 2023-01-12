@@ -1,0 +1,32 @@
+---
+name: Test - remove builds
+
+on:
+  delete:
+  workflow_dispatch:
+# This is very deliberate. There is significant contention risks otherwise
+concurrency: serialized-build
+
+jobs:
+  cleanup_website:
+    if: github.server_url	!= 'https://github.com'
+    runs-on: self-hosted
+    env:
+      SITE_URL: ${{ secrets.SITE_URL }}
+      EDIT_URL: ${{ secrets.EDIT_URL }}
+      REPO_URL: ${{ secrets.REPO_URL }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: make install
+
+    - name: Mike delete github.ref_name
+      if: github.event.ref_type == 'branch'
+      run: mike delete --push ${{ github.event.ref }}
