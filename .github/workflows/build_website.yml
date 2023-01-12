@@ -58,8 +58,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SITE_URL: https://docs.australiacloud.com.au/
-      EDIT_URL: https://github.com/aucloud/docs/edit/main/docs
-      REPO_URL: https://github.com/aucloud/docs
+      EDIT_URL: https://github.com/aucloud/aucloud.github.io/edit/main/docs
+      REPO_URL: https://github.com/aucloud/aucloud.github.io
     steps:
     - uses: actions/checkout@v2
       with:
