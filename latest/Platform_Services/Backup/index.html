@@ -1,0 +1,3139 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Backup Solution – General Information">
+      
+      
+      
+        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/Backup/">
+      
+      
+        <link rel="prev" href="../sovereign_bridge/">
+      
+      
+        <link rel="next" href="about_backup/">
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>Backup - AUCloud Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Questrial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-217577494-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Backup - AUCloud Documentation" >
+      
+        <meta  property="og:description"  content="Backup Solution – General Information" >
+      
+        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Backup/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/Backup/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Backup - AUCloud Documentation" >
+      
+        <meta  name="twitter:description"  content="Backup Solution – General Information" >
+      
+        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Backup/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AUCloud Documentation" class="md-header__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../aucloud.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AUCloud Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Platform_Overview/" class="md-tabs__link">
+        Platform Overview
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Platform Services
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/" class="md-tabs__link">
+      About AUCloud
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Blog/" class="md-tabs__link">
+        Blog
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/aucloud/" class="md-tabs__link">
+      AUCloud on GitHub
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/partners" class="md-tabs__link">
+      AUCloud Partners
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/contact-us/" class="md-tabs__link">
+      Contact Us
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AUCloud Documentation" class="md-nav__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../aucloud.svg" alt="logo">
+
+    </a>
+    AUCloud Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Platform_Overview/">Platform Overview</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Overview" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/licensing/" class="md-nav__link">
+        Software Licensing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
+        AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Platform_Overview/Security/">Security</a>
+          
+            <label for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/Security/network_security/" class="md-nav__link">
+        Network Security
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
+        Security and Governance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
+        Shared Responsibility Model
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Platform_Overview/portal/">Portal</a>
+          
+            <label for="__nav_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Portal" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Portal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/portal/api_management/" class="md-nav__link">
+        API Management in the AUCloud Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
+        Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/portal/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
+        Managing User Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/portal/signing_the_crisp/" class="md-nav__link">
+        Signing the CRISP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Platform_Overview/support/">Support</a>
+          
+            <label for="__nav_1_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Support" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          Support
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/support/aucloud_billing_portal/" class="md-nav__link">
+        AUCloud Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/support/aucloud_support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Overview/support/editing_a_support_ticket_in_the_portal/" class="md-nav__link">
+        Editing a Support Ticket in the Portal
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Platform Services</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Services" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SKAP/" class="md-nav__link">
+        Symmetric Key Agreement Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_urls/" class="md-nav__link">
+        Reference URLs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sovereign_bridge/" class="md-nav__link">
+        Sovereign Bridge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Backup</a>
+          
+            <label for="__nav_2_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Backup" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about_backup/" class="md-nav__link">
+        About AUCloud Backup for VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started/" class="md-nav__link">
+        Self-Service Backup Portal – Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="restoring_vms_and_vapps/" class="md-nav__link">
+        Restoring VMs and vApps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="statistics_on_vcd_backups/" class="md-nav__link">
+        Viewing Statistics on VMware Cloud Director Backups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="working_with_vcd_backup_jobs/" class="md-nav__link">
+        Working with VMware Cloud Director Backup Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5_7" type="checkbox" id="__nav_2_5_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_7" tabindex="0" aria-expanded="false">
+          o365 Backup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="o365 Backup" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_7">
+          <span class="md-nav__icon md-icon"></span>
+          o365 Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o365_Backup/azureAD_application_permission_requirements/" class="md-nav__link">
+        Azure AD Application Permission requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o365_Backup/configuration/" class="md-nav__link">
+        Configuration of Microsoft O365 Service Account
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
+        Guide to the Veeam Restore Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o365_Backup/how_to_generate_new_secret_veeam_o365/" class="md-nav__link">
+        How to generate a new secret for Veeam Backup for Office 365
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o365_Backup/overview/" class="md-nav__link">
+        O365 Backup Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../Compute/">Compute</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/VMware_Cloud_Director_Overview/" class="md-nav__link">
+        VMware Cloud Director Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_3" type="checkbox" id="__nav_2_6_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_3" tabindex="0" aria-expanded="false">
+          Catalogs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catalogs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Catalogs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Catalogs/how_to_create_a_catalog/" class="md-nav__link">
+        How to create a catalog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+        How to share catalog library between AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_4" type="checkbox" id="__nav_2_6_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_4" tabindex="0" aria-expanded="false">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Getting_Started/getting_started_with_vcd/" class="md-nav__link">
+        Getting Started with VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Getting_Started/use_case/" class="md-nav__link">
+        Use Case - Create a Web Server to communicate with the internet
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_5" tabindex="0" aria-expanded="false">
+          NSX T Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX T Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          NSX T Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
+        Create a Routed VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
+        Create an Isolated VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
+        Edge Services Gateway
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_6" type="checkbox" id="__nav_2_6_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_6" tabindex="0" aria-expanded="false">
+          NSX V Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX V Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          NSX V Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/configuration_of_logging_on_the_ESG/" class="md-nav__link">
+        Configuration of logging on the ESG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/" class="md-nav__link">
+        How the NSX-V Edge Services Gateway works
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_add_a_certificate/" class="md-nav__link">
+        How to add a certificate to the Edge Services Gateway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_configure_a_load_balancer/" class="md-nav__link">
+        How to configure a load balancer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_configure_ipsec_vpn/" class="md-nav__link">
+        How to configure IPSec VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_NAT_rules/" class="md-nav__link">
+        How to create NAT rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_a_dhcp_pool/" class="md-nav__link">
+        How to create a DHCP pool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_a_routed_vdc_network/" class="md-nav__link">
+        How to create a routed VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_a_static_route/" class="md-nav__link">
+        How to create a static route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_an_isolated_vdc_network/" class="md-nav__link">
+        How to create an isolated VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_create_firewall_rules/" class="md-nav__link">
+        How to create firewall rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/how_to_find_allocated_external_ip_addresses/" class="md-nav__link">
+        How to find your allocated external IP addresses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/NSX-V_Networks/vapp_networks/" class="md-nav__link">
+        vApp Networks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_7" type="checkbox" id="__nav_2_6_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_7" tabindex="0" aria-expanded="false">
+          Using the Api
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using the Api" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_7">
+          <span class="md-nav__icon md-icon"></span>
+          Using the Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Using_the_Api/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+        Establishing a connection to AUCloud platform via PowerCLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Using_the_Api/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+        Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_8" type="checkbox" id="__nav_2_6_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_8" tabindex="0" aria-expanded="false">
+          Working with VMs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Working with VMs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Working with VMs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
+        How to migrate vApps between virtual data centres
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_create_a_vapp/" class="md-nav__link">
+        How to create a vApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_create_a_vm_from_a_template/" class="md-nav__link">
+        How to create a VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_create_an_empty_vm/" class="md-nav__link">
+        How to create an empty VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
+        How to increase the HDD or add a HDD to a Virtual Machine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_perform_guest_customisation/" class="md-nav__link">
+        How to perform Guest Customisation on the newly built VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_resize_vm_disk/" class="md-nav__link">
+        How to resize VM disk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_upload_media/" class="md-nav__link">
+        How to upload media
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_use_affinity_rules/" class="md-nav__link">
+        How to use affinity and anti‑affinity rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
+        How to view and update virtual machine settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_view_storage_profile_usage/" class="md-nav__link">
+        How to view storage profile usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
+        How to upload VM template/media using the VMware OVF tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/Working_with_VMs/vmware_tools_installation/" class="md-nav__link">
+        VMware Tools Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../Disaster_Recovery_and_Migration/">Disaster Recovery and Migration</a>
+          
+            <label for="__nav_2_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Disaster Recovery and Migration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Disaster Recovery and Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
+        How to conduct a test failover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
+        How to configure a new migration or replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
+        How to configure a new protection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
+        How to configure the network settings of a replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
+        How to perform a failover task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
+        How to perform a reverse task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/installing_and_configuring_vcav_on_premise/" class="md-nav__link">
+        Installing and configuring vCAV on premise
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
+        VMware Cloud Director Availability Quick Start Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
+        VMware Cloud Director Availability Replication Policies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" tabindex="0" aria-expanded="false">
+          End User Compute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="End User Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          End User Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End_User_Compute/DaaS/" class="md-nav__link">
+        Desktop as a Service
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../Object_Storage/">Object Storage</a>
+          
+            <label for="__nav_2_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Object Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Object Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/accessing_buckets_from_an_s3browser/" class="md-nav__link">
+        Accessing buckets from an s3browser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/accessing_object_storage/" class="md-nav__link">
+        Accessing Object Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+        Add an object to a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/copy_an_object/" class="md-nav__link">
+        Copy an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/creating_a_bucket/" class="md-nav__link">
+        Creating a Bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+        Delete an object or a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/security_credentials/" class="md-nav__link">
+        Security Credentials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/view_an_object/" class="md-nav__link">
+        View an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
+        View properties and manage permissions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../Storage/">Storage</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/" class="md-nav__link">
+        About AUCloud
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Blog/">Blog</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/aucloud/" class="md-nav__link">
+        AUCloud on GitHub
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/partners" class="md-nav__link">
+        AUCloud Partners
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/contact-us/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-out-backup-repositories" class="md-nav__link">
+    Scale Out Backup Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-file-placement" class="md-nav__link">
+    Backup File Placement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-locality" class="md-nav__link">
+    Data Locality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extent-selection" class="md-nav__link">
+    Extent Selection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capacity-tier-s3-storage" class="md-nav__link">
+    Capacity Tier (S3 Storage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immutability" class="md-nav__link">
+    Immutability
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-generation" class="md-nav__link">
+    Block Generation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forward-incremental-backup-chain" class="md-nav__link">
+    Forward Incremental Backup Chain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-capacity-tier-data" class="md-nav__link">
+    Managing Capacity Tier Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-inactive-backup-chains-to-object-storage" class="md-nav__link">
+    Moving Inactive Backup Chains to Object Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transfer" class="md-nav__link">
+    Data Transfer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copying-backups-to-object-storage" class="md-nav__link">
+    Copying Backups to Object Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-copy-and-move-operations" class="md-nav__link">
+    Combining Copy and Move Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-data-from-object-storage" class="md-nav__link">
+    Downloading Data from Object Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-chain-legitimacy" class="md-nav__link">
+    Backup Chain Legitimacy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inactive-backup-chain-of-a-backup-job" class="md-nav__link">
+    Inactive Backup Chain of a Backup Job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inactive-backup-chain-of-a-backup-copy-job" class="md-nav__link">
+    Inactive Backup Chain of a Backup Copy Job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retention-policy" class="md-nav__link">
+    Retention Policy
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+  <h1>Backup</h1>
+
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<p>The following information has been taken from the <strong>Veeam Backup &amp; Replication version 11 User Guide for VMware vSphere</strong> and is intended to provide relevant information regarding backups within the AUCloud environment.</p>
+<p>The full copy of the Veeam documentation can be found online <a href="https://helpcenter.veeam.com/docs/backup/vsphere/about_backup.html?ver=110">here</a> or by downloading the <a href="https://www.veeam.com/veeam_backup_11_0_user_guide_vsphere_pg.pdf">PDF</a>.</p>
+<h3 id="scale-out-backup-repositories">Scale Out Backup Repositories<a class="headerlink" href="#scale-out-backup-repositories" title="Permanent link">¤</a></h3>
+<p>A scale-out backup repository is a repository system with horizontal scaling support for multi-tier storage of data. The scale-out backup repository consists of one or more backup repositories called performance extents and can be expanded with cloud-based repositories or local object repositories. All the storage devices and systems inside the scale-out backup repository are joined into a system, with their capacities summarised. The main benefits of this feature are as follows:</p>
+<ul>
+<li>It provides a convenient way of managing the backup storage.</li>
+<li>It provides an easy way to extend repositories when they run out of space by simply adding a new performance extent to the existing scale-out repository. You can expand the scale-out backup repository at any moment. For example, if backup data grows and the backup repository reaches the storage limit, you can add a new storage system to the scale-out backup repository. The free space on this storage system will be added to the capacity of the scale-out backup repository. As a result, you will not have to move backups to a backup repository of a larger size.</li>
+<li>It supports any backup target supported by Veeam: Windows or Linux servers with local or DAS storage, network shares, deduplicating storage appliances. All the features of any storage device or system are preserved.</li>
+<li>It allows you to set up granular performance policy. For more information, see Backup File Placement.</li>
+<li>It provides practically unlimited cloud-based storage capacity: you can instruct Veeam Backup &amp; Replication to offload data from extents to the cloud for long-term storage.</li>
+</ul>
+<p><img alt="Scale Out backup" src="assets/scale_out_backup.png" /></p>
+<p>A scale-out backup repository can be used for the following types of jobs and tasks:</p>
+<ul>
+<li>Backup jobs.</li>
+<li>Backup copy jobs. You can copy backups that reside on scale-out backup repositories and store backup copies on scale-out backup repositories.</li>
+</ul>
+<p>Backup files stored on the scale-out repository can be used for all types of restores, replication from backup and backup copy jobs.</p>
+<h3 id="backup-file-placement">Backup File Placement<a class="headerlink" href="#backup-file-placement" title="Permanent link">¤</a></h3>
+<p>Veeam Backup &amp; Replication stores backup files on all performance extents of the scale-out backup repository. When you configure a scale-out backup repository, you must set the backup file placement policy for it. The backup file placement policy describes how backup files are distributed between extents. You can choose one of two policies:</p>
+<ul>
+<li>Data locality</li>
+<li>Performance</li>
+</ul>
+<p>The backup file placement policy is not strict. If the necessary extent is not accessible, Veeam Backup &amp; Replication will disregard the policy limitations and attempt to place the backup file to the extent that has enough free space for the backup file.</p>
+<p>For example, you have set the Performance policy for the scale-out backup repository and specified that full backup files must be stored on Extent 1 and incremental backup files must be stored on Extent 2. If before an incremental backup job session Extent 2 goes offline, the new incremental backup file will be placed to Extent 1.</p>
+<h3 id="data-locality">Data Locality<a class="headerlink" href="#data-locality" title="Permanent link">¤</a></h3>
+<p>If you set the Data locality policy for a scale-out backup repository, all backup files that belong to the same backup chain are stored on the same extent of the scale-out backup repository.</p>
+<p><img alt="Data Locality" src="assets/data_locality.png" /></p>
+<p>The Data locality policy does not put any limitations to backup chains. A new backup chain may be stored on the same extent or another extent. For example, if you create an active full backup, Veeam Backup &amp; Replication may store the full backup file to another extent, and all dependent incremental backup files will be stored together with this full backup file.</p>
+<h3 id="extent-selection">Extent Selection<a class="headerlink" href="#extent-selection" title="Permanent link">¤</a></h3>
+<p>To select an extent for backup file placement, Veeam Backup &amp; Replication checks the following conditions:</p>
+<ol>
+<li>
+<p>Availability of extents on which backup files reside. If some extent with backup files from the current backup chain is not accessible, Veeam Backup &amp; Replication will trigger a full backup instead of incremental (if this option is enabled).</p>
+</li>
+<li>
+<p>Backup placement policy set for the scale-out backup repository.</p>
+</li>
+<li>
+<p>Load control settings — maximum number of tasks that the extent can process simultaneously.</p>
+</li>
+<li>
+<p>Amount of free space available on the extent — the backup file is placed to the extent with the most amount of free space.</p>
+</li>
+<li>
+<p>Availability of files from the current backup chain — extents that host incremental backup files from the current backup chain (or current VM) have a higher priority than extents that do not host such files.</p>
+</li>
+</ol>
+<h3 id="capacity-tier-s3-storage">Capacity Tier (S3 Storage)<a class="headerlink" href="#capacity-tier-s3-storage" title="Permanent link">¤</a></h3>
+<p>Capacity Tier is an additional tier of storage that can be attached to a scale-out backup repository. Capacity Tier transports applicable data from the scale-out backup repository performance extents to a cloud or to S3-compatible devices for long-term storage.</p>
+<p>This feature is most useful if:</p>
+<ul>
+<li>You are running out of storage space.</li>
+<li>Your organization policies allow you to store only a certain amount of data on your extents, while the outdated data should be stored elsewhere.</li>
+<li>You seek to store data on several sites to ensure its safety in case of a disaster.</li>
+<li>The Capacity Tier consists of only one capacity extent. The capacity extent can be either cloud-based object storage repository or on-premises object storage repository.</li>
+<li>The capacity extent is displayed in the scale-out backup repository wizard, on the Step 5. Add Capacity Tier step. With Capacity Tier you can:</li>
+<li>Move inactive backup chains to object storage, as described in Moving Inactive Backup Chains to Object Storage.</li>
+<li>Copy new backup files as soon as these files are created, as described in Copying Backups to Object Storage.</li>
+<li>Download data that was moved from object storage back to the source extents, as described in Downloading Data from Object Storage.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pricing for Backup in the AUCloud Pricing Guide assumes data will be transferred to Capacity Tier Storage after one month by default.</p>
+</div>
+<h3 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">¤</a></h3>
+<p>Veeam Backup &amp; Replication allows you to prohibit deletion of data from object storage by making it immutable. To make data immutable, Veeam Backup &amp; Replication uses the Object Lock technology provided by S3-Compatible providers. Once imposed, the object lock prohibits deletion of data from object storage until the immutability expiration date is met. The value that defines the period after which the immutability expiration date occurs is specified when adding (or editing) an S3 Compatible object storage repository.</p>
+<p>The following operations cannot be performed on immutable data within the object storage:</p>
+<ul>
+<li>Manual removal of data, as described in Removing Backups from Object Storage Repository.</li>
+<li>Removal of data by the retention policy, as described in Retention Policy.</li>
+<li>Removal of data using any cloud service provider tools.</li>
+<li>Removal of data by the cloud service provider technical support department.</li>
+<li>Removal of data by the Remove deleted items data after option, as described in Maintenance Settings.</li>
+</ul>
+<p>Immutable data is preserved as described in Block Generation.</p>
+<h3 id="block-generation">Block Generation<a class="headerlink" href="#block-generation" title="Permanent link">¤</a></h3>
+<p>Block Generation is an additional period of 10 days that is automatically added to the immutability expiration date. This period is designed to reduce the number of the requests to the object storage in cases when the immutability period of some blocks must be extended: for instance, when the blocks are being reused. Generations may grow, which happens after you offload data starting from the 11th day and up until the end of the immutability period, thereby creating new consecutive generations the period of which is also 10 days.</p>
+<h3 id="forward-incremental-backup-chain">Forward Incremental Backup Chain<a class="headerlink" href="#forward-incremental-backup-chain" title="Permanent link">¤</a></h3>
+<p>The following figure shows an example consisting of three generations; each generation has immutable blocks of data, two of which have been reused during copy.</p>
+<p><img alt="Forward Incremental Backup Chain" src="assets/forward_incremental_backup_chain.png" /></p>
+<p>As per example:</p>
+<p><strong>[Generation 1]</strong> On 01/01/2020, a Full Backup 1 consisting of blocks <strong>A, B, C</strong> and <strong>D</strong> has been offloaded to object storage. On 01/04/2020, the Full Backup 1 was succeeded by an Incremental Backup 1 consisting of blocks <strong>E</strong> and <strong>F</strong>.</p>
+<p>After both files have been offloaded, a backup (or backup copy) job went idle for the next 7 days. In such a scenario, blocks of these files (i.e. <strong>A, B, C, D, E</strong> and <strong>F</strong>) become part of the <strong>Generation 1.</strong></p>
+<p><strong>[Generation 2]</strong> On 01/11/2020 (11th day), a Full Backup 2 consisting of blocks <strong>A, B, G</strong> and <strong>H</strong> has been offloaded to object storage. On 01/12/2020, the Full Backup 2 was succeeded by an Incremental Backup 2 consisting of blocks <strong>I</strong> and <strong>J</strong>.</p>
+<p>Because all these blocks (i.e. <strong>G, H, I</strong> and <strong>J</strong>) have been offloaded no sooner than on the 11th day, these blocks become part of the <strong>Generation 2</strong>.</p>
+<p>Blocks <strong>A</strong> and <strong>B</strong> of the Full Backup 2, however, have not been actually offloaded. Instead, these blocks have been taken from the Full Backup 1 and, therefore, have been reused.</p>
+<p>Such a scenario means that the <strong>Generation 1</strong> now has blocks <strong>C, D, E</strong> and <strong>F</strong> only (i.e., excluding reused blocks <strong>A</strong> and <strong>B</strong>), all of which become mutable on 02/09/2020.</p>
+<p>After the Incremental Backup 2 has been offloaded on 01/12/2020, the backup (or backup copy) job went idle for the next 10 days.</p>
+<p><strong>[Generation 3]</strong> On 01/22/2020 (11th day), an Incremental Backup 3 consisting of blocks <strong>K</strong> and <strong>B</strong> has been offloaded to object storage. Blocks of this file become part of the <strong>Generation 3</strong> and block <strong>B</strong> has been reused from the Full Backup 2. Since all of the blocks that have been offloaded starting from 01/11/2020 <strong>(G, H, I, J</strong> and <strong>K</strong>) are of the same backup chain, these blocks now belong to the <strong>Generation 3</strong> altogether and can only become mutable on 03/02/2020.</p>
+<p>For instance, if the Incremental Backup 3 had not been offloaded on 01/20/2020, the immutability expiration window of blocks <strong>A, B, G, H, I</strong> and <strong>J</strong> would have been met on 02/21/2020, which is the date when the Full Backup 2 was offloaded plus 40 days.</p>
+<p>According to this example, Veeam Backup &amp; Replication continues to keep reused/dependent blocks of data locked by continuously assigning them to new generations, thereby extending the immutability expiration period.</p>
+<h3 id="managing-capacity-tier-data">Managing Capacity Tier Data<a class="headerlink" href="#managing-capacity-tier-data" title="Permanent link">¤</a></h3>
+<p>You can manage the backup data in object storage in the following ways:</p>
+<ul>
+<li>Restore data directly from object storage back to production servers.</li>
+<li>Download offloaded data from object storage back to the source extents.</li>
+<li>Manage retention policies to remove obsolete restore points from the extents and the object storage.</li>
+<li>Reduce the amount of operations incurred by your cloud storage provider and decrease the amount of traffic being sent over the network when moving or copying data to object storage.</li>
+</ul>
+<h3 id="moving-inactive-backup-chains-to-object-storage">Moving Inactive Backup Chains to Object Storage<a class="headerlink" href="#moving-inactive-backup-chains-to-object-storage" title="Permanent link">¤</a></h3>
+<p>To collect backup files that belong to inactive backup chains from the extents and move them to object storage, Veeam Backup &amp; Replication uses an offload session which is executed automatically every 4 hours.</p>
+<p>A complete name of each offload session is built up of the scale-out backup repository name + the Offload postfix. That is, if your scale-out backup repository name is AUCLOUD, the offload session name will be AUCLOUD Offload.</p>
+<p>The offload session manages the following:</p>
+<ul>
+<li>Validation Process</li>
+<li>Data Transfer</li>
+</ul>
+<p>Before your data can safely be moved to object storage repositories, Veeam Backup &amp; Replication performs the following mandatory verifications and required actions:</p>
+<ul>
+<li>Verifies whether data that is about to be moved belongs to an inactive backup chain. For more information, see Backup Chain Legitimacy.</li>
+<li>Verifies whether source extents are available and have not been put into maintenance mode. Consider that data will not be offloaded from Linux-based extents that have internet access via HTTP(S) proxy. All Linux-based extents configured in your scale-out backup repository must have direct access to the internet.</li>
+<li>Verifies whether an object storage repository has not been put into maintenance or seal mode. For more information, see Switching to Maintenance Mode and Switching to Seal Mode.</li>
+<li>Verifies whether configuration parameters that define how and when inactive backup chains must be moved to object storage are met. Such parameters are configured, as described in Add Capacity Tier.</li>
+<li>Builds and maintains indexes to verify whether data that is being moved is unique and has not been offloaded earlier. For more information, see Indexes.</li>
+<li>Synchronizes the backup chain state between the local and object storage repository to maintain retention policies. For more information, see Retention Policy.</li>
+</ul>
+<h3 id="data-transfer">Data Transfer<a class="headerlink" href="#data-transfer" title="Permanent link">¤</a></h3>
+<p>After the validation process is complete, the SOBR Offload session does the following:</p>
+<ul>
+<li>Collects backup files that have passed verification. Such verified backup files are collected from all the extents added to a scale-out backup repository.</li>
+<li>Extracts data blocks from these files and moves these blocks to object storage leaving the backup files only with metadata (i.e. free of data blocks). Such backup files (without data blocks) will remain on the source extents and will also be replicated to the object storage repository.</li>
+</ul>
+<p>Having a copy of such dummy files on your extents allows you to:</p>
+<ul>
+<li>Download data that was moved back to the extents, as described in Data Download.</li>
+<li>Restore data back to production servers, as described in Data Restore.</li>
+<li>Having replicated versions of dummy files in object storage repositories allows you to:</li>
+<li>Synchronize the backup chain state of your object storage with that of your extents, as described in Synchronizing Capacity Tier Data.</li>
+</ul>
+<p>The following figure illustrates how inactive backup chains are moved to object storage.</p>
+<p><img alt="Backup Chain" src="assets/backup_chain.png" /></p>
+<p>The Figure A demonstrates a pool of extents (A, B and C) that are added to a scale-out backup repository (SOBR) and an object storage repository that is added to the same SOBR.</p>
+<p>Suppose that the extent A has an inactive backup chain consisting of one <code>.vbk</code> file and three <code>.vib</code>  files, that is, four restore points in total. Each of these files comprises metadata (represented as green vertical blocks) and the actual blocks of data (represented as yellow squares). During the offload session, Veeam Backup &amp; Replication will collect all the orange squares — that is, the actual blocks of data — from all the backup files (<code>.vbk</code> and <code>.vib</code> ) and offload these blocks to the object storage repository represented in the Figure B.</p>
+<p>Each offloaded block might be of different size, which is defined during configuring storage optimization. The offloaded blocks are placed to the blocks directory in your object storage repository.</p>
+<p>Backup files with metadata (or dummy files) will be replicated to the object storage repository and will be placed to the <code>storages</code> directory. As per example, these files are one <code>.vbk</code> file and three <code>.vib</code>  files that are shown in the Figure B.</p>
+<p>Such an approach will be applied to all inactive backup chains that satisfy validation criteria.</p>
+<p>After offload is complete, the new Object Storage node appears in the Home view, under the Backups node and shows backups that have been moved to object storage.</p>
+<h3 id="copying-backups-to-object-storage">Copying Backups to Object Storage<a class="headerlink" href="#copying-backups-to-object-storage" title="Permanent link">¤</a></h3>
+<p>Veeam Backup &amp; Replication allows you to copy backups from the extents of your scale-out backup repository to object storage as soon as these backups are created.</p>
+<p>To copy data to object storage, Veeam Backup &amp; Replication uses a copy session that is executed automatically upon completion of a backup (or backup copy) job that is targeted to a scale-out backup repository that was extended with object storage.</p>
+<p>A complete name of each copy session is built up of the backup (or backup copy) job name + the Offload postfix. That is, if your backup (or backup copy) job name is Aucloud, the copy session name will be Aucloud Offload.</p>
+<p>Once the backup (or backup copy) job is complete, Veeam Backup &amp; Replication initiates a new copy session which simply extracts data blocks and metadata from each new backup file (<code>.vbk</code>, <code>.vib</code> , <code>.vrb</code>) created on any of the extents of your scale-out backup repository and copies these blocks to object storage, thereby making an identical replica of your backup data.</p>
+<p>Having such a replica gives you the ability to quickly restore data as of the latest state in case of any unexpected failure of any of your extents, or even of the entire scale-out backup repository, as described in Restore Scenarios.</p>
+<p>To enable data copy, make sure to select the Copy backups to object storage as soon as they are created option, as described in Add Capacity Tier.</p>
+<h3 id="combining-copy-and-move-operations">Combining Copy and Move Operations<a class="headerlink" href="#combining-copy-and-move-operations" title="Permanent link">¤</a></h3>
+<p>You can combine both the Copy backups to object storage as soon as they are created option and the Move backups to object storage as they age out of the operational restores window option. In such a scenario, a copy session will be copying newly created backups right upon creation.</p>
+<p>Once the backup chain becomes inactive (or sealed) and exceeds the operational restore window, data blocks will be removed from each associated backup file in such an inactive on-premises backup chain and only metadata will be preserved. Such a behavior mimics data movement, but instead of moving data that was already copied, Veeam Backup &amp; Replication simply purges associated data blocks from the extents, thereby saving traffic and reducing costs that might be incurred by your storage provider for performing read/write operations.</p>
+<p>The following figure shows an example in which both options are enabled, suggesting that each backup file has been copied to object storage upon its creation.</p>
+<p>The backup chain on the left becomes inactive after a new full backup file is created and consists of one <code>.vbk</code> file and five <code>.vib</code>  files. Since only the first four backup files (represented as grey blocks) in this inactive backup chain exceed the operational restore window, Veeam Backup &amp; Replication removes blocks of data from these four files only and leaves the other two <code>.vib</code>  files (created on Thursday and Friday) as they are until the operational restore window moves forward, and so on.</p>
+<p><img alt="Copy and Move" src="assets/copy_and_move.png" /></p>
+<p>After copy is complete, the new Object Storage node appears in the Home view, under the Backups node and shows backups that have been copied to object storage.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The copy is not performed in any of the following cases:
+- The target object storage repository is in the maintenance or seal mode.
+- During prohibited hours specified in the backup window configuration.</p>
+</div>
+<h3 id="downloading-data-from-object-storage">Downloading Data from Object Storage<a class="headerlink" href="#downloading-data-from-object-storage" title="Permanent link">¤</a></h3>
+<p>To download data from object storage back to the source extents, Veeam Backup &amp; Replication uses the SOBR Download session.</p>
+<p>The SOBR Download session is triggered right after you select the Copy to performance tier option; it collects offloaded blocks of data from object storage and copies them back to the on-premises extents. For more information, see Copying to Performance Tier and Downloading to Performance Tier.</p>
+<p>Consider the following:</p>
+<ul>
+<li>Before copying data blocks, Veeam Backup &amp; Replication verifies whether any of such blocks exist on any of the extents of your scale-out backup repository. If found, Veeam Backup &amp; Replication will use the existing blocks instead of downloading the exact same data from object storage.</li>
+<li>If a source extent is unable to accommodate data being copied due to lack of free storage space, Veeam Backup &amp; Replication will find another extent in the associated scale-out backup repository that has sufficient storage capacity to receive the data. If your scale-out backup repository has no extents other than the one running out of space, the copy will not be possible.</li>
+<li>If you have removed any of the extents from a scale-out backup repository without evacuating backup files with metadata, the copy will not be possible. Backup files with metadata are created, as described in Moving Inactive Backup Chains to Object Storage.</li>
+<li>The SOBR Download session results are saved to the configuration database and available for viewing, as described in Viewing Download Job Session Results.</li>
+</ul>
+<p>The following figure shows an example of replenishing on-premises storage with the data blocks being copied from the object storage repository.</p>
+<ul>
+<li>The Figure A represents an object storage repository containing blocks of data to be copied.</li>
+<li>The Figure B represents extents that store backup files with metadata to be replenished.</li>
+</ul>
+<p><img alt="Store Backup" src="assets/store_backup.png" /></p>
+<h3 id="backup-chain-legitimacy">Backup Chain Legitimacy<a class="headerlink" href="#backup-chain-legitimacy" title="Permanent link">¤</a></h3>
+<p>Before moving data to object storage repositories, Veeam Backup &amp; Replication scale-out repository validates the backup chain state to ensure that the restore points to be moved belong to an inactive backup chain. This does not apply to the copy policy: all newly created restore points are copied immediately.</p>
+<h3 id="inactive-backup-chain-of-a-backup-job">Inactive Backup Chain of a Backup Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-job" title="Permanent link">¤</a></h3>
+<p>When a backup job is being executed for the first time, Veeam Backup &amp; Replication creates an initial full backup file that contains complete information about the VMs that are being backed up. Each subsequent backup job sessions initiate creation of new incremental backup files that contain only changes which have occurred since the last backup session.</p>
+<p>Such a chain can be considered active as there are more incremental backups have yet to be created, depending on the backup job schedule configuration. For more information, see Define Job Schedule.</p>
+<p>To move data to object storage repositories, an active backup chain must be reset, that is, transformed into inactive.</p>
+<p>To transform an active backup chain into inactive, a new Active Full (or Synthetic Full) backup file must be created for such a chain. This can be done either manually, as described in Performing Active Full Backup, or you can configure a schedule, according to which new active full backups will be created automatically, as described in Active Full Backup.</p>
+<p>Once a new full backup file is created and the offload session is being executed, Veeam Backup &amp; Replication collects all the restore points (full and incremental) that were created prior to the latest active full, and prepares them to be moved to the object storage repository, as described in Moving Inactive Backup Chains to Object Storage.</p>
+<p>The following figure shows both inactive and active backup chains created with the incremental method. The inactive backup chain consisting of one <code>.vbk</code> file and five <code>.vib</code>  files can easily be offloaded once it satisfies validation criteria, whereas the active backup chain consisting of a <code>.vbk</code> file and a <code>.vib</code>  file would continue to grow with another incremental backups until it is reset by another full backup and so on.</p>
+<p><img alt="Inactive and Active" src="assets/inactive_active.png" /></p>
+<p>The same applies to backup chains created with the reverse-incremental method, except for in this method, all the <code>.vrb</code> files starting from the third restore point will be considered inactive automatically, as illustrated in the Figure A below. That said, you do not have to create an Active Full (nor Synthetic Full) backup manually unless you want to offload all the restore points including a <code>.vbk</code> file and the first two <code>.vrb</code> files, as illustrated in the Figure B.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Mind that a full backup file and the first two incremental backup files (that is, two <code>.vrb</code> files that immediately follow a <code>.vbk</code> file) will never be offloaded until another full backup file is created successfully, as illustrated in the Figure B.</p>
+</div>
+<p>Consider the following examples:</p>
+<ul>
+<li>The Figure A shows a backup chain consisting of 1 <code>.vbk</code> file and 6 <code>.vrb</code> files, of which only 4 <code>.vrb</code> files (represented as gray blocks) can be offloaded.</li>
+<li>The Figure B shows a backup chain consisting of 2 <code>.vbk</code> files and 7 <code>.vrb</code> files, of which only 6 <code>.vrb</code> files and a <code>.vbk</code> file (also represented as gray blocks) can be offloaded.</li>
+</ul>
+<p><img alt="Figure A and B" src="assets/figures.png" /></p>
+<p>Backup chains can be of a different structure, depending on whether your backups were created using the perVM method or as a single storage; when all VMs are placed into a single file. Both structure types can be offloaded to object storage repositories as long as these types are inactive.</p>
+<p>For more information on how Veeam Backup &amp; Replication creates and manages backup chains, see Backup Chain.</p>
+<h3 id="inactive-backup-chain-of-a-backup-copy-job">Inactive Backup Chain of a Backup Copy Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-copy-job" title="Permanent link">¤</a></h3>
+<p>When offloading backup chains created by backup copy jobs, only full backup files that have a GFS flag will be moved. That said, you must select the Keep the following restore points as full backups for archival purposes check box and (optionally) combine it with the Read the entire restore point from source backup instead of synthesizing it from increments check box at the Target step of the New Backup Copy Job wizard.</p>
+<p>For more information on how to configure a backup copy job and how the GFS retention works, see Creating Backup Copy Jobs and GFS Retention Policy respectively.</p>
+<p>Consider the following figures:</p>
+<ul>
+<li>The Figure A shows a backup chain consisting of 2 <code>.vbk</code> files and 5 <code>.vib</code>  files created with the synthetic full method.</li>
+</ul>
+<p>The Weekly Full Backup file (represented as a gray block) can be offloaded to object storage since it has a GFS flag assigned to it (as per example, the flag is Weekly), whereas the second <code>.vbk</code> file cannot be offloaded until it is also assigned a GFS flag, which happens after another full backup file is created.</p>
+<ul>
+<li>The Figure B shows a backup chain consisting of 3 <code>.vbk</code> files and 11 <code>.vib</code>  files created with the active full method.</li>
+</ul>
+<p>In this figure, a Weekly Full Backup file (represented as a gray block in the middle) has a Weekly flag, therefore, this full backup file can be offloaded to object storage. The second weekly full backup file (represented as an orange block on the rightmost side) also has a Weekly flag assigned, but since this file is active and is yet to be succeeded by another incremental backups during subsequent sessions of your backup copy job, it will not be offloaded until another full backup file is created and so on.</p>
+<p>The first backup file (represented as a green block on the left) will never be offloaded since it does not have any GFS flag assigned.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following types of backup files are never offloaded from backup chains created by backup copy jobs:
+- Full backup files (<code>.vbk</code>) that have not been assigned any GFS flag.
+- Incremental backup files (<code>.vib</code>).</p>
+</div>
+<p><img alt="Figure A and B" src="assets/figures2.png" /></p>
+<h3 id="retention-policy">Retention Policy<a class="headerlink" href="#retention-policy" title="Permanent link">¤</a></h3>
+<p>A retention policy defines the number of restore points to keep on your extents and is configured in the Specify Backup Storage Settings step of the backup job configuration wizard.</p>
+<p>The restore points that fall under the retention policy will be removed from both the extents and object storage repositories in the following manner:</p>
+<ul>
+<li>An earliest restore point will be removed from the backup chain on the associated extent.</li>
+<li>Data blocks that correspond to the restore point that is being removed will be purged from the object storage repository upon the next offload or copy session.</li>
+</ul>
+<p>Make sure that an object storage repository has not been put into maintenance mode, as this mode prevents synchronization of the on-premises backup chain state with that of object storage.</p>
+<p>For more information about the offload and copy sessions, see Moving Inactive Backup Chains to Object Storage and Copying Backups to Object Storage respectively.</p>
+<ul>
+<li>Immutable blocks of data are removed after the immutability period is over.</li>
+</ul>
+<p>When a retention policy encounters immutable copied/moved blocks of data, it removes such blocks from the associated backup files on the extents only and then updates indexes, informing Veeam Backup &amp; Replication that these blocks no longer exist and must be removed from object storage once mutable.</p>
+<p>For more information about immutability, see Immutability.</p>
+<ul>
+<li>Associated indexes will be updated for consistency purposes.</li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Sovereign Cloud Australia Pty Ltd. – <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

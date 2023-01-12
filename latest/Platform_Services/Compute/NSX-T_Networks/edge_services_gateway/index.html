@@ -1,0 +1,3961 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Edge Services Gateway">
+      
+      
+      
+        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-T_Networks/edge_services_gateway/">
+      
+      
+        <link rel="prev" href="../create_an_isolated_vdc_network/">
+      
+      
+        <link rel="next" href="../../NSX-V_Networks/configuration_of_logging_on_the_ESG/">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>Edge Services Gateway - AUCloud Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Questrial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-217577494-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Edge Services Gateway - AUCloud Documentation" >
+      
+        <meta  property="og:description"  content="Edge Services Gateway" >
+      
+        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Compute/NSX-T_Networks/edge_services_gateway.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-T_Networks/edge_services_gateway/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Edge Services Gateway - AUCloud Documentation" >
+      
+        <meta  name="twitter:description"  content="Edge Services Gateway" >
+      
+        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Compute/NSX-T_Networks/edge_services_gateway.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="AUCloud Documentation" class="md-header__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../../../aucloud.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AUCloud Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Edge Services Gateway
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../Platform_Overview/" class="md-tabs__link">
+        Platform Overview
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+        Platform Services
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/" class="md-tabs__link">
+      About AUCloud
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../Blog/" class="md-tabs__link">
+        Blog
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/aucloud/" class="md-tabs__link">
+      AUCloud on GitHub
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/partners" class="md-tabs__link">
+      AUCloud Partners
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/contact-us/" class="md-tabs__link">
+      Contact Us
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="AUCloud Documentation" class="md-nav__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../../../aucloud.svg" alt="logo">
+
+    </a>
+    AUCloud Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../Platform_Overview/">Platform Overview</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Overview" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/licensing/" class="md-nav__link">
+        Software Licensing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
+        AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../Platform_Overview/Security/">Security</a>
+          
+            <label for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/Security/network_security/" class="md-nav__link">
+        Network Security
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
+        Security and Governance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
+        Shared Responsibility Model
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../Platform_Overview/portal/">Portal</a>
+          
+            <label for="__nav_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Portal" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Portal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/portal/api_management/" class="md-nav__link">
+        API Management in the AUCloud Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
+        Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/portal/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
+        Managing User Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/portal/signing_the_crisp/" class="md-nav__link">
+        Signing the CRISP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../Platform_Overview/support/">Support</a>
+          
+            <label for="__nav_1_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Support" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          Support
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/support/aucloud_billing_portal/" class="md-nav__link">
+        AUCloud Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/support/aucloud_support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Platform_Overview/support/editing_a_support_ticket_in_the_portal/" class="md-nav__link">
+        Editing a Support Ticket in the Portal
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../">Platform Services</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Services" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SKAP/" class="md-nav__link">
+        Symmetric Key Agreement Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference_urls/" class="md-nav__link">
+        Reference URLs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sovereign_bridge/" class="md-nav__link">
+        Sovereign Bridge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Backup/">Backup</a>
+          
+            <label for="__nav_2_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Backup" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/about_backup/" class="md-nav__link">
+        About AUCloud Backup for VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/getting_started/" class="md-nav__link">
+        Self-Service Backup Portal – Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/restoring_vms_and_vapps/" class="md-nav__link">
+        Restoring VMs and vApps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/statistics_on_vcd_backups/" class="md-nav__link">
+        Viewing Statistics on VMware Cloud Director Backups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
+        Working with VMware Cloud Director Backup Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5_7" type="checkbox" id="__nav_2_5_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_7" tabindex="0" aria-expanded="false">
+          o365 Backup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="o365 Backup" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_7">
+          <span class="md-nav__icon md-icon"></span>
+          o365 Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/o365_Backup/azureAD_application_permission_requirements/" class="md-nav__link">
+        Azure AD Application Permission requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/o365_Backup/configuration/" class="md-nav__link">
+        Configuration of Microsoft O365 Service Account
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/o365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
+        Guide to the Veeam Restore Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/o365_Backup/how_to_generate_new_secret_veeam_o365/" class="md-nav__link">
+        How to generate a new secret for Veeam Backup for Office 365
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Backup/o365_Backup/overview/" class="md-nav__link">
+        O365 Backup Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Compute</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VMware_Cloud_Director_Overview/" class="md-nav__link">
+        VMware Cloud Director Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_3" type="checkbox" id="__nav_2_6_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_3" tabindex="0" aria-expanded="false">
+          Catalogs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catalogs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Catalogs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Catalogs/how_to_create_a_catalog/" class="md-nav__link">
+        How to create a catalog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+        How to share catalog library between AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_4" type="checkbox" id="__nav_2_6_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_4" tabindex="0" aria-expanded="false">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Getting_Started/getting_started_with_vcd/" class="md-nav__link">
+        Getting Started with VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Getting_Started/use_case/" class="md-nav__link">
+        Use Case - Create a Web Server to communicate with the internet
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_5" tabindex="0" aria-expanded="true">
+          NSX T Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX T Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          NSX T Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_a_routed_vdc_network/" class="md-nav__link">
+        Create a Routed VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_an_isolated_vdc_network/" class="md-nav__link">
+        Create an Isolated VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Edge Services Gateway
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Edge Services Gateway
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-virtual-network-infrastructure" class="md-nav__link">
+    Creating Virtual Network Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-ip-address-groups" class="md-nav__link">
+    Working with IP Address Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-port-profiles" class="md-nav__link">
+    Application Port Profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-rules" class="md-nav__link">
+    Firewall Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-find-your-allocated-external-ip-address" class="md-nav__link">
+    How to find your allocated external IP Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nat-rules" class="md-nav__link">
+    NAT Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-routes" class="md-nav__link">
+    Static Routes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-dhcp-pool" class="md-nav__link">
+    Creating a DHCP Pool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-an-ipsec-vpn" class="md-nav__link">
+    Configuring an IPSec VPN
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring an IPSec VPN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customising-security-profile" class="md-nav__link">
+    Customising Security Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-second-vpn-gateway" class="md-nav__link">
+    Creating a second VPN Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-esg-firewall" class="md-nav__link">
+    Configure the ESG Firewall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-external-datacenter-gateway-firewall" class="md-nav__link">
+    Configure the external datacenter gateway firewall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validating-the-tunnel" class="md-nav__link">
+    Validating the tunnel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipsec-vpn-configurable-options" class="md-nav__link">
+    IPSec VPN Configurable Options
+  </a>
+  
+    <nav class="md-nav" aria-label="IPSec VPN Configurable Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-configuration" class="md-nav__link">
+    Endpoint Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-profile" class="md-nav__link">
+    Security Profile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-load-balancer" class="md-nav__link">
+    Configure a Load Balancer
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure a Load Balancer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-service-engine-group" class="md-nav__link">
+    Creating a Service Engine Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-a-load-balancer-pool" class="md-nav__link">
+    Configuring a Load Balancer Pool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-virtual-service" class="md-nav__link">
+    Creating a Virtual Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-certificate-to-the-edge-services-gateway" class="md-nav__link">
+    Add a certificate to the Edge Services Gateway
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_6" type="checkbox" id="__nav_2_6_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_6" tabindex="0" aria-expanded="false">
+          NSX V Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX V Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          NSX V Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/configuration_of_logging_on_the_ESG/" class="md-nav__link">
+        Configuration of logging on the ESG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/" class="md-nav__link">
+        How the NSX-V Edge Services Gateway works
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_add_a_certificate/" class="md-nav__link">
+        How to add a certificate to the Edge Services Gateway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_configure_a_load_balancer/" class="md-nav__link">
+        How to configure a load balancer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_configure_ipsec_vpn/" class="md-nav__link">
+        How to configure IPSec VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_NAT_rules/" class="md-nav__link">
+        How to create NAT rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_a_dhcp_pool/" class="md-nav__link">
+        How to create a DHCP pool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_a_routed_vdc_network/" class="md-nav__link">
+        How to create a routed VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_a_static_route/" class="md-nav__link">
+        How to create a static route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_an_isolated_vdc_network/" class="md-nav__link">
+        How to create an isolated VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_create_firewall_rules/" class="md-nav__link">
+        How to create firewall rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/how_to_find_allocated_external_ip_addresses/" class="md-nav__link">
+        How to find your allocated external IP addresses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NSX-V_Networks/vapp_networks/" class="md-nav__link">
+        vApp Networks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_7" type="checkbox" id="__nav_2_6_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_7" tabindex="0" aria-expanded="false">
+          Using the Api
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using the Api" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_7">
+          <span class="md-nav__icon md-icon"></span>
+          Using the Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Using_the_Api/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+        Establishing a connection to AUCloud platform via PowerCLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Using_the_Api/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+        Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_8" type="checkbox" id="__nav_2_6_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_8" tabindex="0" aria-expanded="false">
+          Working with VMs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Working with VMs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Working with VMs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
+        How to migrate vApps between virtual data centres
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_create_a_vapp/" class="md-nav__link">
+        How to create a vApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_create_a_vm_from_a_template/" class="md-nav__link">
+        How to create a VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_create_an_empty_vm/" class="md-nav__link">
+        How to create an empty VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
+        How to increase the HDD or add a HDD to a Virtual Machine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_perform_guest_customisation/" class="md-nav__link">
+        How to perform Guest Customisation on the newly built VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_resize_vm_disk/" class="md-nav__link">
+        How to resize VM disk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_upload_media/" class="md-nav__link">
+        How to upload media
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_use_affinity_rules/" class="md-nav__link">
+        How to use affinity and anti‑affinity rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
+        How to view and update virtual machine settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_view_storage_profile_usage/" class="md-nav__link">
+        How to view storage profile usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
+        How to upload VM template/media using the VMware OVF tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Working_with_VMs/vmware_tools_installation/" class="md-nav__link">
+        VMware Tools Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Disaster_Recovery_and_Migration/">Disaster Recovery and Migration</a>
+          
+            <label for="__nav_2_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Disaster Recovery and Migration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Disaster Recovery and Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
+        How to conduct a test failover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
+        How to configure a new migration or replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
+        How to configure a new protection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
+        How to configure the network settings of a replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
+        How to perform a failover task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
+        How to perform a reverse task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/installing_and_configuring_vcav_on_premise/" class="md-nav__link">
+        Installing and configuring vCAV on premise
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
+        VMware Cloud Director Availability Quick Start Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
+        VMware Cloud Director Availability Replication Policies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" tabindex="0" aria-expanded="false">
+          End User Compute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="End User Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          End User Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../End_User_Compute/DaaS/" class="md-nav__link">
+        Desktop as a Service
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Object_Storage/">Object Storage</a>
+          
+            <label for="__nav_2_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Object Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Object Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/accessing_buckets_from_an_s3browser/" class="md-nav__link">
+        Accessing buckets from an s3browser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/accessing_object_storage/" class="md-nav__link">
+        Accessing Object Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+        Add an object to a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/copy_an_object/" class="md-nav__link">
+        Copy an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/creating_a_bucket/" class="md-nav__link">
+        Creating a Bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+        Delete an object or a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/security_credentials/" class="md-nav__link">
+        Security Credentials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/view_an_object/" class="md-nav__link">
+        View an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
+        View properties and manage permissions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Storage/">Storage</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/" class="md-nav__link">
+        About AUCloud
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../Blog/">Blog</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/aucloud/" class="md-nav__link">
+        AUCloud on GitHub
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/partners" class="md-nav__link">
+        AUCloud Partners
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/contact-us/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-virtual-network-infrastructure" class="md-nav__link">
+    Creating Virtual Network Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-ip-address-groups" class="md-nav__link">
+    Working with IP Address Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-port-profiles" class="md-nav__link">
+    Application Port Profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-rules" class="md-nav__link">
+    Firewall Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-find-your-allocated-external-ip-address" class="md-nav__link">
+    How to find your allocated external IP Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nat-rules" class="md-nav__link">
+    NAT Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-routes" class="md-nav__link">
+    Static Routes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-dhcp-pool" class="md-nav__link">
+    Creating a DHCP Pool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-an-ipsec-vpn" class="md-nav__link">
+    Configuring an IPSec VPN
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring an IPSec VPN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customising-security-profile" class="md-nav__link">
+    Customising Security Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-second-vpn-gateway" class="md-nav__link">
+    Creating a second VPN Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-esg-firewall" class="md-nav__link">
+    Configure the ESG Firewall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-external-datacenter-gateway-firewall" class="md-nav__link">
+    Configure the external datacenter gateway firewall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validating-the-tunnel" class="md-nav__link">
+    Validating the tunnel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipsec-vpn-configurable-options" class="md-nav__link">
+    IPSec VPN Configurable Options
+  </a>
+  
+    <nav class="md-nav" aria-label="IPSec VPN Configurable Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-configuration" class="md-nav__link">
+    Endpoint Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-profile" class="md-nav__link">
+    Security Profile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-load-balancer" class="md-nav__link">
+    Configure a Load Balancer
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure a Load Balancer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-service-engine-group" class="md-nav__link">
+    Creating a Service Engine Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-a-load-balancer-pool" class="md-nav__link">
+    Configuring a Load Balancer Pool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-virtual-service" class="md-nav__link">
+    Creating a Virtual Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-certificate-to-the-edge-services-gateway" class="md-nav__link">
+    Add a certificate to the Edge Services Gateway
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+  <h1>Edge Services Gateway</h1>
+
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<p>The ESG included as part of a Virtual Organisation (vOrg) provides connectivity between internal and external Organisation VDC Networks. It is a virtual appliance that provides multiple features, including:</p>
+<ul>
+<li>Dynamic Host Configuration Protocol (DHCP)</li>
+<li>Virtual Private Network (VPN)</li>
+<li>Network Address Translation (NAT)</li>
+<li>Firewall</li>
+<li>Load Balancing</li>
+</ul>
+<p>The following diagram shows the ESG acting as a router and a Firewall. Internal networks cannot communicate with external (public) networks unless the ESG has been correctly configured:</p>
+<p><img alt="Edge Services Gateway" src="../assets/edge_services_gateway.png" /></p>
+<p>Additional information on the Edge Services Gateway can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-45C0FEDF-84F2-4487-8DB8-3BC281EB25CD.html">Managing NSX-T Data Center Edge Gateways.</a></p>
+<h3 id="creating-virtual-network-infrastructure">Creating Virtual Network Infrastructure<a class="headerlink" href="#creating-virtual-network-infrastructure" title="Permanent link">¤</a></h3>
+<p>Virtual compute and networking infrastructure must be created before ESG configuration.</p>
+<p>Further information on creating Networks inside the VDC are located:</p>
+<ul>
+<li><a href="../create_a_routed_vdc_network/">How to create a routed VDC Network</a></li>
+<li>
+<p><a href="../create_an_isolated_vdc_network/">How to create an isolated VDC Network</a></p>
+<p><img alt="Edge Connection" src="../assets/edge_connection.png" /></p>
+</li>
+</ul>
+<h3 id="working-with-ip-address-groups">Working with IP Address Groups<a class="headerlink" href="#working-with-ip-address-groups" title="Permanent link">¤</a></h3>
+<p>IP address group (IP Set) is a way to group a list of IP addresses or a range of IP addresses. You can use IP address groups while defining Edge Firewall Rules and distributed Firewall Rules.</p>
+<p>IP Sets are a group of objects to which the Firewall Rules apply. Combing multiple objects into IP Sets helps reduce the total number of Firewall Rules to be created.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-6A0E39F5-123C-4429-ACAC-31025A364411.html">Add an IP Set to an NSX-T Data Center Edge Gateway.</a></p>
+<p>To setup an IP set use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC in which you want to create the IP Set.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways.png" /></p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Security</strong>, select <strong>IP Sets</strong>, then select <strong>New</strong>.</p>
+<p><img alt="New IP Set" src="../assets/ip_sets.png" /></p>
+</li>
+<li>
+<p>Enter a <strong>Name</strong>, optionally a <strong>description</strong>, and <strong>IP Address</strong> information in the following format:</p>
+<ul>
+<li>IPv4 IP Address</li>
+<li>IPv6 IP Address</li>
+<li>IP Range, or CIDR</li>
+</ul>
+</li>
+<li>
+<p>When complete, click <strong>Add</strong>, after all addresses are added, click <strong>Save</strong>.</p>
+<p><img alt="IP Sets" src="../assets/ip_sets_new.png" /></p>
+</li>
+<li>
+<p>Repeat the above steps to create as many IP Sets as required.</p>
+</li>
+</ol>
+<h3 id="application-port-profiles">Application Port Profiles<a class="headerlink" href="#application-port-profiles" title="Permanent link">¤</a></h3>
+<p>Application port profiles include a combination of a protocol and a port, or a group of ports, that is used for firewall and NAT services on the edge gateway.</p>
+<p>In addition to the default port profiles that are pre-configured for NSX-T Data Center, you can create custom application port profiles.</p>
+<p>When you create a custom application port profile on an edge gateway, it becomes visible to all the other NSX-T Data Center edge gateways that are in the same organization VDC.</p>
+<p>To create custom Application Port Profiles, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC in which you want to create the Application Port Profile.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways.png" /></p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Security</strong>, select <strong>Application Port Profiles</strong>, under <em>Custom Applications</em> select <strong>New</strong>.</p>
+<p><img alt="Application Port Profiles" src="../assets/application_port_profiles.png" /></p>
+</li>
+<li>
+<p>Enter a <strong>Name</strong>, optionally a <strong>Description</strong>.</p>
+</li>
+<li>
+<p>Choose <strong>Protocol</strong> and enter the required <strong>Ports</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Add Port Profile</strong> to add more ports as required.</p>
+</li>
+<li>
+<p>When complete, click <strong>Save</strong>.</p>
+<p><img alt="Application Port Profiles New" src="../assets/application_port_profiles_new.png" /></p>
+</li>
+</ol>
+<h3 id="firewall-rules">Firewall Rules<a class="headerlink" href="#firewall-rules" title="Permanent link">¤</a></h3>
+<p>VMware Cloud Director provides a fully featured Layer 3 Firewall (Edge Services Gateway) to control transit from inside to outside security boundary, and within the various virtual datacenters (VDC) networks you create.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html">Add an NSX-T Data Center Edge Gateway Firewall Rule.</a></p>
+<p>When creating Firewall Rules, <strong>IP Sets</strong> are required, information on <strong>IP Sets</strong> is located <a href="#working-with-ip-address-groups">above.</a></p>
+<p>When creating Firewall Rules, <strong>Application Port Profiles</strong> may be required, information on <strong>Application Port Profiles</strong> is located <a href="#application-port-profiles">above.</a></p>
+<p>To create Firewall rules, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to create the Firewall Rules.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways.png" /></p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Services</strong>, select <strong>Firewall</strong>, then select <strong>Edit Rules</strong>.</p>
+<p><img alt="Firewall Rules" src="../assets/firewall_rules.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the first created Firewall Rule, <strong>New on Top</strong> will be the only available option.</p>
+</div>
+</li>
+<li>
+<p>For the new Firewall Rule, specify a <strong>Name</strong>.</p>
+</li>
+<li>
+<p>Under applications, click the pencil, enable <strong>Choose a specific application</strong>, choose what is required, and click <strong>Save</strong>.</p>
+<p><img alt="Edit Firewall Rules" src="../assets/firewall_edit_rules.png" />
+<img alt="Firewall Applications" src="../assets/firewall_applications.png" /></p>
+</li>
+<li>
+<p>Under <strong>Source</strong> and <strong>Destination</strong>, click the pencil, choose the IP Set created above, or enable <strong>Any</strong>, and click <strong>Keep</strong>.</p>
+<p><img alt="Firewall Source and Destination" src="../assets/firewall_source_destination.png" />
+<img alt="Firewall Source Groups" src="../assets/firewall_source_groups.png" /></p>
+</li>
+<li>
+<p>Under Action, chose one of the following:</p>
+<ul>
+<li>Allow</li>
+<li>Drop</li>
+<li>Reject</li>
+</ul>
+<p><img alt="Firewall Action" src="../assets/firewall_action.png" /></p>
+</li>
+<li>
+<p>Under IP Protocol, chose one of the following:</p>
+<ul>
+<li>IPv4</li>
+<li>IPv6</li>
+<li>IPv4 and IPv6</li>
+</ul>
+<p><img alt="Firewall IP Protocol" src="../assets/firewall_ip_protocol.png" /></p>
+</li>
+<li>
+<p>Enable Logging if required.</p>
+</li>
+<li>
+<p>Write a Comment if required.</p>
+</li>
+<li>
+<p>Repeat above steps for multiple Firewall Rules, when complete, click <strong>Save</strong>.</p>
+</li>
+</ol>
+<h3 id="how-to-find-your-allocated-external-ip-address">How to find your allocated external IP Address<a class="headerlink" href="#how-to-find-your-allocated-external-ip-address" title="Permanent link">¤</a></h3>
+<p>To route traffic to your external network (for example internet) and configure settings such as NAT rules, you need to know your external IP addresses. AUCloud standard IP address allocation is 2 Public IP addresses per Org vDC.</p>
+<p>To find your allocated IP, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to find the external IP Addresses.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>IP Management</strong>, select <strong>IP Allocations</strong>.</p>
+</li>
+<li>
+<p>The Allocated IP will be listed under <strong>IP Range</strong>.</p>
+<p><img alt="Allocated IPs" src="../assets/ip_allocations.png" /></p>
+</li>
+</ol>
+<h3 id="nat-rules">NAT Rules<a class="headerlink" href="#nat-rules" title="Permanent link">¤</a></h3>
+<p>Network Address Translation (NAT) allows the source or destination IP address to be changed to enable traffic to transition through a router or gateway.</p>
+<p>You can use three types of NAT within your Edge Services Gateway (ESG):</p>
+<ul>
+<li>Destination NAT (DNAT) - changes the destination IP of the packet</li>
+<li>Source NAT (SNAT) - changes the source IP of the packet</li>
+<li>Reflexive (stateless NAT) - source packets undergo destination address rewriting, and destination packets undergo source address rewriting</li>
+</ul>
+<p>There are two types of NAT within your Edge Services Gateway (ESG) to disable NAT rules:</p>
+<ul>
+<li>No DNAT</li>
+<li>No SNAT</li>
+</ul>
+<p>For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For both DNAT and SNAT:</p>
+<ul>
+<li>The NAT rule will be applied to the ESG, rather than to the internal VDC network.</li>
+<li>Firewall rules permitting the associated traffic will also need to be created.</li>
+</ul>
+</div>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html">Add an SNAT or a DNAT Rule to an NSX-T Edge Gateway.</a></p>
+<p>To add NAT rules, use the following steps:</p>
+<ol>
+<li>
+<p>In the Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to create the NAT Rules.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Services</strong>, select <strong>NAT</strong>, then select <strong>New</strong>.</p>
+<p><img alt="New NAT" src="../assets/nat_new.png" /></p>
+</li>
+<li>
+<p>For the new NAT Rule, specify a <strong>Name</strong>, add a description if required and chose the required <strong>Interface Type</strong>.</p>
+<p><img alt="Add NAT" src="../assets/nat_add.png" /></p>
+</li>
+<li>
+<p>Enter the <strong>External IP</strong> and <strong>Internal IP</strong>. Enter an <strong>External Port</strong> if required, if an <strong>Application</strong> is required, use the Pencil Icon.</p>
+<p><img alt="NAT Details" src="../assets/nat_details.png" /></p>
+</li>
+<li>
+<p>Click <strong>Save</strong> once information has been filled out, repeat if further NAT Rules are required.</p>
+</li>
+</ol>
+<h3 id="static-routes">Static Routes<a class="headerlink" href="#static-routes" title="Permanent link">¤</a></h3>
+<p>Static routing allows you to configure your Edge Services Gateway (ESG) with knowledge of other networks which are not directly connected to it. It is particularly useful if you need to:</p>
+<ul>
+<li>route between virtual data centres (VDCs) in the same virtual organisation (vOrg), or</li>
+<li>route traffic to vApp networks.</li>
+</ul>
+<p>For example, you may have a vApp network 192.168.8.0/24 routed to a VDC network called <em>Front End Network</em>. You could create a static route to enable traffic to get to the outside IP of the vApp edge at 192.168.4.33 (a NAT will exist there).</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-2E15ADD4-FC60-46B6-B634-481C16C473B9.html#GUID-2E15ADD4-FC60-46B6-B634-481C16C473B9">Configure Static Routing on an NSX-T Data Center Edge Gateway.</a></p>
+<p>To create a Static Route, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to create Static Routes.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Routing</strong>, select <strong>Static Routes</strong>, then select <strong>New</strong>.</p>
+<p><img alt="New Static Route" src="../assets/static_route_new.png" /></p>
+</li>
+<li>
+<p>On the <strong>General</strong> tab, enter a <strong>Name</strong>, a <strong>Description</strong> if required, and a <strong>Network</strong>.</p>
+<p><img alt="Create Static Route" src="../assets/static_route_create.png" /></p>
+</li>
+<li>
+<p>On the <strong>Next Hops</strong> tab, enter an <strong>IP Address</strong>, alter <strong>Admin Distance</strong> if required, and chose a Network via <strong>Scope</strong> if required. Click Save once complete.</p>
+<p><img alt="Static Route Hops" src="../assets/static_route_hops.png" /></p>
+</li>
+</ol>
+<h3 id="creating-a-dhcp-pool">Creating a DHCP Pool<a class="headerlink" href="#creating-a-dhcp-pool" title="Permanent link">¤</a></h3>
+<p>With virtual data centre (VDC) networks, you have the option of creating an IP pool of addresses to be assigned automatically or manually (static IP pool). These addresses are injected into virtual machines (VMs) via VMware Tools during Guest Customisation. They appear in the usual places in Windows and Linux where you would interrogate IP settings and show as static addresses.</p>
+<p>In some situations, you may require true DHCP functionality in your VMs to show IP addresses as dynamically defined. As with an IP pool, you are defining a non-overlapping range of IP addresses to use on the network.</p>
+<p>Prerequisites:</p>
+<p>Network created and joined to the ESG:</p>
+<ul>
+<li>How to create an Isolated VDC Network - <strong>TODO link</strong></li>
+<li>How to create a routed VDC Network - <strong>TODO link</strong></li>
+</ul>
+<p>To create a DHCP Pool, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Networks in which you want to create a DHCP Pools.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Networks</strong>.</p>
+<p><img alt="Networks" src="../assets/networks.png" /></p>
+</li>
+<li>
+<p>Chose the required Network.</p>
+</li>
+<li>
+<p>You can also select the Network, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Networks</strong>, and choosing the Network.</p>
+<p><img alt="Networks Alt" src="../assets/networks_alt.png" /></p>
+</li>
+<li>
+<p>Under <strong>IP Management</strong>, click <strong>DHCP</strong>.</p>
+</li>
+<li>
+<p>If DHCP is not enabled, click <strong>Activate</strong>.</p>
+<p><img alt="Activate DHCP" src="../assets/dhcp_activate.png" /></p>
+</li>
+<li>
+<p>On the General Settings tab:</p>
+<ul>
+<li>the <strong>Subnet</strong> will be the Network chosen above.</li>
+<li>for <strong>DHCP Mode</strong>, chose <strong>Network</strong> for Isolated Networks, or <strong>Gateway/Relay</strong> for Routed Networks.</li>
+<li><strong>Listener IP Address</strong> will be set automatically.</li>
+<li>
+<p>Adjust the <strong>Lease Time</strong> if required and click Next.</p>
+<p><img alt="DHCP Settings" src="../assets/dhcp_settings.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>DHCP Pools</strong> tab:</p>
+<ul>
+<li>Enter an <strong>IP Range</strong> as required.</li>
+<li>If further DHCP Pools are required, click <strong>Add</strong>.</li>
+<li>
+<p>When complete, click <strong>Next</strong>.</p>
+<p><img alt="DHCP Pools" src="../assets/dhcp_pools.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>DNS through DHCP</strong> tab:</p>
+<ul>
+<li>Enter DNS Server 1 and DNS Server 2 as required.</li>
+<li>
+<p>When complete, click <strong>Next</strong>.</p>
+<p><img alt="DNS through DHCP" src="../assets/dhcp_dns.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>Review and Complete</strong> Tab:</p>
+<ul>
+<li>Verify all settings.</li>
+<li>When Complete, click <strong>Finish</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Repeat if further DHCP Pools are required for the same, or different networks.</p>
+</li>
+</ol>
+<h3 id="configuring-an-ipsec-vpn">Configuring an IPSec VPN<a class="headerlink" href="#configuring-an-ipsec-vpn" title="Permanent link">¤</a></h3>
+<p>VMware Cloud Director supports the following types of site-to-site VPN:</p>
+<ul>
+<li>Another edge gateway in the same organisation</li>
+<li>An edge gateway in another organisation</li>
+<li>A remote network offering IPsec VPN endpoint capability</li>
+</ul>
+<p>Depending on the type of connection required, you will need to:</p>
+<ul>
+<li>complete IP addressing for both ends together with a shared secret, and</li>
+<li>indicate which virtual data centre (VDC) networks can connect to the VPN link.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Edge Services Gateway (ESG) supports <strong>site-to-site VPN only</strong> and does not support VPN client or SSL VPN. If a VPN client is required, you will need to deploy a solution for the remote access VPN concentrator such as a Palo Alto, F5 or Fortinet.</p>
+</div>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-90B5FC50-F39E-461B-A854-7AD19353621E.html">Configure NSX-T Policy-Based IPSec VPN.</a></p>
+<p>Prerequisites:</p>
+<ul>
+<li>Locate external IP addresses to use as your tunnel endpoint address, documented <a href="#how-to-find-your-allocated-external-ip-address">above.</a></li>
+</ul>
+<p>To configure an IPSec VPN, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to create the IPSec VPN.</p>
+</li>
+<li>
+<p>In the left navigation panel, click <strong>Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Services</strong>, select <strong>IPSec VPN</strong> and click <strong>New</strong>.</p>
+<p><img alt="IPSec VPN" src="../assets/ipsec_vpn.png" /></p>
+</li>
+<li>
+<p>On the <strong>General Settings</strong> page, enter a <strong>Name</strong>, a <strong>Description</strong> if required, enable <strong>Logging</strong> if required, and click <strong>Next</strong>.</p>
+<p><img alt="IPSec VPN Tunnel" src="../assets/ipsec_vpn_tunnel.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Security Profile</strong> cannot be edited until the IPSec VPN has been successfully created.</p>
+</div>
+</li>
+<li>
+<p>On the <strong>Peer Authentication Mode</strong> page, for the <strong>Authentication Mode</strong>, chose either a Pre-Shared Key or a Certificate.</p>
+<ul>
+<li>
+<p><strong>Pre-Shared Key</strong> - enter a Pre-Shared key and click <strong>Next</strong>.</p>
+<p><img alt="IPSec VPN Authentication" src="../assets/ipsec_vpn_authentication.png" /></p>
+</li>
+<li>
+<p><strong>Certificate</strong> - chose an uploaded Server Certificate and CA Certificate and click <strong>Next</strong>.</p>
+<p><img alt="IPSec VPN Certificate" src="../assets/ipsec_vpn_certificate.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>Endpoint Configuration</strong> page, enter required details, information on configurable fields can be viewed <a href="ipsec-vpn-configurable-options">below.</a> </p>
+<p><img alt="IPSec VPN Endpoint" src="../assets/ipsec_vpn_endpoint.png" /></p>
+</li>
+<li>
+<p>Once complete, click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Ready to Complete</strong> page, review the settings, and click <strong>Finish</strong>, if the tunnel fails to create, review the settings and try again.</p>
+<p><img alt="IPSec VPN Confirmation" src="../assets/ipsec_vpn_confirmation.png" /></p>
+</li>
+</ol>
+<h4 id="customising-security-profile">Customising Security Profile<a class="headerlink" href="#customising-security-profile" title="Permanent link">¤</a></h4>
+<p>If the Default Security Profile needs to be edited after the IPSec VPN has been created, use the following steps:</p>
+<ol>
+<li>
+<p>On the ESG, under <strong>Services</strong>, Click <strong>IPSec VPN</strong>, you should see the newly created IPSec VPN.</p>
+</li>
+<li>
+<p>Click the IPSec VPN, and click <strong>Security Profile Customization</strong>.</p>
+<p><img alt="IPSec VPN Profile" src="../assets/ipsec_vpn_profile.png" /></p>
+</li>
+<li>
+<p>Editing the required settings using IPSec VPN Configurable Options <a href="#ipsec-vpn-configurable-options">below.</a></p>
+</li>
+<li>
+<p>When complete, click <strong>Save</strong>.</p>
+<p><img alt="IPSec VPN Profile" src="../assets/ipsec_vpn_customize_profile.png" /></p>
+</li>
+</ol>
+<h4 id="creating-a-second-vpn-gateway">Creating a second VPN Gateway<a class="headerlink" href="#creating-a-second-vpn-gateway" title="Permanent link">¤</a></h4>
+<p>You now need to create the endpoint of the VPN tunnel. If this is a different VDC or vOrg, go through the steps described above again to create the tunnel. When completed, you can change your firewall settings and validate the connection. Refer to Firewall rules <a href="#firewall-rules">above,</a> and Validating the tunnel [below.]#validating-the-tunnel</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are connecting to an external datacenter, you will need to set up the tunnel on that premises. This is <strong>outside of the scope</strong> of this article and will depend on your specific on-premises network configuration.</p>
+</div>
+<h4 id="configure-the-esg-firewall">Configure the ESG Firewall<a class="headerlink" href="#configure-the-esg-firewall" title="Permanent link">¤</a></h4>
+<p>When the VPN tunnel is up and running, you will need to create firewall rules on the ESG for any traffic passing over the tunnel, refer to Firewall Rules <a href="#firewall-rules">above.</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>You need to create a firewall rule for both directions - from datacenter to VDC and from VDC to datacenter.</li>
+<li>For datacenter to VDC, set:<ul>
+<li>Source as the source IP range for your external VDC/datacenter network</li>
+<li>Destination as the destination IP range for your VDC network</li>
+</ul>
+</li>
+<li>For VDC to datacenter, set:<ul>
+<li>Source as the source IP range for your VDC network</li>
+<li>Destination as the destination IP range for your datacenter/VDC network</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 id="configure-the-external-datacenter-gateway-firewall">Configure the external datacenter gateway firewall<a class="headerlink" href="#configure-the-external-datacenter-gateway-firewall" title="Permanent link">¤</a></h4>
+<p>When the VPN tunnel is up and running, you may need to create firewall rules and routes on your on-premises gateway or other internal firewall for traffic passing over the tunnel.</p>
+<p>This is <strong>outside of the scope</strong> of this article and will depend on your specific on-premises network configuration.</p>
+<h4 id="validating-the-tunnel">Validating the tunnel<a class="headerlink" href="#validating-the-tunnel" title="Permanent link">¤</a></h4>
+<p>When both ends of the IPSec tunnel are configured, the connection should start without any issues.</p>
+<p>To verify the tunnel status in VMware Cloud Director, use the following steps:</p>
+<ol>
+<li>
+<p>On the ESG, under <strong>Services</strong>, click <strong>IPSec VPN</strong>, you should see the newly created IPSec VPN.</p>
+</li>
+<li>
+<p>Click the IPSec VPN, and click <strong>View Statistics</strong>.</p>
+<p><img alt="IPSec VPN View" src="../assets/ipsec_vpn_view.png" /></p>
+</li>
+<li>
+<p>On the <strong>"IPSec VPN" Statistics</strong> page, you will be able to view the status, and fail reason. There is advanced traffic statistics under <strong>Traffic and Errors</strong>. When done, click <strong>Ok</strong>.</p>
+<p><img alt="IPSec VPN Statistics" src="../assets/ipsec_vpn_statistics.png" /></p>
+</li>
+</ol>
+<h4 id="ipsec-vpn-configurable-options">IPSec VPN Configurable Options<a class="headerlink" href="#ipsec-vpn-configurable-options" title="Permanent link">¤</a></h4>
+<p>The following tables will outline the configurable options when creating or configuring an IPSec VPN.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B2A795E7-32B7-48B7-BEA6-4E311096608E.html">Customize the Security Profile of an IPSec VPN Tunnel.</a></p>
+<h5 id="endpoint-configuration">Endpoint Configuration<a class="headerlink" href="#endpoint-configuration" title="Permanent link">¤</a></h5>
+<table>
+<thead>
+<tr>
+<th>Heading</th>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local Endpoint</td>
+<td>IP Address</td>
+<td>The external IP of your ESG refer to How to find your allocated external IP Address <a href="#how-to-find-your-allocated-external-ip-address">above.</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Networks</td>
+<td>The organisation networks that can access the VPN (separate multiple local subnets with commas). Must be entered in CIDR format.</td>
+</tr>
+<tr>
+<td>Remote Endpoint</td>
+<td>IP Address</td>
+<td>The external IP of your remote site or on-premises firewall or edge where VPN is being set up.</td>
+</tr>
+<tr>
+<td></td>
+<td>Networks</td>
+<td>This is the subnet on your on-premises network that you want to make accessible from your AUCloud VDC.</td>
+</tr>
+<tr>
+<td></td>
+<td>Remote ID</td>
+<td>Unique identifier, will default to the Remote Endpoint IP Address.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="security-profile">Security Profile<a class="headerlink" href="#security-profile" title="Permanent link">¤</a></h5>
+<table>
+<thead>
+<tr>
+<th>Heading</th>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IKE Profiles</td>
+<td>Version</td>
+<td>The IKE Version.</td>
+</tr>
+<tr>
+<td></td>
+<td>Encryption</td>
+<td>Supported encryption algorithm to use during the Internet Key Exchange (IKE) negotiation.</td>
+</tr>
+<tr>
+<td></td>
+<td>Digest</td>
+<td>Secure hashing algorithm to use during the IKE negotiation.</td>
+</tr>
+<tr>
+<td></td>
+<td>Diffie-Hellman Group</td>
+<td>Cryptography scheme that allows the peer site and the edge gateway to establish a shared secret over an insecure communications channel.</td>
+</tr>
+<tr>
+<td></td>
+<td>Associated Life Time</td>
+<td>(Optional) number of seconds before the IPSec tunnel needs to reestablish.</td>
+</tr>
+<tr>
+<td>Tunnel Configuration</td>
+<td>Enable Perfect Forward Secrecy</td>
+<td>Enable this if your on-premises/remote site has this capability.</td>
+</tr>
+<tr>
+<td></td>
+<td>Defragmentation Policy</td>
+<td>Helps to handle defragmentation bits present in the inner packet. Copy - Copies the defragmentation bit from the inner IP packet to the outer packet. Clear - Ignores the defragmentation bit present in the inner packet.</td>
+</tr>
+<tr>
+<td></td>
+<td>Encryption</td>
+<td>Supported encryption algorithm to use during the Internet Key Exchange (IKE) negotiation.</td>
+</tr>
+<tr>
+<td></td>
+<td>Digest</td>
+<td>Secure hashing algorithm to use during the IKE negotiation.</td>
+</tr>
+<tr>
+<td></td>
+<td>Diffie-Hellman Group</td>
+<td>Cryptography scheme that allows the peer site and the edge gateway to establish a shared secret over an insecure communications channel.</td>
+</tr>
+<tr>
+<td></td>
+<td>Associated Life Time</td>
+<td>(Optional) number of seconds before the IPSec tunnel needs to reestablish.</td>
+</tr>
+<tr>
+<td>DPD Configuration</td>
+<td>Probe Interval</td>
+<td>(Optional) default number of seconds for dead peer detection.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configure-a-load-balancer">Configure a Load Balancer<a class="headerlink" href="#configure-a-load-balancer" title="Permanent link">¤</a></h3>
+<p>As an Organisation Administrator, by configuring virtual services which distribute traffic across multiple server pools, you can balance the workloads in your datacenters that are backed by NSX-T Data Center.</p>
+<p>VMware Cloud Director supports L4 and L7 load balancing that you can configure on an NSX-T Data Center edge gateway.</p>
+<p>Level 4 load balancing (L4) directs traffic based on data from network and transport layer protocols, such as IP address and TCP port.</p>
+<p>Level 7 load balancing (L7) distributes traffic based on attributes such as HTTP header, uniform resource identifier, SSL session ID, and HTML form data.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-92A0563D-A272-4958-B732-9C35901D9DB8.html">Working with NSX Advanced Load Balancing.</a></p>
+<p>To enable a load balancer, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the Edge Services Gateway in which you want to create a Load Balancer.</p>
+</li>
+<li>
+<p>In the left navigation panel, <strong>click Edges</strong>.</p>
+<p><img alt="Edge" src="../assets/edge.png" /></p>
+</li>
+<li>
+<p>Select the ESG for configuration, and a new menu will appear.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways.png" /></p>
+</li>
+<li>
+<p>You can also select the ESG, via the <strong>Networking</strong> Tab on the top navigation menu, then selecting <strong>Edge Gateways</strong>, and choosing the Edge Gateway.</p>
+<p><img alt="Edge Gateways" src="../assets/edge_gateways_alt.png" /></p>
+</li>
+<li>
+<p>From the menu bar on the left under <strong>Load Balancer</strong>, select <strong>General Settings</strong>, then select <strong>Edit</strong>.</p>
+<p><img alt="Load Balancer" src="../assets/load_balancer.png" /></p>
+</li>
+<li>
+<p>On the <strong>Edit General Settings</strong> page under <strong>Load Balancer State</strong>, toggle the <strong>Active</strong> slider to Green.</p>
+</li>
+<li>
+<p>If prompted for a <strong>Feature Set</strong>, choose one of the following:</p>
+<ul>
+<li><strong>Standard</strong> - The standard feature set provides the load balancing features included in VMware NSX Advanced Load Balancer Basic Edition.</li>
+<li><strong>Premium</strong> - The premium feature set provides access to some Premium features, such as, for example, additional load balancing pool algorithm types and pool persistence profiles, virtual service analytics, pool analytics, multiple virtual service ports, and additional virtual service application profile types. </li>
+</ul>
+</li>
+<li>
+<p>Under <strong>Service Network</strong>, enter the following:</p>
+<ul>
+<li>
+<p>IPv4 Network, IPv6 Network or both.</p>
+</li>
+<li>
+<p>Use the default IPv4 Network by leaving Use Default check box ticked.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+<p><img alt="Load Balancer Settings" src="../assets/load_balancer_settings.png" /></p>
+</li>
+<li>
+<p>Once enabled, you will notice on the left menu bar under <strong>Load Balancer</strong>, that additional sub-headings have appeared.</p>
+<p><img alt="Load Balancer Headings" src="../assets/load_balancer_headings.png" /></p>
+</li>
+</ol>
+<h4 id="creating-a-service-engine-group">Creating a Service Engine Group<a class="headerlink" href="#creating-a-service-engine-group" title="Permanent link">¤</a></h4>
+<p>The load balancing compute infrastructure provided by NSX Advanced Load Balancer is organized into service engine groups.</p>
+<p>A system administrator can assign one or more service engine groups to an NSX-T Data Center ESG.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5712D1CE-5966-48E5-A51F-DA60F956C7AC.html">Assign a Service Engine Group to an NSX-T Data Center Edge Gateway.</a></p>
+<p>To create a Service Engine Group, use the following steps:</p>
+<ol>
+<li>
+<p>Under Load Balancer, select Service Engine Groups, and click Add.</p>
+<p><img alt="Service Engine Group" src="../assets/load_balancer_service_engine_group.png" /></p>
+</li>
+<li>
+<p>Select an available service engine group from the list.</p>
+</li>
+<li>
+<p>Enter a number for the <strong>Maximum Allowed</strong> Virtual Services that can be placed on the ESG.</p>
+</li>
+<li>
+<p>Enter a number for the <strong>Reserved</strong> Virtual Services available to the ESG.</p>
+</li>
+<li>
+<p>When done, click Save.</p>
+<p><img alt="Add Service Engine Group" src="../assets/load_balancer_service_engine_group_add.png" /></p>
+</li>
+</ol>
+<h4 id="configuring-a-load-balancer-pool">Configuring a Load Balancer Pool<a class="headerlink" href="#configuring-a-load-balancer-pool" title="Permanent link">¤</a></h4>
+<p>A server pool is a group of one or more servers that you configure to run the same application and to provide high availability.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-033348E5-435E-4F8F-8A5E-FFA001F659FC.html">Add a Load Balancer Server Pool.</a></p>
+<p>To configure a Load Balancer Pool, use the following steps:</p>
+<ol>
+<li>
+<p>Under <strong>Load Balancer</strong>, select <strong>Pools</strong>, and click <strong>Add</strong>.</p>
+<p><img alt="Load Balancer Pools" src="../assets/load_balancer_pools.png" /></p>
+</li>
+<li>
+<p>Under the <strong>General Settings</strong> tab, enter a <strong>Name</strong> and a <strong>Description</strong> if required.</p>
+</li>
+<li>
+<p>Configure settings as required:</p>
+<ul>
+<li><strong>Load Balancer Algorithm</strong> - Least Connections/Round Robin/Consistent Hash</li>
+<li><strong>State</strong> - Enable/Disable Load Balancer Pool</li>
+<li><strong>Default Server Port</strong> - Destination server port</li>
+<li><strong>Graceful Disable Timeout</strong> - Maximum time to gracefully disable a member</li>
+<li><strong>Persistence</strong> - Persistence profile for Load Balancer Pool</li>
+<li>
+<p><strong>Active Health Monitor</strong> - Select a value - HTTP/HTTPS/TCP/UDP/Ping </p>
+<p><img alt="Load Balancer Pool Settings" src="../assets/load_balancer_pool_settings.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>Members</strong> tab, click <strong>Add</strong>.</p>
+<ul>
+<li>Enter <strong>IP Address</strong> for the pool member</li>
+<li>Toggle on the <strong>State</strong> to enable the pool member</li>
+<li>(Optional) add a custom <strong>port</strong> for the pool member</li>
+<li>
+<p>Enter a <strong>Ratio</strong> for the pool member. A member with 2, gets twice as much traffic as a member with 1.</p>
+<p><img alt="Load Balancer Pool Settings Members" src="../assets/load_balancer_pool_settings_members.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <strong>SSL Settings</strong> tab:</p>
+<ul>
+<li>Enable SSL if required with the toggle</li>
+<li>
+<p>Enable <strong>Common Name Check</strong> if required and enter up to 10 domain names.</p>
+<p><img alt="Load Balancer Pool SSL" src="../assets/load_balancer_pool_ssl.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Save</strong> when complete.</p>
+</li>
+</ol>
+<h4 id="creating-a-virtual-service">Creating a Virtual Service<a class="headerlink" href="#creating-a-virtual-service" title="Permanent link">¤</a></h4>
+<p>A virtual service listens for traffic to an IP address, processes client requests, and directs valid requests to a member of the load balancer server pool.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5B04413B-6761-483B-979C-D99F43651284.html">Create a Virtual Service.</a></p>
+<p>To create a Virtual Service, use the following steps:</p>
+<ol>
+<li>
+<p>Under Load Balancer, select <strong>Virtual Services</strong>, and click Add.</p>
+<p><img alt="Load Balancer Virtual Services" src="../assets/load_balancer_virtual_services.png" /></p>
+</li>
+<li>
+<p>On the <strong>Add Virtual Service</strong> page, enter a <strong>Name</strong> and a <strong>Description</strong> if required.</p>
+<ul>
+<li>Ensure <strong>Enabled</strong> is toggled on.</li>
+<li>Select the <strong>Service Engine Group</strong> created earlier</li>
+<li>Select the <strong>Load Balancer Pool</strong> created earlier</li>
+<li>Enter a <strong>Virtual IP Address</strong> for the virtual service, it can be IPv4, IPv6 or both</li>
+<li>Select a <strong>Service Type</strong> and <strong>Port</strong></li>
+<li>
+<p>Once complete, click <strong>Save</strong></p>
+<p><img alt="Load Balancer Virtual Service Add" src="../assets/load_balancer_virtual_service_add.png" /></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="add-a-certificate-to-the-edge-services-gateway">Add a certificate to the Edge Services Gateway<a class="headerlink" href="#add-a-certificate-to-the-edge-services-gateway" title="Permanent link">¤</a></h3>
+<p>In the VMware Cloud Director certificates library, you can import certificates used when creating entities that you must secure, such as servers, edge gateways, and so on.</p>
+<p>The certificate library contains information about single certificates, certificate chains, private keys, certificate expiration dates, the entities that the certificates secure, and so on.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-80B4CB1C-9353-4EB9-8557-4F6705949D0F.html">Managing Certificates.</a></p>
+<p>You can import certificates of servers that VMware Cloud Director communicates with, such as vCenter Server, NSX Manager, and so on.</p>
+<p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-420266CA-8858-4B28-ADE7-1E9FD38FD75E.html">Import Trusted Certificates.</a></p>
+<p>To import a Trusted Certificate, use the following steps:</p>
+<ol>
+<li>
+<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC.</p>
+</li>
+<li>
+<p>On the top navigation menu, select the <strong>Administration</strong> tab.</p>
+</li>
+<li>
+<p>On the left navigation menu, under <strong>Certificate Management</strong>, select <strong>Trusted Certificates</strong>, and click <strong>Import</strong>.</p>
+<p><img alt="Trusted Certificates" src="../assets/trusted_certificates.png" /></p>
+</li>
+<li>
+<p>On the <strong>Import Certificates</strong> page, browse for the .PEM certificate, by clicking <strong>Select File</strong>.</p>
+<p><img alt="Trusted Certificates Import" src="../assets/trusted_certificates_import.png" /></p>
+</li>
+<li>
+<p>Once uploaded, enter a <strong>Friendly Name</strong> if required, and click <strong>Import</strong>.</p>
+<ul>
+<li>The Certificate details can be viewed by clicking the arrow to the left of the certificate.</li>
+</ul>
+<p><img alt="Trusted Certificates View" src="../assets/trusted_certificates_view.png" /></p>
+</li>
+</ol>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Sovereign Cloud Australia Pty Ltd. – <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3191 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Security and Governance">
+      
+      
+      
+        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Overview/Security/security_and_governance/">
+      
+      
+        <link rel="prev" href="../network_security/">
+      
+      
+        <link rel="next" href="../shared_service_model/">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>Security and Governance - AUCloud Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Questrial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-217577494-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Security and Governance - AUCloud Documentation" >
+      
+        <meta  property="og:description"  content="Security and Governance" >
+      
+        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Overview/Security/security_and_governance.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Overview/Security/security_and_governance/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Security and Governance - AUCloud Documentation" >
+      
+        <meta  name="twitter:description"  content="Security and Governance" >
+      
+        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Overview/Security/security_and_governance.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#backup-and-disaster-recovery-customer-backups" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AUCloud Documentation" class="md-header__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../../aucloud.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AUCloud Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Security and Governance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        Platform Overview
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Platform_Services/" class="md-tabs__link">
+        Platform Services
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/" class="md-tabs__link">
+      About AUCloud
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Blog/" class="md-tabs__link">
+        Blog
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/aucloud/" class="md-tabs__link">
+      AUCloud on GitHub
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/partners" class="md-tabs__link">
+      AUCloud Partners
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.australiacloud.com.au/contact-us/" class="md-tabs__link">
+      Contact Us
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AUCloud Documentation" class="md-nav__button md-logo" aria-label="AUCloud Documentation" data-md-component="logo">
+      
+  <img src="../../../aucloud.svg" alt="logo">
+
+    </a>
+    AUCloud Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aucloud/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aucloud/aucloud.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Platform Overview</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Overview" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licensing/" class="md-nav__link">
+        Software Licensing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sovereignty_zones/" class="md-nav__link">
+        AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Security</a>
+          
+            <label for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network_security/" class="md-nav__link">
+        Network Security
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Security and Governance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Security and Governance
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backup-and-disaster-recovery-customer-backups" class="md-nav__link">
+    Backup and Disaster Recovery - Customer Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ict-media" class="md-nav__link">
+    ICT Media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-security" class="md-nav__link">
+    Physical Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-ownership-and-data-retention" class="md-nav__link">
+    Data Ownership and Data Retention
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-segregation" class="md-nav__link">
+    Data Segregation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-classification" class="md-nav__link">
+    Data Classification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-response" class="md-nav__link">
+    Incident response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-patch-management" class="md-nav__link">
+    Security patch management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-management" class="md-nav__link">
+    Vulnerability Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-time-logging-monitoring-and-detection" class="md-nav__link">
+    Real time logging, monitoring and detection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-continuity-of-service" class="md-nav__link">
+    Network Continuity of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-encryption" class="md-nav__link">
+    Data Encryption
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Encryption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-in-transit" class="md-nav__link">
+    Data in Transit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-at-rest" class="md-nav__link">
+    Data at Rest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-to-customer-data" class="md-nav__link">
+    Access to Customer Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnel-security" class="md-nav__link">
+    Personnel Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extrajudicial-control-and-interference-by-a-foreign-entity" class="md-nav__link">
+    Extrajudicial control and interference by a foreign entity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delivery-of-aucloud-services" class="md-nav__link">
+    Delivery of AUCloud services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-of-aucloud-offices-data-centres-administrative-and-support-staff" class="md-nav__link">
+    Location of AUCloud offices, data centres, administrative and support staff
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-aucloud-conform-to-current-security-standard-ism-etc" class="md-nav__link">
+    How does AUCloud conform to current security standard (ISM etc)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ownership-of-aucloud" class="md-nav__link">
+    Ownership of AUCloud
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shared_service_model/" class="md-nav__link">
+        Shared Responsibility Model
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../portal/">Portal</a>
+          
+            <label for="__nav_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Portal" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Portal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portal/api_management/" class="md-nav__link">
+        API Management in the AUCloud Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portal/billing_portal/" class="md-nav__link">
+        Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portal/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portal/managing_user_accounts/" class="md-nav__link">
+        Managing User Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portal/signing_the_crisp/" class="md-nav__link">
+        Signing the CRISP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../support/">Support</a>
+          
+            <label for="__nav_1_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Support" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          Support
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/aucloud_billing_portal/" class="md-nav__link">
+        AUCloud Billing Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/aucloud_support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/editing_a_support_ticket_in_the_portal/" class="md-nav__link">
+        Editing a Support Ticket in the Portal
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/">Platform Services</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Platform Services" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Platform Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/SKAP/" class="md-nav__link">
+        Symmetric Key Agreement Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/reference_urls/" class="md-nav__link">
+        Reference URLs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/sovereign_bridge/" class="md-nav__link">
+        Sovereign Bridge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/Backup/">Backup</a>
+          
+            <label for="__nav_2_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Backup" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/about_backup/" class="md-nav__link">
+        About AUCloud Backup for VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/getting_started/" class="md-nav__link">
+        Self-Service Backup Portal – Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/restoring_vms_and_vapps/" class="md-nav__link">
+        Restoring VMs and vApps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/statistics_on_vcd_backups/" class="md-nav__link">
+        Viewing Statistics on VMware Cloud Director Backups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
+        Working with VMware Cloud Director Backup Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5_7" type="checkbox" id="__nav_2_5_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_7" tabindex="0" aria-expanded="false">
+          o365 Backup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="o365 Backup" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_7">
+          <span class="md-nav__icon md-icon"></span>
+          o365 Backup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/o365_Backup/azureAD_application_permission_requirements/" class="md-nav__link">
+        Azure AD Application Permission requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/o365_Backup/configuration/" class="md-nav__link">
+        Configuration of Microsoft O365 Service Account
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/o365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
+        Guide to the Veeam Restore Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/o365_Backup/how_to_generate_new_secret_veeam_o365/" class="md-nav__link">
+        How to generate a new secret for Veeam Backup for Office 365
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Backup/o365_Backup/overview/" class="md-nav__link">
+        O365 Backup Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/Compute/">Compute</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/VMware_Cloud_Director_Overview/" class="md-nav__link">
+        VMware Cloud Director Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_3" type="checkbox" id="__nav_2_6_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_3" tabindex="0" aria-expanded="false">
+          Catalogs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catalogs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Catalogs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Catalogs/how_to_create_a_catalog/" class="md-nav__link">
+        How to create a catalog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+        How to share catalog library between AUCloud Sovereignty Zones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_4" type="checkbox" id="__nav_2_6_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_4" tabindex="0" aria-expanded="false">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Getting_Started/getting_started_with_vcd/" class="md-nav__link">
+        Getting Started with VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Getting_Started/use_case/" class="md-nav__link">
+        Use Case - Create a Web Server to communicate with the internet
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_5" tabindex="0" aria-expanded="false">
+          NSX T Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX T Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          NSX T Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
+        Create a Routed VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
+        Create an Isolated VDC Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
+        Edge Services Gateway
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_6" type="checkbox" id="__nav_2_6_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_6" tabindex="0" aria-expanded="false">
+          NSX V Networks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NSX V Networks" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          NSX V Networks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/configuration_of_logging_on_the_ESG/" class="md-nav__link">
+        Configuration of logging on the ESG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/" class="md-nav__link">
+        How the NSX-V Edge Services Gateway works
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_add_a_certificate/" class="md-nav__link">
+        How to add a certificate to the Edge Services Gateway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_configure_a_load_balancer/" class="md-nav__link">
+        How to configure a load balancer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_configure_ipsec_vpn/" class="md-nav__link">
+        How to configure IPSec VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_NAT_rules/" class="md-nav__link">
+        How to create NAT rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_a_dhcp_pool/" class="md-nav__link">
+        How to create a DHCP pool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_a_routed_vdc_network/" class="md-nav__link">
+        How to create a routed VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_a_static_route/" class="md-nav__link">
+        How to create a static route
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_an_isolated_vdc_network/" class="md-nav__link">
+        How to create an isolated VDC network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_create_firewall_rules/" class="md-nav__link">
+        How to create firewall rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/how_to_find_allocated_external_ip_addresses/" class="md-nav__link">
+        How to find your allocated external IP addresses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/NSX-V_Networks/vapp_networks/" class="md-nav__link">
+        vApp Networks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_7" type="checkbox" id="__nav_2_6_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_7" tabindex="0" aria-expanded="false">
+          Using the Api
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using the Api" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_7">
+          <span class="md-nav__icon md-icon"></span>
+          Using the Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Using_the_Api/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+        Establishing a connection to AUCloud platform via PowerCLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Using_the_Api/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+        Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6_8" type="checkbox" id="__nav_2_6_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_8" tabindex="0" aria-expanded="false">
+          Working with VMs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Working with VMs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Working with VMs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
+        How to migrate vApps between virtual data centres
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_create_a_vapp/" class="md-nav__link">
+        How to create a vApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_create_a_vm_from_a_template/" class="md-nav__link">
+        How to create a VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_create_an_empty_vm/" class="md-nav__link">
+        How to create an empty VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
+        How to increase the HDD or add a HDD to a Virtual Machine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_perform_guest_customisation/" class="md-nav__link">
+        How to perform Guest Customisation on the newly built VM from a template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_resize_vm_disk/" class="md-nav__link">
+        How to resize VM disk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_upload_media/" class="md-nav__link">
+        How to upload media
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_use_affinity_rules/" class="md-nav__link">
+        How to use affinity and anti‑affinity rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
+        How to view and update virtual machine settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_view_storage_profile_usage/" class="md-nav__link">
+        How to view storage profile usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
+        How to upload VM template/media using the VMware OVF tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Compute/Working_with_VMs/vmware_tools_installation/" class="md-nav__link">
+        VMware Tools Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/">Disaster Recovery and Migration</a>
+          
+            <label for="__nav_2_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Disaster Recovery and Migration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Disaster Recovery and Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
+        How to conduct a test failover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
+        How to configure a new migration or replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
+        How to configure a new protection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
+        How to configure the network settings of a replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
+        How to perform a failover task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
+        How to perform a reverse task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/installing_and_configuring_vcav_on_premise/" class="md-nav__link">
+        Installing and configuring vCAV on premise
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
+        VMware Cloud Director Availability Quick Start Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
+        VMware Cloud Director Availability Replication Policies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" tabindex="0" aria-expanded="false">
+          End User Compute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="End User Compute" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          End User Compute
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/End_User_Compute/DaaS/" class="md-nav__link">
+        Desktop as a Service
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/Object_Storage/">Object Storage</a>
+          
+            <label for="__nav_2_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Object Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Object Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/accessing_buckets_from_an_s3browser/" class="md-nav__link">
+        Accessing buckets from an s3browser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/accessing_object_storage/" class="md-nav__link">
+        Accessing Object Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+        Add an object to a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/copy_an_object/" class="md-nav__link">
+        Copy an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/creating_a_bucket/" class="md-nav__link">
+        Creating a Bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+        Delete an object or a bucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/security_credentials/" class="md-nav__link">
+        Security Credentials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/view_an_object/" class="md-nav__link">
+        View an object
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Platform_Services/Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
+        View properties and manage permissions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Platform_Services/Storage/">Storage</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/" class="md-nav__link">
+        About AUCloud
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Blog/">Blog</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/aucloud/" class="md-nav__link">
+        AUCloud on GitHub
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/partners" class="md-nav__link">
+        AUCloud Partners
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.australiacloud.com.au/contact-us/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backup-and-disaster-recovery-customer-backups" class="md-nav__link">
+    Backup and Disaster Recovery - Customer Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ict-media" class="md-nav__link">
+    ICT Media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-security" class="md-nav__link">
+    Physical Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-ownership-and-data-retention" class="md-nav__link">
+    Data Ownership and Data Retention
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-segregation" class="md-nav__link">
+    Data Segregation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-classification" class="md-nav__link">
+    Data Classification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-response" class="md-nav__link">
+    Incident response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-patch-management" class="md-nav__link">
+    Security patch management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-management" class="md-nav__link">
+    Vulnerability Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-time-logging-monitoring-and-detection" class="md-nav__link">
+    Real time logging, monitoring and detection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-continuity-of-service" class="md-nav__link">
+    Network Continuity of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-encryption" class="md-nav__link">
+    Data Encryption
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Encryption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-in-transit" class="md-nav__link">
+    Data in Transit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-at-rest" class="md-nav__link">
+    Data at Rest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-to-customer-data" class="md-nav__link">
+    Access to Customer Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnel-security" class="md-nav__link">
+    Personnel Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extrajudicial-control-and-interference-by-a-foreign-entity" class="md-nav__link">
+    Extrajudicial control and interference by a foreign entity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delivery-of-aucloud-services" class="md-nav__link">
+    Delivery of AUCloud services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-of-aucloud-offices-data-centres-administrative-and-support-staff" class="md-nav__link">
+    Location of AUCloud offices, data centres, administrative and support staff
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-aucloud-conform-to-current-security-standard-ism-etc" class="md-nav__link">
+    How does AUCloud conform to current security standard (ISM etc)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ownership-of-aucloud" class="md-nav__link">
+    Ownership of AUCloud
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+  <h1>Security and Governance</h1>
+
+<h3 id="backup-and-disaster-recovery-customer-backups">Backup and Disaster Recovery - Customer Backups<a class="headerlink" href="#backup-and-disaster-recovery-customer-backups" title="Permanent link">¤</a></h3>
+<p>The backup of customer virtual machines is the responsibility of the customer.  Customers now have the ability to sign up to AUCloud's Backup as a Service (BaaS) solution which allows them to backup or restore the VMs within VMware Cloud Director via the Veeam Enterprise Manager vCD plugin. With this option, customers can define their backup scheduling, retention policies and application aware backups.</p>
+<p>In addition, as part of the basic level storage offering, AUCloud provides Logical Unit Number (LUN level) snapshots of customer's volumes. A LUN allows the host computer to access the logical unit and the data it contains through a logical connection, rather than a physical connection. The LUN level snapshots are handled by the FlashArray and are kept for 7 days. The LUN level snapshots will give AUCloud the ability to restore customer's VM(s) in the event the customer needs to roll back to a previous snapshot. This measure will not provide a recovery capability if the customer deletes their VM image. In addition, these snapshots will not be replicated to the DR site and may not be useful in a DR scenario.</p>
+<h3 id="ict-media">ICT Media<a class="headerlink" href="#ict-media" title="Permanent link">¤</a></h3>
+<p>All ICT media is owned by AUCloud. Media is not returned to vendors for maintenance, replacement etc. Unserviceable media is destroyed in accordance with the ISM.</p>
+<h3 id="physical-security">Physical Security<a class="headerlink" href="#physical-security" title="Permanent link">¤</a></h3>
+<p>All CDC, NEXTDC facilities and AUCloud offices are certified as Zone 4 in accordance with the Protective Security Policy Framework (PSPF). The PSPF defines Australian Government security guidance across governance and information, personnel and physical systems.</p>
+<p>AUCloud infrastructure is hosted in its own dedicated POD within CDC and NEXTDC. The PODs are not shared with any other customer.</p>
+<p>Access controls to the AUCloud POD are managed by CDC and NEXTDC in their respective data centre facilities.</p>
+<h3 id="data-ownership-and-data-retention">Data Ownership and Data Retention<a class="headerlink" href="#data-ownership-and-data-retention" title="Permanent link">¤</a></h3>
+<p>The AUCloud Terms and Conditions of Service Agreement with the customer provides the details of the ownership of customer data.</p>
+<p>The customer maintains ownership of its data at all times. When the customer ceases its engagement with AUCloud, AUCloud will facilitate the transfer of customer data to the customer or the customer’s new service provider. At the end of the contract with AUCloud the customer’s data is retained for 30 days after formal advice has been given. Once deleted the data is no longer recoverable.</p>
+<p>Backed up VM’s are retained for 24 hours before being overwritten.</p>
+<h3 id="data-segregation">Data Segregation<a class="headerlink" href="#data-segregation" title="Permanent link">¤</a></h3>
+<p>AUCloud provides three separate physical infrastructure services which provide compute, storage and network.  These systems are dedicated to OFFICIAL, PROTECTED and ENTERPRISE information, respectively.</p>
+<p>AUCloud shared services management environment is managed at the PROTECTED level.</p>
+<p>Customers are wholly segregated from other customers. Virtualised networking patterns are implemented on an individual customer basis.</p>
+<h3 id="data-classification">Data Classification<a class="headerlink" href="#data-classification" title="Permanent link">¤</a></h3>
+<p>AUCloud is assessed to process, store or communicate, data at the PROTECTED security classification in accordance with the Protective Security Policy Framework (PSPF) and the controls marked ‘P’ in the Australian Government Information Security Manual (ISM).</p>
+<h3 id="incident-response">Incident response<a class="headerlink" href="#incident-response" title="Permanent link">¤</a></h3>
+<p>Experienced, trained security analysts identify, assess and respond to key threats and vulnerabilities detected by the AUCloud protective monitoring service.</p>
+<p>The AUCloud Community Rules Information Security Policy (CRISP) describes the incident response, alerting and reporting that is provided by AUCloud.</p>
+<p>The customer is responsible for incident response within their tenancy. AUCloud will assist customers during an incident upon request. AUCloud will facilitate the provision of logs, VM’s and other evidence.</p>
+<h3 id="security-patch-management">Security patch management<a class="headerlink" href="#security-patch-management" title="Permanent link">¤</a></h3>
+<p>AUCloud systems are patched in accordance with the time-frames defined in the Information Security Manual (ISM) PROTECTED controls and vendor patch cycle cadence through the scheduled maintenance windows. AUCloud has a patch management policy and process for the implementation of extreme patches.</p>
+<p>Customers are advised of any patches that may impact their environment.</p>
+<p>Customers are responsible for the security patching of their environment.</p>
+<h3 id="vulnerability-management">Vulnerability Management<a class="headerlink" href="#vulnerability-management" title="Permanent link">¤</a></h3>
+<p>The AUCloud environment and portals are penetration tested by independent penetration testers annually. Discovered vulnerabilities are reviewed by the AUCloud CISO and remediated accordingly.</p>
+<p>AUCloud maintains regular (weekly) vulnerability scanning of its systems. Discovered vulnerabilities are reviewed by the AUCloud SOC and remediated accordingly.</p>
+<h3 id="real-time-logging-monitoring-and-detection">Real time logging, monitoring and detection<a class="headerlink" href="#real-time-logging-monitoring-and-detection" title="Permanent link">¤</a></h3>
+<p>AUCloud operates its own in Security Operations Centre (SOC) which implements proactive monitoring to reduce cyber threats and attacks using e2e assure’s CUMULO technology. CUMULO provides a single holistic view of risk and threats across an enterprise, including private and public cloud infrastructure, and is designed to identify threats before they become incidents. The SOC monitors all AUCloud endpoint devices, servers, storage and network devices.  Logs and events meeting the minimum requirements of the ISM are collected, monitored and responded to.</p>
+<p>The SOC actively monitors and alerts for unauthorised access to the customer environment by AUCloud staff or systems.</p>
+<p>Data traversing the AUCloud next generation firewalls (NGFE) is filtered and inspected for content. Note: Encrypted customer data is not broken and inspected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>AUCloud does not monitor customer environments.</p>
+</div>
+<p>AUCloud offers SOC as a Service (SOCaaS) which, if purchased, customers can utilise to monitor their environments.</p>
+<h3 id="network-continuity-of-service">Network Continuity of Service<a class="headerlink" href="#network-continuity-of-service" title="Permanent link">¤</a></h3>
+<p>AUCloud utilises two ISPs to provide internet connectivity with the AUCloud border router providing no less than 10Gbits a second as a base interface for the ISP to connect to the enterprise.</p>
+<p>DDoS protection is provided by Vocus.</p>
+<h3 id="data-encryption">Data Encryption<a class="headerlink" href="#data-encryption" title="Permanent link">¤</a></h3>
+<h4 id="data-in-transit">Data in Transit<a class="headerlink" href="#data-in-transit" title="Permanent link">¤</a></h4>
+<p>Data in transit to a customer environment is configured and managed by the customer. Customers can leverage the inbuilt VPN features (IPSec, TLS VPN) of the ESG to secure traffic entering and/or exiting their vDC. In consultation with the customer, AUCloud will configure data connections using ASD approved protocols.</p>
+<p>Data in transit to the AUCloud management portals are TLS (1.2 or higher) with multi-factor authentication.</p>
+<h4 id="data-at-rest">Data at Rest<a class="headerlink" href="#data-at-rest" title="Permanent link">¤</a></h4>
+<p>Data at rest encryption is available to customers data using the Veeam backup solution. Veeam utilises AES 256 (an ASD approved cryptographic algorithm).</p>
+<p>Customer VM’s are encrypted at rest using AES 256.</p>
+<h3 id="access-to-customer-data">Access to Customer Data<a class="headerlink" href="#access-to-customer-data" title="Permanent link">¤</a></h3>
+<p>AUCloud standard users cannot access AUCloud infrastructure or customer environments.</p>
+<p>AUCloud privileged users are not permitted to access customer environments without the express written permission of the customer and AUCloud Chief Operating Officer (COO) or Chief Information Security Officer (CISO). Access to customer systems by AUCloud personnel is logged and monitored.</p>
+<p>Customers may request the assistance and support of AUCloud system administrators to assist in the configuration or emergency management of their tenancy.</p>
+<h3 id="personnel-security">Personnel Security<a class="headerlink" href="#personnel-security" title="Permanent link">¤</a></h3>
+<p>All staff employed by AUCloud are permanent employees and have undergone pre-employment and background checks prior to appointment. All staff with privileged access possess a current Australian Government Security Vetting Agency (AGSVA) Baseline or higher clearance.</p>
+<p>Foreign nationals employed by AUCloud do not have privileged access to the AUCloud Environment or access to the customer environment or their data.</p>
+<p>Contractors may be hired by AUCloud from time to time for specific activities. Contractors are subject to the same pre-employment and security checks as AUCloud staff.</p>
+<h3 id="extrajudicial-control-and-interference-by-a-foreign-entity">Extrajudicial control and interference by a foreign entity<a class="headerlink" href="#extrajudicial-control-and-interference-by-a-foreign-entity" title="Permanent link">¤</a></h3>
+<p>AUCloud is not subject to foreign laws such as the US Cloud Act. However, this does not prevent data being sought through the mutual legal assistance (MLA) process. AUCloud will comply with any authorised Australian legislation or access served under warrant such as the Assistance and Access Act 2018.</p>
+<h3 id="delivery-of-aucloud-services">Delivery of AUCloud services<a class="headerlink" href="#delivery-of-aucloud-services" title="Permanent link">¤</a></h3>
+<p>AUCloud services are provided from CDC Fyshwick ACT (Sovereignty Zone 1), CDC Eastern Creek NSW (Sovereignty Zone 2) and NEXTDC Fortitude Valley (Sovereignty Zone 3) QLD.</p>
+<p>In the event of an incident impacting Sovereignty Zone 1, AUCloud services are provided from Sovereignty Zone 2. The same solution is provided in reverse if an incident impacting Sovereignty Zone 2, AUCloud services are provided from Sovereignty Zone 1.</p>
+<p>Access from offshore to AUCloud systems and customer systems is blocked unless specifically permitted.</p>
+<h3 id="location-of-aucloud-offices-data-centres-administrative-and-support-staff">Location of AUCloud offices, data centres, administrative and support staff<a class="headerlink" href="#location-of-aucloud-offices-data-centres-administrative-and-support-staff" title="Permanent link">¤</a></h3>
+<p>AUCloud’s primary office is located at:  Unit 7/15-21 Beaconsfield St, Fyshwick ACT. The primary office supports the AUCloud technical, administrative and support staff.</p>
+<p>AUCloud infrastructure is hosted in Canberra Data Centres (CDC) facilities in Fyshwick ACT and offsite disaster recovery (DR) facility at CDC Eastern Creek NSW.  The Enterprise Data Community Environment (EDCE) is hosted in NEXTDC Fortitude Valley QLD.</p>
+<p>AUCloud development teams are located in Brisbane.</p>
+<h3 id="how-does-aucloud-conform-to-current-security-standard-ism-etc">How does AUCloud conform to current security standard (ISM etc)<a class="headerlink" href="#how-does-aucloud-conform-to-current-security-standard-ism-etc" title="Permanent link">¤</a></h3>
+<p>In late 2018 AUCloud undertook its first IRAP assessment.   Further to this, in October 2020 AUCloud was independently assessed by an IRAP assessor under the ACSC Cloud Security Controls Matrix (CCSM) released in July 2020.  AUCloud continues to maintain IRAP certification and undergoes IRAP assessments very two years.</p>
+<p>The IRAP assessors cloud security assessment report (AUCloud security fundamentals and cloud services report), CCSM, System Security Plan (SSP) and other security related documents are available to customer security teams upon request.</p>
+<p>AUCloud aligns to the requirements of the PSPF and the ACSC Essential 8 with a self-assessed maturity of level 2.</p>
+<p>AUCloud is ISO/IEC 27001 certified having received certification in January 2020.</p>
+<p>AUCloud has been awarded vendor certifications: Cisco Master Service Provider for Cloud and Managed Services and VMware Cloud Verified.</p>
+<p>AUCloud has built its own security framework to align with the requirements of the ISM and ACSC.  This includes but is not limited to the following:</p>
+<ul>
+<li>Cloud security assessment report (AUCloud security fundamentals and cloud services report).</li>
+<li>System Security Plan (SSP): As required by the ISM, an SSP is maintained for AUCloud to describe the solution’s control environment.</li>
+<li>ACSC Cloud Security Controls Matrix (CCSM): List of the applicable controls from the ISM that provides a mechanism to identify and track solution security controls and can be used to indicate which controls have been implemented and provide justification for controls that have not been implemented.</li>
+<li>Policies and Plans: AUCloud’s staff are subject to security policies which are guiding principles that ensure the availability, integrity and confidentiality of sensitive information and the AUCloud service.</li>
+<li>Action Plan: As required by the ISM, the Action Plan describes a plan of action and milestones to monitor and reduce security vulnerabilities to the AUCloud system.</li>
+<li>Standard Operating Procedures (SOPs): AUCloud maintains various SOPS which provide employees guidance to fulfil their security obligations.</li>
+<li>Security Cleared Personnel: AUCloud employees with privileged access to systems hold a Baseline or higher security clearance.  AUCloud upholds the security requirements required as a member of the Defence Industry Security Program.</li>
+</ul>
+<h3 id="ownership-of-aucloud">Ownership of AUCloud<a class="headerlink" href="#ownership-of-aucloud" title="Permanent link">¤</a></h3>
+<p>Sovereign Cloud Australia (AUCloud) is entirely owned, governed and managed by Australians. Customer, operational and management data is only accessible from onshore Australia. All data including customer data, metadata, support and administrative data along with backup data remains onshore (in Australia).</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Sovereign Cloud Australia Pty Ltd. – <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>
