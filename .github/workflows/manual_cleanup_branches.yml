@@ -1,0 +1,40 @@
+---
+name: Manually delete a website version
+# To be used in conjunction with branch based builds
+on:
+  workflow_dispatch:
+    inputs:
+      branch_to_be_deleted:
+        required: true
+        description: "Provide the website version to be deleted"
+
+concurrency: serialized-build
+
+jobs:
+  cleanup_website_version:
+    if: github.server_url	!= 'https://github.com'
+    runs-on: self-hosted
+    env:
+      SITE_URL: ${{ secrets.SITE_URL }}
+      EDIT_URL: ${{ secrets.EDIT_URL }}
+      REPO_URL: ${{ secrets.REPO_URL }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.WRITE_PAT }}
+        ref: main
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: make install
+
+    - name: Safe test functions
+      run: |
+        mike list
+        echo "Version to be deleted ${{ github.event.inputs.branch_to_be_deleted }}"
+
+    # - name: Mike delete github.ref_name
+    #   run: mike delete --push ${{ github.event.inputs.branch_to_be_deleted }}

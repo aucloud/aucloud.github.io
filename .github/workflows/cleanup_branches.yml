@@ -3,7 +3,6 @@ name: Test - remove builds
 
 on:
   delete:
-  workflow_dispatch:
 # This is very deliberate. There is significant contention risks otherwise
 concurrency: serialized-build
 
