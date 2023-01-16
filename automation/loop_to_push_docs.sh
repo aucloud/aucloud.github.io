@@ -6,12 +6,13 @@ mikeversion="${2}"
 max_count=2
 increment=0
 
-git pull
 mike ${mikeaction} --push ${mikeversion}
 retVal=$?
 while [ $retVal -ne 0 ] && [ $increment -le $max_count ];
 do
-    git pull
+    # cleanup local copy of gh pages branch
+    git branch -d gh-pages
+    git fetch origin gh-pages
     mike ${mikeaction} --push ${mikeversion}
     retVal=$?
     increment=$(( $increment + 1 ))
