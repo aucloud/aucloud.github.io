@@ -3,7 +3,7 @@ title: Contacting Support
 description: Contacting Support
 ---
 
-## AUCloud Support
+### AUCloud Support
 
 Our AUCloud support team is here to ensure your services with AUCloud are always operating seamlessly. AUCloud offers support to customers between 8:00am to 6:00pm Monday to Friday AEST, with 24/7 emergency support at hand. 
 
@@ -23,7 +23,7 @@ General users will only have visibility of tickets raised by themselves.
 If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab.
 The AUCloud Support contacts are also available on the Contacts tab.
 
-__Contacts__
+### Contacts
 
 24/7 Support
 

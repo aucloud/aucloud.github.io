@@ -56,4 +56,4 @@ There are two network flavours, isolated and routed:
 
 ### Next steps
 
-Now you've created your network to connect your VDC with the outside world, may want to configure your edge gateway to control what traffic is allowed into and out of your VDC. You may also want to start building some VMs. For quick guide on how to do this, see [How to create an empty VM](../Working_with_VMs/how_to_create_an_empty_vm.md).
+Now you've created your network to connect your VDC with the outside world, may want to configure your edge gateway to control what traffic is allowed into and out of your VDC. You may also want to start building some VMs. For quick guide on how to do this, see [How to create an empty VM](../Working_with_Virtual_Machines/how_to_create_an_empty_vm.md).

@@ -23,8 +23,8 @@ To launch the Restore Portal, do the following:
 
 1. On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:
 
-    - `user@domain.com` or
-    - `user@domain.onmicrosoft.com`
+    - 'user@domain.com' or
+    - 'user@domain.onmicrosoft.com'
 
 1. Click **Log In**. Restore Portal will redirect you to the Microsoft authentication portal where you will be prompted to enter your Microsoft 365 user account password.
 
@@ -128,7 +128,7 @@ The name of the selected object will appear in the upper-right corner of the Re
   
 ### Performing Restores
 
-After logging in to Restore Portal, you can explore and restore data from backups created by Veeam Backup for Microsoft 365. If you act as an _end user_, you perform self-service restore of your own data. If you have a _restore operator_ permissions, you explore and restore backed-up data for those objects that you are allowed to manage.  
+After logging in to Restore Portal, you can explore and restore data from backups created by Veeam Backup for Microsoft 365. If you act as an *end user*, you perform self-service restore of your own data. If you have a *restore operator* permissions, you explore and restore backed-up data for those objects that you are allowed to manage.  
 To select items that you want to restore, do the following:
 
 1. Open the **Explore** tab.
@@ -147,7 +147,7 @@ For documents and files, you can select which version of an item you want to res
     To search items by a specific date/time, specify the time in the UTC format. You can hover over the date in the Received column to view the UTC value.
 
 1. Click **Restore**.
-2. Configure restore operation options. Depending on the type of items that you selected to restore, Restore Portal runs one of the following wizards:
+1. Configure restore operation options. Depending on the type of items that you selected to restore, Restore Portal runs one of the following wizards:
 
 - Exchange Restore
 - Sharepoint Restore
@@ -271,8 +271,8 @@ There are additional features and functionality that can be performed on a secur
 
 - Access backup data from further back in time than the most recent backup
 - Restore data to a different location/mailbox/tenant
-- Export data as a `pst/msg/zip` file
+- Export data as a *pst/msg/zip* file
 - Explore and restore Group Mailboxes
 - Explore and Restore Microsoft Teams data
 
-For further questions about the capabilities of the restore portal, please contact your Customer Success Manager or support@australiacloud.com.au
+For further questions about the capabilities of the restore portal, please contact [Support.](../../../Platform_Overview/support/index.md)

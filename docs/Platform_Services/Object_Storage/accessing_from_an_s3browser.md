@@ -1,6 +1,6 @@
 ---
-title: Accessing buckets from an s3browser
-description: Accessing buckets from an s3browser
+title: Accessing buckets from an S3 Browser
+description: Accessing buckets from an S3 Browser
 ---
 
 ## Accessing buckets from a browser

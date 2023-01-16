@@ -19,7 +19,7 @@ Your Sales Executive or CSM will gather your requirements including:
 - Backup exclusions
 - Backup schedule
 - Backup repository retention policy, and
-- The authentication method.  
+- The authentication method  
 
 ## Creation of your account in the AUCloud Portal
 
@@ -37,4 +37,4 @@ The backup service account username and app password need to be provided to AUCl
 
 ## Restore records through the Self-Service portal
 
-Records can be restored through the [Self-Service Portal](../../reference_urls.md#veeam-restore-web-address)
+Records can be restored through the [Self-Service Portal.](../../reference_urls.md#veeam-restore-web-address)

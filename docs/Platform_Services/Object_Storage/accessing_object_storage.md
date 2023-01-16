@@ -3,7 +3,7 @@ title: Accessing Object Storage
 description: Accessing Object Storage
 ---
  
-## Introduction
+## Overview
 
 Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manages data as a file hierarchy. Each object typically includes the data itself, an amount of metadata and a globally unique identifier which is stored within a bucket.
 

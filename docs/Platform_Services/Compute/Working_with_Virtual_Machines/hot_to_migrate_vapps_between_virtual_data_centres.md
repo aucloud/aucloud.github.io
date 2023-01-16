@@ -7,7 +7,12 @@ decsription: How to migrate vApps between virtual data centres
 
 If you have multiple virtual data centres (VDCs), you may find that you want to migrate vApps from VDC to VDC; whether that be from a test and dev environment into production or between VDCs with different service levels.
 
-There are two ways to migrate vApps between VDCs: copy and move. This article describes how to use these different methods to migrate your VDCs.  
+There are two ways to migrate vApps between VDCs: 
+
+- copy, and 
+- move
+
+This article describes how to use these different methods to migrate your VDCs.  
 
 ### Copying a vApp
 

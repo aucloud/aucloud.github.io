@@ -61,12 +61,14 @@ minio
 msg
 mybucket
 nvram
+onmicrosoft
 ovf
 ovftool
 palo
 pdf
 pre
 programmatically
+pst
 quiescing
 ransomware
 remediated

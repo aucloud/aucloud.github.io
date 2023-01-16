@@ -25,7 +25,7 @@ First, you need to create a network that can connect to external networks outsid
 
 1. Log in to the AUCloud Portal.
 
-    For more detailed instructions, see the Getting Started Guide for the AUCloud Portal
+    For more detailed instructions, see the [Getting Started Guide](../../../../Platform_Overview/portal/getting_started) for the AUCloud Portal
 
 2. Select your account.
 

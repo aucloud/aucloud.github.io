@@ -3,7 +3,7 @@ title: Software Licensing
 description: Software Licensing
 ---
 
-# Overview
+## Overview
 
 AUCloud can provide licensing for a number of Microsoft; VMware; and Red Hat products when deployed within the AUCloud infrastructure.
 Licensing models may change depending on whether AUCloud's multi-tenant platform is used; or if a customer deploys to a dedicated environment.
@@ -13,11 +13,9 @@ Licensing models may change depending on whether AUCloud's multi-tenant platform
 AUCloud provided templates for Microsoft Windows (various versions); and Red Hat Enterprise Linux by default will use AUCloud provided Licenses.
 If you are seeking to Bring Your Own License (BYOL), please contact your Customer Success Manager.
 
-# Microsoft Licensing
+## Microsoft Products currently supported by AUCloud
 
-## Products currently supported by AUCloud
-
-For a product not on this list please contact AUCloud support or your sales team
+For a product not on this list please contact [AUCloud support](../support) or your sales team.
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |

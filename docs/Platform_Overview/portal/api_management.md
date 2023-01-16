@@ -3,7 +3,7 @@ title: API Management in the AUCloud Portal
 description: Instructions on how to manage the API for the AUCloud Portal
 ---
 
-### Introduction
+### Overview
 
 The AUCloud Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 

@@ -56,7 +56,7 @@ There are two ways to populate a catalog:
 
          b. Create a template from an existing vApp
 
-## a. Uploading an OVF package
+## Uploading an OVF package
 
 1. In the _Libraries_ page, in the left navigation panel, select **vApp Templates**.
 
@@ -82,7 +82,7 @@ There are two ways to populate a catalog:
 
         Depending on template size and network speed, the upload may take some time._
 
-## b. Create a template from an existing vApp
+## Create a template from an existing vApp
 
 1. In VMware Cloud Director, click **Datacenters** from the top menu.
 

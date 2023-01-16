@@ -3,6 +3,8 @@ title: Portal
 description: Portal
 ---
 
+### Overview
+
 The AUCloud Portal is a secure one-stop shop for access to VMware Cloud Director and for user and account management, billing information and support.
 
 The portal provides configuration of user access, permissions, assurance, password management and user account unlocks.

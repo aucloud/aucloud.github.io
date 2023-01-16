@@ -5,7 +5,7 @@ description: Security Credentials
 
 ## Security Credentials
 
-1. Security Credentials are required to access buckets programmatically [via S3 API's.](./accessing_buckets_from_an_s3browser.md)
+1. Security Credentials are required to access buckets programmatically [via S3 API's.](./accessing_from_an_s3browser.md)
 
     [The AUCloud S3 API endpoints](../reference_urls.md#s3-storage-endpoints)
 
