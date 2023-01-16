@@ -5,7 +5,7 @@ on:
   push:
 # This is very deliberate. There is significant contention risks otherwise
   workflow_dispatch:
-concurrency: serialized-build
+
 jobs:
   # This deploys to our test infrastructure
   deploy_website:
@@ -36,7 +36,7 @@ jobs:
       run: |
         export BRANCH=${{ github.ref_name }}
         echo $BRANCH
-        mike deploy --push ${BRANCH}
+        bash automation/loop_to_push_docs.sh deploy ${BRANCH}
 
   push_to_public:
     if: github.server_url	!= 'https://github.com' &&  github.ref == 'refs/heads/main'
@@ -85,5 +85,4 @@ jobs:
         make docs-validate
     - name: Generate a release using mike
       shell: bash
-      run: |
-        mike deploy --push latest
+      run: bash automation/loop_to_push_docs.sh deploy latest

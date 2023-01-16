@@ -4,7 +4,6 @@ name: Test - remove builds
 on:
   delete:
 # This is very deliberate. There is significant contention risks otherwise
-concurrency: serialized-build
 
 jobs:
   cleanup_website:
@@ -28,4 +27,4 @@ jobs:
 
     - name: Mike delete github.ref_name
       if: github.event.ref_type == 'branch'
-      run: mike delete --push ${{ github.event.ref }}
+      run: bash automation/loop_to_push_docs.sh delete ${{ github.event.ref }}

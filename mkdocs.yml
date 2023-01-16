@@ -41,7 +41,7 @@ plugins:
       - "stylesheets/extra.css"
       - "images/favicon.ico"
 - htmlproofer:
-    enabled: !ENV [ENABLED_HTMLPROOFER, True]
+    enabled: !ENV [ENABLED_HTMLPROOFER, False]
     validate_rendered_template: True
     raise_error: False
     raise_error_excludes:
