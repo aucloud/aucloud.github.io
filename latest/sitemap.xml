@@ -86,12 +86,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/aucloud_support/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/editing_a_support_ticket_in_the_portal/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/editing_a_support_ticket_in_the_portal/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/logging_a_support_ticket_in_the_portal/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -146,27 +146,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/o365_Backup/azureAD_application_permission_requirements/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/azureAD_application_permission_requirements/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/o365_Backup/configuration/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/configuration/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/o365_Backup/guide_to_veeam_restore_portal/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/guide_to_veeam_restore_portal/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/o365_Backup/how_to_generate_new_secret_veeam_o365/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/how_to_generate_new_secret_veeam_o365/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/o365_Backup/overview/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/overview/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -286,77 +286,77 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Using_the_Api/establishing_a_connection_to_aucloud_with_powercli/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Using_the_API/establishing_a_connection_to_aucloud_with_powercli/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Using_the_Api/using_terraform_against_AUCloud_implementation_of_vcd/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/hot_to_migrate_vapps_between_virtual_data_centres/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/hot_to_migrate_vapps_between_virtual_data_centres/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_create_a_vapp/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vapp/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_create_a_vm_from_a_template/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_create_an_empty_vm/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_an_empty_vm/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_increase_an_hdd_or_add_hdd_to_a_vm/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_increase_an_hdd_or_add_hdd_to_a_vm/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_perform_guest_customisation/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_perform_guest_customisation/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_resize_vm_disk/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_resize_vm_disk/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_upload_media/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_upload_media/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_use_affinity_rules/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_use_affinity_rules/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_view_and_update_virtual_machine_settings/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_view_and_update_virtual_machine_settings/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_view_storage_profile_usage/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_view_storage_profile_usage/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/how_to_vmtemplate_media_using_ovf_tool/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_VMs/vmware_tools_installation/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/vmware_tools_installation/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -421,7 +421,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Object_Storage/accessing_buckets_from_an_s3browser/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Object_Storage/accessing_from_an_s3browser/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
