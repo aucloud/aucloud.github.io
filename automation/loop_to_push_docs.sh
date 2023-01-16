@@ -11,7 +11,7 @@ retVal=$?
 while [ $retVal -ne 0 ] && [ $increment -le $max_count ];
 do
     # cleanup local copy of gh pages branch
-    git branch -d gh-pages
+    git branch -D gh-pages
     git fetch origin gh-pages
     mike ${mikeaction} --push ${mikeversion}
     retVal=$?
