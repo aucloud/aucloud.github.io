@@ -136,31 +136,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/azureAD_application_permission_requirements/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/configuration/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/guide_to_veeam_restore_portal/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/how_to_generate_new_secret_veeam_o365/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Backup/O365_Backup/overview/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/</loc>
          <lastmod>2023-01-17</lastmod>
          <changefreq>daily</changefreq>
@@ -402,6 +377,31 @@
     </url>
     <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/End_User_Compute/DaaS/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/azureAD_application_permission_requirements/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/configuration/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/guide_to_veeam_restore_portal/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/how_to_generate_new_secret_veeam_o365/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/overview/</loc>
          <lastmod>2023-01-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
