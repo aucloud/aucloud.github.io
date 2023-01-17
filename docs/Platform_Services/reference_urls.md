@@ -30,7 +30,7 @@ description: Reference URLs for services in AUCLoud
 | [https://api-vcd-sz201.eportal.australiacloud.com.au/api](https://api-vcd-sz201.eportal.australiacloud.com.au/api)  | Protected | SSZ |
 | [https://api-vcd-bsz.enterprise.australiacloud.com.au/api](https://portal.australiacloud.com.au/login)  | Enterprise | BSZ |
 
-#### Veeam 0365 Backup portal
+#### Veeam M365 Backup portal
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |

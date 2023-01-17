@@ -15,7 +15,7 @@ Restore Operators can be specified as individuals or as security groups (where u
 
 To launch the Restore Portal, do the following:
 
-1. Open a web browser on any computer and navigate to the Restore Portal [web address](../../reference_urls.md#veeam-restore-web-address).
+1. Open a web browser on any computer and navigate to the Restore Portal [web address](../reference_urls#veeam-m365-backup-portal).
 
     !!! note
 
@@ -267,7 +267,7 @@ Restore Portal runs the restore operation immediately and opens the Restore Ses
 
 ### Additional Functionality
 
-There are additional features and functionality that can be performed on a secure call with an AUCloud Compute & Storage Engineer. Please contact [Support](../../../Platform_Overview/support/index.md) if you wish to perform any of the following:
+There are additional features and functionality that can be performed on a secure call with an AUCloud Compute & Storage Engineer. Please contact [Support](../../Platform_Overview/support/index.md) if you wish to perform any of the following:
 
 - Access backup data from further back in time than the most recent backup
 - Restore data to a different location/mailbox/tenant
@@ -275,4 +275,4 @@ There are additional features and functionality that can be performed on a secur
 - Explore and restore Group Mailboxes
 - Explore and Restore Microsoft Teams data
 
-For further questions about the capabilities of the restore portal, please contact [Support.](../../../Platform_Overview/support/index.md)
+For further questions about the capabilities of the restore portal, please contact [Support.](../../Platform_Overview/support/index.md)

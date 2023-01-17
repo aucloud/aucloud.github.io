@@ -35,7 +35,7 @@ All listed permissions are of the **Delegated** type and required for data res
 | Microsoft Graph | Directory.Read.All | ✔ | ✔ | ✔ | Querying Azure AD for organization properties, the list of users and groups and their properties.|
 | | Group.ReadWrite.All |  |  | ✔ | Recreating in Azure AD an associated group in case of teams restore.|
 | | Sites.Read.All |  | ✔ | ✔ | Accessing sites of the applications that are installed from the SharePoint store.|
-| | Directory.ReadWrite.All |  |  | ✔ | Setting the preferred data location when creating a new O365 group for a multi-geo tenant in case of teams restore.|
+| | Directory.ReadWrite.All |  |  | ✔ | Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.|
 | | Offline Access | ✔ | ✔ | ✔ | Obtaining a refresh token from Azure AD.|
 | Office 365 Exchange Online[^1] | EWS.AccessAsUser.All | ✔ |  |  | Accessing mailboxes as the signed-in user (impersonation) through EWS.|
 | SharePoint | AllSites.FullControl |  | ✔ | ✔ | Reading the current state and restoring SharePoint sites and OneDrive accounts content.|

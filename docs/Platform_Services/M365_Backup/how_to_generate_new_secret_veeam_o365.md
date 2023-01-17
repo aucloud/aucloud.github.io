@@ -3,7 +3,7 @@ title: How to generate a new secret for Veeam Backup for Office 365
 description: How to generate a new secret for Veeam Backup for Office 365
 ---
 
-### Generating O365 Secrets
+### Generating M365 Secrets
 
 If you need to generate a new secret for your Veeam Backup for Office 365 account, simply follow the steps below:
 
