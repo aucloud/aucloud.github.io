@@ -1,9 +1,9 @@
 ---
 title: Logging a Support Ticket in the Portal
-description: Logging a Support Ticket in the Portal
+description: Logging a Support Ticket via AUCloud Portal
 ---
 
-### Logging a Support ticket
+### Logging a Support ticket 
 
 1. Click on the **Support** Tab in the ribbon bar.
 
