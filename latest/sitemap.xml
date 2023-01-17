@@ -81,17 +81,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/aucloud_billing_portal/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/editing_a_support_ticket_in_the_portal/</loc>
-         <lastmod>2023-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/logging_a_support_ticket_in_the_portal/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/support/aucloud_support_portal/</loc>
          <lastmod>2023-01-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
