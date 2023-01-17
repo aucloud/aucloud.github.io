@@ -8,7 +8,7 @@ This guide is intended for use by administrative and financial staff responsible
 
 ### Billing overview
 
-1. The billing portal can be accessed by logging on to the AUCloud portal. Log on to the portal with the credentials provided by your administrator.
+1. The billing portal can be accessed by logging on to the [AUCloud Portal.](../../Platform_Services/reference_urls.md#portal-ui) Log on to the portal with the credentials provided by your administrator.
 
 1. The billing information can be accessed by selecting the Billing tab on the ribbon bar of the dashboard.
 
@@ -66,7 +66,7 @@ This guide is intended for use by administrative and financial staff responsible
     - Quota: shows the total amount of the purchase order.
     - Usage bar: shows the percentage of the purchaser order which has been used..
  
-1. If discrepancies are discovered in the purchase order, please contact your Customer Success Manager, Sales Executive or AUCloud Support to have the issue fixed.
+1. If discrepancies are discovered in the purchase order, please contact [AUCloud Support](../support/index.md) to have the issue fixed.
 
 ### Transactions
 
@@ -78,4 +78,4 @@ This guide is intended for use by administrative and financial staff responsible
 
 ### Discrepancies and Disputes
 
-1. If you believe there is an error with an invoice received, please contact your Account Executive in the first instance so the problem can be investigated and resolved.
+If you believe there is an error with an invoice received, please contact [AUCloud Support](../support/index.md) in the first instance so the problem can be investigated and resolved.

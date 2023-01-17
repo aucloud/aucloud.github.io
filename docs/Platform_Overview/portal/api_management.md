@@ -7,7 +7,7 @@ description: Instructions on how to manage the API for the AUCloud Portal
 
 The AUCloud Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 
-AUCloud API documentation can be accessed through the AUCloud Portal. VMware Cloud Director documentation can be accessed through the URL link in the portal.
+AUCloud API documentation can be accessed through the [AUCloud Portal.](../../Platform_Services/reference_urls.md#portal-ui) VMware Cloud Director documentation can be accessed through the URL link in the portal.
 
 ### Procedure
 
@@ -21,10 +21,10 @@ AUCloud API documentation can be accessed through the AUCloud Portal. VMware Clo
 
 1. Enter details for your token:
 
-    1. name
-    1. (optional) enter a description
-    1. Expiry date and time
-    1. click Save
+    - name
+    - (optional) enter a description
+    - Expiry date and time
+    - click Save
 
     ![API Create Token](./assets/api/create_token_details.png)
 

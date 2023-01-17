@@ -68,5 +68,5 @@ _*where applicable_
 
 ## Next Steps
  
-1.	Contact our sales team at [sales@australiacloud.com.au](mailto:sales@australiacloud.com.au) or **1800 282 5683**
-1.	Talk to us about your business and how Virtual-Desktop-as-a-Service can enable your data protection strategy
+- Contact our sales team at [sales@australiacloud.com.au](mailto:sales@australiacloud.com.au) or **1800 282 5683**
+- Talk to us about your business and how Virtual-Desktop-as-a-Service can enable your data protection strategy

@@ -8,16 +8,7 @@ Object storage is a data storage architecture that manages data as objects, as o
 You can access and manage your bucket from several web browsers with your user credentials. Working with buckets allows you to:
 
 - create or delete buckets
-
 - view and download objects
-
 - add, copy or remove objects
-
 - grant basic read/write permissions
-
 - configure security credentials to access buckets programmatically via S3 APIs 
-
-
-
-
-

@@ -13,39 +13,34 @@ If you need assistance, you can contact AUCloud Support by:
 
 - Calling AUCloud Support on **1800 AUCLOUD (282 5683)**
 
-- Raise a ticket through one of the AUCloud self-service portal, new self-service capability to be launched soon.
+- Log a support ticket in the [AUCloud Support Portal](./aucloud_support_portal), new self-service capability to be launched soon.
 
-- Enter a Subject and Description with as much information as possible about the issue as this will assist our teams with troubleshooting.
-Attachments can be added to provide additional information. Once you have entered the details click **Save**.
+	- Enter a Subject and Description with as much information as possible about the issue as this will assist our teams with troubleshooting.
+	- Attachments can be added to provide additional information.
  
-General users will only have visibility of tickets raised by themselves.
+!!! note
 
-If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab.
-The AUCloud Support contacts are also available on the Contacts tab.
+	- General users will only have visibility of tickets raised by themselves
+	- If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab
 
-### Contacts
-
-24/7 Support
+### 24/7 Support
 
 If you require emergency support, you will need to do one of the following:
 
-- Raise a ticket in the AUCloud portal
+- Log a support ticket in the [AUCloud Support Portal](./aucloud_support_portal)
 - Send an email outlining the issue to [support@australiacloud.com.au](mailto:support@australiacloud.com.au)
 
 By raising one of the following this will alert our out of hours engineers to investigate the issue/error and provide an update once a solution has been established.
 
-Outside of the standard support hours, AUCloud offer 24/7 emergency support for Priority 1 and Priority 2 incidents
+Outside of the standard support hours, AUCloud offer 24/7 emergency support for Priority 1 and Priority 2 incidents.
 
 Emergency priority 1 and priority 2 incidents are classified by the following:
 
-- Priority 1 incidents:
+**Priority 1 incidents:**
 
-   •	AUCloud systems are not functioning as expected with high impact on customer operations
+- AUCloud systems are not functioning as expected with high impact on customer operations
    
-- Priority 2 incidents:
+**Priority 2 incidents:**
 
-  •	AUCloud systems are partially usable with medium impact on customer operations
-  
-  •	Priority 1 fault to which a temporary solution has been applied by AUCloud technicians.
-
-
+- AUCloud systems are partially usable with medium impact on customer operations
+- Priority 1 fault to which a temporary solution has been applied by AUCloud technicians

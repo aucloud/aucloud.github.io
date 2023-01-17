@@ -3,7 +3,7 @@ title: Compute
 description: Compute
 ---
 
-AUCloud provides a variety of compute solutions:
+### Compute Solutions:
 
 [**Catalog:**](./Catalogs/how_to_create_a_catalog) Use our public catalog to find standard VM sizes and operating systems for your VMware Cloud Director deployment. You can also create your own catalogs with specific applications or gold images for faster VM deployment.
 

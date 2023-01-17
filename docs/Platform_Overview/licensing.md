@@ -15,7 +15,7 @@ If you are seeking to Bring Your Own License (BYOL), please contact your Custome
 
 ## Microsoft Products currently supported by AUCloud
 
-For a product not on this list please contact [AUCloud support](../support) or your sales team.
+For a product not on this list please contact [AUCloud Support](../support) or your sales team.
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |

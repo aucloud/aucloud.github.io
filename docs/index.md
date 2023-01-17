@@ -14,11 +14,11 @@ We invite you to explore and revisit this website regularly as it will continual
 ## Explore AUCloud’s Tech Docs  
 
 - Learn about the AUCloud [platform](Platform_Overview/index.md) and its [services](Platform_Services/index.md)
-- See where [AUCloud’s Sovereignty Zones](Platform_Services/sovereign_bridge.md) are and find out about our continued expansion to other regions
+- See where [AUCloud’s Sovereignty Zones](Platform_Overview/sovereignty_zones.md) are and find out about our continued expansion to other regions
 - Get tips and learn from automation case studies and demos to assist you in deploying AUCloud services
 - Access How to Guides for technical information and features available in AUCloud services
 - Find API documentation
-- Learn more about AUCloud’s [security and compliance](Platform_Overview/Security/security_and_governance.md) and our shared responsibility model, Community Rules Information Security Policy (CRISP), what it is, what it means and how it benefits our customers
+- Learn more about AUCloud’s [security and governance](Platform_Overview/Security/security_and_governance.md) and our shared responsibility model, Community Rules Information Security Policy (CRISP), what it is, what it means and how it benefits our customers
 - Find out about the [support tools](Platform_Overview/support/index.md) we have available for our customers
 - See relevant information about our technology and other partners
 
