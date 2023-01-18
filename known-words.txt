@@ -71,6 +71,7 @@ programmatically
 pst
 quiescing
 ransomware
+rclone
 remediated
 routable
 scsi

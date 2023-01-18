@@ -3,7 +3,7 @@ title: Restoring VMs and vApps
 description: Restoring VMs and vApps
 ---
 
-### Overview
+## Overview
 
 You can perform the following tasks using the **VMs** tab of Self-Service Backup Portal:
 
@@ -13,7 +13,7 @@ You can perform the following tasks using the **VMs** tab of Self-Service Back
 - Delete VMs
 - Restore Guest OS and Application items
 
-### Restore VMs
+## Restore VMs
 
 VMware Cloud Director VMs can be restored to the original (production) vApp using flexible restore options.
 
@@ -39,7 +39,7 @@ VMware Cloud Director VMs can be restored to the original (production) vApp usin
 !!! **IMPORTANT:**
     Restore of a standalone VM to the original location with the **Keep** option selected will result in an unpredictable behaviour and possible failure of the restore job.
 
-### Restore vApps
+## Restore vApps
 
 Similar steps can be taken to restore a vApp:
 
@@ -62,7 +62,7 @@ Similar steps can be taken to restore a vApp:
 
 <span style="color:red">**IMPORTANT:**</span> Restore of a vApp with a standalone VM will return and ordinary and not standalone VM.
 
-### Restore Virtual Disks
+## Restore Virtual Disks
 
 You can restore individual virtual disks from backups of VMware Cloud Director VMs:
 
@@ -72,7 +72,7 @@ You can restore individual virtual disks from backups of VMware Cloud Director V
 
     ![Restore Disk](./assets/virtual_disk_wizard.png)
 
-### Delete VMs and vApps
+## Delete VMs and vApps
 
 1. Once you select a VM, click the **Delete** button. If you are sure that you want to delete the selected VM, click **Yes** from the Delete VM window.
 

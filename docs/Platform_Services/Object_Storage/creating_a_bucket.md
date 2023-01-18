@@ -15,9 +15,9 @@ description: Creating a Bucket
     - Must comply with DNS naming conventions.  
     - Must be at least 3 and no more than 63 characters long.
     - Must be a series of one or more labels.  
-             • Each label can contain lowercase letters, numbers and hyphens.  
-             • Each label must start and end with a lowercase letter or a number.  
-             • Adjacent labels are separated by a single period (.)  
+		- Each label can contain lowercase letters, numbers and hyphens.  
+		- Each label must start and end with a lowercase letter or a number.  
+		- Adjacent labels are separated by a single period (.)  
     - Must not be formatted as an IP address (for example, 192.168.5.4).
 
     ![Create Bucket](./assets/create_bucket.png)

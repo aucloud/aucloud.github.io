@@ -1,7 +1,9 @@
 ---
-title: Platform documentation
-description: Platform documentation
+title: Platform Documentation
+description: Platform Documentation
 ---
+
+## Overview
 
 AUCloud, an ASX listed company, provides highly secure, standards based, sovereign cloud Infrastructure-as-a-Service to Australian Government, Critical National Industry communities and security conscious enterprises. AUCloud solutions enable customers to benefit from sovereign data protection with the scale, automation, elasticity and lower costs typically associated with global cloud offerings.
 
@@ -18,11 +20,14 @@ We invite you to explore and revisit this website regularly as it will continual
 - Get tips and learn from automation case studies and demos to assist you in deploying AUCloud services
 - Access How to Guides for technical information and features available in AUCloud services
 - Find API documentation
-- Learn more about AUCloud’s [security and governance](Platform_Overview/Security/security_and_governance.md) and our shared responsibility model, Community Rules Information Security Policy (CRISP), what it is, what it means and how it benefits our customers
+- Learn more about AUCloud’s [security and governance](Platform_Overview/Security/security_and_governance.md) and our [shared responsibility model](Platform_Overview/Security/shared_service_model.md)
+- [Community Rules Information Security Policy](Platform_Overview/Security/#community-rules-information-security-policy-crisp) (CRISP) what it is, what it means and how it benefits our customers
 - Find out about the [support tools](Platform_Overview/support/index.md) we have available for our customers
 - See relevant information about our technology and other partners
 
-AUCloud is always here to support our customers and therefore please continue to reach out to your sales, technical or support contacts for any assistance you may require.
+## Contact AUCloud
+
+AUCloud is always here to support our customers and therefore please continue to reach out to your sales, [technical or support contacts](Platform_Overview/support) for any assistance you may require.
 
 1800-AUCLOUD (1800 282 5683)
 

@@ -3,7 +3,7 @@ title: Working with VMware Cloud Director Backup Jobs
 description: Working with VMware Cloud Director Backup Jobs
 ---
 
-### Overview
+## Overview
 
 In the **Jobs** tab of the Self-Service Backup Portal, you can perform the following operations:
 
@@ -12,7 +12,7 @@ In the **Jobs** tab of the Self-Service Backup Portal, you can perform the fol
 - Disable or enable a job
 - Edit job settings
 
-### Create Backup Jobs
+## Create Backup Jobs
 
 1. Go to the **Jobs** tab of the Self-Service Backup Portal and click **Create**.
 
@@ -56,7 +56,7 @@ In the **Jobs** tab of the Self-Service Backup Portal, you can perform the fol
 
 4. The remaining settings (repository, processing mode, etc.) will be obtained from the repository set up in your tenancy by AUCloud.
 
-### Manage Backup Jobs
+## Manage Backup Jobs
 
 1. Once a backup job has been created you can manage that job from within the portal.
 
@@ -88,7 +88,7 @@ In the **Jobs** tab of the Self-Service Backup Portal, you can perform the fol
     - Enabling and disabling selected jobs
     - Performing a Active Full backup
 
-### Considerations and Limitations
+## Considerations and Limitations
 
 1. Job cloning is not available.
 

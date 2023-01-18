@@ -3,7 +3,7 @@ title: vApp Networks
 description: vApp Networks
 ---
 
-### Overview
+## Overview
 
 In addition to virtual data centre (VDC) networking, you can create individual vApp networks to have even greater control over your network infrastructure.
 
@@ -17,12 +17,12 @@ The vApp network diagram below shows the vApp edge:
 
 ![vApp Edge](./assets/vapp_edge.png)
 
-#### vApp Network Prerequisites
+### vApp Network Prerequisites
 
 - Edge Services Gateway (ESG) inside Organisation VDC
 - Routed Network attached to ESG - see [Create a Routed VDC Network](./create_a_routed_vdc_network.md) for information.
 	
-### Creating a vApp Network
+## Creating a vApp Network
 
 1. In the VMware Cloud Director *Virtual Datacenters* dashboard, select the VDC that contains your vApp.
 
@@ -42,7 +42,7 @@ The vApp network diagram below shows the vApp edge:
 
 	![vApp Network](./assets/vapp_network.png)
 
-### Connecting a Virtual Machine to a vApp Network
+## Connecting a Virtual Machine to a vApp Network
 
 If your vApp is already populated with VMs that are connected to a VDC network, you may want to move them over to the vApp network.
 
@@ -72,7 +72,7 @@ To change the Virtual Machine network to a vApp Network, use the following steps
 
 1. Repeat for the remainder of the Virtual Machines that are required to join the vApp Network.
 
-### Viewing and Adjusting vApp Network Settings
+## Viewing and Adjusting vApp Network Settings
 
 When you've created your vApp Network and assigned Virtual Machines to it, you may want to review the vApp Network settings and adjust them if needed.
 
@@ -96,11 +96,11 @@ To edit the Network Settings of a vApp, use the following steps:
 
 1. The **Routing** heading enables you to create static routes for the vApp Network. For more information, see vApp Network Routing [below.](vapp-network-routing)
 
-### vApp Network Firewall and NAT Rules
+## vApp Network Firewall and NAT Rules
 
 For the vApp Network, there will be a rule in place to allow any traffic to traverse the Firewall. You can amend or delete this rule or create new rules.
 
-#### vApp Network Firewall Rules
+### vApp Network Firewall Rules
 
 To create a vApp Network Firewall Rule, use the following steps:
 
@@ -120,7 +120,7 @@ To create a vApp Network Firewall Rule, use the following steps:
 
 	![vApp Firewall](./assets/vapp_firewall.png) 
 	
-#### vApp NAT Rules
+### vApp NAT Rules
 
 NAT rules, enabled by default, enable mapping between internal Virtual Machines interfaces and external IP Addresses.
 
@@ -156,7 +156,7 @@ To edit the mapping rules for a Virtual Machine, use the following steps:
 	
 1. The External IP Address will be on the same subnet as the VDC network, that connects to the vApp Edge.
 
-### vApp Network Routing
+## vApp Network Routing
 
 Static Routing at the vApp Network level allows traffic to route between different vApp Networks, across the VDC Networks.
 

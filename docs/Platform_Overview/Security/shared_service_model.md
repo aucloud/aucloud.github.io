@@ -8,14 +8,14 @@ description: Shared Responsibility Model
 The AUCloud CRISP describes the shared security model between AUCloud and the customer.
 The shared responsibility model varies based on the underlying service(s) consumed by customers.
 
-### Infrastructure as a Service (Compute)
+## Infrastructure as a Service (Compute)
 
 The IaaS offering is the core of our platform, and hosts any PaaS or SaaS services provided by AUCloud; inheriting the IaaS RACI.
 
 The following diagram describes the shared responsibility for the AUCloud customers and AUCloud for our core IaaS services.
 ![Shared Services](./assets/shared_services.png)
 
-#### IaaS RACI
+### IaaS RACI
 
 The following RACI chart describes, the responsibilities, and accountabilities between AUCloud and the AUCloud Customer.
 

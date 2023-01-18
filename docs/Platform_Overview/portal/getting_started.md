@@ -3,7 +3,7 @@ title: Getting Started
 description: Getting Started
 ---
 
-### Logging in to the AUCloud Portal
+## Logging in to the AUCloud Portal
 
 1. Go to the appropriate [URL](../../Platform_Services/reference_urls.md#portal-ui), depending on the community where your service is located.
 
@@ -27,7 +27,7 @@ description: Getting Started
 
     ![Portal Dashboard](./assets/dashboard.png)
 
-### Portal Overview
+## Portal Overview
 
 After you log in, you will see the portal home page. The portal home page is made up of the toolbar, navigation panel and content area. Options available to users are dependent on the permissions set by the account administrator.
 
