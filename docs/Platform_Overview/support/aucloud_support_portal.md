@@ -3,7 +3,7 @@ title: AUCloud Support Portal
 description: AUCloud Support Portal
 ---
 
-### Logging a Support ticket
+## Logging a Support ticket
 
 1. Log into the [AUCloud Portal](../../Platform_Services/reference_urls.md#portal-ui) where your service is located, follow the [Getting Started](../portal/getting_started.md) guide to understand the portal.
 
@@ -28,16 +28,16 @@ description: AUCloud Support Portal
 	- General users will only have visibility of tickets raised by themselves.
 	- If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab.
 	
-### Editing a Support Ticket
+## Editing a Support Ticket
 
-#### Prerequisites
+### Prerequisites
 
 - To edit support tickets you have created, you will need **View, Create and Modify privileges.**
 - To edit support tickets all users have created, you will also need **Account View and Modify privileges**. 
 
 Please contact your Account Administrator to edit your privileges if required.
 
-#### How to edit a submitted ticket
+### How to edit a submitted ticket
 
 Once a support ticket has been submitted within the portal, you are able to modify the description, subject, status or add additional content and screenshots.
 

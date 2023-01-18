@@ -3,8 +3,7 @@ title: Reference URLs
 description: Reference URLs for services in AUCLoud
 ---
 
-
-#### Portal UI
+## Portal UI
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
@@ -12,7 +11,7 @@ description: Reference URLs for services in AUCLoud
 | [https://eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
 | [https://enterprise.australiacloud.com.au/login](https://enterprise.australiacloud.com.au/login) | Enterprise | - |
 
-#### Portal API endpoints
+## Portal API endpoints
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
@@ -20,7 +19,7 @@ description: Reference URLs for services in AUCLoud
 | [https://api.eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
 | [https://api.enterprise.australiacloud.com.au/login](https://enterprise.australiacloud.com.au/login) | Enterprise | - |
 
-#### VMware Cloud Director API endpoints
+## VMware Cloud Director API endpoints
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
@@ -30,22 +29,22 @@ description: Reference URLs for services in AUCLoud
 | [https://api-vcd-sz201.eportal.australiacloud.com.au/api](https://api-vcd-sz201.eportal.australiacloud.com.au/api)  | Protected | SSZ |
 | [https://api-vcd-bsz.enterprise.australiacloud.com.au/api](https://portal.australiacloud.com.au/login)  | Enterprise | BSZ |
 
-#### Veeam M365 Backup portal
+## Veeam M365 Backup portal
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
 | [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Official |  |
 | [https://evbo-csz.australiacloud.com.au/](https://evbo-csz.australiacloud.com.au/) | Protected | |
 
-#### Object Storage API Endpoints (via VMware Object Storage Extension)
+## Object Storage API Endpoints (via VMware Object Storage Extension)
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
 | [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
 | [https://vos.s3-esz101.australiacloud.com.au/api/v1/s3](https://vos.s3-esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
 
+## Object Storage API Endpoints (direct use)
 
-#### Object Storage API Endpoints (direct use)
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
 | [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Official | CSZ |

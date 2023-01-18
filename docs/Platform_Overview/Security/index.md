@@ -3,23 +3,20 @@ title: Security
 description: Security
 ---
 
-As a sovereign community cloud AUCloud only services the Australian Government and Critical National Industry communities hosted and operated within Australian legal territorial jurisdiction.
+## Overview
 
+As a sovereign community cloud AUCloud only services the Australian Government and Critical National Industry communities hosted and operated within Australian legal territorial jurisdiction.
 
 AUCloud’s core tenet is the protection of the confidentiality, integrity and availability of data: both AUCloud’s own and that entrusted to AUCloud by its customers.
 
-
 AUCloud’s Information Security Management System (ISMS) is based upon a robust security framework of information security governance, policies, plans and procedures that are aligned with the Australian Government’s PSPF and ISM as well as International Standards such as ISO27001. AUCloud’s approach to security is continual assessment for a wide variety of threats and vulnerabilities that, if left unchecked, could compromise information assets or the supporting assets upon which they depend for their security.
-
 
 AUCloud is IRAP certified to PROTECTED and ISO27001 certified with the scope of certification covering:
 
  - Development, management, operation and security of the AUCloud portal, information systems and related infrastructure.
  - Management, operation and delivery of sovereign, secure Infrastructure as a Service, Backup as a Service and Disaster Recovery as a Service.
 
-
 AUCloud’s IRAP certification encompasses two operating environments, the OFFICIAL Data Community Environment and the PROTECTED Data Community Environment, both of which have been designed to meet or exceed PROTECTED level ISM controls.
-
 
 ## Community Rules Information Security Policy (CRISP)
 
@@ -33,13 +30,14 @@ Users cannot be serviced in AUCloud if they do not explicitly agree to the CRISP
 
 AUCloud’s CRISP ensures all our users benefit from increased security across the whole community.
 
-
 ## Essential 8
 AUCloud has implemented the Essential Eight Strategies to Mitigate Cyber Intrusions. Additional ACSC advice and strategies to mitigate cyber security incidents are implemented using a risk-based approach to the AUCloud security program.
 
 ## SOC
-AUCloud infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCloud’s internal networks as well as the perimeter protection of all AUCloud customers. The SOC:
+AUCloud infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCloud’s internal networks as well as the perimeter protection of all AUCloud customers. 
 
-- monitors, logs and analyses all cyber traffic on a continuous basis,
+The Security Operations Centre:
+
+- monitors, logs and analyses all cyber traffic on a continuous basis
 - provides near real-time cyber monitoring, triage, analysis and incident response
-- enables cyber threat intelligence at scale.
+- enables cyber threat intelligence at scale

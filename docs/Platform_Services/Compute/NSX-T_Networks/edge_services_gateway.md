@@ -3,7 +3,7 @@ title: Edge Services Gateway
 description: Edge Services Gateway
 ---
 
-### Overview
+## Overview
 
 The ESG included as part of a Virtual Organisation (vOrg) provides connectivity between internal and external Organisation VDC Networks. It is a virtual appliance that provides multiple features, including:
 
@@ -19,7 +19,7 @@ The following diagram shows the ESG acting as a router and a Firewall. Internal 
 
 Additional information on the Edge Services Gateway can be viewed on VMware Docs - [Managing NSX-T Data Center Edge Gateways.](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-45C0FEDF-84F2-4487-8DB8-3BC281EB25CD.html)
 
-### Creating Virtual Network Infrastructure
+## Creating Virtual Network Infrastructure
 
 Virtual compute and networking infrastructure must be created before ESG configuration.
 
@@ -30,7 +30,7 @@ Further information on creating Networks inside the VDC are located:
 
     ![Edge Connection](./assets/edge_connection.png)
 
-### Working with IP Address Groups
+## Working with IP Address Groups
 
 IP address group (IP Set) is a way to group a list of IP addresses or a range of IP addresses. You can use IP address groups while defining Edge Firewall Rules and distributed Firewall Rules.
 
@@ -70,7 +70,7 @@ To setup an IP set use the following steps:
 
 1. Repeat the above steps to create as many IP Sets as required.
 
-### Application Port Profiles
+## Application Port Profiles
 
 Application port profiles include a combination of a protocol and a port, or a group of ports, that is used for firewall and NAT services on the edge gateway.
 
@@ -108,7 +108,7 @@ To create custom Application Port Profiles, use the following steps:
 
     ![Application Port Profiles New](./assets/application_port_profiles_new.png)
 
-### Firewall Rules
+## Firewall Rules
 
 VMware Cloud Director provides a fully featured Layer 3 Firewall (Edge Services Gateway) to control transit from inside to outside security boundary, and within the various virtual datacenters (VDC) networks you create.
 
@@ -176,7 +176,7 @@ To create Firewall rules, use the following steps:
 
 1. Repeat above steps for multiple Firewall Rules, when complete, click **Save**.
 
-### How to find your allocated external IP Address
+## How to find your allocated external IP Address
 
 To route traffic to your external network (for example internet) and configure settings such as NAT rules, you need to know your external IP addresses. AUCloud standard IP address allocation is 2 Public IP addresses per Org vDC.
 
@@ -200,7 +200,7 @@ To find your allocated IP, use the following steps:
 
     ![Allocated IPs](./assets/ip_allocations.png)
 
-### NAT Rules
+## NAT Rules
 
 Network Address Translation (NAT) allows the source or destination IP address to be changed to enable traffic to transition through a router or gateway.
 
@@ -254,7 +254,7 @@ To add NAT rules, use the following steps:
 
 1. Click **Save** once information has been filled out, repeat if further NAT Rules are required.
 
-### Static Routes
+## Static Routes
 
 Static routing allows you to configure your Edge Services Gateway (ESG) with knowledge of other networks which are not directly connected to it. It is particularly useful if you need to:
 
@@ -291,7 +291,7 @@ To create a Static Route, use the following steps:
 
     ![Static Route Hops](./assets/static_route_hops.png)
 	
-### Creating a DHCP Pool
+## Creating a DHCP Pool
 
 With virtual data centre (VDC) networks, you have the option of creating an IP pool of addresses to be assigned automatically or manually (static IP pool). These addresses are injected into virtual machines (VMs) via VMware Tools during Guest Customisation. They appear in the usual places in Windows and Linux where you would interrogate IP settings and show as static addresses.
 
@@ -355,7 +355,7 @@ To create a DHCP Pool, use the following steps:
 	
 1. Repeat if further DHCP Pools are required for the same, or different networks.
 
-### Configuring an IPSec VPN
+## Configuring an IPSec VPN
 
 VMware Cloud Director supports the following types of site-to-site VPN:
 
@@ -424,7 +424,7 @@ To configure an IPSec VPN, use the following steps:
 
     ![IPSec VPN Confirmation](./assets/ipsec_vpn_confirmation.png)
 
-#### Customising Security Profile
+### Customising Security Profile
 
 If the Default Security Profile needs to be edited after the IPSec VPN has been created, use the following steps:
 
@@ -440,7 +440,7 @@ If the Default Security Profile needs to be edited after the IPSec VPN has been 
 
     ![IPSec VPN Profile](./assets/ipsec_vpn_customize_profile.png)
 
-#### Creating a second VPN Gateway
+### Creating a second VPN Gateway
 
 You now need to create the endpoint of the VPN tunnel. If this is a different VDC or vOrg, go through the steps described above again to create the tunnel. When completed, you can change your firewall settings and validate the connection. Refer to Firewall rules [above,](#firewall-rules) and Validating the tunnel [below.]#validating-the-tunnel
 
@@ -462,13 +462,13 @@ When the VPN tunnel is up and running, you will need to create firewall rules on
 		- Source as the source IP range for your VDC network
 		- Destination as the destination IP range for your datacenter/VDC network
 		
-#### Configure the external datacenter gateway firewall
+### Configure the external datacenter gateway firewall
 
 When the VPN tunnel is up and running, you may need to create firewall rules and routes on your on-premises gateway or other internal firewall for traffic passing over the tunnel.
 
 This is **outside of the scope** of this article and will depend on your specific on-premises network configuration.
 
-#### Validating the tunnel
+### Validating the tunnel
 
 When both ends of the IPSec tunnel are configured, the connection should start without any issues.
 
@@ -484,13 +484,13 @@ To verify the tunnel status in VMware Cloud Director, use the following steps:
 
     ![IPSec VPN Statistics](./assets/ipsec_vpn_statistics.png)
 
-#### IPSec VPN Configurable Options
+### IPSec VPN Configurable Options
 
 The following tables will outline the configurable options when creating or configuring an IPSec VPN.
 
 Additional information can be viewed on VMware Docs - [Customize the Security Profile of an IPSec VPN Tunnel.](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B2A795E7-32B7-48B7-BEA6-4E311096608E.html)
 
-##### Endpoint Configuration
+#### Endpoint Configuration
 
 | Heading             | Field           | Description |
 | -----------         | -----------     | ----------- |
@@ -500,7 +500,7 @@ Additional information can be viewed on VMware Docs - [Customize the Security Pr
 |                     | Networks        | This is the subnet on your on-premises network that you want to make accessible from your AUCloud VDC. |
 |                     | Remote ID       | Unique identifier, will default to the Remote Endpoint IP Address. |
 
-##### Security Profile
+#### Security Profile
 
 | Heading              | Field                | Description |
 | -----------          | -----------          | ----------- |
@@ -517,7 +517,7 @@ Additional information can be viewed on VMware Docs - [Customize the Security Pr
 |                      | Associated Life Time | (Optional) number of seconds before the IPSec tunnel needs to reestablish. |
 | DPD Configuration    | Probe Interval	      | (Optional) default number of seconds for dead peer detection. |
 
-### Configure a Load Balancer
+## Configure a Load Balancer
 
 As an Organisation Administrator, by configuring virtual services which distribute traffic across multiple server pools, you can balance the workloads in your datacenters that are backed by NSX-T Data Center.
 
@@ -570,7 +570,7 @@ To enable a load balancer, use the following steps:
 
     ![Load Balancer Headings](./assets/load_balancer_headings.png)
 	
-#### Creating a Service Engine Group
+### Creating a Service Engine Group
 
 The load balancing compute infrastructure provided by NSX Advanced Load Balancer is organized into service engine groups.
 
@@ -594,7 +594,7 @@ To create a Service Engine Group, use the following steps:
 
     ![Add Service Engine Group](./assets/load_balancer_service_engine_group_add.png)
 	
-#### Configuring a Load Balancer Pool
+### Configuring a Load Balancer Pool
 
 A server pool is a group of one or more servers that you configure to run the same application and to provide high availability.
 
@@ -637,7 +637,7 @@ To configure a Load Balancer Pool, use the following steps:
 
 1. Click **Save** when complete.
 
-#### Creating a Virtual Service
+### Creating a Virtual Service
 
 A virtual service listens for traffic to an IP address, processes client requests, and directs valid requests to a member of the load balancer server pool.
 
@@ -660,7 +660,7 @@ To create a Virtual Service, use the following steps:
 		
 		![Load Balancer Virtual Service Add](./assets/load_balancer_virtual_service_add.png)
 		
-### Add a certificate to the Edge Services Gateway
+## Add a certificate to the Edge Services Gateway
 
 In the VMware Cloud Director certificates library, you can import certificates used when creating entities that you must secure, such as servers, edge gateways, and so on.
 

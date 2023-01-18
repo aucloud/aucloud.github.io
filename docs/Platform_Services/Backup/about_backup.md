@@ -3,13 +3,13 @@ title: About AUCloud Backup for VMware Cloud Director
 description: About AUCloud Backup for VMware Cloud Director
 ---
 
-### Overview
+## Overview
 
 The AUCloud backup solution for VMware Cloud Director (vCD) environments uses Veeam backup infrastructure to protect vCD virtual machines (VMs). As such certain information been taken from the **Veeam Backup & Replication version 11 Enterprise Manager User Guide** and is intended to provide relevant information regarding backups within the AUCloud environment.
 
 A full copy of the Veeam Enterprise Manager User Guide documentation can be found online [here](https://helpcenter.veeam.com/docs/backup/em/em_working_with_vcd_vms.html?ver=110).
 
-### How it works
+## How it works
 
 Veeam (version 11) leverages the native VMware Cloud Director authentication technology to authorise users to log in to Enterprise Manager. The authentication process and components interactions are shown in the figure below.
 
@@ -17,7 +17,7 @@ Veeam (version 11) leverages the native VMware Cloud Director authentication tec
 
 This approach helps to streamline administration and management tasks on provider side. A tenant only needs to be configured once in VMware Cloud Director, and then any change like a new password or a 'Disable' operation will be immediately reflected in Veeam Enterprise Manager. User administration is handled at the AUCloud Portal level.
 
-### AUCloud Tenant User Operations and Authentication
+## AUCloud Tenant User Operations and Authentication
 
 When a user with the required permission level logs into VMware Cloud Director and access the Managed Backups portal from the vCD menu, the user will be automatically logged into the backup portal using their VMware Cloud Director credentials. Backup enabled users can perform the following operations:
 

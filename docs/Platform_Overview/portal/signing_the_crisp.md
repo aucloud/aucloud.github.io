@@ -3,7 +3,7 @@ title: Signing the CRISP
 description: Signing the CRISP
 ---
 
-### Signing the CRISP
+## Signing the CRISP
 
 The Community Rules Information Security Policy (CRISP) has been developed to ensure all users of the AUCloud platform are aligned in the secure way they connect with and use the platform. The CRISP is held at account level and is only required to be signed by the designated Security Contact.
 

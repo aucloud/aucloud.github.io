@@ -3,13 +3,15 @@ title: Managing User Accounts
 description: Instructions on how to manage user accounts in the AUCloud Portal
 ---
 
+## Overview
+
 Account administrators are responsible for the management of user accounts. This guide outlines the procedures used in managing users. Users are managed from the Users tab in the ribbon bar:
 
 ![Ribbon Users](./assets/ribbon_users.png)
 
 A list of all users will be displayed including their last log on and Status.
 
-### Creating a user
+## Creating a user
 
 1. Click on the Create new user tab.
 
@@ -29,7 +31,7 @@ A list of all users will be displayed including their last log on and Status.
 
     ![User Management](./assets/user_management.png)
 
-### View user details
+## View user details
 
 1. Click on the name of the user you want to view.
 
@@ -37,7 +39,7 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Click Back to users to return to the Users page.
 
-### Edit user details
+## Edit user details
 
 1. Click on the Edit button in the same line as the User you want to edit
 
@@ -47,13 +49,13 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Click Save.
 
-### User Permissions
+## User Permissions
 
 1. User permissions are defined by the account administrator. Permissions should be set according to the user's role and requirements. Permissions can be changed at any time by the account administrator.
 
 1. In addition to setting the overall permissions, the account administrator can limit a user's access to individual VMware Cloud Director services.
 
-### Changing user passwords
+## Changing user passwords
 
 1. If a user has forgotten his/her password then this can be reset by the administrator by using the Edit user function.
 
@@ -61,7 +63,7 @@ A list of all users will be displayed including their last log on and Status.
 
 1. User passwords can only be reset once every 24 hours.
 
-### User account locked out
+## User account locked out
 
 1. Users may be locked out due to too many incorrect password attempts or a period of inactivity.
 
@@ -79,7 +81,7 @@ A list of all users will be displayed including their last log on and Status.
 
 1. Confirm the action has been removed and advise the user their account is no longer locked out.
 
-### User acquires new mobile phone
+## User acquires new mobile phone
 
 1. The OTP will need to be reset if a user acquires a new mobile device.
 
@@ -87,13 +89,13 @@ A list of all users will be displayed including their last log on and Status.
 
 1. The memorable word will need to be reset if the user does not remember the original memorable word issued. Include this detail in the email if this is the case.
 
-### Change of account administrator
+## Change of account administrator
 
 1. AUCloud will retain contact details of the account administrator to contact with any issues pertaining to the account.
 
 1. If there is a change in account administrator, please advise AUCloud support at support@australiacloud.com.au to ensure the correct person is contacted.
 
-### Additional Assistance
+## Additional Assistance
 
 1. Additional assistance and/or training can be provided as required.
 

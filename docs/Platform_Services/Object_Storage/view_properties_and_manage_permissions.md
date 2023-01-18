@@ -3,7 +3,6 @@ title: View properties and manage permissions
 description: View properties and manage permissions
 ---
 
-
 ## View properties and manage permissions
 
 **Warning:** Customers should be careful as to what data they are exposing to the internet.

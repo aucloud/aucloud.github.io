@@ -3,7 +3,7 @@ title: Create a Routed VDC Network
 description: Create a Routed VDC Network
 ---
 
-### Overview
+## Overview
 
 An organisation virtual data centre network enables its virtual machines (VMs) to communicate with each other or to provide access to external networks. A single VDC can have multiple networks.
 
@@ -14,7 +14,7 @@ There are two network flavours, isolated and routed:
 
 Additional information can be viewed on VMware Docs - [Add a Routed Organization Virtual Data Center Network.](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html)
 
-### Creating a Routed VDC Network
+## Creating a Routed VDC Network
 
 To create a Routed VDC Network, use the following steps:
 

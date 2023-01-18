@@ -27,7 +27,6 @@ AUCloud VDaaS requires no additional controls to operate in the OFFICIAL and PRO
 
 You also have assurance that your data (including metadata, monitoring data and derived analytics data) remains in Australia and is operated by security cleared, Australian citizens.
 
-
 ### Features
 - Based on VMware Horizon 7 platform
 - Single management pane: dual zone deployments can be managed from a single management console
@@ -51,7 +50,6 @@ You also have assurance that your data (including metadata, monitoring data and 
 
 AUCloud VDaaS is a complete security solution that complies with the requirements of the ASD ISM and ACSC CAAF.
  
-
 ### Simple, transparent pricing
 #### Price includes:  
 - Data ingress and egress
@@ -64,7 +62,6 @@ AUCloud VDaaS is a complete security solution that complies with the requirement
 - Dedicated connectivity
 
 _*where applicable_
-
 
 ## Next Steps
  

@@ -25,7 +25,7 @@ description: Add an object to a bucket
 
     For Linux systems there are some comparable options available:
 
-    - [`rclone`](https://rclone.org/)
+    - [rclone](https://rclone.org/)
     - [Cyberduck](https://cyberduck.io/)
     - [Minio client](https://min.io/download)
     - [AWS CLI v2](https://aws.amazon.com/cli/)

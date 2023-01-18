@@ -3,7 +3,7 @@ title: Create an Isolated VDC Network
 description: Create an Isolated VDC Network
 ---
 
-### Overview
+## Overview
 
 An organisation virtual data centre network enables its virtual machines (VMs) to communicate with each other or to provide access to external networks. A single VDC can have multiple networks.
 
@@ -14,7 +14,7 @@ There are two network flavours, isolated and routed:
 
 Additional information can be viewed on VMware Docs - [Add an Isolated Organization Virtual Data Center Network.](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BCF1FEB1-F50C-4E11-8453-EED101396D0D.html)
 
-### Creating an Isolated VDC Network
+## Creating an Isolated VDC Network
 
 To create an Isolated VDC Network, use the following steps:
 

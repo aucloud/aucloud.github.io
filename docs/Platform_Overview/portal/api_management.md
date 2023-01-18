@@ -3,13 +3,13 @@ title: API Management in the AUCloud Portal
 description: Instructions on how to manage the API for the AUCloud Portal
 ---
 
-### Overview
+## Overview
 
 The AUCloud Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 
 AUCloud API documentation can be accessed through the [AUCloud Portal.](../../Platform_Services/reference_urls.md#portal-ui) VMware Cloud Director documentation can be accessed through the URL link in the portal.
 
-### Procedure
+## Procedure
 
 1. Click on the My Account icon and select API Management.
 

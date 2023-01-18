@@ -3,7 +3,7 @@ title: Guide to the Veeam Restore Portal
 description: Guide to the Veeam Restore Portal
 ---
 
-### Roles
+## Roles
 
 Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from the most recent backup job. Users log in with their existing Microsoft 365 credentials.
 
@@ -42,7 +42,7 @@ After you log out, all sessions that were opened by Veeam Backup for Microsoft 
 The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange, Microsoft SharePoint and Microsoft OneDrive for Business data in one window. It allows you to view details about restore sessions progress and results and the restore sessions history.  
 The main window consists of the **Explore**, **Restore Sessions** and **Restore List** tabs.
 
-### Explore Tab
+## Explore Tab
 
 This tab contains two panes:
 
