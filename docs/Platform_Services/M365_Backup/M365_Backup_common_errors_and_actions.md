@@ -5,7 +5,7 @@ description: M365 Backup common errors and actions
 
 ## Overview
 
-The following table will outline common errors that customers will receive in reports for their O365 backup service and the actions a customer can take to resolve them:
+The following table will outline common errors that customers will receive in reports for their M365 backup service and the actions a customer can take to resolve them:
 
 | Error | Solution|
 | --- | --- |
