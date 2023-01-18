@@ -2764,10 +2764,10 @@
 
   <h1>Backup</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The following information has been taken from the <strong>Veeam Backup &amp; Replication version 11 User Guide for VMware vSphere</strong> and is intended to provide relevant information regarding backups within the AUCloud environment.</p>
 <p>The full copy of the Veeam documentation can be found online <a href="https://helpcenter.veeam.com/docs/backup/vsphere/about_backup.html?ver=110">here</a> or by downloading the <a href="https://www.veeam.com/veeam_backup_11_0_user_guide_vsphere_pg.pdf">PDF</a>.</p>
-<h3 id="scale-out-backup-repositories">Scale Out Backup Repositories<a class="headerlink" href="#scale-out-backup-repositories" title="Permanent link">¤</a></h3>
+<h2 id="scale-out-backup-repositories">Scale Out Backup Repositories<a class="headerlink" href="#scale-out-backup-repositories" title="Permanent link">¤</a></h2>
 <p>A scale-out backup repository is a repository system with horizontal scaling support for multi-tier storage of data. The scale-out backup repository consists of one or more backup repositories called performance extents and can be expanded with cloud-based repositories or local object repositories. All the storage devices and systems inside the scale-out backup repository are joined into a system, with their capacities summarised. The main benefits of this feature are as follows:</p>
 <ul>
 <li>It provides a convenient way of managing the backup storage.</li>
@@ -2783,7 +2783,7 @@
 <li>Backup copy jobs. You can copy backups that reside on scale-out backup repositories and store backup copies on scale-out backup repositories.</li>
 </ul>
 <p>Backup files stored on the scale-out repository can be used for all types of restores, replication from backup and backup copy jobs.</p>
-<h3 id="backup-file-placement">Backup File Placement<a class="headerlink" href="#backup-file-placement" title="Permanent link">¤</a></h3>
+<h2 id="backup-file-placement">Backup File Placement<a class="headerlink" href="#backup-file-placement" title="Permanent link">¤</a></h2>
 <p>Veeam Backup &amp; Replication stores backup files on all performance extents of the scale-out backup repository. When you configure a scale-out backup repository, you must set the backup file placement policy for it. The backup file placement policy describes how backup files are distributed between extents. You can choose one of two policies:</p>
 <ul>
 <li>Data locality</li>
@@ -2791,11 +2791,11 @@
 </ul>
 <p>The backup file placement policy is not strict. If the necessary extent is not accessible, Veeam Backup &amp; Replication will disregard the policy limitations and attempt to place the backup file to the extent that has enough free space for the backup file.</p>
 <p>For example, you have set the Performance policy for the scale-out backup repository and specified that full backup files must be stored on Extent 1 and incremental backup files must be stored on Extent 2. If before an incremental backup job session Extent 2 goes offline, the new incremental backup file will be placed to Extent 1.</p>
-<h3 id="data-locality">Data Locality<a class="headerlink" href="#data-locality" title="Permanent link">¤</a></h3>
+<h2 id="data-locality">Data Locality<a class="headerlink" href="#data-locality" title="Permanent link">¤</a></h2>
 <p>If you set the Data locality policy for a scale-out backup repository, all backup files that belong to the same backup chain are stored on the same extent of the scale-out backup repository.</p>
 <p><img alt="Data Locality" src="assets/data_locality.png" /></p>
 <p>The Data locality policy does not put any limitations to backup chains. A new backup chain may be stored on the same extent or another extent. For example, if you create an active full backup, Veeam Backup &amp; Replication may store the full backup file to another extent, and all dependent incremental backup files will be stored together with this full backup file.</p>
-<h3 id="extent-selection">Extent Selection<a class="headerlink" href="#extent-selection" title="Permanent link">¤</a></h3>
+<h2 id="extent-selection">Extent Selection<a class="headerlink" href="#extent-selection" title="Permanent link">¤</a></h2>
 <p>To select an extent for backup file placement, Veeam Backup &amp; Replication checks the following conditions:</p>
 <ol>
 <li>
@@ -2814,7 +2814,7 @@
 <p>Availability of files from the current backup chain — extents that host incremental backup files from the current backup chain (or current VM) have a higher priority than extents that do not host such files.</p>
 </li>
 </ol>
-<h3 id="capacity-tier-s3-storage">Capacity Tier (S3 Storage)<a class="headerlink" href="#capacity-tier-s3-storage" title="Permanent link">¤</a></h3>
+<h2 id="capacity-tier-s3-storage">Capacity Tier (S3 Storage)<a class="headerlink" href="#capacity-tier-s3-storage" title="Permanent link">¤</a></h2>
 <p>Capacity Tier is an additional tier of storage that can be attached to a scale-out backup repository. Capacity Tier transports applicable data from the scale-out backup repository performance extents to a cloud or to S3-compatible devices for long-term storage.</p>
 <p>This feature is most useful if:</p>
 <ul>
@@ -2831,7 +2831,7 @@
 <p class="admonition-title">Note</p>
 <p>Pricing for Backup in the AUCloud Pricing Guide assumes data will be transferred to Capacity Tier Storage after one month by default.</p>
 </div>
-<h3 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">¤</a></h3>
+<h2 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">¤</a></h2>
 <p>Veeam Backup &amp; Replication allows you to prohibit deletion of data from object storage by making it immutable. To make data immutable, Veeam Backup &amp; Replication uses the Object Lock technology provided by S3-Compatible providers. Once imposed, the object lock prohibits deletion of data from object storage until the immutability expiration date is met. The value that defines the period after which the immutability expiration date occurs is specified when adding (or editing) an S3 Compatible object storage repository.</p>
 <p>The following operations cannot be performed on immutable data within the object storage:</p>
 <ul>
@@ -2842,9 +2842,9 @@
 <li>Removal of data by the Remove deleted items data after option, as described in Maintenance Settings.</li>
 </ul>
 <p>Immutable data is preserved as described in Block Generation.</p>
-<h3 id="block-generation">Block Generation<a class="headerlink" href="#block-generation" title="Permanent link">¤</a></h3>
+<h2 id="block-generation">Block Generation<a class="headerlink" href="#block-generation" title="Permanent link">¤</a></h2>
 <p>Block Generation is an additional period of 10 days that is automatically added to the immutability expiration date. This period is designed to reduce the number of the requests to the object storage in cases when the immutability period of some blocks must be extended: for instance, when the blocks are being reused. Generations may grow, which happens after you offload data starting from the 11th day and up until the end of the immutability period, thereby creating new consecutive generations the period of which is also 10 days.</p>
-<h3 id="forward-incremental-backup-chain">Forward Incremental Backup Chain<a class="headerlink" href="#forward-incremental-backup-chain" title="Permanent link">¤</a></h3>
+<h2 id="forward-incremental-backup-chain">Forward Incremental Backup Chain<a class="headerlink" href="#forward-incremental-backup-chain" title="Permanent link">¤</a></h2>
 <p>The following figure shows an example consisting of three generations; each generation has immutable blocks of data, two of which have been reused during copy.</p>
 <p><img alt="Forward Incremental Backup Chain" src="assets/forward_incremental_backup_chain.png" /></p>
 <p>As per example:</p>
@@ -2858,7 +2858,7 @@
 <p><strong>[Generation 3]</strong> On 01/22/2020 (11th day), an Incremental Backup 3 consisting of blocks <strong>K</strong> and <strong>B</strong> has been offloaded to object storage. Blocks of this file become part of the <strong>Generation 3</strong> and block <strong>B</strong> has been reused from the Full Backup 2. Since all of the blocks that have been offloaded starting from 01/11/2020 <strong>(G, H, I, J</strong> and <strong>K</strong>) are of the same backup chain, these blocks now belong to the <strong>Generation 3</strong> altogether and can only become mutable on 03/02/2020.</p>
 <p>For instance, if the Incremental Backup 3 had not been offloaded on 01/20/2020, the immutability expiration window of blocks <strong>A, B, G, H, I</strong> and <strong>J</strong> would have been met on 02/21/2020, which is the date when the Full Backup 2 was offloaded plus 40 days.</p>
 <p>According to this example, Veeam Backup &amp; Replication continues to keep reused/dependent blocks of data locked by continuously assigning them to new generations, thereby extending the immutability expiration period.</p>
-<h3 id="managing-capacity-tier-data">Managing Capacity Tier Data<a class="headerlink" href="#managing-capacity-tier-data" title="Permanent link">¤</a></h3>
+<h2 id="managing-capacity-tier-data">Managing Capacity Tier Data<a class="headerlink" href="#managing-capacity-tier-data" title="Permanent link">¤</a></h2>
 <p>You can manage the backup data in object storage in the following ways:</p>
 <ul>
 <li>Restore data directly from object storage back to production servers.</li>
@@ -2866,7 +2866,7 @@
 <li>Manage retention policies to remove obsolete restore points from the extents and the object storage.</li>
 <li>Reduce the amount of operations incurred by your cloud storage provider and decrease the amount of traffic being sent over the network when moving or copying data to object storage.</li>
 </ul>
-<h3 id="moving-inactive-backup-chains-to-object-storage">Moving Inactive Backup Chains to Object Storage<a class="headerlink" href="#moving-inactive-backup-chains-to-object-storage" title="Permanent link">¤</a></h3>
+<h2 id="moving-inactive-backup-chains-to-object-storage">Moving Inactive Backup Chains to Object Storage<a class="headerlink" href="#moving-inactive-backup-chains-to-object-storage" title="Permanent link">¤</a></h2>
 <p>To collect backup files that belong to inactive backup chains from the extents and move them to object storage, Veeam Backup &amp; Replication uses an offload session which is executed automatically every 4 hours.</p>
 <p>A complete name of each offload session is built up of the scale-out backup repository name + the Offload postfix. That is, if your scale-out backup repository name is AUCLOUD, the offload session name will be AUCLOUD Offload.</p>
 <p>The offload session manages the following:</p>
@@ -2883,7 +2883,7 @@
 <li>Builds and maintains indexes to verify whether data that is being moved is unique and has not been offloaded earlier. For more information, see Indexes.</li>
 <li>Synchronizes the backup chain state between the local and object storage repository to maintain retention policies. For more information, see Retention Policy.</li>
 </ul>
-<h3 id="data-transfer">Data Transfer<a class="headerlink" href="#data-transfer" title="Permanent link">¤</a></h3>
+<h2 id="data-transfer">Data Transfer<a class="headerlink" href="#data-transfer" title="Permanent link">¤</a></h2>
 <p>After the validation process is complete, the SOBR Offload session does the following:</p>
 <ul>
 <li>Collects backup files that have passed verification. Such verified backup files are collected from all the extents added to a scale-out backup repository.</li>
@@ -2904,14 +2904,14 @@
 <p>Backup files with metadata (or dummy files) will be replicated to the object storage repository and will be placed to the <code>storages</code> directory. As per example, these files are one <code>.vbk</code> file and three <code>.vib</code>  files that are shown in the Figure B.</p>
 <p>Such an approach will be applied to all inactive backup chains that satisfy validation criteria.</p>
 <p>After offload is complete, the new Object Storage node appears in the Home view, under the Backups node and shows backups that have been moved to object storage.</p>
-<h3 id="copying-backups-to-object-storage">Copying Backups to Object Storage<a class="headerlink" href="#copying-backups-to-object-storage" title="Permanent link">¤</a></h3>
+<h2 id="copying-backups-to-object-storage">Copying Backups to Object Storage<a class="headerlink" href="#copying-backups-to-object-storage" title="Permanent link">¤</a></h2>
 <p>Veeam Backup &amp; Replication allows you to copy backups from the extents of your scale-out backup repository to object storage as soon as these backups are created.</p>
 <p>To copy data to object storage, Veeam Backup &amp; Replication uses a copy session that is executed automatically upon completion of a backup (or backup copy) job that is targeted to a scale-out backup repository that was extended with object storage.</p>
 <p>A complete name of each copy session is built up of the backup (or backup copy) job name + the Offload postfix. That is, if your backup (or backup copy) job name is Aucloud, the copy session name will be Aucloud Offload.</p>
 <p>Once the backup (or backup copy) job is complete, Veeam Backup &amp; Replication initiates a new copy session which simply extracts data blocks and metadata from each new backup file (<code>.vbk</code>, <code>.vib</code> , <code>.vrb</code>) created on any of the extents of your scale-out backup repository and copies these blocks to object storage, thereby making an identical replica of your backup data.</p>
 <p>Having such a replica gives you the ability to quickly restore data as of the latest state in case of any unexpected failure of any of your extents, or even of the entire scale-out backup repository, as described in Restore Scenarios.</p>
 <p>To enable data copy, make sure to select the Copy backups to object storage as soon as they are created option, as described in Add Capacity Tier.</p>
-<h3 id="combining-copy-and-move-operations">Combining Copy and Move Operations<a class="headerlink" href="#combining-copy-and-move-operations" title="Permanent link">¤</a></h3>
+<h2 id="combining-copy-and-move-operations">Combining Copy and Move Operations<a class="headerlink" href="#combining-copy-and-move-operations" title="Permanent link">¤</a></h2>
 <p>You can combine both the Copy backups to object storage as soon as they are created option and the Move backups to object storage as they age out of the operational restores window option. In such a scenario, a copy session will be copying newly created backups right upon creation.</p>
 <p>Once the backup chain becomes inactive (or sealed) and exceeds the operational restore window, data blocks will be removed from each associated backup file in such an inactive on-premises backup chain and only metadata will be preserved. Such a behavior mimics data movement, but instead of moving data that was already copied, Veeam Backup &amp; Replication simply purges associated data blocks from the extents, thereby saving traffic and reducing costs that might be incurred by your storage provider for performing read/write operations.</p>
 <p>The following figure shows an example in which both options are enabled, suggesting that each backup file has been copied to object storage upon its creation.</p>
@@ -2924,7 +2924,7 @@
 - The target object storage repository is in the maintenance or seal mode.
 - During prohibited hours specified in the backup window configuration.</p>
 </div>
-<h3 id="downloading-data-from-object-storage">Downloading Data from Object Storage<a class="headerlink" href="#downloading-data-from-object-storage" title="Permanent link">¤</a></h3>
+<h2 id="downloading-data-from-object-storage">Downloading Data from Object Storage<a class="headerlink" href="#downloading-data-from-object-storage" title="Permanent link">¤</a></h2>
 <p>To download data from object storage back to the source extents, Veeam Backup &amp; Replication uses the SOBR Download session.</p>
 <p>The SOBR Download session is triggered right after you select the Copy to performance tier option; it collects offloaded blocks of data from object storage and copies them back to the on-premises extents. For more information, see Copying to Performance Tier and Downloading to Performance Tier.</p>
 <p>Consider the following:</p>
@@ -2940,9 +2940,9 @@
 <li>The Figure B represents extents that store backup files with metadata to be replenished.</li>
 </ul>
 <p><img alt="Store Backup" src="assets/store_backup.png" /></p>
-<h3 id="backup-chain-legitimacy">Backup Chain Legitimacy<a class="headerlink" href="#backup-chain-legitimacy" title="Permanent link">¤</a></h3>
+<h2 id="backup-chain-legitimacy">Backup Chain Legitimacy<a class="headerlink" href="#backup-chain-legitimacy" title="Permanent link">¤</a></h2>
 <p>Before moving data to object storage repositories, Veeam Backup &amp; Replication scale-out repository validates the backup chain state to ensure that the restore points to be moved belong to an inactive backup chain. This does not apply to the copy policy: all newly created restore points are copied immediately.</p>
-<h3 id="inactive-backup-chain-of-a-backup-job">Inactive Backup Chain of a Backup Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-job" title="Permanent link">¤</a></h3>
+<h2 id="inactive-backup-chain-of-a-backup-job">Inactive Backup Chain of a Backup Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-job" title="Permanent link">¤</a></h2>
 <p>When a backup job is being executed for the first time, Veeam Backup &amp; Replication creates an initial full backup file that contains complete information about the VMs that are being backed up. Each subsequent backup job sessions initiate creation of new incremental backup files that contain only changes which have occurred since the last backup session.</p>
 <p>Such a chain can be considered active as there are more incremental backups have yet to be created, depending on the backup job schedule configuration. For more information, see Define Job Schedule.</p>
 <p>To move data to object storage repositories, an active backup chain must be reset, that is, transformed into inactive.</p>
@@ -2963,7 +2963,7 @@
 <p><img alt="Figure A and B" src="assets/figures.png" /></p>
 <p>Backup chains can be of a different structure, depending on whether your backups were created using the perVM method or as a single storage; when all VMs are placed into a single file. Both structure types can be offloaded to object storage repositories as long as these types are inactive.</p>
 <p>For more information on how Veeam Backup &amp; Replication creates and manages backup chains, see Backup Chain.</p>
-<h3 id="inactive-backup-chain-of-a-backup-copy-job">Inactive Backup Chain of a Backup Copy Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-copy-job" title="Permanent link">¤</a></h3>
+<h2 id="inactive-backup-chain-of-a-backup-copy-job">Inactive Backup Chain of a Backup Copy Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-copy-job" title="Permanent link">¤</a></h2>
 <p>When offloading backup chains created by backup copy jobs, only full backup files that have a GFS flag will be moved. That said, you must select the Keep the following restore points as full backups for archival purposes check box and (optionally) combine it with the Read the entire restore point from source backup instead of synthesizing it from increments check box at the Target step of the New Backup Copy Job wizard.</p>
 <p>For more information on how to configure a backup copy job and how the GFS retention works, see Creating Backup Copy Jobs and GFS Retention Policy respectively.</p>
 <p>Consider the following figures:</p>
@@ -2983,7 +2983,7 @@
 - Incremental backup files (<code>.vib</code>).</p>
 </div>
 <p><img alt="Figure A and B" src="assets/figures2.png" /></p>
-<h3 id="retention-policy">Retention Policy<a class="headerlink" href="#retention-policy" title="Permanent link">¤</a></h3>
+<h2 id="retention-policy">Retention Policy<a class="headerlink" href="#retention-policy" title="Permanent link">¤</a></h2>
 <p>A retention policy defines the number of restore points to keep on your extents and is configured in the Specify Backup Storage Settings step of the backup job configuration wizard.</p>
 <p>The restore points that fall under the retention policy will be removed from both the extents and object storage repositories in the following manner:</p>
 <ul>
@@ -3006,7 +3006,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2023</span>
       
     
   </small>

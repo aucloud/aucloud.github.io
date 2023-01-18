@@ -1385,12 +1385,18 @@
     Creating a second VPN Gateway
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Creating a second VPN Gateway">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#configure-the-esg-firewall" class="md-nav__link">
     Configure the ESG Firewall
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2904,12 +2910,18 @@
     Creating a second VPN Gateway
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Creating a second VPN Gateway">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#configure-the-esg-firewall" class="md-nav__link">
     Configure the ESG Firewall
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3021,7 +3033,7 @@
 
   <h1>Edge Services Gateway</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The ESG included as part of a Virtual Organisation (vOrg) provides connectivity between internal and external Organisation VDC Networks. It is a virtual appliance that provides multiple features, including:</p>
 <ul>
 <li>Dynamic Host Configuration Protocol (DHCP)</li>
@@ -3033,7 +3045,7 @@
 <p>The following diagram shows the ESG acting as a router and a Firewall. Internal networks cannot communicate with external (public) networks unless the ESG has been correctly configured:</p>
 <p><img alt="Edge Services Gateway" src="../assets/edge_services_gateway.png" /></p>
 <p>Additional information on the Edge Services Gateway can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-45C0FEDF-84F2-4487-8DB8-3BC281EB25CD.html">Managing NSX-T Data Center Edge Gateways.</a></p>
-<h3 id="creating-virtual-network-infrastructure">Creating Virtual Network Infrastructure<a class="headerlink" href="#creating-virtual-network-infrastructure" title="Permanent link">¤</a></h3>
+<h2 id="creating-virtual-network-infrastructure">Creating Virtual Network Infrastructure<a class="headerlink" href="#creating-virtual-network-infrastructure" title="Permanent link">¤</a></h2>
 <p>Virtual compute and networking infrastructure must be created before ESG configuration.</p>
 <p>Further information on creating Networks inside the VDC are located:</p>
 <ul>
@@ -3043,7 +3055,7 @@
 <p><img alt="Edge Connection" src="../assets/edge_connection.png" /></p>
 </li>
 </ul>
-<h3 id="working-with-ip-address-groups">Working with IP Address Groups<a class="headerlink" href="#working-with-ip-address-groups" title="Permanent link">¤</a></h3>
+<h2 id="working-with-ip-address-groups">Working with IP Address Groups<a class="headerlink" href="#working-with-ip-address-groups" title="Permanent link">¤</a></h2>
 <p>IP address group (IP Set) is a way to group a list of IP addresses or a range of IP addresses. You can use IP address groups while defining Edge Firewall Rules and distributed Firewall Rules.</p>
 <p>IP Sets are a group of objects to which the Firewall Rules apply. Combing multiple objects into IP Sets helps reduce the total number of Firewall Rules to be created.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-6A0E39F5-123C-4429-ACAC-31025A364411.html">Add an IP Set to an NSX-T Data Center Edge Gateway.</a></p>
@@ -3084,7 +3096,7 @@
 <p>Repeat the above steps to create as many IP Sets as required.</p>
 </li>
 </ol>
-<h3 id="application-port-profiles">Application Port Profiles<a class="headerlink" href="#application-port-profiles" title="Permanent link">¤</a></h3>
+<h2 id="application-port-profiles">Application Port Profiles<a class="headerlink" href="#application-port-profiles" title="Permanent link">¤</a></h2>
 <p>Application port profiles include a combination of a protocol and a port, or a group of ports, that is used for firewall and NAT services on the edge gateway.</p>
 <p>In addition to the default port profiles that are pre-configured for NSX-T Data Center, you can create custom application port profiles.</p>
 <p>When you create a custom application port profile on an edge gateway, it becomes visible to all the other NSX-T Data Center edge gateways that are in the same organization VDC.</p>
@@ -3123,7 +3135,7 @@
 <p><img alt="Application Port Profiles New" src="../assets/application_port_profiles_new.png" /></p>
 </li>
 </ol>
-<h3 id="firewall-rules">Firewall Rules<a class="headerlink" href="#firewall-rules" title="Permanent link">¤</a></h3>
+<h2 id="firewall-rules">Firewall Rules<a class="headerlink" href="#firewall-rules" title="Permanent link">¤</a></h2>
 <p>VMware Cloud Director provides a fully featured Layer 3 Firewall (Edge Services Gateway) to control transit from inside to outside security boundary, and within the various virtual datacenters (VDC) networks you create.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html">Add an NSX-T Data Center Edge Gateway Firewall Rule.</a></p>
 <p>When creating Firewall Rules, <strong>IP Sets</strong> are required, information on <strong>IP Sets</strong> is located <a href="#working-with-ip-address-groups">above.</a></p>
@@ -3194,7 +3206,7 @@
 <p>Repeat above steps for multiple Firewall Rules, when complete, click <strong>Save</strong>.</p>
 </li>
 </ol>
-<h3 id="how-to-find-your-allocated-external-ip-address">How to find your allocated external IP Address<a class="headerlink" href="#how-to-find-your-allocated-external-ip-address" title="Permanent link">¤</a></h3>
+<h2 id="how-to-find-your-allocated-external-ip-address">How to find your allocated external IP Address<a class="headerlink" href="#how-to-find-your-allocated-external-ip-address" title="Permanent link">¤</a></h2>
 <p>To route traffic to your external network (for example internet) and configure settings such as NAT rules, you need to know your external IP addresses. AUCloud standard IP address allocation is 2 Public IP addresses per Org vDC.</p>
 <p>To find your allocated IP, use the following steps:</p>
 <ol>
@@ -3220,7 +3232,7 @@
 <p><img alt="Allocated IPs" src="../assets/ip_allocations.png" /></p>
 </li>
 </ol>
-<h3 id="nat-rules">NAT Rules<a class="headerlink" href="#nat-rules" title="Permanent link">¤</a></h3>
+<h2 id="nat-rules">NAT Rules<a class="headerlink" href="#nat-rules" title="Permanent link">¤</a></h2>
 <p>Network Address Translation (NAT) allows the source or destination IP address to be changed to enable traffic to transition through a router or gateway.</p>
 <p>You can use three types of NAT within your Edge Services Gateway (ESG):</p>
 <ul>
@@ -3275,7 +3287,7 @@
 <p>Click <strong>Save</strong> once information has been filled out, repeat if further NAT Rules are required.</p>
 </li>
 </ol>
-<h3 id="static-routes">Static Routes<a class="headerlink" href="#static-routes" title="Permanent link">¤</a></h3>
+<h2 id="static-routes">Static Routes<a class="headerlink" href="#static-routes" title="Permanent link">¤</a></h2>
 <p>Static routing allows you to configure your Edge Services Gateway (ESG) with knowledge of other networks which are not directly connected to it. It is particularly useful if you need to:</p>
 <ul>
 <li>route between virtual data centres (VDCs) in the same virtual organisation (vOrg), or</li>
@@ -3312,7 +3324,7 @@
 <p><img alt="Static Route Hops" src="../assets/static_route_hops.png" /></p>
 </li>
 </ol>
-<h3 id="creating-a-dhcp-pool">Creating a DHCP Pool<a class="headerlink" href="#creating-a-dhcp-pool" title="Permanent link">¤</a></h3>
+<h2 id="creating-a-dhcp-pool">Creating a DHCP Pool<a class="headerlink" href="#creating-a-dhcp-pool" title="Permanent link">¤</a></h2>
 <p>With virtual data centre (VDC) networks, you have the option of creating an IP pool of addresses to be assigned automatically or manually (static IP pool). These addresses are injected into virtual machines (VMs) via VMware Tools during Guest Customisation. They appear in the usual places in Windows and Linux where you would interrogate IP settings and show as static addresses.</p>
 <p>In some situations, you may require true DHCP functionality in your VMs to show IP addresses as dynamically defined. As with an IP pool, you are defining a non-overlapping range of IP addresses to use on the network.</p>
 <p>Prerequisites:</p>
@@ -3388,7 +3400,7 @@
 <p>Repeat if further DHCP Pools are required for the same, or different networks.</p>
 </li>
 </ol>
-<h3 id="configuring-an-ipsec-vpn">Configuring an IPSec VPN<a class="headerlink" href="#configuring-an-ipsec-vpn" title="Permanent link">¤</a></h3>
+<h2 id="configuring-an-ipsec-vpn">Configuring an IPSec VPN<a class="headerlink" href="#configuring-an-ipsec-vpn" title="Permanent link">¤</a></h2>
 <p>VMware Cloud Director supports the following types of site-to-site VPN:</p>
 <ul>
 <li>Another edge gateway in the same organisation</li>
@@ -3462,7 +3474,7 @@
 <p><img alt="IPSec VPN Confirmation" src="../assets/ipsec_vpn_confirmation.png" /></p>
 </li>
 </ol>
-<h4 id="customising-security-profile">Customising Security Profile<a class="headerlink" href="#customising-security-profile" title="Permanent link">¤</a></h4>
+<h3 id="customising-security-profile">Customising Security Profile<a class="headerlink" href="#customising-security-profile" title="Permanent link">¤</a></h3>
 <p>If the Default Security Profile needs to be edited after the IPSec VPN has been created, use the following steps:</p>
 <ol>
 <li>
@@ -3480,7 +3492,7 @@
 <p><img alt="IPSec VPN Profile" src="../assets/ipsec_vpn_customize_profile.png" /></p>
 </li>
 </ol>
-<h4 id="creating-a-second-vpn-gateway">Creating a second VPN Gateway<a class="headerlink" href="#creating-a-second-vpn-gateway" title="Permanent link">¤</a></h4>
+<h3 id="creating-a-second-vpn-gateway">Creating a second VPN Gateway<a class="headerlink" href="#creating-a-second-vpn-gateway" title="Permanent link">¤</a></h3>
 <p>You now need to create the endpoint of the VPN tunnel. If this is a different VDC or vOrg, go through the steps described above again to create the tunnel. When completed, you can change your firewall settings and validate the connection. Refer to Firewall rules <a href="#firewall-rules">above,</a> and Validating the tunnel [below.]#validating-the-tunnel</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3504,10 +3516,10 @@
 </li>
 </ul>
 </div>
-<h4 id="configure-the-external-datacenter-gateway-firewall">Configure the external datacenter gateway firewall<a class="headerlink" href="#configure-the-external-datacenter-gateway-firewall" title="Permanent link">¤</a></h4>
+<h3 id="configure-the-external-datacenter-gateway-firewall">Configure the external datacenter gateway firewall<a class="headerlink" href="#configure-the-external-datacenter-gateway-firewall" title="Permanent link">¤</a></h3>
 <p>When the VPN tunnel is up and running, you may need to create firewall rules and routes on your on-premises gateway or other internal firewall for traffic passing over the tunnel.</p>
 <p>This is <strong>outside of the scope</strong> of this article and will depend on your specific on-premises network configuration.</p>
-<h4 id="validating-the-tunnel">Validating the tunnel<a class="headerlink" href="#validating-the-tunnel" title="Permanent link">¤</a></h4>
+<h3 id="validating-the-tunnel">Validating the tunnel<a class="headerlink" href="#validating-the-tunnel" title="Permanent link">¤</a></h3>
 <p>When both ends of the IPSec tunnel are configured, the connection should start without any issues.</p>
 <p>To verify the tunnel status in VMware Cloud Director, use the following steps:</p>
 <ol>
@@ -3523,10 +3535,10 @@
 <p><img alt="IPSec VPN Statistics" src="../assets/ipsec_vpn_statistics.png" /></p>
 </li>
 </ol>
-<h4 id="ipsec-vpn-configurable-options">IPSec VPN Configurable Options<a class="headerlink" href="#ipsec-vpn-configurable-options" title="Permanent link">¤</a></h4>
+<h3 id="ipsec-vpn-configurable-options">IPSec VPN Configurable Options<a class="headerlink" href="#ipsec-vpn-configurable-options" title="Permanent link">¤</a></h3>
 <p>The following tables will outline the configurable options when creating or configuring an IPSec VPN.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B2A795E7-32B7-48B7-BEA6-4E311096608E.html">Customize the Security Profile of an IPSec VPN Tunnel.</a></p>
-<h5 id="endpoint-configuration">Endpoint Configuration<a class="headerlink" href="#endpoint-configuration" title="Permanent link">¤</a></h5>
+<h4 id="endpoint-configuration">Endpoint Configuration<a class="headerlink" href="#endpoint-configuration" title="Permanent link">¤</a></h4>
 <table>
 <thead>
 <tr>
@@ -3563,7 +3575,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="security-profile">Security Profile<a class="headerlink" href="#security-profile" title="Permanent link">¤</a></h5>
+<h4 id="security-profile">Security Profile<a class="headerlink" href="#security-profile" title="Permanent link">¤</a></h4>
 <table>
 <thead>
 <tr>
@@ -3635,7 +3647,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="configure-a-load-balancer">Configure a Load Balancer<a class="headerlink" href="#configure-a-load-balancer" title="Permanent link">¤</a></h3>
+<h2 id="configure-a-load-balancer">Configure a Load Balancer<a class="headerlink" href="#configure-a-load-balancer" title="Permanent link">¤</a></h2>
 <p>As an Organisation Administrator, by configuring virtual services which distribute traffic across multiple server pools, you can balance the workloads in your datacenters that are backed by NSX-T Data Center.</p>
 <p>VMware Cloud Director supports L4 and L7 load balancing that you can configure on an NSX-T Data Center edge gateway.</p>
 <p>Level 4 load balancing (L4) directs traffic based on data from network and transport layer protocols, such as IP address and TCP port.</p>
@@ -3692,7 +3704,7 @@
 <p><img alt="Load Balancer Headings" src="../assets/load_balancer_headings.png" /></p>
 </li>
 </ol>
-<h4 id="creating-a-service-engine-group">Creating a Service Engine Group<a class="headerlink" href="#creating-a-service-engine-group" title="Permanent link">¤</a></h4>
+<h3 id="creating-a-service-engine-group">Creating a Service Engine Group<a class="headerlink" href="#creating-a-service-engine-group" title="Permanent link">¤</a></h3>
 <p>The load balancing compute infrastructure provided by NSX Advanced Load Balancer is organized into service engine groups.</p>
 <p>A system administrator can assign one or more service engine groups to an NSX-T Data Center ESG.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5712D1CE-5966-48E5-A51F-DA60F956C7AC.html">Assign a Service Engine Group to an NSX-T Data Center Edge Gateway.</a></p>
@@ -3716,7 +3728,7 @@
 <p><img alt="Add Service Engine Group" src="../assets/load_balancer_service_engine_group_add.png" /></p>
 </li>
 </ol>
-<h4 id="configuring-a-load-balancer-pool">Configuring a Load Balancer Pool<a class="headerlink" href="#configuring-a-load-balancer-pool" title="Permanent link">¤</a></h4>
+<h3 id="configuring-a-load-balancer-pool">Configuring a Load Balancer Pool<a class="headerlink" href="#configuring-a-load-balancer-pool" title="Permanent link">¤</a></h3>
 <p>A server pool is a group of one or more servers that you configure to run the same application and to provide high availability.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-033348E5-435E-4F8F-8A5E-FFA001F659FC.html">Add a Load Balancer Server Pool.</a></p>
 <p>To configure a Load Balancer Pool, use the following steps:</p>
@@ -3768,7 +3780,7 @@
 <p>Click <strong>Save</strong> when complete.</p>
 </li>
 </ol>
-<h4 id="creating-a-virtual-service">Creating a Virtual Service<a class="headerlink" href="#creating-a-virtual-service" title="Permanent link">¤</a></h4>
+<h3 id="creating-a-virtual-service">Creating a Virtual Service<a class="headerlink" href="#creating-a-virtual-service" title="Permanent link">¤</a></h3>
 <p>A virtual service listens for traffic to an IP address, processes client requests, and directs valid requests to a member of the load balancer server pool.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5B04413B-6761-483B-979C-D99F43651284.html">Create a Virtual Service.</a></p>
 <p>To create a Virtual Service, use the following steps:</p>
@@ -3792,7 +3804,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="add-a-certificate-to-the-edge-services-gateway">Add a certificate to the Edge Services Gateway<a class="headerlink" href="#add-a-certificate-to-the-edge-services-gateway" title="Permanent link">¤</a></h3>
+<h2 id="add-a-certificate-to-the-edge-services-gateway">Add a certificate to the Edge Services Gateway<a class="headerlink" href="#add-a-certificate-to-the-edge-services-gateway" title="Permanent link">¤</a></h2>
 <p>In the VMware Cloud Director certificates library, you can import certificates used when creating entities that you must secure, such as servers, edge gateways, and so on.</p>
 <p>The certificate library contains information about single certificates, certificate chains, private keys, certificate expiration dates, the entities that the certificates secure, and so on.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-80B4CB1C-9353-4EB9-8557-4F6705949D0F.html">Managing Certificates.</a></p>
@@ -3828,7 +3840,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2023</span>
       
     
   </small>

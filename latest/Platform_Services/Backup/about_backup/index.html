@@ -2703,14 +2703,14 @@
 
   <h1>About AUCloud Backup for VMware Cloud Director</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The AUCloud backup solution for VMware Cloud Director (vCD) environments uses Veeam backup infrastructure to protect vCD virtual machines (VMs). As such certain information been taken from the <strong>Veeam Backup &amp; Replication version 11 Enterprise Manager User Guide</strong> and is intended to provide relevant information regarding backups within the AUCloud environment.</p>
 <p>A full copy of the Veeam Enterprise Manager User Guide documentation can be found online <a href="https://helpcenter.veeam.com/docs/backup/em/em_working_with_vcd_vms.html?ver=110">here</a>.</p>
-<h3 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">¤</a></h3>
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">¤</a></h2>
 <p>Veeam (version 11) leverages the native VMware Cloud Director authentication technology to authorise users to log in to Enterprise Manager. The authentication process and components interactions are shown in the figure below.</p>
 <p><img alt="How It Works" src="../assets/how_it_works.png" /></p>
 <p>This approach helps to streamline administration and management tasks on provider side. A tenant only needs to be configured once in VMware Cloud Director, and then any change like a new password or a 'Disable' operation will be immediately reflected in Veeam Enterprise Manager. User administration is handled at the AUCloud Portal level.</p>
-<h3 id="aucloud-tenant-user-operations-and-authentication">AUCloud Tenant User Operations and Authentication<a class="headerlink" href="#aucloud-tenant-user-operations-and-authentication" title="Permanent link">¤</a></h3>
+<h2 id="aucloud-tenant-user-operations-and-authentication">AUCloud Tenant User Operations and Authentication<a class="headerlink" href="#aucloud-tenant-user-operations-and-authentication" title="Permanent link">¤</a></h2>
 <p>When a user with the required permission level logs into VMware Cloud Director and access the Managed Backups portal from the vCD menu, the user will be automatically logged into the backup portal using their VMware Cloud Director credentials. Backup enabled users can perform the following operations:</p>
 <ul>
 <li>Create new backup jobs for the objects within VMware Cloud Director, based on the pre-defined templates. Tenant users can configure essential job settings (such as VMs to backup, retention, schedule, notifications, and guest OS processing options).</li>
@@ -2729,7 +2729,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2023</span>
       
     
   </small>

@@ -2813,19 +2813,19 @@
 
   <h1>vApp Networks</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>In addition to virtual data centre (VDC) networking, you can create individual vApp networks to have even greater control over your network infrastructure.</p>
 <p>vApp networks enable you to create smaller networks within individual vApps that have a vApp edge, like the edge gateway on your VDC. </p>
 <p>Although a vApp edge is not as feature rich as a VDC edge, it enables you to create firewall and NAT rules to separate your VDC networks from your vApp virtual machines (VMs). This means you can create some quite complex networks to satisfy application needs.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B95FB8AF-C428-4FCB-88DA-5DCA35B19B5A.html">Add a Network to a vApp.</a></p>
 <p>The vApp network diagram below shows the vApp edge:</p>
 <p><img alt="vApp Edge" src="../assets/vapp_edge.png" /></p>
-<h4 id="vapp-network-prerequisites">vApp Network Prerequisites<a class="headerlink" href="#vapp-network-prerequisites" title="Permanent link">¤</a></h4>
+<h3 id="vapp-network-prerequisites">vApp Network Prerequisites<a class="headerlink" href="#vapp-network-prerequisites" title="Permanent link">¤</a></h3>
 <ul>
 <li>Edge Services Gateway (ESG) inside Organisation VDC</li>
 <li>Routed Network attached to ESG - see <a href="../create_a_routed_vdc_network/">Create a Routed VDC Network</a> for information.</li>
 </ul>
-<h3 id="creating-a-vapp-network">Creating a vApp Network<a class="headerlink" href="#creating-a-vapp-network" title="Permanent link">¤</a></h3>
+<h2 id="creating-a-vapp-network">Creating a vApp Network<a class="headerlink" href="#creating-a-vapp-network" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains your vApp.</p>
@@ -2849,7 +2849,7 @@
 <p><img alt="vApp Network" src="../assets/vapp_network.png" /></p>
 </li>
 </ol>
-<h3 id="connecting-a-virtual-machine-to-a-vapp-network">Connecting a Virtual Machine to a vApp Network<a class="headerlink" href="#connecting-a-virtual-machine-to-a-vapp-network" title="Permanent link">¤</a></h3>
+<h2 id="connecting-a-virtual-machine-to-a-vapp-network">Connecting a Virtual Machine to a vApp Network<a class="headerlink" href="#connecting-a-virtual-machine-to-a-vapp-network" title="Permanent link">¤</a></h2>
 <p>If your vApp is already populated with VMs that are connected to a VDC network, you may want to move them over to the vApp network.</p>
 <p>To change the Virtual Machine network to a vApp Network, use the following steps:</p>
 <ol>
@@ -2882,7 +2882,7 @@
 <p>Repeat for the remainder of the Virtual Machines that are required to join the vApp Network.</p>
 </li>
 </ol>
-<h3 id="viewing-and-adjusting-vapp-network-settings">Viewing and Adjusting vApp Network Settings<a class="headerlink" href="#viewing-and-adjusting-vapp-network-settings" title="Permanent link">¤</a></h3>
+<h2 id="viewing-and-adjusting-vapp-network-settings">Viewing and Adjusting vApp Network Settings<a class="headerlink" href="#viewing-and-adjusting-vapp-network-settings" title="Permanent link">¤</a></h2>
 <p>When you've created your vApp Network and assigned Virtual Machines to it, you may want to review the vApp Network settings and adjust them if needed.</p>
 <p>To edit the Network Settings of a vApp, use the following steps:</p>
 <ol>
@@ -2910,9 +2910,9 @@
 <p>The <strong>Routing</strong> heading enables you to create static routes for the vApp Network. For more information, see vApp Network Routing <a href="vapp-network-routing">below.</a></p>
 </li>
 </ol>
-<h3 id="vapp-network-firewall-and-nat-rules">vApp Network Firewall and NAT Rules<a class="headerlink" href="#vapp-network-firewall-and-nat-rules" title="Permanent link">¤</a></h3>
+<h2 id="vapp-network-firewall-and-nat-rules">vApp Network Firewall and NAT Rules<a class="headerlink" href="#vapp-network-firewall-and-nat-rules" title="Permanent link">¤</a></h2>
 <p>For the vApp Network, there will be a rule in place to allow any traffic to traverse the Firewall. You can amend or delete this rule or create new rules.</p>
-<h4 id="vapp-network-firewall-rules">vApp Network Firewall Rules<a class="headerlink" href="#vapp-network-firewall-rules" title="Permanent link">¤</a></h4>
+<h3 id="vapp-network-firewall-rules">vApp Network Firewall Rules<a class="headerlink" href="#vapp-network-firewall-rules" title="Permanent link">¤</a></h3>
 <p>To create a vApp Network Firewall Rule, use the following steps:</p>
 <ol>
 <li>
@@ -2934,7 +2934,7 @@
 <p><img alt="vApp Firewall" src="../assets/vapp_firewall.png" /> </p>
 </li>
 </ol>
-<h4 id="vapp-nat-rules">vApp NAT Rules<a class="headerlink" href="#vapp-nat-rules" title="Permanent link">¤</a></h4>
+<h3 id="vapp-nat-rules">vApp NAT Rules<a class="headerlink" href="#vapp-nat-rules" title="Permanent link">¤</a></h3>
 <p>NAT rules, enabled by default, enable mapping between internal Virtual Machines interfaces and external IP Addresses.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-DE55A1DD-50F2-454C-86CF-2396B25E052A.html">Add a Port Forwarding Rule to a vApp Network</a> and <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-DF4822A4-5797-41B6-865B-13C38E765B8A.html">Add an IP Translation Rule to a vApp Network.</a></p>
 <p>To edit the mapping rules for a Virtual Machine, use the following steps:</p>
@@ -2974,7 +2974,7 @@
 <p>The External IP Address will be on the same subnet as the VDC network, that connects to the vApp Edge.</p>
 </li>
 </ol>
-<h3 id="vapp-network-routing">vApp Network Routing<a class="headerlink" href="#vapp-network-routing" title="Permanent link">¤</a></h3>
+<h2 id="vapp-network-routing">vApp Network Routing<a class="headerlink" href="#vapp-network-routing" title="Permanent link">¤</a></h2>
 <p>Static Routing at the vApp Network level allows traffic to route between different vApp Networks, across the VDC Networks.</p>
 <p>The prerequisites for Static Routing are as follows:</p>
 <ul>
@@ -3076,7 +3076,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 13, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2023</span>
       
     
   </small>
