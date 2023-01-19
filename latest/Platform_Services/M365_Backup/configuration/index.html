@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2184,9 +2189,106 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configuration of Microsoft M365 Service Account
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Configuration of Microsoft M365 Service Account
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" class="md-nav__link">
+    Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-ad-application-permissions" class="md-nav__link">
+    Azure AD Application permissions
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure AD Application permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-an-application" class="md-nav__link">
+    Register an application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-application-permissions" class="md-nav__link">
+    Configure Application permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-certificate-public-key" class="md-nav__link">
+    Add a Certificate (public key)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-secure-meeting-with-aucloud" class="md-nav__link">
+    Join secure meeting with AUCloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restore-portal-access-requirements" class="md-nav__link">
+    Restore Portal Access Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Restore Portal Access Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2607,6 +2709,89 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" class="md-nav__link">
+    Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-ad-application-permissions" class="md-nav__link">
+    Azure AD Application permissions
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure AD Application permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-an-application" class="md-nav__link">
+    Register an application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-application-permissions" class="md-nav__link">
+    Configure Application permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-certificate-public-key" class="md-nav__link">
+    Add a Certificate (public key)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-secure-meeting-with-aucloud" class="md-nav__link">
+    Join secure meeting with AUCloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restore-portal-access-requirements" class="md-nav__link">
+    Restore Portal Access Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Restore Portal Access Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2624,15 +2809,149 @@
 
 
 
-<p>Please view the attached guide for information on how to configure your M365 service account for AUCloud's M365 Backup as a Service</p>
-<p><a href="../assets/EXT%20AUC-GEN-157%20AUCloud%20Veeam%20Backup%20for%20M365%20%28Modern%20Authentication%29.pdf">AUCloud Veeam Backup for M365.pdf</a></p>
+  <h1>Configuration of Microsoft M365 Service Account</h1>
+
+<h2 id="information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
+<p>This guide outlines the steps required to configure and implement your Office 365 Backup with AUCloud
+using the modern authentication method. You will be allocated a Customer Success Manager (CSM) who
+will assist you with the on-boarding process, provide advice and act as a conduit to deeper technical support
+when required.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
+<ul>
+<li>A Microsoft Office 365 account that has an active subscription.</li>
+<li>
+<p>The Microsoft Office 365 account must have permission to manage applications in Azure Active
+Directory (Azure AD). Any of the following Azure AD roles include the required permissions:</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator">Application administrator</a></p>
+</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer">Application developer</a></li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator">Cloud application administrator</a></p>
+</li>
+<li>
+<p>Completion of the <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant">Set up a tenant</a> quick start.</p>
+</li>
+<li>AUCloud provided certificate (public key) to be used in application registration.</li>
+<li><strong>Create a backup service account</strong> in Azure AD with Exchange, Sharepoint and Teams <a href="https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange">admin
+rights</a></li>
+</ul>
+<h2 id="azure-ad-application-permissions">Azure AD Application permissions<a class="headerlink" href="#azure-ad-application-permissions" title="Permanent link">¤</a></h2>
+<h3 id="register-an-application">Register an application<a class="headerlink" href="#register-an-application" title="Permanent link">¤</a></h3>
+<ol>
+<li>In the Microsoft Office 365 Admin Centre, navigate to <strong>Azure Active Directory</strong>.</li>
+<li>Under <strong>Manage</strong>, select <strong>App registrations</strong> &gt; <strong>New registration</strong>.</li>
+<li>
+<p>Enter a display <strong>Name</strong> and select the <strong>Accounts in this organizational directory
+only</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Redirect URI can be left blank.</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Register</strong> to complete the initial app
+registration.</p>
+</li>
+</ol>
+<p><img alt="Register an Application" src="../assets/register_an_application.svg" /></p>
+<h3 id="configure-application-permissions">Configure Application permissions<a class="headerlink" href="#configure-application-permissions" title="Permanent link">¤</a></h3>
+<p>Select the newly registered application, select API permissions, and add permissions for:</p>
+<ul>
+<li>Microsoft Graph</li>
+<li>Office 365 Exchange Online</li>
+<li>
+<p>SharePoint</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To search for other API, select <strong>APIs my organisation uses</strong>.</p>
+</div>
+</li>
+</ul>
+<p><img alt="API Permissions" src="../assets/api_permissions.svg" /></p>
+<p>For each API e.g., Microsoft graph, add the appropriate delegated (restore) and application (backup) type permissions as per below:</p>
+<p><img alt="Request API Permissions" src="../assets/request_api_permission.svg" /></p>
+<ol>
+<li>
+<p><a href="../azureAD_application_permission_requirements/#permissions-for-restore"><strong>Delegated (restore) permissions</strong></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All listed permissions are required for data restore using Veeam Explorers</p>
+</div>
+</li>
+<li>
+<p><a href="../azureAD_application_permission_requirements/#permissions-for-backup"><strong>Application (backup) permissions</strong></a></p>
+</li>
+<li>
+<p>After all APIs are added, you will need to <strong>grant admin consent</strong></p>
+</li>
+</ol>
+<p><img alt="Grant Admin Consent" src="../assets/grant_admin_consent.svg" /></p>
+<h3 id="add-a-certificate-public-key">Add a Certificate (public key)<a class="headerlink" href="#add-a-certificate-public-key" title="Permanent link">¤</a></h3>
+<ol>
+<li>Select <strong>Certificates &amp; secrets &gt; Certificates</strong>.</li>
+<li>Select <strong>Upload certificate</strong>.</li>
+<li>
+<p>Browse for the certificate to be uploaded.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>AUCloud will provide this certificate.</p>
+</div>
+</li>
+<li>
+<p>Enter a description.</p>
+</li>
+<li>Select <strong>Add</strong>.</li>
+</ol>
+<p><img alt="Add a Certificate" src="../assets/add_a_certificate.svg" /></p>
+<h3 id="join-secure-meeting-with-aucloud">Join secure meeting with AUCloud<a class="headerlink" href="#join-secure-meeting-with-aucloud" title="Permanent link">¤</a></h3>
+<p>A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.</p>
+<ul>
+<li>Username</li>
+<li>Application ID</li>
+</ul>
+<p><img alt="Edit Organisation" src="../assets/edit_organisation.svg" /></p>
+<h3 id="restore-portal-access-requirements">Restore Portal Access Requirements<a class="headerlink" href="#restore-portal-access-requirements" title="Permanent link">¤</a></h3>
+<p>To access the Veeam restore portal, you must add an Enterprise Application in Azure AD</p>
+<h4 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">¤</a></h4>
+<p>For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Azure AD. In order to perform these steps, we will need the AzureAD PowerShell cmdlet. To install this, open PowerShell and run the following command:</p>
+<div class="highlight"><pre><span></span><code>Install-Module -Name AzureAD
+</code></pre></div>
+<p>You may be prompted to install and import the <strong>NuGet</strong> provider. Please press Y to continue through this.</p>
+<p>The next command will connect your PowerShell to AzureAD. Use credentials with admin rights to perform an Enterprise Application install:</p>
+<div class="highlight"><pre><span></span><code>Connect-AzureAD 
+</code></pre></div>
+<p>This will open a traditional username and password Microsoft popup:
+Please enter your service account username and password in this popup including MFA if prompted.</p>
+<p>We should see something like this if everything worked smoothly:</p>
+<p><img alt="Powershell" src="../assets/powershell.svg" /></p>
+<p>And the final step which brings everything together:</p>
+<div class="highlight"><pre><span></span><code>New-AzureADServicePrincipal -AppId &quot;33831092-5ae1-4b51-9eb2-a90033803540&quot;
+</code></pre></div>
+<p>If everything works as expected, the output should show something similar to this:</p>
+<p><img alt="Powershell" src="../assets/powershell2.svg" /></p>
+<p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.</p>
+<p><strong>Last-Step - Give permission to the new Application on Azure AD</strong></p>
+<ul>
+<li>Under Enterprise Applications, remove the enterprise applications filter, and order them by date.</li>
+</ul>
+<p>You should see a new Veeam VBO application (the name of the Restore Portal).</p>
+<p><img alt="Veeam VBO" src="../assets/veeam_vbo.svg" /></p>
+<p>On the Enterprise Application, go to Permissions, and press <strong>Grant admin consent</strong></p>
+<p><img alt="Veeam Permissions" src="../assets/veeam_permissions.svg" /></p>
+<p>That process will ask us again for an authorized account.</p>
+<p>We should see something like this:</p>
+<p><img alt="Veeam Permissions" src="../assets/veeam_permissions_2.svg" /></p>
+<p>Configuration is completed. You can then proceed to test connectivity to the Restore Portal.</p>
+<p><a href="../../reference_urls/#veeam-m365-backup-portal">Restore Portal URLs</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 19, 2023</span>
       
     
   </small>
