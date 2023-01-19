@@ -2820,10 +2820,12 @@
 </li>
 <li>
 <p>You can view the VM restore progress in the <strong>Machines</strong> tab after you click <strong>View history</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Restore of a standalone VM to the original location with the <strong>Keep</strong> option selected will result in an unpredictable behaviour and possible failure of the restore job.</p>
+</div>
 </li>
 </ol>
-<p>!!! <strong>IMPORTANT:</strong>
-    Restore of a standalone VM to the original location with the <strong>Keep</strong> option selected will result in an unpredictable behaviour and possible failure of the restore job.</p>
 <h2 id="restore-vapps">Restore vApps<a class="headerlink" href="#restore-vapps" title="Permanent link">¤</a></h2>
 <p>Similar steps can be taken to restore a vApp:</p>
 <ol>
@@ -2847,9 +2849,12 @@
 </li>
 <li>
 <p>After you click <strong>Restore</strong>, you will get a message notifying you about the operation effect — remember that with the <strong>Overwrite</strong> option selected, the existing vApp and all its VMs will be replaced with the vApp from the backup. Click <strong>Proceed</strong> or <strong>Cancel</strong> the operation.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Restore of a vApp with a standalone VM will return and ordinary and not standalone VM.</p>
+</div>
 </li>
 </ol>
-<p><span style="color:red"><strong>IMPORTANT:</strong></span> Restore of a vApp with a standalone VM will return and ordinary and not standalone VM.</p>
 <h2 id="restore-virtual-disks">Restore Virtual Disks<a class="headerlink" href="#restore-virtual-disks" title="Permanent link">¤</a></h2>
 <p>You can restore individual virtual disks from backups of VMware Cloud Director VMs:</p>
 <ol>
@@ -2912,7 +2917,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 19, 2023</span>
       
     
   </small>
