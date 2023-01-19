@@ -71,8 +71,9 @@ In the vSphere Client, you can deploy an on-premises VMware Cloud Director Ava
 
     1. In the **NTP Server** section, enter the NTP server address for the appliance to use.
 
-    !!! warning ""
-        **Important**: Ensure that vCenter Server, ESXi, VMware Cloud Director, Platform Services Controller, and the VMware Cloud Director Availability appliance all use the same NTP server.
+        !!! warning
+        
+            Ensure that vCenter Server, ESXi, VMware Cloud Director, Platform Services Controller, and the VMware Cloud Director Availability appliance all use the same NTP server.
 
 1. On the **Ready to complete** page, review the settings, optionally select **Power on after deployment** and to begin the OVA installation process, click **Finish**.
 

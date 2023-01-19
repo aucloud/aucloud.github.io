@@ -38,7 +38,7 @@ The following steps provides guidance on how to resize VM level disk on AUCloud
 
     ![Edit Disk](./assets/edit_disk.jpg)
 
-1. **Warning:** You can only increase the disk size. If you try to decrease the disk size, the following alert will pop up and the disk size will not be updated:  
+1. **Warning** You can only increase the disk size. If you try to decrease the disk size, the following alert will pop up and the disk size will not be updated:  
 
     ![Decrease Disk](./assets/decrease_disk.jpg)
 

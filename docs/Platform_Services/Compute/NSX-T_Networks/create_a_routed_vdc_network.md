@@ -47,10 +47,10 @@ To create a Routed VDC Network, use the following steps:
 1. In the **Static IP Pools** field, enter a range of addresses to be consumed by the VMs connecting to the network, then click **Add**.
 
 	!!! note
-	
+
 		- As an example, if you give the gateway address as 192.168.0.1/24, you may then want to create a Static IP Pool of 192.168.0.10-192.168.0.100. This will give you a pool of 91 IP addresses to assign to machines within your network. You can always increase this later if needed.
 		- You can add multiple IP pools.
-		
+
 	![New Routed Network Pools](./assets/networks_new_type_routed_pools.png)
 
 1. When you're done, click **Next**.

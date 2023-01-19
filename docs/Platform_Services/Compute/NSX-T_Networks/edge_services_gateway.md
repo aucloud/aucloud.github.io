@@ -371,7 +371,7 @@ Depending on the type of connection required, you will need to:
 !!! note
 
 	The Edge Services Gateway (ESG) supports **site-to-site VPN only** and does not support VPN client or SSL VPN. If a VPN client is required, you will need to deploy a solution for the remote access VPN concentrator such as a Palo Alto, F5 or Fortinet.
-	
+
 Additional information can be viewed on VMware Docs - [Configure NSX-T Policy-Based IPSec VPN.](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-90B5FC50-F39E-461B-A854-7AD19353621E.html)
 
 Prerequisites:

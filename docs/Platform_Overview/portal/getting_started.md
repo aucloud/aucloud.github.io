@@ -14,10 +14,10 @@ description: Getting Started
 1. On your first login, you will be prompted to enter the memorable word provided to you. Enter only the highlighted characters from your memorable word.
 
     ![Memorable Word](./assets/memorable_word.png)
-	
-	!!! note
 
-		For example, if your word is "academic" in the above scenario, characters 2,4 and 8 would be 'c', 'd' and 'c' respectively.
+    !!! note
+
+        For example, if your word is "academic" in the above scenario, characters 2,4 and 8 would be 'c', 'd' and 'c' respectively.
 
 1. The QR code will appear which needs to be scanned into a One-Time Password (OTP) Authenticator app such as Google Authenticator. The authenticator will add an account which will generate a six-digit code which will be required for subsequent logins.
 

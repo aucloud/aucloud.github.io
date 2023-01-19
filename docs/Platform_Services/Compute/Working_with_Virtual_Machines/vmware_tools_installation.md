@@ -75,6 +75,6 @@ The `open-vm-tools` is available via the `epel` repository.
 
 1. Restart the guest OS to ensure all the necessary features are updated
 
-    !!! **Warning:**
+!!! warning
 
-        It is recommended to unmount the VMware Tools Installer as soon as the installation completed. As failing to unmount VMware Tools installer, it will result failure in migrating the VM which is initiated by vSphere DRS to balance compute capacity on our backend Infrastructure.
+    It is recommended to unmount the VMware Tools Installer as soon as the installation completed. As failing to unmount VMware Tools installer, it will result failure in migrating the VM which is initiated by vSphere DRS to balance compute capacity on our backend Infrastructure.

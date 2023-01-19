@@ -36,8 +36,9 @@ VMware Cloud Director VMs can be restored to the original (production) vApp usin
 
 1. You can view the VM restore progress in the **Machines** tab after you click **View history**.
 
-!!! **IMPORTANT:**
-    Restore of a standalone VM to the original location with the **Keep** option selected will result in an unpredictable behaviour and possible failure of the restore job.
+    !!! warning
+        
+        Restore of a standalone VM to the original location with the **Keep** option selected will result in an unpredictable behaviour and possible failure of the restore job.
 
 ## Restore vApps
 
@@ -60,7 +61,9 @@ Similar steps can be taken to restore a vApp:
 
 1. After you click **Restore**, you will get a message notifying you about the operation effect — remember that with the **Overwrite** option selected, the existing vApp and all its VMs will be replaced with the vApp from the backup. Click **Proceed** or **Cancel** the operation.
 
-<span style="color:red">**IMPORTANT:**</span> Restore of a vApp with a standalone VM will return and ordinary and not standalone VM.
+    !!! warning
+
+        Restore of a vApp with a standalone VM will return and ordinary and not standalone VM.
 
 ## Restore Virtual Disks
 
