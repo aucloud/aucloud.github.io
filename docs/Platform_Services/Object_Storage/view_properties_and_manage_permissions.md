@@ -5,7 +5,9 @@ description: View properties and manage permissions
 
 ## View properties and manage permissions
 
-**Warning:** Customers should be careful as to what data they are exposing to the internet.
+!!! warning
+
+    Customers should be careful as to what data they are exposing to the internet.
 
 1. To view the properties of a bucket, click on the **Properties** tab after going to your selected bucket.
 

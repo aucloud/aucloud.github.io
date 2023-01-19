@@ -18,16 +18,16 @@ description: AUCloud Support Portal
 1. Enter a Summary and Description with as much information as possible of the issue as this will assist our teams with troubleshooting. Attachments can be added to provide additional information. Once you have entered details click **Save**.
 
     ![Summary Description](./assets/summary_description.png)
-	
+
 1. The AUCloud Support contacts are also available on the Contacts tab.
 
-	![Contacts](./assets/contacts_tab.png)
-	
+    ![Contacts](./assets/contacts_tab.png)
+
 !!! note
 
-	- General users will only have visibility of tickets raised by themselves.
-	- If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab.
-	
+    - General users will only have visibility of tickets raised by themselves.
+    - If you have administrator access, you will be able to view all support tickets raised by your organisation through the Account Tickets tab.
+
 ## Editing a Support Ticket
 
 ### Prerequisites

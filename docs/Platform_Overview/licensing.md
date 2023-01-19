@@ -34,6 +34,7 @@ Unfortunately, this does not provide any not for profit or charity options for l
 However, customers can choose to bring their own licences (subject to applicability), through Microsoft's recent improvements in licensing and the Flexible Virtualisation Benefit.
 
 !!! note "Flexible Virtualisation benefit"
+
     Products covered by the [Flexible Virtualisation Benefit](https://wwlpdocumentsearch.blob.core.windows.net/prodv2/Licensing_guide_PLT_Flexible_Virtualization_Benefit_Nov2022.pdf?sv=2020-08-04&se=2123-01-09T02:48:55Z&sr=b&sp=r&sig=KRfr9gBN%2BY%2BQzJUA1U92X2WFAzu4aouo%2FZXL4sxKLM0%3D)
     The Flexible Virtualisation benefit applies to all software products that are available under subscription licenses or licenses with Software Assurance coverage.
     This includes server products such as Windows Server, SQL Server, Exchange Server, SharePoint Server, System Center and others.
@@ -47,6 +48,7 @@ Microsoft provide specific licensing options for some [industries](https://www.m
 In order to bring Windows servers to the AUCloud shared infrastructure.
 
 !!! note "Minimum core licenses for BYOL"
+
     There is a Microsoft mandated minimum of 8 cores per windows VM for BYOL.
     Customers are advised that under 8 cores it is likely to be more cost effective provisioning licenses via AUCloud
 
