@@ -96,6 +96,9 @@ theme:
   - navigation.tabs
   - navigation.tabs.sticky
   - header.autohide
+  - content.action.edit
+  - content.action.view
+  - content.code.copy
   name: material
   font:
     text: Questrial
