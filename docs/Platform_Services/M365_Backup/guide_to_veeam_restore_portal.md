@@ -15,7 +15,7 @@ Restore Operators can be specified as individuals or as security groups (where u
 
 To launch the Restore Portal, do the following:
 
-1. Open a web browser on any computer and navigate to the Restore Portal [web address](../reference_urls#veeam-m365-backup-portal).
+1. Open a web browser on any computer and navigate to the Restore Portal [web address](../reference_urls.md#veeam-m365-backup-portal).
 
     !!! note
 
