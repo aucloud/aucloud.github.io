@@ -91,11 +91,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/SKAP/</loc>
-         <lastmod>2023-01-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/reference_urls/</loc>
          <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
@@ -462,6 +457,26 @@
     </url>
     <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Storage/</loc>
+         <lastmod>2023-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Symmetric_Key_Agreement_Platform/</loc>
+         <lastmod>2023-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Symmetric_Key_Agreement_Platform/IPsec/</loc>
+         <lastmod>2023-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Symmetric_Key_Agreement_Platform/SDKs/</loc>
+         <lastmod>2023-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Symmetric_Key_Agreement_Platform/bootstrapping/</loc>
          <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
