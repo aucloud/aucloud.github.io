@@ -57,11 +57,32 @@ A list of all users will be displayed including their last log on and Status.
 
 ## Changing user passwords
 
-1. If a user has forgotten his/her password then this can be reset by the administrator by using the Edit user function.
+If a user has forgotten his/her password then this can be reset by the administrator by using the Edit user function.
+Administrative users can reset either the password, memorable word, or both at the same time
 
-1. Passwords are to conform with minimum standards outlined under the settings tab.
 
-1. User passwords can only be reset once every 24 hours.
+### Password policies
+
+**Password Expiration**
+
+Password expiration is set to 90 days
+
+
+**Password Requirements**
+
+!!! note "ISM Compliance"
+    Password requirements may be updated inline with updated guidance to be compliant with the Information Security Manual, or other compliance standards.
+    Password requirement changes will only change for new passwords and will not affect users within the current password expiry.
+
+Your password must meet the following conditions:
+
+- Minimum of 14 characters in length
+- Contain three of the following four character sets:
+  - a lower-case alphabetical character (a-z)
+  - a upper-case alphabetical character (A-Z)
+  - a numeric character (0-9)
+  - a special character
+- Has not been used in the past 8 changes
 
 ## User account locked out
 
