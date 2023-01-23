@@ -13,10 +13,12 @@ docs-validate: clean
 	mkdocs build -c -s
 
 docs-validate-debug: clean
-	mkdocs build -c -s -v
+	SITE_URL=http://localhost:8000/ mkdocs build -c -s -v
+
+
 
 docs-serve: clean
-	mkdocs serve
+	SITE_URL=http://localhost:8000/ mkdocs serve
 
 docs-build:
 	mkdocs gh-deploy

@@ -1,11 +1,12 @@
 ---
-title: Platform Documentation
-description: Platform Documentation
+title: AUCloud technical documentation
+description: "AUCloud's technical documentation site. AUCloud is a sovereign cloud provider, based in Australia offering Iaas, PaaS and security services."
 ---
 
 ## Overview
 
 AUCloud, an ASX listed company, provides highly secure, standards based, sovereign cloud Infrastructure-as-a-Service to Australian Government, Critical National Industry communities and security conscious enterprises. AUCloud solutions enable customers to benefit from sovereign data protection with the scale, automation, elasticity and lower costs typically associated with global cloud offerings.
+
 
 We are committed to providing a high quality of services and customer service and continuous improvement to optimise our customers’ experience with AUCloud. To ensure that our customers have access to general and technical information on our services and have access to the information they need, when it is needed, we are pleased to announce the launch of AUCloud’s Tech Docs.
 
@@ -13,7 +14,7 @@ This AUCloud Tech Docs website has been designed to provide a wealth of informat
 
 We invite you to explore and revisit this website regularly as it will continually be enhanced and updated.
 
-## Explore AUCloud’s Tech Docs  
+## Explore AUCloud’s Tech Docs
 
 - Learn about the AUCloud [platform](Platform_Overview/index.md) and its [services](Platform_Services/index.md)
 - See where [AUCloud’s Sovereignty Zones](Platform_Overview/sovereignty_zones.md) are and find out about our continued expansion to other regions

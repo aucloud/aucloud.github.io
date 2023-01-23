@@ -28,8 +28,8 @@ AUCloud uses VMware Cloud Director Availability (VCDA), a comprehensive solution
 
 ## [Sovereign Bridge](./sovereign_bridge)
 
-AUCloud's Sovereign Bridge provides connectivity between physical and virtual resources within the data centre ecosystem throughout continental Australia.
+AUCloud's Sovereign Bridge provides connectivity between physical and virtual resources within the data centre ecosystem throughout Australia.
 
-## [Symmetric Key Agreement Platform](./SKAP.md)
+## [Symmetric Key Agreement Platform](./Symmetric_Key_Agreement_Platform/index.md)
 
-AUCloud is building a number of different deployment form-factors to allow the efficient use of Quantum Cloud.
+AUCloud's Symmetric Key Agreement Platform, developed on Arqit's QuantumCloud™, provides high performance and quantum computing resistant cryptography as a service.

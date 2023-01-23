@@ -6,9 +6,10 @@ allow-listing
 analytics
 api
 arqit
+arqits
 aspx
-AUCloud
 aucloud
+AUCloud
 australiacloud
 aws
 backend
@@ -24,6 +25,7 @@ cmdlet
 com_
 commandline
 comms
+crypting
 csv
 csz
 ctrl
@@ -39,8 +41,10 @@ deduplicating
 defragmentation
 dev
 diffie
+drawio
 encrypter
 encrypters
+encryptors
 eportal
 evbo
 failover
@@ -49,6 +53,7 @@ firewalling
 fortinet
 fyshwick
 github
+gradle
 hellmann
 html
 https
@@ -56,12 +61,16 @@ irap
 iso
 kbytes
 keymat
+kotlin
+kyber
 microsoft
 microsofts
 minio
 msg
 mybucket
+natively
 nvram
+onboarding
 onmicrosoft
 ovf
 ovftool
@@ -80,10 +89,13 @@ sdk
 secret_access_key
 sed
 sharepoint
+shor
+shors
 subnet
 subnets
 supernet
 syslog
+todays
 unbilled
 unmount
 url
@@ -96,6 +108,7 @@ vcd
 vcenter
 vdc
 veeam
+vici
 virtualised
 vmdk
 vms

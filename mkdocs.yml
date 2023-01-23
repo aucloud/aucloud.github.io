@@ -1,9 +1,12 @@
 edit_uri: !ENV EDIT_URL
 markdown_extensions:
+- attr_list
 - admonition
 - footnotes
 - markdown_include.include
-- pymdownx.emoji
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
 - pymdownx.magiclink
 - pymdownx.superfences
 - pymdownx.tabbed
@@ -35,6 +38,18 @@ plugins:
 - macros
 - unused_files:
     strict: True
+    file_types:
+      - md
+      - jpg
+      - xlsx
+      - png
+      - svg
+      - pdf
+      - csv
+      - pptx
+      - txt
+      - yaml
+      - yml
     excluded_files:
       - .pages
       - aucloud.svg
