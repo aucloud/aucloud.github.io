@@ -55,11 +55,11 @@ Select the newly registered application, select API permissions, and add permiss
 
         To search for other API, select **APIs my organisation uses**.
 
-![API Permissions](./assets/api_permissions.svg)
+![API Permissions](./assets/api_permissions.png)
 
 For each API e.g., Microsoft graph, add the appropriate delegated (restore) and application (backup) type permissions as per below:
 
-![Request API Permissions](./assets/request_api_permission.svg)
+![Request API Permissions](./assets/request_api_permission.png)
   
 1. [**Delegated (restore) permissions**](./azureAD_application_permission_requirements.md#permissions-for-restore)
 
@@ -71,7 +71,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
 1. After all APIs are added, you will need to **grant admin consent**
 
-   ![Grant Admin Consent](./assets/grant_admin_consent.svg)
+   ![Grant Admin Consent](./assets/grant_admin_consent.png)
 
 ### Add a Certificate (public key)
 
@@ -86,7 +86,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 1. Enter a description.
 1. Select **Add**.
 
-  ![Add a Certificate](./assets/add_a_certificate.svg)
+  ![Add a Certificate](./assets/add_a_certificate.png)
 
 ### Join secure meeting with AUCloud
 
@@ -95,7 +95,7 @@ A joint session with the AUCloud technical team is required for you to enter the
 - Username
 - Application ID
 
-  ![Edit Organisation](./assets/edit_organisation.svg)
+  ![Edit Organisation](./assets/edit_organisation.png)
 
 ### Restore Portal Access Requirements
 
@@ -142,17 +142,17 @@ If you receive an error that the application ID already exists, you must delete 
 
 You should see a new Veeam VBO application (the name of the Restore Portal).
 
-![Veeam VBO](./assets/veeam_vbo.svg)
+![Veeam VBO](./assets/veeam_vbo.png)
 
 On the Enterprise Application, go to Permissions, and press **Grant admin consent**
 
-![Veeam Permissions](./assets/veeam_permissions.svg)
+![Veeam Permissions](./assets/veeam_permissions.png)
 
 That process will ask us again for an authorized account.
 
 We should see something like this:
 
-![Veeam Permissions](./assets/veeam_permissions_2.svg)
+![Veeam Permissions](./assets/veeam_permissions_2.png)
 
 Configuration is completed. You can then proceed to test connectivity to the Restore Portal.
 
