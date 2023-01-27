@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1958,9 +1963,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to configure the network settings of a replication
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to configure the network settings of a replication
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-network-settings-of-a-replication" class="md-nav__link">
+    Configure the network settings of a replication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2730,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-network-settings-of-a-replication" class="md-nav__link">
+    Configure the network settings of a replication
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,10 +2782,12 @@
 
 
 
-<p><strong>How to configure the network settings of a replication</strong></p>
+  <h1>How to configure the network settings of a replication</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>To apply network settings to the target vApp or virtual machine after a migration, failover, or a test failover, for on-premises to cloud replications, or for cloud to cloud replications you configure the network settings.<br />
 </p>
-<p><strong>Configure the network settings of a replication</strong></p>
+<h2 id="configure-the-network-settings-of-a-replication">Configure the network settings of a replication<a class="headerlink" href="#configure-the-network-settings-of-a-replication" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>Under Incoming Replications or Outgoing Replications, select a replication for which you want to configure the network settings.</p>
@@ -2738,7 +2803,48 @@
 </li>
 <li>
 <p>For the selected replication, configure the following network settings:</p>
-<p><img alt="Configure" src="../assets/configure.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>VMs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VMs</td>
+<td>Shows you the name of the virtual machine in the selected replication</td>
+</tr>
+<tr>
+<td>MAC Address</td>
+<td>Shows you the MAC address for each network card (NIC) in each virtual machine in the selected replication</td>
+</tr>
+<tr>
+<td>Reset MAC</td>
+<td>Allows you to reset the selected MAC address for each NIC in each vApp and in each virtual machine in the target site</td>
+</tr>
+<tr>
+<td>Connected</td>
+<td>Allows you to control whether each NIC in each vApp and in each virtual machine is connected to the target site network</td>
+</tr>
+<tr>
+<td>Connect to network</td>
+<td>Select a network in the target site to which to connect the vApp or virtual machine</td>
+</tr>
+<tr>
+<td>Primary NIC</td>
+<td>If the source virtual machine is configured with multiple NICs, you must specify the primary NIC</td>
+</tr>
+<tr>
+<td>IP Mode</td>
+<td><ul><li><strong>Mixed</strong> - If the virtual machine is configured with multiple NICs, and their network configuration is different, the selected replication shows you this state</li><li><strong>Static - IP Pool</strong> - If the connected network is configured with an <strong>IP Pool</strong>, the selected replication obtains the IP Address from the IP Pool</li><li><strong>DHCP</strong> - If the connected network is configured with a DHCP server, the selected replication obtains the IP address from that DHCP server</li><li><strong>Static - Manual</strong> - Allows you to assign a static IP address to the selected replication</li><li><strong>Keep</strong> - Depends on the virtual machine presence in the target site:</li><ul><li>If the selected replication in the target site there is no existing virtual machine, after migration, failover, or test failover, the target virtual machine is created without network settings configuration</li><li>If for the selected replication in the target site there is an existing virtual machine (a seed virtual machine), after migration, failover, or test failover, in the target virtual machine for that NIC the network settings do not change</li></ul></ul></td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td>If from the <strong>IP Mode</strong> drop-down menu you select <strong>Static - Manual</strong>, you can assign a static IPv4 address to the corresponding NIC</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
 <p>For the selected replication, apply the network settings by clicking <strong>Apply</strong>.</p>
@@ -2750,7 +2856,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

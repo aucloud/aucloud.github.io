@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2028,9 +2033,66 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          VMware Cloud Director Availability Replication Policies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         VMware Cloud Director Availability Replication Policies
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replication-policies" class="md-nav__link">
+    Replication Policies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-replication-seeds" class="md-nav__link">
+    Using Replication Seeds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-a-virtual-machine-or-a-vapp-to-a-removable-media" class="md-nav__link">
+    Export a Virtual Machine or a vApp to a Removable Media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-replication-by-using-a-replication-seed" class="md-nav__link">
+    Configure a Replication by Using a Replication Seed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2751,49 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replication-policies" class="md-nav__link">
+    Replication Policies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-replication-seeds" class="md-nav__link">
+    Using Replication Seeds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-a-virtual-machine-or-a-vapp-to-a-removable-media" class="md-nav__link">
+    Export a Virtual Machine or a vApp to a Removable Media
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-replication-by-using-a-replication-seed" class="md-nav__link">
+    Configure a Replication by Using a Replication Seed
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,9 +2824,11 @@
 
 
 
-<p><strong>VMware Cloud Director Availability Replication Policies</strong></p>
+  <h1>VMware Cloud Director Availability Replication Policies</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>Replication policies control replication attributes of VMware Cloud Director organisation from the VMware Cloud Director Availability solution perspective.  </p>
-<p><strong>Replication Policies</strong></p>
+<h2 id="replication-policies">Replication Policies<a class="headerlink" href="#replication-policies" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>Replication policies enforce a list of replication attributes:</p>
@@ -2756,7 +2863,7 @@
 </li>
 </ol>
 <p>If there are any violations, the system rejects the creation of the new replication.</p>
-<p><strong>Using Replication Seeds</strong></p>
+<h2 id="using-replication-seeds">Using Replication Seeds<a class="headerlink" href="#using-replication-seeds" title="Permanent link">¤</a></h2>
 <p>For each new replication that you configure, an initial full synchronisation operation is performed. During this operation, VMware Cloud Director Availability copies the whole data from the source vApp or VM to a datastore in the target site. Use replication seeds to reduce the network traffic and the time that is required for the initial full synchronization of a replication.</p>
 <p>Due to the size of the vApp or VM or to the network bandwidth, an initial full synchronisation might take a long time. To reduce the initial synchronisation time, you copy the source vApp or VM to the target site by using removable media, failover of a previous replication, or other means of data transfer. Then, in the target site, configure a replication that uses the vApp or VM copy as a replication seed.</p>
 <p>When a replication uses a seed vApp or VM, VMware Cloud Director Availability does not copy the whole source vApp or VM data to the target site. Instead, VMware Cloud Director Availability copies only the different data blocks between the source vApp or VM and the seed and reuses the seed data in the target site as a basis for replication.</p>
@@ -2786,7 +2893,7 @@
 </ul>
 </li>
 </ol>
-<p><strong>Export a Virtual Machine or a vApp to a Removable Media</strong></p>
+<h2 id="export-a-virtual-machine-or-a-vapp-to-a-removable-media">Export a Virtual Machine or a vApp to a Removable Media<a class="headerlink" href="#export-a-virtual-machine-or-a-vapp-to-a-removable-media" title="Permanent link">¤</a></h2>
 <p>To use a replication seed for configuring a replication, you must export a virtual machine to removable media and provide it to AUCloud.</p>
 <ol>
 <li>
@@ -2807,7 +2914,7 @@
 <p>Provide the removable media containing the exported files to AUCloud.</p>
 </li>
 </ol>
-<p><strong>Configure a Replication by Using a Replication Seed</strong></p>
+<h2 id="configure-a-replication-by-using-a-replication-seed">Configure a Replication by Using a Replication Seed<a class="headerlink" href="#configure-a-replication-by-using-a-replication-seed" title="Permanent link">¤</a></h2>
 <p>When creating a new incoming or outgoing replication, you can use a vApp or VM as a seed to avoid transferring large amounts of data over the network during the initial full synchronisation.</p>
 <p>Before starting a replication, in the target site you must power off the seed VMs, because they are unregistered from the target VMware Cloud Director and vCenter Server inventories. If the new replication fails, the VM files and disks remain on the datastore. For the VM to appear in the inventories, locate the .vmx file of the VM, manually import the VM in the vCenter Server inventory, and import it to the VMware Cloud Director inventory.</p>
 <ol>
@@ -2836,6 +2943,36 @@
 <li>
 <p>On the Protection Settings page, select the settings for the replication, and click <strong>Next</strong>.</p>
 <p><img alt="replication table" src="../assets/replication_table.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target recovery point objective (RPO)</td>
+<td>Use the slider or click the time intervals to set the acceptable period for which data can be lost in the case of a site failure. The available RPO range is from 5 minutes to 24 hours.</td>
+</tr>
+<tr>
+<td>Storage Policy</td>
+<td>From the Storage policy drop-down menu, select the storage policy for placing the recovered VMs and for the replicated data before the recovery. For seed VMs, VMware Cloud Availability Replicator uses the storage policy of the seed VM.</td>
+</tr>
+<tr>
+<td>Retention policy for point in time instances</td>
+<td>To preserve multiple distinct replication instances (snapshots) to which VMs can be recovered, select the option, select the number of replication instances to keep, and select the preservation period.<p></p>The number of preserved replication instances depends on the configured retention policy and requires that the RPO period is short enough for the replication instances to be created. For example, if you select to preserve four replication instances per day, the RPO period must not exceed six hours, to allow for the retention of four replication instances in 24 hours.</td>
+</tr>
+<tr>
+<td>Enable quiesce</td>
+<td>Select the quiescing method for the guest OS of the source VM.<p></p><strong>Note:</strong> Quiescing is available only for VMs that support quiescing.</td>
+</tr>
+<tr>
+<td>Compress replication traffic</td>
+<td>Select to compress the replication data that is transferred through the network and to reduce the network traffic. However, compressing and decompressing data requires more CPU resources on both the source site and the server that manages the target datastore.</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
 <p>On the <strong>Scheduling</strong> page, select when to start the replication and click <strong>Next.</strong></p>
@@ -2850,7 +2987,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

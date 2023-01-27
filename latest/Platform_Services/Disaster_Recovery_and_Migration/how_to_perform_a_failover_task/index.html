@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1972,9 +1977,52 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to perform a failover task
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to perform a failover task
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performing-a-failover-task" class="md-nav__link">
+    Performing a failover task
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2737,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performing-a-failover-task" class="md-nav__link">
+    Performing a failover task
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,25 +2796,50 @@
 
 
 
-<p><strong>How to perform a failover task</strong></p>
+  <h1>How to perform a failover task</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>You perform a disaster recovery operation of a Virtual Machine to the Target site if the protected source is unavailable.  </p>
-<p><strong>Prerequisites</strong></p>
-<p>Verify that the vApp containing the Virtual Machine is protected on your destination site  </p>
-<p><strong>Procedure</strong></p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
+<p>Verify that the vApp containing the Virtual Machine is protected on your destination site.  </p>
+<h2 id="performing-a-failover-task">Performing a failover task<a class="headerlink" href="#performing-a-failover-task" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>In VMware Cloud Director Availability Portal, either from the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the virtual machine that you wish to failover, click <strong>All Actions</strong> and then click <strong>Failover</strong>. The <strong>Failover</strong> wizard opens.</p>
 </li>
 <li>
 <p>In the Recovery Settings tab, use the options to configure the task and click <strong>Next.</strong></p>
-<p><img alt="Recovery Settings" src="../assets/recovery_settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consolidate VM Disks</td>
+<td>When enabled, the failover operation takes longer to complete but allows for a better performance of the recovered VM</td>
+</tr>
+<tr>
+<td>Power on recovered vApps</td>
+<td>Select this option, to power on the virtual machine on the destination site</td>
+</tr>
+<tr>
+<td>Network settings</td>
+<td><ul><li>Select the Apply preconfigured network settings on failover option, so that the network configured during the virtual machine replication is assigned</li><li>Select the Connect all VMs to network option and select a network from the drop-down menu</li></ul><p></p>The replicated virtual machine connects to the network that you selected</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
 <p>On the Recovery Instance page, configure the recovery point in time and click Next.</p>
 </li>
 <li>
 <p>On the Ready to Complete page, review the test details and click Finish to initiate the Failover task. You can monitor the progress of the task either in the Incoming Replications or the Outgoing Replications pane.</p>
-<p>The failed over vApp is running on your destination site. The vApp is no longer protected upon the task completion.</p>
+<ul>
+<li>The failed over vApp is running on your destination site. The vApp is no longer protected upon the task completion.</li>
+</ul>
 </li>
 <li>
 <p>What to do next: You can reverse the vApp back to your source site environment or delete the vApp replication. If you delete the replication, it is no longer protected by the solution, and disappears from the vApps list.</p>
@@ -2749,7 +2851,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

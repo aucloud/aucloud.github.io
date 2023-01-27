@@ -2062,6 +2062,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tenant-deployment-process" class="md-nav__link">
+    Tenant Deployment Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-vcav-on-premises-appliance-using-vsphere-client" class="md-nav__link">
+    Deploy vCAV On-Premises Appliance Using vSphere Client
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy vCAV On-Premises Appliance Using vSphere Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-deploy" class="md-nav__link">
+    Steps to Deploy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-vcav-configuration-wizard" class="md-nav__link">
+    Complete vCAV Configuration Wizard
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2764,6 +2798,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tenant-deployment-process" class="md-nav__link">
+    Tenant Deployment Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-vcav-on-premises-appliance-using-vsphere-client" class="md-nav__link">
+    Deploy vCAV On-Premises Appliance Using vSphere Client
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy vCAV On-Premises Appliance Using vSphere Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-deploy" class="md-nav__link">
+    Steps to Deploy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-vcav-configuration-wizard" class="md-nav__link">
+    Complete vCAV Configuration Wizard
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2798,10 +2866,9 @@
 
   <h1>VMware Cloud Director Availability Quick Start Guide</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
-<p><strong>What is VMware VMware Cloud Director Availability:</strong></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>VMware VMware Cloud Director Availability 3.0 (vCAV) is a single interface for <strong>workload migration</strong>, <strong>cloud-to-cloud disaster recovery</strong>, and <strong>on-premises disaster recovery</strong>. VMware Cloud Director availability is a Disaster Recovery-as-a-Service (DRaaS) solution.</p>
-<h3 id="how-vmware-cloud-director-availability-works">How VMware Cloud Director Availability Works<a class="headerlink" href="#how-vmware-cloud-director-availability-works" title="Permanent link">¤</a></h3>
+<h2 id="how-vmware-cloud-director-availability-works">How VMware Cloud Director Availability Works<a class="headerlink" href="#how-vmware-cloud-director-availability-works" title="Permanent link">¤</a></h2>
 <p><strong>vCAV</strong> is a single appliance that deploys all the services required to operate between an on-premises and the AUCloud environment. It integrates into the on-premises vCenter and connects to the VMware Cloud Director environment and corresponding vCAV appliance through a tunnel node. It provides three core functionalities:</p>
 <ul>
 <li>Migrating virtual machines from and to your on-premises vCenter.</li>
@@ -2809,11 +2876,72 @@
 <li>Protect workloads on your VMware Cloud Director environment by replicating them to your on-prem environment.</li>
 </ul>
 <p>All of this is managed through a single interface, VMware Cloud Director Availability 3.0.</p>
-<h3 id="vmware-cloud-director-availability-tenant-requirements">VMware Cloud Director Availability - Tenant Requirements<a class="headerlink" href="#vmware-cloud-director-availability-tenant-requirements" title="Permanent link">¤</a></h3>
-<p><em>The following table lists the Firewall rules required to enable replication from the replication source to AUCloud.</em></p>
-<p><img alt="Tenant Requirements" src="../assets/tenant_requirements.jpg" /></p>
+<h2 id="vmware-cloud-director-availability-tenant-requirements">VMware Cloud Director Availability - Tenant Requirements<a class="headerlink" href="#vmware-cloud-director-availability-tenant-requirements" title="Permanent link">¤</a></h2>
+<p>The following table lists the Firewall rules required to enable replication from the replication source to AUCloud.</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Destination</th>
+<th>Port</th>
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browser login session</td>
+<td>VMware Cloud Availability On-Premises Appliance(s)</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for browser logins to the on-premises appliance</td>
+</tr>
+<tr>
+<td>VMware Cloud Availability On-Premises Appliance(s)</td>
+<td>Firewall</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for communication to the cloud site</td>
+</tr>
+<tr>
+<td></td>
+<td>vCenter Server</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for communication to the vCenter Server</td>
+</tr>
+<tr>
+<td></td>
+<td>Platform Services Controller</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for single sign-on login to the appliance and for vCenter Server Lookup service communication</td>
+</tr>
+<tr>
+<td></td>
+<td>ESXi Hosts</td>
+<td>902</td>
+<td>TCP</td>
+<td>Used for Transferring replication data from the on-premises appliance to the ESXi hosts</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>UDP</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>80</td>
+<td>TCP</td>
+<td>Used for transferring replication data for the ESXi hosts to the on premises appliance</td>
+</tr>
+</tbody>
+</table>
 <p>No network changes are required on the client side. You initiate all traffic from the on-premises site, meaning all traffic flows outbound. Thus, the interface does not require a DNAT rule for tunnel traffic. A regular SNAT is enough.</p>
-<p><strong>Tenant Deployment Process</strong></p>
+<h2 id="tenant-deployment-process">Tenant Deployment Process<a class="headerlink" href="#tenant-deployment-process" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>Deploy vCAV On-Premises Appliance</p>
@@ -2825,7 +2953,7 @@
 <p>Configure Protection Replication</p>
 </li>
 </ol>
-<p><strong>Deploy vCAV On-Premises Appliance Using vSphere Client</strong></p>
+<h2 id="deploy-vcav-on-premises-appliance-using-vsphere-client">Deploy vCAV On-Premises Appliance Using vSphere Client<a class="headerlink" href="#deploy-vcav-on-premises-appliance-using-vsphere-client" title="Permanent link">¤</a></h2>
 <p>The tenant deployment process is like all typical VMware OVF deployments. The tenant must install the <strong>VMware Cloud Director Availability On-Premises Appliance OVA</strong> into the <strong>vCenter</strong> they would like to replicate to and/or from. Once deployed, the on-premises appliance is a single vApp that has three roles:</p>
 <ul>
 <li><strong>Replication Engine.</strong> Replicates a backup.</li>
@@ -2834,47 +2962,88 @@
 </ul>
 <p>Prior to deploying the appliance, AUCloud will provide you with three pieces of information:</p>
 <ul>
-<li><strong>The tunnel endpoint</strong></li>
-<li><strong>Account credentials</strong></li>
-<li><strong>Organization name</strong></li>
+<li>The tunnel endpoint</li>
+<li>Account credentials</li>
+<li>Organization name</li>
 </ul>
-<p>a. Go to <a href="https://my.vmware.com/web/vmware/details?downloadGroup=VCAVT3&amp;productId=872">VMware</a> and download the OVA. The file contains all binaries for the VMware Cloud Director Availability appliance.</p>
-<p>b. Once downloaded, log into your <strong>vSphere Client</strong>.</p>
-<p>c. Navigate to the resource where you plan to deploy the vCAV appliance. The resource can be a data centre, cluster, folder, host, or a resource pool.</p>
-<p>d. Right-click on the resource and select <strong>Deploy OVF template</strong> from the drop-down menu. The deployment wizard has <strong>nine steps</strong>.</p>
-<p>e. <strong>Select an OVF template.</strong> Opt to install from a local file. Browse to the location of the previously downloaded OVA. Select the vCAV OVA file and click <strong>Next</strong>.</p>
-<p>f. <strong>Select a name and folder.</strong> Type in your desired virtual machine (appliance) name. Next, select a location for your virtual machine.</p>
-<p>g. <strong>Select a compute resource.</strong> Choose a host or a cluster the appliance will run on. Click <strong>Next</strong> and wait for the system to validate. Whenever replicating VMs to the on-prem environment, vCAV will be using the resource you select now.</p>
-<p>h. <strong>Review details.</strong> This is a chance for you to evaluate and verify the template.</p>
+<h3 id="steps-to-deploy">Steps to Deploy<a class="headerlink" href="#steps-to-deploy" title="Permanent link">¤</a></h3>
+<ol>
+<li>
+<p>Go to <a href="https://my.vmware.com/web/vmware/details?downloadGroup=VCAVT3&amp;productId=872">VMware</a> and download the OVA. The file contains all binaries for the VMware Cloud Director Availability appliance.</p>
+</li>
+<li>
+<p>Once downloaded, log into your <strong>vSphere Client</strong>.</p>
+</li>
+<li>
+<p>Navigate to the resource where you plan to deploy the vCAV appliance. The resource can be a data centre, cluster, folder, host, or a resource pool.</p>
+</li>
+<li>
+<p>Right-click on the resource and select <strong>Deploy OVF template</strong> from the drop-down menu. The deployment wizard has <strong>nine steps</strong>.</p>
+</li>
+<li>
+<p><strong>Select an OVF template.</strong> Opt to install from a local file. Browse to the location of the previously downloaded OVA. Select the vCAV OVA file and click <strong>Next</strong>.</p>
+</li>
+<li>
+<p><strong>Select a name and folder.</strong> Type in your desired virtual machine (appliance) name. Next, select a location for your virtual machine.</p>
+</li>
+<li>
+<p><strong>Select a compute resource.</strong> Choose a host or a cluster the appliance will run on. Click <strong>Next</strong> and wait for the system to validate. Whenever replicating VMs to the on-prem environment, vCAV will be using the resource you select now.</p>
+</li>
+<li>
+<p><strong>Review details.</strong> This is a chance for you to evaluate and verify the template.</p>
+</li>
+</ol>
 <p><img alt="deploy ovf" src="../assets/deploy_ovf_template.png" /></p>
-<p>i. License agreement. Check the I accept all license agreements checkbox and click Next.</p>
-<p>j. Configuration. In this case, you are deploying an on-premises appliance. Thus, make sure you select the On-Prem Appliance option.</p>
-<p>k. Select storage. Configure optional storage options for the deployment.</p>
-<p>l. Select networks. Choose a destination network for every individual source network.</p>
-<p>m. Customize template. During this step of the wizard, customize the deployment.</p>
-<ul>
-<li><strong>Root Password.</strong> Defining a root password is mandatory. However, you will need to change it when you log in to vCAV for the first time. You do not need to define a very strong password at this point.</li>
+<ol>
+<li>
+<p>License agreement. Check the I accept all license agreements checkbox and click Next.</p>
+</li>
+<li>
+<p>Configuration. In this case, you are deploying an on-premises appliance. Thus, make sure you select the On-Prem Appliance option.</p>
+</li>
+<li>
+<p>Select storage. Configure optional storage options for the deployment.</p>
+</li>
+<li>
+<p>Select networks. Choose a destination network for every individual source network.</p>
+</li>
+<li>
+<p>Customize template. During this step of the wizard, customize the deployment.</p>
+</li>
+<li>
+<p><strong>Root Password.</strong> Defining a root password is mandatory. However, you will need to change it when you log in to vCAV for the first time. You do not need to define a very strong password at this point.</p>
+</li>
 <li><strong>Enable SSH.</strong> Select the <strong>Enable SSH</strong> checkbox (mandatory)</li>
-<li><strong>NTP Server.</strong> Enter the <strong>NTP server address</strong> the vCAV appliance will use. vCenter Server, ESXi, VMware Cloud Director, Platform Services Controller, and the VMware Cloud Director Availability appliance <strong>MUST</strong> all use the same NTP server.</li>
-</ul>
+<li>
+<p><strong>NTP Server.</strong> Enter the <strong>NTP server address</strong> the vCAV appliance will use. vCenter Server, ESXi, VMware Cloud Director, Platform Services Controller, and the VMware Cloud Director Availability appliance <strong>MUST</strong> all use the same NTP server.</p>
 <p><img alt="Deploy OVF Template" src="../assets/deploy_ovf_template2.png" /></p>
-<p>n. <strong>Ready to complete.</strong> Review the settings. Optionally, select to <strong>Power on after deployment.</strong> Click <strong>Finish</strong> to deploy the appliance.</p>
-<p>o. Track the progress of the deployment under <strong>Recent Tasks</strong> at the bottom of your screen.</p>
-<p><strong>Complete vCAV Configuration Wizard</strong></p>
+</li>
+</ol>
+<p>1. <strong>Ready to complete.</strong> Review the settings. Optionally, select to <strong>Power on after deployment.</strong> Click <strong>Finish</strong> to deploy the appliance.</p>
+<p>1. Track the progress of the deployment under <strong>Recent Tasks</strong> at the bottom of your screen.</p>
+<h2 id="complete-vcav-configuration-wizard">Complete vCAV Configuration Wizard<a class="headerlink" href="#complete-vcav-configuration-wizard" title="Permanent link">¤</a></h2>
 <p>The appliance is deployed now. However, you still need to <strong>configure vCAV</strong>:</p>
-<p>a. Log in to your vCAV appliance at <code>https://your-appliance-IP/ui/admin</code>. Use the root password defined during OVA deployment.</p>
-<p>b. <strong>Change the root password</strong>. Set and confirm a new password. Create a strong password with at least eight (8) characters. Make sure to use lowercase, uppercase, numeric, and special characters.</p>
-<p>c. To get started, you need to configure a <strong>Lookup Service</strong> endpoint. To do so, select <strong>Run Initial Setup Wizard</strong>.</p>
-<p>d. Once the <strong>Initial Setup</strong> window opens, start with the first page in the navigation pane.</p>
-<p>e. <strong>Site Details</strong>. In it, type your <strong>Site</strong> <strong>Name</strong> and optionally a short <strong>Description</strong> about the site. Click <strong>Next</strong>.</p>
+<ol>
+<li>Log in to your vCAV appliance at <code>https://your-appliance-IP/ui/admin</code>. Use the root password defined during OVA deployment.</li>
+</ol>
+<p>1. <strong>Change the root password</strong>. Set and confirm a new password. Create a strong password with at least eight (8) characters. Make sure to use lowercase, uppercase, numeric, and special characters.</p>
+<ol>
+<li>
+<p>To get started, you need to configure a <strong>Lookup Service</strong> endpoint. To do so, select <strong>Run Initial Setup Wizard</strong>.</p>
+</li>
+<li>
+<p>Once the <strong>Initial Setup</strong> window opens, start with the first page in the navigation pane.</p>
+</li>
+</ol>
+<p>1. <strong>Site Details</strong>. In it, type your <strong>Site</strong> <strong>Name</strong> and optionally a short <strong>Description</strong> about the site. Click <strong>Next</strong>.</p>
 <p><img alt="Site Details" src="../assets/site_details.png" /></p>
-<p>f. In the <strong>Lookup Service</strong> tab, enter your connection details to set up the lookup service along with SSO admin credentials.</p>
+<p>1. In the <strong>Lookup Service</strong> tab, enter your connection details to set up the lookup service along with SSO admin credentials.</p>
 <ul>
 <li><strong>Lookup service address.</strong> Enter your Replication Source lookup service address. For example: <code>https://{servername}:443/lookupservice/sdk</code></li>
 <li>Enter SSO admin account credentials in the <strong>Username</strong> and <strong>Password</strong> field</li>
 </ul>
 <p><img alt="Lookup Service Details" src="../assets/lookup_service_details.png" /></p>
-<p>g. Click <strong>Next</strong> and accept the SSL certificate of the vCenter Server Lookup to continue.</p>
+<p>1. Click <strong>Next</strong> and accept the SSL certificate of the vCenter Server Lookup to continue.</p>
 <p><img alt="SSLCert" src="../assets/sslcert.png" /></p>
 <p>h. Proceed to the configure <strong>Cloud Details</strong> by pairing up your on prem and AUCloud sites.</p>
 <p>i. Define the Public API Endpoint: <a href="https://vcav.sz101.australiacloud.com.au/">https://vcav.sz101.australiacloud.com.au:443</a></p>
@@ -2969,7 +3138,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

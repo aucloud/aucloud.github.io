@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1944,9 +1949,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to configure a new protection
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to configure a new protection
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-new-protection" class="md-nav__link">
+    Configure a New Protection
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2730,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-new-protection" class="md-nav__link">
+    Configure a New Protection
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,8 +2782,11 @@
 
 
 
-<p><strong>How to configure a new protection</strong></p>
+  <h1>How to configure a new protection</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>You can configure for a Virtual Machine or a Virtual Application to be protected to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.</p>
+<h2 id="configure-a-new-protection">Configure a New Protection<a class="headerlink" href="#configure-a-new-protection" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>Decide that type of replication you want to perform and unfold the <strong>Incoming Replications</strong> and <strong>Outgoing Replications</strong> menus.</p>
@@ -2735,16 +2801,16 @@
 <p><img alt="Source site" src="../assets/Sourcesites.jpg" /></p>
 </li>
 <li>
-<p>Select the <strong>Destination VDC</strong> and <strong>Storage Policy</strong></p>
+<p>Select the <strong>Destination VDC</strong> and <strong>Storage Policy.</strong></p>
 <p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicys.jpg" /></p>
 </li>
 <li>
 <p>On the <strong>Protection Settings</strong> page, you must set:</p>
-<ol>
+<ul>
 <li>Target Recovery Point Objective (RPO).</li>
 <li>Retention policy for point in time instances.</li>
 <li>Enable or disable quiescing.</li>
-</ol>
+</ul>
 <p><img alt="Protection settings" src="../assets/Protectionsettings.jpg" /></p>
 </li>
 <li>
@@ -2758,7 +2824,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

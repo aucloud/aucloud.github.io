@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1916,9 +1921,59 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to conduct a test failover
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to conduct a test failover
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conducting-the-test-failover" class="md-nav__link">
+    Conducting the test failover
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conducting-the-test-cleanup" class="md-nav__link">
+    Conducting the Test Cleanup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-replications" class="md-nav__link">
+    Deleting Replications
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2744,42 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conducting-the-test-failover" class="md-nav__link">
+    Conducting the test failover
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conducting-the-test-cleanup" class="md-nav__link">
+    Conducting the Test Cleanup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-replications" class="md-nav__link">
+    Deleting Replications
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,10 +2810,12 @@
 
 
 
-<p><strong>How to conduct a test failover</strong></p>
-<p>With test failover tasks, you can verify whether the data from the source is replicated correctly on the target site. The replication Data is deleted once the Test Failover has been performed</p>
+  <h1>How to conduct a test failover</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<p>With test failover tasks, you can verify whether the data from the source is replicated correctly on the target site. The replication Data is deleted once the Test Failover has been performed.</p>
 <p><img alt="Test Failover" src="../assets/test_failover_image.png" /></p>
-<p><strong>Conducting the test failover</strong></p>
+<h2 id="conducting-the-test-failover">Conducting the test failover<a class="headerlink" href="#conducting-the-test-failover" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>In the VMware Cloud Director Availability Portal, either form the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the protected vApp that you want to test.</p>
@@ -2738,14 +2831,48 @@
 </li>
 <li>
 <p>On the <strong>Recovery Settings</strong> page, use the options to configure the test task and click <strong>Next</strong>.</p>
-<p><img alt="Recovery Settings" src="../assets/recovery_settings.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power On recovered vApps</td>
+<td>Select this option, to power on the virtual machines on the destination site</td>
+</tr>
+<tr>
+<td>Network Settings</td>
+<td><ul>Configure the network settings for the virtual machines:<li>Select the <strong>Apply preconfigured network settings on failover</strong> option, so that the network configured during the virtual machine replication is assigned.</li><li>Select the <strong>Connect all VMs to network</strong> option and select a network from the drop-down menu.</li></ul><p></p>The replicated virtual machine connects to the network that you selected.</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p>On the Recovery Instance page, configure the recovery point in time and click <strong>Next.</strong></p>
-<p><img alt="Options" src="../assets/options.jpg" /></p>
+<p>On the <strong>Recovery Instance</strong> page, configure the recovery point in time and click <strong>Next.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Synchronize all VMs to their current state</td>
+<td>Creates an instance of the powered on vApp with its latest changes and uses that instance for the Test Failover operation</td>
+</tr>
+<tr>
+<td>Manually select existing instance</td>
+<td>Allows you to select an instance without synchronizing the data for the recovered vApp</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p>On the Ready to Complete page, review the test details and click <strong>Finish</strong> to initiate the Test Failover task.</p>
+<p>On the <strong>Ready to Complete</strong> page, review the test details and click <strong>Finish</strong> to initiate the Test Failover task.</p>
 <p><img alt="Finish" src="../assets/finish.png" /></p>
 </li>
 <li>
@@ -2753,7 +2880,7 @@
 <p><img alt="Replication Tasks Pane" src="../assets/replication_tasks_pane.png" /></p>
 </li>
 </ol>
-<p><strong>Conducting the Test Cleanup</strong></p>
+<h2 id="conducting-the-test-cleanup">Conducting the Test Cleanup<a class="headerlink" href="#conducting-the-test-cleanup" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>From the <strong>Incoming Replications</strong> or the <strong>Outgoing Replications</strong> pane, you can conduct the test cleanup.</p>
@@ -2767,7 +2894,7 @@
 <p><img alt="Test Clean Up" src="../assets/test_cleanup_clean.png" /></p>
 </li>
 </ol>
-<p><strong>Deleting Replications</strong></p>
+<h2 id="deleting-replications">Deleting Replications<a class="headerlink" href="#deleting-replications" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>You can remove the replication by selecting the vApp or VM and clicking <strong>Delete.</strong></p>
@@ -2784,7 +2911,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

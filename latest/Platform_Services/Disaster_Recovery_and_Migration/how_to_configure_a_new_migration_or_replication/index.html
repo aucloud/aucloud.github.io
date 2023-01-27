@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1930,9 +1935,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to configure a new migration or replication
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to configure a new migration or replication
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-new-migration" class="md-nav__link">
+    Configure a New Migration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2730,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-a-new-migration" class="md-nav__link">
+    Configure a New Migration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,7 +2782,9 @@
 
 
 
-<p><strong>How to Configure a New Replication or Migration</strong></p>
+  <h1>How to configure a new migration or replication</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>To protect a vApp or a virtual machine from one organisation to another, you configure a replication by using VMware Cloud Director Availability.</p>
 <p>To migrate the workload of a vApp or a virtual machine to a remote organisation, and run your operations from the remote organisation, you configure a migration by using the portal.</p>
 <p>When you configure a protection, you set the Recovery Point Objective (RPO) to determine the maximum data loss that you can tolerate. For example, an RPO of 1 hour seeks to ensure that a virtual machine loses the data for no more than 1 hour during the recovery. For smaller RPO values, less data is lost in a recovery, but more network bandwidth is consumed keeping the replica up to date.</p>
@@ -2728,7 +2793,7 @@
 <p>When you configure a migration, the default RPO is set to 24 hours.</p>
 </div>
 <p>When a virtual machine reaches its RPO target, the VMware Cloud Director Availability Replicator records approximately 3800 bytes of data in the vCenter Server events database. If you set a low RPO value, it creates a large volume of data in the database. To reduce the volume of data that is kept in the vCenter Server events database, limit the number of days that vCenter Server retains event data. Alternatively, set a higher RPO value.</p>
-<p><strong>Configure a New Migration</strong></p>
+<h2 id="configure-a-new-migration">Configure a New Migration<a class="headerlink" href="#configure-a-new-migration" title="Permanent link">¤</a></h2>
 <p>You can configure for a virtual machine or a vApp to be migrated to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.</p>
 <ol>
 <li>
@@ -2736,7 +2801,7 @@
 <p><img alt="Replication selection" src="../assets/Replicationselection.jpg" /></p>
 </li>
 <li>
-<p>Click the <strong>Migration</strong> symbol</p>
+<p>Click the <strong>Migration</strong> symbol.</p>
 <p><img alt="New Migration" src="../assets/NewMigration.jpg" /></p>
 </li>
 <li>
@@ -2773,7 +2838,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

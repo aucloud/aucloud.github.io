@@ -114,6 +114,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#prerequisites" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1986,9 +1991,59 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to perform a reverse task
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         How to perform a reverse task
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performing-a-reverse-task" class="md-nav__link">
+    Performing a reverse task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    Results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2689,6 +2744,42 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performing-a-reverse-task" class="md-nav__link">
+    Performing a reverse task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    Results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2719,10 +2810,12 @@
 
 
 
-<p><strong>How to perform a reverse task</strong></p>
-<p><strong>Prerequisites</strong></p>
+  <h1>How to perform a reverse task</h1>
+
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
 <p>Verify that you have performed a Failover task to the vApp before starting the Reverse task.<br />
-<strong>Procedure</strong></p>
+</p>
+<h2 id="performing-a-reverse-task">Performing a reverse task<a class="headerlink" href="#performing-a-reverse-task" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, and click Reverse. A Reverse pop-up window displays to Confirm the reverse operation.</p>
@@ -2731,9 +2824,9 @@
 <p>You can monitor the progress of the task in the Replication Tasks pane.</p>
 </li>
 </ol>
-<p><strong>Results</strong></p>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">¤</a></h2>
 <p>After the reverse task completes, the reversed replication overwrites the source vApp or virtual machine. The virtual machine now runs on the primary destination site with a workload protection at your primary source site.   </p>
-<p><strong>Next Steps</strong></p>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>To run the workload from the original source site, perform a <strong>Failover</strong> back to the source site, test failover, pause the reversed replication, and edit the configuration, or migrate the vApp.</p>
 
   <hr>
@@ -2741,7 +2834,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>

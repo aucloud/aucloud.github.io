@@ -115,7 +115,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-ovf-tool" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -2028,6 +2028,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vmware-cloud-director-availability-on-premises-network-requirements" class="md-nav__link">
+    VMware Cloud Director Availability On-Premises Network Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-ports-configuration" class="md-nav__link">
+    Network Ports Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-rules-for-the-on-premises-site-communication" class="md-nav__link">
+    Firewall Rules for the On-Premises Site Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-requirements" class="md-nav__link">
+    Deployment Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-vsphere-client" class="md-nav__link">
+    Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-ovf-tool" class="md-nav__link">
     Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the OVF Tool
   </a>
@@ -2037,6 +2079,13 @@
         <li class="md-nav__item">
   <a href="#configure-the-on-premises-vmware-cloud-director-availability-appliance" class="md-nav__link">
     Configure the On-Premises VMware Cloud Director Availability Appliance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-do-next" class="md-nav__link">
+    What to do next
   </a>
   
 </li>
@@ -2737,6 +2786,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vmware-cloud-director-availability-on-premises-network-requirements" class="md-nav__link">
+    VMware Cloud Director Availability On-Premises Network Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-ports-configuration" class="md-nav__link">
+    Network Ports Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-rules-for-the-on-premises-site-communication" class="md-nav__link">
+    Firewall Rules for the On-Premises Site Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-requirements" class="md-nav__link">
+    Deployment Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-vsphere-client" class="md-nav__link">
+    Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-ovf-tool" class="md-nav__link">
     Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the OVF Tool
   </a>
@@ -2746,6 +2837,13 @@
         <li class="md-nav__item">
   <a href="#configure-the-on-premises-vmware-cloud-director-availability-appliance" class="md-nav__link">
     Configure the On-Premises VMware Cloud Director Availability Appliance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-do-next" class="md-nav__link">
+    What to do next
   </a>
   
 </li>
@@ -2784,17 +2882,85 @@
 
   <h1>Installing and configuring vCAV on premise</h1>
 
-<p><strong>Installing and Configuring VMware Cloud Director Availability On-Premises</strong>  </p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>After deploying and setting up a service provider cloud site, you install and configure a VMware Cloud Director Availability appliance on-premises to enable the replication and the failover capabilities from the on-premises vCenter Server to the cloud and reverse.  </p>
-<p><strong>VMware Cloud Director Availability On-Premises Network Requirements</strong><br />
-Before you start deploying and configuring the VMware Cloud Director Availability on-premises appliance, ensure that the required network ports are opened and allow the communication within the on-premises site and the cloud site</p>
-<p><strong>Network Ports Configuration</strong></p>
+<h2 id="vmware-cloud-director-availability-on-premises-network-requirements">VMware Cloud Director Availability On-Premises Network Requirements<a class="headerlink" href="#vmware-cloud-director-availability-on-premises-network-requirements" title="Permanent link">¤</a></h2>
+<p>Before you start deploying and configuring the VMware Cloud Director Availability on-premises appliance, ensure that the required network ports are opened and allow the communication within the on-premises site and the cloud site.</p>
+<h2 id="network-ports-configuration">Network Ports Configuration<a class="headerlink" href="#network-ports-configuration" title="Permanent link">¤</a></h2>
 <p>The following diagram shows the direction of the data flow, the data traffic type, and the required network ports for the communication between the VMware Cloud Director Availability on-premises appliance and the disaster recovery infrastructure.</p>
 <p><img alt="DR Infrastructure" src="../assets/001.png" /></p>
-<p>The following table lists the required network ports to be opened for the VMware Cloud Director Availability on-premises appliance communication in the-premises site.  </p>
-<p><strong>Firewall Rules for the On-Premises Site Communication:</strong></p>
-<p><img alt="Firewall Rules" src="../assets/firewallrules.png" />  </p>
-<p><strong>Deployment Requirements</strong></p>
+<h2 id="firewall-rules-for-the-on-premises-site-communication">Firewall Rules for the On-Premises Site Communication<a class="headerlink" href="#firewall-rules-for-the-on-premises-site-communication" title="Permanent link">¤</a></h2>
+<p>The following table lists the required network ports to be opened for the VMware Cloud Director Availability on-premises appliance communication in the-premises site:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Destination</th>
+<th>Port</th>
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browser login session</td>
+<td>VMware Cloud Availability On-Premises Appliance(s)</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for browser logins to the on-premises appliance</td>
+</tr>
+<tr>
+<td>VMware Cloud Availability On-Premises Appliance(s)</td>
+<td>Firewall</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for communication to the cloud site</td>
+</tr>
+<tr>
+<td></td>
+<td>vCenter Server</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for communication to the vCenter Server</td>
+</tr>
+<tr>
+<td></td>
+<td>Platform Services Controller</td>
+<td>443</td>
+<td>TCP</td>
+<td>Used for single sign-on login to the appliance and for vCenter Server Lookup service communication</td>
+</tr>
+<tr>
+<td></td>
+<td>ESXi Hosts</td>
+<td>902</td>
+<td>TCP</td>
+<td>Used for Transferring replication data from the on-premises appliance to the ESXi hosts</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>UDP</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>80</td>
+<td>TCP</td>
+<td>Used for transferring replication data for the ESXi hosts to the on premises appliance</td>
+</tr>
+<tr>
+<td>ESXi Hosts</td>
+<td>VMware Cloud Availability On-Premises Appliance(s)</td>
+<td>44046</td>
+<td>TCP</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment-requirements">Deployment Requirements<a class="headerlink" href="#deployment-requirements" title="Permanent link">¤</a></h2>
 <p>An ESXi host can handle the replication traffic through its management VMkernel interface. You can separate the management traffic from the replication traffic by creating a dedicated replication VMkernel interface. Use the following tags when you create a VMkernel interface for the replication traffic.</p>
 <ul>
 <li><strong>vSphere Replication</strong> - Use this tag to configure the ESXi host for the outgoing replication traffic.</li>
@@ -2802,7 +2968,7 @@ Before you start deploying and configuring the VMware Cloud Director Availabilit
 </ul>
 <p>You configure the replication VMkernel interface in its own IP subnet and connect the VMware Cloud Director Availability on-premises appliance to the same virtual port group. With this configuration, the replication traffic between the ESXi hosts and the VMware Cloud Director Availability Replicator instances stays in the same broadcast domain. As a result, the replication traffic does not cross a router uncompressed and saves the bandwidth.</p>
 <p>The the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the <strong>CommonName</strong> or at least one of the entries in the <strong>Subject Alternative Name</strong> must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.</p>
-<p><strong>Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client</strong></p>
+<h2 id="deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-vsphere-client">Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client<a class="headerlink" href="#deploy-an-on-premises-vmware-cloud-director-availability-appliance-by-using-the-vsphere-client" title="Permanent link">¤</a></h2>
 <p>In the vSphere Client, you can deploy an on-premises VMware Cloud Director Availability appliance by using a single OVA file.</p>
 <ol>
 <li>
@@ -2893,7 +3059,7 @@ Before you start deploying and configuring the VMware Cloud Director Availabilit
 </li>
 </ol>
 <p>The console outputs the IP address of the VMware Cloud Director Availability appliance.  </p>
-<h1 id="configure-the-on-premises-vmware-cloud-director-availability-appliance">Configure the On-Premises VMware Cloud Director Availability Appliance<a class="headerlink" href="#configure-the-on-premises-vmware-cloud-director-availability-appliance" title="Permanent link">¤</a></h1>
+<h2 id="configure-the-on-premises-vmware-cloud-director-availability-appliance">Configure the On-Premises VMware Cloud Director Availability Appliance<a class="headerlink" href="#configure-the-on-premises-vmware-cloud-director-availability-appliance" title="Permanent link">¤</a></h2>
 <p>To configure the on-premises appliance, you change the initial <strong>root</strong> user password that you set during the OVA deployment and register the on-premises appliance with a vCenter Server Lookup service.</p>
 <ol>
 <li>
@@ -2980,7 +3146,7 @@ By leaving this option deselected, only users authenticated to the on-premises V
 <p>The on-premises VMware Cloud Director Availability appliance is configured and after you log in to the VMware Cloud Director Availability vApp Replication Manager appliance and navigate to<strong>Sites</strong>, you can see both cloud and on-premises sites available.  </p>
 </li>
 </ol>
-<p><strong>What to do next</strong></p>
+<h2 id="what-to-do-next">What to do next<a class="headerlink" href="#what-to-do-next" title="Permanent link">¤</a></h2>
 <p>If you skipped configuring local placement in the initial wizard, you can do that next.</p>
 
   <hr>
@@ -2988,7 +3154,7 @@ By leaving this option deselected, only users authenticated to the on-premises V
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
       
     
   </small>
