@@ -7,8 +7,8 @@ description: M365 Backup common errors and actions
 
 The following table will outline common errors that customers will receive in reports for their M365 backup service and the actions a customer can take to resolve them:
 
-| Error | Solution|
-| --- | --- |
+| Error | Solution |
+| ---   | ---      |
 | **Cannot change WebPart ExportMode to ‘All’. WebPart will be skipped** | To allow the "Export Mode" to be changed by Veeam Backup for Microsoft 365, you must enable the "Allow custom script" option for the affected SharePoint sites. <p></p><ul>For Personal Sites or OneDrives:<li>[Microsoft 365: Allow or prevent custom script - To allow custom script on OneDrive or user-created sites](https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script?ad=in-text-link#to-allow-custom-script-on-onedrive-or-user-created-sites)</li></ul><ul>For any other SharePoint sites:<li>[Microsoft 365: Allow or prevent custom script -To allow custom script on other SharePoint sites](https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script?ad=in-text-link#to-allow-custom-script-on-other-sharepoint-sites)</li></ul>
 | **Failed to find Team mailbox owner account** | A user with an active Microsoft license needs to be assigned to the team's mailbox to resolve this error. |
 | **Mailbox/User does not have a valid M365 license** | User without a valid M365 license needs to be provided with one to enable them as a mail enabled user. |

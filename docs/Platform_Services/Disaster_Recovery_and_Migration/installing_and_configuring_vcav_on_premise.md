@@ -3,26 +3,36 @@ title: Installing and configuring vCAV on premise
 description: Installing and configuring vCAV on premise
 ---
 
-**Installing and Configuring VMware Cloud Director Availability On-Premises**  
+## Overview
   
 After deploying and setting up a service provider cloud site, you install and configure a VMware Cloud Director Availability appliance on-premises to enable the replication and the failover capabilities from the on-premises vCenter Server to the cloud and reverse.  
 
-**VMware Cloud Director Availability On-Premises Network Requirements**  
-Before you start deploying and configuring the VMware Cloud Director Availability on-premises appliance, ensure that the required network ports are opened and allow the communication within the on-premises site and the cloud site
+## VMware Cloud Director Availability On-Premises Network Requirements
 
-**Network Ports Configuration**
+Before you start deploying and configuring the VMware Cloud Director Availability on-premises appliance, ensure that the required network ports are opened and allow the communication within the on-premises site and the cloud site.
+
+## Network Ports Configuration
 
 The following diagram shows the direction of the data flow, the data traffic type, and the required network ports for the communication between the VMware Cloud Director Availability on-premises appliance and the disaster recovery infrastructure.
 
 ![DR Infrastructure](./assets/001.png)
 
-The following table lists the required network ports to be opened for the VMware Cloud Director Availability on-premises appliance communication in the-premises site.  
-  
-**Firewall Rules for the On-Premises Site Communication:**
+## Firewall Rules for the On-Premises Site Communication
 
-![Firewall Rules](./assets/firewallrules.png)  
+The following table lists the required network ports to be opened for the VMware Cloud Director Availability on-premises appliance communication in the-premises site:
 
-**Deployment Requirements**
+| Source | Destination | Port | Protocol | Description |
+| ---    | ---         | ---  | ---      | ---         |
+| Browser login session | VMware Cloud Availability On-Premises Appliance(s) | 443 | TCP | Used for browser logins to the on-premises appliance |
+| VMware Cloud Availability On-Premises Appliance(s) | Firewall       | 443 | TCP | Used for communication to the cloud site |
+|                                             | vCenter Server | 443 | TCP | Used for communication to the vCenter Server |
+|                                             | Platform Services Controller | 443 | TCP | Used for single sign-on login to the appliance and for vCenter Server Lookup service communication |
+|                                             | ESXi Hosts     | 902 | TCP | Used for Transferring replication data from the on-premises appliance to the ESXi hosts |
+|                                             |                |     | UDP | |
+|                                             |                | 80  | TCP | Used for transferring replication data for the ESXi hosts to the on premises appliance |
+| ESXi Hosts | VMware Cloud Availability On-Premises Appliance(s) | 44046 | TCP | - |
+
+## Deployment Requirements
 
 An ESXi host can handle the replication traffic through its management VMkernel interface. You can separate the management traffic from the replication traffic by creating a dedicated replication VMkernel interface. Use the following tags when you create a VMkernel interface for the replication traffic.
 
@@ -33,7 +43,7 @@ You configure the replication VMkernel interface in its own IP subnet and connec
 
 The the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the **CommonName** or at least one of the entries in the **Subject Alternative Name** must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.
 
-**Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client**
+## Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client
 
 In the vSphere Client, you can deploy an on-premises VMware Cloud Director Availability appliance by using a single OVA file.
 
@@ -109,7 +119,7 @@ In the OVF Tool console, you can deploy an on-premises VMware Cloud Director Ava
 
 The console outputs the IP address of the VMware Cloud Director Availability appliance.  
 
-# Configure the On-Premises VMware Cloud Director Availability Appliance
+## Configure the On-Premises VMware Cloud Director Availability Appliance
 
 To configure the on-premises appliance, you change the initial **root** user password that you set during the OVA deployment and register the on-premises appliance with a vCenter Server Lookup service.
 
@@ -169,6 +179,6 @@ To configure the on-premises appliance, you change the initial **root** user p
 
 1. The on-premises VMware Cloud Director Availability appliance is configured and after you log in to the VMware Cloud Director Availability vApp Replication Manager appliance and navigate to**Sites**, you can see both cloud and on-premises sites available.  
 
-**What to do next**
+## What to do next
 
 If you skipped configuring local placement in the initial wizard, you can do that next.

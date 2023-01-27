@@ -3,9 +3,11 @@ title: How to configure a new protection
 description: How to configure a new protection
 ---
 
-**How to configure a new protection**
+## Overview
 
 You can configure for a Virtual Machine or a Virtual Application to be protected to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.
+
+## Configure a New Protection
 
 1. Decide that type of replication you want to perform and unfold the **Incoming Replications** and **Outgoing Replications** menus.
 
@@ -19,15 +21,15 @@ You can configure for a Virtual Machine or a Virtual Application to be protected
 
     ![Source site](./assets/Sourcesites.jpg)
 
-1. Select the **Destination VDC** and **Storage Policy**
+1. Select the **Destination VDC** and **Storage Policy.**
 
     ![destination VDC and Storage policy](./assets/destinationVDCandStoragepolicys.jpg)
 
 1. On the **Protection Settings** page, you must set:
 
-    1. Target Recovery Point Objective (RPO).
-    1. Retention policy for point in time instances.
-    1. Enable or disable quiescing.
+	- Target Recovery Point Objective (RPO).
+    - Retention policy for point in time instances.
+    - Enable or disable quiescing.
 
     ![Protection settings](./assets/Protectionsettings.jpg)
   

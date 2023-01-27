@@ -77,6 +77,7 @@ ovftool
 palo
 pdf
 pre
+preconfigured
 programmatically
 pst
 quiescing

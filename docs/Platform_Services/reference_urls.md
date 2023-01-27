@@ -33,8 +33,8 @@ description: Reference URLs for services in AUCLoud
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
-| [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Official |  |
-| [https://evbo-csz.australiacloud.com.au/](https://evbo-csz.australiacloud.com.au/) | Protected | |
+| [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Official | - |
+| [https://evbo-csz.australiacloud.com.au/](https://evbo-csz.australiacloud.com.au/) | Protected | - |
 
 ## Object Storage API Endpoints (via VMware Object Storage Extension)
 

@@ -3,7 +3,7 @@ title: How to configure a new migration or replication
 description: How to configure a new migration or replication
 ---
 
-**How to Configure a New Replication or Migration**
+## Overview
 
 To protect a vApp or a virtual machine from one organisation to another, you configure a replication by using VMware Cloud Director Availability.
 
@@ -17,7 +17,7 @@ When you configure a protection, you set the Recovery Point Objective (RPO) to d
 
 When a virtual machine reaches its RPO target, the VMware Cloud Director Availability Replicator records approximately 3800 bytes of data in the vCenter Server events database. If you set a low RPO value, it creates a large volume of data in the database. To reduce the volume of data that is kept in the vCenter Server events database, limit the number of days that vCenter Server retains event data. Alternatively, set a higher RPO value.
 
-**Configure a New Migration**
+## Configure a New Migration
 
 You can configure for a virtual machine or a vApp to be migrated to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.
 
@@ -25,7 +25,7 @@ You can configure for a virtual machine or a vApp to be migrated to a destinatio
 
     ![Replication selection](./assets/Replicationselection.jpg)
 
-1. Click the **Migration** symbol
+1. Click the **Migration** symbol.
 
     ![New Migration](./assets/NewMigration.jpg)
 

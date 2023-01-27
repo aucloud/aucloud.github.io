@@ -1,6 +1,6 @@
 ---
-title: AUCloud technical documentation
-description: "AUCloud's technical documentation site. AUCloud is a sovereign cloud provider, based in Australia offering Iaas, PaaS and security services."
+title: AUCloud Technical Documentation
+description: "AUCloud's Technical Documentation site. AUCloud is a Sovereign Cloud provider, based in Australia offering Iaas, PaaS and security services."
 ---
 
 ## Overview

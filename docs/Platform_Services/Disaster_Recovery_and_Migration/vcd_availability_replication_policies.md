@@ -3,11 +3,11 @@ title: VMware Cloud Director Availability Replication Policies
 description: VMware Cloud Director Availability Replication Policies
 ---
 
-**VMware Cloud Director Availability Replication Policies**
+## Overview
 
 Replication policies control replication attributes of VMware Cloud Director organisation from the VMware Cloud Director Availability solution perspective.  
 
-**Replication Policies**
+## Replication Policies
 
 1. Replication policies enforce a list of replication attributes:
 
@@ -37,7 +37,7 @@ Replication policies control replication attributes of VMware Cloud Director org
 
 If there are any violations, the system rejects the creation of the new replication.
 
-**Using Replication Seeds**
+## Using Replication Seeds
 
 For each new replication that you configure, an initial full synchronisation operation is performed. During this operation, VMware Cloud Director Availability copies the whole data from the source vApp or VM to a datastore in the target site. Use replication seeds to reduce the network traffic and the time that is required for the initial full synchronization of a replication.
 
@@ -67,7 +67,7 @@ When a replication uses a seed vApp or VM, VMware Cloud Director Availability do
     - Failover data from a previous replication: Set up a replication, fail over to the target site and continue using the on-premises workload. At a later point, you protect it in the target site by using the VM that you failed over earlier as a seed.
     - Copy over the network: Copy a source VM to the cloud organization and transfer the source data to the target site by using other means than VMware Cloud Director Availability.  
 
-**Export a Virtual Machine or a vApp to a Removable Media**
+## Export a Virtual Machine or a vApp to a Removable Media
 
 To use a replication seed for configuring a replication, you must export a virtual machine to removable media and provide it to AUCloud.
 
@@ -89,7 +89,7 @@ To use a replication seed for configuring a replication, you must export a virtu
 
 1. Provide the removable media containing the exported files to AUCloud.
 
-**Configure a Replication by Using a Replication Seed**
+## Configure a Replication by Using a Replication Seed
 
 When creating a new incoming or outgoing replication, you can use a vApp or VM as a seed to avoid transferring large amounts of data over the network during the initial full synchronisation.
 
@@ -114,6 +114,14 @@ Before starting a replication, in the target site you must power off the seed VM
 1. On the Protection Settings page, select the settings for the replication, and click **Next**.
 
     ![replication table](./assets/replication_table.jpg)
+	
+	| Option                                       | Description |
+	| ---                                          | ---         |
+	| Target recovery point objective (RPO)        | Use the slider or click the time intervals to set the acceptable period for which data can be lost in the case of a site failure. The available RPO range is from 5 minutes to 24 hours. |
+	| Storage Policy                               | From the Storage policy drop-down menu, select the storage policy for placing the recovered VMs and for the replicated data before the recovery. For seed VMs, VMware Cloud Availability Replicator uses the storage policy of the seed VM. |
+	| Retention policy for point in time instances | To preserve multiple distinct replication instances (snapshots) to which VMs can be recovered, select the option, select the number of replication instances to keep, and select the preservation period.<p></p>The number of preserved replication instances depends on the configured retention policy and requires that the RPO period is short enough for the replication instances to be created. For example, if you select to preserve four replication instances per day, the RPO period must not exceed six hours, to allow for the retention of four replication instances in 24 hours. |
+	| Enable quiesce                               | Select the quiescing method for the guest OS of the source VM.<p></p>**Note:** Quiescing is available only for VMs that support quiescing. |
+	| Compress replication traffic                 | Select to compress the replication data that is transferred through the network and to reduce the network traffic. However, compressing and decompressing data requires more CPU resources on both the source site and the server that manages the target datastore. |
   
 1. On the **Scheduling** page, select when to start the replication and click **Next.**
 
