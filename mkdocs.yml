@@ -58,7 +58,7 @@ plugins:
 - htmlproofer:
     enabled: !ENV [ENABLED_HTMLPROOFER, False]
     validate_rendered_template: True
-    raise_error: False
+    raise_error: True
     raise_error_excludes:
       406: ['https://api-vcd-sz101.portal.australiacloud.com.au/api','https://api-vcd-sz201.portal.australiacloud.com.au/api','https://api-vcd-sz101.eportal.australiacloud.com.au/api','https://api-vcd-sz201.eportal.australiacloud.com.au/api']
       404:
