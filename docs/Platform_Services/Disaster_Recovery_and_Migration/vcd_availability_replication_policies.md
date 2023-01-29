@@ -112,8 +112,6 @@ Before starting a replication, in the target site you must power off the seed VM
         If you remove a disk from a replication source virtual machine, the seed disk is not deleted from the datastore in the target site
 
 1. On the Protection Settings page, select the settings for the replication, and click **Next**.
-
-    ![replication table](./assets/replication_table.jpg)
 	
 	| Option                                       | Description |
 	| ---                                          | ---         |
