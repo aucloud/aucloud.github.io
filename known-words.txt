@@ -14,6 +14,7 @@ australiacloud
 aws
 backend
 blog_content
+gartner
 bsz
 burndown
 catalog
