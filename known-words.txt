@@ -14,7 +14,6 @@ australiacloud
 aws
 backend
 blog_content
-gartner
 bsz
 burndown
 catalog
@@ -33,6 +32,7 @@ ctrl
 customisable
 cyber
 cyberduck
+cybersecurity
 datacenter
 datacenters
 datacentre
@@ -53,6 +53,7 @@ financials
 firewalling
 fortinet
 fyshwick
+gartner
 github
 gradle
 hellmann

@@ -31,13 +31,16 @@ Users cannot be serviced in AUCloud if they do not explicitly agree to the CRISP
 AUCloud’s CRISP ensures all our users benefit from increased security across the whole community.
 
 ## Essential 8
+
 AUCloud has implemented the Essential Eight Strategies to Mitigate Cyber Intrusions. Additional ACSC advice and strategies to mitigate cyber security incidents are implemented using a risk-based approach to the AUCloud security program.
 
 ## SOC
-AUCloud infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCloud’s internal networks as well as the perimeter protection of all AUCloud customers. 
+
+AUCloud infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCloud’s internal networks as well as the perimeter protection of all AUCloud customers.
 
 The Security Operations Centre:
 
 - monitors, logs and analyses all cyber traffic on a continuous basis
 - provides near real-time cyber monitoring, triage, analysis and incident response
 - enables cyber threat intelligence at scale
+- conducts vulnerability scanning to ensure an enhanced cybersecurity posture
