@@ -27,9 +27,13 @@ You can configure for a Virtual Machine or a Virtual Application to be protected
 
 1. On the **Protection Settings** page, you must set:
 
-	- Target Recovery Point Objective (RPO).
+    - Target Recovery Point Objective (RPO).
     - Retention policy for point in time instances.
-    - Enable or disable quiescing.
+    - Enable or disable quiescing. 
+   
+    !!! note
+    
+   	    Quiescing cannot be enabled when back-up is also enabled, [VMware KB81059](https://kb.vmware.com/s/article/81059)
 
     ![Protection settings](./assets/Protectionsettings.jpg)
   
