@@ -3,7 +3,7 @@ title: Shared Responsibility Model
 description: Shared Responsibility Model
 ---
 
-## Shared Responsibility Model
+## Overview
 
 The AUCloud CRISP describes the shared security model between AUCloud and the customer.
 The shared responsibility model varies based on the underlying service(s) consumed by customers.

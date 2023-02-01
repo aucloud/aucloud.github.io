@@ -3,7 +3,7 @@ title: AUCloud Storage
 description: AUCloud Storage
 ---
 
-## Storage at AUCloud
+## Overview
 
 AUCloud uses block storage and S3 object storage.
 
@@ -18,8 +18,6 @@ Block storage allows data to be accessed quickly and directly, making it suitabl
 - **Block addressing**: Data is accessed using a block addressing system, which allows specific blocks to be read or written to.
 
 - **Low-latency, high-performance**: Block storage is often used to store operating systems, applications, and other types of data that require fast, random access.
-
-AUCloud uses Pure Storage for block storage.
 
 ## What is S3 object storage?
 

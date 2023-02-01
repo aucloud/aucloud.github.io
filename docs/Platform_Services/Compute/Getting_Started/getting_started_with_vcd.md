@@ -3,7 +3,7 @@ title: Getting Started with VMware Cloud Director
 description: Getting Started with VMware Cloud Director
 ---
 
-### Overview
+## Overview
 
 This guide leads you through the three basic steps for using VMware Cloud Director to quickly build a simple virtual machine (VM) and connect it to the internet.
 
@@ -17,7 +17,7 @@ The three steps covered in this guide are:
 
 If you follow these steps, you can have a VM up and running with a connection to the internet in about 20 to 25 minutes.
 
-### Create a network
+## Create a network
 
 Before you can start building VMs in your VDC, you need to create the network that connects the VMs to each other and the outside world.
 
@@ -87,7 +87,7 @@ First, you need to create a network that can connect to external networks outsid
 
     ![Complete and Finish](assets/network_010.png)
 
-### Configure the edge gateway
+## Configure the edge gateway
 
 The edge gateway is possibly the most complex part of the VDC because of its high level of functionality. The following steps show you how to quickly configure the edge gateway to enable you to access the internet from a VM.
 
@@ -128,7 +128,7 @@ The edge gateway is possibly the most complex part of the VDC because of its hig
 
 To access the internet from a VM, you'll need to create firewall rules to determine who can access your network and NAT rules to route traffic within your network.
 
-### Creating firewall rules
+## Creating firewall rules
 
 Let's start with firewall rules:
 
@@ -168,7 +168,7 @@ Let's start with firewall rules:
 
     ![Save changes](assets/firewall_005.png)
 
-### Creating NAT rules
+## Creating NAT rules
 
 Now that you've set up the firewall rules, you can create NAT rules:
 
@@ -198,7 +198,7 @@ You can also add destination NAT (DNAT) rules to translate external IP addresses
 
 You can find more information about setting up NAT rules in How to create NAT rules.
 
-### Create a virtual machine
+## Create a virtual machine
 
 Now that you've laid the groundwork, it's time to create your VM. The best way to do this is to create a virtual application (vApp). You can think of a vApp as a container for your VMs; it enables you to group related VMs together to manage them in one place. See How to create a vApp to find out more.
 

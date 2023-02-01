@@ -12,7 +12,7 @@ The DDoS Protect service sits between the AUCloud perimeter firewall and the int
 
 The AUCloud SOC monitors the Vocus DDoS service and responds to any alerts.
 
-Further information regarding the Vocus DDoS service is provided by Vocus.
+Further information regarding the Vocus DDoS service is provided by Vocus [here.](https://www.vocus.com.au/enterprise/connectivity/managed-network-services/ddos-protection)
 
 ## Connectivity to the Internet ##
 To provide service continuity AUCloud utilises two Internet Service Providers (ISP). To provide a highly reliable and highly available service to customers the ISP's connect to both AUCloud Sovereignty Zones (CDC Fyshwick and CDC Eastern Creek). 

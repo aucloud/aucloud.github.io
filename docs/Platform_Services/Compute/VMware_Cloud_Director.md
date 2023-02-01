@@ -1,7 +1,9 @@
 ---
-title: VMware Cloud Director Overview
-description: VMware Cloud Director Overview
+title: VMware Cloud Director
+description: VMware Cloud Director
 ---
+
+## Overview
 
 VMware Cloud Director (VCD) is a platform that helps manage and deliver software-defined data center (SDDC) services to customers. It creates a layer of abstraction between the physical infrastructure of the cloud and the applications that run on it, allowing for the management and delivery of multiple types of cloud services.
 
