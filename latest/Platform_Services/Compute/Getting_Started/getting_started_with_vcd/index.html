@@ -1042,8 +1042,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../VMware_Cloud_Director_Overview/" class="md-nav__link">
-        VMware Cloud Director Overview
+      <a href="../../VMware_Cloud_Director/" class="md-nav__link">
+        VMware Cloud Director
       </a>
     </li>
   
@@ -2858,7 +2858,7 @@
 
   <h1>Getting Started with VMware Cloud Director</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>This guide leads you through the three basic steps for using VMware Cloud Director to quickly build a simple virtual machine (VM) and connect it to the internet.</p>
 <p>The three steps covered in this guide are:</p>
 <ol>
@@ -2873,7 +2873,7 @@
 </li>
 </ol>
 <p>If you follow these steps, you can have a VM up and running with a connection to the internet in about 20 to 25 minutes.</p>
-<h3 id="create-a-network">Create a network<a class="headerlink" href="#create-a-network" title="Permanent link">¤</a></h3>
+<h2 id="create-a-network">Create a network<a class="headerlink" href="#create-a-network" title="Permanent link">¤</a></h2>
 <p>Before you can start building VMs in your VDC, you need to create the network that connects the VMs to each other and the outside world.</p>
 <p>First, you need to create a network that can connect to external networks outside your VDC (including the internet). This is called an external routed network. You can find more information about routed networks in <a href="../../NSX-V_Networks/how_to_create_a_routed_vdc_network/">How to create a routed VDC network</a>.</p>
 <ol>
@@ -2948,7 +2948,7 @@
 <p><img alt="Complete and Finish" src="../assets/network_010.png" /></p>
 </li>
 </ol>
-<h3 id="configure-the-edge-gateway">Configure the edge gateway<a class="headerlink" href="#configure-the-edge-gateway" title="Permanent link">¤</a></h3>
+<h2 id="configure-the-edge-gateway">Configure the edge gateway<a class="headerlink" href="#configure-the-edge-gateway" title="Permanent link">¤</a></h2>
 <p>The edge gateway is possibly the most complex part of the VDC because of its high level of functionality. The following steps show you how to quickly configure the edge gateway to enable you to access the internet from a VM.</p>
 <ol>
 <li>
@@ -2991,7 +2991,7 @@
 <li><strong>VPN</strong> - IPsec site to site VPN is available on the edge gateway. You can configure an IPsec VPN within VMware Cloud Director, but you may need to perform additional configuration through the API. For more information, see How to configure IPsec VPN.</li>
 </ol>
 <p>To access the internet from a VM, you'll need to create firewall rules to determine who can access your network and NAT rules to route traffic within your network.</p>
-<h3 id="creating-firewall-rules">Creating firewall rules<a class="headerlink" href="#creating-firewall-rules" title="Permanent link">¤</a></h3>
+<h2 id="creating-firewall-rules">Creating firewall rules<a class="headerlink" href="#creating-firewall-rules" title="Permanent link">¤</a></h2>
 <p>Let's start with firewall rules:</p>
 <ol>
 <li>
@@ -3031,7 +3031,7 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 <p><img alt="Save changes" src="../assets/firewall_005.png" /></p>
 </li>
 </ol>
-<h3 id="creating-nat-rules">Creating NAT rules<a class="headerlink" href="#creating-nat-rules" title="Permanent link">¤</a></h3>
+<h2 id="creating-nat-rules">Creating NAT rules<a class="headerlink" href="#creating-nat-rules" title="Permanent link">¤</a></h2>
 <p>Now that you've set up the firewall rules, you can create NAT rules:</p>
 <ol>
 <li>
@@ -3060,7 +3060,7 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 </ol>
 <p>You can also add destination NAT (DNAT) rules to translate external IP addresses to route traffic to the appropriate internal addresses. However, because the firewall only provides outbound access to the internet, we do not need to add DNAT rules at the moment.</p>
 <p>You can find more information about setting up NAT rules in How to create NAT rules.</p>
-<h3 id="create-a-virtual-machine">Create a virtual machine<a class="headerlink" href="#create-a-virtual-machine" title="Permanent link">¤</a></h3>
+<h2 id="create-a-virtual-machine">Create a virtual machine<a class="headerlink" href="#create-a-virtual-machine" title="Permanent link">¤</a></h2>
 <p>Now that you've laid the groundwork, it's time to create your VM. The best way to do this is to create a virtual application (vApp). You can think of a vApp as a container for your VMs; it enables you to group related VMs together to manage them in one place. See How to create a vApp to find out more.</p>
 <ol>
 <li>
@@ -3143,7 +3143,7 @@ Click + (Add object) button, select Internal, click the right arrow button, then
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
       
     
   </small>

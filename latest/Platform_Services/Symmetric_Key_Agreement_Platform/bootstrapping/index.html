@@ -1040,8 +1040,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/VMware_Cloud_Director_Overview/" class="md-nav__link">
-        VMware Cloud Director Overview
+      <a href="../../Compute/VMware_Cloud_Director/" class="md-nav__link">
+        VMware Cloud Director
       </a>
     </li>
   
@@ -2592,10 +2592,9 @@
     Overview
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#registration-key-options" class="md-nav__link">
     Registration key options
   </a>
@@ -2621,11 +2620,6 @@
   <a href="#ota_quantum" class="md-nav__link">
     OTA_QUANTUM
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2790,10 +2784,9 @@
     Overview
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#registration-key-options" class="md-nav__link">
     Registration key options
   </a>
@@ -2819,11 +2812,6 @@
   <a href="#ota_quantum" class="md-nav__link">
     OTA_QUANTUM
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2873,16 +2861,16 @@ In order for a device to be registered in the system it needs to attempt to enro
 <p>The roles a device can play in the registration process are dictated by role provided within the QuantumCloud™ console.</p>
 <p>The console is a web interface where users an devices can be managed. Console URLs are client specific and are provided on service provisioning.</p>
 <p>When a device is registered a (tenant) administrator approves it into the network. At this point the device can begin key negotiation with other devices within the network.</p>
-<h3 id="registration-key-options">Registration key options<a class="headerlink" href="#registration-key-options" title="Permanent link">¤</a></h3>
+<h2 id="registration-key-options">Registration key options<a class="headerlink" href="#registration-key-options" title="Permanent link">¤</a></h2>
 <p>In order to register a device a provisioning a method must be chosen for provisioning the initial symmetric key. The settings below are configured within the <a href="../SDKs/">SDKs</a> or AUCloud provided applications.</p>
-<h4 id="qkey"><code>QKEY</code><a class="headerlink" href="#qkey" title="Permanent link">¤</a></h4>
+<h3 id="qkey"><code>QKEY</code><a class="headerlink" href="#qkey" title="Permanent link">¤</a></h3>
 <p>A <code>QKEY</code> is a <code>AES-256</code> key which (within AUCloud's platform), is stored in a <code>FIPS 140-2 Level 3</code> HSM. This mechanism provides the highest security option. Clients are provided with a <code>qkey_id</code> and a base 64 encoded <code>QKEY</code> for use with the SDKs.</p>
 <p>This is combined with username a client's username and password to securely start the device registration process.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>AUCloud can provide multiple options for the distribution of QKEYs depending on security requirements. Please contact <a href="../../../Platform_Overview/support/">support</a> to organise <code>QKEY</code>s if required.</p>
 </div>
-<h4 id="ota_tls"><code>OTA_TLS</code><a class="headerlink" href="#ota_tls" title="Permanent link">¤</a></h4>
+<h3 id="ota_tls"><code>OTA_TLS</code><a class="headerlink" href="#ota_tls" title="Permanent link">¤</a></h3>
 <p><code>OTA_TLS</code> leverages the current TLS standard algorithms, combined with username and password.
 The bootstrap key is then delivered over the wire to the device during registration.</p>
 <div class="admonition warning">
@@ -2890,7 +2878,7 @@ The bootstrap key is then delivered over the wire to the device during registrat
 <p>Over the wire registration with TLS exposes users to <code>harvest now; decrypt later</code> attacks.
 It should only be used for development environments</p>
 </div>
-<h4 id="ota_quantum"><code>OTA_QUANTUM</code><a class="headerlink" href="#ota_quantum" title="Permanent link">¤</a></h4>
+<h3 id="ota_quantum"><code>OTA_QUANTUM</code><a class="headerlink" href="#ota_quantum" title="Permanent link">¤</a></h3>
 <p><code>OTA_QUANTUM</code> takes the same 'over the air' approach as as <code>OTA_TLS</code></p>
 <div class="admonition warning">
 <p class="admonition-title">Increased security risks</p>
@@ -2910,7 +2898,7 @@ It should only be used for development environments</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
       
     
   </small>

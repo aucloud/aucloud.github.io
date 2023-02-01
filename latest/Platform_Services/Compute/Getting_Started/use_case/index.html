@@ -1042,8 +1042,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../VMware_Cloud_Director_Overview/" class="md-nav__link">
-        VMware Cloud Director Overview
+      <a href="../../VMware_Cloud_Director/" class="md-nav__link">
+        VMware Cloud Director
       </a>
     </li>
   
@@ -2978,39 +2978,39 @@
 
   <h1>Use Case - Create a Web Server to communicate with the internet</h1>
 
-<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¤</a></h3>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¤</a></h2>
 <p>This use case is a walk-through of a general process for deploying a web and application server through VMware Cloud Director.</p>
-<h3 id="build-virtual-machines">Build Virtual Machines<a class="headerlink" href="#build-virtual-machines" title="Permanent link">¤</a></h3>
+<h2 id="build-virtual-machines">Build Virtual Machines<a class="headerlink" href="#build-virtual-machines" title="Permanent link">¤</a></h2>
 <p>The first step is to build the required virtual machines (VMs).</p>
 <p>VMs can be created as standalone or within a vApp. In this example we will create the VM from scratch inside a vApp which allow you to combine multiple VMs into a single management unit.</p>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-12E43116-1120-45FA-A1E7-AEBEE61373C1.html">Create a New Standalone Virtual Machine</a></p>
 <p>Additional information on how to import a saved vApp from an imported OVF</p>
-<h3 id="import-ovf">Import OVF<a class="headerlink" href="#import-ovf" title="Permanent link">¤</a></h3>
+<h2 id="import-ovf">Import OVF<a class="headerlink" href="#import-ovf" title="Permanent link">¤</a></h2>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5EA412C4-179A-42CF-9B30-1B81C23551E6.html">Create a vApp Template from an OVF File</a></p>
 <p><img alt="OVF" src="../assets/ovf1.png" /></p>
 <p>Example only. vApp content and IP addresses are variable. IPs can be assigned in several different ways.</p>
-<h3 id="create-an-internal-network">Create an Internal Network<a class="headerlink" href="#create-an-internal-network" title="Permanent link">¤</a></h3>
+<h2 id="create-an-internal-network">Create an Internal Network<a class="headerlink" href="#create-an-internal-network" title="Permanent link">¤</a></h2>
 <p>An ORG vDC network is required to allow your VMs to communicate with each other and external networks.</p>
-<h4 id="build-an-org-vdc-network">Build an ORG vDC network<a class="headerlink" href="#build-an-org-vdc-network" title="Permanent link">¤</a></h4>
+<h3 id="build-an-org-vdc-network">Build an ORG vDC network<a class="headerlink" href="#build-an-org-vdc-network" title="Permanent link">¤</a></h3>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html">Add a Routed Organization Virtual Data Center Network</a></p>
 <p><img alt="OVF" src="../assets/ovf2.png" /></p>
-<h3 id="connect-network-to-vapp-and-vm">Connect Network to vApp and VM<a class="headerlink" href="#connect-network-to-vapp-and-vm" title="Permanent link">¤</a></h3>
-<h4 id="connect-vapp-to-network">Connect vApp to network<a class="headerlink" href="#connect-vapp-to-network" title="Permanent link">¤</a></h4>
+<h2 id="connect-network-to-vapp-and-vm">Connect Network to vApp and VM<a class="headerlink" href="#connect-network-to-vapp-and-vm" title="Permanent link">¤</a></h2>
+<h3 id="connect-vapp-to-network">Connect vApp to network<a class="headerlink" href="#connect-vapp-to-network" title="Permanent link">¤</a></h3>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B95FB8AF-C428-4FCB-88DA-5DCA35B19B5A.html">Add a Network to a vApp</a></p>
-<h4 id="connect-the-vm-primary-nic-to-the-network">Connect the VM Primary NIC to the network<a class="headerlink" href="#connect-the-vm-primary-nic-to-the-network" title="Permanent link">¤</a></h4>
+<h3 id="connect-the-vm-primary-nic-to-the-network">Connect the VM Primary NIC to the network<a class="headerlink" href="#connect-the-vm-primary-nic-to-the-network" title="Permanent link">¤</a></h3>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA.html">Change the Hardware Properties of a Virtual Machine</a></p>
 <p><img alt="OVF" src="../assets/ovf3.png" /></p>
-<h3 id="configure-firewall-nat-rules-on-edge-services-gateway">Configure Firewall NAT rules on Edge Services Gateway<a class="headerlink" href="#configure-firewall-nat-rules-on-edge-services-gateway" title="Permanent link">¤</a></h3>
-<h4 id="configure-firewall">Configure firewall<a class="headerlink" href="#configure-firewall" title="Permanent link">¤</a></h4>
+<h2 id="configure-firewall-nat-rules-on-edge-services-gateway">Configure Firewall NAT rules on Edge Services Gateway<a class="headerlink" href="#configure-firewall-nat-rules-on-edge-services-gateway" title="Permanent link">¤</a></h2>
+<h3 id="configure-firewall">Configure firewall<a class="headerlink" href="#configure-firewall" title="Permanent link">¤</a></h3>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html">Add an NSX-T Data Center Edge Gateway Firewall Rule</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Locate your public IP address by clicking on Edges, navigating to <strong>General</strong> → <strong>Configuration</strong> → <strong>Gateway Interfaces</strong> tab. The public IP is located in the Primary IP column.</p>
 </div>
-<h4 id="configure-nat">Configure NAT<a class="headerlink" href="#configure-nat" title="Permanent link">¤</a></h4>
+<h3 id="configure-nat">Configure NAT<a class="headerlink" href="#configure-nat" title="Permanent link">¤</a></h3>
 <p><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html">Add an SNAT or a DNAT Rule to an Edge Gateway</a></p>
 <p><img alt="OVF" src="../assets/ovf4.png" /></p>
-<h3 id="about-the-esg">About the ESG<a class="headerlink" href="#about-the-esg" title="Permanent link">¤</a></h3>
+<h2 id="about-the-esg">About the ESG<a class="headerlink" href="#about-the-esg" title="Permanent link">¤</a></h2>
 <p><a href="../../NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/">How the Edge Services Gateway works</a></p>
 <p>Turn on VMs and force re-customisation to complete</p>
 
@@ -3019,7 +3019,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
       
     
   </small>
