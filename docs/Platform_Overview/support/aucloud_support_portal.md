@@ -5,7 +5,7 @@ description: AUCloud Self Service Support Portal Registration
 
 ## Overview
 
-Access the AUCloud Self-Service portal via this link
+Access the AUCloud Self-Service portal via this [link](https://support.australiacloud.com.au/$pwd_reset.do?sysparm_url=ss_default)
 
 1. For _Username_, _enter_ your **email address** used for the AUCloud portal
 1. _Complete_ the **CAPTCHA**
