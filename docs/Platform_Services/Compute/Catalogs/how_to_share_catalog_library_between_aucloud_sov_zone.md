@@ -5,13 +5,13 @@ description: How to share catalog library between AUCloud Sovereignty Zones
 
 ## Overview
 
-You can share catalog library between AUCloud Sovereignty Zones (SZ) by performing Catalog publishing/subscription.
+You can share catalog library between AUCloud Sovereignty Zones (*SZ) by performing Catalog publishing/subscription.
 
-Follow the below steps if you require access to a catalog created in SZ 1 (Canberra) when in SZ 2 (Sydney), or vice versa.
+Follow the below steps if you require access to a catalog created in CSZ (Canberra) when in SSZ (Sydney), or vice versa.
 
-## Share catalog library between AUCloud Sovereignty Zones (e.g. SZ1 to SZ2)
+## Share catalog library between AUCloud Sovereignty Zones (e.g. CSZ to SSZ)
 
-1. Log in to the environment where the catalog you want to share is stored (e.g. SZ1)
+1. Log in to the environment where the catalog you want to share is stored (e.g. CSZ)
 
 1. Navigate to **Libraries,** then select **Catalogs**.
 
@@ -37,7 +37,7 @@ Follow the below steps if you require access to a catalog created in SZ 1 (Canb
 
     ![Publish Settings](./assets/publish_settings_2.png)
 
-1. Then login to the other environment where you want to share this catalog to (e.g. SZ2).
+1. Then login to the other environment where you want to share this catalog to (e.g. SSZ).
 
 1. Navigate to **Libraries,** then select **Catalogs > New**.
 
@@ -53,7 +53,7 @@ Follow the below steps if you require access to a catalog created in SZ 1 (Canb
 
     ![Create Catalog](./assets/create_catalog2.png)
 
-1. Once the new catalog is created with subscription to the catalog (e.g. from SZ1), it will start performing synchronisation of the catalog items between Sovereignty Zones (e.g. SZ1 to SZ2).  
+1. Once the new catalog is created with subscription to the catalog (e.g. from CSZ), it will start performing synchronisation of the catalog items between Sovereignty Zones (e.g. CSZ to SSZ).  
 
     ![List Catalog](./assets/catalog_list.png)
 
