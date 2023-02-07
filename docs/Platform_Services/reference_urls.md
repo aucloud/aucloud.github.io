@@ -51,3 +51,8 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Official | SSZ |
+
+## Public Facing Repositories and Documentation
+
+- [AUCloud Technical Documentation](https://docs.australiacloud.com.au/latest/)
+- [ACloud Public Github Org](https://github.com/aucloud)

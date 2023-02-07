@@ -5,7 +5,7 @@ description: AUCloud Platform Overview
 
 ## About AUCloud
 
-AUCloud is an Australian owned and operated Sovereign Cloud Service provider that delivers services exclusively to Australian Government, Critical National Industries (CNI) and secure enterprise organisations. AUCloud's ownership structure and operational activities are aligned to the Protective Security Policy Framework (PSPF), the Information Security Manual (ISM) and the low-risk sovereign characteristics outlined within the DTA Whole of Government Hosting Strategy.  
+[AUCloud](https://www.australiacloud.com.au/) is an Australian owned and operated Sovereign Cloud Service provider that delivers services exclusively to Australian Government, Critical National Industries (CNI) and secure enterprise organisations. AUCloud's ownership structure and operational activities are aligned to the Protective Security Policy Framework (PSPF), the Information Security Manual (ISM) and the low-risk sovereign characteristics outlined within the DTA Whole of Government Hosting Strategy.  
   
 Established in 2016, AUCloud’s services and operations are only subject to the Australian legal jurisdiction. Managed, operated and monitored in Australia by security cleared staff, all AUCloud services and the data we host remain in Australia. This includes all customer data, metadata, support and administrative data and derived analytics data.  
   
