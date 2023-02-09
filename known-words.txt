@@ -124,3 +124,5 @@ vsphere
 webex
 wickr
 www
+kubernetes
+stateful
