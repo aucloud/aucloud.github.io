@@ -16,11 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/licensing/</loc>
-         <lastmod>2023-02-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/sovereignty_zones/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
@@ -42,6 +37,11 @@
     </url>
     <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/shared_service_model/</loc>
+         <lastmod>2023-02-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/licensing/licensing/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -282,6 +282,11 @@
     </url>
     <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/</loc>
+         <lastmod>2023-02-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Windows_Server_Licensing/windows_server_licensing/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
