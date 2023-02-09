@@ -90,7 +90,7 @@ plugins:
     # - coverage.md
     # whether to only check in strict mode
     #strict_only: yes
-
+- mkdocs-video
 repo_name: aucloud/aucloud.github.io
 repo_url: !ENV REPO_URL
 site_description: AUCloud's technical documentation site, managed as code from GitHub

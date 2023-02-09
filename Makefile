@@ -2,6 +2,7 @@ install:
 	pip uninstall mkdocs-unused-files -y
 	pip install  --upgrade pip setuptools
 	pip install --upgrade -r requirements.txt
+	pip install mkdocs-video
 
 pre-commit-install:
 	pre-commit install

@@ -16,4 +16,8 @@ Features include:
 
 ![AUCloud Sovereign Bridge](./assets/sovereign_bridge.png)
 
+A summary overview:
+
+![type:video](./assets/SovBridgeRecording.mp4)
+
 For more information, see: [AUCloud Sovereign Bridge](https://www.australiacloud.com.au/aucloud-sovereign-bridge/)
