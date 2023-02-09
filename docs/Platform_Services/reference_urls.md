@@ -52,7 +52,15 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Official | SSZ |
 
+## AUCloud KMS Server
+
+| URL | IP Target |
+| ---- | ---- |
+| 103.109.112.109 | CSZ |
+| 103.2.240.109 | SSZ |
+
 ## Public Facing Repositories and Documentation
 
 - [AUCloud Technical Documentation](https://docs.australiacloud.com.au/latest/)
 - [ACloud Public Github Org](https://github.com/aucloud)
+
