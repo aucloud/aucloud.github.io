@@ -1,6 +1,6 @@
 ---
-title: Azure AD Application Permission requirements
-description: Azure AD Application Permission requirements
+title: Azure AD Application Permission Requirements
+description: Azure AD Application Permission Requirements
 ---
 
 ## Permissions for Modern App-Only Authentication
