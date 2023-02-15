@@ -106,4 +106,4 @@ You can restore individual virtual disks from backups of VMware Cloud Director V
 
 1. The **Items** tab of Self-Service Backup Portal allows users to perform item-level recovery from application-aware backups (currently, SQL Server databases and Oracle databases).
 
-1. To restore application items (SQL Server databases or Oracle databases), go to the **Items** tab and follow the steps described in the [Restore Procedure for SQL Server](https://helpcenter.veeam.com/docs/backup/em/em_restore_procedure_sql.html) databases and [Restore Procedure for Oracle](https://helpcenter.veeam.com/docs/backup/em/em_restore_procedure_oracle.html) databases.
+1. To restore application items (SQL Server databases or Oracle databases), go to the **Items** tab and follow the steps described in the [Restore Procedure for SQL Server](https://helpcenter.veeam.com/docs/backup/em/restore_mssql.html?ver=120) databases and [Restore Procedure for Oracle](https://helpcenter.veeam.com/docs/backup/em/restore_oracle.html?ver=120) databases.
