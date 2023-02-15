@@ -1,6 +1,7 @@
 ---
 title: Disaster Recovery and Migration
-description: Disaster Recovery and Migration
+description: Disaster Recovery made easy with AUCloud's VMware Cloud Director Availability. Ensure business continuity with secure offsite data storage and flexible workload movement during unexpected events.
+
 ---
 
 ## Overview
