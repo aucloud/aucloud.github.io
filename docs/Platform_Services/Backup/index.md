@@ -1,6 +1,6 @@
 ---
 title: Backup
-description: Backup Solution – General Information
+description: Veeam Backup & Replication v11 User Guide for VMware vSphere provides information on scale-out backup repositories, backup file placement, data locality, extent selection, and capacity tier storage. Learn more about the benefits of this system and how to manage your backup storage
 ---
 
 ## Overview
@@ -319,6 +319,6 @@ The same applies to backup chains created with the reverse-incremental method, e
 
  When a retention policy encounters immutable copied/moved blocks of data, it removes such blocks from the associated backup files on the extents only and then updates indexes, informing Veeam Backup & Replication that these blocks no longer exist and must be removed from object storage once mutable.
 
- For more information about immutability, see Immutability.
+ For more information about immutability, see [Immutability](#immutability).
 
 - Associated indexes will be updated for consistency purposes.
