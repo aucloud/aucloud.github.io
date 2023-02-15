@@ -1,6 +1,6 @@
 ---
 title: Desktop as a Service 
-description: Desktop as a Service 
+description: Disaster Recovery made easy with AUCloud's VMware Cloud Director Availability. Ensure business continuity with secure offsite data storage and flexible workload movement during unexpected events.
 ---
 
 ## Overview
