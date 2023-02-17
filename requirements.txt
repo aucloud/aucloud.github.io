@@ -8,7 +8,7 @@ mkdocs-material>=9.0.6
 markdown-include
 pymdown-extensions
 mkdocs-exclude
-git+https://github.com/butler54/mkdocs-unused-files.git
+mkdocs-unused-files>=0.1.6
 mkdocs-htmlproofer-plugin
 mkdocs-macros-plugin
 mkdocs-blogging-plugin
