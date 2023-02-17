@@ -5,12 +5,12 @@ description: AUCloud Platform Overview
 
 ## About AUCloud
 
-[AUCloud](https://www.australiacloud.com.au/) is an Australian owned and operated Sovereign Cloud Service provider that delivers services exclusively to Australian Government, Critical National Industries (CNI) and secure enterprise organisations. AUCloud's ownership structure and operational activities are aligned to the Protective Security Policy Framework (PSPF), the Information Security Manual (ISM) and the low-risk sovereign characteristics outlined within the DTA Whole of Government Hosting Strategy.  
-  
-Established in 2016, AUCloud’s services and operations are only subject to the Australian legal jurisdiction. Managed, operated and monitored in Australia by security cleared staff, all AUCloud services and the data we host remain in Australia. This includes all customer data, metadata, support and administrative data and derived analytics data.  
-  
+[AUCloud](https://www.australiacloud.com.au/) is an Australian owned and operated Sovereign Cloud Service provider that delivers services exclusively to Australian Government, Critical National Industries (CNI) and secure enterprise organisations. AUCloud's ownership structure and operational activities are aligned to the Protective Security Policy Framework (PSPF), the Information Security Manual (ISM) and the low-risk sovereign characteristics outlined within the DTA Whole of Government Hosting Strategy.
+
+Established in 2016, AUCloud’s services and operations are only subject to the Australian legal jurisdiction. Managed, operated and monitored in Australia by security cleared staff, all AUCloud services and the data we host remain in Australia. This includes all customer data, metadata, support and administrative data and derived analytics data.
+
 AUCloud is ISO 27001 certified and has also been security assessed as suitable to handle Government data up to the Protected classification under the Australian Cyber Security Centre's (ACSC) IRAP process. We are also Certified Strategic under the Digital Transformation Agency's (DTA) Hosting Certification Framework, a Defence Industry Security Program (DISP) supplier, a VMware Sovereign Cloud and Cloud Verified provider.
-  
+
 AUCloud operates from geo-resilient data centres in Canberra, Sydney, and Brisbane (CDC Data Centres and NEXTDC), with current expansion plans for Victoria and South Australia. AUCloud's highly qualified team is based in Canberra, Sydney, Brisbane, Adelaide and Melbourne with corporate headquarters and Security Operations Centre based in Canberra, ACT.
 
 ## Sovereign Cloud Australia, global positioning  
@@ -37,7 +37,7 @@ We believe this must be an affordable and flexible service, comparable to global
 
 ## Background
 
-AUCloud was co-founded by current CEO, Phil Dawson.
+AUCloud is lead by CEO Peter Maloney together with Executive Director and co-founder Phil Dawson.
 
 AUCloud commenced formally operating in late 2018.  It has four office locations: Canberra, Sydney, Melbourne and Brisbane and operates from two Sovereignty Zones: Sovereignty Zone 1 in Canberra and Sovereignty Zone 2 in Sydney, with scheduled expansion into Brisbane, Melbourne and Adelaide.
 

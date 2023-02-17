@@ -10,7 +10,7 @@ AUCloud, an ASX listed company, provides highly secure, standards based, soverei
 
 We are committed to providing a high quality of services and customer service and continuous improvement to optimise our customers’ experience with AUCloud. To ensure that our customers have access to general and technical information on our services and have access to the information they need, when it is needed, we are pleased to announce the launch of AUCloud’s Tech Docs.
 
-This AUCloud Tech Docs website has been designed to provide a wealth of information for our customers and partners to provide knowledge, guidance and further capability to help them get the most out of the AUCloud services.
+This AUCloud technical documentation website has been designed to provide a wealth of information for our customers and partners to provide knowledge, guidance and further capability to help them get the most out of the AUCloud services.
 
 We invite you to explore and revisit this website regularly as it will continually be enhanced and updated.
 

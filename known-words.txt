@@ -64,7 +64,9 @@ iso
 kbytes
 keymat
 kotlin
+kubernetes
 kyber
+maloney
 microsoft
 microsofts
 minio
@@ -94,6 +96,7 @@ sed
 sharepoint
 shor
 shors
+stateful
 subnet
 subnets
 supernet
@@ -124,5 +127,3 @@ vsphere
 webex
 wickr
 www
-kubernetes
-stateful
