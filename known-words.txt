@@ -1,5 +1,6 @@
 _restored
 _user
+aas
 access_key_id
 accountabilities
 allow-listing
@@ -65,6 +66,7 @@ kbytes
 keymat
 kotlin
 kubernetes
+kubernetes
 kyber
 maloney
 microsoft
@@ -89,6 +91,7 @@ ransomware
 rclone
 remediated
 routable
+salesforce
 scsi
 sdk
 secret_access_key
@@ -97,10 +100,12 @@ sharepoint
 shor
 shors
 stateful
+stateful
 subnet
 subnets
 supernet
 syslog
+tanzu
 todays
 unbilled
 unmount
@@ -127,3 +132,4 @@ vsphere
 webex
 wickr
 www
+xamplify
