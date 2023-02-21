@@ -60,6 +60,7 @@ gradle
 hellmann
 html
 https
+hyperscalers
 irap
 iso
 kbytes
@@ -84,6 +85,7 @@ palo
 pdf
 pre
 preconfigured
+productisation
 programmatically
 pst
 quiescing
@@ -94,6 +96,7 @@ routable
 salesforce
 scsi
 sdk
+searchable
 secret_access_key
 sed
 sharepoint
@@ -109,6 +112,7 @@ tanzu
 todays
 unbilled
 unmount
+updatable
 url
 vapp
 vapps

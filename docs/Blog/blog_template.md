@@ -3,6 +3,7 @@ title: A title is important, it get's rendered on the blog summary page.
 description: "The description is used for social previews. This will be seen on linkedin, and the blog summary page.
  and elsewhere. Treat as a single paragraph."
 author: You name - human readable
+exclude_from_blog: True
 ---
 
 This page will not be rendered by default.

@@ -27,6 +27,10 @@ plugins:
     glob:
       - Blog/blog_template.md
 - blogging:
+    template: templates/aucloud_blog.html
+
+    features:
+      tags: {}
     dirs: # The directories to be included
       - Blog
 - social
