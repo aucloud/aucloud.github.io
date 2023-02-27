@@ -254,6 +254,12 @@ To add NAT rules, use the following steps:
 
 1. Click **Save** once information has been filled out, repeat if further NAT Rules are required.
 
+### DNAT Rule Configuration
+
+When configuraing a DNAT rule, you must also navigate to the advanced settings and change the firewall match to "Match **External** Address" in order for the external IP address to be translated to the internal IP.
+
+![match external address settings](./assets/DNAT_match_external.png)
+
 ## Static Routes
 
 Static routing allows you to configure your Edge Services Gateway (ESG) with knowledge of other networks which are not directly connected to it. It is particularly useful if you need to:
