@@ -256,7 +256,7 @@ To add NAT rules, use the following steps:
 
 ### DNAT Rule Configuration
 
-When configuraing a DNAT rule, you must also navigate to the advanced settings and change the firewall match to "Match **External** Address" in order for the external IP address to be translated to the internal IP.
+When configuring a DNAT rule, you must also navigate to the advanced settings and change the firewall match to "Match **External** Address" in order for the external IP address to be translated to the internal IP.
 
 ![match external address settings](./assets/DNAT_match_external.png)
 
