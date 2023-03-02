@@ -19,7 +19,7 @@
         <link rel="next" href="../add_an_object_to_a_bucket/">
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.0">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.113286f1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -133,7 +133,7 @@
 
   
 
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Technical Documentation" class="md-header__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
       
@@ -2569,6 +2569,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#path-vs-host-based-bucket-access" class="md-nav__link">
+    Path vs Host based bucket access
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2992,6 +2999,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#path-vs-host-based-bucket-access" class="md-nav__link">
+    Path vs Host based bucket access
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3031,7 +3045,7 @@
 <h2 id="accessing-object-storage">Accessing Object Storage<a class="headerlink" href="#accessing-object-storage" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>S3 Object Storage can be accessed via a plug-in through VMware Cloud Director. To enable the plug-in, contact your Customer Success Manager, Sales Executive or AUCloud Support <a href="mailto:support@australiacloud.com.au">support@australiacloud.com.au</a>.</p>
+<p>S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCloud Support <a href="mailto:support@australiacloud.com.au">support@australiacloud.com.au</a>.</p>
 </li>
 <li>
 <p>When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select <strong>Object Storage</strong> from the Main Menu.</p>
@@ -3064,13 +3078,24 @@
 </code></pre></div>
 </li>
 </ol>
+<h2 id="path-vs-host-based-bucket-access">Path vs Host based bucket access<a class="headerlink" href="#path-vs-host-based-bucket-access" title="Permanent link">¤</a></h2>
+<p>Files can be accessed using s3, across two methods - host based and path based access.</p>
+<p>For a bucket <code>foo</code>, and a file <code>bar.txt</code> using path based access in AUCloud's PDCE environment. would have a path of:</p>
+<p><code>https://s3-esz101.australiacloud.com.au/api/v1/s3/foo/bar.txt</code></p>
+<p>using host based access:</p>
+<p><code>https://foo.s33-esz101.australiacloud.com.au/bar.txt</code></p>
+<p>Note that the result is that each bucket name is globally unique per community environment.</p>
+<div class="admonition warning">
+<p class="admonition-title">Restrictions on host based access</p>
+<p>Currently ODCE CSZ does not support host based access.</p>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2023</span>
       
     
   </small>
@@ -3196,7 +3221,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ce72ebac.min.js"></script>
       
     
   </body>
