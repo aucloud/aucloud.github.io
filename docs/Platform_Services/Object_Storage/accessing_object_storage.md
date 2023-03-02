@@ -11,13 +11,13 @@ Buckets are containers for objects. You can have one or more buckets and control
 
 ## Accessing Object Storage
 
-1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director. To enable the plug-in, contact your Customer Success Manager, Sales Executive or AUCloud Support [support@australiacloud.com.au](mailto:support@australiacloud.com.au).
+1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCloud Support [support@australiacloud.com.au](mailto:support@australiacloud.com.au).
 
-1. When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select **Object Storage** from the Main Menu.
+2. When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select **Object Storage** from the Main Menu.
 
     ![nav object storage](./assets/nav_object_storage.png)  
 
-1. You will be presented with the dashboard which displays an overall view of your object store including:
+3. You will be presented with the dashboard which displays an overall view of your object store including:
 
     - Total Buckets
     - Total Objects
@@ -41,3 +41,21 @@ Buckets are containers for objects. You can have one or more buckets and control
     ```bash
     aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://myBucket
     ```
+
+
+## Path vs Host based bucket access
+Files can be accessed using s3, across two methods - host based and path based access.
+
+For a bucket `foo`, and a file `bar.txt` using path based access in AUCloud's PDCE environment. would have a path of:
+
+`https://s3-esz101.australiacloud.com.au/api/v1/s3/foo/bar.txt`
+
+using host based access:
+
+`https://foo.s33-esz101.australiacloud.com.au/bar.txt`
+
+Note that the result is that each bucket name is globally unique per community environment.
+
+!!! warning "Restrictions on host based access"
+    Currently ODCE CSZ does not support host based access.
+

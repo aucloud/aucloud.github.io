@@ -45,6 +45,9 @@ description: Reference URLs for services in AUCLoud
 
 ## Object Storage API Endpoints (direct use)
 
+!!! note "Path based s3 access only"
+    The object storage endpoints in Canberra Official do not support host based addressing of s3 buckets.
+
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
 | [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Official | CSZ |
@@ -52,7 +55,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Official | SSZ |
 
-## AUCloud KMS Server
+## AUCloud Microsoft KMS Server
 
 | URL | IP Target |
 | ---- | ---- |
