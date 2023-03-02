@@ -27,11 +27,22 @@ Below are screenshots for details:
 The API Url is listed in `https://<address\>` format and the Username is listed in `User-Id_@_Org-Id` format.
 
 !!! note
-      There are two methods to authenticate with VMware Cloud Director using PowerCLI: username/password or session token.
-      
-      The AUCloud platform supports only the session token method of authentication. 
-    
-Before establishing a connection to the AUCloud platform, a VMware Cloud Director Session Token must be generated. This can be achieved using the following PowerShell module :
+
+        There are two methods to authenticate with VMware Cloud Director using PowerCLI: username/password or session token. Both methods are discussed in this document.
+
+To establish a connection to AUCloud platform via username and password, perform the following command:
+
+``` > Connect-CIServer -Server <API-Url> \-org <Org-Id> \-User <User-Id> \-Password <Portal\_Password> ```
+
+!!! note
+
+    **API-Url** :  remove `https://` from the API Url listed on the AUCloud Portal API
+
+    **User-Id** :  enter the _User-Id_ without _@Org-Id_
+
+    **Org-Id** : enter the _Org-Id_ listed under username
+
+To establish a connection to the AUCloud platform via session token, first, a session token must be generated. This can be achieved using the following PowerShell module :
 
 ``` powershell
 $Global:Authorization = ""
@@ -72,11 +83,12 @@ To use the above module, copy and paste the above code into a local file named N
 ```> Import-Module <Path to .psm1 file> ```
 
 !!! note
+
       The above command imports the module for the current session **only**.
     
       To import the module for all sessions, update your PowerShell profile to include the above command as documented by  [Microsoft.](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3)
 
-Using the username (including the Org-ID) and the API-URL copied from the Portal earlier, along with your Portal Password, generate a new Session Token using the imported module : 
+Using the username (including the Org-ID) and the API-URL copied from the Portal earlier, along with your Portal Password, generate a new Session Token using the imported module :
 
 ``` > New-CloudToken -User <User-Id@Org-Id> \-Password <Portal\_Password> \-Server <API-Url> ```
 
@@ -87,16 +99,16 @@ Using the username (including the Org-ID) and the API-URL copied from the Portal
     **User-Id** :  enter the _User-Id_ including _@Org-Id_
 
 A new session token, along with the API-URL will be the output of this command : 
- 
+
 ![Output Example](./assets/connection_example.jpg)
 
 In the example above, "71337106a838432097fbf78d869194e6" is the Session-Token and "api-vcd-sz201.eportal.australiacloud.com.au" is the API-URL.
 
-Using this information, you can then establish a connection to the AUCloud platform by performing the following command. 
+Using this information, you can then establish a connection to the AUCloud platform by performing the following command.
 
-``` > Connect-CIServer -Server <API-URL> -Session <Session-Token> ``` 
+```> Connect-CIServer -Server <API-URL> -Session <Session-Token> ```
 
-Once connected, you can start using PoweCLI commands to retrieve information/manage the ecosystem within your vDC Organisation. To verify that you have logged in to the environment successfully, you can perform a simple command line to retrieve all VMs in your tenancy by running the command below :
+Once connected, you can start using PowerCLI commands to retrieve information/manage the ecosystem within your vDC Organisation. To verify that you have logged in to the environment successfully, you can perform a simple command line to retrieve all VMs in your tenancy by running the command below :
 
 ``` > Get-CIVM ```
 
