@@ -8,14 +8,14 @@ description: Software Licensing
 AUCloud can provide licensing for a number of Microsoft; VMware; and Red Hat products when deployed within the AUCloud infrastructure.
 Licensing models may change depending on whether AUCloud's multi-tenant platform is used; or if a customer deploys to a dedicated environment.
 
-## Operating system license templates
+## Operating system licence templates
 
-AUCloud provided templates for Microsoft Windows (various versions); and Red Hat Enterprise Linux by default will use AUCloud provided Licenses.
-If you are seeking to Bring Your Own License (BYOL), please contact your Customer Success Manager.
+AUCloud provided templates for Microsoft Windows (various versions); and Red Hat Enterprise Linux by default will use AUCloud provided Licences.
+If you are seeking to Bring Your Own Licence (BYOL), please contact your Customer Success Manager.
 
 ## Microsoft Products currently supported by AUCloud
 
-For a product not on this list please contact [AUCloud Support](../support) or your sales team.
+Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biztalk Server, etc. For a product not on this list please contact [AUCloud Support](../support) or your sales team.
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |
@@ -43,19 +43,23 @@ However, customers can choose to bring their own licences (subject to applicabil
 Customers are also able acquire and bring their own licences (for example Academic or Not For Profit) through other Microsoft licensing schemes such as the Enterprise Agreement or Open Value subscription.
 Microsoft provide specific licensing options for some [industries](https://www.microsoft.com/en-us/licensing/licensing-programs/licensing-for-industries?activetab=licensing-for-industries-pivot:primaryr4) which can be exploited.
 
-### BYOL Windows Server licenses
+### BYOL Windows Server licences
 
 In order to bring Windows servers to the AUCloud shared infrastructure.
 
-!!! note "Minimum core licenses for BYOL"
+!!! note "Minimum core licences for BYOL"
 
     There is a Microsoft mandated minimum of 8 cores per windows VM for BYOL.
-    Customers are advised that under 8 cores it is likely to be more cost effective provisioning licenses via AUCloud
+    Customers are advised that under 8 cores it is likely to be more cost effective provisioning licences via AUCloud
 
-1. Validate your licenses (see the references below)
-1. Provide AUCloud (via support) either
-   1. the host-names or;
-   1. a VDC where every Microsoft Windows license is BYOL
+1. Validate your licences (see the references below)
+1. Provide AUCloud Service Desk the names of the VMs (and the VDC in which they reside) to which you want to bring your own Microsoft Windows licences
+
+### BYOL Red Hat licences
+
+AUCloud is a registered CCSP which enables us to provide Red Hat licences to Customers. However, we are not a 'Cloud Access' partner, so cannot support customers who wish to bring their own licences at this time.
+
+Please contact [AUCloud Support](../support) or your sales team if you require this service and we can consider your request.
 
 ## AUCloud Hardware dedicated customers
 
