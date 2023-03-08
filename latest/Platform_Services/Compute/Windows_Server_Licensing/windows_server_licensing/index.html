@@ -3067,8 +3067,8 @@
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The above destination IP address is for Canberra (SZ1). 
-For other locations please refer to the <a href="../../../reference_urls/#aucloud-kms-server">reference URLs</a></p>
+<p>The above destination IP address is for Canberra (CSZ). 
+If your VM(s) are located in Sydney (SSZ), please use the Sydney KMS server target of 103.2.240.109</p>
 </div>
 <p>Configure a SNAT rule to ensure your VMs IP is translated to the Public IP (if not done previously)</p>
 <table>
@@ -3088,7 +3088,8 @@ For other locations please refer to the <a href="../../../reference_urls/#auclou
 </tbody>
 </table>
 <p>Login to the target server with Administrator privileges In Command Prompt enter the following command to set the path to the KMS Server:</p>
-<p><code>slmgr.vbs /skms 103.109.112.109</code></p>
+<p><code>slmgr.vbs /skms 103.109.112.109</code>
+(or use the Sydney KMS server target if applicable)</p>
 <p>Confirmation will be received that the KMS machine name has been set successfully</p>
 <p><img alt="Windows Script Host" src="../assets/windows_script_host.png" /></p>
 <p>Initiate the activation by entering the following:</p>
@@ -3112,7 +3113,7 @@ For other locations please refer to the <a href="../../../reference_urls/#auclou
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
       
     
   </small>
