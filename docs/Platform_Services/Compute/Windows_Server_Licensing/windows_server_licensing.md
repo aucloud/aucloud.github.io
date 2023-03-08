@@ -21,8 +21,8 @@ Configure the Firewall settings on your ESG to connect with the AUCloud KMS Serv
 
 !!! note
 
-    The above destination IP address is for Canberra (SZ1). 
-    For other locations please refer to the [reference URLs](../../reference_urls.md#aucloud-kms-server)
+    The above destination IP address is for Canberra (CSZ). 
+    If your VM(s) are located in Sydney (SSZ), please use the Sydney KMS server target of 103.2.240.109
 
 Configure a SNAT rule to ensure your VMs IP is translated to the Public IP (if not done previously)
 
@@ -33,6 +33,7 @@ Configure a SNAT rule to ensure your VMs IP is translated to the Public IP (if n
 Login to the target server with Administrator privileges In Command Prompt enter the following command to set the path to the KMS Server:
 
 `slmgr.vbs /skms 103.109.112.109`
+(or use the Sydney KMS server target if applicable)
 
 Confirmation will be received that the KMS machine name has been set successfully
 
