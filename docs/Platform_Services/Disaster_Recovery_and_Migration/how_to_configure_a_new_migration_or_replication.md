@@ -1,5 +1,5 @@
 ---
-title: How to configure a new migration or replication
+title: How to configure a new migration
 description: How to configure a new migration or replication
 ---
 
@@ -21,31 +21,35 @@ When a virtual machine reaches its RPO target, the VMware Cloud Director Availab
 
 You can configure for a virtual machine or a vApp to be migrated to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.
 
-1. Select the Replication you would like to do either **Incoming Replication** or **Outgoing Replication**.
+1. From the side menu in your Availability service in the AUCloud Portal, select either **Incoming Replication** or **Outgoing Replication**.
 
-    ![Replication selection](./assets/Replicationselection.jpg)
+    ![Replication selection](./assets/ReplicationSelection.png)
 
 1. Click the **Migration** symbol.
 
     ![New Migration](./assets/NewMigration.jpg)
 
-1. The **New Replication** wizard appears.
+1. You will be prompted for your VMware Cloud Availability credentials for the source (incoming replication) or destination (outgoing replication) data centre. Enter your vCav credentials and click **LOGIN**
 
-1. Select the Source Site and click **Next**.
+    ![vCav Credentials](./assets/vCAVCredentials.png)
+
+1. The **New Migration** wizard appears.
+
+1. Select the Source site (incoming replication) or Destination site (outgoing replication).
 
     ![Source site](./assets/Sourcesite.jpg)
 
-1. Select the vApp/vms you want to protect and click **Next**.
+1. Select whether you would like to explore vApps or VMs, then select the vApp/VMs that you would like to protect and click **Next**.
 
     ![vms vapps](./assets/vm_vapps.png)  
 
 1. Select the target VDC as well as the storage policy and click **Next**.
 
-    ![destination VDC and Storage policy](./assets/destinationVDCandStoragepolicy.jpg)
+    ![destination VDC and Storage policy](./assets/destinationVDCandStoragepolicy.png)
 
-1. You can also use additional settings related to your Migration such as Delaying the start Synchronization, Excluding Disks And Configuring Seed VMs.
+1. You can also use additional settings related to your Migration, as per the image below.
 
-    ![settings](./assets/Settings.jpg)
+    ![settings](./assets/Settings.png)
 
 1. Review the setting in Ready to Complete and click Finish to proceed with the migration.
 
