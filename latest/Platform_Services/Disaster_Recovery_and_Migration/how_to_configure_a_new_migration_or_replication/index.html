@@ -23,7 +23,7 @@
     
     
       
-        <title>How to configure a new migration or replication - Technical Documentation</title>
+        <title>How to configure a new migration - Technical Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="How to configure a new migration or replication - Technical Documentation" >
+        <meta  property="og:title"  content="How to configure a new migration - Technical Documentation" >
       
         <meta  property="og:description"  content="How to configure a new migration or replication" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="How to configure a new migration or replication - Technical Documentation" >
+        <meta  name="twitter:title"  content="How to configure a new migration - Technical Documentation" >
       
         <meta  name="twitter:description"  content="How to configure a new migration or replication" >
       
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to configure a new migration or replication
+              How to configure a new migration
             
           </span>
         </div>
@@ -2158,12 +2158,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          How to configure a new migration or replication
+          How to configure a new migration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        How to configure a new migration or replication
+        How to configure a new migration
       </a>
       
         
@@ -3023,7 +3023,7 @@
   
 
 
-  <h1>How to configure a new migration or replication</h1>
+  <h1>How to configure a new migration</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>To protect a vApp or a virtual machine from one organisation to another, you configure a replication by using VMware Cloud Director Availability.</p>
@@ -3038,31 +3038,35 @@
 <p>You can configure for a virtual machine or a vApp to be migrated to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.</p>
 <ol>
 <li>
-<p>Select the Replication you would like to do either <strong>Incoming Replication</strong> or <strong>Outgoing Replication</strong>.</p>
-<p><img alt="Replication selection" src="../assets/Replicationselection.jpg" /></p>
+<p>From the side menu in your Availability service in the AUCloud Portal, select either <strong>Incoming Replication</strong> or <strong>Outgoing Replication</strong>.</p>
+<p><img alt="Replication selection" src="../assets/ReplicationSelection.png" /></p>
 </li>
 <li>
 <p>Click the <strong>Migration</strong> symbol.</p>
 <p><img alt="New Migration" src="../assets/NewMigration.jpg" /></p>
 </li>
 <li>
-<p>The <strong>New Replication</strong> wizard appears.</p>
+<p>You will be prompted for your VMware Cloud Availability credentials for the source (incoming replication) or destination (outgoing replication) data centre. Enter your vCav credentials and click <strong>LOGIN</strong></p>
+<p><img alt="vCav Credentials" src="../assets/vCAVCredentials.png" /></p>
 </li>
 <li>
-<p>Select the Source Site and click <strong>Next</strong>.</p>
+<p>The <strong>New Migration</strong> wizard appears.</p>
+</li>
+<li>
+<p>Select the Source site (incoming replication) or Destination site (outgoing replication).</p>
 <p><img alt="Source site" src="../assets/Sourcesite.jpg" /></p>
 </li>
 <li>
-<p>Select the vApp/vms you want to protect and click <strong>Next</strong>.</p>
+<p>Select whether you would like to explore vApps or VMs, then select the vApp/VMs that you would like to protect and click <strong>Next</strong>.</p>
 <p><img alt="vms vapps" src="../assets/vm_vapps.png" />  </p>
 </li>
 <li>
 <p>Select the target VDC as well as the storage policy and click <strong>Next</strong>.</p>
-<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicy.jpg" /></p>
+<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicy.png" /></p>
 </li>
 <li>
-<p>You can also use additional settings related to your Migration such as Delaying the start Synchronization, Excluding Disks And Configuring Seed VMs.</p>
-<p><img alt="settings" src="../assets/Settings.jpg" /></p>
+<p>You can also use additional settings related to your Migration, as per the image below.</p>
+<p><img alt="settings" src="../assets/Settings.png" /></p>
 </li>
 <li>
 <p>Review the setting in Ready to Complete and click Finish to proceed with the migration.</p>
@@ -3079,7 +3083,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 9, 2023</span>
       
     
   </small>
