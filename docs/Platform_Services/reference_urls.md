@@ -42,6 +42,8 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
 | [https://vos.s3-esz101.australiacloud.com.au/api/v1/s3](https://vos.s3-esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
+| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
+| [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
 
 ## Object Storage API Endpoints (direct use)
 
