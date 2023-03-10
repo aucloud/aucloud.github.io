@@ -9,33 +9,35 @@ You can configure for a Virtual Machine or a Virtual Application to be protected
 
 ## Configure a New Protection
 
-1. Decide that type of replication you want to perform and unfold the **Incoming Replications** and **Outgoing Replications** menus.
+1. Depending on what type of replication you would like to perform, select either **Incoming Replications** or **Outgoing Replications**.
 
-    ![Replication selection](./assets/Replicationselections.jpg)
+    ![Replication selection](./assets/Replicationselections.png)
 
 1. Click **New Protection**.
 
     ![New Migration](./assets/NewMigrations.jpg)
 
-1. Follow the prompts of the **New Replication** wizard and select the **Source Location**.
+1. When the **New Replication** wizard appears, select the **Source site** (incoming replication) or **Destination site** (outgoing replication), then choose whether you would like to explore vApps or VMs. Choose the vApps/VMs that you would like to protect, and then click **Next**.
 
-    ![Source site](./assets/Sourcesites.jpg)
+    ![Source site](./assets/Sourcesites.png)
 
-1. Select the **Destination VDC** and **Storage Policy.**
+1. Select the **Destination VDC** and **Storage Policy** and then click **Next**.
 
-    ![destination VDC and Storage policy](./assets/destinationVDCandStoragepolicys.jpg)
+    ![destination VDC and Storage policy](./assets/destinationVDCandStoragepolicys.png)
 
-1. On the **Protection Settings** page, you must set:
+1. On the **Settings** page, set the following and then click **Next**:
 
     - Target Recovery Point Objective (RPO).
     - Retention policy for point in time instances.
     - Enable or disable quiescing. 
+    - Enable or disable compression of replication traffic
+    - Enable or disable delaying the start of synchronization
    
     !!! note
     
    	    Quiescing cannot be enabled when back-up is also enabled, [VMware KB81059](https://kb.vmware.com/s/article/81059)
 
-    ![Protection settings](./assets/Protectionsettings.jpg)
+    ![Protection settings](./assets/Protectionsettings.png)
   
 1. On the **Ready to complete** page, review the replication settings, and click **Finish**.
 
