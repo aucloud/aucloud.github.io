@@ -19,7 +19,7 @@
         <link rel="next" href="../how_to_configure_the_network_settings_of_a_replication/">
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7bf56d0a.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -3030,33 +3030,35 @@
 <h2 id="configure-a-new-protection">Configure a New Protection<a class="headerlink" href="#configure-a-new-protection" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>Decide that type of replication you want to perform and unfold the <strong>Incoming Replications</strong> and <strong>Outgoing Replications</strong> menus.</p>
-<p><img alt="Replication selection" src="../assets/Replicationselections.jpg" /></p>
+<p>Depending on what type of replication you would like to perform, select either <strong>Incoming Replications</strong> or <strong>Outgoing Replications</strong>.</p>
+<p><img alt="Replication selection" src="../assets/Replicationselections.png" /></p>
 </li>
 <li>
 <p>Click <strong>New Protection</strong>.</p>
 <p><img alt="New Migration" src="../assets/NewMigrations.jpg" /></p>
 </li>
 <li>
-<p>Follow the prompts of the <strong>New Replication</strong> wizard and select the <strong>Source Location</strong>.</p>
-<p><img alt="Source site" src="../assets/Sourcesites.jpg" /></p>
+<p>When the <strong>New Replication</strong> wizard appears, select the <strong>Source site</strong> (incoming replication) or <strong>Destination site</strong> (outgoing replication), then choose whether you would like to explore vApps or VMs. Choose the vApps/VMs that you would like to protect, and then click <strong>Next</strong>.</p>
+<p><img alt="Source site" src="../assets/Sourcesites.png" /></p>
 </li>
 <li>
-<p>Select the <strong>Destination VDC</strong> and <strong>Storage Policy.</strong></p>
-<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicys.jpg" /></p>
+<p>Select the <strong>Destination VDC</strong> and <strong>Storage Policy</strong> and then click <strong>Next</strong>.</p>
+<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicys.png" /></p>
 </li>
 <li>
-<p>On the <strong>Protection Settings</strong> page, you must set:</p>
+<p>On the <strong>Settings</strong> page, set the following and then click <strong>Next</strong>:</p>
 <ul>
 <li>Target Recovery Point Objective (RPO).</li>
 <li>Retention policy for point in time instances.</li>
 <li>Enable or disable quiescing. </li>
+<li>Enable or disable compression of replication traffic</li>
+<li>Enable or disable delaying the start of synchronization</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Quiescing cannot be enabled when back-up is also enabled, <a href="https://kb.vmware.com/s/article/81059">VMware KB81059</a></p>
 </div>
-<p><img alt="Protection settings" src="../assets/Protectionsettings.jpg" /></p>
+<p><img alt="Protection settings" src="../assets/Protectionsettings.png" /></p>
 </li>
 <li>
 <p>On the <strong>Ready to complete</strong> page, review the replication settings, and click <strong>Finish</strong>.</p>
@@ -3069,7 +3071,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 31, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 10, 2023</span>
       
     
   </small>
@@ -3195,7 +3197,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
     
   </body>
