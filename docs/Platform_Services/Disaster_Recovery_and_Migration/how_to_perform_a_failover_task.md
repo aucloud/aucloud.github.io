@@ -13,7 +13,7 @@ Verify that the vApp containing the Virtual Machine is protected on your destina
 
 ## Performing a failover task
 
-1. In VMware Cloud Director Availability Portal, either from the **Incoming Replications** or from the **Outgoing Replications** pane, select the virtual machine that you wish to failover, click **All Actions** and then click **Failover**. The **Failover** wizard opens.
+1. In VMware Cloud Director Availability Portal, either from the **Incoming Replications** or from the **Outgoing Replications** pane, select the virtual machine that you wish to failover, click **All Actions** and then click **Failover**. You will be asked to enter your availability for the The **Failover** wizard opens.
 
 1. In the Recovery Settings tab, use the options to configure the task and click **Next.**
 
