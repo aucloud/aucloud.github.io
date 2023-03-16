@@ -52,7 +52,7 @@ You can conduct the test cleanup from the **Incoming Replications** or the **
 
 1. Select the required vApp or VM, and click on **All Actions**. From the drop-down menu, select **Test Cleanup**
 
-    ![Test Clean Up](./assets/Testcleanup.jpg)
+    ![Test Clean Up](./assets/Testcleanup.png)
 
 1. Click **CLEANUP**
 
@@ -62,7 +62,7 @@ You can conduct the test cleanup from the **Incoming Replications** or the **
 
 1. You can remove the replication by selecting the vApp or VM and clicking **Delete.**
 
-    ![Delete Replication](./assets/delete_replication.jpg)
+    ![Delete Replication](./assets/delete_replication.png)
 
 1. Confirm you wish to delete the selected replication by clicking **DELETE**
 
