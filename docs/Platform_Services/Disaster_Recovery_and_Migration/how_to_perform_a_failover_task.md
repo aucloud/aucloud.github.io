@@ -22,7 +22,7 @@ Verify that the vApp containing the Virtual Machine is protected on your destina
 	| Consolidate VM Disks | When enabled, the failover operation takes longer to complete but allows for a better performance of the recovered VM |
 	| Power on recovered vApps | Select this option, to power on the virtual machine on the destination site |
 	| Network settings | <ul><li>Select the Apply preconfigured network settings on failover option, so that the network configured during the virtual machine replication is assigned</li><li>Select the Connect all VMs to network option and select a network from the drop-down menu</li></ul><p></p>The replicated virtual machine connects to the network that you selected |
-	| VDC computeand sizing policy | Select any specific compute and sizing policies for your VDC VM placement or VDC VM sizing |
+	| VDC compute and sizing policy | Select any specific compute and sizing policies for your VDC VM placement or VDC VM sizing |
 
 1. On the Recovery Instance page, configure the recovery point in time and click **Next**.
 
