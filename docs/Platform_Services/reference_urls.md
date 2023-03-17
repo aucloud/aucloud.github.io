@@ -41,7 +41,7 @@ description: Reference URLs for services in AUCLoud
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
 | [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
-| [https://vos.s3-esz101.australiacloud.com.au/api/v1/s3](https://vos.s3-esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
+| [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
 | [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
 
@@ -55,7 +55,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Official | CSZ |
 | [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
-| [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Official | SSZ |
+| [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Protected | SSZ |
 
 ## AUCloud Microsoft KMS Server
 
