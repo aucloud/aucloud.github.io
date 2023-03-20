@@ -3123,13 +3123,13 @@
 
   <h1>Installing and configuring vCAV on premise</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>After deploying and setting up a service provider cloud site, you install and configure a VMware Cloud Director Availability appliance on-premises to enable the replication and the failover capabilities from the on-premises vCenter Server to the cloud and reverse.  </p>
 <h2 id="vmware-cloud-director-availability-on-premises-network-requirements">VMware Cloud Director Availability On-Premises Network Requirements<a class="headerlink" href="#vmware-cloud-director-availability-on-premises-network-requirements" title="Permanent link">¤</a></h2>
 <p>Before you start deploying and configuring the VMware Cloud Director Availability on-premises appliance, ensure that the required network ports are opened and allow the communication within the on-premises site and the cloud site.</p>
 <h2 id="network-ports-configuration">Network Ports Configuration<a class="headerlink" href="#network-ports-configuration" title="Permanent link">¤</a></h2>
 <p>The following diagram shows the direction of the data flow, the data traffic type, and the required network ports for the communication between the VMware Cloud Director Availability on-premises appliance and the disaster recovery infrastructure.</p>
-<p><img alt="DR Infrastructure" src="../assets/001.png" /></p>
+<p><img alt="DR Infrastructure" src="../assets/001.png"></p>
 <h2 id="firewall-rules-for-the-on-premises-site-communication">Firewall Rules for the On-Premises Site Communication<a class="headerlink" href="#firewall-rules-for-the-on-premises-site-communication" title="Permanent link">¤</a></h2>
 <p>The following table lists the required network ports to be opened for the VMware Cloud Director Availability on-premises appliance communication in the-premises site:</p>
 <table>
@@ -3223,7 +3223,7 @@
 </div>
 </li>
 <li>
-<p>Right-click the target object and from the drop-down menu select <strong>Deploy OVF Template</strong>.<br />
+<p>Right-click the target object and from the drop-down menu select <strong>Deploy OVF Template</strong>.<br>
     (The <strong>Deploy OVF Template</strong> wizard opens.)</p>
 </li>
 <li>
@@ -3281,21 +3281,21 @@
 </li>
 <li>
 <p>Define deployment parameters in the OVF Tool console by running the following commands.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># VMNAME=&quot;Name-to-be-Assigned-to-the-VM&quot;</span>
-<span class="c1"># VSPHERE_DATASTORE=&quot;vSphere-datastore&quot;</span>
-<span class="c1"># VSPHERE_NETWORK=&quot;VM-Network&quot;</span>
-<span class="c1"># OVA=&quot;local_client_path/VMware-vCloud-Availability-OnPrem-release_number-xxx-build_number_OVF10.ova&quot;</span>
-<span class="c1"># VSPHERE_USER=&quot;vCenter-Server-admin-user&quot;</span>
-<span class="c1"># VSPHERE_USER_PASSWORD=&quot;vCenter-Server-admin-user-password&quot;</span>
-<span class="c1"># VSPHERE_ADDRESS=&quot;vCenter-Server-IP-address&quot;</span>
-<span class="c1"># VSPHERE_LOCATOR=&quot;vSphere-locator&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># VMNAME="Name-to-be-Assigned-to-the-VM"</span>
+<span class="c1"># VSPHERE_DATASTORE="vSphere-datastore"</span>
+<span class="c1"># VSPHERE_NETWORK="VM-Network"</span>
+<span class="c1"># OVA="local_client_path/VMware-vCloud-Availability-OnPrem-release_number-xxx-build_number_OVF10.ova"</span>
+<span class="c1"># VSPHERE_USER="vCenter-Server-admin-user"</span>
+<span class="c1"># VSPHERE_USER_PASSWORD="vCenter-Server-admin-user-password"</span>
+<span class="c1"># VSPHERE_ADDRESS="vCenter-Server-IP-address"</span>
+<span class="c1"># VSPHERE_LOCATOR="vSphere-locator"</span>
 </code></pre></div>
 </li>
 <li>
 <p>Deploy an on-premises VMware Cloud Director Availability appliance.</p>
 <p>The following example script deploys a VMware Cloud Director Availability appliance on-premises and sets a static IP address.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># echo $VMNAME</span>
-<span class="c1">#./ovftool/ovftool --name=&quot;${VMNAME}&quot; --datastore=&quot;${VSPHERE_DATASTORE}&quot; --acceptAllEulas --powerOn --X:enableHiddenProperties --X:injectOvfEnv --X:waitForIp --ipAllocationPolicy=fixedPolicy --machineOutput --noSSLVerify --overwrite --powerOffTarget &quot;--net:VM Network=${VSPHERE_NETWORK}&quot; --diskMode=thin --prop:guestinfo.cis.appliance.root.password=&#39;Your-Root-Password&#39; --prop:guestinfo.cis.appliance.ssh.enabled=True --prop:guestinfo.cis.appliance.net.ntp=&#39;Your-ntp-server-ip-address&#39; --prop:vami.DNS.VMware_vCloud_Availability=&#39;Your-DNS-Server-Address&#39; --prop:vami.domain.VMware_vCloud_Availability=&#39;Your-Domain-Name&#39; --prop:vami.gateway.VMware_vCloud_Availability=&#39;Your-Gateway-IP-Address&#39; --prop:vami.ip0.VMware_vCloud_Availability=&#39;IP-to-be-Assigned-to-the-Appliance&#39; --prop:vami.netmask0.VMware_vCloud_Availability=&#39;Your-Netmask-Address&#39; --prop:vami.searchpath.VMware_vCloud_Availability=&#39;Your-Search-Path-Address&#39; &quot;${OVA}&quot; &quot;vi://${VSPHERE_USER}:${VSPHERE_USER_PASSWORD}@${VSPHERE_ADDRESS}${VSPHERE_LOCATOR}&quot;</span>
+<span class="c1">#./ovftool/ovftool --name="${VMNAME}" --datastore="${VSPHERE_DATASTORE}" --acceptAllEulas --powerOn --X:enableHiddenProperties --X:injectOvfEnv --X:waitForIp --ipAllocationPolicy=fixedPolicy --machineOutput --noSSLVerify --overwrite --powerOffTarget "--net:VM Network=${VSPHERE_NETWORK}" --diskMode=thin --prop:guestinfo.cis.appliance.root.password='Your-Root-Password' --prop:guestinfo.cis.appliance.ssh.enabled=True --prop:guestinfo.cis.appliance.net.ntp='Your-ntp-server-ip-address' --prop:vami.DNS.VMware_vCloud_Availability='Your-DNS-Server-Address' --prop:vami.domain.VMware_vCloud_Availability='Your-Domain-Name' --prop:vami.gateway.VMware_vCloud_Availability='Your-Gateway-IP-Address' --prop:vami.ip0.VMware_vCloud_Availability='IP-to-be-Assigned-to-the-Appliance' --prop:vami.netmask0.VMware_vCloud_Availability='Your-Netmask-Address' --prop:vami.searchpath.VMware_vCloud_Availability='Your-Search-Path-Address' "${OVA}" "vi://${VSPHERE_USER}:${VSPHERE_USER_PASSWORD}@${VSPHERE_ADDRESS}${VSPHERE_LOCATOR}"</span>
 </code></pre></div>
 </li>
 </ol>
@@ -3307,7 +3307,7 @@
 <p>In a Web browser, navigate to <strong>https://<em>On-Prem-Appliance-IP-address</em>/ui/admin</strong>.</p>
 </li>
 <li>
-<p>Log in by using the <strong>root</strong> user password that you set during the OVA deployment.<br />
+<p>Log in by using the <strong>root</strong> user password that you set during the OVA deployment.<br>
     (The <strong>Appliance Password</strong> window opens.)</p>
 </li>
 <li>
@@ -3317,7 +3317,7 @@
 <p>Enter the initial <strong>root</strong> user password set during the OVA deployment.</p>
 </li>
 <li>
-<p>Enter and confirm a new password.<br />
+<p>Enter and confirm a new password.<br>
     Create a secured password with a minimum of eight characters and containing at least one of each of the following characters:  </p>
 <ul>
 <li>Lowercase: a b c  </li>
@@ -3327,13 +3327,13 @@
 </ul>
 </li>
 <li>
-<p>Click <strong>Apply</strong>.<br />
+<p>Click <strong>Apply</strong>.<br>
         The <strong>Getting Started</strong> tab opens.</p>
 </li>
 </ol>
 </li>
 <li>
-<p>Click <strong>Run initial setup wizard</strong>.<br />
+<p>Click <strong>Run initial setup wizard</strong>.<br>
     (The <strong>Initial Setup</strong> wizard opens.)</p>
 </li>
 <li>
@@ -3355,12 +3355,12 @@
 <p>Enter the VMware Cloud Director <strong>user@org</strong> user credentials.</p>
 </li>
 <li>
-<p><strong>(Optional)</strong> Select <strong>Allow Access from Cloud</strong>.<br />
+<p><strong>(Optional)</strong> Select <strong>Allow Access from Cloud</strong>.<br>
 By selecting this option you allow the cloud provider and the organization administrators to perform the following operations from the VMware Cloud Director Availability Portal without authenticating to the on-premises site.</p>
 <ul>
 <li>Discover on-premises workloads and replicate them to the cloud.  </li>
 <li>Reverse existing replications to the on-premises site.</li>
-<li>Replicate cloud workloads to the on-premises site.<br />
+<li>Replicate cloud workloads to the on-premises site.<br>
 By leaving this option deselected, only users authenticated to the on-premises VMware Cloud Director Availability Portal can configure new replications and existing replications cannot be reversed from the VMware Cloud Director Availability Portal.</li>
 </ul>
 </li>
@@ -3388,7 +3388,7 @@ By leaving this option deselected, only users authenticated to the on-premises V
 </li>
 </ol>
 <h2 id="what-to-do-next">What to do next<a class="headerlink" href="#what-to-do-next" title="Permanent link">¤</a></h2>
-<p>If you skipped configuring local placement in the initial wizard, you can do that next.</p>
+<p>If you skipped configuring local placement in the initial wizard, you can do that next.</p></div>
 
   <hr>
 <div class="md-source-file">

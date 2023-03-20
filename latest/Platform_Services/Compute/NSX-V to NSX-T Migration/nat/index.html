@@ -3055,20 +3055,20 @@
 
   <h1>NAT</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>NAT services provided by NSX-T function in much the same manner as with NSX-V. However how NAT services are displayed and configured is different. This includes options for additional types of NAT service and for determining how Firewall Rules are applied during the NAT process.</p>
 <p>To assist with the migration to NSX-T, such changes are presented and compared.</p>
 <h2 id="nsx-v">NSX-V<a class="headerlink" href="#nsx-v" title="Permanent link">¤</a></h2>
 <p>The configuration of NAT rules under NSX-V is available from the Edge Gateway SERVICES option, as shown below:</p>
-<p><img alt="NSX-V NAT Rules" src="../assets/nsx_v_nat_rules.jpg" /></p>
+<p><img alt="NSX-V NAT Rules" src="../assets/nsx_v_nat_rules.jpg"></p>
 <p>As highlighted above there are two types of NAT rules available; Destination NAT (DNAT) and Source NAT (SNAT).</p>
 <p>An SNAT is used to translate the source IP address of packets sent from an organisation VDC network out to an external network.</p>
 <p>A DNAT is used to translate the IP address and, optionally, the port of packets received by an organisation VDC network, that are coming from an external network.</p>
 <h2 id="nsx-t">NSX-T<a class="headerlink" href="#nsx-t" title="Permanent link">¤</a></h2>
 <p>With NSX-T, NAT configuration is available from the NAT option, under the Edge Gateway menu, as shown below.</p>
-<p><img alt="NSX-T NAT Rules" src="../assets/nsx_t_nat.jpg" /></p>
+<p><img alt="NSX-T NAT Rules" src="../assets/nsx_t_nat.jpg"></p>
 <p>A NAT rule can be added using the NEW option; An existing rule can be modified or deleted by selecting the appropriate radio button and using one of the EDIT or DELETE options:</p>
-<p><img alt="NSX-T NAT Rules" src="../assets/nsx_t_nat_config_options.jpg" /></p>
+<p><img alt="NSX-T NAT Rules" src="../assets/nsx_t_nat_config_options.jpg"></p>
 <p>There are five types of NAT rules available with NSX-T:</p>
 <ul>
 <li>Source NAT (SNAT)</li>
@@ -3077,13 +3077,13 @@
 <li>No Destination NAT (No DNAT)</li>
 <li>Reflexive</li>
 </ul>
-<p><img alt="NSX-T NAT Types" src="../assets/nsx_t_nat_types.jpg" /></p>
+<p><img alt="NSX-T NAT Types" src="../assets/nsx_t_nat_types.jpg"></p>
 <p>The SNAT and DNAT options are the same as in NSX-V and are not discussed further.</p>
 <p>The No SNAT option disables source address translation for particular sources. This can be useful in scenarios where certain sources within a particular range must not be translated, while all other sources within the same range require translation. In this case the appropriate No SNAT rule would be placed above the appropriate SNAT rule.</p>
 <p>Similarly the No DNAT option disables destination address translation for particular destinations.</p>
 <p>Reflexive is used to translate a single internal IP address to a single translated IP address, in a one-to-one mapping. Reflexive NAT is stateless and as such cannot be associated with specific TCP or UDP ports; all other types of NAT are stateful.</p>
 <p>NSX-T also provides an Advanced Settings option for NAT configuration. This includes an option to determine how Firewall Rules are applied during the NAT process.</p>
-<p><img alt="NSX-T NAT Firewall Match" src="../assets/nsx_t_nat_firewall_match.jpg" /></p>
+<p><img alt="NSX-T NAT Firewall Match" src="../assets/nsx_t_nat_firewall_match.jpg"></p>
 <p>Three options are available:</p>
 <ol>
 <li>Match Internal Address, which applies Firewall Rules to the internal address of a NAT rule</li>
@@ -3103,7 +3103,7 @@
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>Familiarise with the updated display and configuration of NAT rules provided by NSX-T, and determine the impact of any changes upon the NAT configuration within your tenancy.</p>
-<p>For additional information on the configuration of NAT rules in NSX-T consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html">VMware Documentation</a>.</p>
+<p>For additional information on the configuration of NAT rules in NSX-T consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html">VMware Documentation</a>.</p></div>
 
   <hr>
 <div class="md-source-file">

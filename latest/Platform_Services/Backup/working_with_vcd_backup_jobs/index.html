@@ -3053,7 +3053,7 @@
 
   <h1>Working with VMware Cloud Director Backup Jobs</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>In the <strong>Jobs</strong> tab of the Self-Service Backup Portal, you can perform the following operations:</p>
 <ul>
 <li>Create a new VMware Cloud Director backup job</li>
@@ -3065,7 +3065,7 @@
 <ol>
 <li>
 <p>Go to the <strong>Jobs</strong> tab of the Self-Service Backup Portal and click <strong>Create</strong>.</p>
-<p><img alt="Create Backup Jobs" src="../assets/create_backup_jobs.png" /></p>
+<p><img alt="Create Backup Jobs" src="../assets/create_backup_jobs.png"></p>
 </li>
 <li>
 <p>Specify job name, description and retention settings (how many restore points should be stored in repository for future restores).\</p>
@@ -3073,27 +3073,27 @@
 <p class="admonition-title">Note</p>
 <p>To keep certain full backups for archive purposes, ensure the <strong>Keep certain full backups</strong> checkbox has been checked and is configured by clicking <strong>configure</strong>.</p>
 </div>
-<p><img alt="Create Backup Jobs Detail" src="../assets/create_backup_jobs_detail.png" /></p>
+<p><img alt="Create Backup Jobs Detail" src="../assets/create_backup_jobs_detail.png"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A scale out backup repository (SOBR) will be assigned to your vCD tenancy. The SOBR consists of a Primary Tier backup storage appliance to ingest backups and a Capacity Tier appliance (S3 based storage used for longer backup retention and archive purposes. For more information please see the <a href="../">AUCloud Backup overview</a>.</p>
 </div>
-<p><img alt="GFS Policy" src="../assets/gfs_retention_policy.png" /></p>
+<p><img alt="GFS Policy" src="../assets/gfs_retention_policy.png"></p>
 </li>
 <li>
 <p>Add vApps and/or VMs from the VMware Cloud Director organization to the job by clicking <strong>+Add</strong> and make a selection.</p>
-<p><img alt="Select VM Vapp" src="../assets/backup_vm_vapp.png" /></p>
+<p><img alt="Select VM Vapp" src="../assets/backup_vm_vapp.png"></p>
 </li>
 <li>
 <p>Follow the wizard to configure other settings available to you such as guest processing, schedule, notifications on job completion (see below images).</p>
 <p><strong>Guest OS Processing</strong></p>
-<p><img alt="Guest OS Processing" src="../assets/guest_os_processing.png" /></p>
+<p><img alt="Guest OS Processing" src="../assets/guest_os_processing.png"></p>
 <p><strong>Application aware backups and file exclusions</strong></p>
-<p><img alt="File Exclusions" src="../assets/file_exclusions.png" /></p>
+<p><img alt="File Exclusions" src="../assets/file_exclusions.png"></p>
 <p><strong>Scheduling options</strong></p>
-<p><img alt="Scheduling Options" src="../assets/scheduling_options.png" /></p>
+<p><img alt="Scheduling Options" src="../assets/scheduling_options.png"></p>
 <p><strong>Enable notifications</strong></p>
-<p><img alt="Enable Notifications" src="../assets/enable_notifications.png" /></p>
+<p><img alt="Enable Notifications" src="../assets/enable_notifications.png"></p>
 </li>
 <li>
 <p>The remaining settings (repository, processing mode, etc.) will be obtained from the repository set up in your tenancy by AUCloud.</p>
@@ -3103,19 +3103,19 @@
 <ol>
 <li>
 <p>Once a backup job has been created you can manage that job from within the portal.</p>
-<p><img alt="Manage Backup Job" src="../assets/manage_backup_job.png" /></p>
+<p><img alt="Manage Backup Job" src="../assets/manage_backup_job.png"></p>
 </li>
 <li>
 <p>To <strong>run a job</strong>, select the job from the list on the <em>Jobs</em> tab, then click <strong>Start</strong>.</p>
-<p><img alt="Run Job" src="../assets/run_a_job.png" /></p>
+<p><img alt="Run Job" src="../assets/run_a_job.png"></p>
 </li>
 <li>
 <p>To <strong>stop a job</strong>, select the job from the list on the <em>Jobs</em> tab, then click <strong>Stop.</strong></p>
-<p><img alt="Stop Job" src="../assets/stop_a_job.png" /></p>
+<p><img alt="Stop Job" src="../assets/stop_a_job.png"></p>
 </li>
 <li>
 <p>To <strong>re-run a job</strong> that has failed, select the job from the list on the <em>Jobs</em> tab, then click <strong>Retry.</strong></p>
-<p><img alt="Rerun Job" src="../assets/rerun_job.png" /></p>
+<p><img alt="Rerun Job" src="../assets/rerun_job.png"></p>
 </li>
 <li>
 <p>To <strong>delete a job</strong>, select the job from the list on the <em>Jobs</em> tab, then click <strong>Job &gt; Delete</strong>.</p>
@@ -3123,7 +3123,7 @@
 <p class="admonition-title">Note</p>
 <p>After deletion, this job will be removed from configuration and no longer appear in web portal and in Veeam Backup Management Console._</p>
 </div>
-<p><img alt="Delete Job" src="../assets/delete_a_job.png" /></p>
+<p><img alt="Delete Job" src="../assets/delete_a_job.png"></p>
 </li>
 <li>
 <p>Additional backup job management options include:</p>
@@ -3146,10 +3146,10 @@
 <li>When you restore this VM to the original location via the Self-Service Backup Portal, the VM identifier changes in VMware Cloud Director hierarchy. Due to this reason, the backup job is unable to locate this VM. To rectify, you need to edit job settings, adding this VM anew. To ensure that job configuration will store this VM with the new metadata (not the old one from VMware Cloud Director hierarchy cache), you should first click Refresh in the Add Objects window.</li>
 <li>At the next job run, a new full backup will be created for this VM. However, if you try to perform file-level restore via the Self-Service Backup Portal from the restore points created initially for that VM (in step 2), the restore operation will fail, as that VM identifier does not exist.</li>
 </ul>
-<p><img alt="Create" src="../assets/create_2.png" /></p>
-<p><img alt="Create" src="../assets/create_3.png" /></p>
+<p><img alt="Create" src="../assets/create_2.png"></p>
+<p><img alt="Create" src="../assets/create_3.png"></p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">

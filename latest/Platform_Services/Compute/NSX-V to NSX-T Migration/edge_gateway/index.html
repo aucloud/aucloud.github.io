@@ -3055,19 +3055,19 @@
 
   <h1>Edge Gateway</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The function of the Edge Gateway changes with the migration to NSX-T, alongside noticeable differences to the VMware Cloud Director (vCD) user interface.</p>
 <p>To assist with the migration to NSX-T, this page will present and compare these differences.</p>
 <h2 id="nsx-v">NSX-V<a class="headerlink" href="#nsx-v" title="Permanent link">¤</a></h2>
 <p>Under NSX-V an Edge Gateway is deployed as a virtual appliance. This means that each new Edge Gateway requires a new virtual machine, limiting the potential scale of the solution. The NSX-V Edge Gateway provides services such as routing, North-South Firewall Rules, NAT, IPSec VPN and Load Balancer.  </p>
 <p>In the vCD user interface, the following screen is presented when an NSX-V Edge Gateway is selected:</p>
-<p><img alt="NSX-V Edge Gateway" src="../assets/nsx_v_edge_gateway.jpg" /></p>
+<p><img alt="NSX-V Edge Gateway" src="../assets/nsx_v_edge_gateway.jpg"></p>
 <p>The SERVICES option, when selected, opens a new screen with various options for the configuration of Services, such as Firewall Rules, NAT, IPSec VPN and Load Balancer.</p>
-<p><img alt="NSX-V Services" src="../assets/nsx_v_edge_gateway2.jpg" /></p>
+<p><img alt="NSX-V Services" src="../assets/nsx_v_edge_gateway2.jpg"></p>
 <h2 id="nsx-t">NSX-T<a class="headerlink" href="#nsx-t" title="Permanent link">¤</a></h2>
 <p>Under NSX-T the Edge Gateway itself is run as a service available from a pool of such services, deployed on a virtual appliance known as an Edge Transport Node. Edge Gateways no longer require separate virtual machines and are deployed from resources available on existing Edge Transport Nodes. This increases the potential scale of the solution and allows for additional features to be made available.</p>
 <p>With NSX-T, once an Edge Gateway is selected in the vCD user interface, there is no longer a specific SERVICES option: instead all services available for configuration are provided in an Edge Gateway menu on the left hand side of the screen.</p>
-<p><img alt="NSX-T Edge Gateway" src="../assets/nsx_t_edge_gateway1.jpg" /></p>
+<p><img alt="NSX-T Edge Gateway" src="../assets/nsx_t_edge_gateway1.jpg"></p>
 <p>Each service can be selected individually for configuration from this menu, including Firewall Rules, NAT, IPSec VPN and Load Balancer. It is important to note that while Load Balancing is available for configuration under the Edge Gateway menu, this service is <strong>not</strong> provided directly by the Edge Gateway itself. For more information see the <a href="../load_balancer/">Load Balancer Page</a>.</p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>Familiarise with the migrated Edge Gateway user interface.</p>
@@ -3077,7 +3077,7 @@
 <li><a href="../nat/">NAT</a></li>
 <li><a href="../VPN/">VPN</a></li>
 <li><a href="../load_balancer/">Load Balancer</a></li>
-</ul>
+</ul></div>
 
   <hr>
 <div class="md-source-file">

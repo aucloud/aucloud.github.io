@@ -3123,7 +3123,7 @@
 
   <h1>How the NSX-V Edge Services Gateway works</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>This is a description of the essential configuration required to successfully provide network connectivity for your virtual estate. This will address both the why and the how from a high-level perspective.</p>
 <h3 id="what-is-an-edge-services-gateway-esg">What is an Edge Services Gateway (ESG)?<a class="headerlink" href="#what-is-an-edge-services-gateway-esg" title="Permanent link">¤</a></h3>
 <p>The ESG included as part of a Virtual Organisation (vOrg) provides connectivity between internal and external Organization VDC networks. It is a virtual appliance that provides multiple features, including:</p>
@@ -3137,34 +3137,34 @@
 </ul>
 <p>Correctly configuring the VMware Cloud Director interface is as much a matter of knowing why you are doing this as of how to apply the changes.</p>
 <h2 id="edge-services-gateway-operation">Edge Services Gateway Operation<a class="headerlink" href="#edge-services-gateway-operation" title="Permanent link">¤</a></h2>
-<p><img alt="ESG_schematic" src="../assets/ESG_schematic.jpg" /><br />
+<p><img alt="ESG_schematic" src="../assets/ESG_schematic.jpg"><br>
 Image 1: ESG schematic (simple)</p>
 <p>In this image, the ESG functions as a router and a firewall. Internal networks cannot communicate with external (public) networks unless the ESG has been correctly configured.</p>
 <h2 id="creating-virtual-network-infrastructure">Creating Virtual Network Infrastructure<a class="headerlink" href="#creating-virtual-network-infrastructure" title="Permanent link">¤</a></h2>
 <p>Virtual compute and networking infrastructure must be created before ESG configuration.</p>
-<p><img alt="Connecting to the ESG" src="../assets/connecting_to_ESGW.png" /><br />
+<p><img alt="Connecting to the ESG" src="../assets/connecting_to_ESGW.png"><br>
 Image 2: Connecting to an Edge Services Gateway</p>
 <h2 id="creating-routed-networks">Creating Routed Networks<a class="headerlink" href="#creating-routed-networks" title="Permanent link">¤</a></h2>
 <p>Routed vDC networks are routed through the ESG and do not necessarily need to communicate with public networks.</p>
-<p><img alt="network config" src="../assets/network_config_01.jpg" /><br />
+<p><img alt="network config" src="../assets/network_config_01.jpg"><br>
 Image 3: Network configuration</p>
 <h2 id="firewall-rules">Firewall Rules<a class="headerlink" href="#firewall-rules" title="Permanent link">¤</a></h2>
 <p>By default, the ESG will deny all traffic attempting to traverse it. This includes traffic to and from the internet as well as hosts on different routed networks. An effective firewall policy is required to enable the successful operation of hosted applications.</p>
-<p><img alt="Fire wall rules" src="../assets/firewall_rules.png" /><br />
+<p><img alt="Fire wall rules" src="../assets/firewall_rules.png"><br>
 Image 4: Firewall rules</p>
 <h2 id="network-address-translation-nat-rules">Network Address Translation (NAT) Rules<a class="headerlink" href="#network-address-translation-nat-rules" title="Permanent link">¤</a></h2>
-<p><img alt="Router and NAT, simple schematic" src="../assets/nat_schematic.png" />
+<p><img alt="Router and NAT, simple schematic" src="../assets/nat_schematic.png">
 Image 5: Router and NAT function, simple schematic  </p>
 <p>Communication over the internet requires that the two endpoints utilise a publicly routable IP address. These addresses are assigned to your ESG and can be found in the Edge Gateway Settings.</p>
 <p>The process of converting your virtual machines addresses to these publicly routable addresses is known as NAT.</p>
-<p><img alt="nat rule config" src="../assets/nat_rule_config.jpg" /><br />
+<p><img alt="nat rule config" src="../assets/nat_rule_config.jpg"><br>
 Image 6: NAT rule configuration</p>
 <p>NAT establishes precise controls for Source and Destination IP addresses, and port translation.</p>
 <p>Source NAT (SNAT), allows your hosted virtual machines (VM) to initiate communications with networks outside of your estate. This is achieved by translating the source address as it leaves your ESG. The ESG automatically un-translates the return traffic by modifying the destination address to the original source address. This bidirectional flow is depicted below.</p>
-<p><img alt="NAT translation schematic" src="../assets/NAT_translation_schematic.jpg" /><br />
+<p><img alt="NAT translation schematic" src="../assets/NAT_translation_schematic.jpg"><br>
 Image 7: Network Address Translation, detailed schematic</p>
 <p>Destination NAT (DNAT) allows hosts outside of your network to initiate communication to your hosted VM. This process is like SNAT, except the destination address is the first one modified and just like SNAT the response traffic is automatically converted to the original source.</p>
-<p><img alt="external IP" src="../assets/external_IP.jpg" /><br />
+<p><img alt="external IP" src="../assets/external_IP.jpg"><br>
 Image 8: Edge Services Gateway configuration viewed in VMware Cloud Director</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3174,7 +3174,7 @@ Image 8: Edge Services Gateway configuration viewed in VMware Cloud Director</p>
 <ul>
 <li><strong>Internal High</strong>: which allows communication between your vOrg and the AUCloud perimeter firewall.</li>
 <li><strong>Default Policy</strong>: set to deny all.</li>
-</ul>
+</ul></div>
 
   <hr>
 <div class="md-source-file">

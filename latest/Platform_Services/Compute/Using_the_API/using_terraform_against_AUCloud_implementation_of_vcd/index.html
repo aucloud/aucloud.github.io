@@ -3041,7 +3041,7 @@
 
   <h1>Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>In order to configure your AUCloud IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.</p>
 <p>There are currently 2 supported authenticated methods:</p>
 <ol>
@@ -3049,9 +3049,9 @@
 <li>Connecting with authorization or bearer token.</li>
 </ol>
 <h2 id="connecting-as-org-admin">Connecting as Org Admin<a class="headerlink" href="#connecting-as-org-admin" title="Permanent link">¤</a></h2>
-<p><img alt="Connect Org Admin" src="../assets/connect_org_admin.jpg" /></p>
+<p><img alt="Connect Org Admin" src="../assets/connect_org_admin.jpg"></p>
 <p>In the above example, there are 4 arguments you must populate using information obtained from one of the <a href="../../../reference_urls/#vmware-cloud-director-api-endpoints">Portal API endpoints</a></p>
-<p><img alt="API Mgmt" src="../assets/api_mgmt.jpg" /></p>
+<p><img alt="API Mgmt" src="../assets/api_mgmt.jpg"></p>
 <ol>
 <li>
 <p>The required <strong>user</strong> argument can be found under the Username column aligned with the Service you wish to configure. It consists of the rational number before the @ symbol.</p>
@@ -3072,10 +3072,10 @@
 </li>
 </ol>
 <h2 id="connecting-with-authorization-or-bearer-token">Connecting with authorization or bearer token<a class="headerlink" href="#connecting-with-authorization-or-bearer-token" title="Permanent link">¤</a></h2>
-<p><img alt="Bearer Token" src="../assets/bearer_token.jpg" /></p>
+<p><img alt="Bearer Token" src="../assets/bearer_token.jpg"></p>
 <p>In the above example, there are 2 arguments you must populate using information obtained from one of the <a href="../../../reference_urls/#portal-api-endpoints">Portal API Endpoints</a></p>
 <p>There is also an additional value, <strong>token</strong>, which needs to be obtained from an API call outside of Terraform.</p>
-<p><img alt="API Management" src="../assets/api_mgmt2.jpg" /></p>
+<p><img alt="API Management" src="../assets/api_mgmt2.jpg"></p>
 <ol>
 <li>
 <p>The <strong>org</strong> argument consists of the string to the right of the @ symbol in the Username column.</p>
@@ -3088,7 +3088,7 @@
 <p>See <a href="https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/POST-Login.html" title="https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/post-login.html">https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/POST-Login.html</a></p>
 <p>A successful request will return a <code>x-vmware-vcloud-access-token</code> which can be inserted into the Terraform token argument.</p>
 <p>Below is a simple bash script to obtain this information:</p>
-<p><img alt="Bash" src="../assets/bash.jpg" /></p>
+<p><img alt="Bash" src="../assets/bash.jpg"></p></div>
 
   <hr>
 <div class="md-source-file">

@@ -3147,7 +3147,7 @@
 
   <h1>Configuration of Microsoft M365 Service Account</h1>
 
-<h2 id="information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
+<div><h2 id="information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
 <p>This guide outlines the steps required to configure and implement your Office 365 Backup with AUCloud
 using the modern authentication method. You will be allocated a Customer Success Manager (CSM) who
 will assist you with the on-boarding process, provide advice and act as a conduit to deeper technical support
@@ -3191,7 +3191,7 @@ only</strong>.</p>
 registration.</p>
 </li>
 </ol>
-<p><img alt="Register an Application" src="../assets/register_an_application.svg" /></p>
+<p><img alt="Register an Application" src="../assets/register_an_application.svg"></p>
 <h3 id="configure-application-permissions">Configure Application permissions<a class="headerlink" href="#configure-application-permissions" title="Permanent link">¤</a></h3>
 <p>Select the newly registered application, select API permissions, and add permissions for:</p>
 <ul>
@@ -3205,9 +3205,9 @@ registration.</p>
 </div>
 </li>
 </ul>
-<p><img alt="API Permissions" src="../assets/api_permissions.png" /></p>
+<p><img alt="API Permissions" src="../assets/api_permissions.png"></p>
 <p>For each API e.g., Microsoft graph, add the appropriate delegated (restore) and application (backup) type permissions as per below:</p>
-<p><img alt="Request API Permissions" src="../assets/request_api_permission.png" /></p>
+<p><img alt="Request API Permissions" src="../assets/request_api_permission.png"></p>
 <ol>
 <li>
 <p><a href="../azureAD_application_permission_requirements/#permissions-for-restore"><strong>Delegated (restore) permissions</strong></a></p>
@@ -3223,7 +3223,7 @@ registration.</p>
 <p>After all APIs are added, you will need to <strong>grant admin consent</strong></p>
 </li>
 </ol>
-<p><img alt="Grant Admin Consent" src="../assets/grant_admin_consent.png" /></p>
+<p><img alt="Grant Admin Consent" src="../assets/grant_admin_consent.png"></p>
 <h3 id="add-a-certificate-public-key">Add a Certificate (public key)<a class="headerlink" href="#add-a-certificate-public-key" title="Permanent link">¤</a></h3>
 <ol>
 <li>Select <strong>Certificates &amp; secrets &gt; Certificates</strong>.</li>
@@ -3240,14 +3240,14 @@ registration.</p>
 </li>
 <li>Select <strong>Add</strong>.</li>
 </ol>
-<p><img alt="Add a Certificate" src="../assets/add_a_certificate.png" /></p>
+<p><img alt="Add a Certificate" src="../assets/add_a_certificate.png"></p>
 <h3 id="join-secure-meeting-with-aucloud">Join secure meeting with AUCloud<a class="headerlink" href="#join-secure-meeting-with-aucloud" title="Permanent link">¤</a></h3>
 <p>A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.</p>
 <ul>
 <li>Username</li>
 <li>Application ID</li>
 </ul>
-<p><img alt="Edit Organisation" src="../assets/edit_organisation.png" /></p>
+<p><img alt="Edit Organisation" src="../assets/edit_organisation.png"></p>
 <h3 id="restore-portal-access-requirements">Restore Portal Access Requirements<a class="headerlink" href="#restore-portal-access-requirements" title="Permanent link">¤</a></h3>
 <p>To access the Veeam restore portal, you must add an Enterprise Application in Azure AD</p>
 <h4 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">¤</a></h4>
@@ -3261,26 +3261,26 @@ registration.</p>
 <p>This will open a traditional username and password Microsoft popup:
 Please enter your service account username and password in this popup including MFA if prompted.</p>
 <p>We should see something like this if everything worked smoothly:</p>
-<p><img alt="Powershell" src="../assets/powershell.svg" /></p>
+<p><img alt="Powershell" src="../assets/powershell.svg"></p>
 <p>And the final step which brings everything together:</p>
-<div class="highlight"><pre><span></span><code>New-AzureADServicePrincipal -AppId &quot;33831092-5ae1-4b51-9eb2-a90033803540&quot;
+<div class="highlight"><pre><span></span><code>New-AzureADServicePrincipal -AppId "33831092-5ae1-4b51-9eb2-a90033803540"
 </code></pre></div>
 <p>If everything works as expected, the output should show something similar to this:</p>
-<p><img alt="Powershell" src="../assets/powershell2.svg" /></p>
+<p><img alt="Powershell" src="../assets/powershell2.svg"></p>
 <p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.</p>
 <p><strong>Last-Step - Give permission to the new Application on Azure AD</strong></p>
 <ul>
 <li>Under Enterprise Applications, remove the enterprise applications filter, and order them by date.</li>
 </ul>
 <p>You should see a new Veeam VBO application (the name of the Restore Portal).</p>
-<p><img alt="Veeam VBO" src="../assets/veeam_vbo.png" /></p>
+<p><img alt="Veeam VBO" src="../assets/veeam_vbo.png"></p>
 <p>On the Enterprise Application, go to Permissions, and press <strong>Grant admin consent</strong></p>
-<p><img alt="Veeam Permissions" src="../assets/veeam_permissions.png" /></p>
+<p><img alt="Veeam Permissions" src="../assets/veeam_permissions.png"></p>
 <p>That process will ask us again for an authorized account.</p>
 <p>We should see something like this:</p>
-<p><img alt="Veeam Permissions" src="../assets/veeam_permissions_2.png" /></p>
+<p><img alt="Veeam Permissions" src="../assets/veeam_permissions_2.png"></p>
 <p>Configuration is completed. You can then proceed to test connectivity to the Restore Portal.</p>
-<p><a href="../../reference_urls/#veeam-m365-backup-portal">Restore Portal URLs</a></p>
+<p><a href="../../reference_urls/#veeam-m365-backup-portal">Restore Portal URLs</a></p></div>
 
   <hr>
 <div class="md-source-file">

@@ -3053,22 +3053,22 @@
 
   <h1>How to conduct a test failover</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>With test failover tasks, you can verify whether the data from the source is replicated correctly on the target site. The replication Data is deleted once the Test Failover has been performed.</p>
-<p><img alt="Test Failover" src="../assets/test_failover_image.png" /></p>
+<p><img alt="Test Failover" src="../assets/test_failover_image.png"></p>
 <h2 id="conducting-the-test-failover">Conducting the test failover<a class="headerlink" href="#conducting-the-test-failover" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>In the VMware Cloud Director Availability Portal, either form the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the protected vApp that you want to test.</p>
-<p><img alt="Incoming Outgoing Replications" src="../assets/incoming_outgoing_replications.png" /></p>
+<p>In the VMware Cloud Director Availability Portal, either from the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the protected vApp or VM that you want to test.</p>
+<p><img alt="Incoming Outgoing Replications" src="../assets/incoming_outgoing_replications.png"></p>
 </li>
 <li>
-<p>Click Test Failover.</p>
-<p><img alt="Test Failover" src="../assets/Testfailover.jpg" /></p>
+<p>Click Test.</p>
+<p><img alt="Test Failover" src="../assets/Testfailover.jpg"></p>
 </li>
 <li>
 <p>The Test Failover wizard opens.</p>
-<p><img alt="Test Failover Wizard" src="../assets/test_failover_wizard.png" /></p>
+<p><img alt="Test Failover Wizard" src="../assets/test_failover_wizard.png"></p>
 </li>
 <li>
 <p>On the <strong>Recovery Settings</strong> page, use the options to configure the test task and click <strong>Next</strong>.</p>
@@ -3088,11 +3088,15 @@
 <td>Network Settings</td>
 <td><ul>Configure the network settings for the virtual machines:<li>Select the <strong>Apply preconfigured network settings on failover</strong> option, so that the network configured during the virtual machine replication is assigned.</li><li>Select the <strong>Connect all VMs to network</strong> option and select a network from the drop-down menu.</li></ul><p></p>The replicated virtual machine connects to the network that you selected.</td>
 </tr>
+<tr>
+<td>VDC compute and sizing policy</td>
+<td>Select any specific compute and sizing policies for your VDC VM placement or VDC VM sizing</td>
+</tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>On the <strong>Recovery Instance</strong> page, configure the recovery point in time and click <strong>Next.</strong></p>
+<p>On the <strong>Recovery Instance</strong> page, configure the recovery point in time and click <strong>Next</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -3113,46 +3117,44 @@
 </table>
 </li>
 <li>
-<p>On the <strong>Ready to Complete</strong> page, review the test details and click <strong>Finish</strong> to initiate the Test Failover task.</p>
-<p><img alt="Finish" src="../assets/finish.png" /></p>
+<p>On the <strong>Ready to Complete</strong> page, review your selected settings and click <strong>Finish</strong> to initiate the Test Failover task.</p>
+<p><img alt="Finish" src="../assets/finish.png"></p>
 </li>
 <li>
 <p>You can monitor the progress in the <strong>Replications Task</strong> pane.</p>
-<p><img alt="Replication Tasks Pane" src="../assets/replication_tasks_pane.png" /></p>
+<p><img alt="Replication Tasks Pane" src="../assets/replication_tasks_pane.png"></p>
 </li>
 </ol>
 <h2 id="conducting-the-test-cleanup">Conducting the Test Cleanup<a class="headerlink" href="#conducting-the-test-cleanup" title="Permanent link">¤</a></h2>
+<p>You can conduct the test cleanup from the <strong>Incoming Replications</strong> or the <strong>Outgoing Replications</strong> pane.</p>
 <ol>
 <li>
-<p>From the <strong>Incoming Replications</strong> or the <strong>Outgoing Replications</strong> pane, you can conduct the test cleanup.</p>
-</li>
-<li>
-<p>Select <strong>Test Cleanup</strong></p>
-<p><img alt="Test Clean Up" src="../assets/Testcleanup.jpg" /></p>
+<p>Select the required vApp or VM, and click on <strong>All Actions</strong>. From the drop-down menu, select <strong>Test Cleanup</strong></p>
+<p><img alt="Test Clean Up" src="../assets/Testcleanup.png"></p>
 </li>
 <li>
 <p>Click <strong>CLEANUP</strong></p>
-<p><img alt="Test Clean Up" src="../assets/test_cleanup_clean.png" /></p>
+<p><img alt="Test Clean Up" src="../assets/test_cleanup_clean.png"></p>
 </li>
 </ol>
 <h2 id="deleting-replications">Deleting Replications<a class="headerlink" href="#deleting-replications" title="Permanent link">¤</a></h2>
 <ol>
 <li>
 <p>You can remove the replication by selecting the vApp or VM and clicking <strong>Delete.</strong></p>
-<p><img alt="Delete Replication" src="../assets/delete_replication.jpg" /></p>
+<p><img alt="Delete Replication" src="../assets/delete_replication.png"></p>
 </li>
 <li>
 <p>Confirm you wish to delete the selected replication by clicking <strong>DELETE</strong></p>
-<p><img alt="Wish To Delete" src="../assets/wish_to_delete.png" /></p>
+<p><img alt="Wish To Delete" src="../assets/wish_to_delete.png"></p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
       
     
   </small>

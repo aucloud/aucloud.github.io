@@ -3055,38 +3055,38 @@
 
   <h1>Firewall Rules</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>Firewall Rules in NSX-T function in much the same manner as with NSX-V (e.g. sources are permitted access to various destinations based on protocol (e.g. TCP or UDP) and port number). However how Firewall Rules are displayed and configured differs from that of NSX-V.</p>
 <p>To assist with the migration to NSX-T, such differences are presented and compared.</p>
 <h2 id="nsx-v">NSX-V<a class="headerlink" href="#nsx-v" title="Permanent link">¤</a></h2>
 <p>With NSX-V, Firewall Rules are available from the SERVICES option and can be added, modified, rearranged or deleted on the screen shown below:</p>
-<p><img alt="NSX-V Firewall Rules" src="../assets/nsx_v_edge_gateway2.jpg" /></p>
+<p><img alt="NSX-V Firewall Rules" src="../assets/nsx_v_edge_gateway2.jpg"></p>
 <p>Several options are available for defining the Source or Destination for Firewall Rules, including; IP address, Gateway Interfaces, Virtual Machines, Org VDC Networks, IP Sets and Security Groups.</p>
-<p><img alt="NSX-V Firewall Objects" src="../assets/nsx_v_src_dst_objects.jpg" /></p>
+<p><img alt="NSX-V Firewall Objects" src="../assets/nsx_v_src_dst_objects.jpg"></p>
 <p>Source and Destination protocol (e.g. TCP or UDP) and port are set from the Firewall configuration screen under the Service field. Specific source or destination port numbers can be entered directly:</p>
-<p><img alt="NSX-V Firewall Port" src="../assets/nsx_v_firewall_port.jpg" /></p>
+<p><img alt="NSX-V Firewall Port" src="../assets/nsx_v_firewall_port.jpg"></p>
 <h2 id="nsx-t">NSX-T<a class="headerlink" href="#nsx-t" title="Permanent link">¤</a></h2>
 <p>With NSX-T Firewall Rule configuration is available from the Edge Gateway menu, under the Firewall option.</p>
-<p><img alt="NSX-T Firewall Rules" src="../assets/nsx_t_firewall_rules.jpg" /></p>
+<p><img alt="NSX-T Firewall Rules" src="../assets/nsx_t_firewall_rules.jpg"></p>
 <p>To add or modify Firewall Rules the EDIT RULES option is used.</p>
 <p>Options for defining the Source and Destination are limited to IP Sets and Static Groups.</p>
-<p><img alt="NSX-T Firewall Objects" src="../assets/nsx_t_src_dst_object.jpg" /></p>
+<p><img alt="NSX-T Firewall Objects" src="../assets/nsx_t_src_dst_object.jpg"></p>
 <p>Static Groups can be used to reference an Org VDC Network and will include all virtual machines connected to that Org VDC Network. However there is no option to associate a single virtual machine by itself with a Static Group.</p>
 <p>Example Screenshots:</p>
-<p><img alt="NSX-T Static Group" src="../assets/nsxt_static_group_members.jpg" /></p>
-<p><img alt="NSX-T Static Group VMs" src="../assets/nsxt_static_group_assoc_vms.jpg" /></p>
+<p><img alt="NSX-T Static Group" src="../assets/nsxt_static_group_members.jpg"></p>
+<p><img alt="NSX-T Static Group VMs" src="../assets/nsxt_static_group_assoc_vms.jpg"></p>
 <p>Source and Destination protocol (e.g. TCP or UDP) and port are set from the firewall configuration screen, under the Applications field.</p>
-<p><img alt="NSX-T Firewall Application" src="../assets/nsx_t_firewall_application.jpg" /></p>
+<p><img alt="NSX-T Firewall Application" src="../assets/nsx_t_firewall_application.jpg"></p>
 <p>VMware provide a large number of pre-defined applications for many well-known protocols and ports, including DNS, HTTP, HTTPS and SSH, among many others.</p>
 <p>If the appropriate protocol and port can not be found among those pre-defined, then custom Application Port Profiles must be created. These <strong>cannot</strong> be created directly under firewall configuration, but must be configured by selecting the Application Port Profiles option, under Security:</p>
-<p><img alt="NSX-T Application Port Profiles" src="../assets/nsx_t_application_port_profiles.jpg" /></p>
+<p><img alt="NSX-T Application Port Profiles" src="../assets/nsx_t_application_port_profiles.jpg"></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>Additional information on custom Application Port Profiles can be found in the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-32EC8B59-F042-4891-8A54-23315E565D78.html">VMware Documentation</a>.</p>
-</p>
+<p class="admonition-title">Note</p><p>Additional information on custom Application Port Profiles can be found in the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-32EC8B59-F042-4891-8A54-23315E565D78.html">VMware Documentation</a>.</p>
+
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>Familiarise with the updated display and configuration of Firewall Rules.</p>
-<p>For additional information on the configuration of firewall rules with NSX-T, consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html">VMware Documentation</a>.</p>
+<p>For additional information on the configuration of firewall rules with NSX-T, consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BE02B1A7-9191-4520-A248-D2A7D2CA640E.html">VMware Documentation</a>.</p></div>
 
   <hr>
 <div class="md-source-file">

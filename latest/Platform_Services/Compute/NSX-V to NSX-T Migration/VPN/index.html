@@ -3055,23 +3055,23 @@
 
   <h1>IPSec VPN</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>IPSec VPN services provided by NSX-T function in much the same manner as with NSX-V. However how they are displayed and configured is different. This includes changes to the options available for encryption and integrity verification.</p>
 <p>To assist with the migration to NSX-T, such differences are presented and compared.</p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>For readers unfamiliar with IPSec VPN operation, it is recommended to first read this <a href="https://www.techtarget.com/searchsecurity/definition/IPsec-Internet-Protocol-Security">guide</a>.</p>
-</p>
+<p class="admonition-title">Note</p><p>For readers unfamiliar with IPSec VPN operation, it is recommended to first read this <a href="https://www.techtarget.com/searchsecurity/definition/IPsec-Internet-Protocol-Security">guide</a>.</p>
+
 </div>
 <h2 id="nsx-v">NSX-V<a class="headerlink" href="#nsx-v" title="Permanent link">¤</a></h2>
 <p>Under NSX-V, IPSec VPN configuration is provided under the SERVICES option of Edge Gateway configuration.</p>
-<p><img alt="NSX-V VPN Global" src="../assets/nsx_v_vpn_global.jpg" /></p>
+<p><img alt="NSX-V VPN Global" src="../assets/nsx_v_vpn_global.jpg"></p>
 <p>Several options are provided for IPSec VPN configuration, including:</p>
 <ol>
 <li>Global configuration, where pre-shared keys or certificates used for peer authentication are configured.</li>
 <li>IPSec VPN Sites, where the endpoints and the specific IPSec VPN settings are configured.</li>
 </ol>
 <p>The most important IPsec VPN configuration options exist under IPSec VPN Sites:</p>
-<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_vpn_site.jpg" /></p>
+<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_vpn_site.jpg"></p>
 <p>When defining an IPSec VPN, four options are available for the encryption algorithm:</p>
 <ol>
 <li>AES</li>
@@ -3080,8 +3080,8 @@
 <li>3DES (Deprecated)</li>
 </ol>
 <div class="admonition note">
-<p class="admonition-title">Note<p>The 3DES option is deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
-</p>
+<p class="admonition-title">Note</p><p>The 3DES option is deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
+
 </div>
 <p>There are also two options available to define the integrity hash algorithm:</p>
 <ol>
@@ -3089,26 +3089,26 @@
 <li>SHA-256</li>
 </ol>
 <div class="admonition note">
-<p class="admonition-title">Note<p>SHA1 is considered deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
-</p>
+<p class="admonition-title">Note</p><p>SHA1 is considered deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
+
 </div>
 <p>Example Screenshots:</p>
-<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_ipsec_algorithms.jpg" /></p>
-<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_ipsec_hash.jpg" /></p>
+<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_ipsec_algorithms.jpg"></p>
+<p><img alt="NSX-V VPN Algorithms" src="../assets/nsx_v_ipsec_hash.jpg"></p>
 <h2 id="nsx-t">NSX-T<a class="headerlink" href="#nsx-t" title="Permanent link">¤</a></h2>
 <p>Under NSX-T, IPSec VPN configuration is available from the Edge Gateway menu, under IPSec VPN:</p>
-<p><img alt="NSX-T VPN Menu" src="../assets/nsx_t_vpn_menu.jpg" /></p>
+<p><img alt="NSX-T VPN Menu" src="../assets/nsx_t_vpn_menu.jpg"></p>
 <p>When creating an IPSec VPN, the NEW option is selected, resulting in the Add IPSec VPN Tunnel screen:</p>
-<p><img alt="NSX-T VPN Add" src="../assets/nsx_t_vpn_add.jpg" /></p>
+<p><img alt="NSX-T VPN Add" src="../assets/nsx_t_vpn_add.jpg"></p>
 <p>As highlighted, only a default option for security profile settings is available. The security profile can be customised to match required settings, but this <strong>must</strong> be completed after the IPSec VPN tunnel is first created.</p>
 <p>Peer authentication must be configured, using either a pre-shared key or a certificate, under Peer Authentication Mode. Certificates cannot be uploaded in this step and must be uploaded to vCD separately, before VPN configuration has commenced.</p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>To upload a Certificate for use with an IPSec VPN, follow the procedure documented <a href="../../NSX-T_Networks/edge_services_gateway/#add-a-certificate-to-the-edge-services-gateway">here</a>.</p>
-</p>
+<p class="admonition-title">Note</p><p>To upload a Certificate for use with an IPSec VPN, follow the procedure documented <a href="../../NSX-T_Networks/edge_services_gateway/#add-a-certificate-to-the-edge-services-gateway">here</a>.</p>
+
 </div>
 <p>Local and remote VPN endpoints must also be configured, along with the traffic to be protected by the VPN, e.g. the networks that exist on both the local and remote side of the VPN tunnel.</p>
 <p>Once the configuration has been completed and saved, the IPSec VPN tunnel can be selected using the appropriate radio button. The SECURITY PROFILE CUSTOMISATION option will then become available. This is where the required encryption and authentication parameters are configured.</p>
-<p><img alt="NSX-T VPN Customise" src="../assets/nsx_t_customise_security_profile.jpg" /></p>
+<p><img alt="NSX-T VPN Customise" src="../assets/nsx_t_customise_security_profile.jpg"></p>
 <p>From this option, custom encryption and integrity digest algorithms can be selected to match the required IPSec VPN settings.</p>
 <p>NSX-T provides additional encryption algorithms, including:</p>
 <ol>
@@ -3119,8 +3119,8 @@
 <li>AES GCM 256</li>
 </ol>
 <div class="admonition note">
-<p class="admonition-title">Note<p>The 3DES option is no longer supported with NSX-T.</p>
-</p>
+<p class="admonition-title">Note</p><p>The 3DES option is no longer supported with NSX-T.</p>
+
 </div>
 <p>NSX-T also provides additional digest algorithms for verifying integrity, including:</p>
 <ol>
@@ -3130,17 +3130,17 @@
 <li>SHA2 - 512</li>
 </ol>
 <div class="admonition note">
-<p class="admonition-title">Note<p>If a GCM encryption algorithm is selected then the digest algorithm option is disabled and cannot be selected. This is due to GCM algorithms providing built-in integrity checking and as such a separate digest algorithm is not required.</p>
-</p>
+<p class="admonition-title">Note</p><p>If a GCM encryption algorithm is selected then the digest algorithm option is disabled and cannot be selected. This is due to GCM algorithms providing built-in integrity checking and as such a separate digest algorithm is not required.</p>
+
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note<p>SHA1 is considered deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
-</p>
+<p class="admonition-title">Note</p><p>SHA1 is considered deprecated and should not be used other than for compatibility purposes, e.g. the peer endpoint supports only this option.</p>
+
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>Familiarise with the updated NSX-T user interface and IPSec VPN configuration options.</p>
 <p>Determine the impact of the migration to NSX-T on any existing IPSec VPN connections.</p>
-<p>Consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html">VMware Documentation</a> for additional information.</p>
+<p>Consult the <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html">VMware Documentation</a> for additional information.</p></div>
 
   <hr>
 <div class="md-source-file">

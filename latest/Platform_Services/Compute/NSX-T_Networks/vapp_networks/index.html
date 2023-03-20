@@ -3149,13 +3149,13 @@
 
   <h1>vApp Networks</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>In addition to virtual data centre (VDC) networking, you can create individual vApp networks to have even greater control over your network infrastructure.</p>
 <p>vApp networks enable you to create smaller networks within individual vApps that have a vApp edge, like the edge gateway on your VDC. </p>
 <p>Although a vApp edge is not as feature rich as a VDC edge, it enables you to create firewall and NAT rules to separate your VDC networks from your vApp virtual machines (VMs). This means you can create some quite complex networks to satisfy application needs.</p>
 <p>Additional information can be viewed on VMware Docs - <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B95FB8AF-C428-4FCB-88DA-5DCA35B19B5A.html">Add a Network to a vApp.</a></p>
 <p>The vApp network diagram below shows the vApp edge:</p>
-<p><img alt="vApp Edge" src="../assets/vapp_edge.png" /></p>
+<p><img alt="vApp Edge" src="../assets/vapp_edge.png"></p>
 <h3 id="vapp-network-prerequisites">vApp Network Prerequisites<a class="headerlink" href="#vapp-network-prerequisites" title="Permanent link">¤</a></h3>
 <ul>
 <li>Edge Services Gateway (ESG) inside Organisation VDC</li>
@@ -3168,21 +3168,21 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /></p>
+<p><img alt="vApp" src="../assets/vapp.png"></p>
 </li>
 <li>
 <p>Select your vApp, select <strong>Networks</strong>, then <strong>New</strong>.</p>
 </li>
 <li>
 <p>Chose Routed.</p>
-<p><img alt="vApp Routed" src="../assets/vapp_routed.png" /></p>
+<p><img alt="vApp Routed" src="../assets/vapp_routed.png"></p>
 </li>
 <li>
 <p>Connect vApp Network to VDC Network Connection. Enter a <strong>Name</strong> and <strong>Description</strong> if required for the network. In the <em>Address and DNS</em> section, fill out the fields as required for your network.</p>
 </li>
 <li>
 <p>When you're done, click <strong>Add</strong>.</p>
-<p><img alt="vApp Network" src="../assets/vapp_network.png" /></p>
+<p><img alt="vApp Network" src="../assets/vapp_network.png"></p>
 </li>
 </ol>
 <h2 id="connecting-a-virtual-machine-to-a-vapp-network">Connecting a Virtual Machine to a vApp Network<a class="headerlink" href="#connecting-a-virtual-machine-to-a-vapp-network" title="Permanent link">¤</a></h2>
@@ -3194,19 +3194,19 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /></p>
+<p><img alt="vApp" src="../assets/vapp.png"></p>
 </li>
 <li>
 <p>Select your vApp, then <strong>Virtual Machines</strong>.</p>
-<p><img alt="vApp Virtual Machines" src="../assets/vapp_virtual_machines.png" /></p>
+<p><img alt="vApp Virtual Machines" src="../assets/vapp_virtual_machines.png"></p>
 </li>
 <li>
 <p>Click each VM, under <em>Hardware</em> and in the <em>NICs</em> section, click <strong>Edit</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp_virtual_machines_nics.png" /></p>
+<p><img alt="vApp" src="../assets/vapp_virtual_machines_nics.png"></p>
 </li>
 <li>
 <p>Select the vApp network from the <strong>Network</strong> list and ensure the NIC is 'connected'.</p>
-<p><img alt="vApp" src="../assets/vapp_virtual_machines_nics_connection.png" /></p>
+<p><img alt="vApp" src="../assets/vapp_virtual_machines_nics_connection.png"></p>
 </li>
 <li>
 <p>If you want to dual-home your Virtual Machine, click the <strong>NEW</strong> button to add a second network.</p>
@@ -3227,7 +3227,7 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /> </p>
+<p><img alt="vApp" src="../assets/vapp.png"> </p>
 </li>
 <li>
 <p>Select your vApp, select <strong>Networks</strong>, then select the <em>vApp Network</em> to view the Network Settings.</p>
@@ -3237,7 +3237,7 @@
 </li>
 <li>
 <p>The <strong>IP Management</strong> heading lists the IP Settings for the network including, Static Pools, DNS, DHCP and IP Allocations. Click Edit on each heading to adjust these settings.</p>
-<p><img alt="vApp General Settings" src="../assets/vapp_network_general.png" /></p>
+<p><img alt="vApp General Settings" src="../assets/vapp_network_general.png"></p>
 </li>
 <li>
 <p>The <strong>Services</strong> heading enables you to set up Firewall and NAT rules for the vApp Network. For more information, see vApp Network Firewall and NAT Rules <a href="#vapp-network-firewall-and-nat-rules">below.</a></p>
@@ -3256,18 +3256,18 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /> </p>
+<p><img alt="vApp" src="../assets/vapp.png"> </p>
 </li>
 <li>
 <p>Select your vApp, select <strong>Networks</strong>, then select the <em>vApp Network</em> to view the Network Settings.</p>
 </li>
 <li>
 <p>Under the <strong>Services</strong> heading, select <strong>Edit</strong>.</p>
-<p><img alt="vApp Services" src="../assets/vapp_services.png" /> </p>
+<p><img alt="vApp Services" src="../assets/vapp_services.png"> </p>
 </li>
 <li>
 <p>On the <strong>Firewall</strong> tab, click <strong>Add</strong>, specify the details for the rule then click <strong>Save</strong>.</p>
-<p><img alt="vApp Firewall" src="../assets/vapp_firewall.png" /> </p>
+<p><img alt="vApp Firewall" src="../assets/vapp_firewall.png"> </p>
 </li>
 </ol>
 <h3 id="vapp-nat-rules">vApp NAT Rules<a class="headerlink" href="#vapp-nat-rules" title="Permanent link">¤</a></h3>
@@ -3280,14 +3280,14 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /> </p>
+<p><img alt="vApp" src="../assets/vapp.png"> </p>
 </li>
 <li>
 <p>Select your vApp, select <strong>Networks</strong>, then select the <em>vApp Network</em> to view the Network Settings.</p>
 </li>
 <li>
 <p>Under the <strong>Services</strong> heading, select <strong>Edit</strong>.</p>
-<p><img alt="vApp Services" src="../assets/vapp_services.png" /></p>
+<p><img alt="vApp Services" src="../assets/vapp_services.png"></p>
 </li>
 <li>
 <p>On the <strong>NAT</strong> tab, click <strong>Add</strong>.</p>
@@ -3304,7 +3304,7 @@
 </li>
 <li>
 <p>When you're done, click <strong>Save</strong>.</p>
-<p><img alt="vApp NAT" src="../assets/vapp_nat.png" /></p>
+<p><img alt="vApp NAT" src="../assets/vapp_nat.png"></p>
 </li>
 <li>
 <p>The External IP Address will be on the same subnet as the VDC network, that connects to the vApp Edge.</p>
@@ -3326,14 +3326,14 @@
 </li>
 <li>
 <p>In the left navigation panel, select <strong>vApps</strong>.</p>
-<p><img alt="vApp" src="../assets/vapp.png" /> </p>
+<p><img alt="vApp" src="../assets/vapp.png"> </p>
 </li>
 <li>
 <p>Select your vApp, select <strong>Networks</strong>, then select the <em>vApp Network</em> to view the Network Settings.</p>
 </li>
 <li>
 <p>Under the <strong>Routing</strong> heading, select <strong>Add</strong>.</p>
-<p><img alt="vApp Routing" src="../assets/vapp_routing.png" /> </p>
+<p><img alt="vApp Routing" src="../assets/vapp_routing.png"> </p>
 </li>
 <li>
 <p>In the <em>Add Static Route</em> dialog box, enter a <strong>Name</strong> for the Static Route.</p>
@@ -3345,7 +3345,7 @@
 <li><strong>Next Hop IP</strong> - The external IP address of that vApp Network's router.</li>
 <li>
 <p>When you're done, click <strong>Save</strong>.</p>
-<p><img alt="vApp Routing Add" src="../assets/vapp_routing_add.png" /> </p>
+<p><img alt="vApp Routing Add" src="../assets/vapp_routing_add.png"> </p>
 </li>
 </ul>
 </li>
@@ -3405,7 +3405,7 @@
 <td>192.168.0.101</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
   <hr>
 <div class="md-source-file">

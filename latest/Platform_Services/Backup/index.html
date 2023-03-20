@@ -3100,7 +3100,7 @@
 
   <h1>Backup</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The following information has been taken from the <strong>Veeam Backup &amp; Replication version 11 User Guide for VMware vSphere</strong> and is intended to provide relevant information regarding backups within the AUCloud environment.</p>
 <p>The full copy of the Veeam documentation can be found online <a href="https://helpcenter.veeam.com/docs/backup/vsphere/about_backup.html?ver=110">here</a> or by downloading the <a href="https://www.veeam.com/veeam_backup_11_0_user_guide_vsphere_pg.pdf">PDF</a>.</p>
 <h2 id="scale-out-backup-repositories">Scale Out Backup Repositories<a class="headerlink" href="#scale-out-backup-repositories" title="Permanent link">¤</a></h2>
@@ -3112,7 +3112,7 @@
 <li>It allows you to set up granular performance policy. For more information, see Backup File Placement.</li>
 <li>It provides practically unlimited cloud-based storage capacity: you can instruct Veeam Backup &amp; Replication to offload data from extents to the cloud for long-term storage.</li>
 </ul>
-<p><img alt="Scale Out backup" src="assets/scale_out_backup.png" /></p>
+<p><img alt="Scale Out backup" src="assets/scale_out_backup.png"></p>
 <p>A scale-out backup repository can be used for the following types of jobs and tasks:</p>
 <ul>
 <li>Backup jobs.</li>
@@ -3129,7 +3129,7 @@
 <p>For example, you have set the Performance policy for the scale-out backup repository and specified that full backup files must be stored on Extent 1 and incremental backup files must be stored on Extent 2. If before an incremental backup job session Extent 2 goes offline, the new incremental backup file will be placed to Extent 1.</p>
 <h2 id="data-locality">Data Locality<a class="headerlink" href="#data-locality" title="Permanent link">¤</a></h2>
 <p>If you set the Data locality policy for a scale-out backup repository, all backup files that belong to the same backup chain are stored on the same extent of the scale-out backup repository.</p>
-<p><img alt="Data Locality" src="assets/data_locality.png" /></p>
+<p><img alt="Data Locality" src="assets/data_locality.png"></p>
 <p>The Data locality policy does not put any limitations to backup chains. A new backup chain may be stored on the same extent or another extent. For example, if you create an active full backup, Veeam Backup &amp; Replication may store the full backup file to another extent, and all dependent incremental backup files will be stored together with this full backup file.</p>
 <h2 id="extent-selection">Extent Selection<a class="headerlink" href="#extent-selection" title="Permanent link">¤</a></h2>
 <p>To select an extent for backup file placement, Veeam Backup &amp; Replication checks the following conditions:</p>
@@ -3182,7 +3182,7 @@
 <p>Block Generation is an additional period of 10 days that is automatically added to the immutability expiration date. This period is designed to reduce the number of the requests to the object storage in cases when the immutability period of some blocks must be extended: for instance, when the blocks are being reused. Generations may grow, which happens after you offload data starting from the 11th day and up until the end of the immutability period, thereby creating new consecutive generations the period of which is also 10 days.</p>
 <h2 id="forward-incremental-backup-chain">Forward Incremental Backup Chain<a class="headerlink" href="#forward-incremental-backup-chain" title="Permanent link">¤</a></h2>
 <p>The following figure shows an example consisting of three generations; each generation has immutable blocks of data, two of which have been reused during copy.</p>
-<p><img alt="Forward Incremental Backup Chain" src="assets/forward_incremental_backup_chain.png" /></p>
+<p><img alt="Forward Incremental Backup Chain" src="assets/forward_incremental_backup_chain.png"></p>
 <p>As per example:</p>
 <p><strong>[Generation 1]</strong> On 01/01/2020, a Full Backup 1 consisting of blocks <strong>A, B, C</strong> and <strong>D</strong> has been offloaded to object storage. On 01/04/2020, the Full Backup 1 was succeeded by an Incremental Backup 1 consisting of blocks <strong>E</strong> and <strong>F</strong>.</p>
 <p>After both files have been offloaded, a backup (or backup copy) job went idle for the next 7 days. In such a scenario, blocks of these files (i.e. <strong>A, B, C, D, E</strong> and <strong>F</strong>) become part of the <strong>Generation 1.</strong></p>
@@ -3233,7 +3233,7 @@
 <li>Synchronize the backup chain state of your object storage with that of your extents, as described in Synchronizing Capacity Tier Data.</li>
 </ul>
 <p>The following figure illustrates how inactive backup chains are moved to object storage.</p>
-<p><img alt="Backup Chain" src="assets/backup_chain.png" /></p>
+<p><img alt="Backup Chain" src="assets/backup_chain.png"></p>
 <p>The Figure A demonstrates a pool of extents (A, B and C) that are added to a scale-out backup repository (SOBR) and an object storage repository that is added to the same SOBR.</p>
 <p>Suppose that the extent A has an inactive backup chain consisting of one <code>.vbk</code> file and three <code>.vib</code>  files, that is, four restore points in total. Each of these files comprises metadata (represented as green vertical blocks) and the actual blocks of data (represented as yellow squares). During the offload session, Veeam Backup &amp; Replication will collect all the orange squares — that is, the actual blocks of data — from all the backup files (<code>.vbk</code> and <code>.vib</code> ) and offload these blocks to the object storage repository represented in the Figure B.</p>
 <p>Each offloaded block might be of different size, which is defined during configuring storage optimization. The offloaded blocks are placed to the blocks directory in your object storage repository.</p>
@@ -3252,7 +3252,7 @@
 <p>Once the backup chain becomes inactive (or sealed) and exceeds the operational restore window, data blocks will be removed from each associated backup file in such an inactive on-premises backup chain and only metadata will be preserved. Such a behavior mimics data movement, but instead of moving data that was already copied, Veeam Backup &amp; Replication simply purges associated data blocks from the extents, thereby saving traffic and reducing costs that might be incurred by your storage provider for performing read/write operations.</p>
 <p>The following figure shows an example in which both options are enabled, suggesting that each backup file has been copied to object storage upon its creation.</p>
 <p>The backup chain on the left becomes inactive after a new full backup file is created and consists of one <code>.vbk</code> file and five <code>.vib</code>  files. Since only the first four backup files (represented as grey blocks) in this inactive backup chain exceed the operational restore window, Veeam Backup &amp; Replication removes blocks of data from these four files only and leaves the other two <code>.vib</code>  files (created on Thursday and Friday) as they are until the operational restore window moves forward, and so on.</p>
-<p><img alt="Copy and Move" src="assets/copy_and_move.png" /></p>
+<p><img alt="Copy and Move" src="assets/copy_and_move.png"></p>
 <p>After copy is complete, the new Object Storage node appears in the Home view, under the Backups node and shows backups that have been copied to object storage.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3275,7 +3275,7 @@
 <li>The Figure A represents an object storage repository containing blocks of data to be copied.</li>
 <li>The Figure B represents extents that store backup files with metadata to be replenished.</li>
 </ul>
-<p><img alt="Store Backup" src="assets/store_backup.png" /></p>
+<p><img alt="Store Backup" src="assets/store_backup.png"></p>
 <h2 id="backup-chain-legitimacy">Backup Chain Legitimacy<a class="headerlink" href="#backup-chain-legitimacy" title="Permanent link">¤</a></h2>
 <p>Before moving data to object storage repositories, Veeam Backup &amp; Replication scale-out repository validates the backup chain state to ensure that the restore points to be moved belong to an inactive backup chain. This does not apply to the copy policy: all newly created restore points are copied immediately.</p>
 <h2 id="inactive-backup-chain-of-a-backup-job">Inactive Backup Chain of a Backup Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-job" title="Permanent link">¤</a></h2>
@@ -3285,7 +3285,7 @@
 <p>To transform an active backup chain into inactive, a new Active Full (or Synthetic Full) backup file must be created for such a chain. This can be done either manually, as described in Performing Active Full Backup, or you can configure a schedule, according to which new active full backups will be created automatically, as described in Active Full Backup.</p>
 <p>Once a new full backup file is created and the offload session is being executed, Veeam Backup &amp; Replication collects all the restore points (full and incremental) that were created prior to the latest active full, and prepares them to be moved to the object storage repository, as described in Moving Inactive Backup Chains to Object Storage.</p>
 <p>The following figure shows both inactive and active backup chains created with the incremental method. The inactive backup chain consisting of one <code>.vbk</code> file and five <code>.vib</code>  files can easily be offloaded once it satisfies validation criteria, whereas the active backup chain consisting of a <code>.vbk</code> file and a <code>.vib</code>  file would continue to grow with another incremental backups until it is reset by another full backup and so on.</p>
-<p><img alt="Inactive and Active" src="assets/inactive_active.png" /></p>
+<p><img alt="Inactive and Active" src="assets/inactive_active.png"></p>
 <p>The same applies to backup chains created with the reverse-incremental method, except for in this method, all the <code>.vrb</code> files starting from the third restore point will be considered inactive automatically, as illustrated in the Figure A below. That said, you do not have to create an Active Full (nor Synthetic Full) backup manually unless you want to offload all the restore points including a <code>.vbk</code> file and the first two <code>.vrb</code> files, as illustrated in the Figure B.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3296,7 +3296,7 @@
 <li>The Figure A shows a backup chain consisting of 1 <code>.vbk</code> file and 6 <code>.vrb</code> files, of which only 4 <code>.vrb</code> files (represented as gray blocks) can be offloaded.</li>
 <li>The Figure B shows a backup chain consisting of 2 <code>.vbk</code> files and 7 <code>.vrb</code> files, of which only 6 <code>.vrb</code> files and a <code>.vbk</code> file (also represented as gray blocks) can be offloaded.</li>
 </ul>
-<p><img alt="Figure A and B" src="assets/figures.png" /></p>
+<p><img alt="Figure A and B" src="assets/figures.png"></p>
 <p>Backup chains can be of a different structure, depending on whether your backups were created using the perVM method or as a single storage; when all VMs are placed into a single file. Both structure types can be offloaded to object storage repositories as long as these types are inactive.</p>
 <p>For more information on how Veeam Backup &amp; Replication creates and manages backup chains, see Backup Chain.</p>
 <h2 id="inactive-backup-chain-of-a-backup-copy-job">Inactive Backup Chain of a Backup Copy Job<a class="headerlink" href="#inactive-backup-chain-of-a-backup-copy-job" title="Permanent link">¤</a></h2>
@@ -3318,7 +3318,7 @@
 - Full backup files (<code>.vbk</code>) that have not been assigned any GFS flag.
 - Incremental backup files (<code>.vib</code>).</p>
 </div>
-<p><img alt="Figure A and B" src="assets/figures2.png" /></p>
+<p><img alt="Figure A and B" src="assets/figures2.png"></p>
 <h2 id="retention-policy">Retention Policy<a class="headerlink" href="#retention-policy" title="Permanent link">¤</a></h2>
 <p>A retention policy defines the number of restore points to keep on your extents and is configured in the Specify Backup Storage Settings step of the backup job configuration wizard.</p>
 <p>The restore points that fall under the retention policy will be removed from both the extents and object storage repositories in the following manner:</p>
@@ -3335,7 +3335,7 @@
 <p>For more information about immutability, see <a href="#immutability">Immutability</a>.</p>
 <ul>
 <li>Associated indexes will be updated for consistency purposes.</li>
-</ul>
+</ul></div>
 
   <hr>
 <div class="md-source-file">

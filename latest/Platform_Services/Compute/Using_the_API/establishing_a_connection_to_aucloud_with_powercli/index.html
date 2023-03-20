@@ -3013,7 +3013,7 @@
 
   <h1>Establishing a connection to AUCloud platform via PowerCLI</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>VMware PowerCLI is a Microsoft PowerShell based command line interface tool which was developed by VMware to manage and automate tasks on various VMware platforms such as vSphere, VMware Cloud Director, Horizon, etc.</p>
 <p>The latest version of PowerCLI is available from the <a href="https://developer.vmware.com/powercli">VMware website.</a></p>
 <p>If your system has connection to the internet, you can perform the following to install the PowerCLI module:</p>
@@ -3024,13 +3024,13 @@
 <li>Selecting API Management under your User ICON in the top right menu</li>
 <li>Select the Cloud Services tab.</li>
 </ol>
-<p>Below are screenshots for details:<br />
-<img alt="API Management" src="../assets/api_management.JPG" /></p>
-<p><img alt="VMware Cloud Director Doc" src="../assets/vcloud_services.JPG" /></p>
+<p>Below are screenshots for details:<br>
+<img alt="API Management" src="../assets/api_management.JPG"></p>
+<p><img alt="VMware Cloud Director Doc" src="../assets/vcloud_services.JPG"></p>
 <p>The API Url is listed in <code>https://&lt;address\&gt;</code> format and the Username is listed in <code>User-Id_@_Org-Id</code> format.</p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>There are two methods to authenticate with VMware Cloud Director using PowerCLI: username/password or session token. Both methods are discussed in this document.</p>
-</p>
+<p class="admonition-title">Note</p><p>There are two methods to authenticate with VMware Cloud Director using PowerCLI: username/password or session token. Both methods are discussed in this document.</p>
+
 </div>
 <p>To establish a connection to AUCloud platform via username and password, perform the following command:</p>
 <p><code>&gt; Connect-CIServer -Server &lt;API-Url&gt; \-org &lt;Org-Id&gt; \-User &lt;User-Id&gt; \-Password &lt;Portal\_Password&gt;</code></p>
@@ -3041,35 +3041,35 @@
 <p><strong>Org-Id</strong> : enter the <em>Org-Id</em> listed under username</p>
 </div>
 <p>To establish a connection to the AUCloud platform via session token, first, a session token must be generated. This can be achieved using the following PowerShell module :</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$Global:Authorization</span> <span class="p">=</span> <span class="s2">&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$Global:Authorization</span> <span class="p">=</span> <span class="s2">""</span>
 
-<span class="nv">$Global:Accept</span> <span class="p">=</span> <span class="s2">&quot;application/*+xml;version=36.3&quot;</span>
+<span class="nv">$Global:Accept</span> <span class="p">=</span> <span class="s2">"application/*+xml;version=36.3"</span>
 
-<span class="nv">$Global:xvCloudAuthorization</span> <span class="p">=</span> <span class="s2">&quot;&quot;</span>
+<span class="nv">$Global:xvCloudAuthorization</span> <span class="p">=</span> <span class="s2">""</span>
 
 <span class="k">Function</span> <span class="nb">New-CloudToken</span><span class="p">(</span><span class="nv">$Username</span><span class="p">,</span><span class="nv">$Password</span><span class="p">,</span><span class="nv">$URL</span><span class="p">)</span>
 
 <span class="p">{</span>  
 
-    <span class="nv">$Pair</span> <span class="p">=</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$Username</span><span class="p">)</span><span class="s2">:</span><span class="p">$(</span><span class="nv">$Password</span><span class="p">)</span><span class="s2">&quot;</span>
+    <span class="nv">$Pair</span> <span class="p">=</span> <span class="s2">"</span><span class="p">$(</span><span class="nv">$Username</span><span class="p">)</span><span class="s2">:</span><span class="p">$(</span><span class="nv">$Password</span><span class="p">)</span><span class="s2">"</span>
 
     <span class="nv">$Bytes</span> <span class="p">=</span> <span class="no">[System.Text.Encoding]</span><span class="p">::</span><span class="n">ASCII</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="nv">$Pair</span><span class="p">)</span>
 
     <span class="nv">$Base64</span> <span class="p">=</span> <span class="no">[System.Convert]</span><span class="p">::</span><span class="n">ToBase64String</span><span class="p">(</span><span class="nv">$Bytes</span><span class="p">)</span>
 
-    <span class="nv">$Global:Authorization</span> <span class="p">=</span> <span class="s2">&quot;Basic $base64&quot;</span>
+    <span class="nv">$Global:Authorization</span> <span class="p">=</span> <span class="s2">"Basic $base64"</span>
 
     <span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="n">Authorization</span> <span class="p">=</span> <span class="nv">$Global:Authorization</span><span class="p">;</span> <span class="n">Accept</span> <span class="p">=</span> <span class="nv">$Global:Accept</span><span class="p">}</span>
 
-    <span class="nv">$Res</span> <span class="p">=</span> <span class="nb">Invoke-WebRequest</span> <span class="n">-Method</span> <span class="n">Post</span> <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="n">-Uri</span> <span class="s2">&quot;https://</span><span class="p">$(</span><span class="nv">$URL</span><span class="p">)</span><span class="s2">/api/sessions&quot;</span>
+    <span class="nv">$Res</span> <span class="p">=</span> <span class="nb">Invoke-WebRequest</span> <span class="n">-Method</span> <span class="n">Post</span> <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="n">-Uri</span> <span class="s2">"https://</span><span class="p">$(</span><span class="nv">$URL</span><span class="p">)</span><span class="s2">/api/sessions"</span>
 
     <span class="nv">$Global:Server</span> <span class="p">=</span> <span class="p">$(</span><span class="nv">$URL</span><span class="p">)</span>
 
-    <span class="nv">$Global:SessionID</span> <span class="p">=</span> <span class="nv">$res</span><span class="p">.</span><span class="n">headers</span><span class="p">[</span><span class="s2">&quot;X-Vcloud-Authorization&quot;</span><span class="p">]</span>
+    <span class="nv">$Global:SessionID</span> <span class="p">=</span> <span class="nv">$res</span><span class="p">.</span><span class="n">headers</span><span class="p">[</span><span class="s2">"X-Vcloud-Authorization"</span><span class="p">]</span>
 
-    <span class="nb">Write-Output</span> <span class="s2">&quot;$SessionID&quot;</span>
+    <span class="nb">Write-Output</span> <span class="s2">"$SessionID"</span>
 
-    <span class="nb">Write-Output</span> <span class="s2">&quot;$Server&quot;</span>
+    <span class="nb">Write-Output</span> <span class="s2">"$Server"</span>
 
 <span class="p">}</span>
 </code></pre></div>
@@ -3088,14 +3088,14 @@
 <p><strong>User-Id</strong> :  enter the <em>User-Id</em> including <em>@Org-Id</em></p>
 </div>
 <p>A new session token, along with the API-URL will be the output of this command : </p>
-<p><img alt="Output Example" src="../assets/connection_example.jpg" /></p>
+<p><img alt="Output Example" src="../assets/connection_example.jpg"></p>
 <p>In the example above, "71337106a838432097fbf78d869194e6" is the Session-Token and "api-vcd-sz201.eportal.australiacloud.com.au" is the API-URL.</p>
 <p>Using this information, you can then establish a connection to the AUCloud platform by performing the following command.</p>
 <p><code>&gt; Connect-CIServer -Server &lt;API-URL&gt; -Session &lt;Session-Token&gt;</code></p>
 <p>Once connected, you can start using PowerCLI commands to retrieve information/manage the ecosystem within your vDC Organisation. To verify that you have logged in to the environment successfully, you can perform a simple command line to retrieve all VMs in your tenancy by running the command below :</p>
 <p><code>&gt; Get-CIVM</code></p>
 <p>Example of the output:</p>
-<p><img alt="Output Example" src="../assets/output_example.png" /></p>
+<p><img alt="Output Example" src="../assets/output_example.png"></p></div>
 
   <hr>
 <div class="md-source-file">

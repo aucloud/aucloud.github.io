@@ -3041,7 +3041,7 @@
 
   <h1>Windows Server Licensing</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>Windows Server licensing for VMs in shared environments must be provided by AUCloud via the Microsoft Service Provider License Agreement (SPLA).</p>
 <p>VMs using the Windows Server OS need to connect to AUCloud’s KMS server to activate the product key to validate that the license has been applied.</p>
 <h2 id="activating-windows-licensing-on-aucloud-server-templates">Activating Windows Licensing on AUCloud Server templates<a class="headerlink" href="#activating-windows-licensing-on-aucloud-server-templates" title="Permanent link">¤</a></h2>
@@ -3091,22 +3091,22 @@ If your VM(s) are located in Sydney (SSZ), please use the Sydney KMS server targ
 <p><code>slmgr.vbs /skms 103.109.112.109</code>
 (or use the Sydney KMS server target if applicable)</p>
 <p>Confirmation will be received that the KMS machine name has been set successfully</p>
-<p><img alt="Windows Script Host" src="../assets/windows_script_host.png" /></p>
+<p><img alt="Windows Script Host" src="../assets/windows_script_host.png"></p>
 <p>Initiate the activation by entering the following:</p>
 <p><code>slmgr.vbs /ato</code></p>
 <p>Confirmation will be received that the product has been activated successfully</p>
-<p><img alt="confirmation" src="../assets/confirmation.png" /></p>
+<p><img alt="confirmation" src="../assets/confirmation.png"></p>
 <p>The Server license key has now been activated, to verify the activation, enter the following:</p>
 <p><code>slmgr.vbs /dlv</code></p>
 <p>The output will display a window detailing the server’s licensing configuration.</p>
 <p>On the dashboard of the local server, the Product ID will be displayed</p>
-<p><img alt="properties" src="../assets/properties.png" /></p>
+<p><img alt="properties" src="../assets/properties.png"></p>
 <h2 id="if-your-vm-has-an-existing-mak-key-change-this-to-kms">If your VM has an existing MAK Key, change this to KMS.<a class="headerlink" href="#if-your-vm-has-an-existing-mak-key-change-this-to-kms" title="Permanent link">¤</a></h2>
 <p>To change to a KMS activation from your MAK type:</p>
 <p>Run these commands:</p>
 <p><code>slmgr /ipk</code> (insert Generic Volume Licence Key - see <a href="https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys">here</a> for reference)
 <code>slmgr.vbs /skms</code> (insert Canberra or Sydney KMS Server <a href="../../../reference_urls/#aucloud-kms-server">IP</a>)
-<code>slmgr.vbs /ato</code></p>
+<code>slmgr.vbs /ato</code></p></div>
 
   <hr>
 <div class="md-source-file">

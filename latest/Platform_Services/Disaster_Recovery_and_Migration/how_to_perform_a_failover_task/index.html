@@ -3039,17 +3039,17 @@
 
   <h1>How to perform a failover task</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>You perform a disaster recovery operation of a Virtual Machine to the Target site if the protected source is unavailable.  </p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
 <p>Verify that the vApp containing the Virtual Machine is protected on your destination site.  </p>
 <h2 id="performing-a-failover-task">Performing a failover task<a class="headerlink" href="#performing-a-failover-task" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>In VMware Cloud Director Availability Portal, either from the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the virtual machine that you wish to failover, click <strong>All Actions</strong> and then click <strong>Failover</strong>. The <strong>Failover</strong> wizard opens.</p>
+<p>In VMware Cloud Director Availability Portal, either from the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the virtual machine that you wish to failover, click <strong>All Actions</strong> and then click <strong>Failover</strong>. If you are prompted to enter your availability service account credentials for the incoming/outgoing site, do so. The <strong>Failover</strong> wizard opens.</p>
 </li>
 <li>
-<p>In the Recovery Settings tab, use the options to configure the task and click <strong>Next.</strong></p>
+<p>In the Recovery Settings tab, use the options to configure the task and click <strong>Next</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -3070,14 +3070,18 @@
 <td>Network settings</td>
 <td><ul><li>Select the Apply preconfigured network settings on failover option, so that the network configured during the virtual machine replication is assigned</li><li>Select the Connect all VMs to network option and select a network from the drop-down menu</li></ul><p></p>The replicated virtual machine connects to the network that you selected</td>
 </tr>
+<tr>
+<td>VDC compute and sizing policy</td>
+<td>Select any specific compute and sizing policies for your VDC VM placement or VDC VM sizing</td>
+</tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>On the Recovery Instance page, configure the recovery point in time and click Next.</p>
+<p>On the Recovery Instance page, configure the recovery point in time and click <strong>Next</strong>.</p>
 </li>
 <li>
-<p>On the Ready to Complete page, review the test details and click Finish to initiate the Failover task. You can monitor the progress of the task either in the Incoming Replications or the Outgoing Replications pane.</p>
+<p>On the Ready to Complete page, review your selected settings click Finish to initiate the Failover task. You can monitor the progress of the task either in the Incoming Replications or the Outgoing Replications pane.</p>
 <ul>
 <li>The failed over vApp is running on your destination site. The vApp is no longer protected upon the task completion.</li>
 </ul>
@@ -3085,14 +3089,14 @@
 <li>
 <p>What to do next: You can reverse the vApp back to your source site environment or delete the vApp replication. If you delete the replication, it is no longer protected by the solution, and disappears from the vApps list.</p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
       
     
   </small>

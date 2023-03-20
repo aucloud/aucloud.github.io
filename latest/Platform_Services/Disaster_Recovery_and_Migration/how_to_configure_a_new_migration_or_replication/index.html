@@ -3025,7 +3025,7 @@
 
   <h1>How to configure a new migration</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>To protect a vApp or a virtual machine from one organisation to another, you configure a replication by using VMware Cloud Director Availability.</p>
 <p>To migrate the workload of a vApp or a virtual machine to a remote organisation, and run your operations from the remote organisation, you configure a migration by using the portal.</p>
 <p>When you configure a protection, you set the Recovery Point Objective (RPO) to determine the maximum data loss that you can tolerate. For example, an RPO of 1 hour seeks to ensure that a virtual machine loses the data for no more than 1 hour during the recovery. For smaller RPO values, less data is lost in a recovery, but more network bandwidth is consumed keeping the replica up to date.</p>
@@ -3039,44 +3039,44 @@
 <ol>
 <li>
 <p>From the side menu in your Availability service in the AUCloud Portal, select either <strong>Incoming Replication</strong> or <strong>Outgoing Replication</strong>.</p>
-<p><img alt="Replication selection" src="../assets/ReplicationSelection.png" /></p>
+<p><img alt="Replication selection" src="../assets/ReplicationSelection.png"></p>
 </li>
 <li>
 <p>Click the <strong>Migration</strong> symbol.</p>
-<p><img alt="New Migration" src="../assets/NewMigration.jpg" /></p>
+<p><img alt="New Migration" src="../assets/NewMigration.jpg"></p>
 </li>
 <li>
 <p>You will be prompted for your VMware Cloud Availability credentials for the source (incoming replication) or destination (outgoing replication) data centre. Enter your vCav credentials and click <strong>LOGIN</strong></p>
-<p><img alt="vCav Credentials" src="../assets/vCAVCredentials.png" /></p>
+<p><img alt="vCav Credentials" src="../assets/vCAVCredentials.png"></p>
 </li>
 <li>
 <p>The <strong>New Migration</strong> wizard appears.</p>
 </li>
 <li>
 <p>Select the Source site (incoming replication) or Destination site (outgoing replication).</p>
-<p><img alt="Source site" src="../assets/Sourcesite.jpg" /></p>
+<p><img alt="Source site" src="../assets/Sourcesite.jpg"></p>
 </li>
 <li>
 <p>Select whether you would like to explore vApps or VMs, then select the vApp/VMs that you would like to protect and click <strong>Next</strong>.</p>
-<p><img alt="vms vapps" src="../assets/vm_vapps.png" />  </p>
+<p><img alt="vms vapps" src="../assets/vm_vapps.png">  </p>
 </li>
 <li>
 <p>Select the target VDC as well as the storage policy and click <strong>Next</strong>.</p>
-<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicy.png" /></p>
+<p><img alt="destination VDC and Storage policy" src="../assets/destinationVDCandStoragepolicy.png"></p>
 </li>
 <li>
 <p>You can also use additional settings related to your Migration, as per the image below.</p>
-<p><img alt="settings" src="../assets/Settings.png" /></p>
+<p><img alt="settings" src="../assets/Settings.png"></p>
 </li>
 <li>
 <p>Review the setting in Ready to Complete and click Finish to proceed with the migration.</p>
-<p><img alt="complete" src="../assets/complete.png" />  </p>
+<p><img alt="complete" src="../assets/complete.png">  </p>
 </li>
 <li>
 <p>Your vApp/vm will then appear in the incoming or outgoing replications tabs (depending on which you select) and will be ready for failover or test failover.</p>
-<p><img alt="incoming outgoing" src="../assets/incoming_outgoing.png" /></p>
+<p><img alt="incoming outgoing" src="../assets/incoming_outgoing.png"></p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">

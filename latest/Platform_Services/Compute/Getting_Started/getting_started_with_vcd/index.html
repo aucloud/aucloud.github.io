@@ -3083,7 +3083,7 @@
 
   <h1>Getting Started with VMware Cloud Director</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>This guide leads you through the three basic steps for using VMware Cloud Director to quickly build a simple virtual machine (VM) and connect it to the internet.</p>
 <p>The three steps covered in this guide are:</p>
 <ol>
@@ -3111,26 +3111,26 @@
 </li>
 <li>
 <p>In the Portal navigation panel, expand VMware Cloud Director and then select the compute service in which you want to create your VM.</p>
-<p><img alt="Select the service" src="../assets/network_001.png" /></p>
+<p><img alt="Select the service" src="../assets/network_001.png"></p>
 </li>
 <li>
 <p>On the VMware Cloud Director tab, enter your Portal password and click Confirm.</p>
-<p><img alt="Enter Portal password" src="../assets/network_002.png" /></p>
+<p><img alt="Enter Portal password" src="../assets/network_002.png"></p>
 </li>
 <li>
 <p>In the VMware Cloud Director dashboard, select your VDC.</p>
 </li>
 <li>
 <p>In the left navigation panel, select Networks.</p>
-<p><img alt="Select Networks" src="../assets/network_003.png" /></p>
+<p><img alt="Select Networks" src="../assets/network_003.png"></p>
 </li>
 <li>
 <p>To create a new network, click the New button.</p>
-<p><img alt="Select Networks" src="../assets/network_004.png" /></p>
+<p><img alt="Select Networks" src="../assets/network_004.png"></p>
 </li>
 <li>
 <p>Select Routed as the network type as in this example you want your VM to connect to the internet.</p>
-<p><img alt="Select Routed" src="../assets/network_005.png" /></p>
+<p><img alt="Select Routed" src="../assets/network_005.png"></p>
 </li>
 <li>
 <p>Click Next.</p>
@@ -3138,7 +3138,7 @@
 <li>
 <p>When you connect a network to the outside world, it's important that you control exactly what can access your environment via that network. VMware Cloud Director uses edge gateways to do this.</p>
 <p>In the Edge Connection page, select the edge that you want your new network to use.</p>
-<p><img alt="Select edge" src="../assets/network_006.png" /></p>
+<p><img alt="Select edge" src="../assets/network_006.png"></p>
 </li>
 <li>
 <p>In the General page, give the network a Name and Description.</p>
@@ -3148,7 +3148,7 @@
 </li>
 <li>
 <p>You can make your network available to other VDCs within the same region so that VMs can communicate with each other, regardless of which VDC they are in. Select Shared to enable this feature.</p>
-<p><img alt="Select Shared" src="../assets/network_007.png" /></p>
+<p><img alt="Select Shared" src="../assets/network_007.png"></p>
 </li>
 <li>
 <p>Click Next.</p>
@@ -3156,21 +3156,21 @@
 <li>
 <p>A VM needs an IP address to identify it on the network.</p>
 <p>In the Static IP Pools page, identify the range of IP addresses that VMs connecting to this network can use then click Add. For example, if your Gateway CIDR is 192.168.1.0/24, you can use the 192.168.1.10-192.168.1.100 range for your static IP pool, giving 91 usable internal IP addresses.</p>
-<p><img alt="Identify IP range" src="../assets/network_008.png" /></p>
+<p><img alt="Identify IP range" src="../assets/network_008.png"></p>
 </li>
 <li>
 <p>Click Next.</p>
 </li>
 <li>
 <p>In the DNS page, enter your DNS information.</p>
-<p><img alt="Enter DNS information" src="../assets/network_009.png" /></p>
+<p><img alt="Enter DNS information" src="../assets/network_009.png"></p>
 </li>
 <li>
 <p>Click Next.</p>
 </li>
 <li>
 <p>In the Ready to Complete page, review your selections then click Finish.</p>
-<p><img alt="Complete and Finish" src="../assets/network_010.png" /></p>
+<p><img alt="Complete and Finish" src="../assets/network_010.png"></p>
 </li>
 </ol>
 <h2 id="configure-the-edge-gateway">Configure the edge gateway<a class="headerlink" href="#configure-the-edge-gateway" title="Permanent link">¤</a></h2>
@@ -3181,30 +3181,30 @@
 </li>
 <li>
 <p>This time you're working with the edge gateway, so in the left navigation panel, click Edges.</p>
-<p><img alt="Click Edges" src="../assets/network_011.png" /></p>
+<p><img alt="Click Edges" src="../assets/network_011.png"></p>
 </li>
 <li>
 <p>Select the edge gateway you want to work with and click the Services button.</p>
-<p><img alt="Click Services" src="../assets/network_012.png" /></p>
+<p><img alt="Click Services" src="../assets/network_012.png"></p>
 </li>
 <li>
 <p>Each tab in the Edge Gateway dialog box provides access to a different service provided by the edge gateway. The main tabs are:</p>
-<p><img alt="Edge Gateway tabs" src="../assets/network_013.png" /></p>
+<p><img alt="Edge Gateway tabs" src="../assets/network_013.png"></p>
 </li>
 <li>
 <p>In the VMware Cloud Director Virtual Datacenters dashboard, select your VDC.</p>
 </li>
 <li>
 <p>This time you're working with the edge gateway, so in the left navigation panel, click Edges.</p>
-<p><img alt="Click Edges" src="../assets/network_011.png" /></p>
+<p><img alt="Click Edges" src="../assets/network_011.png"></p>
 </li>
 <li>
 <p>Select the edge gateway you want to work with and click the Services button.</p>
-<p><img alt="Click Services" src="../assets/network_012.png" /></p>
+<p><img alt="Click Services" src="../assets/network_012.png"></p>
 </li>
 <li>
 <p>Each tab in the Edge Gateway dialog box provides access to a different service provided by the edge gateway. The main tabs are:</p>
-<p><img alt="Edge Gateway tabs" src="../assets/network_013.png" /></p>
+<p><img alt="Edge Gateway tabs" src="../assets/network_013.png"></p>
 </li>
 <li>
 <p><strong>Firewall</strong> - As well as a physical firewall, you can control which networks and ports can communicate through the edge gateway. You'll set up some firewall rules later in this exercise.</p>
@@ -3224,11 +3224,11 @@
 </li>
 <li>
 <p>Make sure the Enabled option is selected.</p>
-<p><img alt="Enable Firewall" src="../assets/firewall_001.png" /></p>
+<p><img alt="Enable Firewall" src="../assets/firewall_001.png"></p>
 </li>
 <li>
 <p>Click the + button to add a new row to the firewall rules table.</p>
-<p><img alt="Add Rule" src="../assets/firewall_002.png" /></p>
+<p><img alt="Add Rule" src="../assets/firewall_002.png"></p>
 </li>
 <li>
 <p>Edit the values in the row for the New Rule using the settings below:</p>
@@ -3242,18 +3242,18 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 <li>Source Port - any</li>
 <li>Destination Port - 443</li>
 </ul>
-<p><img alt="Add Service" src="../assets/firewall_003.png" /></p>
+<p><img alt="Add Service" src="../assets/firewall_003.png"></p>
 <ul>
 <li>Click Keep when you're done.</li>
 <li>Action - Accept</li>
 </ul>
 <p>These settings allow traffic from the VMs (Source = internal) to reach destinations outside your VDC (Destination = external) on port 443 (HTTPS). You'll need to repeat these steps for ports 80 (HTTP) and 53 (DNS).</p>
 <p>You can also allow traffic to reach your VMs from outside your VDC by swapping the Source and Destination values. However, because this opens up your firewall to a lot of traffic, we recommend that you first complete this guide to get comfortable with general networking concepts, and then take a look at the information in <a href="../../NSX-V_Networks/how_to_create_firewall_rules/">How to create firewall rules</a> where you can find out how to lock the firewall down.</p>
-<p><img alt="New Rule" src="../assets/firewall_004.png" /></p>
+<p><img alt="New Rule" src="../assets/firewall_004.png"></p>
 </li>
 <li>
 <p>Click Save changes.</p>
-<p><img alt="Save changes" src="../assets/firewall_005.png" /></p>
+<p><img alt="Save changes" src="../assets/firewall_005.png"></p>
 </li>
 </ol>
 <h2 id="creating-nat-rules">Creating NAT rules<a class="headerlink" href="#creating-nat-rules" title="Permanent link">¤</a></h2>
@@ -3261,11 +3261,11 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 <ol>
 <li>
 <p>In the Edge Gateways dialog box, select the NAT tab.</p>
-<p><img alt="Select NAT tab" src="../assets/firewall_006.png" /></p>
+<p><img alt="Select NAT tab" src="../assets/firewall_006.png"></p>
 </li>
 <li>
 <p>In the NAT44 Rules section, click the SNAT Rule button to create a source NAT (SNAT) rule to translate internal IP addresses into something that the external network can understand.</p>
-<p><img alt="SNAT Rule" src="../assets/firewall_007.png" /></p>
+<p><img alt="SNAT Rule" src="../assets/firewall_007.png"></p>
 </li>
 <li>
 <p>In the Add SNAT Rule dialog box, from the Applied on list, choose the edge gateway to which you want to apply the SNAT rule.</p>
@@ -3276,11 +3276,11 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 <li>
 <p>In the Translated Source IP/Range field, enter one or more of the external IP addresses provided to you by AUCloud.</p>
 <p>If you are not sure what your IP addresses are, see <a href="../../NSX-V_Networks/how_to_find_allocated_external_ip_addresses/">How to find your allocated external IP addresses</a>.</p>
-<p><img alt="Add SNAT Rule" src="../assets/firewall_008.png" /></p>
+<p><img alt="Add SNAT Rule" src="../assets/firewall_008.png"></p>
 </li>
 <li>
 <p>When you're done, click Keep and then Save changes.</p>
-<p><img alt="Save changes" src="../assets/firewall_009.png" /></p>
+<p><img alt="Save changes" src="../assets/firewall_009.png"></p>
 </li>
 </ol>
 <p>You can also add destination NAT (DNAT) rules to translate external IP addresses to route traffic to the appropriate internal addresses. However, because the firewall only provides outbound access to the internet, we do not need to add DNAT rules at the moment.</p>
@@ -3293,18 +3293,18 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 </li>
 <li>
 <p>In the left navigation panel, click vApps.</p>
-<p><img alt="Click vApps" src="../assets/vm_001.png" /></p>
+<p><img alt="Click vApps" src="../assets/vm_001.png"></p>
 </li>
 <li>
 <p>In this exercise, you'll create the vApp from scratch, so click New vApp.</p>
-<p><img alt="Click vApps" src="../assets/vm_002.png" /></p>
+<p><img alt="Click vApps" src="../assets/vm_002.png"></p>
 </li>
 <li>
 <p>In the New vApp dialog box, give the vApp a Name and Description.</p>
 </li>
 <li>
 <p>Click Add Virtual Machine.</p>
-<p><img alt="Add Virtual Machine" src="../assets/vm_003.png" /></p>
+<p><img alt="Add Virtual Machine" src="../assets/vm_003.png"></p>
 </li>
 <li>
 <p>In the New VM dialog box, you can create your VM. Enter a Name, Computer Name and Description for the VM.</p>
@@ -3323,28 +3323,28 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 </li>
 <li>
 <p>There are some more configuration tasks to complete for your new VM, so in the left navigation panel, select Virtual Machines to list all the VMs in the VDC.</p>
-<p><img alt="Select Virtual Machine" src="../assets/vm_004.png" /></p>
+<p><img alt="Select Virtual Machine" src="../assets/vm_004.png"></p>
 </li>
 <li>
 <p>In the card for your new VM, click Details.</p>
 </li>
 <li>
 <p>In the General section, you can click edit and change the VM name in the Name field but keep the default Storage Policy option.</p>
-<p><img alt="Edit Virtual Machine" src="../assets/vm_005.png" /></p>
+<p><img alt="Edit Virtual Machine" src="../assets/vm_005.png"></p>
 </li>
 <li>
 <p>Under the Hardware section, click NICs, then click Edit and select the externally routed Network you created in the first exercise.</p>
 </li>
 <li>
 <p>From the IP Mode list, choose Static - IP Pool to use the IP pool you defined earlier when you created your network.</p>
-<p><img alt="Edit NICs" src="../assets/vm_006.png" /></p>
+<p><img alt="Edit NICs" src="../assets/vm_006.png"></p>
 </li>
 <li>
 <p>You do not need to change anything in the other sections, so click Save.</p>
 </li>
 <li>
 <p>If your VM is not already powered on, in the card for the VM, select Actions, Power then Power On, Force re-customization.</p>
-<p><img alt="Power On" src="../assets/vm_007.png" /></p>
+<p><img alt="Power On" src="../assets/vm_007.png"></p>
 </li>
 <li>
 <p>Click the Actions &gt; VM Console, Launch Web Console and go through the setup procedure.</p>
@@ -3361,7 +3361,7 @@ Click + (Add object) button, select Internal, click the right arrow button, then
 <li>
 <p>Ping the IP address of your DNS (for example, 8.8.8.8) through the command line.</p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">

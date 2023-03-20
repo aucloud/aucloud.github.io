@@ -3053,13 +3053,19 @@
 
   <h1>How to perform a reverse task</h1>
 
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
-<p>Verify that you have performed a Failover task to the vApp before starting the Reverse task.<br />
+<div><h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
+<p>Verify that you have performed a Failover task to the vApp before starting the Reverse task.<br>
 </p>
 <h2 id="performing-a-reverse-task">Performing a reverse task<a class="headerlink" href="#performing-a-reverse-task" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, and click Reverse. A Reverse pop-up window displays to Confirm the reverse operation.</p>
+<p>In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, then click <strong>All Actions</strong> and select <strong>Reverse</strong>. </p>
+</li>
+<li>
+<p>Enter your availability service account credentials if prompted.</p>
+</li>
+<li>
+<p>A Reverse pop-up window displays. Select <strong>Reverse</strong> to confirm the reverse operation, or <strong>Cancel</strong> to cancel the reverse operation.</p>
 </li>
 <li>
 <p>You can monitor the progress of the task in the Replication Tasks pane.</p>
@@ -3068,14 +3074,14 @@
 <h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">¤</a></h2>
 <p>After the reverse task completes, the reversed replication overwrites the source vApp or virtual machine. The virtual machine now runs on the primary destination site with a workload protection at your primary source site.   </p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
-<p>To run the workload from the original source site, perform a <strong>Failover</strong> back to the source site, test failover, pause the reversed replication, and edit the configuration, or migrate the vApp.</p>
+<p>To run the workload from the original source site, perform a <strong>Failover</strong> back to the source site, test failover, pause the reversed replication, and edit the configuration, or migrate the vApp.</p></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
       
     
   </small>

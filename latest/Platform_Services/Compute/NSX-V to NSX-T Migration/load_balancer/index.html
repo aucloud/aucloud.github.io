@@ -3069,7 +3069,7 @@
 
   <h1>Load Balancer</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>NSX-V provides load balancing directly on the Edge Gateway, while NSX-T provides load balancing through a separate system, namely VMware NSX Advanced Load Balancer (ALB). While ALB still connects via the Edge Gateway it is not deployed as a service on the Edge Gateway. This is an important distinction as it affects the operation of load balancing with NSX-T.</p>
 <p>With this change the user interface for load balancing has been updated significantly.</p>
 <p>To assist with the migration to NSX-T, these changes are presented and compared.</p>
@@ -3078,7 +3078,7 @@
 <p>The controller is where all load balancing configuration is made, via a REST API connection with VMware Cloud Director (vCD).</p>
 <p>The service engines are where the load balancing function is implemented; it is the service engine that connects to the Edge Gateway in order to expose the load balanced service for consumption.</p>
 <p>As part of the changes on migration to NSX-T, ALB service engine groups are made available. Virtual Services configured will then be implemented on a high availability pair of service engines, deployed in a group.</p>
-<p><img alt="ALB Service Engine Group" src="../assets/nsx_t_alb_se_group.jpg" /></p>
+<p><img alt="ALB Service Engine Group" src="../assets/nsx_t_alb_se_group.jpg"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more information on the ALB architecture, consult the <a href="https://avinetworks.com/docs/latest/architectural-overview">Documentation</a>.</p>
@@ -3088,7 +3088,7 @@
 <p>Service engine groups available to the tenancy are setup by AUCloud administrators as part of on-boarding and on-going operations. These do not need to be configured by tenants and are made available automatically.</p>
 <h2 id="nsx-v">NSX-V<a class="headerlink" href="#nsx-v" title="Permanent link">¤</a></h2>
 <p>Under NSX-V, the load balancing function is provided as a service that runs directly on the Edge Gateway and is accessed from the Edge Gateway SERVICES option.</p>
-<p><img alt="NSX-V Load Balancer" src="../assets/nsx_v_load_balancer1.jpg" /></p>
+<p><img alt="NSX-V Load Balancer" src="../assets/nsx_v_load_balancer1.jpg"></p>
 <p>Under the Load Balancer tab, several distinct options are available:</p>
 <ol>
 <li>Global configuration for enabling or disabling the load balancer</li>
@@ -3102,33 +3102,33 @@
 <h2 id="nsx-t">NSX-T<a class="headerlink" href="#nsx-t" title="Permanent link">¤</a></h2>
 <p>Under NSX-T, the load balancing function is provided by a component that is separate and distinct from the Edge Gateway, namely VMware NSX Advanced Load Balancer (ALB).</p>
 <p>The configuration of load balancing is provided on the Edge Gateway configuration menu, under Load Balancer. It must be noted that although load balancing is configured under the Edge Gateway menu, the function itself is not provided by the Edge Gateway, but by ALB.</p>
-<p><img alt="NSX-T Load Balancer" src="../assets/nsx_t_load_balancer1.jpg" /></p>
+<p><img alt="NSX-T Load Balancer" src="../assets/nsx_t_load_balancer1.jpg"></p>
 <p>Of the four options presented, only Pools and Virtual Services are available for configuration.</p>
 <p>The Pools option is where the configuration of the real servers behind the load balanced Virtual Service are configured.</p>
 <p>The ADD option is used to configure a new Pool. To modify or delete an existing pool, select the appropriate radio button and select either the EDIT or DELETE option.</p>
-<p><img alt="NSX-T Pools" src="../assets/nsx_t_load_balancer_pools.jpg" /></p>
+<p><img alt="NSX-T Pools" src="../assets/nsx_t_load_balancer_pools.jpg"></p>
 <p>Adding a new pool is achieved from the Add Load Balancer Pool screen, where settings such as server port, load balancing algorithm, health monitor and pool members are available:</p>
-<p><img alt="NSX-T Add Pool" src="../assets/nsx_t_add_pool.jpg" /></p>
-<p><img alt="NSX-T Add Pool Member" src="../assets/nsx_t_add_pool_member.jpg" /></p>
+<p><img alt="NSX-T Add Pool" src="../assets/nsx_t_add_pool.jpg"></p>
+<p><img alt="NSX-T Add Pool Member" src="../assets/nsx_t_add_pool_member.jpg"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When a new pool is added, but has not been associated with a Virtual Service it will appear with a Status of Unknown. This is due to ALB not deploying a pool on a service engine, until it is associated with a Virtual Service.</p>
 </div>
 <p>The Virtual Services option is where the virtual load balanced IP address and application settings are configured.</p>
 <p>The ADD option is used to configure a new Virtual Service. To modify or delete an existing pool, select the appropriate radio button and select either the EDIT or DELETE option.</p>
-<p><img alt="NSX-T Virtual Services" src="../assets/nsx_t_vserver_options.jpg" /></p>
+<p><img alt="NSX-T Virtual Services" src="../assets/nsx_t_vserver_options.jpg"></p>
 <p>Adding a Virtual Service is achieved from the Add Virtual Service screen, where settings such as server port, Virtual IP, Service, Service Port and Load Balancer Pool are configured:</p>
-<p><img alt="NSX-T Add Virtual Services" src="../assets/nsx_t_add_vserver.jpg" /></p>
+<p><img alt="NSX-T Add Virtual Services" src="../assets/nsx_t_add_vserver.jpg"></p>
 <p>If a secure certificate is required for processing HTTPS traffic, this must be added separately before being selected during Virtual Service configuration.</p>
-<p><img alt="NSX-T HTTPS Certificate" src="../assets/nsx_t_https_app.jpg" /></p>
+<p><img alt="NSX-T HTTPS Certificate" src="../assets/nsx_t_https_app.jpg"></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>To upload a HTTPS Certificate follow the procedure documented <a href="../../NSX-T_Networks/edge_services_gateway/#add-a-certificate-to-the-edge-services-gateway">here</a>.</p>
-</p>
+<p class="admonition-title">Note</p><p>To upload a HTTPS Certificate follow the procedure documented <a href="../../NSX-T_Networks/edge_services_gateway/#add-a-certificate-to-the-edge-services-gateway">here</a>.</p>
+
 </div>
 <p>The Service Engine group is an important setting that differs from what is offered with NSX-V. It must be set to one of the service engine groups made available, as explained in the What is ALB? section.</p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
 <p>Familiarise with the updated NSX-T user interface and Load Balancer configuration options.</p>
-<p>Additional information on VMware NSX Advanced Load Balancer can be found <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-92A0563D-A272-4958-B732-9C35901D9DB8.html">here</a> and <a href="https://info.avinetworks.com/hubfs/Avi_Website_Resource_Center/avi-vantage-platform-data-sheet.pdf">here</a>.</p>
+<p>Additional information on VMware NSX Advanced Load Balancer can be found <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-92A0563D-A272-4958-B732-9C35901D9DB8.html">here</a> and <a href="https://info.avinetworks.com/hubfs/Avi_Website_Resource_Center/avi-vantage-platform-data-sheet.pdf">here</a>.</p></div>
 
   <hr>
 <div class="md-source-file">

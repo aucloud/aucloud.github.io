@@ -3067,7 +3067,7 @@
 
   <h1>VMware Cloud Director Availability Replication Policies</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>Replication policies control replication attributes of VMware Cloud Director organisation from the VMware Cloud Director Availability solution perspective.  </p>
 <h2 id="replication-policies">Replication Policies<a class="headerlink" href="#replication-policies" title="Permanent link">¤</a></h2>
 <ol>
@@ -3114,7 +3114,7 @@
 </div>
 <ol>
 <li>
-<p>Use a VM as a Replication Seed<br />
+<p>Use a VM as a Replication Seed<br>
     To use a VM as a seed, in the target site, select a VM that has an identical disk configuration with the seed VM. The size and number of disks, and their assignment to disk controllers and bus nodes must match the replication source and the seed VM.</p>
 <p>For example, if a replication source VM has two 4 GB disks, one of them assigned to SCSI controller 0 at bus number 0, the second one to SCSI controller 1 at bus number 2. Your seed VM must have the same hardware configuration - two 4 GB disks, at SCSI 0:0 and at SCSI 1:2.</p>
 </li>
@@ -3142,13 +3142,13 @@
 </li>
 <li>
 <p>Export a virtual machine form vCenter Server to a removable media.</p>
-<div class="highlight"><pre><span></span><code>ovftool<span class="w"> </span><span class="s1">&#39;vi://root@VC_IP/Datacenter_Name/vm/VM_FQDN&#39;</span><span class="w"> </span>VM_FQDN.ova
+<div class="highlight"><pre><span></span><code>ovftool<span class="w"> </span><span class="s1">'vi://root@VC_IP/Datacenter_Name/vm/VM_FQDN'</span><span class="w"> </span>VM_FQDN.ova
 </code></pre></div>
 <p>After the process finishes, you can power on the virtual machine</p>
 </li>
 <li>
 <p>(Optional) Export a vApp from VMware Cloud Director to a removable media.</p>
-<div class="highlight"><pre><span></span><code>ovftool<span class="w"> </span><span class="s1">&#39;vcloud://ORG_ADMIN@VCLOUD_DIRECTOR_IP:443?org=ORG_NAME&amp;vdc=VDC_NAME&amp;vapp=VAPP_NAME&#39;</span><span class="w"> </span>VAPP_NAME.ova
+<div class="highlight"><pre><span></span><code>ovftool<span class="w"> </span><span class="s1">'vcloud://ORG_ADMIN@VCLOUD_DIRECTOR_IP:443?org=ORG_NAME&amp;vdc=VDC_NAME&amp;vapp=VAPP_NAME'</span><span class="w"> </span>VAPP_NAME.ova
 </code></pre></div>
 </li>
 <li>
@@ -3220,7 +3220,7 @@
 <li>
 <p>On the <strong>Ready to Complete</strong> page, verify that the configuration settings are correct and click <strong>Finish</strong>.</p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">

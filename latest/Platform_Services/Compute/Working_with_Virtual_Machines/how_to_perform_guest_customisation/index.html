@@ -3027,7 +3027,7 @@
 
   <h1>How to perform Guest Customisation on the newly built VM from a template</h1>
 
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
+<div><h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h3>
 <p>This article is to provide a step by step procedure to perform guest customisation on the newly built VM from a template.
 By default, the vApp templates provided by AUCloud in vCD catalog have guest customisation enabled.</p>
 <h3 id="process">Process<a class="headerlink" href="#process" title="Permanent link">¤</a></h3>
@@ -3035,7 +3035,7 @@ By default, the vApp templates provided by AUCloud in vCD catalog have guest cus
 <ol>
 <li>
 <p>Navigate to Compute - Virtual Machines - Select the newly built VM - Details link  </p>
-<p><img alt="Compute Virtual Machines" src="../assets/compute_vms.jpg" /></p>
+<p><img alt="Compute Virtual Machines" src="../assets/compute_vms.jpg"></p>
 </li>
 <li>
 <p>Under General section, ensure the Computer Name is configured accordingly - as this will be the actual server name for the Guest OS  </p>
@@ -3043,15 +3043,15 @@ By default, the vApp templates provided by AUCloud in vCD catalog have guest cus
 <p class="admonition-title">Note</p>
 </div>
 <p>The Name field is the Virtual Machine Name - in general administrators normally configured the VM name and Computer (Guest OS) Name with the same name.  </p>
-<p><img alt="General Nav" src="../assets/general.jpg" />  </p>
+<p><img alt="General Nav" src="../assets/general.jpg">  </p>
 </li>
 <li>
 <p>Then under Hardware - NICs - if you wish to use a static IP address, make sure Static - Manual is selected and enter the IP address accordingly</p>
-<p><img alt="Edit NIC" src="../assets/edit_nic.jpg" /></p>
+<p><img alt="Edit NIC" src="../assets/edit_nic.jpg"></p>
 </li>
 <li>
 <p>Navigate to Guest OS Customization section, click edit, and ensure the following are enabled :  </p>
-<p><img alt="Edit Guest Properties" src="../assets/edit_guest_properties.jpg" /></p>
+<p><img alt="Edit Guest Properties" src="../assets/edit_guest_properties.jpg"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The option "Require Administrator to change password on first login" is only applicable for Windows VM.  </p>
@@ -3062,11 +3062,11 @@ By default, the vApp templates provided by AUCloud in vCD catalog have guest cus
 </li>
 </ol>
 <p>Once the VM configured, navigate back to Compute - Virtual Machine. Then select Actions on the VM and choose the "<strong>Power On and Force Re-customization"</strong>  </p>
-<p><img alt="Edit Guest Properties" src="../assets/power_on_force.jpg" /></p>
+<p><img alt="Edit Guest Properties" src="../assets/power_on_force.jpg"></p>
 <p>This will then Power On the VM and configure the guest OS with the correct server name and IP address.  </p>
 <p>For Windows VM, administrator user will be prompted to change the password upon initial login.</p>
-<p><img alt="Windows" src="../assets/windows_admin.png" /></p>
-<p>Click on OK and enter the new password for the guest OS.</p>
+<p><img alt="Windows" src="../assets/windows_admin.png"></p>
+<p>Click on OK and enter the new password for the guest OS.</p></div>
 
   <hr>
 <div class="md-source-file">

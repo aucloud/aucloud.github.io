@@ -3041,7 +3041,7 @@
 
   <h1>How to add a certificate to the Edge Services Gateway</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>The Edge Services Gateway (ESG) requires certificates when configuring some services, most commonly when configuring TLS load balancer capability.</p>
 <p>There are two methods to upload certificates (PEM format only) into the ESG:</p>
 <ul>
@@ -3059,15 +3059,15 @@
 <ol>
 <li>
 <p>In the relevant Org vDC, navigate to <strong>Networking</strong> &gt; <strong>Edges.</strong></p>
-<p><img alt="Nav Edge" src="../assets/nav_edge.png" /></p>
+<p><img alt="Nav Edge" src="../assets/nav_edge.png"></p>
 </li>
 <li>
 <p>Select the ESG, and click <strong>Services.</strong></p>
-<p><img alt="Nav Services" src="../assets/nav_services.png" /></p>
+<p><img alt="Nav Services" src="../assets/nav_services.png"></p>
 </li>
 <li>
 <p>Select the <strong>Certificates</strong> tab, and click <strong>+Service Certificate.</strong></p>
-<p><img alt="Nav Cert" src="../assets/nav_cert.png" /></p>
+<p><img alt="Nav Cert" src="../assets/nav_cert.png"></p>
 </li>
 <li>
 <p>In the <strong>Service Certificate</strong> field, either copy in the PEM formatted certificate or choose to upload from file:</p>
@@ -3075,19 +3075,19 @@
 <p class="admonition-title">Warning</p>
 <p>As discussed at the start of the procedure, if the Intermediate Certificate needs to be sent as part of the TLS handshake then it needs to be added as part of this process. If this is required but not performed, then the certificate will need to be deleted and the upload process performed again as discussed in the VMware KB <a href="https://kb.vmware.com/s/article/2113945">here</a></p>
 </div>
-<p>An example of a PEM formatted Service and Intermediate Certificate would look like this:<br />
-<img alt="Cert" src="../assets/cert.png" /></p>
+<p>An example of a PEM formatted Service and Intermediate Certificate would look like this:<br>
+<img alt="Cert" src="../assets/cert.png"></p>
 </li>
 <li>
 <p>In the <strong>Private Key Passphrase</strong> field, either copy in the PEM formatted RSA private key or choose to upload from file.</p>
 </li>
 <li>
 <p>To finish, click <strong>KEEP</strong>  </p>
-<p><img alt="Create SSL" src="../assets/create_ssl.png" />  </p>
+<p><img alt="Create SSL" src="../assets/create_ssl.png">  </p>
 </li>
 <li>
 <p>The certificate will now be listed in the <strong>SSL Certificates</strong> list as type <strong>Service Certificate</strong>. If an Intermediate Certificate was also included, it will display as a separate certificate as type <strong>CA Certificate</strong>.  </p>
-<p><img alt="Cert List" src="../assets/cert_list.png" />  </p>
+<p><img alt="Cert List" src="../assets/cert_list.png">  </p>
 </li>
 <li>
 <p>You can now reference this certificate in ESG configuration, particularly in Load Balancer Application Profiles.</p>
@@ -3097,33 +3097,33 @@
 <ol>
 <li>
 <p>In the relevant Org vDC navigate to <strong>Networking</strong> &gt; <strong>Edges</strong>.</p>
-<p><img alt="Nav Edge" src="../assets/nav_edge.png" /></p>
+<p><img alt="Nav Edge" src="../assets/nav_edge.png"></p>
 </li>
 <li>
 <p>Select the ESG, and click <strong>Services.</strong></p>
-<p><img alt="Nav Services" src="../assets/nav_services.png" /></p>
+<p><img alt="Nav Services" src="../assets/nav_services.png"></p>
 </li>
 <li>
 <p>Select the <strong>Certificates</strong> tab, and click <strong>+CSR.</strong></p>
-<p><img alt="CSR" src="../assets/nav_csr.png" /></p>
+<p><img alt="CSR" src="../assets/nav_csr.png"></p>
 </li>
 <li>
 <p>Fill out all the Certificate Fields with the desired certificate information.  </p>
-<p><img alt="CSR Generate" src="../assets/csr_generate.png" />  </p>
+<p><img alt="CSR Generate" src="../assets/csr_generate.png">  </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The use of the Common Name (CN) in certificates has been deemed obsolete for sometime and since roughly 2016, major browsers ceased to support certificates that only had a Common Name (CN) without a valid subject alternative name (SAN). So for the majority of browsers, certificates that do not have a valid SAN will display a certificate warning.</p>
 <p>The ESG CSR generation process does not provide the ability to include a SAN attribute as part of the creation. Therefore this certificate attribute will need to be included as part of the CA signing process on the CA server. Otherwise, the certificate will not include a SAN and will not be valid as discussed above.</p>
 </div>
 <p>An example of a valid SAN attribute in a certificate looks like this:  </p>
-<p><img alt="Valid SAN" src="../assets/valid_san.png" />  </p>
+<p><img alt="Valid SAN" src="../assets/valid_san.png">  </p>
 </li>
 <li>
 <p>Once all fields have been defined, click <strong>KEEP.</strong></p>
 </li>
 <li>
 <p>A new entry will appear in the <strong>SSL Certificates</strong> List with type <strong>CSR</strong>. Select the certificate and the CSR will be available in PEM format. Copy the PEM Formatted Data to get signed by the certificate authority.</p>
-<p><img alt="CSR Details" src="../assets/csr_details.png" />  </p>
+<p><img alt="CSR Details" src="../assets/csr_details.png">  </p>
 </li>
 <li>
 <p>Once the certificate has been issued by the CA, navigate back to the ESG <strong>Certificates</strong> Tab.  </p>
@@ -3138,19 +3138,19 @@
 <p>As discussed at the start of the procedure, if the Intermediate CA needs to be sent as part of the TLS handshake then it needs to be added as part of this process. If this is required but not performed, then the certificate will need to be deleted and a new CSR generated and signed by the CA as discussed in the VMware KB <a href="https://kb.vmware.com/s/article/2113945">here</a></p>
 </div>
 <p>An example of a PEM formatted Service and Intermediate Certificate would look like this:  </p>
-<p><img alt="PEM Example" src="../assets/pem_example.png" /></p>
+<p><img alt="PEM Example" src="../assets/pem_example.png"></p>
 </li>
 <li>
 <p>Once the PEM formatted data has been entered, click <strong>KEEP.</strong></p>
 </li>
 <li>
 <p>The certificate will now be listed in the <strong>SSL Certificates</strong> list as type <strong>Service Certificate</strong>. If an Intermediate Certificate was also included it will display as a separate certificate as type <strong>CA Certificate</strong>.  </p>
-<p><img alt="SSL Cert" src="../assets/ssl_certs.png" /></p>
+<p><img alt="SSL Cert" src="../assets/ssl_certs.png"></p>
 </li>
 <li>
 <p>You can now reference this certificate in Load Balancer Application Profiles.</p>
 </li>
-</ol>
+</ol></div>
 
   <hr>
 <div class="md-source-file">

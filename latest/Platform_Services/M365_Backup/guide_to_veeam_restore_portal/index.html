@@ -3247,7 +3247,7 @@
 
   <h1>Guide to the Veeam Restore Portal</h1>
 
-<h2 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">¤</a></h2>
+<div><h2 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">¤</a></h2>
 <p>Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from the most recent backup job. Users log in with their existing Microsoft 365 credentials.</p>
 <p>Restore Operators can be specified as individuals or as security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.</p>
 <h2 id="launching-the-restore-portal">Launching the Restore Portal<a class="headerlink" href="#launching-the-restore-portal" title="Permanent link">¤</a></h2>
@@ -3264,21 +3264,21 @@
 <li>
 <p>On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:</p>
 <ul>
-<li>'<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;">&#117;&#115;&#101;&#114;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;</a>' or</li>
-<li>'<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#111;&#110;&#109;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#46;&#99;&#111;&#109;">&#117;&#115;&#101;&#114;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#111;&#110;&#109;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#46;&#99;&#111;&#109;</a>'</li>
+<li>'<a href="mailto:user@domain.com">user@domain.com</a>' or</li>
+<li>'<a href="mailto:user@domain.onmicrosoft.com">user@domain.onmicrosoft.com</a>'</li>
 </ul>
 </li>
 <li>
 <p>Click <strong>Log In</strong>. Restore Portal will redirect you to the Microsoft authentication portal where you will be prompted to enter your Microsoft 365 user account password.</p>
-<p><img alt="Veeam Login" src="../assets/veeam_login.png" /></p>
+<p><img alt="Veeam Login" src="../assets/veeam_login.png"></p>
 </li>
 </ol>
 <h2 id="log-out">Log out<a class="headerlink" href="#log-out" title="Permanent link">¤</a></h2>
-<p>To log out of Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click <strong>Log Out</strong>.<br />
+<p>To log out of Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click <strong>Log Out</strong>.<br>
 After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background till data restore completes.  </p>
-<p><img alt="Veeam Logout" src="../assets/veeam_logout.png" /></p>
+<p><img alt="Veeam Logout" src="../assets/veeam_logout.png"></p>
 <h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">¤</a></h2>
-<p>The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange, Microsoft SharePoint and Microsoft OneDrive for Business data in one window. It allows you to view details about restore sessions progress and results and the restore sessions history.<br />
+<p>The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange, Microsoft SharePoint and Microsoft OneDrive for Business data in one window. It allows you to view details about restore sessions progress and results and the restore sessions history.<br>
 The main window consists of the <strong>Explore</strong>, <strong>Restore Sessions</strong> and <strong>Restore List</strong> tabs.</p>
 <h2 id="explore-tab">Explore Tab<a class="headerlink" href="#explore-tab" title="Permanent link">¤</a></h2>
 <p>This tab contains two panes:</p>
@@ -3304,39 +3304,39 @@ You can narrow your search results by specifying various search criteria using t
 You can also use logical upper-cased operators such as AND, OR and NOT along with wildcard characters such as * and ?.
 To search items by a specific date/time, specify the time in the UTC format. You can hover over the date in the Received column to view the UTC value.</p>
 </div>
-<p><img alt="Veeam Explore" src="../assets/veeam_explore.png" /></p>
+<p><img alt="Veeam Explore" src="../assets/veeam_explore.png"></p>
 <h2 id="restore-sessions-tab">Restore Sessions Tab<a class="headerlink" href="#restore-sessions-tab" title="Permanent link">¤</a></h2>
-<p>On this tab, you view details about restore session progress and results.<br />
+<p>On this tab, you view details about restore session progress and results.<br>
 You can do the following:</p>
 <ul>
 <li>Stop a restore session.</li>
 <li>Search and filter restore sessions by type, status and time period.</li>
 <li>View the list of events that occurred during a restore session, search and filter events by their status.</li>
 </ul>
-<p><img alt="Veeam Sessions" src="../assets/veeam_sessions.png" /></p>
+<p><img alt="Veeam Sessions" src="../assets/veeam_sessions.png"></p>
 <h3 id="restore-list-tab">Restore List Tab<a class="headerlink" href="#restore-list-tab" title="Permanent link">¤</a></h3>
-<p>On this tab, you view and edit the content of the restore list. This tab appears only if a restore list is not empty.<br />
+<p>On this tab, you view and edit the content of the restore list. This tab appears only if a restore list is not empty.<br>
 You can do the following:</p>
 <ul>
 <li>Select items that you want to restore.</li>
 <li>Remove items from the restore list.</li>
 <li>Search and filter items by their restore status.</li>
 </ul>
-<p><img alt="Veeam Restore" src="../assets/veeam_restore_list.png" /></p>
+<p><img alt="Veeam Restore" src="../assets/veeam_restore_list.png"></p>
 <h3 id="notification-pane">Notification Pane<a class="headerlink" href="#notification-pane" title="Permanent link">¤</a></h3>
-<p>Notification pane is hidden in the upper-right corner of the Restore Portal window under the <em>notification</em> icon shaped like a bell.<br />
+<p>Notification pane is hidden in the upper-right corner of the Restore Portal window under the <em>notification</em> icon shaped like a bell.<br>
 To expand the notification pane, click the notification icon.  </p>
 <h3 id="managing-notifications">Managing Notifications<a class="headerlink" href="#managing-notifications" title="Permanent link">¤</a></h3>
-<p>Restore Portal notifies you about restore sessions results. Notifications appear in the notification pane.<br />
-Each notification includes a restore session name, a status icon, and a status link. If you click the restore session status link, Restore Portal opens the Restore Sessions tab and navigates you directly to the restore session record.<br />
+<p>Restore Portal notifies you about restore sessions results. Notifications appear in the notification pane.<br>
+Each notification includes a restore session name, a status icon, and a status link. If you click the restore session status link, Restore Portal opens the Restore Sessions tab and navigates you directly to the restore session record.<br>
 If you want the notification pane to expand automatically when a new notification appears, do the following:</p>
 <ol>
 <li>Click the notification icon to expand the notification pane.</li>
 <li>Enable the <strong>Auto-display new messages</strong> option.</li>
 </ol>
-<p><img alt="Veeam Manage Notifications" src="../assets/manage_notifications.png" /></p>
+<p><img alt="Veeam Manage Notifications" src="../assets/manage_notifications.png"></p>
 <h3 id="changing-restore-operator-scope">Changing Restore Operator Scope<a class="headerlink" href="#changing-restore-operator-scope" title="Permanent link">¤</a></h3>
-<p>After logging in to Restore Portal, restore operators can view the list of objects available to them to manage — that is, to explore and restore data from backups created by Veeam Backup for Microsoft 365 for these objects.<br />
+<p>After logging in to Restore Portal, restore operators can view the list of objects available to them to manage — that is, to explore and restore data from backups created by Veeam Backup for Microsoft 365 for these objects.<br>
 Restore operators can manage data of organization objects separately. Thus, they must switch between the managed objects: users, groups (group members only), sites, or the entire Microsoft 365 organization. In terms of Veeam Backup for Microsoft 365, this operation is called <em>Changing restore operator scope</em>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3349,9 +3349,9 @@ Restore operators can manage data of organization objects separately. Thus, they
 <li>Click <strong>Change scope</strong>.</li>
 </ol>
 <p>The name of the selected object will appear in the upper-right corner of the Restore Portal window under the restore operator user name. The Explore tab will be displayed, on which you can browse through the hierarchy of folders with backed-up data of the selected object.  </p>
-<p><img alt="Veeam Change Scope" src="../assets/change_scope.png" /></p>
+<p><img alt="Veeam Change Scope" src="../assets/change_scope.png"></p>
 <h3 id="performing-restores">Performing Restores<a class="headerlink" href="#performing-restores" title="Permanent link">¤</a></h3>
-<p>After logging in to Restore Portal, you can explore and restore data from backups created by Veeam Backup for Microsoft 365. If you act as an <em>end user</em>, you perform self-service restore of your own data. If you have a <em>restore operator</em> permissions, you explore and restore backed-up data for those objects that you are allowed to manage.<br />
+<p>After logging in to Restore Portal, you can explore and restore data from backups created by Veeam Backup for Microsoft 365. If you act as an <em>end user</em>, you perform self-service restore of your own data. If you have a <em>restore operator</em> permissions, you explore and restore backed-up data for those objects that you are allowed to manage.<br>
 To select items that you want to restore, do the following:</p>
 <ol>
 <li>Open the <strong>Explore</strong> tab.</li>
@@ -3379,15 +3379,15 @@ To search items by a specific date/time, specify the time in the UTC format. You
 <li>Sharepoint Restore</li>
 <li>OneDrive Restore</li>
 </ol>
-<p><img alt="Veeam Chose Restore" src="../assets/veeam_chose_restore.png" /></p>
+<p><img alt="Veeam Chose Restore" src="../assets/veeam_chose_restore.png"></p>
 <h3 id="using-restore-list">Using Restore List<a class="headerlink" href="#using-restore-list" title="Permanent link">¤</a></h3>
-<p>If you want to select items located in different folders in the hierarchy of folders with backed-up data displayed in the navigation pane, you can add them to the restore list. For example, you can add to the restore list one by one items of different types: mailbox items, OneDrive and SharePoint files, and proceed to their restore.<br />
+<p>If you want to select items located in different folders in the hierarchy of folders with backed-up data displayed in the navigation pane, you can add them to the restore list. For example, you can add to the restore list one by one items of different types: mailbox items, OneDrive and SharePoint files, and proceed to their restore.<br>
 To add items to the restore list, do the following:  </p>
 <ol>
 <li>Open the Explore tab.  </li>
 <li>In the navigation pane, browse through the hierarchy of folders with backed-up data.  </li>
 <li>Select a folder that contains data you want to restore.  </li>
-<li>In the preview pane, select check boxes next to the necessary items.<br />
+<li>In the preview pane, select check boxes next to the necessary items.<br>
 For documents and files, you can select which version of an item you want to restore. To do this, in the Version column, click the most recent version number, and in the displayed window, select the earlier version to restore.  </li>
 <li>Click Add to Restore List.  </li>
 <li>Repeat steps 2–5 to add more items to the restore list.  </li>
@@ -3396,20 +3396,20 @@ For documents and files, you can select which version of an item you want to res
 <li>Restore Exchange Items. This option runs the Exchange Restore wizard.  </li>
 <li>Restore OneDrive Items. This option runs the OneDrive Restore wizard.  </li>
 <li>Restore SharePoint Items. This option runs the SharePoint Restore wizard.  </li>
-<li>Restore SharePoint Documents. This option runs the SharePoint Restore wizard.<br />
+<li>Restore SharePoint Documents. This option runs the SharePoint Restore wizard.<br>
 To remove items from the restore list, select check boxes next to the necessary items and click Remove from Restore List.</li>
 </ul>
 </li>
 <li>Follow the steps of the wizard that you ran and configure restore operation options. Mind that you must run wizards manually one after another.  </li>
 </ol>
-<p><img alt="Veeam Restore Exchange" src="../assets/veeam_restore_exchange_items.png" /></p>
+<p><img alt="Veeam Restore Exchange" src="../assets/veeam_restore_exchange_items.png"></p>
 <h3 id="exchange-restore">Exchange Restore<a class="headerlink" href="#exchange-restore" title="Permanent link">¤</a></h3>
-<p>The <strong>Exchange Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft Exchange items.<br />
+<p>The <strong>Exchange Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft Exchange items.<br>
 To configure Exchange restore, do the following:</p>
 <ol>
 <li>
 <p>At the <strong>Items</strong> step, specify items that you want to restore. If you no longer want to restore an item, select it and click <strong>Remove</strong>.</p>
-<p><img alt="Veeam Exchange Restore" src="../assets/exchange_restore.png" /></p>
+<p><img alt="Veeam Exchange Restore" src="../assets/exchange_restore.png"></p>
 </li>
 <li>
 <p>At the <strong>Restore mode</strong> step, select where you want to restore the selected items:</p>
@@ -3417,7 +3417,7 @@ To configure Exchange restore, do the following:</p>
 <li><strong>Restore to the original location</strong>. Select this option if you want to restore the selected items to their original location. Then proceed to step 5.</li>
 <li><strong>Restore to a new location</strong>. Select this option if you want to restore the selected items to another location and specify the folder name in the <strong>Restore to the following folder</strong> field. If the specified folder does not exist, it will be created automatically.</li>
 </ul>
-<p><img alt="Veeam Restore" src="../assets/restore_new_location.png" /></p>
+<p><img alt="Veeam Restore" src="../assets/restore_new_location.png"></p>
 </li>
 <li>
 <p>Click <strong>Advanced options</strong> to open the <strong>Restore options</strong> dialog.</p>
@@ -3429,7 +3429,7 @@ To configure Exchange restore, do the following:</p>
 <li><strong>Restore missing items</strong>. Select this check box if you want to restore items that are missing in the target folder.</li>
 <li><strong>Mark restored items as unread</strong>. Select this check box if you want to mark each restored item as unread.</li>
 </ul>
-<p><img alt="Veeam Restore Options" src="../assets/restore_options.png" /></p>
+<p><img alt="Veeam Restore Options" src="../assets/restore_options.png"></p>
 </li>
 <li>
 <p>[Optional] At the <strong>Reason</strong> step, specify a restore reason. This information will be available in the <strong>Reason</strong> column on the <strong>Restore Sessions</strong> tab and you will be able to reference it later.</p>
@@ -3440,12 +3440,12 @@ To configure Exchange restore, do the following:</p>
 </ol>
 <p>Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.  </p>
 <h3 id="sharepoint-restore">SharePoint Restore<a class="headerlink" href="#sharepoint-restore" title="Permanent link">¤</a></h3>
-<p>The <strong>SharePoint Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.<br />
+<p>The <strong>SharePoint Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.<br>
 To configure SharePoint restore, do the following:</p>
 <ol>
 <li>
 <p>At the <strong>Items</strong> step, specify items that you want to restore. If you no longer want to restore an item, select it and click <strong>Remove</strong>.</p>
-<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore.png" /></p>
+<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore.png"></p>
 </li>
 <li>
 <p>At the <strong>Restore mode</strong> step, select where you want to restore the selected items:</p>
@@ -3454,7 +3454,7 @@ To configure SharePoint restore, do the following:</p>
 <li><strong>Restore to a new location</strong>. Select this option if you want to restore the selected items to another location and specify the list name in the <strong>Restore to the following list</strong> field.</li>
 </ul>
 <p>Mind that if you restore document libraries, lists or documents and the specified list does not exist, it will be created automatically. If you restore list items, make sure to specify a list that exists in the original SharePoint site.  </p>
-<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore2.png" /></p>
+<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore2.png"></p>
 </li>
 <li>
 <p>Click <strong>Advanced options</strong> to open the <strong>Restore options</strong> dialog.</p>
@@ -3470,7 +3470,7 @@ To configure SharePoint restore, do the following:</p>
 <li><strong>Overwrite</strong>. Select this option to overwrite data in the production environment.</li>
 <li><strong>Merge</strong>. Select this option to merge an existing and a backup version of items.</li>
 </ul>
-<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore3.png" /></p>
+<p><img alt="Sharepoint Restore" src="../assets/sharepoint_restore3.png"></p>
 </li>
 <li>
 <p>[Optional] At the <strong>Reason</strong> step, specify a restore reason. This information will be available in the <strong>Reason</strong> column on the <strong>Restore Sessions</strong> tab and you will be able to reference it later.</p>
@@ -3481,16 +3481,16 @@ To configure SharePoint restore, do the following:</p>
 </ol>
 <p>Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.  </p>
 <h3 id="onedrive-restore">OneDrive Restore<a class="headerlink" href="#onedrive-restore" title="Permanent link">¤</a></h3>
-<p>The <strong>OneDrive Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft OneDrive for Business items.<br />
+<p>The <strong>OneDrive Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft OneDrive for Business items.<br>
 To configure OneDrive restore, do the following:</p>
 <ol>
 <li>
 <p>At the <strong>Items</strong> step, specify items that you want to restore. If you no longer want to restore an item, select it and click <strong>Remove</strong>.</p>
-<p><img alt="Onedrive Restore" src="../assets/onedrive1.png" /></p>
+<p><img alt="Onedrive Restore" src="../assets/onedrive1.png"></p>
 </li>
 <li>
 <p>At the <strong>Restore mode</strong> step, choose whether you want to overwrite the file or document in the original location or keep the restored one along with the original.</p>
-<p><img alt="Onedrive Restore" src="../assets/onedrive2.png" /></p>
+<p><img alt="Onedrive Restore" src="../assets/onedrive2.png"></p>
 </li>
 <li>
 <p>[Optional] At the <strong>Reason</strong> step, specify a restore reason. This information will be available in the <strong>Reason</strong> column on the <strong>Restore Sessions</strong> tab and you will be able to reference it later.</p>
@@ -3509,7 +3509,7 @@ To configure OneDrive restore, do the following:</p>
 <li>Explore and restore Group Mailboxes</li>
 <li>Explore and Restore Microsoft Teams data</li>
 </ul>
-<p>For further questions about the capabilities of the restore portal, please contact <a href="../../../Platform_Overview/support/">Support.</a></p>
+<p>For further questions about the capabilities of the restore portal, please contact <a href="../../../Platform_Overview/support/">Support.</a></p></div>
 
   <hr>
 <div class="md-source-file">

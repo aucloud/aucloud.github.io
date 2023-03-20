@@ -3107,7 +3107,7 @@
 
   <h1>VMware Cloud Director Availability Quick Start Guide</h1>
 
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>VMware VMware Cloud Director Availability 3.0 (vCAV) is a single interface for <strong>workload migration</strong>, <strong>cloud-to-cloud disaster recovery</strong>, and <strong>on-premises disaster recovery</strong>. VMware Cloud Director availability is a Disaster Recovery-as-a-Service (DRaaS) solution.</p>
 <h2 id="how-vmware-cloud-director-availability-works">How VMware Cloud Director Availability Works<a class="headerlink" href="#how-vmware-cloud-director-availability-works" title="Permanent link">¤</a></h2>
 <p><strong>vCAV</strong> is a single appliance that deploys all the services required to operate between an on-premises and the AUCloud environment. It integrates into the on-premises vCenter and connects to the VMware Cloud Director environment and corresponding vCAV appliance through a tunnel node. It provides three core functionalities:</p>
@@ -3234,7 +3234,7 @@
 <p><strong>Review details.</strong> This is a chance for you to evaluate and verify the template.</p>
 </li>
 </ol>
-<p><img alt="deploy ovf" src="../assets/deploy_ovf_template.png" /></p>
+<p><img alt="deploy ovf" src="../assets/deploy_ovf_template.png"></p>
 <ol>
 <li>
 <p>License agreement. Check the I accept all license agreements checkbox and click Next.</p>
@@ -3257,7 +3257,7 @@
 <li><strong>Enable SSH.</strong> Select the <strong>Enable SSH</strong> checkbox (mandatory)</li>
 <li>
 <p><strong>NTP Server.</strong> Enter the <strong>NTP server address</strong> the vCAV appliance will use. vCenter Server, ESXi, VMware Cloud Director, Platform Services Controller, and the VMware Cloud Director Availability appliance <strong>MUST</strong> all use the same NTP server.</p>
-<p><img alt="Deploy OVF Template" src="../assets/deploy_ovf_template2.png" /></p>
+<p><img alt="Deploy OVF Template" src="../assets/deploy_ovf_template2.png"></p>
 </li>
 </ol>
 <p>1. <strong>Ready to complete.</strong> Review the settings. Optionally, select to <strong>Power on after deployment.</strong> Click <strong>Finish</strong> to deploy the appliance.</p>
@@ -3277,15 +3277,15 @@
 </li>
 </ol>
 <p>1. <strong>Site Details</strong>. In it, type your <strong>Site</strong> <strong>Name</strong> and optionally a short <strong>Description</strong> about the site. Click <strong>Next</strong>.</p>
-<p><img alt="Site Details" src="../assets/site_details.png" /></p>
+<p><img alt="Site Details" src="../assets/site_details.png"></p>
 <p>1. In the <strong>Lookup Service</strong> tab, enter your connection details to set up the lookup service along with SSO admin credentials.</p>
 <ul>
 <li><strong>Lookup service address.</strong> Enter your Replication Source lookup service address. For example: <code>https://{servername}:443/lookupservice/sdk</code></li>
 <li>Enter SSO admin account credentials in the <strong>Username</strong> and <strong>Password</strong> field</li>
 </ul>
-<p><img alt="Lookup Service Details" src="../assets/lookup_service_details.png" /></p>
+<p><img alt="Lookup Service Details" src="../assets/lookup_service_details.png"></p>
 <p>1. Click <strong>Next</strong> and accept the SSL certificate of the vCenter Server Lookup to continue.</p>
-<p><img alt="SSLCert" src="../assets/sslcert.png" /></p>
+<p><img alt="SSLCert" src="../assets/sslcert.png"></p>
 <p>h. Proceed to the configure <strong>Cloud Details</strong> by pairing up your on prem and AUCloud sites.</p>
 <p>i. Define the Public API Endpoint: <a href="https://vcav.sz101.australiacloud.com.au/">https://vcav.sz101.australiacloud.com.au:443</a></p>
 <p>j. Configure your organization’s credentials for logging in to the cloud site. Type in <strong>Organization</strong> <strong>Admin</strong> (e.g.: username@organization-name)  and the corresponding <strong>Password</strong> as provided by AUCloud.</p>
@@ -3296,11 +3296,11 @@
 <li>Replicate cloud workloads to the on-premises site.</li>
 </ul>
 <p>l. If you leave this feature <strong>deselected</strong>, configuring new replications will only be accessible to users authenticated to the on-premises VMware Cloud Director Availability Portal. Additionally, no existing replications will be reversed from the Portal.</p>
-<p><img alt="Initial Setup" src="../assets/initial_setup.png" /></p>
+<p><img alt="Initial Setup" src="../assets/initial_setup.png"></p>
 <p>m. Click <strong>Next</strong> and accept the SSL certificate for VMware Cloud Director Availability Public API endpoint.</p>
 <p>n. Decide whether you want to participate in the <strong>VMware Customer Experience Improvement Program</strong> (CEIP). To join, confirm your choice, and click <strong>Next</strong>.</p>
 <p>o. Move on to <strong>Ready to Complete</strong> and confirm details provided in previous steps are accurate.</p>
-<p><img alt="Initial Setup" src="../assets/initial_setup2.png" /></p>
+<p><img alt="Initial Setup" src="../assets/initial_setup2.png"></p>
 <p>p. Check <strong>Configure local placement now</strong> to enable cloud to datacentre replications. Leaving the box unchecked requires additional set up to configure the replications.</p>
 <p>q. Click <strong>Finish</strong> to complete the initial setup.</p>
 <p><strong>*Configure Local Placement</strong></p>
@@ -3311,7 +3311,7 @@
 <p>d. Select a datastore for the replicated virtual machines.</p>
 <p>e. Review the settings and click <strong>Finish</strong> to complete the configuration.</p>
 <p>f. To view the summary, expand the <strong>placement</strong> window</p>
-<p><img alt="VMware Cloud Director Availability" src="../assets/vcloud_availability.png" /></p>
+<p><img alt="VMware Cloud Director Availability" src="../assets/vcloud_availability.png"></p>
 <p><strong>*Configure Replications</strong></p>
 <p><strong>Replication</strong> is the process of copying a virtual machine (VM) from one location to another. The first replication creates a copy at a remote location, after which the replicated VM is updated according to a predefined schedule to match the source VM.</p>
 <p>There are two types of replication:</p>
@@ -3326,12 +3326,12 @@
 <p><strong>How to Configure Incoming Replication</strong></p>
 <p>After deployment, you can configure local replications. This process is required if you want to replicate <strong>from</strong> the cloud <strong>to</strong> the local vCenter or use the <strong>reverse</strong> replication after a failover.</p>
 <p>a. Log in to the <strong>AUCloud Portal</strong>, enter VMware Cloud Director, click on the hamburger button and then on <strong>Availability</strong>.</p>
-<p><img alt="Availability" src="../assets/availability.png" /></p>
+<p><img alt="Availability" src="../assets/availability.png"></p>
 <p>b. Navigate to <strong>Incoming Replications</strong> page and click on <strong>from On-Prem</strong>. Here, you can configure protection for on-premises VMs.</p>
 <p>c. Click on <strong>New Protection</strong>. The <strong>New Incoming Replication</strong> window will appear.</p>
-<p><img alt="New Protection" src="../assets/new_protection.png" /></p>
+<p><img alt="New Protection" src="../assets/new_protection.png"></p>
 <p>d. In it, you first need to define the <strong>Source Site</strong>, which is the on-premises site owning the vApps and VMs you want to replicate. Click <strong>Next.</strong></p>
-<p><img alt="Source Site" src="../assets/source_site.png" /></p>
+<p><img alt="Source Site" src="../assets/source_site.png"></p>
 <p>e. Select the VMs you want to protect by checking the corresponding box(es). To continue, click <strong>Next</strong>.</p>
 <p>f. Move on to selecting the <strong>Target VDC</strong>.</p>
 <p>g. On the page <strong>Seed VM,</strong> choose whether you want to seed. This option is only available if the VMs and VApps marked to be replicated already have an older copy on the target site. The older version is then used as a seed to speed up data transfer.</p>
@@ -3342,37 +3342,37 @@
 <li><strong>Retention policy</strong> – How many instances you want to preserve over a time period, evenly</li>
 <li><strong>Enable Quiesce</strong> – Ensure application-level consistency prior to creating an instance</li>
 </ol>
-<p><img alt="Protection Settings" src="../assets/protection_settings.png" /></p>
+<p><img alt="Protection Settings" src="../assets/protection_settings.png"></p>
 <p>i. Once you define protection settings, continue to <strong>Scheduling</strong>. Here, check if you want to start synchronization <strong>Immediately</strong> or <strong>At a specific time</strong>. Then, click <strong>Next</strong>.</p>
 <p>j. On the final page, <strong>Ready to Complete</strong>, verify settings and click <strong>FINISH</strong>.</p>
 <p><strong>How to Configure Outgoing Replications</strong></p>
 <p>a. Outgoing replications are configured in the same way as incoming replications.</p>
 <p><strong>Reviewing the State of Existing Replications</strong></p>
 <p>You can review the state and details of all on-premises incoming replications. With the interface, you can see all the information concerning the configuration for replicating, information on the source and destination, as well as the health of the workload.</p>
-<p><img alt="Review State" src="../assets/review_state.png" /></p>
+<p><img alt="Review State" src="../assets/review_state.png"></p>
 <p><strong>Performing a Test Failover</strong></p>
 <p>With test failover tasks, you can verify whether the data from the source is replicated correctly on the target site. The replication Data is deleted once the Test Failover has been performed.</p>
-<p><img alt="Test failover image" src="../assets/test_failover_image.png" /></p>
+<p><img alt="Test failover image" src="../assets/test_failover_image.png"></p>
 <p>a. In the VMware Cloud Director Availability Portal, either form the <strong>Incoming Replications</strong> or from the <strong>Outgoing Replications</strong> pane, select the protected vApp that you want to test.</p>
 <p>b. Click Test Failover.</p>
-<p><img alt="Run Test Failover" src="../assets/run_test_failover.png" /></p>
+<p><img alt="Run Test Failover" src="../assets/run_test_failover.png"></p>
 <p>c. The Test Failover wizard opens</p>
-<p><img alt="Test Failover" src="../assets/test_failover.png" /></p>
+<p><img alt="Test Failover" src="../assets/test_failover.png"></p>
 <p>d. On the <strong>Recovery Settings</strong> page, use the options to configure the test task and click <strong>Next</strong>.</p>
 <p>e. On the Recovery Instance page, configure the recovery point in time and click <strong>Next.</strong></p>
 <p>f. On the Ready to Complete page, review the test details and click <strong>Finish</strong> to initiate the Test Failover Task.</p>
 <p>g. You can monitor the progress in the <strong>Replications Task</strong> pane.</p>
-<p><img alt="Replication Task" src="../assets/replication_task_pane.png" /></p>
+<p><img alt="Replication Task" src="../assets/replication_task_pane.png"></p>
 <p><strong>Conducting the Test Cleanup</strong></p>
 <p>a. From the <strong>Incoming Replications</strong> or the <strong>Outgoing Replications</strong> pane, you can conduct the test          cleanup.</p>
 <p>b. From the replications pane, select the test failover you want to cleanup</p>
 <p>c. Select <strong>Test Cleanup</strong></p>
-<p><img alt="Test Cleanup" src="../assets/test_cleanup.png" /></p>
+<p><img alt="Test Cleanup" src="../assets/test_cleanup.png"></p>
 <p>d. Click <strong>CLEANUP</strong></p>
 <p><strong>Deleting Replications</strong></p>
 <p>a. You can remove the replication by selecting the vApp or VM and clicking <strong>Delete.</strong></p>
-<p><img alt="Delete Replication" src="../assets/delete_replication.png" /></p>
-<p>b. Confirm you wish to delete the selected replication by clicking <strong>DELETE</strong></p>
+<p><img alt="Delete Replication" src="../assets/delete_replication.png"></p>
+<p>b. Confirm you wish to delete the selected replication by clicking <strong>DELETE</strong></p></div>
 
   <hr>
 <div class="md-source-file">
