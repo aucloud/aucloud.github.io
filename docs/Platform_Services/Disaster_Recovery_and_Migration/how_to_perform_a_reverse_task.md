@@ -9,7 +9,11 @@ Verify that you have performed a Failover task to the vApp before starting the R
  
 ## Performing a reverse task
 
-1. In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, and click Reverse. A Reverse pop-up window displays to Confirm the reverse operation.
+1. In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, then click **All Actions** and select **Reverse**. 
+
+1. Enter your availability service account credentials if prompted.
+
+1. A Reverse pop-up window displays. Select **Reverse** to confirm the reverse operation, or **Cancel** to cancel the reverse operation.
 
 1. You can monitor the progress of the task in the Replication Tasks pane.
   

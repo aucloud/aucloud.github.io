@@ -13,19 +13,20 @@ Verify that the vApp containing the Virtual Machine is protected on your destina
 
 ## Performing a failover task
 
-1. In VMware Cloud Director Availability Portal, either from the **Incoming Replications** or from the **Outgoing Replications** pane, select the virtual machine that you wish to failover, click **All Actions** and then click **Failover**. The **Failover** wizard opens.
+1. In VMware Cloud Director Availability Portal, either from the **Incoming Replications** or from the **Outgoing Replications** pane, select the virtual machine that you wish to failover, click **All Actions** and then click **Failover**. If you are prompted to enter your availability service account credentials for the incoming/outgoing site, do so. The **Failover** wizard opens.
 
-1. In the Recovery Settings tab, use the options to configure the task and click **Next.**
+1. In the Recovery Settings tab, use the options to configure the task and click **Next**.
 
 	| Option | Descriptions |
 	| ---    | ---          |
 	| Consolidate VM Disks | When enabled, the failover operation takes longer to complete but allows for a better performance of the recovered VM |
 	| Power on recovered vApps | Select this option, to power on the virtual machine on the destination site |
 	| Network settings | <ul><li>Select the Apply preconfigured network settings on failover option, so that the network configured during the virtual machine replication is assigned</li><li>Select the Connect all VMs to network option and select a network from the drop-down menu</li></ul><p></p>The replicated virtual machine connects to the network that you selected |
+	| VDC compute and sizing policy | Select any specific compute and sizing policies for your VDC VM placement or VDC VM sizing |
 
-1. On the Recovery Instance page, configure the recovery point in time and click Next.
+1. On the Recovery Instance page, configure the recovery point in time and click **Next**.
 
-1. On the Ready to Complete page, review the test details and click Finish to initiate the Failover task. You can monitor the progress of the task either in the Incoming Replications or the Outgoing Replications pane.
+1. On the Ready to Complete page, review your selected settings click Finish to initiate the Failover task. You can monitor the progress of the task either in the Incoming Replications or the Outgoing Replications pane.
 
     - The failed over vApp is running on your destination site. The vApp is no longer protected upon the task completion.
 
