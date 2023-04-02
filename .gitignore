@@ -134,4 +134,6 @@ dmypy.json
 # Windows junk
 thumbs.db
 
-
+# Environment vars
+.envrc
+ 

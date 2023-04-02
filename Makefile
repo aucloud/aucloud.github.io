@@ -16,8 +16,6 @@ docs-validate: clean
 docs-validate-debug: clean
 	SITE_URL=http://localhost:8000/ mkdocs build -c -s -v
 
-
-
 docs-serve: clean
 	SITE_URL=http://localhost:8000/ mkdocs serve
 
@@ -33,3 +31,6 @@ ubuntu-deps:
 clean:
 	rm -rf site
 	rm -rf .cache
+
+docker-run:
+	docker-compose run --service-ports docs

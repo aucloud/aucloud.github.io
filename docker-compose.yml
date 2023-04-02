@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  docs:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    entrypoint: mkdocs serve --dev-addr=0.0.0.0:8000 --dirtyreload
+    environment:
+      SITE_URL: ${SITE_URL}
+      REPO_URL: ${REPO_URL}
+      EDIT_URL: ${EDIT_URL}
