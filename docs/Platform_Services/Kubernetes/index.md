@@ -35,5 +35,5 @@ This infrastructure will allow deployment of Kubernetes clusters within a VCD VD
 ## Getting started
 
 - Read about [how to provision a cluster using the VCD UI](./provisioning_clusters_vcd_ui.md)
-- Run through and 'end to end' example [deploying WordPress](./deploying_example_wordpress_with_sql.md)
+- Run through an 'end to end' example of [deploying WordPress](./deploying_example_wordpress_with_sql.md)
 - Explore through our [FAQ](./faq.md)
