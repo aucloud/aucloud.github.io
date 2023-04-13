@@ -20,7 +20,7 @@ S3-compatible object storage is provided for the management of buckets and objec
 
 ## [Backup](./Backup)
 
-AUCloud uses Veeam Backup and Replication to protect vCD virtual machines and  Veeam Backup for M365 for Microsoft 365 data.
+AUCloud uses Veeam Backup and Replication to protect VCD virtual machines and  Veeam Backup for M365 for Microsoft 365 data.
 
 ## [Disaster Recovery and Migration](./Disaster_Recovery_and_Migration)
 
@@ -33,3 +33,7 @@ AUCloud's Sovereign Bridge provides connectivity between physical and virtual re
 ## [Symmetric Key Agreement Platform](./Symmetric_Key_Agreement_Platform/index.md)
 
 AUCloud's Symmetric Key Agreement Platform, developed on Arqit's QuantumCloud™, provides high performance and quantum computing resistant cryptography as a service.
+
+## [Kubernetes Service](./Kubernetes/index.md)
+
+AUCloud's Kubernetes Service, based on VMware's Tanzu Kubernetes Grid. Providing self-service Kubernetes cluster provisioning including direct integration into VMware Cloud Director's storage and networking fabrics.

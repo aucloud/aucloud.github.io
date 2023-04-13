@@ -27,6 +27,7 @@ cmdlet
 com_
 commandline
 comms
+config
 crypting
 csv
 csz
@@ -49,8 +50,10 @@ encrypter
 encrypters
 encryptors
 eportal
+etcd
 evbo
 failover
+filesystem
 financials
 firewalling
 fortinet
@@ -58,6 +61,7 @@ fyshwick
 gartner
 github
 gradle
+GUI
 hellmann
 html
 https
@@ -67,15 +71,17 @@ iso
 kbytes
 keymat
 kotlin
-kubernetes
+kube
+kubectl
 kubernetes
 kyber
 maloney
 microsoft
 microsofts
 minio
+mitigations
 msg
-mybucket
+mysql
 natively
 nvram
 onboarding
@@ -84,6 +90,7 @@ ovf
 ovftool
 palo
 pdf
+podman
 pre
 preconfigured
 productisation
@@ -94,6 +101,7 @@ ransomware
 rclone
 remediated
 routable
+runtime
 salesforce
 scsi
 sdk
@@ -103,7 +111,6 @@ sed
 sharepoint
 shor
 shors
-stateful
 stateful
 subnet
 subnets
@@ -137,5 +144,6 @@ vsphere
 vulnerability_disclosure_policy
 webex
 wickr
+WordPress
 www
 xamplify

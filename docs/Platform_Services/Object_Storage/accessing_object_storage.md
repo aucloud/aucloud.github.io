@@ -30,16 +30,16 @@ Buckets are containers for objects. You can have one or more buckets and control
 
     An AWS specific example on how to make this work using the aws command line tool:
 
-1. Create an AWS credentials file (have your access\_key\_id and secret\_access\_key ready):
+1. Create an AWS credentials file (have your `access_key_id` and `secret_access_key` ready):
 
     ```bash
     aws configure --profile=aucloud
     ```
 
-1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `myBucket`, using the ODCE endpoint)
+1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`, using the ODCE endpoint)
 
     ```bash
-    aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://myBucket
+    aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://mybucket
     ```
 
 
