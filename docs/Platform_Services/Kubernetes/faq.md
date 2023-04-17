@@ -26,4 +26,7 @@ By *Default* each load balanced service uses a separate public IP by default.
 A free public IP is defined by an IP with no existing NAT rule applied to it, or virtual service bound to it.
 
 
+### Can AUCloud's Kubernetes Service support Windows containers?
+AUCloud's Kubernetes service uses Ubuntu 20.04 as the operating system for all nodes.
+While Windows containers are [possible in Kubernetes](https://kubernetes.io/docs/concepts/windows/intro/), it requires worker nodes running [Windows Server](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/) which is not supported by AUCloud's service.
 
