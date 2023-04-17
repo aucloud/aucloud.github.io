@@ -36,15 +36,6 @@ description: Reference URLs for services in AUCLoud
 | [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Official | - |
 | [https://evbo-csz.australiacloud.com.au/](https://evbo-csz.australiacloud.com.au/) | Protected | - |
 
-## Object Storage API Endpoints (via VMware Object Storage Extension)
-
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
-| [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
-| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
-| [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
-
 ## Object Storage API Endpoints (direct use)
 
 !!! note "Path based s3 access only"
@@ -56,6 +47,16 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Protected | SSZ |
+
+## Object Storage API Endpoints (via VMware Object Storage Extension)
+
+| URL | Community environment | Sovereignty Zone |
+| ---- | ------ | --------------------- |
+| [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
+| [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
+| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
+| [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
+
 
 ## AUCloud Microsoft KMS Server
 
