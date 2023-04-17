@@ -2526,6 +2526,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#can-auclouds-kubernetes-service-support-windows-containers" class="md-nav__link">
+    Can AUCloud's Kubernetes Service support Windows containers?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3264,6 +3271,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#can-auclouds-kubernetes-service-support-windows-containers" class="md-nav__link">
+    Can AUCloud's Kubernetes Service support Windows containers?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3315,7 +3329,10 @@ No extra / hidden costs exist.</p>
 <h3 id="why-the-load-balancer-not-provisioning">Why the Load Balancer not provisioning?<a class="headerlink" href="#why-the-load-balancer-not-provisioning" title="Permanent link">¤</a></h3>
 <p>The most likely reason for a Load Balancer failing to provision is insufficient free public IPs.
 By <em>Default</em> each load balanced service uses a separate public IP by default.
-A free public IP is defined by an IP with no existing NAT rule applied to it, or virtual service bound to it.</p></div>
+A free public IP is defined by an IP with no existing NAT rule applied to it, or virtual service bound to it.</p>
+<h3 id="can-auclouds-kubernetes-service-support-windows-containers">Can AUCloud's Kubernetes Service support Windows containers?<a class="headerlink" href="#can-auclouds-kubernetes-service-support-windows-containers" title="Permanent link">¤</a></h3>
+<p>AUCloud's Kubernetes service uses Ubuntu 20.04 as the operating system for all nodes.
+While Windows containers are <a href="https://kubernetes.io/docs/concepts/windows/intro/">possible in Kubernetes</a>, it requires worker nodes running <a href="https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/">Windows Server</a> which is not supported by AUCloud's service.</p></div>
 
   <hr>
 <div class="md-source-file">
