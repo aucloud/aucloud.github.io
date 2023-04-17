@@ -3,13 +3,17 @@ title: Security and Governance
 description: Security and Governance
 ---
 
-## AUCloud's Assessments and certifications
+## AUCloud's assessments and certifications
 
-AUCloud currently holds an ISO-27001 certificate and an IRAP PROTECTED assessment.
+The programs below may contain additional information available to current and prospective clients under NDA.
+Please reach out to your AUCloud sales team for additional details.
 
-- See our IRAP assessment letter [here](./assets/AUCloud_IRAP_Letter_December_2022.pdf).
-
-
+| Assessment/Certification Program                                                                                                           | Evidence                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| [IRAP](https://www.cyber.gov.au/resources-business-and-government/assessment-and-evaluation-programs/infosec-registered-assessors-program) | [December 2022 Assessment Letter](./assets/AUCloud_IRAP_Letter_December_2022.pdf)                                            |
+| [ISO-27001 Information Security Management Systems](https://www.iso.org/standard/27001)                                                    | [2023 Certificate](./assets/AUCloud_ISO_27001_Certificate_2023.pdf)                                                          |
+| [Defence Industry Security Program membership](https://www.defence.gov.au/security/industry)                                               | [2021 Certificate](./assets/AUCloud_(Sovereign_Cloud Australia)_DISP_Certificate.pdf)                                    |
+| [DTA Hosting Certification Framework](https://www.hostingcertification.gov.au/)                                                            | [Certified strategic certificate](./assets/AUCloud_(Sovereign Cloud Australia)_Certificate_of_Hosting_Certification.pdf) |
 
 ## Summary of AUCloud Security Controls
 
@@ -23,7 +27,7 @@ In addition, as part of the basic level storage offering, AUCloud provides Logic
 
 All ICT media is owned by AUCloud. Media is not returned to vendors for maintenance, replacement etc. Unserviceable media is destroyed in accordance with the ISM.
 
-### Physical Security 
+### Physical Security
 
 All CDC, NEXTDC facilities and AUCloud offices are certified as Zone 4 in accordance with the Protective Security Policy Framework (PSPF). The PSPF defines Australian Government security guidance across governance and information, personnel and physical systems.
 
@@ -76,14 +80,16 @@ AUCloud maintains regular (weekly) vulnerability scanning of its systems. Discov
 ### Real time logging, monitoring and detection
 
 AUCloud operates its own in Security Operations Centre (SOC) which implements proactive monitoring to reduce cyber threats and attacks using e2e assure’s CUMULO technology. CUMULO provides a single holistic view of risk and threats across an enterprise, including private and public cloud infrastructure, and is designed to identify threats before they become incidents. The SOC monitors all AUCloud endpoint devices, servers, storage and network devices.  Logs and events meeting the minimum requirements of the ISM are collected, monitored and responded to.
-  
+
 The SOC actively monitors and alerts for unauthorised access to the customer environment by AUCloud staff or systems.
 
 Data traversing the AUCloud next generation firewalls (NGFE) is filtered and inspected for content. Note: Encrypted customer data is not broken and inspected.
 
 !!! note
 
-    AUCloud does not monitor customer environments.
+```
+AUCloud does not monitor customer environments.
+```
 
 AUCloud offers SOC as a Service (SOCaaS) which, if purchased, customers can utilise to monitor their environments.
 
@@ -104,10 +110,10 @@ Data in transit to the AUCloud management portals are TLS (1.2 or higher) with m
 #### Data at Rest
 
 Data at rest encryption is available to customers data using the Veeam backup solution. Veeam utilises AES 256 (an ASD approved cryptographic algorithm).
- 
+
 Customer VM’s are encrypted at rest using AES 256.
 
-### Access to Customer Data ##
+### Access to Customer Data
 
 AUCloud standard users cannot access AUCloud infrastructure or customer environments.
 
