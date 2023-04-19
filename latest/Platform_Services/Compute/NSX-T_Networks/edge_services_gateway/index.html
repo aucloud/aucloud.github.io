@@ -3860,12 +3860,12 @@
 <li>Source NAT (SNAT) - changes the source IP of the packet</li>
 <li>Reflexive (stateless NAT) - source packets undergo destination address rewriting, and destination packets undergo source address rewriting</li>
 </ul>
-<p>There are two types of NAT within your Edge Services Gateway (ESG) to disable NAT rules:</p>
+<p>There are two types of NAT within your Edge Services Gateway (ESG):</p>
 <ul>
-<li>No DNAT</li>
-<li>No SNAT</li>
+<li>SNAT (required for outbound traffic)</li>
+<li>DNAT (required for inbound traffic)</li>
 </ul>
-<p>For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud.</p>
+<p>For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud. (SNAT rule)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For both DNAT and SNAT:</p>
@@ -4463,7 +4463,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 19, 2023</span>
       
     
   </small>
