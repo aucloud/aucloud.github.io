@@ -210,12 +210,12 @@ You can use three types of NAT within your Edge Services Gateway (ESG):
 * Source NAT (SNAT) - changes the source IP of the packet
 * Reflexive (stateless NAT) - source packets undergo destination address rewriting, and destination packets undergo source address rewriting
 
-There are two types of NAT within your Edge Services Gateway (ESG) to disable NAT rules:
+There are two types of NAT within your Edge Services Gateway (ESG):
 
-* No DNAT
-* No SNAT
+* SNAT (required for outbound traffic)
+* DNAT (required for inbound traffic)
 
-For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud.
+For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud. (SNAT rule)
 
 !!! note
 
