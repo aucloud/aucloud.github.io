@@ -3,6 +3,8 @@ _user
 aas
 access_key_id
 accountabilities
+accreditations
+accreditor
 allow-listing
 analytics
 api
@@ -103,6 +105,7 @@ remediated
 routable
 runtime
 salesforce
+sanitisation
 scsi
 sdk
 searchable
@@ -143,6 +146,7 @@ vos
 vsphere
 vulnerability_disclosure_policy
 webex
+whitelist
 wickr
 WordPress
 www
