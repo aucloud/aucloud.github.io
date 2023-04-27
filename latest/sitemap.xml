@@ -46,6 +46,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/</loc>
+         <lastmod>2023-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/edce_crisp/</loc>
+         <lastmod>2023-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/odce_crisp/</loc>
+         <lastmod>2023-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/pdce_crisp/</loc>
+         <lastmod>2023-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/licensing/licensing/</loc>
          <lastmod>2023-04-27</lastmod>
          <changefreq>daily</changefreq>
@@ -77,11 +97,6 @@
     </url>
     <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/portal/managing_user_accounts/</loc>
-         <lastmod>2023-04-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/portal/signing_the_crisp/</loc>
          <lastmod>2023-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
