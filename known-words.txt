@@ -64,6 +64,7 @@ gartner
 github
 gradle
 GUI
+harbor
 hellmann
 html
 https
@@ -84,6 +85,8 @@ minio
 mitigations
 msg
 mysql
+namespace
+namespaces
 natively
 nvram
 onboarding

@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: FAQ
 description: Frequently asked questions on AUCloud's Kubernetes Service
 ---
 
@@ -10,6 +10,21 @@ No extra / hidden costs exist.
 
 !!! note "Public IP consumption"
    Users should budget for extra public IP addresses when standing up new clusters with internet facing services.
+
+### What is the difference between Docker and Kubernetes?
+Docker is a containerization platform that allows developers to package their applications and dependencies into portable and isolated containers.
+Kubernetes, on the other hand, is a container orchestration platform that automates the deployment, scaling, and management of containerized applications across a cluster of computers, providing features such as load balancing, service discovery, and self-healing. 
+
+### What is the difference Containers and Docker?
+Containers are a lightweight and portable form of virtualisation that enable you to package an application and its dependencies into a single, self-contained unit that can be easily moved between different computing environments.
+Docker is one of many platforms including Podman and LXC/LDC that implement the OCI container specification.
+Docker provides a life cycle that simplifies the creation, management, and distribution of containers by providing an  user interface and a suite of tools for building, sharing, and running containers.
+
+### What is the difference between Tanzu and Kubernetes?
+Tanzu is a brand name for a suite of products and services from VMware that help organizations build, run, and manage modern applications on Kubernetes.
+AUCloud's Kubernetes service is based on VMware Tanzu Kubernetes Grid, which is a Kubernetes distribution that packages together open-source technologies and automation tooling to help you get up and running quickly with a production-ready Kubernetes cluster.
+
+
 
 ### What IP should I use for the Kubernetes API?
 
@@ -29,4 +44,18 @@ A free public IP is defined by an IP with no existing NAT rule applied to it, or
 ### Can AUCloud's Kubernetes Service support Windows containers?
 AUCloud's Kubernetes service uses Ubuntu 20.04 as the operating system for all nodes.
 While Windows containers are [possible in Kubernetes](https://kubernetes.io/docs/concepts/windows/intro/), it requires worker nodes running [Windows Server](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/) which is not supported by AUCloud's service.
+
+
+### How do I install the `tanzu` CLI on Apple silicon?
+The `tanzu` CLI which is marked for x86 from AUCloud's current experience will run on mac os systems running apple silicon.
+
+The *core* package in the CLI pack also includes additional CLI tools such as `imgpkg` and `ytt` from the open-source [Carvel](https://carvel.dev/) project.
+
+Users, if they need access can install these packages, for Apple Silicon, using `brew` e.g.
+
+```bash
+brew tap vmware-tanzu/carvel
+brew install imgpkg
+imgpkg version
+```
 
