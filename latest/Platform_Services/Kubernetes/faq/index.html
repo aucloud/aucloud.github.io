@@ -2586,6 +2586,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-a-node-port-a-loadbalancer-and-an-ingress" class="md-nav__link">
+    What is the difference between a node port a LoadBalancer and an Ingress?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-ip-should-i-use-for-the-kubernetes-api" class="md-nav__link">
     What IP should I use for the Kubernetes API?
   </a>
@@ -3471,6 +3478,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-a-node-port-a-loadbalancer-and-an-ingress" class="md-nav__link">
+    What is the difference between a node port a LoadBalancer and an Ingress?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-ip-should-i-use-for-the-kubernetes-api" class="md-nav__link">
     What IP should I use for the Kubernetes API?
   </a>
@@ -3548,6 +3562,11 @@ Docker provides a life cycle that simplifies the creation, management, and distr
 <h3 id="what-is-the-difference-between-tanzu-and-kubernetes">What is the difference between Tanzu and Kubernetes?<a class="headerlink" href="#what-is-the-difference-between-tanzu-and-kubernetes" title="Permanent link">¤</a></h3>
 <p>Tanzu is a brand name for a suite of products and services from VMware that help organizations build, run, and manage modern applications on Kubernetes.
 AUCloud's Kubernetes service is based on VMware Tanzu Kubernetes Grid, which is a Kubernetes distribution that packages together open-source technologies and automation tooling to help you get up and running quickly with a production-ready Kubernetes cluster.</p>
+<h3 id="what-is-the-difference-between-a-node-port-a-loadbalancer-and-an-ingress">What is the difference between a <code>node port</code> a <code>LoadBalancer</code> and an <code>Ingress</code>?<a class="headerlink" href="#what-is-the-difference-between-a-node-port-a-loadbalancer-and-an-ingress" title="Permanent link">¤</a></h3>
+<p>A good description of the differences can be found on the <a href="https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types">Kubernetes documentation</a>.</p>
+<p>A <code>NodePort</code> is a port on a worker node that is exposes a pod directly based on the host network. It provides no redundancy from a pod perspective, and is not recommended for production use. Users of AUCloud's Kubernetes service can use <code>NodePort</code> to expose services for testing purposes. To expose to the internet a user will need to create their own DNAT or virtual service.</p>
+<p>A <code>LoadBalancer</code> is a service that exposes a pod via a load balancer. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway. This provides redundancy from a pod perspective, and is recommended for production use. <code>LoadBalancer</code> services provide L4 load balancing, and can be used to expose services to the internet. </p>
+<p>An <code>Ingress</code> is a service that exposes a pod via a load balancer, and provides L7 load balancing. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway for common protocols to an ingress controller such as NGINX, Contour or Istio. The ingress controller provides L7 routing to the correct pod.</p>
 <h3 id="what-ip-should-i-use-for-the-kubernetes-api">What IP should I use for the Kubernetes API?<a class="headerlink" href="#what-ip-should-i-use-for-the-kubernetes-api" title="Permanent link">¤</a></h3>
 <p>The Kubernetes service will create a 'virtual service' to load balance across the control plane member at the IP address provided. The two choices are:</p>
 <ol>
