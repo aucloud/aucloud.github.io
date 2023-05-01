@@ -71,6 +71,7 @@ https
 hyperscalers
 irap
 iso
+istio
 kbytes
 keymat
 kotlin

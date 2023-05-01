@@ -25,6 +25,14 @@ Tanzu is a brand name for a suite of products and services from VMware that help
 AUCloud's Kubernetes service is based on VMware Tanzu Kubernetes Grid, which is a Kubernetes distribution that packages together open-source technologies and automation tooling to help you get up and running quickly with a production-ready Kubernetes cluster.
 
 
+### What is the difference between a `node port` a `LoadBalancer` and an `Ingress`?
+A good description of the differences can be found on the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types).
+
+A `NodePort` is a port on a worker node that is exposes a pod directly based on the host network. It provides no redundancy from a pod perspective, and is not recommended for production use. Users of AUCloud's Kubernetes service can use `NodePort` to expose services for testing purposes. To expose to the internet a user will need to create their own DNAT or virtual service.
+
+A `LoadBalancer` is a service that exposes a pod via a load balancer. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway. This provides redundancy from a pod perspective, and is recommended for production use. `LoadBalancer` services provide L4 load balancing, and can be used to expose services to the internet. 
+
+ An `Ingress` is a service that exposes a pod via a load balancer, and provides L7 load balancing. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway for common protocols to an ingress controller such as NGINX, Contour or Istio. The ingress controller provides L7 routing to the correct pod.
 
 ### What IP should I use for the Kubernetes API?
 
