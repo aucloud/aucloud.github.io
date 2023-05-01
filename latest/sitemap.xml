@@ -501,6 +501,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/</loc>
+         <lastmod>2023-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/customizing_tanzu_packages/</loc>
+         <lastmod>2023-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/deploying_monitoring/</loc>
+         <lastmod>2023-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/kapp_to_install/</loc>
+         <lastmod>2023-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/tanzu_cli_install/</loc>
+         <lastmod>2023-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/M365_Backup_common_errors_and_actions/</loc>
          <lastmod>2023-05-01</lastmod>
          <changefreq>daily</changefreq>

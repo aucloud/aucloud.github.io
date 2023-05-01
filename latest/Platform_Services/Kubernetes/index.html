@@ -2440,6 +2440,8 @@
         
           
         
+          
+        
       
       
         
@@ -2511,7 +2513,7 @@
   
     <li class="md-nav__item">
       <a href="faq/" class="md-nav__link">
-        Frequently Asked Questions
+        FAQ
       </a>
     </li>
   
@@ -2611,6 +2613,118 @@
       <a href="upgrading_clusters_vcd_ui/" class="md-nav__link">
         Upgrading Kubernetes clusters using VCD
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_13" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="tanzu_packages/">Tanzu packages</a>
+          
+            <label for="__nav_2_7_13">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_7_13">
+          <span class="md-nav__icon md-icon"></span>
+          Tanzu packages
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tanzu_packages/customizing_tanzu_packages/" class="md-nav__link">
+        Customizing tanzu packages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tanzu_packages/deploying_monitoring/" class="md-nav__link">
+        Deploying the supported Grafana / Prometheus monitoring stack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tanzu_packages/kapp_to_install/" class="md-nav__link">
+        Deploying Tanzu packages using kapp CRDs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tanzu_packages/tanzu_cli_install/" class="md-nav__link">
+        Deploying Tanzu  packages using the Tanzu CLI
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3234,15 +3348,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    Dependencies
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting started
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
   </a>
   
 </li>
@@ -3281,8 +3395,17 @@
   <h1>AUCloud Kubernetes Service</h1>
 
 <div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>AUCloud is deploying self-service enterprise grade Kubernetes Infrastructure based on VMware Tanzu Kubernetes Grid.
-This infrastructure will allow deployment of Kubernetes clusters within a VCD VDC.</p>
+<p>The AUCloud Kubernetes service is a self-service enterprise grade Kubernetes Infrastructure based on VMware Tanzu Kubernetes Grid, which is certified to be compatible with upstream Kubernetes.
+The the service is integrated with VMware Cloud Director. Users provision clusters to their NSX-T backed VDC. The clusters come with pre-configured integrations with AUCloud's network and storage fabric to maximise performance.</p>
+<p>Kubernetes is a popular open-source software system that helps automate the management and deployment of containerized applications. Containers are a way to package an application along with its dependencies, making it easier to move between different computing environments. With AUCloud's Kubernetes service, you can easily deploy and manage these containers at scale, allowing you to run complex applications reliably and efficiently on a cluster of computers. Kubernetes takes care of tasks such as scheduling containers to run on specific nodes, managing storage, and load balancing traffic between containers.</p>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">¤</a></h2>
+<ul>
+<li>Read about <a href="provisioning_clusters_vcd_ui/">how to provision a cluster using the VCD UI</a></li>
+<li>Run through an 'end to end' example of <a href="deploying_example_wordpress_with_sql/">deploying WordPress</a></li>
+<li>Watch <a href="https://www.youtube.com/watch?v=PH-2FfFD2PU">Kubernetes in 5 minutes</a> video.</li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/">Read more from the Kubernetes concepts overview</a> from <code>kubernetes.io</code>.</li>
+<li>Explore through our <a href="faq/">FAQ</a></li>
+</ul>
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">¤</a></h2>
 <ol>
 <li>
@@ -3313,20 +3436,14 @@ This infrastructure will allow deployment of Kubernetes clusters within a VCD VD
 <li>
 <p>Access to an external container registry (e.g. <a href="https://hub.docker.com/">Docker Hub</a> or <a href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry">Github container registry</a>) is recommended for initial testing.</p>
 </li>
-</ol>
-<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">¤</a></h2>
-<ul>
-<li>Read about <a href="provisioning_clusters_vcd_ui/">how to provision a cluster using the VCD UI</a></li>
-<li>Run through an 'end to end' example of <a href="deploying_example_wordpress_with_sql/">deploying WordPress</a></li>
-<li>Explore through our <a href="faq/">FAQ</a></li>
-</ul></div>
+</ol></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 1, 2023</span>
       
     
   </small>
