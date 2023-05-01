@@ -79,11 +79,11 @@ AUCloud maintains regular (weekly) vulnerability scanning of its systems. Discov
 
 ### Real time logging, monitoring and detection
 
-AUCloud operates its own in Security Operations Centre (SOC) which implements proactive monitoring to reduce cyber threats and attacks using e2e assure’s CUMULO technology. CUMULO provides a single holistic view of risk and threats across an enterprise, including private and public cloud infrastructure, and is designed to identify threats before they become incidents. The SOC monitors all AUCloud endpoint devices, servers, storage and network devices.  Logs and events meeting the minimum requirements of the ISM are collected, monitored and responded to.
+AUCloud operates its own in Security Operations Centre (SOC) which implements proactive monitoring to reduce cyber threats and attacks. AUCloud's cyber security monitoring provides a single holistic view of risk and threats across an enterprise, including private and public cloud infrastructure, and is designed to identify threats before they become incidents. The SOC monitors all AUCloud endpoint devices, servers, storage and network devices.  Logs and events meeting the minimum requirements of the ISM are collected, monitored and responded to.
 
 The SOC actively monitors and alerts for unauthorised access to the customer environment by AUCloud staff or systems.
 
-Data traversing the AUCloud next generation firewalls (NGFE) is filtered and inspected for content. Note: Encrypted customer data is not broken and inspected.
+Data traversing the AUCloud next generation firewalls (NGFE) is filtered and inspected for malicious behaviour. Note: Encrypted customer data is not broken and inspected.
 
 !!! note
 
