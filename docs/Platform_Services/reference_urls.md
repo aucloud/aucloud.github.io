@@ -47,6 +47,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Protected | SSZ |
+| [https://s3-bsz.enterprise.australiacloud.com.au](https://s3-bsz.enterprise.australiacloud.com.au) | Enterprise | BSZ |
 
 ## Object Storage API Endpoints (via VMware Object Storage Extension)
 
@@ -56,6 +57,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
 | [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
+| [https://s3.vos.bsz.enterprise.australiacloud.com.au](https://s3.vos.bsz.enterprise.australiacloud.com.au/api/v1/s3) | Enterprise | BSZ |
 
 
 ## AUCloud Microsoft KMS Server
