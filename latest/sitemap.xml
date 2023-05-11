@@ -456,6 +456,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/deleting_clusters_vcd_ui/</loc>
+         <lastmod>2023-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/deploying_example_wordpress_with_sql/</loc>
          <lastmod>2023-05-11</lastmod>
          <changefreq>daily</changefreq>
