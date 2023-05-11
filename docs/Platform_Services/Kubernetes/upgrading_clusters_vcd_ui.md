@@ -26,7 +26,7 @@ Following the steps outlined in this document will upgrade a Kubernetes cluster.
 
     ![place holder](./assets/upgrade_cluster_02.png)
 
-4. There will be confirmation page the the upgrade process has started.  Click **Close**.
+4. There will be confirmation page that the upgrade process has started.  Click **Close**.
 
     ![place holder](./assets/upgrade_cluster_02b.png)
 
