@@ -21,7 +21,7 @@ To find your allocated external IP address range:
 
     ![ESG Configure](./assets/esg_configure.jpg)  
 
-1. In the _Edge Gateway Settings_ section, in the the _IP Allocations_ section, you will see the range of external IP addresses allocated for use.  
+1. In the _Edge Gateway Settings_ section, in the _IP Allocations_ section, you will see the range of external IP addresses allocated for use.  
 
     ![IP Allocations](./assets/ipallocations.png)
 

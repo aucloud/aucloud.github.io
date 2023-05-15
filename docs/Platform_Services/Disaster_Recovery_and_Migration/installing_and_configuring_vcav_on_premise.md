@@ -41,7 +41,7 @@ An ESXi host can handle the replication traffic through its management VMkerne
 
 You configure the replication VMkernel interface in its own IP subnet and connect the VMware Cloud Director Availability on-premises appliance to the same virtual port group. With this configuration, the replication traffic between the ESXi hosts and the VMware Cloud Director Availability Replicator instances stays in the same broadcast domain. As a result, the replication traffic does not cross a router uncompressed and saves the bandwidth.
 
-The the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the **CommonName** or at least one of the entries in the **Subject Alternative Name** must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.
+the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the **CommonName** or at least one of the entries in the **Subject Alternative Name** must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.
 
 ## Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client
 
