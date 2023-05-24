@@ -5,7 +5,7 @@ description: Security
 
 ## Overview
 
-As a sovereign community cloud AUCloud only services the Australian Government and Critical National Industry communities hosted and operated within Australian legal territorial jurisdiction.
+AUCloud is an Australian owned and operated Sovereign Cloud Service provider that delivers services exclusively to Australian Government, Critical National Industries (CNI) and secure enterprise organisations. 
 
 AUCloud’s core tenet is the protection of the confidentiality, integrity and availability of data: both AUCloud’s own and that entrusted to AUCloud by its customers.
 
@@ -32,7 +32,7 @@ AUCloud’s CRISP ensures all our users benefit from increased security across t
 
 ## Essential 8
 
-AUCloud has implemented the Essential Eight Strategies to Mitigate Cyber Intrusions. Additional ACSC advice and strategies to mitigate cyber security incidents are implemented using a risk-based approach to the AUCloud security program.
+AUCloud has implemented the Essential Eight Strategies to Mitigate Cyber Intrusions to a minimum of Maturity Level 2. Additional ACSC advice and strategies to mitigate cyber security incidents are implemented using a risk-based approach to the AUCloud security program.
 
 ## SOC
 
