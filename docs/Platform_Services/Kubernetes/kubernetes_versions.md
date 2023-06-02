@@ -2,25 +2,54 @@
 title: Supported Kubernetes versions
 description: Supported Kubernetes versions for the AUCloud Kubernetes Service
 ---
-
-
-
-
 ## Overview
-AUCloud's Kubernetes service is based on  [VMware's Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html), combined with the VMware's "[Container Service Extension](https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0/VMware-Cloud-Director-Container-Service-Extension-Using-Tenant-4.0/GUID-C137B2C6-6BAB-43EB-B074-C379D3473AE8.html)".
 
-The version of Kubernetes Grid currently supported is 1.5.4. [This page](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html) provides details of the component versions within the distribution.
+AUCloud's Kubernetes service is based on  [VMware's Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html), combined with the VMware's "[Container Service Extension](https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0.3/rn/vmware-cloud-director-container-service-extension-403-release-notes/index.html)".
 
-Within the VCD environment all clusters are currently based on Ubuntu 20.04 and one of the following kubernetes API versions:
+The version of Kubernetes Grid currently supported is [1.5.4](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html) and [1.6.1](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html) click the product version to view details of the component versions within the distribution.
 
-- 1.22.9
-- 1.21.11
-- 1.20.15
+### Tanzu Kubernetes version
 
-The Tanzu Kubernetes versions are enterprise distributions, and lag the open-source release train. It is *highly* recommended to use API version 1.22 or later as:
-- It will have the longest life cycle of support from VMware
-- 1.22 dropped a [number of APIs](https://kubernetes.io/blog/2021/07/14/upcoming-changes-in-kubernetes-1-22/) using 1.21 and below may introduce additional technical debt.
+The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 EDCE (Brisbane), SZ4 EDCE (Melbourne)  
 
+|Template name                                 | Kubernetes version | TKG Product Version| Comment          |
+|:---                                          |:---                |:---                |                  |
+|Ubuntu 20.04 and Kubernetes v1.23.10+vmware.1 | v1.23.10           | tkg 1.6.1          | added 2023-06-01 |
+|Ubuntu 20.04 and Kubernetes v1.22.13+vmware.1 | v1.22.13           | tkg 1.6.1          | added 2023-06-01 |
+|Ubuntu 20.04 and Kubernetes v1.21.14+vmware.1 | v1.21.14           | tkg 1.6.1          | added 2023-06-01 |
+|                                              |                    |                    |                  |
+|Ubuntu 20.04 and Kubernetes v1.22.9+vmware.1  | v1.22.9            | tkg 1.5.4          |                  |
+|Ubuntu 20.04 and Kubernetes v1.21.11+vmware.1 | v1.21.11           | tkg 1.5.4          |                  |
+|Ubuntu 20.04 and Kubernetes v1.20.15+vmware.1 | v1.20.15           | tkg 1.5.4          |                  |
+
+The Tanzu Kubernetes versions are enterprise distributions, and lag the open-source release train. It is *highly* recommended to use API version 1.23 or later as:
+
+- It will have the longest life cycle of support from VMware  
+- 1.23 dropped a [number of APIs](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/) using 1.23 and below may introduce additional technical debt.
+
+Please see upgrading clusters for information on upgrading Kubernetes versions, [here](./upgrading_clusters_vcd_ui.md)
+
+### Tanzu Kubernetes component versions
+
+| Zone| Env  | Component| version | comment|
+|:--- |:---  |:---      |:---     |:---    |
+| SZ1 | ODCE | CAPVCD   | 1.0.1   |        |
+| SZ1 | ODCE | CPI      | 1.3.0   |        |
+| SZ1 | ODCE | CSI      | 1.3.2   |        |
+|     |      |          |         |        |
+| SZ2 | ODCE | CAPVCD   | 1.0.1   |        |
+| SZ2 | ODCE | CPI      | 1.3.0   |        |
+| SZ2 | ODCE | CSI      | 1.3.2   |        |
+|     |      |          |         |        |
+| SZ3 | EDCE | CAPVCD   | 1.0.1   |        |
+| SZ3 | EDCE | CPI      | 1.3.0   |        |
+| SZ3 | EDCE | CSI      | 1.3.2   |        |
+|     |      |          |         |        |
+| SZ4 | EDCE | CAPVCD   | 1.0.1   |        |
+| SZ4 | EDCE | CPI      | 1.3.0   |        |
+| SZ4 | EDCE | CSI      | 1.3.2   |        |
+
+Please see upgrading cluster components for information on upgrading Kubernetes components, [here](./upgrading_component_versions.md)
 
 ## Resources
 
