@@ -27,7 +27,8 @@ description: Reference URLs for services in AUCLoud
 | [https://api-vcd-sz201.portal.australiacloud.com.au/api](https://api-vcd-sz201.portal.australiacloud.com.au/api) |  Official | SSZ |
 | [https://api-vcd-sz101.eportal.australiacloud.com.au/api](https://api-vcd-sz101.eportal.australiacloud.com.au/api)  | Protected | CSZ |
 | [https://api-vcd-sz201.eportal.australiacloud.com.au/api](https://api-vcd-sz201.eportal.australiacloud.com.au/api)  | Protected | SSZ |
-| [https://api-vcd-bsz.enterprise.australiacloud.com.au/api](https://portal.australiacloud.com.au/login)  | Enterprise | BSZ |
+| [https://api-vcd-bsz.enterprise.australiacloud.com.au/api](https://api-vcd-bsz.portal.australiacloud.com.au)  | Enterprise | BSZ |
+| [https://api-vcd-msz.portal.australiacloud.com.au/api](https://api-vcd-msz.portal.australiacloud.com.au)  | Official | MSZ |
 
 ## Veeam M365 Backup portal
 

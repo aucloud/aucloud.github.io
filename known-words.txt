@@ -85,6 +85,7 @@ microsofts
 minio
 mitigations
 msg
+msz
 mysql
 namespace
 namespaces
