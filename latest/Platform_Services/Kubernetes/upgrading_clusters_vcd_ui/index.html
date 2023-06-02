@@ -16,7 +16,7 @@
         <link rel="prev" href="../resizing_clusters_vcd_ui/">
       
       
-        <link rel="next" href="../tanzu_packages/">
+        <link rel="next" href="../upgrading_component_versions/">
       
       <link rel="icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
@@ -2460,6 +2460,8 @@
         
           
         
+          
+        
       
       
         
@@ -2699,13 +2701,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../upgrading_component_versions/" class="md-nav__link">
+        Upgrading Kubernetes clusters components using CLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_14" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_15" >
       
       
         
@@ -2728,14 +2744,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../tanzu_packages/">Tanzu packages</a>
           
-            <label for="__nav_2_7_14">
+            <label for="__nav_2_7_15">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_7_14">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_7_15">
           <span class="md-nav__icon md-icon"></span>
           Tanzu packages
         </label>
@@ -3464,38 +3480,41 @@
   <h1>Upgrading Kubernetes clusters using VCD</h1>
 
 <div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>This document is aimed to provide AUCloud tenancy administrators an overview on how to upgrade a kubernetes cluster within VMware Cloud Director.</p>
+<p>This document is aimed to provide AUCloud tenancy administrators an overview on how to upgrade kubernetes clusters within VMware Cloud Director (VCD).<br>
+To see how to upgrade a Kubernetes component version please see <a href="../upgrading_component_versions/">here</a></p>
 <p>Following the steps outlined in this document will upgrade a Kubernetes cluster.</p>
 <h2 id="upgrading-a-cluster">Upgrading a cluster<a class="headerlink" href="#upgrading-a-cluster" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>From a VCD tenancy, Select <strong>More</strong> &gt; <strong>Kubernetes Container Clusters</strong>.</p>
-<p><img alt="vcd main" src="../assets/01-vcd-main.png"></p>
+<p>From a VCD tenancy, Select <strong>More</strong> &gt; <strong>Kubernetes Container Clusters</strong>.
+<img alt="vcd main" src="../assets/01-vcd-main.png"></p>
 </li>
 <li>
-<p>Select the radio select for the cluster you wish to upgrade and the <strong>Upgrade</strong> column will start an assessment if an upgrade is available.  Once the assessment is finished the status of <em>Available</em> will be shown in this column.  If an upgrade is <em>Available</em>, the <strong>Upgrade</strong> button across the top menu will be available.  Click the <strong>Upgrade</strong> button to start the upgrade process.</p>
-<p><img alt="vcd kubernetes" src="../assets/upgrade_cluster_01a.png"></p>
-<p>This can also be done by clicking on the link of the cluster's name and viewing the status page as shown below:</p>
-<p><img alt="vcd kubernetes" src="../assets/upgrade_cluster_01b.png"></p>
+<p>Select the radio select for the cluster you wish to upgrade and the <strong>Upgrade</strong> column will start an assessment if an upgrade is available.  Once the assessment is finished the status of <em>Available</em> will be shown in this column.  If an upgrade is <em>Available</em>, the <strong>Upgrade</strong> button across the top menu will be available.  Click the <strong>Upgrade</strong> button to start the upgrade process.
+<img alt="vcd kubernetes" src="../assets/upgrade_cluster_01a.png"></p>
+</li>
+</ol>
+<p>This can also be done by clicking on the link of the cluster's name and viewing the status page as shown below:
+  <img alt="vcd kubernetes" src="../assets/upgrade_cluster_01b.png"></p>
+<ol>
+<li>
+<p>The <strong>Upgrade Cluster</strong> menu will show the cluster's current version and available versions to upgrade to.  Select the version to upgrade to and click <strong>Upgrade</strong>.
+<img alt="place holder" src="../assets/upgrade_cluster_02.png"></p>
 </li>
 <li>
-<p>The <strong>Upgrade Cluster</strong> menu will show the cluster's current version and available versions to upgrade to.  Select the version to upgrade to and click <strong>Upgrade</strong>.</p>
-<p><img alt="place holder" src="../assets/upgrade_cluster_02.png"></p>
+<p>There will be confirmation page that the upgrade process has started.  Click <strong>Close</strong>.
+<img alt="place holder" src="../assets/upgrade_cluster_02b.png"></p>
 </li>
 <li>
-<p>There will be confirmation page that the upgrade process has started.  Click <strong>Close</strong>.</p>
-<p><img alt="place holder" src="../assets/upgrade_cluster_02b.png"></p>
+<p>The Kubernetes menu will show the progress status of the upgrade under in the <strong>Upgrade</strong> column.
+<img alt="place holder" src="../assets/upgrade_cluster_03a.png"></p>
 </li>
-<li>
-<p>The Kubernetes menu will show the progress status of the upgrade under in the <strong>Upgrade</strong> column.</p>
-<p><img alt="place holder" src="../assets/upgrade_cluster_03a.png"></p>
-<p>This can also be view within the 'details' page of the cluster in the VCD UI.</p>
-<p><img alt="place holder" src="../assets/upgrade_cluster_03b.png"></p>
-</li>
-<li>
-<p>Once the kubernetes cluster has been upgraded, you will see the new version listed under the <strong>Kubernetes Version</strong> and the <strong>Upgrade</strong> column will show <em>Not Available</em></p>
-<p><img alt="place holder" src="../assets/upgrade_cluster_04.png"></p>
-</li>
+</ol>
+<p>This can also be view within the 'details' page of the cluster in the VCD UI.
+<img alt="place holder" src="../assets/upgrade_cluster_03b.png"></p>
+<ol>
+<li>Once the kubernetes cluster has been upgraded, you will see the new version listed under the <strong>Kubernetes Version</strong> and the <strong>Upgrade</strong> column will show <em>Not Available</em>
+<img alt="place holder" src="../assets/upgrade_cluster_04.png"></li>
 </ol></div>
 
   <hr>
@@ -3503,7 +3522,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 2, 2023</span>
       
     
   </small>

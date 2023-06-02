@@ -511,6 +511,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/upgrading_component_versions/</loc>
+         <lastmod>2023-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Kubernetes/tanzu_packages/</loc>
          <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
