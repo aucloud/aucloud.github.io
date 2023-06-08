@@ -9,7 +9,7 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Official | - |
 | [https://eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
-| [https://enterprise.australiacloud.com.au/login](https://enterprise.australiacloud.com.au/login) | Enterprise | - |
+
 
 ## Portal API endpoints
 
@@ -17,7 +17,7 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://api.portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Official | - |
 | [https://api.eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
-| [https://api.enterprise.australiacloud.com.au/login](https://enterprise.australiacloud.com.au/login) | Enterprise | - |
+
 
 ## VMware Cloud Director API endpoints
 
@@ -27,8 +27,8 @@ description: Reference URLs for services in AUCLoud
 | [https://api-vcd-sz201.portal.australiacloud.com.au/api](https://api-vcd-sz201.portal.australiacloud.com.au/api) |  Official | SSZ |
 | [https://api-vcd-sz101.eportal.australiacloud.com.au/api](https://api-vcd-sz101.eportal.australiacloud.com.au/api)  | Protected | CSZ |
 | [https://api-vcd-sz201.eportal.australiacloud.com.au/api](https://api-vcd-sz201.eportal.australiacloud.com.au/api)  | Protected | SSZ |
-| [https://api-vcd-bsz.enterprise.australiacloud.com.au/api](https://api-vcd-bsz.portal.australiacloud.com.au)  | Enterprise | BSZ |
 | [https://api-vcd-msz.portal.australiacloud.com.au/api](https://api-vcd-msz.portal.australiacloud.com.au)  | Official | MSZ |
+
 
 ## Veeam M365 Backup portal
 
@@ -48,7 +48,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Protected | SSZ |
-| [https://s3-bsz.enterprise.australiacloud.com.au](https://s3-bsz.enterprise.australiacloud.com.au) | Enterprise | BSZ |
+
 
 ## Object Storage API Endpoints (via VMware Object Storage Extension)
 
@@ -58,7 +58,7 @@ description: Reference URLs for services in AUCLoud
 | [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
 | [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
 | [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
-| [https://s3.vos.bsz.enterprise.australiacloud.com.au](https://s3.vos.bsz.enterprise.australiacloud.com.au/api/v1/s3) | Enterprise | BSZ |
+
 
 
 ## AUCloud Microsoft KMS Server
