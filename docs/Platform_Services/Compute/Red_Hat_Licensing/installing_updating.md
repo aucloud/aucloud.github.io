@@ -45,8 +45,8 @@ AUCloud will update as appropriate the latest minor versions. Once running throu
 
 Depending on your version of RHEL, download the appropriate version to the desired guest OS ie `/tmp`  
 
-- ![RedHat Enterprise Linux 8 entitlement](./assets/RHE8-2023-06-26-1.0-1.noarch.rpm)
-- ![RedHat Enterprise Linux 9 entitlement](./assets/RHE9-2023-06-26-1.0-1.noarch.rpm)
+- [RedHat Enterprise Linux 8 entitlement](./assets/RHE8-2023-06-26-1.0-1.noarch.rpm)
+- [RedHat Enterprise Linux 9 entitlement](./assets/RHE9-2023-06-26-1.0-1.noarch.rpm)
 
 To install run the following appending the version
 
