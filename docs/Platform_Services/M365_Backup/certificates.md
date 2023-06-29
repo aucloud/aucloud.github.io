@@ -6,7 +6,7 @@ description: How to update the M365 Backup Public Key (Certificate) in your Micr
 
 ## Overview 
 
-This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioning your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.
+This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioning of your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.
 
 
 ## Upload a New Certificate (Public Key)
@@ -16,7 +16,7 @@ This guide outlines the steps required to upload a new public key (certificate) 
     ![Azure Portal Login](./assets/azure_portal_login.png)
 
 
-2. At the **Welcome** Screen, selected **Azure Active Directory**
+2. At the **Welcome** Screen, select **Azure Active Directory**
 
     ![Azure_Welcome](./assets/azure_welcome.png)
 
@@ -36,7 +36,7 @@ This guide outlines the steps required to upload a new public key (certificate) 
     ![Upload_Certificate](./assets/upload_certificate.png)
 
 
-6. On the **Ready to Complete** page, review your selected settings and click **Finish** to initiate the Test Failover task.
+6. On the **Ready to Complete** page, review your selected settings and click **Finish**.
 
 
-7. Your certificate should now be uploaded successfully. Please advise AUCloud that you have completed this step, and we will complete some additional steps before testing.
+7. Your certificate should now be uploaded successfully and your backup jobs will continue to run as normal.
