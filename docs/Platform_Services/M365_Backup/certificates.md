@@ -1,6 +1,34 @@
 ---
-title: Adding an M365 Backup Certificate
-description: How to update a Microsoft 365 Backup Certificate in your M365 Tenancy
+title: Update Microsoft 365 Backup Certificate
+description: How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy
 ---
 
 ## Overview 
+
+This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioinng your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.
+
+## Upload a New Certificate (Public Key)
+
+1. Log in to the **Azure Portal** with your tenancy details
+
+    ![Azure Portal Login](./assets/azure_portal_login.png)
+
+2. At the **Welcome** Screen, selected **Azure Active Directory**
+
+    ![Azure_Welcome](./assets/azure_welcome.jpg)
+
+3. Go to **App registrations** for the organisatin's tenancy. Click on **All applications** and search for **Veeam** (or applicaiton name if different). Select the appropriate Veeam backup application.
+
+    ![Azure_App_Registrations](./assets/azure_app_registrations.png)
+
+4. Once in the applicaiton, go to **Certificates and secrets**. Click on **Certificates**There should be at least one certificate uploaded already. These are the certificates that are about to expire. Click on **Upload certificate**
+
+    ![Azure_Certificates_Secrets](./assets/azure_certifcates_secrets.png)
+
+5. When the prompt below opens, select the public key tht AUCloud has provided from your local folder. Enter a description such as "Veeam O365 backup certificate".
+
+    ![Upload_Certificate](./assets/upload_certificate.png)
+	
+6. On the **Ready to Complete** page, review your selected settings and click **Finish** to initiate the Test Failover task.
+
+7. Your certificate should now be uploaded successfully. Please advise AUCloud that you have completed this step, and we will complete some additional steps before testing.
