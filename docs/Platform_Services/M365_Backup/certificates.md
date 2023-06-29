@@ -15,7 +15,7 @@ This guide outlines the steps required to upload a new public key (certificate) 
 
 2. At the **Welcome** Screen, selected **Azure Active Directory**
 
-    ![Azure_Welcome](./assets/azure_welcome.jpg)
+    ![Azure_Welcome](./assets/azure_welcome.png)
 
 3. Go to **App registrations** for the organisatin's tenancy. Click on **All applications** and search for **Veeam** (or applicaiton name if different). Select the appropriate Veeam backup application.
 
