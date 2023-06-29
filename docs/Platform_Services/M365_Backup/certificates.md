@@ -5,7 +5,7 @@ description: How to update the M365 Backup Public Key (Certificate) in your Micr
 
 ## Overview 
 
-This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioinng your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.
+This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioning your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.
 
 ## Upload a New Certificate (Public Key)
 
@@ -17,15 +17,15 @@ This guide outlines the steps required to upload a new public key (certificate) 
 
     ![Azure_Welcome](./assets/azure_welcome.png)
 
-3. Go to **App registrations** for the organisatin's tenancy. Click on **All applications** and search for **Veeam** (or applicaiton name if different). Select the appropriate Veeam backup application.
+3. Go to **App registrations** for the organisation's tenancy. Click on **All applications** and search for **Veeam** (or application name if different). Select the appropriate Veeam backup application.
 
     ![Azure_App_Registrations](./assets/azure_app_registrations.png)
 
-4. Once in the applicaiton, go to **Certificates and secrets**. Click on **Certificates**There should be at least one certificate uploaded already. These are the certificates that are about to expire. Click on **Upload certificate**
+4. Once in the application, go to **Certificates and secrets**. Click on **Certificates**There should be at least one certificate uploaded already. These are the certificates that are about to expire. Click on **Upload certificate**
 
-    ![Azure_Certificates_Secrets](./assets/azure_certifcates_secrets.png)
+    ![Azure_Certificates_Secrets](./assets/azure_certificates_secrets.png)
 
-5. When the prompt below opens, select the public key tht AUCloud has provided from your local folder. Enter a description such as "Veeam O365 backup certificate".
+5. When the prompt below opens, select the public key that AUCloud has provided from your local folder. Enter a description such as "Veeam O365 backup certificate".
 
     ![Upload_Certificate](./assets/upload_certificate.png)
 	
