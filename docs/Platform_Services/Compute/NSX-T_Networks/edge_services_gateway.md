@@ -262,6 +262,10 @@ When configuring a DNAT rule, you must also navigate to the advanced settings an
 
 ## Static Routes
 
+!!! note
+
+    Static route configuration is currently available only in the Melbourne and Brisbane Sovereignty Zones
+
 Static routing allows you to configure your Edge Services Gateway (ESG) with knowledge of other networks which are not directly connected to it. It is particularly useful if you need to:
 
 - route between virtual data centres (VDCs) in the same virtual organisation (vOrg), or
