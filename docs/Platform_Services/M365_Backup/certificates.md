@@ -39,4 +39,5 @@ This guide outlines the steps required to upload a new public key (certificate) 
 6. On the **Ready to Complete** page, review your selected settings and click **Finish**.
 
 
-7. Your certificate should now be uploaded successfully and your backup jobs will continue to run as normal.
+7. Your certificate should now be uploaded successfully and your backup jobs will continue to run as normal. 
+8. **Please confirm with AUCloud once this step has been completed so we can finalise the back-end updates for the new certificate**
