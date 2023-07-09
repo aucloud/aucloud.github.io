@@ -340,6 +340,18 @@
   </li>
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -570,8 +582,6 @@
         
           
         
-          
-        
       
       
         
@@ -592,20 +602,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/CRISP/edce_crisp/" class="md-nav__link">
-        Enterprise Data Community Environment CRISP
-      </a>
-    </li>
-  
-
             
           
             
@@ -2236,7 +2232,7 @@
   
     <li class="md-nav__item">
       <a href="../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
-        How to upload VM template/media using the VMware OVF tool
+        How to upload VM template or media using the VMware OVF tool
       </a>
     </li>
   
@@ -2866,7 +2862,7 @@
   
     <li class="md-nav__item">
       <a href="../tanzu_packages/deploying_monitoring/" class="md-nav__link">
-        Deploying the supported Grafana / Prometheus monitoring stack
+        Deploying the supported Grafana and Prometheus monitoring stack
       </a>
     </li>
   
@@ -2894,7 +2890,7 @@
   
     <li class="md-nav__item">
       <a href="../tanzu_packages/tanzu_cli_install/" class="md-nav__link">
-        Deploying Tanzu  packages using the Tanzu CLI
+        Deploying Tanzu packages using the Tanzu CLI
       </a>
     </li>
   
@@ -2931,6 +2927,8 @@
       
         
           
+            
+          
         
           
         
@@ -2944,10 +2942,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
-          M365 Backup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../M365_Backup/">M365 Backup</a>
+          
+            <label for="__nav_2_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_8">
@@ -2955,6 +2959,8 @@
           M365 Backup
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -3020,20 +3026,6 @@
     <li class="md-nav__item">
       <a href="../../M365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
         Guide to the Veeam Restore Portal
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../M365_Backup/overview/" class="md-nav__link">
-        M365 Backup Overview
       </a>
     </li>
   
@@ -3510,6 +3502,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -3581,6 +3588,9 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
+
 
   
     <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Kubernetes/kubernetes_versions.md" title="Edit this page" class="md-content__button md-icon">
@@ -3605,7 +3615,7 @@
 <p>AUCloud's Kubernetes service is based on  <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html">VMware's Tanzu Kubernetes Grid</a>, combined with the VMware's "<a href="https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0.3/rn/vmware-cloud-director-container-service-extension-403-release-notes/index.html">Container Service Extension</a>".</p>
 <p>The version of Kubernetes Grid currently supported is <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html">1.5.4</a> and <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html">1.6.1</a> click the product version to view details of the component versions within the distribution.</p>
 <h3 id="tanzu-kubernetes-version">Tanzu Kubernetes version<a class="headerlink" href="#tanzu-kubernetes-version" title="Permanent link">¤</a></h3>
-<p>The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 EDCE (Brisbane), SZ4 EDCE (Melbourne)  </p>
+<p>The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 ODCE (Brisbane), SZ4 ODCE (Melbourne)  </p>
 <table>
 <thead>
 <tr>
@@ -3736,21 +3746,21 @@
 </tr>
 <tr>
 <td align="left">SZ3</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CAPVCD</td>
 <td align="left">1.0.1</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left">SZ3</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CPI</td>
 <td align="left">1.3.0</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left">SZ3</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CSI</td>
 <td align="left">1.3.2</td>
 <td align="left"></td>
@@ -3764,21 +3774,21 @@
 </tr>
 <tr>
 <td align="left">SZ4</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CAPVCD</td>
 <td align="left">1.0.1</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left">SZ4</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CPI</td>
 <td align="left">1.3.0</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left">SZ4</td>
-<td align="left">EDCE</td>
+<td align="left">ODCE</td>
 <td align="left">CSI</td>
 <td align="left">1.3.2</td>
 <td align="left"></td>
@@ -3799,7 +3809,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 2, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
       
     
   </small>
