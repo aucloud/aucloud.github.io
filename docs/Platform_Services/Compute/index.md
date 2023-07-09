@@ -1,6 +1,8 @@
 ---
 title: Compute
 description: AUCloud Compute Solutions offers standard VM sizes, operating systems, and customizable virtual machines for VMware Cloud Director deployment. Connect to the SDDC using a dedicated connection and manage virtual machines through the API with PowerCLI and Terraform. Easily create, move, and manage vApps, customize settings, and work with OVF files
+tags:
+    - vmware-cloud-director
 ---
 
 ## Compute Solutions:

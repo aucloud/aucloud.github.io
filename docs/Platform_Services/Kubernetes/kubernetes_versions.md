@@ -10,7 +10,7 @@ The version of Kubernetes Grid currently supported is [1.5.4](https://docs.vmwar
 
 ### Tanzu Kubernetes version
 
-The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 EDCE (Brisbane), SZ4 EDCE (Melbourne)  
+The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 ODCE (Brisbane), SZ4 ODCE (Melbourne)  
 
 |Template name                                 | Kubernetes version | TKG Product Version| Comment          |
 |:---                                          |:---                |:---                |                  |
@@ -41,13 +41,13 @@ Please see upgrading clusters for information on upgrading Kubernetes versions, 
 | SZ2 | ODCE | CPI      | 1.3.0   |        |
 | SZ2 | ODCE | CSI      | 1.3.2   |        |
 |     |      |          |         |        |
-| SZ3 | EDCE | CAPVCD   | 1.0.1   |        |
-| SZ3 | EDCE | CPI      | 1.3.0   |        |
-| SZ3 | EDCE | CSI      | 1.3.2   |        |
+| SZ3 | ODCE | CAPVCD   | 1.0.1   |        |
+| SZ3 | ODCE | CPI      | 1.3.0   |        |
+| SZ3 | ODCE | CSI      | 1.3.2   |        |
 |     |      |          |         |        |
-| SZ4 | EDCE | CAPVCD   | 1.0.1   |        |
-| SZ4 | EDCE | CPI      | 1.3.0   |        |
-| SZ4 | EDCE | CSI      | 1.3.2   |        |
+| SZ4 | ODCE | CAPVCD   | 1.0.1   |        |
+| SZ4 | ODCE | CPI      | 1.3.0   |        |
+| SZ4 | ODCE | CSI      | 1.3.2   |        |
 
 Please see upgrading cluster components for information on upgrading Kubernetes components, [here](./upgrading_component_versions.md)
 

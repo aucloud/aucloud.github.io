@@ -1,6 +1,8 @@
 ---
 title: Getting Started with VMware Cloud Director
 description: Getting Started with VMware Cloud Director
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

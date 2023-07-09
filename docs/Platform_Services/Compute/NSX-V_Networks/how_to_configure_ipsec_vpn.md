@@ -1,6 +1,10 @@
 ---
 title: How to configure IPSec VPN
 description: How to configure IPSec VPN
+tags:
+    - vmware-cloud-director
+    - networking
+    - IPSec
 ---
 
 ## Overview

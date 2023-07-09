@@ -1,6 +1,11 @@
 ---
 title: Configuration of logging on the ESG
 description: Configuration of logging on the ESG
+tags:
+    - vmware-cloud-director
+    - networking
+    - security
+    - firewall
 ---
 
 1. In the VMware Cloud Director _Virtual Datacenters_ dashboard, select the VDC you want to work with.

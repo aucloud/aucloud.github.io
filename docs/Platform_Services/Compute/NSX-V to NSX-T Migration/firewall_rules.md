@@ -1,6 +1,8 @@
 ---
 title: Firewall Rules
 description: NSX-V to NSX-T Firewall Rules
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

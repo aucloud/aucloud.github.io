@@ -1,6 +1,9 @@
 ---
 title: How to configure a new migration
 description: How to configure a new migration or replication
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

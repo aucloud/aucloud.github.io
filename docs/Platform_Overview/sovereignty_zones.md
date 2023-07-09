@@ -1,6 +1,8 @@
 ---
 title: AUCloud Sovereignty Zones
 description: AUCloud Sovereignty zones and service availability within those zones
+tags:
+    - zones
 ---
 
 ![Sov Zones](./assets/SZMap.png)

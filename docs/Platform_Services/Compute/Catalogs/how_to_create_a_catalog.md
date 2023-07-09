@@ -1,6 +1,8 @@
 ---
 title: How to create a catalog
 description: How to create a catalog
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

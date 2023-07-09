@@ -1,6 +1,6 @@
 ---
 title: Symmetric Key Agreement Platform
-description: "Symmetric Key Agreement Platform is a partnership between Arqit Inc and AUCloud to provide a crytography solution that protects against the risks of Quantum computing; and relies on known cryptographic primitives."
+description: Symmetric Key Agreement Platform is a partnership between Arqit Inc and AUCloud to provide a cryptography solution that protects against the risks of Quantum computing; and relies on known cryptographic primitives.
 ---
 
 ## Overview

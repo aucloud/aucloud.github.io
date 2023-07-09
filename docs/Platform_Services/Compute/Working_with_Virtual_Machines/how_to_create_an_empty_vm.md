@@ -1,6 +1,8 @@
 ---
 title: How to create an empty VM
 description: How to create an empty VM
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

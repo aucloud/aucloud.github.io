@@ -7,4 +7,3 @@ The AUCloud Community Rules Information Security Policy (CRISP) for each communi
 
 - [ODCE CRISP](./odce_crisp.md)
 - [PDCE CRISP](./pdce_crisp.md)
-- [EDCE CRISP](./edce_crisp.md)

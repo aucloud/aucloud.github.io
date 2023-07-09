@@ -1,6 +1,8 @@
 ---
 title: Configuring Red Hat Enterprise Linux licensing 
 description: Documentation on how to update Red Hat Enterprise Linux
+tags:
+    - red-hat
 ---
 
 ## Overview  

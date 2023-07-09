@@ -1,6 +1,10 @@
 ---
 title: How to find your allocated external IP addresses
 description: How to find your allocated external IP addresses
+tags:
+    - vmware-cloud-director
+    - networking
+    - firewalls
 ---
 
 ## Overview

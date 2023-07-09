@@ -1,6 +1,10 @@
 ---
 title: About AUCloud Backup for VMware Cloud Director
 description: About AUCloud Backup for VMware Cloud Director
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

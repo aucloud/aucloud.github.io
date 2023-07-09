@@ -1,6 +1,8 @@
 ---
 title: VMware Cloud Director
 description: VMware Cloud Director
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

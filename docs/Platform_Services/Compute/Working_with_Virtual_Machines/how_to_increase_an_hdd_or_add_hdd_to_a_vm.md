@@ -1,6 +1,8 @@
 ---
 title: How to increase the HDD or add a HDD to a Virtual Machine
 description: How to increase the HDD or add a HDD to a Virtual Machine
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

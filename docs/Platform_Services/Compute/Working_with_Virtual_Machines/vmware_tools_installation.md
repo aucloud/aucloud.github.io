@@ -1,6 +1,8 @@
 ---
 title: VMware Tools Installation
 description: VMware Tools Installation
+tags:
+    - vmware-cloud-director
 ---
 
 VMware provide tools which should be installed into any virtual machines running on VMware Cloud Director. The tools provide additional features such as automated customisation as well as improved performance by implementing optimised drivers such as storage, network and display.

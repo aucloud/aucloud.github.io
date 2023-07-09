@@ -7,6 +7,7 @@ accreditations
 accreditor
 allow-listing
 analytics
+antiaffinity
 api
 arqit
 arqits
@@ -20,6 +21,7 @@ biztalk
 blog_content
 bsz
 burndown
+capvcd
 catalog
 catalogs
 centers
@@ -51,6 +53,7 @@ drawio
 encrypter
 encrypters
 encryptors
+env
 eportal
 etcd
 evbo
@@ -84,6 +87,7 @@ microsoft
 microsofts
 minio
 mitigations
+mkdocs
 msg
 msz
 mysql
@@ -125,6 +129,7 @@ subnets
 supernet
 syslog
 tanzu
+tkg
 todays
 unbilled
 unmount
@@ -157,6 +162,3 @@ wickr
 WordPress
 www
 xamplify
-tkg
-capvcd
-env

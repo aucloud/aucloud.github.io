@@ -1,6 +1,9 @@
 ---
 title: How to configure a load balancer
 description: How to configure an NSXV load balancer
+tags:
+    - vmware-cloud-director
+    - networking
 ---
 
 ## Overview

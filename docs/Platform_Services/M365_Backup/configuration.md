@@ -1,6 +1,10 @@
 ---
 title: Configuration of Microsoft M365 Service Account
 description: Configuration of Microsoft M365 Service Account
+tags:
+ - M365
+ - Backup
+ - Veeam
 ---
 
 ## Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service

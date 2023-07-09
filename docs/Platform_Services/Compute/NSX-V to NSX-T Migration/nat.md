@@ -1,6 +1,8 @@
 ---
 title: NAT 
 description: NSX-V to NSX-T NAT Rules
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

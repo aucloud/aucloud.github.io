@@ -1,6 +1,8 @@
 ---
 title: How to create a vApp
-decription: How to create a vApp
+description: How to create a vApp
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

@@ -1,6 +1,9 @@
 ---
 title: Installing and configuring vCAV on premise
 description: Installing and configuring vCAV on premise
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

@@ -1,6 +1,8 @@
 ---
 title: How to use affinity and anti‑affinity rules
 description: How to use affinity and anti‑affinity rules
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

@@ -1,6 +1,8 @@
 ---
 title: Security
-description: Security
+description: An overview of AUClouds security posture and client obligations.
+tags:
+  - security
 ---
 
 ## Overview

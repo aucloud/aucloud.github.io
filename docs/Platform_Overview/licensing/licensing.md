@@ -1,6 +1,11 @@
 ---
 title: Software Licensing
 description: Software Licensing
+tags:
+    - licensing
+    - windows
+    - red-hat
+    - microsoft
 ---
 
 ## Overview

@@ -1,6 +1,9 @@
 ---
 title: AUCloud Sites connected via VCDA
 description: AUCloud Sites connected via VCDA
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview
@@ -15,4 +18,4 @@ VMware VMware Cloud Director Availability (VCDA) is configured in all AUCloud So
 | AUCloud CSZ | Canberra | PROTECTED | AUC_CDC_Fysh1-PP-Prod-01 | AUC_CDC_ECrk1-PP-Prod-01 |
 | AUCloud SSZ | Sydney | OFFICIAL | AUC_CDC_ECrk1-UP-Prod-01 | AUC_CDC_Fysh1-UP-Prod-01, AUC-NDC-Brisbane |
 | AUCloud SSZ | Sydney | PROTECTED | AUC_CDC_ECrk1-PP-Prod-01 | AUC_CDC_Fysh1-PP-Prod-01 |
-| AUCloud BSZ | Brisbane | ENTERPRISE | AUC-NDC-Brisbane | AUC_CDC_ECrk1-UP-Prod-01 |
+| AUCloud BSZ | Brisbane | OFFICIAL | AUC-NDC-Brisbane | AUC_CDC_ECrk1-UP-Prod-01 |

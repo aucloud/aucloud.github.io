@@ -1,6 +1,9 @@
 ---
 title: How to create NAT rules
 decription: How to create NAT rules
+tags:
+    - vmware-cloud-director
+    - networking
 ---
 
 ## Overview

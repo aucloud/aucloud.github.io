@@ -1,6 +1,8 @@
 ---
 title: How to view and update virtual machine settings
-decsription: How to view and update virtual machine settings
+description: How to view and update virtual machine settings
+tags:
+    - vmware-cloud-director
 ---
 
 ### Viewing and updating VM settings

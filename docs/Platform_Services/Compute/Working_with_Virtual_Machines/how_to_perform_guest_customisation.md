@@ -1,6 +1,8 @@
 ---
 title: How to perform Guest Customisation on the newly built VM from a template
 description: How to perform Guest Customisation on the newly built VM from a template
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

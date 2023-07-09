@@ -1,6 +1,10 @@
 ---
 title: Self-Service Backup Portal – Getting Started
 description: Self-Service Backup Portal – Getting Started
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

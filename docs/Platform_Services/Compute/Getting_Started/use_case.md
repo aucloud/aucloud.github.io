@@ -1,6 +1,9 @@
 ---
 title: Use Case - Create a Web Server to communicate with the internet
 description: Use Case - Create a Web Server to communicate with the internet
+tags:
+    - vmware-cloud-director
+    - tutorial
 ---
 
 ## Introduction

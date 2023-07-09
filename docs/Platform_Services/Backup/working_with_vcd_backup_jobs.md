@@ -1,6 +1,10 @@
 ---
 title: Working with VMware Cloud Director Backup Jobs
 description: Working with VMware Cloud Director Backup Jobs
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

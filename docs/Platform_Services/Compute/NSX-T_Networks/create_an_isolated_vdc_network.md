@@ -1,6 +1,8 @@
 ---
 title: Create an Isolated VDC Network
 description: Create an Isolated VDC Network
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

@@ -1,6 +1,10 @@
 ---
 title: Backup
 description: Veeam Backup & Replication v11 User Guide for VMware vSphere provides information on scale-out backup repositories, backup file placement, data locality, extent selection, and capacity tier storage. Learn more about the benefits of this system and how to manage your backup storage
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

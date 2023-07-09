@@ -1,6 +1,10 @@
 ---
 title: Establishing a connection to AUCloud platform via PowerCLI
 description: Establishing a connection to AUCloud platform via PowerCLI
+tags:
+    - vmware-cloud-director
+    - SDK
+    - API
 ---
 
 ## Overview

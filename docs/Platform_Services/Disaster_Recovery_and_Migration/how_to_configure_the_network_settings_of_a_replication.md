@@ -1,6 +1,9 @@
 ---
 title: How to configure the network settings of a replication
 description: How to configure the network settings of a replication
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

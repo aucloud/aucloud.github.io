@@ -1,6 +1,10 @@
 ---
 title: Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
 description: Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
+tags:
+    - vmware-cloud-director
+    - API
+    - SDK
 ---
 
 ## Overview

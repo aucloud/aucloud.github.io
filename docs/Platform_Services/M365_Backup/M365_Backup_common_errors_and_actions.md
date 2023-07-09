@@ -1,6 +1,10 @@
 ---
 title: M365 Backup common errors and actions
 description: M365 Backup common errors and actions
+tags:
+    - M365
+    - Backup
+    - Veeam
 ---
 
 ## Overview

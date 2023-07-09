@@ -1,6 +1,10 @@
 ---
 title: Restoring VMs and vApps
 description: Restoring VMs and vApps
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

@@ -1,6 +1,9 @@
 ---
 title: How to configure a new protection
 description: How to configure a new protection
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

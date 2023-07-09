@@ -1,6 +1,10 @@
 ---
 title: How to add a certificate to the Edge Services Gateway
 description: How to add a certificate to the Edge Services Gateway
+tags:
+    - vmware-cloud-director
+    - networking
+    - TLS
 ---
 ## Overview
 

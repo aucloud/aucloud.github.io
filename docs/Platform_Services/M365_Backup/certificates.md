@@ -1,6 +1,9 @@
 ---
 title: Update Microsoft 365 Backup Certificate
 description: How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy
+tags: 
+    - M365
+    - Backup
 ---
 
 

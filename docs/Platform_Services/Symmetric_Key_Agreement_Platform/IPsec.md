@@ -1,6 +1,9 @@
 ---
 title: Securing IPSec with SKAP
 description: Documentation on how to secure IPSec tunnels against quantum-computing decryption threats across WAN tunnels
+tags:
+    - IPSec
+    - StrongSwan
 ---
 
 ## Overview

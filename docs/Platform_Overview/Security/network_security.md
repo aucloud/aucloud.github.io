@@ -1,6 +1,9 @@
 ---
 title: Network Security
 description: Network Security
+tags:
+  - security
+  - network
 ---
 
 ## DDoS protection ##

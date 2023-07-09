@@ -1,6 +1,8 @@
 ---
 title: Shared Responsibility Model
 description: Shared Responsibility Model
+tags:
+  - security
 ---
 
 ## Overview

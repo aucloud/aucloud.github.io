@@ -1,6 +1,8 @@
 ---
-title: How to upload VM template/media using the VMware OVF tool
-description: How to upload VM template/media using the VMware OVF tool
+title: How to upload VM template or media using the VMware OVF tool
+description: How to upload VM template or media using the VMware OVF tool
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

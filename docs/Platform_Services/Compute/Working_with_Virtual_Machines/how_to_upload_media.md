@@ -1,6 +1,8 @@
 ---
 title: How to upload media
 description: How to upload media
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

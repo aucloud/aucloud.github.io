@@ -1,6 +1,9 @@
 ---
 title: Billing Portal
 description: Instructions on Billing Portal
+tags:
+    - portal
+    - billing
 ---
 ## AUCloud Billing Portal
 

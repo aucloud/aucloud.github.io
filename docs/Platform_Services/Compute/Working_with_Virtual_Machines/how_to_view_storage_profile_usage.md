@@ -1,6 +1,8 @@
 ---
 title: How to view storage profile usage
 description: How to view storage profile usage
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

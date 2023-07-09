@@ -1,6 +1,10 @@
 ---
 title: How to create firewall rules
 description: How to create firewall rules
+tags:
+    - vmware-cloud-director
+    - networking
+    - firewalls
 ---
 
 ## Overview

@@ -1,6 +1,8 @@
 ---
 title: How to share catalog library between AUCloud Sovereignty Zones
 description: How to share catalog library between AUCloud Sovereignty Zones
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

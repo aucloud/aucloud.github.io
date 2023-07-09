@@ -1,6 +1,8 @@
 ---
 title: How to migrate vApps between virtual data centres
 decsription: How to migrate vApps between virtual data centres
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

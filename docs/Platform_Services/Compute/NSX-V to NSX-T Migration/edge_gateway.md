@@ -1,6 +1,8 @@
 ---
 title: Edge Gateway
 description: NSX-V to NSX-T Edge Gateway
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

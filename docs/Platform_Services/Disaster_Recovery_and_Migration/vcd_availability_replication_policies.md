@@ -1,6 +1,9 @@
 ---
 title: VMware Cloud Director Availability Replication Policies
 description: VMware Cloud Director Availability Replication Policies
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

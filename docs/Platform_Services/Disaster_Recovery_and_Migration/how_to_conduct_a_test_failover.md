@@ -1,6 +1,9 @@
 ---
 title: How to conduct a test failover
 description: How to conduct a test failover
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

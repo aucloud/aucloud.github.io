@@ -1,6 +1,10 @@
 ---
 title: Guide to the Veeam Restore Portal
 description: Guide to the Veeam Restore Portal
+tags: 
+    - M365
+    - Backup
+    - Veeam
 ---
 
 ## Roles

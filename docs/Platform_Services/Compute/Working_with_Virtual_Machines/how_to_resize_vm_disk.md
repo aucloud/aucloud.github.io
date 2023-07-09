@@ -1,6 +1,8 @@
 ---
 title: How to resize VM disk
 description: How to resize VM disk
+tags:
+    - vmware-cloud-director
 ---
 
 ### Overview

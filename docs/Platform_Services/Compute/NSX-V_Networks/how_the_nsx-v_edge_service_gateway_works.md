@@ -1,6 +1,10 @@
 ---
 title: How the NSX-V Edge Services Gateway works
 description: How the NSX-V Edge Services Gateway works
+tags:
+    - vmware-cloud-director
+    - networking
+    - firewall
 ---
 
 ## Overview

@@ -1,6 +1,8 @@
 ---
 title: Load Balancer
 description: NSX-V to NSX-T Load Balancing
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

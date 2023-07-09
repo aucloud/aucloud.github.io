@@ -1,6 +1,8 @@
 ---
 title: Edge Services Gateway
 description: Edge Services Gateway
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

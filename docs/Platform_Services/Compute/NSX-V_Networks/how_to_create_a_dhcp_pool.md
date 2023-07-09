@@ -1,6 +1,10 @@
 ---
 title: How to create a DHCP pool
 description: How to create a DHCP pool
+tags:
+    - vmware-cloud-director
+    - networking
+    - DHCP
 ---
 
 ## Overview

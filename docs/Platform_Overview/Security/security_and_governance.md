@@ -1,6 +1,8 @@
 ---
 title: Security and Governance
 description: Security and Governance
+tags:
+  - security
 ---
 
 ## AUCloud's assessments and certifications

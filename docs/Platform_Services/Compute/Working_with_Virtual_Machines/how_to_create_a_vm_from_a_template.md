@@ -1,6 +1,8 @@
 ---
 title: How to create a VM from a template
 description: How to create a VM from a template
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

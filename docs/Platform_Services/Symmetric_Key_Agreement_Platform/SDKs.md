@@ -1,6 +1,9 @@
 ---
 title: SKAP SDKs
 description: Information on the symmetric key agreement platform sdks including features and methods to access.
+tags:
+  - SDK
+  - symmetric-key-agreement-platform
 ---
 
 ## Overview
@@ -45,8 +48,6 @@ QuantumCloud™ feature matrix with current SDK versions.
 | `OTA_TLS` registration        | :material-check-circle:{ .good } | :material-check-circle:{ .good } | :material-check-circle:{ .good }       |
 | `OTA_QUANTUM` registration    | :material-check-circle:{ .good } | :material-check-circle:{ .good } | :material-check-circle:{ .good }       |
 | Key negotiation via sockets | :material-check-circle:{ .good } | :material-check-circle:{ .good } | :material-check-circle:{ .good }       |
-| Group Key negotiation       | :material-close-circle:{ .bad }  | :material-close-circle:{ .bad }  | :material-check-circle:{ .good }[^1]   |
+| Group Key negotiation       | :material-close-circle:{ .bad }  | :material-close-circle:{ .bad }  | :material-check-circle:{ .good }   |
 | Key Negotiation via `MQTT`    | :material-close-circle:{ .bad }  | :material-close-circle:{ .bad }  | :material-check-circle:{ .good }       |
 | De-registration             | :material-check-circle:{ .good } | :material-check-circle:{ .good } | :material-check-circle:{ .good }       |
-
-[^1]: Group key negotiation is currently beta

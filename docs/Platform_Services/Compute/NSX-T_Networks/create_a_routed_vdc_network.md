@@ -1,6 +1,8 @@
 ---
 title: Create a Routed VDC Network
 description: Create a Routed VDC Network
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview

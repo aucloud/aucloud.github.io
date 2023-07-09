@@ -1,6 +1,9 @@
 ---
 title: How to perform a failover task
 description: How to perform a failover task
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Overview

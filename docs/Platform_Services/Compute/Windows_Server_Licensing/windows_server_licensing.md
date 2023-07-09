@@ -1,6 +1,8 @@
 ---
 title: Windows Server Licensing
 description: Windows Server Licensing
+tags:
+    - windows
 ---
 
 ## Overview

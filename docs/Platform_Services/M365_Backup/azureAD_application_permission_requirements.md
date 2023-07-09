@@ -1,6 +1,9 @@
 ---
 title: Azure AD Application Permission Requirements
 description: Azure AD Application Permission Requirements
+tags: 
+    - M365
+    - Backup
 ---
 
 ## Permissions for Modern App-Only Authentication

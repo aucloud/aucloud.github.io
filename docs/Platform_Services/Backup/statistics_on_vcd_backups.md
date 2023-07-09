@@ -1,6 +1,10 @@
 ---
 title: Viewing Statistics on VMware Cloud Director Backups
 description: Viewing Statistics on VMware Cloud Director Backups
+tags: 
+    - vmware-cloud-director
+    - backup
+    - veeam
 ---
 
 ## Overview

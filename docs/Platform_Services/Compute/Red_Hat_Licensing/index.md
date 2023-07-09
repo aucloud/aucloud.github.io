@@ -1,6 +1,8 @@
 ---
 title: Red Hat Licensing
-description: Deploying and licensing Red Hat virtual machines on AUCloud 
+description: Deploying and licensing Red Hat virtual machines on AUCloud
+tags:
+   - red-hat
 ---
 
 ## Overview 

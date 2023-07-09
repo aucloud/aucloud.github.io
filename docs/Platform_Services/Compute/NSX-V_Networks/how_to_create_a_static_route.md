@@ -1,6 +1,9 @@
 ---
 title: How to create a static route
 description: How to create a static route
+tags:
+    - vmware-cloud-director
+    - networking
 ---
 
 ## Overview

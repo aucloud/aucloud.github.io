@@ -1,6 +1,9 @@
 ---
 title: How to perform a reverse task
 description: How to perform a reverse task
+tags:
+    - vmware-cloud-director
+    - vmware-cloud-director-availability
 ---
 
 ## Prerequisites

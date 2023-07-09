@@ -1,5 +1,5 @@
 ---
-title: Deploying Tanzu  packages using the Tanzu CLI
+title: Deploying Tanzu packages using the Tanzu CLI
 description: Using the tanzu cli to deploy supported tanzu packages into TKG Kubernetes clusters
 ---
 

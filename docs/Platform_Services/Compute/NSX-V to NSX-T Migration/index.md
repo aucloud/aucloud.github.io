@@ -1,6 +1,8 @@
 ---
 title: NSX-V to NSX-T Migration Overview
 description: NSX-V to NSX-T Migration Overview
+tags:
+    - vmware-cloud-director
 ---
 
 ## Overview
