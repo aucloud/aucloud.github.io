@@ -9,7 +9,7 @@ tags:
 
 ## Roles
 
-Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from the most recent backup job. Users log in with their existing Microsoft 365 credentials.
+Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from any point-in-time restore point. Users log in with their existing Microsoft 365 credentials.
 
 Restore Operators can be specified as individuals or as security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.
 
@@ -18,7 +18,7 @@ Restore Operators can be specified as individuals or as security groups (where u
 ## Log in
 
 To launch the Restore Portal, do the following:
-
+any point-in-time
 1. Open a web browser on any computer and navigate to the Restore Portal [web address](../reference_urls.md#veeam-m365-backup-portal).
 
     !!! note
@@ -273,10 +273,8 @@ Restore Portal runs the restore operation immediately and opens the Restore Ses
 
 There are additional features and functionality that can be performed on a secure call with an AUCloud Compute & Storage Engineer. Please contact [Support](../../Platform_Overview/support/index.md) if you wish to perform any of the following:
 
-- Access backup data from further back in time than the most recent backup
 - Restore data to a different location/mailbox/tenant
 - Export data as a *pst/msg/zip* file
 - Explore and restore Group Mailboxes
-- Explore and Restore Microsoft Teams data
 
 For further questions about the capabilities of the restore portal, please contact [Support.](../../Platform_Overview/support/index.md)
