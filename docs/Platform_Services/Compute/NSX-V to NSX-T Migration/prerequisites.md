@@ -9,12 +9,12 @@ tags:
 
 ## Overview
 
-This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provider a tool that will migrate tenancies from NSX-V backed to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that under underpin the AUCloud platform.  Using the migration tool allows for minimal service interuptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
+This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provider a tool that will migrate tenancies from NSX-V backed to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that under underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
 
 This article also outlines some cavets and details related to other products integrated to the platform.  This are in relation to:
 
-- Disaster Recorvery services provided by **VMware Cloud Directory Availability (VCDA)** and,
-- Backup services provided by **Data Protection wtih Veeam**.
+- Disaster Recovery services provided by **VMware Cloud Directory Availability (VCDA)** and,
+- Backup services provided by **Data Protection with Veeam**.
 
 ## Assessment
 
@@ -28,12 +28,12 @@ The VMware NSX Migration for VMware Cloud Director will first run a pre-check an
 	* Firewall rules cannot use Virtual Machine objects - change Firewall Rules to IP Sets or Security Groups.  Further details around NSX-T Firewalls found [here](./firewall_rules.md).
 - Named Disks
 	* 'Shared' Named Disks cannot be migrated - they need to be removed.  Non-shared Named Disks are okay.
-- VMware Cloud Directory Availablility (VCDA) - Disaster Recovery (DRaaS)
+- VMware Cloud Directory Availability (VCDA) - Disaster Recovery (DRaaS)
 	* Virtual Machines that are Protected by VCDA need to have their protection remove and re-created.  This has to happen if either the Source or Destination tenancy is about to under go NSX-V to NSX-T migration.
 
-## Important Cavets
+## Important Caveats
 
-- Data Protection wtih Veeam
+- Data Protection with Veeam
 	* Backups taken before migration will only be able to restored to a 'new' location post migration.  This is due to new VCD object structure.
 	* Backups taken post migration will function normally.
 
