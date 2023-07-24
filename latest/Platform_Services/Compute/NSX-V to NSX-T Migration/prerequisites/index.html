@@ -6,31 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to perform a reverse task">
+        <meta name="description" content="NSX-V to NSX-T Process">
       
       
       
-        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/">
+        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-V%20to%20NSX-T%20Migration/prerequisites/">
       
       
-        <link rel="prev" href="../how_to_perform_a_failover_task/">
+        <link rel="prev" href="../nat/">
       
       
-        <link rel="next" href="../installing_and_configuring_vcav_on_premise/">
+        <link rel="next" href="../../NSX-V_Networks/configuration_of_logging_on_the_ESG/">
       
-      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="icon" href="../../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>How to perform a reverse task - Technical Documentation</title>
+        <title>Prerequisites - Technical Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="How to perform a reverse task - Technical Documentation" >
+        <meta  property="og:title"  content="Prerequisites - Technical Documentation" >
       
-        <meta  property="og:description"  content="How to perform a reverse task" >
+        <meta  property="og:description"  content="NSX-V to NSX-T Process" >
       
-        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task.png" >
+        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Compute/NSX-V to NSX-T Migration/prerequisites.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,15 +81,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" >
+        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-V%20to%20NSX-T%20Migration/prerequisites/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="How to perform a reverse task - Technical Documentation" >
+        <meta  name="twitter:title"  content="Prerequisites - Technical Documentation" >
       
-        <meta  name="twitter:description"  content="How to perform a reverse task" >
+        <meta  name="twitter:description"  content="NSX-V to NSX-T Process" >
       
-        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task.png" >
+        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/Compute/NSX-V to NSX-T Migration/prerequisites.png" >
       
     
     
@@ -135,9 +135,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Technical Documentation" class="md-header__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
+    <a href="../../../.." title="Technical Documentation" class="md-header__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
       
-  <img src="../../../aucloud.svg" alt="logo">
+  <img src="../../../../aucloud.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to perform a reverse task
+              Prerequisites
             
           </span>
         </div>
@@ -251,7 +251,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Platform_Overview/" class="md-tabs__link">
+      <a href="../../../../Platform_Overview/" class="md-tabs__link">
         Platform Overview
       </a>
     </li>
@@ -269,7 +269,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
         Platform Services
       </a>
     </li>
@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Blog/" class="md-tabs__link">
+      <a href="../../../../Blog/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -346,7 +346,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../tags/" class="md-tabs__link">
+    <a href="../../../../tags/" class="md-tabs__link">
       Tags
     </a>
   </li>
@@ -379,9 +379,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Technical Documentation" class="md-nav__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
+    <a href="../../../.." title="Technical Documentation" class="md-nav__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
       
-  <img src="../../../aucloud.svg" alt="logo">
+  <img src="../../../../aucloud.svg" alt="logo">
 
     </a>
     Technical Documentation
@@ -437,7 +437,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Platform_Overview/">Platform Overview</a>
+          <a href="../../../../Platform_Overview/">Platform Overview</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -460,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
         AUCloud Sovereignty Zones
       </a>
     </li>
@@ -500,7 +500,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Platform_Overview/Security/">Security</a>
+          <a href="../../../../Platform_Overview/Security/">Security</a>
           
             <label for="__nav_1_3">
               <span class="md-nav__icon md-icon"></span>
@@ -523,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/network_security/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/Security/network_security/" class="md-nav__link">
         Network Security
       </a>
     </li>
@@ -537,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
         Security and Governance
       </a>
     </li>
@@ -551,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
         Shared Responsibility Model
       </a>
     </li>
@@ -587,7 +587,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Platform_Overview/Security/CRISP/">CRISP</a>
+          <a href="../../../../Platform_Overview/Security/CRISP/">CRISP</a>
           
             <label for="__nav_1_3_5">
               <span class="md-nav__icon md-icon"></span>
@@ -610,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/CRISP/odce_crisp/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/Security/CRISP/odce_crisp/" class="md-nav__link">
         Official Data Community Environment CRISP
       </a>
     </li>
@@ -624,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/Security/CRISP/pdce_crisp/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/Security/CRISP/pdce_crisp/" class="md-nav__link">
         Protected Data Community Environment CRISP
       </a>
     </li>
@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/licensing/licensing/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/licensing/licensing/" class="md-nav__link">
         Software Licensing
       </a>
     </li>
@@ -732,7 +732,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Platform_Overview/portal/">Portal</a>
+          <a href="../../../../Platform_Overview/portal/">Portal</a>
           
             <label for="__nav_1_5">
               <span class="md-nav__icon md-icon"></span>
@@ -755,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/portal/api_management/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/portal/api_management/" class="md-nav__link">
         API Management in the AUCloud Portal
       </a>
     </li>
@@ -769,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
         Billing Portal
       </a>
     </li>
@@ -783,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/portal/getting_started/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/portal/getting_started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -797,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/portal/known_limitations/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/portal/known_limitations/" class="md-nav__link">
         Known limitations
       </a>
     </li>
@@ -811,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
         Managing User Accounts
       </a>
     </li>
@@ -856,7 +856,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Platform_Overview/support/">Support</a>
+          <a href="../../../../Platform_Overview/support/">Support</a>
           
             <label for="__nav_1_6">
               <span class="md-nav__icon md-icon"></span>
@@ -879,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/support/Terms_Conditions/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/support/Terms_Conditions/" class="md-nav__link">
         Terms and Conditions of Usage
       </a>
     </li>
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/support/aucloud_support_portal/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/support/aucloud_support_portal/" class="md-nav__link">
         AUCloud Self Service Support Portal Registration
       </a>
     </li>
@@ -907,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Platform_Overview/support/vulnerability_disclosure_policy/" class="md-nav__link">
+      <a href="../../../../Platform_Overview/support/vulnerability_disclosure_policy/" class="md-nav__link">
         Vulnerability Disclosure Policy
       </a>
     </li>
@@ -976,7 +976,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Platform Services</a>
+          <a href="../../../">Platform Services</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -999,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference_urls/" class="md-nav__link">
+      <a href="../../../reference_urls/" class="md-nav__link">
         Reference URLs
       </a>
     </li>
@@ -1013,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sovereign_bridge/" class="md-nav__link">
+      <a href="../../../sovereign_bridge/" class="md-nav__link">
         Sovereign Bridge
       </a>
     </li>
@@ -1055,7 +1055,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Backup/">Backup</a>
+          <a href="../../../Backup/">Backup</a>
           
             <label for="__nav_2_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1078,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/about_backup/" class="md-nav__link">
+      <a href="../../../Backup/about_backup/" class="md-nav__link">
         About AUCloud Backup for VMware Cloud Director
       </a>
     </li>
@@ -1092,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/getting_started/" class="md-nav__link">
+      <a href="../../../Backup/getting_started/" class="md-nav__link">
         Self-Service Backup Portal – Getting Started
       </a>
     </li>
@@ -1106,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/restoring_vms_and_vapps/" class="md-nav__link">
+      <a href="../../../Backup/restoring_vms_and_vapps/" class="md-nav__link">
         Restoring VMs and vApps
       </a>
     </li>
@@ -1120,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/statistics_on_vcd_backups/" class="md-nav__link">
+      <a href="../../../Backup/statistics_on_vcd_backups/" class="md-nav__link">
         Viewing Statistics on VMware Cloud Director Backups
       </a>
     </li>
@@ -1134,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
+      <a href="../../../Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
         Working with VMware Cloud Director Backup Jobs
       </a>
     </li>
@@ -1153,14 +1153,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
       
       
         
@@ -1193,7 +1195,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Compute/">Compute</a>
+          <a href="../../">Compute</a>
           
             <label for="__nav_2_5">
               <span class="md-nav__icon md-icon"></span>
@@ -1201,7 +1203,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_5">
           <span class="md-nav__icon md-icon"></span>
           Compute
@@ -1216,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/VMware_Cloud_Director/" class="md-nav__link">
+      <a href="../../VMware_Cloud_Director/" class="md-nav__link">
         VMware Cloud Director
       </a>
     </li>
@@ -1263,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Catalogs/how_to_create_a_catalog/" class="md-nav__link">
+      <a href="../../Catalogs/how_to_create_a_catalog/" class="md-nav__link">
         How to create a catalog
       </a>
     </li>
@@ -1277,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+      <a href="../../Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
         How to share catalog library between AUCloud Sovereignty Zones
       </a>
     </li>
@@ -1331,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Getting_Started/getting_started_with_vcd/" class="md-nav__link">
+      <a href="../../Getting_Started/getting_started_with_vcd/" class="md-nav__link">
         Getting Started with VMware Cloud Director
       </a>
     </li>
@@ -1345,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Getting_Started/use_case/" class="md-nav__link">
+      <a href="../../Getting_Started/use_case/" class="md-nav__link">
         Use Case - Create a Web Server to communicate with the internet
       </a>
     </li>
@@ -1403,7 +1405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
+      <a href="../../NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
         Create a Routed VDC Network
       </a>
     </li>
@@ -1417,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
+      <a href="../../NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
         Create an Isolated VDC Network
       </a>
     </li>
@@ -1431,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
+      <a href="../../NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
         Edge Services Gateway
       </a>
     </li>
@@ -1445,7 +1447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-T_Networks/vapp_networks/" class="md-nav__link">
+      <a href="../../NSX-T_Networks/vapp_networks/" class="md-nav__link">
         vApp Networks
       </a>
     </li>
@@ -1464,14 +1466,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" checked>
       
       
         
@@ -1496,7 +1500,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/">NSX V to NSX T Migration</a>
+          <a href="../">NSX V to NSX T Migration</a>
           
             <label for="__nav_2_5_6">
               <span class="md-nav__icon md-icon"></span>
@@ -1504,7 +1508,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_5_6">
           <span class="md-nav__icon md-icon"></span>
           NSX V to NSX T Migration
@@ -1519,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/VPN/" class="md-nav__link">
+      <a href="../VPN/" class="md-nav__link">
         IPSec VPN
       </a>
     </li>
@@ -1533,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/edge_gateway/" class="md-nav__link">
+      <a href="../edge_gateway/" class="md-nav__link">
         Edge Gateway
       </a>
     </li>
@@ -1547,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/firewall_rules/" class="md-nav__link">
+      <a href="../firewall_rules/" class="md-nav__link">
         Firewall Rules
       </a>
     </li>
@@ -1561,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/load_balancer/" class="md-nav__link">
+      <a href="../load_balancer/" class="md-nav__link">
         Load Balancer
       </a>
     </li>
@@ -1575,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/nat/" class="md-nav__link">
+      <a href="../nat/" class="md-nav__link">
         NAT
       </a>
     </li>
@@ -1587,11 +1591,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/prerequisites/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Prerequisites
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Prerequisites
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    Assessment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-caveats" class="md-nav__link">
+    Important Caveats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vmware-references" class="md-nav__link">
+    VMware References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1665,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/configuration_of_logging_on_the_ESG/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/configuration_of_logging_on_the_ESG/" class="md-nav__link">
         Configuration of logging on the ESG
       </a>
     </li>
@@ -1679,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_the_nsx-v_edge_service_gateway_works/" class="md-nav__link">
         How the NSX-V Edge Services Gateway works
       </a>
     </li>
@@ -1693,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_add_a_certificate/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_add_a_certificate/" class="md-nav__link">
         How to add a certificate to the Edge Services Gateway
       </a>
     </li>
@@ -1707,7 +1773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_configure_a_load_balancer/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_configure_a_load_balancer/" class="md-nav__link">
         How to configure a load balancer
       </a>
     </li>
@@ -1721,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_configure_ipsec_vpn/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_configure_ipsec_vpn/" class="md-nav__link">
         How to configure IPSec VPN
       </a>
     </li>
@@ -1735,7 +1801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_NAT_rules/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_NAT_rules/" class="md-nav__link">
         How to create NAT rules
       </a>
     </li>
@@ -1749,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_a_dhcp_pool/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_a_dhcp_pool/" class="md-nav__link">
         How to create a DHCP pool
       </a>
     </li>
@@ -1763,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_a_routed_vdc_network/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_a_routed_vdc_network/" class="md-nav__link">
         How to create a routed VDC network
       </a>
     </li>
@@ -1777,7 +1843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_a_static_route/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_a_static_route/" class="md-nav__link">
         How to create a static route
       </a>
     </li>
@@ -1791,7 +1857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_an_isolated_vdc_network/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_an_isolated_vdc_network/" class="md-nav__link">
         How to create an isolated VDC network
       </a>
     </li>
@@ -1805,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_create_firewall_rules/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_create_firewall_rules/" class="md-nav__link">
         How to create firewall rules
       </a>
     </li>
@@ -1819,7 +1885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/how_to_find_allocated_external_ip_addresses/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/how_to_find_allocated_external_ip_addresses/" class="md-nav__link">
         How to find your allocated external IP addresses
       </a>
     </li>
@@ -1833,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V_Networks/vapp_networks/" class="md-nav__link">
+      <a href="../../NSX-V_Networks/vapp_networks/" class="md-nav__link">
         vApp Networks
       </a>
     </li>
@@ -1874,7 +1940,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Compute/Red_Hat_Licensing/">Red Hat Licensing</a>
+          <a href="../../Red_Hat_Licensing/">Red Hat Licensing</a>
           
             <label for="__nav_2_5_8">
               <span class="md-nav__icon md-icon"></span>
@@ -1897,7 +1963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Red_Hat_Licensing/installing_updating/" class="md-nav__link">
+      <a href="../../Red_Hat_Licensing/installing_updating/" class="md-nav__link">
         Configuring Red Hat Enterprise Linux licensing
       </a>
     </li>
@@ -1951,7 +2017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Using_the_API/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+      <a href="../../Using_the_API/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
         Establishing a connection to AUCloud platform via PowerCLI
       </a>
     </li>
@@ -1965,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+      <a href="../../Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
         Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
       </a>
     </li>
@@ -2017,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Windows_Server_Licensing/windows_server_licensing/" class="md-nav__link">
+      <a href="../../Windows_Server_Licensing/windows_server_licensing/" class="md-nav__link">
         Windows Server Licensing
       </a>
     </li>
@@ -2093,7 +2159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
         How to migrate vApps between virtual data centres
       </a>
     </li>
@@ -2107,7 +2173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_a_vapp/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_create_a_vapp/" class="md-nav__link">
         How to create a vApp
       </a>
     </li>
@@ -2121,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/" class="md-nav__link">
         How to create a VM from a template
       </a>
     </li>
@@ -2135,7 +2201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_an_empty_vm/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_create_an_empty_vm/" class="md-nav__link">
         How to create an empty VM
       </a>
     </li>
@@ -2149,7 +2215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
         How to increase the HDD or add a HDD to a Virtual Machine
       </a>
     </li>
@@ -2163,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_perform_guest_customisation/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_perform_guest_customisation/" class="md-nav__link">
         How to perform Guest Customisation on the newly built VM from a template
       </a>
     </li>
@@ -2177,7 +2243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_resize_vm_disk/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_resize_vm_disk/" class="md-nav__link">
         How to resize VM disk
       </a>
     </li>
@@ -2191,7 +2257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_upload_media/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_upload_media/" class="md-nav__link">
         How to upload media
       </a>
     </li>
@@ -2205,7 +2271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_use_affinity_rules/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_use_affinity_rules/" class="md-nav__link">
         How to use affinity and anti‑affinity rules
       </a>
     </li>
@@ -2219,7 +2285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
         How to view and update virtual machine settings
       </a>
     </li>
@@ -2233,7 +2299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_view_storage_profile_usage/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_view_storage_profile_usage/" class="md-nav__link">
         How to view storage profile usage
       </a>
     </li>
@@ -2247,7 +2313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
         How to upload VM template or media using the VMware OVF tool
       </a>
     </li>
@@ -2261,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Compute/Working_with_Virtual_Machines/vmware_tools_installation/" class="md-nav__link">
+      <a href="../../Working_with_Virtual_Machines/vmware_tools_installation/" class="md-nav__link">
         VMware Tools Installation
       </a>
     </li>
@@ -2287,16 +2353,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
       
       
         
@@ -2329,7 +2393,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Disaster Recovery and Migration</a>
+          <a href="../../../Disaster_Recovery_and_Migration/">Disaster Recovery and Migration</a>
           
             <label for="__nav_2_6">
               <span class="md-nav__icon md-icon"></span>
@@ -2337,7 +2401,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Disaster Recovery and Migration
@@ -2352,7 +2416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_conduct_a_test_failover/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
         How to conduct a test failover
       </a>
     </li>
@@ -2366,7 +2430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
         How to configure a new migration
       </a>
     </li>
@@ -2380,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_configure_a_new_protection/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
         How to configure a new protection
       </a>
     </li>
@@ -2394,7 +2458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
         How to configure the network settings of a replication
       </a>
     </li>
@@ -2408,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_perform_a_failover_task/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
         How to perform a failover task
       </a>
     </li>
@@ -2420,69 +2484,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          How to perform a reverse task
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
         How to perform a reverse task
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performing-a-reverse-task" class="md-nav__link">
-    Performing a reverse task
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
-    Results
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next Steps
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2494,7 +2500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing_and_configuring_vcav_on_premise/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/installing_and_configuring_vcav_on_premise/" class="md-nav__link">
         Installing and configuring vCAV on premise
       </a>
     </li>
@@ -2508,7 +2514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vcd_availability_aucloud_sites/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_aucloud_sites/" class="md-nav__link">
         AUCloud Sites connected via VCDA
       </a>
     </li>
@@ -2522,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vcd_availability_quick_start_guide/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
         VMware Cloud Director Availability Quick Start Guide
       </a>
     </li>
@@ -2536,7 +2542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vcd_availability_replication_policies/" class="md-nav__link">
+      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
         VMware Cloud Director Availability Replication Policies
       </a>
     </li>
@@ -2603,7 +2609,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Kubernetes/">Kubernetes</a>
+          <a href="../../../Kubernetes/">Kubernetes</a>
           
             <label for="__nav_2_7">
               <span class="md-nav__icon md-icon"></span>
@@ -2626,7 +2632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/cluster_sizing_guide/" class="md-nav__link">
+      <a href="../../../Kubernetes/cluster_sizing_guide/" class="md-nav__link">
         Kubernetes cluster sizing guide
       </a>
     </li>
@@ -2640,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/deleting_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../../Kubernetes/deleting_clusters_vcd_ui/" class="md-nav__link">
         Deleting Kubernetes clusters using VCD
       </a>
     </li>
@@ -2654,7 +2660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/deploying_example_wordpress_with_sql/" class="md-nav__link">
+      <a href="../../../Kubernetes/deploying_example_wordpress_with_sql/" class="md-nav__link">
         Example deployment of WordPress and MySQL
       </a>
     </li>
@@ -2668,7 +2674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/deploying_kubernetes_dashboard/" class="md-nav__link">
+      <a href="../../../Kubernetes/deploying_kubernetes_dashboard/" class="md-nav__link">
         Deploying and using the Kubernetes dashboard
       </a>
     </li>
@@ -2682,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/faq/" class="md-nav__link">
+      <a href="../../../Kubernetes/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -2696,7 +2702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/known-issues/" class="md-nav__link">
+      <a href="../../../Kubernetes/known-issues/" class="md-nav__link">
         Known limitations
       </a>
     </li>
@@ -2710,7 +2716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/kubernetes_networking/" class="md-nav__link">
+      <a href="../../../Kubernetes/kubernetes_networking/" class="md-nav__link">
         Kubernetes Networking Prerequisites
       </a>
     </li>
@@ -2724,7 +2730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/kubernetes_versions/" class="md-nav__link">
+      <a href="../../../Kubernetes/kubernetes_versions/" class="md-nav__link">
         Supported Kubernetes versions
       </a>
     </li>
@@ -2738,7 +2744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/obtaining_kube_config/" class="md-nav__link">
+      <a href="../../../Kubernetes/obtaining_kube_config/" class="md-nav__link">
         Obtaining kube configuration files from VMware Cloud Director
       </a>
     </li>
@@ -2752,7 +2758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/provisioning_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../../Kubernetes/provisioning_clusters_vcd_ui/" class="md-nav__link">
         Provisioning clusters from the VMware Cloud Director UI
       </a>
     </li>
@@ -2766,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/resizing_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../../Kubernetes/resizing_clusters_vcd_ui/" class="md-nav__link">
         Resizing Kubernetes clusters using VCD
       </a>
     </li>
@@ -2780,7 +2786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/upgrading_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../../Kubernetes/upgrading_clusters_vcd_ui/" class="md-nav__link">
         Upgrading Kubernetes clusters using VCD
       </a>
     </li>
@@ -2794,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/upgrading_component_versions/" class="md-nav__link">
+      <a href="../../../Kubernetes/upgrading_component_versions/" class="md-nav__link">
         Upgrading Kubernetes clusters components using CLI
       </a>
     </li>
@@ -2834,7 +2840,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Kubernetes/tanzu_packages/">Tanzu packages</a>
+          <a href="../../../Kubernetes/tanzu_packages/">Tanzu packages</a>
           
             <label for="__nav_2_7_15">
               <span class="md-nav__icon md-icon"></span>
@@ -2857,7 +2863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/tanzu_packages/customizing_tanzu_packages/" class="md-nav__link">
+      <a href="../../../Kubernetes/tanzu_packages/customizing_tanzu_packages/" class="md-nav__link">
         Customizing tanzu packages
       </a>
     </li>
@@ -2871,7 +2877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/tanzu_packages/deploying_monitoring/" class="md-nav__link">
+      <a href="../../../Kubernetes/tanzu_packages/deploying_monitoring/" class="md-nav__link">
         Deploying the supported Grafana and Prometheus monitoring stack
       </a>
     </li>
@@ -2885,7 +2891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/tanzu_packages/kapp_to_install/" class="md-nav__link">
+      <a href="../../../Kubernetes/tanzu_packages/kapp_to_install/" class="md-nav__link">
         Deploying Tanzu packages using kapp CRDs
       </a>
     </li>
@@ -2899,7 +2905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Kubernetes/tanzu_packages/tanzu_cli_install/" class="md-nav__link">
+      <a href="../../../Kubernetes/tanzu_packages/tanzu_cli_install/" class="md-nav__link">
         Deploying Tanzu packages using the Tanzu CLI
       </a>
     </li>
@@ -2955,7 +2961,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../M365_Backup/">M365 Backup</a>
+          <a href="../../../M365_Backup/">M365 Backup</a>
           
             <label for="__nav_2_8">
               <span class="md-nav__icon md-icon"></span>
@@ -2978,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../M365_Backup/M365_Backup_common_errors_and_actions/" class="md-nav__link">
+      <a href="../../../M365_Backup/M365_Backup_common_errors_and_actions/" class="md-nav__link">
         M365 Backup common errors and actions
       </a>
     </li>
@@ -2992,7 +2998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../M365_Backup/azureAD_application_permission_requirements/" class="md-nav__link">
+      <a href="../../../M365_Backup/azureAD_application_permission_requirements/" class="md-nav__link">
         Azure AD Application Permission Requirements
       </a>
     </li>
@@ -3006,7 +3012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../M365_Backup/certificates/" class="md-nav__link">
+      <a href="../../../M365_Backup/certificates/" class="md-nav__link">
         Update Microsoft 365 Backup Certificate
       </a>
     </li>
@@ -3020,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../M365_Backup/configuration/" class="md-nav__link">
+      <a href="../../../M365_Backup/configuration/" class="md-nav__link">
         Configuration of Microsoft M365 Service Account
       </a>
     </li>
@@ -3034,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../M365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
+      <a href="../../../M365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
         Guide to the Veeam Restore Portal
       </a>
     </li>
@@ -3091,7 +3097,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Object_Storage/">Object Storage</a>
+          <a href="../../../Object_Storage/">Object Storage</a>
           
             <label for="__nav_2_9">
               <span class="md-nav__icon md-icon"></span>
@@ -3114,7 +3120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../../../Object_Storage/accessing_from_an_s3browser/" class="md-nav__link">
         Accessing buckets from an S3 Browser
       </a>
     </li>
@@ -3128,7 +3134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/accessing_object_storage/" class="md-nav__link">
+      <a href="../../../Object_Storage/accessing_object_storage/" class="md-nav__link">
         Accessing Object Storage
       </a>
     </li>
@@ -3142,7 +3148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../../../Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
         Add an object to a bucket
       </a>
     </li>
@@ -3156,7 +3162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/copy_an_object/" class="md-nav__link">
+      <a href="../../../Object_Storage/copy_an_object/" class="md-nav__link">
         Copy an object
       </a>
     </li>
@@ -3170,7 +3176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/creating_a_bucket/" class="md-nav__link">
+      <a href="../../../Object_Storage/creating_a_bucket/" class="md-nav__link">
         Creating a Bucket
       </a>
     </li>
@@ -3184,7 +3190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../../../Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
         Delete an object or a bucket
       </a>
     </li>
@@ -3198,7 +3204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/security_credentials/" class="md-nav__link">
+      <a href="../../../Object_Storage/security_credentials/" class="md-nav__link">
         Security Credentials
       </a>
     </li>
@@ -3212,7 +3218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/view_an_object/" class="md-nav__link">
+      <a href="../../../Object_Storage/view_an_object/" class="md-nav__link">
         View an object
       </a>
     </li>
@@ -3226,7 +3232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
+      <a href="../../../Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
         View properties and manage permissions
       </a>
     </li>
@@ -3265,7 +3271,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Storage/">Storage</a>
+          <a href="../../../Storage/">Storage</a>
           
         </div>
       
@@ -3315,7 +3321,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Symmetric_Key_Agreement_Platform/">Symmetric Key Agreement Platform</a>
+          <a href="../../../Symmetric_Key_Agreement_Platform/">Symmetric Key Agreement Platform</a>
           
             <label for="__nav_2_11">
               <span class="md-nav__icon md-icon"></span>
@@ -3338,7 +3344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Symmetric_Key_Agreement_Platform/IPsec/" class="md-nav__link">
+      <a href="../../../Symmetric_Key_Agreement_Platform/IPsec/" class="md-nav__link">
         Securing IPSec with SKAP
       </a>
     </li>
@@ -3352,7 +3358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Symmetric_Key_Agreement_Platform/SDKs/" class="md-nav__link">
+      <a href="../../../Symmetric_Key_Agreement_Platform/SDKs/" class="md-nav__link">
         SKAP SDKs
       </a>
     </li>
@@ -3366,7 +3372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Symmetric_Key_Agreement_Platform/bootstrapping/" class="md-nav__link">
+      <a href="../../../Symmetric_Key_Agreement_Platform/bootstrapping/" class="md-nav__link">
         Device registration and bootstrapping
       </a>
     </li>
@@ -3430,7 +3436,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Blog/">Blog</a>
+          <a href="../../../../Blog/">Blog</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -3453,7 +3459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Blog/documentation_as_opensource/" class="md-nav__link">
+      <a href="../../../../Blog/documentation_as_opensource/" class="md-nav__link">
         Relaunching AUCloud's documentation as an open source site.
       </a>
     </li>
@@ -3520,7 +3526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tags/" class="md-nav__link">
+      <a href="../../../../tags/" class="md-nav__link">
         Tags
       </a>
     </li>
@@ -3544,6 +3550,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3552,29 +3560,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#performing-a-reverse-task" class="md-nav__link">
-    Performing a reverse task
+  <a href="#assessment" class="md-nav__link">
+    Assessment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
-    Results
+  <a href="#important-caveats" class="md-nav__link">
+    Important Caveats
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next Steps
+  <a href="#vmware-references" class="md-nav__link">
+    VMware References
   </a>
   
 </li>
@@ -3598,12 +3606,7 @@
     
       
       
-        <a href="../../../tags/#vmware-cloud-director" class="md-tag">vmware-cloud-director</a>
-      
-    
-      
-      
-        <a href="../../../tags/#vmware-cloud-director-availability" class="md-tag">vmware-cloud-director-availability</a>
+        <a href="../../../../tags/#vmware-cloud-director" class="md-tag">vmware-cloud-director</a>
       
     
   </nav>
@@ -3611,7 +3614,7 @@
 
 
   
-    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Compute/NSX-V to NSX-T Migration/prerequisites.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3620,44 +3623,67 @@
     
       
     
-    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/Compute/NSX-V to NSX-T Migration/prerequisites.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>How to perform a reverse task</h1>
-
-<div><h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
-<p>Verify that you have performed a Failover task to the vApp before starting the Reverse task.<br>
-</p>
-<h2 id="performing-a-reverse-task">Performing a reverse task<a class="headerlink" href="#performing-a-reverse-task" title="Permanent link">¤</a></h2>
-<ol>
-<li>
-<p>In the VMware Cloud Director Availability Portal, select the vApp that you want to reverse either from the Incoming Replications or from the Outgoing Replications page, then click <strong>All Actions</strong> and select <strong>Reverse</strong>. </p>
+<div><h1 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<p>This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provided a tool that will migrate tenancies from a NSX-V backed VDC to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.</p>
+<p>This article also outlines some caveats and details related to other products integrated to the platform.  These are in relation to:</p>
+<ul>
+<li>Disaster Recovery services provided by <strong>VMware Cloud Directory Availability (VCDA)</strong> and,</li>
+<li>Backup services provided by <strong>Data Protection with Veeam</strong>.</li>
+</ul>
+<h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">¤</a></h2>
+<p>The VMware NSX Migration for VMware Cloud Director will first run a pre-check analysis of a customers tenancy.  The assessment may identify issues that will need to be corrected before the migration can happen and AUCloud migration technical resources will be in direct contact before migration happens for any identified issues.  Below is a list of a few common prerequisites:</p>
+<ul>
+<li>vApps &amp; Virtual Machines<ul>
+<li>Virtual Machines cannot be suspended - they need to be powered on or off.</li>
+<li>Virtual Machines cannot have media inserted - disconnect all media.</li>
+<li>vApps cannot be empty - if they are empty, they need to be deleted.</li>
+</ul>
 </li>
-<li>
-<p>Enter your availability service account credentials if prompted.</p>
+<li>Network<ul>
+<li>Firewall rules cannot use Virtual Machine objects - change Firewall Rules to IP Sets or Security Groups.  Further details around NSX-T Firewalls found <a href="../firewall_rules/">here</a>.</li>
+</ul>
 </li>
-<li>
-<p>A Reverse pop-up window displays. Select <strong>Reverse</strong> to confirm the reverse operation, or <strong>Cancel</strong> to cancel the reverse operation.</p>
+<li>Named Disks<ul>
+<li>'Shared' Named Disks cannot be migrated - they need to be removed.  Non-shared Named Disks are okay.</li>
+</ul>
 </li>
-<li>
-<p>You can monitor the progress of the task in the Replication Tasks pane.</p>
+<li>VMware Cloud Directory Availability (VCDA) - Disaster Recovery (DRaaS)<ul>
+<li>Virtual Machines that are Protected by VCDA need to have their protection removed and re-created.  This has to happen if either the Source or Destination tenancy is about to undergo NSX-V to NSX-T migration.</li>
+</ul>
 </li>
-</ol>
-<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">¤</a></h2>
-<p>After the reverse task completes, the reversed replication overwrites the source vApp or virtual machine. The virtual machine now runs on the primary destination site with a workload protection at your primary source site.   </p>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¤</a></h2>
-<p>To run the workload from the original source site, perform a <strong>Failover</strong> back to the source site, test failover, pause the reversed replication, and edit the configuration, or migrate the vApp.</p></div>
+</ul>
+<h2 id="important-caveats">Important Caveats<a class="headerlink" href="#important-caveats" title="Permanent link">¤</a></h2>
+<ul>
+<li>Data Protection with Veeam<ul>
+<li>Backups taken before migration can only be restored to a 'new' location post migration.  This is due to the new VCD object structure.</li>
+<li>Backups taken post migration will function normally.</li>
+</ul>
+</li>
+</ul>
+<h2 id="vmware-references">VMware References<a class="headerlink" href="#vmware-references" title="Permanent link">¤</a></h2>
+<p>Official migration tool documentation:</p>
+<ul>
+<li><a href="https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-index.html">VMware NSX Migration for VMware Cloud Director Documentation</a><ul>
+<li><a href="https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-supported-features.html">Supported Features and Edge Gateway Services</a></li>
+<li><a href="https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-unsupported-features.html">Unsupported Features and Edge Gateway Services</a></li>
+</ul>
+</li>
+</ul></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 24, 2023</span>
       
     
   </small>
@@ -3780,10 +3806,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
