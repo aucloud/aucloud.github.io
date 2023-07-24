@@ -9,9 +9,9 @@ tags:
 
 ## Overview
 
-This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provider a tool that will migrate tenancies from NSX-V backed to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that under underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
+This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provided a tool that will migrate tenancies from a NSX-V backed VDC to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
 
-This article also outlines some caveats and details related to other products integrated to the platform.  This are in relation to:
+This article also outlines some caveats and details related to other products integrated to the platform.  These are in relation to:
 
 - Disaster Recovery services provided by **VMware Cloud Directory Availability (VCDA)** and,
 - Backup services provided by **Data Protection with Veeam**.
@@ -29,17 +29,17 @@ The VMware NSX Migration for VMware Cloud Director will first run a pre-check an
 - Named Disks
 	* 'Shared' Named Disks cannot be migrated - they need to be removed.  Non-shared Named Disks are okay.
 - VMware Cloud Directory Availability (VCDA) - Disaster Recovery (DRaaS)
-	* Virtual Machines that are Protected by VCDA need to have their protection remove and re-created.  This has to happen if either the Source or Destination tenancy is about to under go NSX-V to NSX-T migration.
+	* Virtual Machines that are Protected by VCDA need to have their protection removed and re-created.  This has to happen if either the Source or Destination tenancy is about to undergo NSX-V to NSX-T migration.
 
 ## Important Caveats
 
 - Data Protection with Veeam
-	* Backups taken before migration will only be able to restored to a 'new' location post migration.  This is due to new VCD object structure.
+	* Backups taken before migration can only be restored to a 'new' location post migration.  This is due to the new VCD object structure.
 	* Backups taken post migration will function normally.
 
 ## VMware References
 
-Official migration tool documentation
+Official migration tool documentation:
 
 - [VMware NSX Migration for VMware Cloud Director Documentation](https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-index.html)
 	* [Supported Features and Edge Gateway Services](https://docs.vmware.com/en/VMware-NSX-Migration-for-VMware-Cloud-Director/1.4.2/user-guide/GUID-supported-features.html)
