@@ -1,11 +1,11 @@
 ---
-title: FAQs
-description: Rrequent Asked Questions
+title: FAQ
+description: Frequent Asked Questions
 tags:
     - vmware-cloud-director
 ---
 
-# FAQs
+# Frequent Asked Questions
 
 ## Overview
 
