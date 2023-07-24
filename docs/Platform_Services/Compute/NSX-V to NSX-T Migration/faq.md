@@ -3,7 +3,6 @@ title: FAQs
 description: Rrequent Asked Questions
 tags:
     - vmware-cloud-director
-	- nsx-t
 ---
 
 # FAQs
