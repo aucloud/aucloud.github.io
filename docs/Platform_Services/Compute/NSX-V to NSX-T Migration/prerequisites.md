@@ -18,7 +18,7 @@ This article also outlines some cavets and details related to other products int
 
 ## Assessment
 
-The VMware NSX Migration for VMware Cloud Director will first run a pre-check analysis of a customers tenancy.  The assment may identify issues that will need to be corrected before the migration can happen and AUCloud migration technical resources will be in direct contact before migration happens.  Below is a list of a few common prerequisites:
+The VMware NSX Migration for VMware Cloud Director will first run a pre-check analysis of a customers tenancy.  The assessment may identify issues that will need to be corrected before the migration can happen and AUCloud migration technical resources will be in direct contact before migration happens for any identified issues.  Below is a list of a few common prerequisites:
 
 - vApps & Virtual Machines
 	* Virtual Machines cannot be suspended - they need to be powered on or off.
