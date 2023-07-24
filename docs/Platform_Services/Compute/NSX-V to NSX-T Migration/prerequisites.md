@@ -11,7 +11,7 @@ tags:
 
 This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provider a tool that will migrate tenancies from NSX-V backed to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that under underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
 
-This article also outlines some cavets and details related to other products integrated to the platform.  This are in relation to:
+This article also outlines some caveats and details related to other products integrated to the platform.  This are in relation to:
 
 - Disaster Recovery services provided by **VMware Cloud Directory Availability (VCDA)** and,
 - Backup services provided by **Data Protection with Veeam**.
