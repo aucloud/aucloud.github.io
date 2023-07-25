@@ -19,11 +19,11 @@ This page has common asked questions regarding the NSX-V to NSX-T migration proc
 
 2. What's the impact to infrastructure during the migration? Is there downtime?
 
-	*During the migration there will be interruptions to network traffic.  Network traffic interruptions will occur for all network addresses that will be transferred from NSX-V to the NSX-T system. These changes happen very fast but do cause breif interruptions when routes are updating.  Same minor interruptions occur when Virtual Machines are moved to the NSX-T hosting compute.*
+	*During the migration there will be interruptions to network traffic.  Network traffic interruptions will occur for all network addresses that will be transferred from NSX-V to the NSX-T system. These changes happen very fast but do cause brief interruptions when routes are updating.  Same minor interruptions occur when Virtual Machines are moved to the NSX-T hosting compute.*
 
 3. How long does the migration process take?
 
-	*The time the migration takes is completely dependant on the complexity of the customer environment.  Main factors that increase migration time are the number of Virtual Machines, number of networks, number of Firewall Rules, NATs, etc.  Rough timeframes are between 2-5 hours.  The assigned AUCloud technical resource that is completing the migration will be able to better advise on this when completing the pre-assessment of the migration for the particular customer tenancy.*
+	*The time the migration takes is completely dependent on the complexity of the customer environment.  Main factors that increase migration time are the number of Virtual Machines, number of networks, number of Firewall Rules, NATs, etc.  Rough timeframes are between 2-5 hours.  The assigned AUCloud technical resource that is completing the migration will be able to better advise on this when completing the pre-assessment of the migration for the particular customer tenancy.*
 
 4. Does the migration impact access to the API?  Does my infrastructure-as-code still work?
 
