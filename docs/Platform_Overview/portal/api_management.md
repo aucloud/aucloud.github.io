@@ -4,6 +4,7 @@ description: Instructions on how to manage the API for the AUCloud Portal
 tags:
     - API
     - SDK
+    - portal
 ---
 
 ## Overview
