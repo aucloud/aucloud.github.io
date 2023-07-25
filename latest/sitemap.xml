@@ -231,6 +231,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-V%20to%20NSX-T%20Migration/faq/</loc>
+         <lastmod>2023-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/NSX-V%20to%20NSX-T%20Migration/firewall_rules/</loc>
          <lastmod>2023-07-25</lastmod>
          <changefreq>daily</changefreq>
