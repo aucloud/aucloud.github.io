@@ -28,11 +28,3 @@ This page has common asked questions regarding the NSX-V to NSX-T migration proc
 4. Does the migration impact access to the API?  Does my infrastructure-as-code still work?
 
 	*The API does not change in the migration process.  Unique identifiers for VMs/vApps/Networks do not change, however the containing Virtual Data Center (OrgVDC) Unique Id does, as a new Virtual Data Center is created that controls resouces on NSX-T enabled compute.  This will impact some tools like Terraform that will have state files that reference deployed infrastructure with the OrgVDC Id.  Please raise this with the AUCloud techincal resource to help with the impact on your API access.*
-
-5. When will AUCloud's Lumberjack logging solution be ready for customer use?
-
-	*Lumberjack is a logging solution to relace the NSX-V Edge Gateway Syslog. first week of August?*
-
-6. Will I need to pay for the object storage cost related to Lumberjack?
-
-	*?*
