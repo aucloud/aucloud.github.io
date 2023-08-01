@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 .md-grid {
     max-width: 2000px;
 }
@@ -8,4 +10,94 @@
 
 .bad {
     color: red;
+}
+
+h1 {
+    font-weight: 700 !important;
+}
+
+/* Headings */
+h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+
+/* Styles for links on hover */
+a:hover {
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+
+/* Styles for links in focus */
+a:focus {
+    text-decoration: underline;
+    filter: brightness(120%);
+    outline: none;
+}
+
+/* Index nav link */
+.md-nav__link--index {
+    font-size: 0.8rem !important;
+}
+
+/* Menu link */
+a.md-tabs__link {
+    color: #FFF;
+    opacity: 1;
+}
+
+/* Menu link hover */
+a.md-tabs__link:hover {
+    color: #FFD600;
+}
+
+/* Menu link (active) */
+a.md-tabs__link.md-tabs__link--active {
+    color: #FFD600;
+}
+
+/* Nav header and Nav tabs */
+nav.md-header__inner.md-grid, nav.md-tabs {
+    background-color: #1D1655;
+}
+
+/* Disable underline for tabs and nav */
+a:is([class*="md-tabs"]) {
+    text-decoration: none;
+}
+
+a:is([class*="md-nav"]) {
+    text-decoration: none;
+}
+
+/* Body font family */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media {
+    /* Color dark mode: headings */
+    [data-md-color-scheme=slate] :is(h1, h2, h3, h4, h5, h6) {
+        --md-default-fg-color--light: #fff;
+    }
+    /* Color light mode: headings */
+    [data-md-color-scheme=default] :is(h1, h2, h3, h4, h5, h6) {
+        --md-default-fg-color--light: #1D1655;
+    }
+    /* Color dark mode: a href */
+    [data-md-color-scheme=slate] :is(a) {
+        --md-typeset-a-color: #FFD600;
+    }
+    /* Color light mode: a href */
+    [data-md-color-scheme=default] :is(a) {
+        --md-typeset-a-color: #0097CF;
+    }
+    /* Color dark mode: code */
+    [data-md-color-scheme=slate] :is(code) {
+        --md-typeset-a-color: #FFD600;
+    }
+    /* Color light mode: code */
+    [data-md-color-scheme=default] :is(code) {
+        --md-code-bg-color: rgba(29, 22, 85, 0.1);
+        --md-code-fg-color: #1D1655;
+    }
 }
