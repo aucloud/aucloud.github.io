@@ -56,7 +56,7 @@ a.md-tabs__link.md-tabs__link--active {
 }
 
 /* Nav header and Nav tabs */
-nav.md-header__inner.md-grid, nav.md-tabs {
+nav.md-header__inner.md-grid, nav.md-tabs, header.md-header {
     background-color: #1D1655;
 }
 
