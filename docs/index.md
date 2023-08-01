@@ -22,13 +22,13 @@ We invite you to explore and revisit this website regularly as it will continual
 - Access How to Guides for technical information and features available in AUCloud services
 - Find API documentation
 - Learn more about AUCloud’s [security and governance](Platform_Overview/Security/security_and_governance.md) and our [shared responsibility model](Platform_Overview/Security/shared_service_model.md)
-- [Community Rules Information Security Policy](Platform_Overview/Security/#community-rules-information-security-policy-crisp) (CRISP) what it is, what it means and how it benefits our customers
+- [Community Rules Information Security Policy](Platform_Overview/Security/index.md#community-rules-information-security-policy-crisp) (CRISP) what it is, what it means and how it benefits our customers
 - Find out about the [support tools](Platform_Overview/support/index.md) we have available for our customers
 - See relevant information about our technology and other partners
 
 ## Contact AUCloud
 
-AUCloud is always here to support our customers and therefore please continue to reach out to your sales, [technical or support contacts](Platform_Overview/support) for any assistance you may require.
+AUCloud is always here to support our customers and therefore please continue to reach out to your sales, [technical or support contacts](Platform_Overview/support/index.md) for any assistance you may require.
 
 1800-AUCLOUD (1800 282 5683)
 
