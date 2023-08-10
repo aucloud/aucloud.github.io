@@ -28,7 +28,7 @@ If customers wish to scan the backed-up data for security purposes, such as runn
 
 - How is access managed within your organisation to ensure the confidentiality and integrity of customer backups?
 
-AUCloud implements the principle of lease privileged access across all services provided to customers. Access to the back-end Veeam backup for M365 infrastructure is only granted to specified AUCloud backup personnel who are security-cleared at a minimum of NV1 level. The AUCloud 24x7 Security Operations Centre monitors the access of all AUCloud back-end infrastructure to ensure no unauthorised access occurs. 
+AUCloud implements the principle of least privileged access across all services provided to customers. Access to the back-end Veeam backup for M365 infrastructure is only granted to specified AUCloud backup personnel who are security-cleared at a minimum of NV1 level. The AUCloud 24x7 Security Operations Centre monitors the access of all AUCloud back-end infrastructure to ensure no unauthorised access occurs. 
 
 - Are OneDrive, SharePoint and Exchange backups included?
 
@@ -82,7 +82,7 @@ Customers are not subjected to vendor lock-in to either Veeam, or AUCloud due to
 
 - What customer support is available?
 
-  Customer Success Manager is assigned for the whole of the customer lifecycle who acts as a single point of contact for all queries
+  Customer Success Manager is assigned for the whole of the customer life-cycle who acts as a single point of contact for all queries
   24/7 support is also available by phone or email
 
 - Can different retention policies be set for different users?
