@@ -14,7 +14,7 @@ tags:
 It still surprises me that some enterprise software products do not provide their documentation openly on the internet.
 As a technologist, when evaluating technology products, whether open source or proprietary, having a robust understanding of the breadth and depth of documentation (and ease of access) is crucial.
 
-AUCloud has recently relaunched it's [documentation site](https://docs.australiacloud.com.au) as a static website, built from a GitHub repository. A number of the hyperscalers use a similar method for their documentation as:
+AUCloud has recently relaunched it's [documentation site](https://docs.australiacloud.com.au/latest) as a static website, built from a GitHub repository. A number of the hyperscalers use a similar method for their documentation as:
 
 - The open source documentation core allows users to propose changes to the documentation.
 - Documentation hosted on GitHub becomes searchable within GitHub, embedding it within the workspace of developers.

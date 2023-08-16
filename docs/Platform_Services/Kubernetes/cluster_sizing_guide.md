@@ -1,6 +1,9 @@
 ---
 title: Kubernetes cluster sizing guide
 description: Information and best practice on how to size your kubernetes cluster
+tags:
+    - Kubernetes
+    - Tanzu
 ---
 
 

@@ -5,59 +5,50 @@ description: Reference URLs for services in AUCLoud
 
 ## Portal UI
 
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Official | - |
-| [https://eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
+| URL | Community environment |
+| ---- | ------ |
+| [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Sovereign Cloud |
 
 
 ## Portal API endpoints
 
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://api.portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Official | - |
-| [https://api.eportal.australiacloud.com.au/login](https://eportal.australiacloud.com.au/login) |  Protected | - |
+| URL | Community environment |
+| ---- | ------ |
+| [https://api.portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Sovereign Cloud |
 
 
 ## VMware Cloud Director API endpoints
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
-| [https://api-vcd-sz101.portal.australiacloud.com.au/api](https://api-vcd-sz101.portal.australiacloud.com.au/api) |  Official | CSZ |
-| [https://api-vcd-sz201.portal.australiacloud.com.au/api](https://api-vcd-sz201.portal.australiacloud.com.au/api) |  Official | SSZ |
-| [https://api-vcd-sz101.eportal.australiacloud.com.au/api](https://api-vcd-sz101.eportal.australiacloud.com.au/api)  | Protected | CSZ |
-| [https://api-vcd-sz201.eportal.australiacloud.com.au/api](https://api-vcd-sz201.eportal.australiacloud.com.au/api)  | Protected | SSZ |
-| [https://api-vcd-msz.portal.australiacloud.com.au/api](https://api-vcd-msz.portal.australiacloud.com.au)  | Official | MSZ |
+| [https://api-vcd-sz101.portal.australiacloud.com.au/api](https://api-vcd-sz101.portal.australiacloud.com.au/api) |  Sovereign Cloud | CSZ |
+| [https://api-vcd-sz201.portal.australiacloud.com.au/api](https://api-vcd-sz201.portal.australiacloud.com.au/api) |  Sovereign Cloud | SSZ |
+| [https://api-vcd-msz.portal.australiacloud.com.au/api](https://api-vcd-msz.portal.australiacloud.com.au)  | Sovereign Cloud | MSZ |
 
 
 ## Veeam M365 Backup portal
 
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Official | - |
-| [https://evbo-csz.australiacloud.com.au/](https://evbo-csz.australiacloud.com.au/) | Protected | - |
+| URL | Community environment |
+| ---- | ------ |
+| [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Sovereign Cloud |
 
 ## Object Storage API Endpoints (direct use)
 
 !!! note "Path based s3 access only"
-    The object storage endpoints in Canberra Official do not support host based addressing of s3 buckets.
+    The object storage endpoints in Canberra (CSZ) do not support host based addressing of s3 buckets.
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
-| [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Official | CSZ |
-| [https://s3-esz101.australiacloud.com.au](https://s3-esz101.australiacloud.com.au) | Protected | CSZ |
-| [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Official | SSZ |
-| [https://s3-esz201.australiacloud.com.au](https://s3-esz201.australiacloud.com.au) | Protected | SSZ |
+| [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Sovereign Cloud | CSZ |
+| [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
 
 
 ## Object Storage API Endpoints (via VMware Object Storage Extension)
 
 | URL | Community environment | Sovereignty Zone |
 | ---- | ------ | --------------------- |
-| [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Official | CSZ |
-| [https://s3.vos.esz101.australiacloud.com.au/api/v1/s3](https://s3.vos.esz101.australiacloud.com.au/api/v1/s3) | Protected | CSZ |
-| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Official | SSZ |
-| [https://s3.vos.esz201.australiacloud.com.au](https://s3.vos.esz201.australiacloud.com.au) | Protected | SSZ |
+| [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Sovereign Cloud | CSZ |
+| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
 
 
 
