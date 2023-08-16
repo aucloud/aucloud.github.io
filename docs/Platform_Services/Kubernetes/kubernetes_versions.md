@@ -10,7 +10,7 @@ The version of Kubernetes Grid currently supported is [1.5.4](https://docs.vmwar
 
 ### Tanzu Kubernetes version
 
-The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 ODCE (Brisbane), SZ4 ODCE (Melbourne)  
+The following kubernetes versions are available in following AUCloud sovereignty Zones, CSZ (Canberra), SSZ (Sydney), BSZ (Brisbane), MSZ (Melbourne)  
 
 |Template name                                 | Kubernetes version | TKG Product Version| Comment          |
 |:---                                          |:---                |:---                |                  |
@@ -31,23 +31,23 @@ Please see upgrading clusters for information on upgrading Kubernetes versions, 
 
 ### Tanzu Kubernetes component versions
 
-| Zone| Env  | Component| version | comment|
-|:--- |:---  |:---      |:---     |:---    |
-| SZ1 | ODCE | CAPVCD   | 1.0.1   |        |
-| SZ1 | ODCE | CPI      | 1.3.0   |        |
-| SZ1 | ODCE | CSI      | 1.3.2   |        |
-|     |      |          |         |        |
-| SZ2 | ODCE | CAPVCD   | 1.0.1   |        |
-| SZ2 | ODCE | CPI      | 1.3.0   |        |
-| SZ2 | ODCE | CSI      | 1.3.2   |        |
-|     |      |          |         |        |
-| SZ3 | ODCE | CAPVCD   | 1.0.1   |        |
-| SZ3 | ODCE | CPI      | 1.3.0   |        |
-| SZ3 | ODCE | CSI      | 1.3.2   |        |
-|     |      |          |         |        |
-| SZ4 | ODCE | CAPVCD   | 1.0.1   |        |
-| SZ4 | ODCE | CPI      | 1.3.0   |        |
-| SZ4 | ODCE | CSI      | 1.3.2   |        |
+| Zone| Component| version | comment|
+|:--- |:---      |:---     |:---    |
+| CSZ | CAPVCD   | 1.0.1   |        |
+| CSZ | CPI      | 1.3.0   |        |
+| CSZ | CSI      | 1.3.2   |        |
+|     |          |         |        |
+| SSZ | CAPVCD   | 1.0.1   |        |
+| SSZ | CPI      | 1.3.0   |        |
+| SSZ | CSI      | 1.3.2   |        |
+|     |          |         |        |
+| BSZ | CAPVCD   | 1.0.1   |        |
+| BSZ | CPI      | 1.3.0   |        |
+| BSZ | CSI      | 1.3.2   |        |
+|     |          |         |        |
+| MSZ | CAPVCD   | 1.0.1   |        |
+| MSZ | CPI      | 1.3.0   |        |
+| MSZ | CSI      | 1.3.2   |        |
 
 Please see upgrading cluster components for information on upgrading Kubernetes components, [here](./upgrading_component_versions.md)
 
