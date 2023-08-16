@@ -25,7 +25,12 @@ The VMware NSX Migration for VMware Cloud Director will first run a pre-check an
 	* Virtual Machines cannot have media inserted - disconnect all media.
 	* vApps cannot be empty - if they are empty, they need to be deleted.
 - Network
-	* Firewall rules cannot use Virtual Machine objects - change Firewall Rules to IP Sets or Security Groups.  Further details around NSX-T Firewalls found [here](./firewall_rules.md).
+	* Firewall rules cannot use certain objects (Gateway Interfaces, Virtual Machines or Org Vdc Networks) - change Firewall Rules to IP Sets or Security Groups.
+	
+		![NSX-V FW Objects](./assets/nsx_v_fw_objects.jpg)
+	
+		Further details around NSX-T Firewalls found [here](../firewall_rules.md).
+
 - Named Disks
 	* 'Shared' Named Disks cannot be migrated - they need to be removed.  Non-shared Named Disks are okay.
 - VMware Cloud Directory Availability (VCDA) - Disaster Recovery (DRaaS)
@@ -33,9 +38,7 @@ The VMware NSX Migration for VMware Cloud Director will first run a pre-check an
 
 ## Important Caveats
 
-- Data Protection with Veeam
-	* Backups taken before migration can only be restored to a 'new' location post migration.  This is due to the new VCD object structure.
-	* Backups taken post migration will function normally.
+- Data Protection with Veeam details are found [here](./veeam.md).
 
 ## VMware References
 
