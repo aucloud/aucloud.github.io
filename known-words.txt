@@ -114,6 +114,7 @@ remediated
 routable
 runtime
 salesforce
+sandboxed
 sanitisation
 scsi
 sdk
