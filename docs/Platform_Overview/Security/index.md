@@ -18,7 +18,7 @@ AUCloud is IRAP certified to PROTECTED and ISO27001 certified with the scope of 
  - Development, management, operation and security of the AUCloud portal, information systems and related infrastructure.
  - Management, operation and delivery of sovereign, secure Infrastructure as a Service, Backup as a Service and Disaster Recovery as a Service.
 
-AUCloud’s IRAP certification encompasses two operating environments, the OFFICIAL Data Community Environment and the PROTECTED Data Community Environment, both of which have been designed to meet or exceed PROTECTED level ISM controls.
+AUCloud’s IRAP certification encompasses all operating environments, Canberra, Sydney, Brisbane and Melbourne, all which have been designed to meet or exceed PROTECTED level ISM controls.
 
 ## Community Rules Information Security Policy (CRISP)
 
