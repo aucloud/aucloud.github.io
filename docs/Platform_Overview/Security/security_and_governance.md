@@ -47,8 +47,6 @@ Backed up VM’s are retained for 24 hours before being overwritten.
 
 ### Data Segregation
 
-AUCloud provides three separate physical infrastructure services which provide compute, storage and network.  These systems are dedicated to OFFICIAL, PROTECTED and ENTERPRISE information, respectively.
-
 AUCloud shared services management environment is managed at the PROTECTED level.
 
 Customers are wholly segregated from other customers. Virtualised networking patterns are implemented on an individual customer basis.
@@ -147,7 +145,7 @@ Access from offshore to AUCloud systems and customer systems is blocked unless s
 
 AUCloud’s primary office is located at:  Unit 7/15-21 Beaconsfield St, Fyshwick ACT. The primary office supports the AUCloud technical, administrative and support staff.
 
-AUCloud infrastructure is hosted in Canberra Data Centres (CDC) facilities in Fyshwick ACT and offsite disaster recovery (DR) facility at CDC Eastern Creek NSW.  The Enterprise Data Community Environment (EDCE) is hosted in NEXTDC Fortitude Valley QLD.
+AUCloud infrastructure is hosted in Canberra Data Centres (CDC) facilities in Fyshwick ACT and Eastern Creek NSW, as well as in NEXTDC facilities in Fortitude Valley QLD and Tullamarine, VIC.
 
 AUCloud development teams are located in Brisbane.
 
