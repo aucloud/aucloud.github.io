@@ -19,7 +19,7 @@
         <link rel="next" href="../../Object_Storage/">
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -1620,10 +1620,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6_8" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/">Prerequisites</a>
+          
+            <label for="__nav_2_5_6_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_6_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Prerequisites
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/prerequisites/" class="md-nav__link">
-        Prerequisites
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/veeam/" class="md-nav__link">
+        Veeam Backup
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2924,6 +2974,8 @@
         
           
         
+          
+        
       
       
         
@@ -2944,6 +2996,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ%27s/" class="md-nav__link">
+        FAQ's
+      </a>
+    </li>
+  
+
             
           
             
@@ -3861,19 +3927,18 @@
   <h1>Guide to the Veeam Restore Portal</h1>
 
 <div><h2 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">¤</a></h2>
-<p>Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from the most recent backup job. Users log in with their existing Microsoft 365 credentials.</p>
+<p>Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from any point-in-time restore point. Users log in with their existing Microsoft 365 credentials.</p>
 <p>Restore Operators can be specified as individuals or as security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.</p>
 <h2 id="launching-the-restore-portal">Launching the Restore Portal<a class="headerlink" href="#launching-the-restore-portal" title="Permanent link">¤</a></h2>
 <h2 id="log-in">Log in<a class="headerlink" href="#log-in" title="Permanent link">¤</a></h2>
-<p>To launch the Restore Portal, do the following:</p>
+<p>To launch the Restore Portal, do the following:
+any point-in-time
+1. Open a web browser on any computer and navigate to the Restore Portal <a href="../../reference_urls/#veeam-m365-backup-portal">web address</a>.</p>
+<div class="highlight"><pre><span></span><code>!!! note
+
+    Internet Explorer is not supported. To access Restore Portal, please use Microsoft Edge (version 79 or later), Mozilla Firefox (version 21 or later) or Google Chrome (version 24 or later).
+</code></pre></div>
 <ol>
-<li>
-<p>Open a web browser on any computer and navigate to the Restore Portal <a href="../../reference_urls/#veeam-m365-backup-portal">web address</a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Internet Explorer is not supported. To access Restore Portal, please use Microsoft Edge (version 79 or later), Mozilla Firefox (version 21 or later) or Google Chrome (version 24 or later).</p>
-</div>
-</li>
 <li>
 <p>On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:</p>
 <ul>
@@ -4116,11 +4181,9 @@ To configure OneDrive restore, do the following:</p>
 <h3 id="additional-functionality">Additional Functionality<a class="headerlink" href="#additional-functionality" title="Permanent link">¤</a></h3>
 <p>There are additional features and functionality that can be performed on a secure call with an AUCloud Compute &amp; Storage Engineer. Please contact <a href="../../../Platform_Overview/support/">Support</a> if you wish to perform any of the following:</p>
 <ul>
-<li>Access backup data from further back in time than the most recent backup</li>
 <li>Restore data to a different location/mailbox/tenant</li>
 <li>Export data as a <em>pst/msg/zip</em> file</li>
 <li>Explore and restore Group Mailboxes</li>
-<li>Explore and Restore Microsoft Teams data</li>
 </ul>
 <p>For further questions about the capabilities of the restore portal, please contact <a href="../../../Platform_Overview/support/">Support.</a></p></div>
 
@@ -4129,7 +4192,7 @@ To configure OneDrive restore, do the following:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2023</span>
       
     
   </small>

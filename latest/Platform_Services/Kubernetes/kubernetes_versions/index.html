@@ -19,7 +19,7 @@
         <link rel="next" href="../obtaining_kube_config/">
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -1620,10 +1620,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6_8" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/">Prerequisites</a>
+          
+            <label for="__nav_2_5_6_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_6_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Prerequisites
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/prerequisites/" class="md-nav__link">
-        Prerequisites
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/veeam/" class="md-nav__link">
+        Veeam Backup
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2988,6 +3038,8 @@
         
           
         
+          
+        
       
       
         
@@ -3008,6 +3060,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M365_Backup/FAQ%27s/" class="md-nav__link">
+        FAQ's
+      </a>
+    </li>
+  
+
             
           
             
@@ -3663,7 +3729,7 @@
 <p>AUCloud's Kubernetes service is based on  <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html">VMware's Tanzu Kubernetes Grid</a>, combined with the VMware's "<a href="https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0.3/rn/vmware-cloud-director-container-service-extension-403-release-notes/index.html">Container Service Extension</a>".</p>
 <p>The version of Kubernetes Grid currently supported is <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html">1.5.4</a> and <a href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html">1.6.1</a> click the product version to view details of the component versions within the distribution.</p>
 <h3 id="tanzu-kubernetes-version">Tanzu Kubernetes version<a class="headerlink" href="#tanzu-kubernetes-version" title="Permanent link">¤</a></h3>
-<p>The following kubernetes versions are available in following AUCloud sovereignty Zones, SZ1 ODCE (Canberra), SZ2 ODCE (Sydney), SZ3 ODCE (Brisbane), SZ4 ODCE (Melbourne)  </p>
+<p>The following kubernetes versions are available in following AUCloud sovereignty Zones, CSZ (Canberra), SSZ (Sydney), BSZ (Brisbane), MSZ (Melbourne)  </p>
 <table>
 <thead>
 <tr>
@@ -3729,7 +3795,6 @@
 <thead>
 <tr>
 <th style="text-align: left;">Zone</th>
-<th style="text-align: left;">Env</th>
 <th style="text-align: left;">Component</th>
 <th style="text-align: left;">version</th>
 <th style="text-align: left;">comment</th>
@@ -3737,22 +3802,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">SZ1</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">CSZ</td>
 <td style="text-align: left;">CAPVCD</td>
 <td style="text-align: left;">1.0.1</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ1</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">CSZ</td>
 <td style="text-align: left;">CPI</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ1</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">CSZ</td>
 <td style="text-align: left;">CSI</td>
 <td style="text-align: left;">1.3.2</td>
 <td style="text-align: left;"></td>
@@ -3762,25 +3824,21 @@
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ2</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">SSZ</td>
 <td style="text-align: left;">CAPVCD</td>
 <td style="text-align: left;">1.0.1</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ2</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">SSZ</td>
 <td style="text-align: left;">CPI</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ2</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">SSZ</td>
 <td style="text-align: left;">CSI</td>
 <td style="text-align: left;">1.3.2</td>
 <td style="text-align: left;"></td>
@@ -3790,25 +3848,21 @@
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ3</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">BSZ</td>
 <td style="text-align: left;">CAPVCD</td>
 <td style="text-align: left;">1.0.1</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ3</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">BSZ</td>
 <td style="text-align: left;">CPI</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ3</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">BSZ</td>
 <td style="text-align: left;">CSI</td>
 <td style="text-align: left;">1.3.2</td>
 <td style="text-align: left;"></td>
@@ -3818,25 +3872,21 @@
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ4</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">MSZ</td>
 <td style="text-align: left;">CAPVCD</td>
 <td style="text-align: left;">1.0.1</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ4</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">MSZ</td>
 <td style="text-align: left;">CPI</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SZ4</td>
-<td style="text-align: left;">ODCE</td>
+<td style="text-align: left;">MSZ</td>
 <td style="text-align: left;">CSI</td>
 <td style="text-align: left;">1.3.2</td>
 <td style="text-align: left;"></td>
@@ -3857,7 +3907,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2023</span>
       
     
   </small>
