@@ -18,25 +18,25 @@ Restore Operators can be specified as individuals or as security groups (where u
 ## Log in
 
 To launch the Restore Portal, do the following:
-any point-in-time
+
 1. Open a web browser on any computer and navigate to the Restore Portal [web address](../reference_urls.md#veeam-m365-backup-portal).
 
     !!! note
 
-        Internet Explorer is not supported. To access Restore Portal, please use Microsoft Edge (version 79 or later), Mozilla Firefox (version 21 or later) or Google Chrome (version 24 or later).
+        Internet Explorer is not supported. To access the Restore Portal, please use Microsoft Edge (version 79 or later), Mozilla Firefox (version 21 or later) or Google Chrome (version 24 or later).
 
 1. On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:
 
     - 'user@domain.com' or
     - 'user@domain.onmicrosoft.com'
 
-1. Click **Log In**. Restore Portal will redirect you to the Microsoft authentication portal where you will be prompted to enter your Microsoft 365 user account password.
+1. Click **Log In**. the Restore Portal will redirect you to the Microsoft authentication portal where you will be prompted to enter your Microsoft 365 user account password.
 
     ![Veeam Login](./assets/veeam_login.png)
 
 ## Log out
 
-To log out of Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click **Log Out**.  
+To log out of the Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click **Log Out**.  
 After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background till data restore completes.  
   
 ![Veeam Logout](./assets/veeam_logout.png)
