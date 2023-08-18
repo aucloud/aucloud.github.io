@@ -36,7 +36,7 @@ Buckets are containers for objects. You can have one or more buckets and control
     aws configure --profile=aucloud
     ```
 
-1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`, using the ODCE endpoint)
+1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`, using the CSZ endpoint)
 
     ```bash
     aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://mybucket
@@ -46,16 +46,16 @@ Buckets are containers for objects. You can have one or more buckets and control
 ## Path vs Host based bucket access
 Files can be accessed using s3, across two methods - host based and path based access.
 
-For a bucket `foo`, and a file `bar.txt` using path based access in AUCloud's PDCE environment. would have a path of:
+For a bucket `bucket`, and a file `bar.txt` using path based access in AUCloud's **SSZ** environment. would have a path of:
 
-`https://s3-esz101.australiacloud.com.au/api/v1/s3/foo/bar.txt`
+`https://s3-sz201.australiacloud.com.au/api/v1/s3/bucket/bar.txt`
 
 using host based access:
 
-`https://foo.s33-esz101.australiacloud.com.au/bar.txt`
+`https://bucket.s3-sz201.australiacloud.com.au/bar.txt`
 
-Note that the result is that each bucket name is globally unique per community environment.
+Note that the result is that each bucket name is globally unique.
 
 !!! warning "Restrictions on host based access"
-    Currently ODCE CSZ does not support host based access.
+    Currently **CSZ** does not support host based access.
 
