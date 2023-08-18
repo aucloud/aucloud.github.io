@@ -3733,21 +3733,21 @@
 </code></pre></div>
 </li>
 <li>
-<p>Test connectivity to the s3 bucket you created previously (assumed in this example to be <code>mybucket</code>, using the ODCE endpoint)</p>
+<p>Test connectivity to the s3 bucket you created previously (assumed in this example to be <code>mybucket</code>, using the CSZ endpoint)</p>
 <div class="highlight"><pre><span></span><code>aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://vos.s3-sz101.australiacloud.com.au/api/v1/s3<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>s3://mybucket
 </code></pre></div>
 </li>
 </ol>
 <h2 id="path-vs-host-based-bucket-access">Path vs Host based bucket access<a class="headerlink" href="#path-vs-host-based-bucket-access" title="Permanent link">¤</a></h2>
 <p>Files can be accessed using s3, across two methods - host based and path based access.</p>
-<p>For a bucket <code>foo</code>, and a file <code>bar.txt</code> using path based access in AUCloud's PDCE environment. would have a path of:</p>
-<p><code>https://s3-esz101.australiacloud.com.au/api/v1/s3/foo/bar.txt</code></p>
+<p>For a bucket <code>bucket</code>, and a file <code>bar.txt</code> using path based access in AUCloud's <strong>SSZ</strong> environment. would have a path of:</p>
+<p><code>https://s3-sz201.australiacloud.com.au/api/v1/s3/bucket/bar.txt</code></p>
 <p>using host based access:</p>
-<p><code>https://foo.s33-esz101.australiacloud.com.au/bar.txt</code></p>
-<p>Note that the result is that each bucket name is globally unique per community environment.</p>
+<p><code>https://bucket.s3-sz201.australiacloud.com.au/bar.txt</code></p>
+<p>Note that the result is that each bucket name is globally unique.</p>
 <div class="admonition warning">
 <p class="admonition-title">Restrictions on host based access</p>
-<p>Currently ODCE CSZ does not support host based access.</p>
+<p>Currently <strong>CSZ</strong> does not support host based access.</p>
 </div></div>
 
   <hr>
@@ -3755,7 +3755,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2023</span>
       
     
   </small>
