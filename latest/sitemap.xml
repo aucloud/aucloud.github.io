@@ -56,12 +56,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/odce_crisp/</loc>
-         <lastmod>2023-08-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/pdce_crisp/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Overview/Security/CRISP/Community_Rules_Information_Security_Policy_%28CRISP%29/</loc>
          <lastmod>2023-08-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
