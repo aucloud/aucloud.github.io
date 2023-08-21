@@ -24,7 +24,7 @@ AUCloud’s IRAP certification encompasses all operating environments, Canberra,
 
 To be part of the AUCloud community, customers must agree to abide by AUCloud’s Community Rules Information Security Policy (CRISP) which is signed by the customers CIO or CISO prior to commencement. The CRISP is the formal, top-level security document which identifies those aspects of the cloud service that are the responsibility of the AUCloud CISO and those that are within the remit of the data-owning customers CIO/CISO.
 
-All AUCloud partners and customers using both our ODCE and PDCE environments must comply with AUCloud’s Community Rules Information Security Policy (CRISP).
+All AUCloud partners and customers using Sovereign Cloud environments must comply with AUCloud’s Community Rules Information Security Policy (CRISP).
 
 AUCloud’s CRISP dictates the behaviours and practices of the ‘cloud community’.  It sets out our responsibilities as well as the responsibilities of our partners/customers to eliminate any operational or process weakness.  This delivers both superior security controls for individual partners/customers as well the highest level of integrity of all our cloud environments.
 
