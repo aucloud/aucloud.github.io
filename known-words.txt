@@ -172,3 +172,5 @@ tullamarine
 full_access_as_app
 microservices
 offboarding
+vcentre
+vCentre
