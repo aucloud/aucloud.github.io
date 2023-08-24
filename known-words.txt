@@ -174,4 +174,3 @@ microservices
 offboarding
 vcentre
 vCentre
-industry’s
