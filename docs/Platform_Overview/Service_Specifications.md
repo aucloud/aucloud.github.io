@@ -57,7 +57,7 @@ Cloud Director provides role-based access to a HTML 5 web console that allows ad
 
 ## Storage (STaaS)
 
-Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCloud service. Cloudian is the industry’s most compatible S3 API exposing features including object lock.
+Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCloud service. Cloudian boasts the most compatible S3 API, exposing features including object lock that provides customers with ransomware protection.
 
 | Features | Benefits |
 | -----------| -------------|
