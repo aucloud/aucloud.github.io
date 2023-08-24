@@ -18,7 +18,7 @@ The AUCloud Management portal is fully API driven and allows for all functions t
 
 | Mode | Description |
 | ------- | ------- |
-| Internet | Unmetered connectivity to your AUCloud service (included with IaaS pricing) |
+| Internet | Un-metered connectivity to your AUCloud service (included with IaaS pricing) |
 | Direct patch | For existing customers within a CDC site (charges apply) |
 | AUCloud Sovereign Bridge |Connect your on-premise resources to your AUCloud resources via the CDC Data Centre Interconnect, or through the NEXTDC AXON network via ICON or private connection (charges apply) |
 
@@ -80,7 +80,7 @@ AUCloud M365 Backup is powered by Veeam Backup for Microsoft Office 365. The M36
 
 | Features | Benefits |
 | -----------| -------------|
-| Restre M365 objects from sel-service portal | The following functions are enabled by M365 backup: <ul><li>Restore mailbox items</li><li>Restore calendar items</li><li>Restore SharePoint items</li><li>Restore OneDrive objects</li><li>Items can be restored to their original locations, to PST files or to an alternative location</li></ul>
+| Restore M365 objects from self-service portal | The following functions are enabled by M365 backup: <ul><li>Restore mailbox items</li><li>Restore calendar items</li><li>Restore SharePoint items</li><li>Restore OneDrive objects</li><li>Items can be restored to their original locations, to PST files or to an alternative location</li></ul>
 
 ## Disaster Recovery (DRaaS)
 
@@ -99,7 +99,7 @@ AUCloud infrastructure and supporting services are monitored by a 24/7 Security 
 
 | Features | Benefits |
 | -----------| -------------|
-| Monitoring | The SOC monitors, logs and analyzes all cyber traffic on a continuous basis |
+| Monitoring | The SOC monitors, logs and analyses all cyber traffic on a continuous basis |
 | Alert Triage | Near real-time cyber monitoring, triage and analysis response enables cyber threat intelligence at scale. Your security representative will be contacted directly from our SOC team to triage any alerts |
 
 ## Support
@@ -115,8 +115,8 @@ AUCloud provides complimentary onboarding assistance via our Customer Success Ma
 | Features | Benefits |
 | -----------| -------------|
 | Free Trial | Become familiar with our systems and put our commitment to your success to the test |
-| Tailored guidance | Training and walk-throughs are tailored to individual needs |
-| Access to support materials | Technical documentation website available for customers to access user guidesand FAQ's |
+| Tailored guidance | Training and walk-through sessions are tailored to individual needs |
+| Access to support materials | Technical documentation website available for customers to access user guides and FAQ's |
 | Assistance | We provide guidance to an organisations CISO in order to understand our CRISP. We assist finance and project managers to understand our billing process in order to monitor and control expenditure |
 | Single Point of Contact | Your allocated CSM will be a single point of contact to guide you as your requirements change and will facilitate access to our service experts when required |
 | Engagement at the right time | AUCloud CSM’s will ensure that your staff are engaged at the right time, delivering clear delineation of roles and responsibilities |
