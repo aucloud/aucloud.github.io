@@ -1,4 +1,4 @@
-# Service Overview
+# Service Specifications Overview
 
 AUCloud operates from geo-resilient data centres in Canberra, Sydney, Brisbane and Melbourne (CDC Data Centres and NEXTDC). AUCloud's highly qualified team is based locally, with corporate headquarters and our Security Operations Centre based in Canberra, ACT.
 
