@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.5">
     
     
       
@@ -4693,6 +4693,23 @@
 <li>
 <p>Firewall rules cannot use certain objects (Gateway Interfaces, Virtual Machines or Org Vdc Networks) - change Firewall Rules to IP Sets or Security Groups.</p>
 <p><img alt="NSX-V FW Objects" src="assets/nsx_v_fw_objects.jpg"></p>
+<p>There are three types of gateway interface that can be referenced in firewall policy that require attention, as shown below.</p>
+<p><img alt="NSX-V Gateway Interfaces" src="assets/vCD_IaaS_Org_vDC_Networks_VSE_Interfaces.jpg"></p>
+<p>The first type of gateway interface is External, which refers to traffic entering or exiting the edge services gateway via the external interfaces</p>
+<p>The External gateway interface type can be replaced in the firewall rules using one of two options</p>
+<ul>
+<li>Replace with the value of ANY</li>
+<li>Replace with an IP Set that covers all IP address space excluding the private range (i.e. excluding the RFC1918 ranges). This option can be applied if you do not want private subnets used internally to have access, only sources or destinations that are truly external.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following would be included in an IP Set covering all IP address space excluding the private range:
+0.0.0.0/5, 8.0.0.0/7, 11.0.0.0/8, 12.0.0.0/6, 16.0.0.0/4, 32.0.0.0/3, 64.0.0.0/2, 128.0.0.0/3, 160.0.0.0/5, 168.0.0.0/6, 172.0.0.0/12, 172.32.0.0/11, 172.64.0.0/10, 172.128.0.0/9, 173.0.0.0/8, 174.0.0.0/7, 176.0.0.0/4, 192.0.0.0/9, 192.128.0.0/11, 192.160.0.0/13, 192.169.0.0/16, 192.170.0.0/15, 192.172.0.0/14, 192.176.0.0/12, 192.192.0.0/10, 193.0.0.0/8, 194.0.0.0/7, 196.0.0.0/6, 200.0.0.0/5, 208.0.0.0/4, 224.0.0.0/3</p>
+</div>
+<p>The second type of gateway interface is VSE which refers to traffic sourced from or destined to the Edge Gateway itself.</p>
+<p>The VSE gateway interface type can be replaced in the firewall rules with the specific IP addresses assigned to the Edge Gateway, i.e. 10.0.0.1, 10.0.10.1 or 103.109.113.10 in the above diagram.</p>
+<p>The third type of gateway interface is Internal, which refers to all subnets assigned to Organisation VDC networks attached to the Edge Gateway.</p>
+<p>The Internal gateway interface type can be replaced in the firewall rules using IP Sets that contain all Organisation VDC subnets, i.e. 10.0.0.0/24 and 10.0.10.0/24. </p>
 <p>Further details around NSX-T Firewalls found <a href="../firewall_rules/">here</a>.</p>
 </li>
 </ul>
@@ -4727,7 +4744,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2023</span>
       
     
   </small>
