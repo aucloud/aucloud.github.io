@@ -17,7 +17,6 @@ All listed permissions are of the **Application** type.
 | API      |    Permission Name |  Exchange Online | SharePoint Online and OneDrive for Business | Microsoft Teams | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Microsoft Graph | Directory.Read.All | ✔ | ✔ | ✔ | Querying Azure AD for organization properties, the list of users and groups and their properties.|
-| | Group.Read.All | ✔ | ✔ | ✔ | Querying Azure AD for the list of groups and group sites.|
 | | Group.Read.Write.All|  | ✔ | ✔ | Querying Azure AD for the list of groups and group sites.|
 | | Sites.Read.All |  | ✔ | ✔ | Querying Azure AD for the list of sites and getting download URLs for files and their versions.|
 | | TeamSettings.ReadWrite.All |  |  | ✔ | Accessing archived teams.|
@@ -42,9 +41,7 @@ All listed permissions are of the **Delegated** type and required for data res
 | | Directory.ReadWrite.All |  |  | ✔ | Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.|
 | | Offline Access | ✔ | ✔ | ✔ | Obtaining a refresh token from Azure AD.|
 | Office 365 Exchange Online[^1] | EWS.AccessAsUser.All | ✔ |  |  | Accessing mailboxes as the signed-in user (impersonation) through EWS.|
-| | full_access_as_app | ✔ |  |  | Reading the current state and restoring mailboxes content.|
 | SharePoint | AllSites.FullControl |  | ✔ | ✔ | Reading the current state and restoring SharePoint sites and OneDrive accounts content.|
-| | Sites.FullControl.All |  | ✔ | ✔ | Reading the current state and restoring SharePoint sites and OneDrive accounts content.|
 |  | User.Read.All |  | ✔ |  | Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.|
 
 [^1]:
