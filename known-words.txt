@@ -174,3 +174,5 @@ microservices
 offboarding
 vcentre
 vCentre
+ews
+EWS

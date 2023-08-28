@@ -19,15 +19,13 @@ when required.
 - A Microsoft Office 365 account that has an active subscription.
 - The Microsoft Office 365 account must have permission to manage applications in Azure Active
 Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
-
   - [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
   - [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
   - [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
 - Completion of the [Set up a tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant) quick start.
 - AUCloud provided certificate (public key) to be used in application registration.
-- **Create a backup service account** in Azure AD with Exchange, Sharepoint and Teams [admin
-rights](https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange)
+- **Create a backup service account** in Azure AD with Global Reader, Exchange Administrator, Sharepoint Administrator and Teams [administrator rights (https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange)
 
 ## Azure AD Application permissions
 
@@ -113,7 +111,9 @@ For the below, you need to use a Service Account with enough rights to perform a
 Install-Module -Name AzureAD
 ```
 
-You may be prompted to install and import the **NuGet** provider. Please press Y to continue through this.
+    !!! note
+
+        You may be prompted to install and import the **NuGet** provider. Please press Y to continue through this.
 
 The next command will connect your PowerShell to AzureAD. Use credentials with admin rights to perform an Enterprise Application install:
 
@@ -138,7 +138,10 @@ If everything works as expected, the output should show something similar to thi
 
 ![Powershell](./assets/powershell2.svg)
 
-If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
+    !!! note
+
+        If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
+
 
 **Last-Step - Give permission to the new Application on Azure AD**
 
