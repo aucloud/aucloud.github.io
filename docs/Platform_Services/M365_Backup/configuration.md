@@ -19,10 +19,9 @@ when required.
 - Customers must have a Microsoft Office 365 account that has an active subscription.
 - The Microsoft Office 365 account must have permission to manage applications in Azure Active
 Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
-
-  * [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
-  * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
-  * [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
+  - [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
+  - [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
+  - [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
 - Completion of the [Set up a tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant) quick start.
 - AUCloud provided certificate (public key) to be used in application registration.
