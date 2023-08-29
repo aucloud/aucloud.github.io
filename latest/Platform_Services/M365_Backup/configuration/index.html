@@ -4837,25 +4837,27 @@
   <h1>Configuration of Microsoft M365 Service Account</h1>
 
 <div><h2 id="information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
-<p>This guide outlines the steps required to configure and implement your Office 365 Backup with AUCloud
+<p>This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCloud
 using the modern authentication method. You will be allocated a Customer Success Manager (CSM) who
 will assist you with the on-boarding process, provide advice and act as a conduit to deeper technical support
 when required.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
 <ul>
-<li>A Microsoft Office 365 account that has an active subscription.</li>
-<li>The Microsoft Office 365 account must have permission to manage applications in Azure Active
-Directory (Azure AD). Any of the following Azure AD roles include the required permissions:</li>
+<li>Customers must have a Microsoft Office 365 account that has an active subscription.</li>
+<li>
+<p>The Microsoft Office 365 account must have permission to manage applications in Azure Active
+Directory (Azure AD). Any of the following Azure AD roles include the required permissions:</p>
+<ul>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator">Application administrator</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer">Application developer</a></li>
-<li>
-<p><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator">Cloud application administrator</a></p>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator">Cloud application administrator</a></li>
+</ul>
 </li>
 <li>
 <p>Completion of the <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant">Set up a tenant</a> quick start.</p>
 </li>
 <li>AUCloud provided certificate (public key) to be used in application registration.</li>
-<li><strong>Create a backup service account</strong> in Azure AD with Global Reader, Exchange Administrator, Sharepoint Administrator and Teams [administrator rights (<a href="https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange">https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange</a>)</li>
+<li><strong>Create a backup service account</strong> in Azure AD with Global Reader, Exchange Administrator, Sharepoint Administrator and Teams <a href="https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange">administrator rights</a></li>
 </ul>
 <h2 id="azure-ad-application-permissions">Azure AD Application permissions<a class="headerlink" href="#azure-ad-application-permissions" title="Permanent link">¤</a></h2>
 <h3 id="register-an-application">Register an application<a class="headerlink" href="#register-an-application" title="Permanent link">¤</a></h3>
@@ -4938,10 +4940,10 @@ registration.</p>
 <p>For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Azure AD. In order to perform these steps, we will need the AzureAD PowerShell cmdlet. To install this, open PowerShell and run the following command:</p>
 <div class="highlight"><pre><span></span><code>Install-Module -Name AzureAD
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>!!! note
-
-    You may be prompted to install and import the **NuGet** provider. Please press Y to continue through this.
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may be prompted to install and import the <strong>NuGet</strong> provider. Please press Y to continue through this.</p>
+</div>
 <p>The next command will connect your PowerShell to AzureAD. Use credentials with admin rights to perform an Enterprise Application install:</p>
 <div class="highlight"><pre><span></span><code>Connect-AzureAD 
 </code></pre></div>
@@ -4954,10 +4956,10 @@ Please enter your service account username and password in this popup including 
 </code></pre></div>
 <p>If everything works as expected, the output should show something similar to this:</p>
 <p><img alt="Powershell" src="../assets/powershell2.svg"></p>
-<div class="highlight"><pre><span></span><code>!!! note
-
-    If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.</p>
+</div>
 <p><strong>Last-Step - Give permission to the new Application on Azure AD</strong></p>
 <ul>
 <li>Under Enterprise Applications, remove the enterprise applications filter, and order them by date.</li>
@@ -4977,7 +4979,7 @@ Please enter your service account username and password in this popup including 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 29, 2023</span>
       
     
   </small>
