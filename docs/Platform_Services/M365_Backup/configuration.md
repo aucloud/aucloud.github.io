@@ -24,6 +24,7 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
     * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
     * [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
+- Navigate to [portal.azure.com](https://portal.azure.com) to begin and click on **Azure Active Directory**
 - [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure AD (eg. backup@domain.com)
 - [Assign roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) to the service account with the following assignments:
 
