@@ -26,11 +26,12 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 
 - [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure AD (eg. backup@domain.com)
 - [Assign roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) to the service account with the following assignments:
-  - Global Reader
-  - Exchange Administrator
-  - Sharepoint Administrator
-  - Teams Administrator
- 
+
+    * Global Reader
+    * Exchange Administrator
+    * Sharepoint Administrator
+    * Teams Administrator
+
 - AUCloud will provide you with a certificate (public key) to be used during application registration.
 
 
