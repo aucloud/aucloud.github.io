@@ -31,7 +31,7 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
     * Exchange Administrator
     * Sharepoint Administrator
     * Teams Administrator
- 
+
 - AUCloud will provide you with a certificate (public key) to be used during application registration.
 
 
