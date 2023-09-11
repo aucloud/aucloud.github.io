@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.5">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.0e669242.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -4845,7 +4845,7 @@ when required.</p>
 <ul>
 <li>Customers must have a Microsoft Office 365 account that has an active subscription.</li>
 <li>
-<p>The Microsoft Office 365 account must have permission to manage applications in Azure Active
+<p>The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Active
 Directory (Azure AD). Any of the following Azure AD roles include the required permissions:</p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator">Application administrator</a></li>
@@ -4854,10 +4854,18 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 </ul>
 </li>
 <li>
-<p>Completion of the <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant">Set up a tenant</a> quick start.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users">Create a backup service account</a> in Azure AD (eg. <a href="mailto:backup@domain.com">backup@domain.com</a>)</p>
 </li>
-<li>AUCloud provided certificate (public key) to be used in application registration.</li>
-<li><strong>Create a backup service account</strong> in Azure AD with Global Reader, Exchange Administrator, Sharepoint Administrator and Teams <a href="https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange">administrator rights</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal">Assign roles</a> to the service account with the following assignments:</li>
+<li>Global Reader</li>
+<li>Exchange Administrator</li>
+<li>Sharepoint Administrator</li>
+<li>
+<p>Teams Administrator</p>
+</li>
+<li>
+<p>AUCloud will provide you with a certificate (public key) to be used during application registration.</p>
+</li>
 </ul>
 <h2 id="azure-ad-application-permissions">Azure AD Application permissions<a class="headerlink" href="#azure-ad-application-permissions" title="Permanent link">¤</a></h2>
 <h3 id="register-an-application">Register an application<a class="headerlink" href="#register-an-application" title="Permanent link">¤</a></h3>
@@ -4979,7 +4987,7 @@ Please enter your service account username and password in this popup including 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 29, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2023</span>
       
     
   </small>
@@ -5106,7 +5114,7 @@ Please enter your service account username and password in this popup including 
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
