@@ -17,16 +17,22 @@ when required.
 ## Prerequisites
 
 - Customers must have a Microsoft Office 365 account that has an active subscription.
-- The Microsoft Office 365 account must have permission to manage applications in Azure Active
+- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Active
 Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
 
     * [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
     * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
     * [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
-- Completion of the [Set up a tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant) quick start.
-- AUCloud provided certificate (public key) to be used in application registration.
-- **Create a backup service account** in Azure AD with Global Reader, Exchange Administrator, Sharepoint Administrator and Teams [administrator rights](https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange)
+- [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure AD (eg. backup@domain.com)
+- [Assign roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) to the service account with the following assignments:
+  - Global Reader
+  - Exchange Administrator
+  - Sharepoint Administrator
+  - Teams Administrator
+ 
+- AUCloud will provide you with a certificate (public key) to be used during application registration.
+
 
 ## Azure AD Application permissions
 
