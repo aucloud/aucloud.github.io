@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -4088,6 +4088,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#teams-restore" class="md-nav__link">
+    Teams Restore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#additional-functionality" class="md-nav__link">
     Additional Functionality
   </a>
@@ -4869,6 +4876,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#teams-restore" class="md-nav__link">
+    Teams Restore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#additional-functionality" class="md-nav__link">
     Additional Functionality
   </a>
@@ -4938,7 +4952,7 @@
 
 <div><h2 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">¤</a></h2>
 <p>Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from any point-in-time restore point. Users log in with their existing Microsoft 365 credentials.</p>
-<p>Restore Operators can be specified as individuals or as security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.</p>
+<p>Restore Operators can be specified as individuals or as Azure security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.</p>
 <h2 id="launching-the-restore-portal">Launching the Restore Portal<a class="headerlink" href="#launching-the-restore-portal" title="Permanent link">¤</a></h2>
 <h2 id="log-in">Log in<a class="headerlink" href="#log-in" title="Permanent link">¤</a></h2>
 <p>To launch the Restore Portal, do the following:</p>
@@ -4951,7 +4965,7 @@
 </div>
 </li>
 <li>
-<p>On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:</p>
+<p>On the welcome page, enter a user account that you use to connect to the Microsoft 365 organisation. You must provide a user account in one of the following formats:</p>
 <ul>
 <li>'<a href="mailto:user@domain.com">user@domain.com</a>' or</li>
 <li>'<a href="mailto:user@domain.onmicrosoft.com">user@domain.onmicrosoft.com</a>'</li>
@@ -4964,10 +4978,10 @@
 </ol>
 <h2 id="log-out">Log out<a class="headerlink" href="#log-out" title="Permanent link">¤</a></h2>
 <p>To log out of the Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click <strong>Log Out</strong>.<br>
-After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background till data restore completes.  </p>
-<p><img alt="Veeam Logout" src="../assets/veeam_logout.png"></p>
+After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background until data restore completes.  </p>
+<p><img alt="Veeam Logout" src="../assets/veeam_logout2.png"></p>
 <h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">¤</a></h2>
-<p>The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange, Microsoft SharePoint and Microsoft OneDrive for Business data in one window. It allows you to view details about restore sessions progress and results and the restore sessions history.<br>
+<p>The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange and Microsoft OneDrive for Business data in one window. Restore Operators also have the ability to explore backed-up Sharepoint and Teams data. It allows you to view details about restore sessions progress and results and the restore sessions history.<br>
 The main window consists of the <strong>Explore</strong>, <strong>Restore Sessions</strong> and <strong>Restore List</strong> tabs.</p>
 <h2 id="explore-tab">Explore Tab<a class="headerlink" href="#explore-tab" title="Permanent link">¤</a></h2>
 <p>This tab contains two panes:</p>
@@ -5033,12 +5047,12 @@ Restore operators can manage data of organization objects separately. Thus, they
 </div>
 <p>To select an object whose backed-up data a restore operator will explore and restore, do the following:</p>
 <ol>
-<li>In the upper-right corner of the Restore Portal window, click the user name and select <strong>Change Scope</strong>.</li>
-<li>In the <strong>Change scope</strong> window, select an object that you want to manage. You can search objects and filter them by their organization object type.</li>
-<li>Click <strong>Change scope</strong>.</li>
+<li>In the upper-left corner of the Restore Portal window, the current scope is shown. Click the object to bring up the <strong>Specify Scope</strong> window.</li>
+<li>In the <strong>Specify Scope</strong> window, select an object that you want to manage. You can search objects and filter them by their organization object type.</li>
+<li>Click <strong>select</strong>.</li>
 </ol>
-<p>The name of the selected object will appear in the upper-right corner of the Restore Portal window under the restore operator user name. The Explore tab will be displayed, on which you can browse through the hierarchy of folders with backed-up data of the selected object.  </p>
-<p><img alt="Veeam Change Scope" src="../assets/change_scope.png"></p>
+<p>The name of the selected object will appear in the upper-left corner of the Restore Portal next to <strong>scope</strong>. The Explore tab will be displayed, on which you can browse through the hierarchy of folders with backed-up data of the selected object.</p>
+<p><img alt="Veeam Change Scope" src="../assets/change_scope2.png"></p>
 <h3 id="performing-restores">Performing Restores<a class="headerlink" href="#performing-restores" title="Permanent link">¤</a></h3>
 <p>After logging in to Restore Portal, you can explore and restore data from backups created by Veeam Backup for Microsoft 365. If you act as an <em>end user</em>, you perform self-service restore of your own data. If you have a <em>restore operator</em> permissions, you explore and restore backed-up data for those objects that you are allowed to manage.<br>
 To select items that you want to restore, do the following:</p>
@@ -5065,8 +5079,9 @@ To search items by a specific date/time, specify the time in the UTC format. You
 <li>
 <p>Exchange Restore</p>
 </li>
-<li>Sharepoint Restore</li>
+<li>Sharepoint Restore (Restore operator only)</li>
 <li>OneDrive Restore</li>
+<li>Teams Restore (Restore operator only)</li>
 </ol>
 <p><img alt="Veeam Chose Restore" src="../assets/veeam_chose_restore.png"></p>
 <h3 id="using-restore-list">Using Restore List<a class="headerlink" href="#using-restore-list" title="Permanent link">¤</a></h3>
@@ -5129,7 +5144,7 @@ To configure Exchange restore, do the following:</p>
 </ol>
 <p>Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.  </p>
 <h3 id="sharepoint-restore">SharePoint Restore<a class="headerlink" href="#sharepoint-restore" title="Permanent link">¤</a></h3>
-<p>The <strong>SharePoint Restore</strong> wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.<br>
+<p>Restore Operators are able to <strong>change scope</strong> to Sharepoint sites and explore items within. When restore Sharepoint items, the <strong>SharePoint Restore</strong> wizard runs and allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.<br>
 To configure SharePoint restore, do the following:</p>
 <ol>
 <li>
@@ -5189,12 +5204,59 @@ To configure OneDrive restore, do the following:</p>
 </li>
 </ol>
 <p>Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.</p>
+<h3 id="teams-restore">Teams Restore<a class="headerlink" href="#teams-restore" title="Permanent link">¤</a></h3>
+<p>Restore Operators are able to <strong>change scope</strong> to a specific Team to explore and restore backed-up data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Veeam Backup for Microsoft 365 provides an option to leverage <strong>Microsoft Graph Export API</strong> for Teams to back up Teams Channel messages. 1:1 chats are not supported. This capability is not enabled by default as it comes with additional costs from Microsoft for customers, but can be set up if required</p>
+</div>
+<ol>
+<li>In the navigation pane, browse through the hierarchy of folders with backed-up data.</li>
+<li>Select a folder that contains data you want to restore.</li>
+<li>In the preview pane, select check boxes next to the necessary Microsoft Teams items.</li>
+</ol>
+<p>For Microsoft Teams folders and files, you can select which version of an item you want to restore. To do this, in the <strong>Version</strong> column, click the most recent version number, and in the displayed window, select the earlier version to restore.</p>
+<ol>
+<li>Click <strong>restore</strong></li>
+</ol>
+<p>The Microsoft Teams Restore wizard runs to configure the restore operation options</p>
+<ol>
+<li>[Unavailable for the Posts tab and posts] At the Restore type step, select check boxes next to the restore options that you want to apply during the restore operation:</li>
+<li>For teams:<ul>
+<li>Changed items. Select this check box if you want to restore data that has been modified in the production environment.</li>
+<li>Missing items. Select this check box if you want to restore missing items.</li>
+<li>Team settings (guest permissions, @mentions, fun stuff). Select this check box if you want to restore settings of the team.</li>
+<li>Membership and their permissions. Select this check box if you want to restore members of the team along with their roles.</li>
+</ul>
+</li>
+<li>For team channels and the Other tabs tab:<ul>
+<li>Changed items. Select this check box if you want to restore data that has been modified in the production environment.</li>
+<li>Missing items. Select this check box if you want to restore missing items.</li>
+</ul>
+</li>
+<li>
+<p>For the Files tab and files:</p>
+<ul>
+<li>Changed items. Select this check box if you want to restore data that has been modified in the production environment.</li>
+<li>Missing items. Select this check box if you want to restore missing items.</li>
+<li>Restore only the latest version. Select this check box if you want to restore only the latest version of items.</li>
+</ul>
+</li>
+<li>
+<p>Specify an optional reason for the restore. This information will be available in the Reason column on the Restore Sessions tab and you will be able to reference it later</p>
+</li>
+<li>
+<p>At the Summary step, review details of the restore operation and click <strong>Finish</strong>.</p>
+</li>
+</ol>
+<p>Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.</p>
 <h3 id="additional-functionality">Additional Functionality<a class="headerlink" href="#additional-functionality" title="Permanent link">¤</a></h3>
 <p>There are additional features and functionality that can be performed on a secure call with an AUCloud Compute &amp; Storage Engineer. Please contact <a href="../../../Platform_Overview/support/">Support</a> if you wish to perform any of the following:</p>
 <ul>
 <li>Restore data to a different location/mailbox/tenant</li>
 <li>Export data as a <em>pst/msg/zip</em> file</li>
 <li>Explore and restore Group Mailboxes</li>
+<li>Sharepoint whole-site recovery</li>
 </ul>
 <p>For further questions about the capabilities of the restore portal, please contact <a href="../../../Platform_Overview/support/">Support.</a></p></div>
 
@@ -5203,7 +5265,7 @@ To configure OneDrive restore, do the following:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2023</span>
       
     
   </small>
