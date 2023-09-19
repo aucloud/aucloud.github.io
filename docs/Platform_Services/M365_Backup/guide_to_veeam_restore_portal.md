@@ -11,7 +11,7 @@ tags:
 
 Any user from the connected Microsoft 365 organisation can log in to access and restore their own data from any point-in-time restore point. Users log in with their existing Microsoft 365 credentials.
 
-Restore Operators can be specified as individuals or as security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.
+Restore Operators can be specified as individuals or as Azure security groups (where users can be managed by the customer) that can access the restore portal for all or specified objects. Please discuss your requirements for restore operators with your Customer Success Manager who can assist with setting these up for you.
 
 ## Launching the Restore Portal
 
@@ -25,7 +25,7 @@ To launch the Restore Portal, do the following:
 
         Internet Explorer is not supported. To access the Restore Portal, please use Microsoft Edge (version 79 or later), Mozilla Firefox (version 21 or later) or Google Chrome (version 24 or later).
 
-1. On the welcome page, enter a user account that you use to connect to the Microsoft 365 organization. You must provide a user account in one of the following formats:
+1. On the welcome page, enter a user account that you use to connect to the Microsoft 365 organisation. You must provide a user account in one of the following formats:
 
     - 'user@domain.com' or
     - 'user@domain.onmicrosoft.com'
@@ -37,13 +37,13 @@ To launch the Restore Portal, do the following:
 ## Log out
 
 To log out of the Restore Portal, in the upper-right corner of the Restore Portal window, click the user name and click **Log Out**.  
-After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background till data restore completes.  
+After you log out, all sessions that were opened by Veeam Backup for Microsoft 365 to explore backed-up data are stopped. Restore sessions with restore operations that are running on Restore Portal will continue in the background until data restore completes.  
   
-![Veeam Logout](./assets/veeam_logout.png)
+![Veeam Logout](./assets/veeam_logout2.png)
   
 ## User Interface
 
-The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange, Microsoft SharePoint and Microsoft OneDrive for Business data in one window. It allows you to view details about restore sessions progress and results and the restore sessions history.  
+The web-based user interface of the Restore Portal is designed to let you quickly explore backed-up Microsoft Exchange and Microsoft OneDrive for Business data in one window. Restore Operators also have the ability to explore backed-up Sharepoint and Teams data. It allows you to view details about restore sessions progress and results and the restore sessions history.  
 The main window consists of the **Explore**, **Restore Sessions** and **Restore List** tabs.
 
 ## Explore Tab
@@ -122,13 +122,13 @@ Restore operators can manage data of organization objects separately. Thus, they
 
 To select an object whose backed-up data a restore operator will explore and restore, do the following:
 
-1. In the upper-right corner of the Restore Portal window, click the user name and select **Change Scope**.
-1. In the **Change scope** window, select an object that you want to manage. You can search objects and filter them by their organization object type.
-1. Click **Change scope**.
+1. In the upper-left corner of the Restore Portal window, the current scope is shown. Click the object to bring up the **Specify Scope** window.
+1. In the **Specify Scope** window, select an object that you want to manage. You can search objects and filter them by their organization object type.
+1. Click **select**.
 
-The name of the selected object will appear in the upper-right corner of the Restore Portal window under the restore operator user name. The Explore tab will be displayed, on which you can browse through the hierarchy of folders with backed-up data of the selected object.  
+The name of the selected object will appear in the upper-left corner of the Restore Portal next to **scope**. The Explore tab will be displayed, on which you can browse through the hierarchy of folders with backed-up data of the selected object.
 
-![Veeam Change Scope](./assets/change_scope.png)
+![Veeam Change Scope](./assets/change_scope2.png)
   
 ### Performing Restores
 
@@ -154,8 +154,9 @@ For documents and files, you can select which version of an item you want to res
 1. Configure restore operation options. Depending on the type of items that you selected to restore, Restore Portal runs one of the following wizards:
 
 - Exchange Restore
-- Sharepoint Restore
+- Sharepoint Restore (Restore operator only)
 - OneDrive Restore
+- Teams Restore (Restore operator only)
 
 ![Veeam Chose Restore](./assets/veeam_chose_restore.png)
 
@@ -215,7 +216,7 @@ Restore Portal runs the restore operation immediately and opens the Restore Ses
   
 ### SharePoint Restore
 
-The **SharePoint Restore** wizard allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.  
+Restore Operators are able to **change scope** to Sharepoint sites and explore items within. When restore Sharepoint items, the **SharePoint Restore** wizard runs and allows you to configure options that Veeam Backup for Microsoft 365 will apply when restoring the selected Microsoft SharePoint items.  
 To configure SharePoint restore, do the following:
 
 1. At the **Items** step, specify items that you want to restore. If you no longer want to restore an item, select it and click **Remove**.
@@ -269,6 +270,44 @@ To configure OneDrive restore, do the following:
 
 Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.
 
+### Teams Restore
+
+Restore Operators are able to **change scope** to a specific Team to explore and restore backed-up data.
+
+!!! note
+
+    Veeam Backup for Microsoft 365 provides an option to leverage **Microsoft Graph Export API** for Teams to back up Teams Channel messages. 1:1 chats are not supported. This capability is not enabled by default as it comes with additional costs from Microsoft for customers, but can be set up if required
+
+1. In the navigation pane, browse through the hierarchy of folders with backed-up data.
+2. Select a folder that contains data you want to restore.
+3. In the preview pane, select check boxes next to the necessary Microsoft Teams items.
+
+For Microsoft Teams folders and files, you can select which version of an item you want to restore. To do this, in the **Version** column, click the most recent version number, and in the displayed window, select the earlier version to restore.
+
+4. Click **restore**
+
+The Microsoft Teams Restore wizard runs to configure the restore operation options
+
+5. [Unavailable for the Posts tab and posts] At the Restore type step, select check boxes next to the restore options that you want to apply during the restore operation:
+- For teams:
+    - Changed items. Select this check box if you want to restore data that has been modified in the production environment.
+    - Missing items. Select this check box if you want to restore missing items.
+    - Team settings (guest permissions, @mentions, fun stuff). Select this check box if you want to restore settings of the team.
+    - Membership and their permissions. Select this check box if you want to restore members of the team along with their roles.
+- For team channels and the Other tabs tab:
+    - Changed items. Select this check box if you want to restore data that has been modified in the production environment.
+    - Missing items. Select this check box if you want to restore missing items.
+- For the Files tab and files:
+    - Changed items. Select this check box if you want to restore data that has been modified in the production environment.
+    - Missing items. Select this check box if you want to restore missing items.
+    - Restore only the latest version. Select this check box if you want to restore only the latest version of items.
+
+6. Specify an optional reason for the restore. This information will be available in the Reason column on the Restore Sessions tab and you will be able to reference it later
+
+7. At the Summary step, review details of the restore operation and click **Finish**.
+
+Restore Portal runs the restore operation immediately and opens the Restore Sessions tab, where you view details about restore session progress and results.
+
 ### Additional Functionality
 
 There are additional features and functionality that can be performed on a secure call with an AUCloud Compute & Storage Engineer. Please contact [Support](../../Platform_Overview/support/index.md) if you wish to perform any of the following:
@@ -276,5 +315,6 @@ There are additional features and functionality that can be performed on a secur
 - Restore data to a different location/mailbox/tenant
 - Export data as a *pst/msg/zip* file
 - Explore and restore Group Mailboxes
+- Sharepoint whole-site recovery
 
 For further questions about the capabilities of the restore portal, please contact [Support.](../../Platform_Overview/support/index.md)
