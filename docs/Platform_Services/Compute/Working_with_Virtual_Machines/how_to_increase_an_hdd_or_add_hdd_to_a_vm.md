@@ -26,7 +26,7 @@ Before increasing block storage for a VM, you can check the storage allocation f
 
     ![Storage Policies](./assets/nav_storage_policies.png)
 
-1. In the row for the appropriate storage policy, check the **Limit** column. If you need to increase the disk size beyond the storage limit, please contact your Customer Success Manager or AUCloud Support to request an increase to your storage limit. See: [AUCloud Support.](../../../Platform_Overview/support).
+1. In the row for the appropriate storage policy, check the **Limit** column. If you need to increase the disk size beyond the storage limit, please contact your Customer Success Manager or AUCloud Support to request an increase to your storage limit. See: [AUCloud Support.](../../../Platform_Overview/support/index.md).
 
     ![Storage Policy Limit](./assets/storage_policy_limit.png)
 

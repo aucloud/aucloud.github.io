@@ -20,7 +20,7 @@ If you are seeking to Bring Your Own Licence (BYOL), please contact your Custome
 
 ## Microsoft Products currently supported by AUCloud
 
-Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biztalk Server, etc. For a product not on this list please contact [AUCloud Support](../support) or your sales team.
+Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biztalk Server, etc. For a product not on this list please contact [AUCloud Support](../support/index.md) or your sales team.
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ In order to bring Windows servers to the AUCloud shared infrastructure.
 
 AUCloud is a registered CCSP which enables us to provide Red Hat licences to Customers. However, we are not a 'Cloud Access' partner, so cannot support customers who wish to bring their own licences at this time.
 
-Please contact [AUCloud Support](../support) or your sales team if you require this service and we can consider your request.
+Please contact [AUCloud Support](../support/index.md) or your sales team if you require this service and we can consider your request.
 
 ## AUCloud Hardware dedicated customers
 

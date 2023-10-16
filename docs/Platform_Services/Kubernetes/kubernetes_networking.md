@@ -18,7 +18,7 @@ The below prerequisites *must* be completed before [Provisioning clusters from t
 
 It is recommended to create a dedicated **Routed Network** to deploy Kubernetes nodes to.  Creating multiple **Routed Networks** for different Kubernetes clusters is also recommended.
 
-Please see our [Create a Routed VDC Network](../Compute/NSX-T_Networks/create_a_routed_vdc_network/) guide.
+Please see our [Create a Routed VDC Network](../Compute/NSX-T_Networks/create_a_routed_vdc_network.md) guide.
 
 ### Edge Gateway
 

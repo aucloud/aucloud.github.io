@@ -1,14 +1,11 @@
 ---
-title: Installing and configuring vCAV on premise
-description: Installing and configuring vCAV on premise
-tags:
-    - vmware-cloud-director
-    - vmware-cloud-director-availability
+title: Installing and configuring VCDA on premise
+description: Installing and configuring VCDA on premise
 ---
 
 ## Overview
   
-After deploying and setting up a service provider cloud site, you install and configure a VMware Cloud Director Availability appliance on-premises to enable the replication and the failover capabilities from the on-premises vCenter Server to the cloud and reverse.  
+After deploying and setting up a service provider cloud site, you install and configure a VMware Cloud Director Availability (VCDA) appliance on-premises to enable the replication and the failover capabilities from the on-premises vCenter Server to the cloud and reverse.  
 
 ## VMware Cloud Director Availability On-Premises Network Requirements
 
@@ -44,7 +41,7 @@ An ESXi host can handle the replication traffic through its management VMkerne
 
 You configure the replication VMkernel interface in its own IP subnet and connect the VMware Cloud Director Availability on-premises appliance to the same virtual port group. With this configuration, the replication traffic between the ESXi hosts and the VMware Cloud Director Availability Replicator instances stays in the same broadcast domain. As a result, the replication traffic does not cross a router uncompressed and saves the bandwidth.
 
-the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the **CommonName** or at least one of the entries in the **Subject Alternative Name** must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.
+The the VMware Cloud Director Availability on-premises appliance services perform a host name certificate verification. In the VMware Cloud Director certificate, the **CommonName** or at least one of the entries in the **Subject Alternative Name** must match the VMware Cloud Director FQDN or IP that you use when registering VMware Cloud Director.
 
 ## Deploy an On-Premises VMware Cloud Director Availability Appliance by Using the vSphere Client
 
@@ -178,7 +175,7 @@ To configure the on-premises appliance, you change the initial **root** user p
 
     !!! note
 
-        For more information, see [Configure Local Placement](https://docs.vmware.com/en/VMware-vCloud-Availability/3.0/com.vmware.vcav.onprem.install.config.doc/GUID-80604012-1A63-41DA-BA4E-935168A4C2B5.html#GUID-80604012-1A63-41DA-BA4E-935168A4C2B5).
+        For more information, see [Configure Local Placement](https://docs.vmware.com/en/VMware-Cloud-Director-Availability/4.6/VMware-Cloud-Director-Availability-Install-Config-Upgrade-On-Prem/GUID-80604012-1A63-41DA-BA4E-935168A4C2B5.html).
 
 1. The on-premises VMware Cloud Director Availability appliance is configured and after you log in to the VMware Cloud Director Availability vApp Replication Manager appliance and navigate to**Sites**, you can see both cloud and on-premises sites available.  
 

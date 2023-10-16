@@ -426,7 +426,7 @@ To configure an IPSec VPN, use the following steps:
 	
 		![IPSec VPN Certificate](./assets/ipsec_vpn_certificate.png)
 		
-1. On the **Endpoint Configuration** page, enter required details, information on configurable fields can be viewed [below.](ipsec-vpn-configurable-options) 
+1. On the **Endpoint Configuration** page, enter required details, information on configurable fields can be viewed [below.](#ipsec-vpn-configurable-options) 
 
     ![IPSec VPN Endpoint](./assets/ipsec_vpn_endpoint.png)
 

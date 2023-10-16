@@ -96,7 +96,7 @@ To edit the Network Settings of a vApp, use the following steps:
 	
 1. The **Services** heading enables you to set up Firewall and NAT rules for the vApp Network. For more information, see vApp Network Firewall and NAT Rules [below.](#vapp-network-firewall-and-nat-rules)
 
-1. The **Routing** heading enables you to create static routes for the vApp Network. For more information, see vApp Network Routing [below.](vapp-network-routing)
+1. The **Routing** heading enables you to create static routes for the vApp Network. For more information, see vApp Network Routing [below.](#vapp-network-routing)
 
 ## vApp Network Firewall and NAT Rules
 
@@ -164,7 +164,7 @@ Static Routing at the vApp Network level allows traffic to route between differe
 
 The prerequisites for Static Routing are as follows:
 
-- Static Routing must be enabled for the VDC network you're connecting to, see [Static Routes.](../edge_services_gateway/#static-routes)
+- Static Routing must be enabled for the VDC network you're connecting to, see [Static Routes.](./edge_services_gateway.md/#static-routes)
 - The two vApp Networks must be routed to the same VDC Network.
 - The vApp Networks must be in vApps that have been started at least once.
 

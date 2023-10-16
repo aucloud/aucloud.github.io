@@ -5,7 +5,7 @@ description: Platform Services
 
 AUCloud offers a number of platform services:
 
-## [Compute](./Compute)
+## [Compute](./Compute/index.md)
 
 AUCloud provides a suite of compute and compute management solutions, including:
 
@@ -14,19 +14,19 @@ AUCloud provides a suite of compute and compute management solutions, including:
 - Virtual networking
 - API access
 
-## [Object Storage](./Object_Storage)
+## [Object Storage](./Object_Storage/index.md)
 
 S3-compatible object storage is provided for the management of buckets and objects, administration of permissions and secure programmatic access via API.
 
-## [Backup](./Backup)
+## [Backup](./Backup/index.md)
 
 AUCloud uses Veeam Backup and Replication to protect VCD virtual machines and  Veeam Backup for M365 for Microsoft 365 data.
 
-## [Disaster Recovery and Migration](./Disaster_Recovery_and_Migration)
+## [Disaster Recovery and Migration](./Disaster_Recovery_and_Migration/index.md)
 
 AUCloud uses VMware Cloud Director Availability (VCDA), a comprehensive solution that allows migration of workloads between environments, including disaster recovery for multi-tenant cloud sites.
 
-## [Sovereign Bridge](./sovereign_bridge)
+## [Sovereign Bridge](./sovereign_bridge.md)
 
 AUCloud's Sovereign Bridge provides connectivity between physical and virtual resources within the data centre ecosystem throughout Australia.
 
