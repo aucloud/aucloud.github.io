@@ -19,7 +19,7 @@ At a high level it can described as:
 
 Two implementations have been tested with QuantumCloud:
 
-1. [StrongSwan](https://docs.strongswan.org/) library, the default IPSec implementation included in many linux distributions including Ubuntu and Centos.
+1. [StrongSwan](https://docs.strongswan.org/docs/5.9/index.html) library, the default IPSec implementation included in many linux distributions including Ubuntu and Centos.
 2. [Fortinet FortiOS (Beta)](https://www.fortinet.com/content/dam/fortinet/assets/alliances/sb-fortinet-and-arqit-vpn-integration.pdf) integration with Fortinet's physical and virtual Firewall products.
 
 ### StrongSwan / LibreSwan configuration
