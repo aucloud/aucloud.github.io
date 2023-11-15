@@ -1,6 +1,6 @@
 ---
-title: Azure AD Application Permission Requirements
-description: Azure AD Application Permission Requirements
+title: Entra ID Application Permission Requirements
+description: Entra ID Application Permission Requirements
 tags: 
     - M365
     - Backup
@@ -8,7 +8,7 @@ tags:
 
 ## Permissions for Modern App-Only Authentication
 
-Tables in this section list permissions for Azure AD applications that are granted automatically by Veeam Backup for Microsoft Office 365 when you add organizations using the [modern app-only authentication method](https://helpcenter.veeam.com/docs/vbo365/guide/adding_o365_organizations_sd.html).
+Tables in this section list permissions for Entra ID applications that are granted automatically by Veeam Backup for Microsoft Office 365 when you add organizations using the [modern app-only authentication method](https://helpcenter.veeam.com/docs/vbo365/guide/adding_o365_organizations_sd.html).
 
 ## Permissions for Backup
 
