@@ -71,7 +71,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
 ![Request API Permissions](./assets/request_api_permission.png)
   
-1. [**Delegated (restore) permissions**](./azureAD_application_permission_requirements.md#permissions-for-restore)
+1. [**Delegated (restore) permissions**](./EntraID_application_permission_requirements.md#permissions-for-restore)
 
 | API      |    Permission Name |  Exchange Online | SharePoint Online and OneDrive for Business | Microsoft Teams | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -84,7 +84,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 | SharePoint | AllSites.FullControl |  | ✔ | ✔ | Reading the current state and restoring SharePoint sites and OneDrive accounts content.|
 |  | User.Read.All |  | ✔ |  | Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.|
 
-1. [**Application (backup) permissions**](./azureAD_application_permission_requirements.md#permissions-for-backup)
+1. [**Application (backup) permissions**](./EntraID_application_permission_requirements.md#permissions-for-backup)
 
 | API      |    Permission Name |  Exchange Online | SharePoint Online and OneDrive for Business | Microsoft Teams | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
