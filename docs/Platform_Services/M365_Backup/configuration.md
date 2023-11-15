@@ -1,5 +1,5 @@
 ---
-title: Configuration of Microsoft M365 Service Account
+title: Configuration of Microsoft M365 Veeam Backup App Registration
 description: Configuration of Microsoft M365 Service Account
 tags:
  - M365
@@ -17,15 +17,14 @@ when required.
 ## Prerequisites
 
 - Customers must have a Microsoft Office 365 account that has an active subscription.
-- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Active
-Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
+- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:
 
     * [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
     * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
     * [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
-- Navigate to [portal.azure.com](https://portal.azure.com) to begin and click on **Azure Active Directory**
-- [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure AD (eg. backup@domain.com)
+- Navigate to [portal.azure.com](https://portal.azure.com) to begin and click on **Azure Entra ID**
+- [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure Entra ID (eg. backup@domain.com)
 - [Assign roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) to the service account with the following assignments:
 
     * Global Reader
@@ -36,11 +35,11 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 - AUCloud will provide you with a certificate (public key) to be used during application registration.
 
 
-## Azure AD Application permissions
+## Azure Entra ID Application permissions
 
 ### Register an application
 
-1. In the Microsoft Office 365 Admin Centre, navigate to **Azure Active Directory**.
+1. In the Microsoft Office 365 Admin Centre, navigate to **Azure Entra ID**.
 1. Under **Manage**, select **App registrations** > **New registration**.
 1. Enter a display **Name** and select the **Accounts in this organizational directory
 only**.
@@ -103,7 +102,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
 A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.
 
-- Username
+- Service account username
 - Application ID
 
   ![Edit Organisation](./assets/edit_organisation.png)
@@ -114,7 +113,7 @@ To access the Veeam restore portal, you must add an Enterprise Application in Az
 
 #### Prerequisite
 
-For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Azure AD. In order to perform these steps, we will need the AzureAD PowerShell cmdlet. To install this, open PowerShell and run the following command:
+For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Entra ID PowerShell cmdlet. To install this, open PowerShell and run the following command:
 
 ```
 Install-Module -Name AzureAD
@@ -152,7 +151,7 @@ If everything works as expected, the output should show something similar to thi
     If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
 
 
-**Last-Step - Give permission to the new Application on Azure AD**
+**Last-Step - Give permission to the new Application on Entra ID**
 
 - Under Enterprise Applications, remove the enterprise applications filter, and order them by date.
 
