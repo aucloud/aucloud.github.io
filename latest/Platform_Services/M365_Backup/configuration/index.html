@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/configuration/">
       
       
-        <link rel="prev" href="../certificates/">
+        <link rel="prev" href="../M365_Backup_common_errors_and_actions/">
       
       
         <link rel="next" href="../guide_to_veeam_restore_portal/">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Configuration of Microsoft M365 Service Account - Technical Documentation</title>
+        <title>Configuration of Microsoft M365 Veeam Backup App Registration - Technical Documentation</title>
       
     
     
@@ -71,7 +71,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Configuration of Microsoft M365 Service Account - Technical Documentation" >
+        <meta  property="og:title"  content="Configuration of Microsoft M365 Veeam Backup App Registration - Technical Documentation" >
       
         <meta  property="og:description"  content="Configuration of Microsoft M365 Service Account" >
       
@@ -87,7 +87,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Configuration of Microsoft M365 Service Account - Technical Documentation" >
+        <meta  name="twitter:title"  content="Configuration of Microsoft M365 Veeam Backup App Registration - Technical Documentation" >
       
         <meta  name="twitter:description"  content="Configuration of Microsoft M365 Service Account" >
       
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration of Microsoft M365 Service Account
+              Configuration of Microsoft M365 Veeam Backup App Registration
             
           </span>
         </div>
@@ -3907,6 +3907,46 @@
   
   
     <li class="md-nav__item">
+      <a href="../Certificate_Update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updating your Microsoft 365 Backup Certificate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EntraID_application_permission_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entra ID Application Permission Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../FAQ%27s/" class="md-nav__link">
         
   
@@ -3945,46 +3985,6 @@
                 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../azureAD_application_permission_requirements/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Azure AD Application Permission Requirements
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../certificates/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Update Microsoft 365 Backup Certificate
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -3998,7 +3998,7 @@
           
   
   <span class="md-ellipsis">
-    Configuration of Microsoft M365 Service Account
+    Configuration of Microsoft M365 Veeam Backup App Registration
   </span>
   
 
@@ -4009,7 +4009,7 @@
         
   
   <span class="md-ellipsis">
-    Configuration of Microsoft M365 Service Account
+    Configuration of Microsoft M365 Veeam Backup App Registration
   </span>
   
 
@@ -4043,11 +4043,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-ad-application-permissions" class="md-nav__link">
-    Azure AD Application permissions
+  <a href="#azure-entra-id-application-permissions" class="md-nav__link">
+    Azure Entra ID Application permissions
   </a>
   
-    <nav class="md-nav" aria-label="Azure AD Application permissions">
+    <nav class="md-nav" aria-label="Azure Entra ID Application permissions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4804,11 +4804,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-ad-application-permissions" class="md-nav__link">
-    Azure AD Application permissions
+  <a href="#azure-entra-id-application-permissions" class="md-nav__link">
+    Azure Entra ID Application permissions
   </a>
   
-    <nav class="md-nav" aria-label="Azure AD Application permissions">
+    <nav class="md-nav" aria-label="Azure Entra ID Application permissions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4918,7 +4918,7 @@
   
 
 
-  <h1>Configuration of Microsoft M365 Service Account</h1>
+  <h1>Configuration of Microsoft M365 Veeam Backup App Registration</h1>
 
 <div><h2 id="information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-auclouds-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
 <p>This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCloud
@@ -4929,8 +4929,7 @@ when required.</p>
 <ul>
 <li>Customers must have a Microsoft Office 365 account that has an active subscription.</li>
 <li>
-<p>The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Active
-Directory (Azure AD). Any of the following Azure AD roles include the required permissions:</p>
+<p>The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:</p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator">Application administrator</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer">Application developer</a></li>
@@ -4938,9 +4937,9 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 </ul>
 </li>
 <li>
-<p>Navigate to <a href="https://portal.azure.com">portal.azure.com</a> to begin and click on <strong>Azure Active Directory</strong></p>
+<p>Navigate to <a href="https://portal.azure.com">portal.azure.com</a> to begin and click on <strong>Azure Entra ID</strong></p>
 </li>
-<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users">Create a backup service account</a> in Azure AD (eg. <a href="mailto:backup@domain.com">backup@domain.com</a>)</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users">Create a backup service account</a> in Azure Entra ID (eg. <a href="mailto:backup@domain.com">backup@domain.com</a>)</li>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal">Assign roles</a> to the service account with the following assignments:</p>
 <ul>
@@ -4954,10 +4953,10 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 <p>AUCloud will provide you with a certificate (public key) to be used during application registration.</p>
 </li>
 </ul>
-<h2 id="azure-ad-application-permissions">Azure AD Application permissions<a class="headerlink" href="#azure-ad-application-permissions" title="Permanent link">¤</a></h2>
+<h2 id="azure-entra-id-application-permissions">Azure Entra ID Application permissions<a class="headerlink" href="#azure-entra-id-application-permissions" title="Permanent link">¤</a></h2>
 <h3 id="register-an-application">Register an application<a class="headerlink" href="#register-an-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>In the Microsoft Office 365 Admin Centre, navigate to <strong>Azure Active Directory</strong>.</li>
+<li>In the Microsoft Office 365 Admin Centre, navigate to <strong>Azure Entra ID</strong>.</li>
 <li>Under <strong>Manage</strong>, select <strong>App registrations</strong> &gt; <strong>New registration</strong>.</li>
 <li>
 <p>Enter a display <strong>Name</strong> and select the <strong>Accounts in this organizational directory
@@ -4990,19 +4989,177 @@ registration.</p>
 <p>For each API e.g., Microsoft graph, add the appropriate delegated (restore) and application (backup) type permissions as per below:</p>
 <p><img alt="Request API Permissions" src="../assets/request_api_permission.png"></p>
 <ol>
-<li>
-<p><a href="../azureAD_application_permission_requirements/#permissions-for-restore"><strong>Delegated (restore) permissions</strong></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All listed permissions are required for data restore using Veeam Explorers</p>
-</div>
-</li>
-<li>
-<p><a href="../azureAD_application_permission_requirements/#permissions-for-backup"><strong>Application (backup) permissions</strong></a></p>
-</li>
-<li>
-<p>After all APIs are added, you will need to <strong>grant admin consent</strong></p>
-</li>
+<li><a href="../EntraID_application_permission_requirements/#permissions-for-restore"><strong>Delegated (restore) permissions</strong></a></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Permission Name</th>
+<th>Exchange Online</th>
+<th>SharePoint Online and OneDrive for Business</th>
+<th>Microsoft Teams</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>Directory.Read.All</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+</tr>
+<tr>
+<td></td>
+<td>Group.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Recreating in Azure AD an associated group in case of teams restore.</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Accessing sites of the applications that are installed from the SharePoint store.</td>
+</tr>
+<tr>
+<td></td>
+<td>Directory.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.</td>
+</tr>
+<tr>
+<td></td>
+<td>Offline Access</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Obtaining a refresh token from Azure AD.</td>
+</tr>
+<tr>
+<td>Office 365 Exchange Online[^1]</td>
+<td>EWS.AccessAsUser.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing mailboxes as the signed-in user (impersonation) through EWS.</td>
+</tr>
+<tr>
+<td>SharePoint</td>
+<td>AllSites.FullControl</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading the current state and restoring SharePoint sites and OneDrive accounts content.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
+<td></td>
+<td>✔</td>
+<td></td>
+<td>Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><a href="../EntraID_application_permission_requirements/#permissions-for-backup"><strong>Application (backup) permissions</strong></a></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Permission Name</th>
+<th>Exchange Online</th>
+<th>SharePoint Online and OneDrive for Business</th>
+<th>Microsoft Teams</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>Directory.Read.All</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+</tr>
+<tr>
+<td></td>
+<td>Group.Read.Write.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for the list of groups and group sites.</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for the list of sites and getting download URLs for files and their versions.</td>
+</tr>
+<tr>
+<td></td>
+<td>TeamSettings.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Accessing archived teams.</td>
+</tr>
+<tr>
+<td></td>
+<td>ChannelMessage.Read.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Accessing all Teams public channel messages. Note: This permission is only required if you want to back up team chats using Teams Export APIs. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/vbo_object_types.html#team_chats">Organization Object Types</a>.</td>
+</tr>
+<tr>
+<td>Office 365 Exchange Online[^1]</td>
+<td>Full Access As App</td>
+<td>✔</td>
+<td></td>
+<td>✔</td>
+<td>Reading mailboxes content.</td>
+</tr>
+<tr>
+<td></td>
+<td>Exchange.ManageAsApp</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange Online PowerShell to do the following: Back up public folder and discovery search mailboxes and determine object type for shared mailboxes as Shared Mailbox.</td>
+</tr>
+<tr>
+<td>SharePoint</td>
+<td>Sites.FullControl.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading SharePoint sites and OneDrive accounts content.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with SharePoint Online and OneDrive for Business permission to add Microsoft 365 organization successfully.</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>After all APIs are added, you will need to <strong>grant admin consent</strong></li>
 </ol>
 <p><img alt="Grant Admin Consent" src="../assets/grant_admin_consent.png"></p>
 <h3 id="add-a-certificate-public-key">Add a Certificate (public key)<a class="headerlink" href="#add-a-certificate-public-key" title="Permanent link">¤</a></h3>
@@ -5025,14 +5182,14 @@ registration.</p>
 <h3 id="join-secure-meeting-with-aucloud">Join secure meeting with AUCloud<a class="headerlink" href="#join-secure-meeting-with-aucloud" title="Permanent link">¤</a></h3>
 <p>A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.</p>
 <ul>
-<li>Username</li>
+<li>Service account username</li>
 <li>Application ID</li>
 </ul>
 <p><img alt="Edit Organisation" src="../assets/edit_organisation.png"></p>
 <h3 id="restore-portal-access-requirements">Restore Portal Access Requirements<a class="headerlink" href="#restore-portal-access-requirements" title="Permanent link">¤</a></h3>
 <p>To access the Veeam restore portal, you must add an Enterprise Application in Azure AD</p>
 <h4 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">¤</a></h4>
-<p>For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Azure AD. In order to perform these steps, we will need the AzureAD PowerShell cmdlet. To install this, open PowerShell and run the following command:</p>
+<p>For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Entra ID PowerShell cmdlet. To install this, open PowerShell and run the following command:</p>
 <div class="highlight"><pre><span></span><code>Install-Module -Name AzureAD
 </code></pre></div>
 <div class="admonition note">
@@ -5055,7 +5212,7 @@ Please enter your service account username and password in this popup including 
 <p class="admonition-title">Note</p>
 <p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.</p>
 </div>
-<p><strong>Last-Step - Give permission to the new Application on Azure AD</strong></p>
+<p><strong>Last-Step - Give permission to the new Application on Entra ID</strong></p>
 <ul>
 <li>Under Enterprise Applications, remove the enterprise applications filter, and order them by date.</li>
 </ul>
@@ -5074,7 +5231,7 @@ Please enter your service account username and password in this popup including 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2023</span>
       
     
   </small>

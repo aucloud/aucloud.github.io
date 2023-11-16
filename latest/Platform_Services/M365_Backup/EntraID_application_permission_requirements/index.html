@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy">
+        <meta name="description" content="Entra ID Application Permission Requirements">
       
       
       
-        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/certificates/">
+        <link rel="canonical" href="https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/EntraID_application_permission_requirements/">
       
       
-        <link rel="prev" href="../azureAD_application_permission_requirements/">
+        <link rel="prev" href="../Certificate_Update/">
       
       
-        <link rel="next" href="../configuration/">
+        <link rel="next" href="../FAQ%27s/">
       
       
       <link rel="icon" href="../../../images/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Update Microsoft 365 Backup Certificate - Technical Documentation</title>
+        <title>Entra ID Application Permission Requirements - Technical Documentation</title>
       
     
     
@@ -71,11 +71,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Update Microsoft 365 Backup Certificate - Technical Documentation" >
+        <meta  property="og:title"  content="Entra ID Application Permission Requirements - Technical Documentation" >
       
-        <meta  property="og:description"  content="How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy" >
+        <meta  property="og:description"  content="Entra ID Application Permission Requirements" >
       
-        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/M365_Backup/certificates.png" >
+        <meta  property="og:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/M365_Backup/EntraID_application_permission_requirements.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -83,15 +83,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/certificates/" >
+        <meta  property="og:url"  content="https://docs.australiacloud.com.au/latest/Platform_Services/M365_Backup/EntraID_application_permission_requirements/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Update Microsoft 365 Backup Certificate - Technical Documentation" >
+        <meta  name="twitter:title"  content="Entra ID Application Permission Requirements - Technical Documentation" >
       
-        <meta  name="twitter:description"  content="How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy" >
+        <meta  name="twitter:description"  content="Entra ID Application Permission Requirements" >
       
-        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/M365_Backup/certificates.png" >
+        <meta  name="twitter:image"  content="https://docs.australiacloud.com.au/latest/assets/images/social/Platform_Services/M365_Backup/EntraID_application_permission_requirements.png" >
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#permissions-for-modern-app-only-authentication" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Update Microsoft 365 Backup Certificate
+              Entra ID Application Permission Requirements
             
           </span>
         </div>
@@ -3907,6 +3907,103 @@
   
   
     <li class="md-nav__item">
+      <a href="../Certificate_Update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updating your Microsoft 365 Backup Certificate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Entra ID Application Permission Requirements
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Entra ID Application Permission Requirements
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-for-modern-app-only-authentication" class="md-nav__link">
+    Permissions for Modern App-Only Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-for-backup" class="md-nav__link">
+    Permissions for Backup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-for-restore" class="md-nav__link">
+    Permissions for Restore
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../FAQ%27s/" class="md-nav__link">
         
   
@@ -3947,101 +4044,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../azureAD_application_permission_requirements/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Azure AD Application Permission Requirements
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Update Microsoft 365 Backup Certificate
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Update Microsoft 365 Backup Certificate
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upload-a-new-certificate-public-key" class="md-nav__link">
-    Upload a New Certificate (Public Key)
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Configuration of Microsoft M365 Service Account
+    Configuration of Microsoft M365 Veeam Backup App Registration
   </span>
   
 
@@ -4729,15 +4736,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#permissions-for-modern-app-only-authentication" class="md-nav__link">
+    Permissions for Modern App-Only Authentication
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-a-new-certificate-public-key" class="md-nav__link">
-    Upload a New Certificate (Public Key)
+  <a href="#permissions-for-backup" class="md-nav__link">
+    Permissions for Backup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-for-restore" class="md-nav__link">
+    Permissions for Restore
   </a>
   
 </li>
@@ -4774,7 +4788,7 @@
 
 
   
-    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/M365_Backup/certificates.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/M365_Backup/EntraID_application_permission_requirements.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4783,54 +4797,200 @@
     
       
     
-    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/M365_Backup/certificates.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/M365_Backup/EntraID_application_permission_requirements.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Update Microsoft 365 Backup Certificate</h1>
+  <h1>Entra ID Application Permission Requirements</h1>
 
-<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>This guide outlines the steps required to upload a new public key (certificate) to your Microsoft 365 tenancy to ensure the correct functioning of your AUColoud M365 Backup Solution. As an AUCloud M365 backup customer, you will be provided with a public key during your initial onboarding. Throughout the duration of your M365 backup service, your public key will expire annually. AUCloud will reach out to you with a new public key prior to expiry, and request that you update your public key using these instructions.</p>
-<h2 id="upload-a-new-certificate-public-key">Upload a New Certificate (Public Key)<a class="headerlink" href="#upload-a-new-certificate-public-key" title="Permanent link">¤</a></h2>
+<div><h2 id="permissions-for-modern-app-only-authentication">Permissions for Modern App-Only Authentication<a class="headerlink" href="#permissions-for-modern-app-only-authentication" title="Permanent link">¤</a></h2>
+<p>Tables in this section list permissions for Entra ID applications that are granted automatically by Veeam Backup for Microsoft Office 365 when you add organizations using the <a href="https://helpcenter.veeam.com/docs/vbo365/guide/adding_o365_organizations_sd.html">modern app-only authentication method</a>.</p>
+<h2 id="permissions-for-backup">Permissions for Backup<a class="headerlink" href="#permissions-for-backup" title="Permanent link">¤</a></h2>
+<p>All listed permissions are of the <strong>Application</strong> type.</p>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Permission Name</th>
+<th>Exchange Online</th>
+<th>SharePoint Online and OneDrive for Business</th>
+<th>Microsoft Teams</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>Directory.Read.All</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+</tr>
+<tr>
+<td></td>
+<td>Group.Read.Write.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for the list of groups and group sites.</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for the list of sites and getting download URLs for files and their versions.</td>
+</tr>
+<tr>
+<td></td>
+<td>TeamSettings.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Accessing archived teams.</td>
+</tr>
+<tr>
+<td></td>
+<td>ChannelMessage.Read.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Accessing all Teams public channel messages. Note: This permission is only required if you want to back up team chats using Teams Export APIs. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/vbo_object_types.html#team_chats">Organization Object Types</a>.</td>
+</tr>
+<tr>
+<td>Office 365 Exchange Online<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>Full Access As App</td>
+<td>✔</td>
+<td></td>
+<td>✔</td>
+<td>Reading mailboxes content.</td>
+</tr>
+<tr>
+<td></td>
+<td>Exchange.ManageAsApp</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange Online PowerShell to do the following: Back up public folder and discovery search mailboxes and determine object type for shared mailboxes as Shared Mailbox.</td>
+</tr>
+<tr>
+<td>SharePoint</td>
+<td>Sites.FullControl.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading SharePoint sites and OneDrive accounts content.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with SharePoint Online and OneDrive for Business permission to add Microsoft 365 organization successfully.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="permissions-for-restore">Permissions for Restore<a class="headerlink" href="#permissions-for-restore" title="Permanent link">¤</a></h2>
+<p>All listed permissions are of the <strong>Delegated</strong> type and required for data restore using Veeam Explorers.</p>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Permission Name</th>
+<th>Exchange Online</th>
+<th>SharePoint Online and OneDrive for Business</th>
+<th>Microsoft Teams</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>Directory.Read.All</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+</tr>
+<tr>
+<td></td>
+<td>Group.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Recreating in Azure AD an associated group in case of teams restore.</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Read.All</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Accessing sites of the applications that are installed from the SharePoint store.</td>
+</tr>
+<tr>
+<td></td>
+<td>Directory.ReadWrite.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.</td>
+</tr>
+<tr>
+<td></td>
+<td>Offline Access</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>Obtaining a refresh token from Azure AD.</td>
+</tr>
+<tr>
+<td>Office 365 Exchange Online<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>EWS.AccessAsUser.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing mailboxes as the signed-in user (impersonation) through EWS.</td>
+</tr>
+<tr>
+<td>SharePoint</td>
+<td>AllSites.FullControl</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>Reading the current state and restoring SharePoint sites and OneDrive accounts content.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
+<td></td>
+<td>✔</td>
+<td></td>
+<td>Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr>
 <ol>
-<li>
-<p>Log in to the <strong>Azure Portal</strong> with your tenancy details</p>
-<p><img alt="Azure Portal Login" src="../assets/azure_portal_login.png"></p>
+<li id="fn:1">
+<p>You can check permissions for Office 365 Exchange Online API. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/permissions_exchange_online_api_checking.html">Checking Permissions for Office 365 Exchange Online API</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
-<li>
-<p>At the <strong>Welcome</strong> Screen, select <strong>Azure Active Directory</strong></p>
-<p><img alt="Azure_Welcome" src="../assets/azure_welcome.png"></p>
-</li>
-<li>
-<p>Go to <strong>App registrations</strong> for the organisation's tenancy. Click on <strong>All applications</strong> and search for <strong>Veeam</strong> (or application name if different). Select the appropriate Veeam backup application.</p>
-<p><img alt="Azure_App_Registrations" src="../assets/azure_app_registrations.png"></p>
-</li>
-<li>
-<p>Once in the application, go to <strong>Certificates and secrets</strong>. Click on <strong>Certificates</strong>There should be at least one certificate uploaded already. These are the certificates that are about to expire. Click on <strong>Upload certificate</strong></p>
-<p><img alt="Azure_Certificates_Secrets" src="../assets/azure_certificates_secrets.png"></p>
-</li>
-<li>
-<p>When the prompt below opens, select the public key that AUCloud has provided from your local folder. Enter a description such as "Veeam O365 backup certificate".</p>
-<p><img alt="Upload_Certificate" src="../assets/upload_certificate.png"></p>
-</li>
-<li>
-<p>On the <strong>Ready to Complete</strong> page, review your selected settings and click <strong>Finish</strong>.</p>
-</li>
-<li>
-<p>Your certificate should now be uploaded successfully and your backup jobs will continue to run as normal. </p>
-</li>
-<li><strong>Please confirm with AUCloud once this step has been completed so we can finalise the back-end updates for the new certificate</strong></li>
-</ol></div>
+</ol>
+</div></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2023</span>
       
     
   </small>
