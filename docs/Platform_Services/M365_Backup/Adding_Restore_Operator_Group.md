@@ -6,7 +6,7 @@ It is suggested to create an **Azure Group** where AUCloud can configure the **g
 Please follow the below instructions to set this up:
 
 - Navigate to     portal.azure.com and sign in.
-- Click on Active Directory
+- Click on Entra ID (formerly known as Active Directory)
 - Click on [Groups](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Groups)
        
 ![img](./assets/restore-operators-1.png)

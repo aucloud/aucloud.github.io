@@ -177,3 +177,5 @@ wickr
 WordPress
 www
 xamplify
+entra
+Entra

@@ -1,5 +1,5 @@
 ---
-title: Configuration of Microsoft M365 Service Account
+title: Configuration of Microsoft M365 Veeam Backup App Registration
 description: Configuration of Microsoft M365 Service Account
 tags:
  - M365
@@ -17,15 +17,14 @@ when required.
 ## Prerequisites
 
 - Customers must have a Microsoft Office 365 account that has an active subscription.
-- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Active
-Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
+- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:
 
     * [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
     * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
     * [Cloud application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator)
 
-- Navigate to [portal.azure.com](https://portal.azure.com) to begin and click on **Azure Active Directory**
-- [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure AD (eg. backup@domain.com)
+- Navigate to [portal.azure.com](https://portal.azure.com) to begin and click on **Azure Entra ID**
+- [Create a backup service account](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users) in Azure Entra ID (eg. backup@domain.com)
 - [Assign roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) to the service account with the following assignments:
 
     * Global Reader
@@ -36,11 +35,11 @@ Directory (Azure AD). Any of the following Azure AD roles include the required p
 - AUCloud will provide you with a certificate (public key) to be used during application registration.
 
 
-## Azure AD Application permissions
+## Azure Entra ID Application permissions
 
 ### Register an application
 
-1. In the Microsoft Office 365 Admin Centre, navigate to **Azure Active Directory**.
+1. In the Microsoft Office 365 Admin Centre, navigate to **Azure Entra ID**.
 1. Under **Manage**, select **App registrations** > **New registration**.
 1. Enter a display **Name** and select the **Accounts in this organizational directory
 only**.
@@ -72,13 +71,32 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
 ![Request API Permissions](./assets/request_api_permission.png)
   
-1. [**Delegated (restore) permissions**](./azureAD_application_permission_requirements.md#permissions-for-restore)
+1. [**Delegated (restore) permissions**](./EntraID_application_permission_requirements.md#permissions-for-restore)
 
-    !!! note
+| API      |    Permission Name |  Exchange Online | SharePoint Online and OneDrive for Business | Microsoft Teams | Description |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Microsoft Graph | Directory.Read.All | ✔ | ✔ | ✔ | Querying Azure AD for organization properties, the list of users and groups and their properties.|
+| | Group.ReadWrite.All |  |  | ✔ | Recreating in Azure AD an associated group in case of teams restore.|
+| | Sites.Read.All |  | ✔ | ✔ | Accessing sites of the applications that are installed from the SharePoint store.|
+| | Directory.ReadWrite.All |  |  | ✔ | Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.|
+| | Offline Access | ✔ | ✔ | ✔ | Obtaining a refresh token from Azure AD.|
+| Office 365 Exchange Online[^1] | EWS.AccessAsUser.All | ✔ |  |  | Accessing mailboxes as the signed-in user (impersonation) through EWS.|
+| SharePoint | AllSites.FullControl |  | ✔ | ✔ | Reading the current state and restoring SharePoint sites and OneDrive accounts content.|
+|  | User.Read.All |  | ✔ |  | Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.|
 
-        All listed permissions are required for data restore using Veeam Explorers
+1. [**Application (backup) permissions**](./EntraID_application_permission_requirements.md#permissions-for-backup)
 
-1. [**Application (backup) permissions**](./azureAD_application_permission_requirements.md#permissions-for-backup)
+| API      |    Permission Name |  Exchange Online | SharePoint Online and OneDrive for Business | Microsoft Teams | Description |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Microsoft Graph | Directory.Read.All | ✔ | ✔ | ✔ | Querying Azure AD for organization properties, the list of users and groups and their properties.|
+| | Group.Read.Write.All|  | ✔ | ✔ | Querying Azure AD for the list of groups and group sites.|
+| | Sites.Read.All |  | ✔ | ✔ | Querying Azure AD for the list of sites and getting download URLs for files and their versions.|
+| | TeamSettings.ReadWrite.All |  |  | ✔ | Accessing archived teams.|
+| | ChannelMessage.Read.All |  |  | ✔ | Accessing all Teams public channel messages. Note: This permission is only required if you want to back up team chats using Teams Export APIs. For more information, see [Organization Object Types](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_object_types.html#team_chats).|
+| Office 365 Exchange Online[^1] |Full Access As App | ✔ |  | ✔ | Reading mailboxes content. |
+|  |Exchange.ManageAsApp | ✔ |  |  | 	Accessing Exchange Online PowerShell to do the following: Back up public folder and discovery search mailboxes and determine object type for shared mailboxes as Shared Mailbox. |
+| SharePoint | Sites.FullControl.All |  | ✔ | ✔ | Reading SharePoint sites and OneDrive accounts content. |
+|  | User.Read.All |  | ✔ | ✔ | Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with SharePoint Online and OneDrive for Business permission to add Microsoft 365 organization successfully. |
 
 1. After all APIs are added, you will need to **grant admin consent**
 
@@ -103,7 +121,7 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
 A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.
 
-- Username
+- Service account username
 - Application ID
 
   ![Edit Organisation](./assets/edit_organisation.png)
@@ -114,7 +132,7 @@ To access the Veeam restore portal, you must add an Enterprise Application in Az
 
 #### Prerequisite
 
-For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Azure AD. In order to perform these steps, we will need the AzureAD PowerShell cmdlet. To install this, open PowerShell and run the following command:
+For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Entra ID PowerShell cmdlet. To install this, open PowerShell and run the following command:
 
 ```
 Install-Module -Name AzureAD
@@ -152,7 +170,7 @@ If everything works as expected, the output should show something similar to thi
     If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
 
 
-**Last-Step - Give permission to the new Application on Azure AD**
+**Last-Step - Give permission to the new Application on Entra ID**
 
 - Under Enterprise Applications, remove the enterprise applications filter, and order them by date.
 

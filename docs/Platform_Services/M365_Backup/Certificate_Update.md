@@ -1,5 +1,5 @@
 ---
-title: Update Microsoft 365 Backup Certificate
+title: Updating your Microsoft 365 Backup Certificate
 description: How to update the M365 Backup Public Key (Certificate) in your Microsoft 365 Tenancy
 tags: 
     - M365
@@ -19,7 +19,7 @@ This guide outlines the steps required to upload a new public key (certificate) 
     ![Azure Portal Login](./assets/azure_portal_login.png)
 
 
-2. At the **Welcome** Screen, select **Azure Active Directory**
+2. At the **Welcome** Screen, select **Azure Entra ID** (formerly known as Active Directory)
 
     ![Azure_Welcome](./assets/azure_welcome.png)
 

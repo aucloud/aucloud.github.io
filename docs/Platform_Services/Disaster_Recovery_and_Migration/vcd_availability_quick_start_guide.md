@@ -58,7 +58,7 @@ Prior to deploying the appliance, AUCloud will provide you with three pieces of 
 
 ### Steps to Deploy
 
-1. Go to [VMware](https://my.vmware.com/web/vmware/details?downloadGroup=VCAVT3&productId=872) and download the OVA. The file contains all binaries for the VMware Cloud Director Availability appliance.
+1. Go to [VMware](https://customerconnect.vmware.com/downloads/details?downloadGroup=VCDAT-46&productId=1439) and download the OVA. The file contains all binaries for the VMware Cloud Director Availability appliance.
 
 1. Once downloaded, log into your **vSphere Client**.
 

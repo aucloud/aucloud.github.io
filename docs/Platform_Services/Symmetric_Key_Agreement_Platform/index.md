@@ -13,7 +13,7 @@ These are Shor’s algorithm and Quantum computing. Whilst it is understood that
 - the harvesting of such client data now and then de-crypting later; and
 - the current use of computer farms to apply elements of Shor’s algorithm to perform data mining.
 
-Symmetric Key Agreement Platform, built on [Arqit's Quantum Cloud](https://arqit.uk/quantumcloud), provides an alternative architecture to provide quantum-resistant cryptography to NIST's PQC algorithms such as [CRYSTALS-Kyber](https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022).
+Symmetric Key Agreement Platform, built on [Arqit's Quantum Cloud](https://arqit.uk/quantumcloud/), provides an alternative architecture to provide quantum-resistant cryptography to NIST's PQC algorithms such as [CRYSTALS-Kyber](https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022).
 
 ## Our partner - Arqit
 
