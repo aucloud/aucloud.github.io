@@ -25,7 +25,7 @@ AUCloud has taken this approach, and extended it to be based on a static-website
 - Managing documentation 'as code' allows documentation to be easily integrated in the 'definition of done' in our agile development life cycle;
   - This includes peer review processes implicit in code development platforms.
 - The CI/CD process allows pre-flight checks to be integrated such as spell checking and link validation;
-- We can build with and contribute back to the extended `mkdocs` ecosystem (such as [`Material for mkdocs`](https://squidfunk.github.io/mkdocs-material/))
+- We can build with and contribute back to the extended `mkdocs` ecosystem (such as [`Material for mkdocs`](https://squidfunk.github.io/mkdocs-material))
 
 
 The result for AUCloud is an documentation site that is fast, easy to maintain, easily searchable and easily updatable.
