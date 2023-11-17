@@ -5,7 +5,7 @@ This guide will walk you through the step-by-step process of setting up and logg
 ## Overview
 ### New Account Setup
 
-Access the new AUCloud Portal at https://app.aucloud.com.au.
+Access the new AUCloud Portal at https://app.test.aucloud.com.au.
 
 1. Enter your **email** address.
 1. Click **Login** to verify your email address.
@@ -34,7 +34,7 @@ Access the new AUCloud Portal at https://app.aucloud.com.au.
 
     ![Setup account](./assets/setup-account-5.png)
 
-You have now successfully logged into the new AUCloud Portal for the first time. 
+You have now successfully logged into the new AUCloud Portal for the first time.
 
 If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
 
