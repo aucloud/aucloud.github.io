@@ -15,5 +15,8 @@ Access the new AUCloud Portal at https://app.aucloud.com.au.
 1. Enter your **email** address.
 1. Click **Login** to verify your email address.
 
-    ![Setup account](./assets/setup-account-1.png)
-1. The website will navigate to the login page where you must enter your **password**.
+    ![Login with email](./assets/setup-account-1.png)
+1. The website will navigate to the login page. Enter your **password** .
+2. Press **Sign In**.
+  
+    ![Enter password](./assets/setup-account-2.png)

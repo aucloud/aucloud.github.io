@@ -19,7 +19,7 @@ Access the new AUCloud Portal at https://app.aucloud.com.au.
 
     ![Setup account](./assets/setup-account-1.png)
 
-1. The website will navigate to the login page where you must enter your **password**.
+1. The website will navigate to the login page. Enter your **password**.
 1. Click **Sign In**.
 
     ![Setup account](./assets/setup-account-2.png)
