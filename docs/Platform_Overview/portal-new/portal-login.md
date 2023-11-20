@@ -31,4 +31,4 @@ Access the new AUCloud Portal at https://app.aucloud.com.au.
 
 1. The website will navigate to the Portal dashboard.
 
-    ![Logged in](image.png)
+    ![Logged in](./assets/logged-in.png)
