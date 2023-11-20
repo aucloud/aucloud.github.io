@@ -1,0 +1,7 @@
+nav:
+    - index.md
+    - Portal Login: portal-login.md
+    - Portal Account Setup: portal-account-setup.md
+    - Portal Account Self Management: portal-account-self-mgmt.md
+    - VCD Login: vcd-login.md
+    - VCD User Management: vcd-permissions.md

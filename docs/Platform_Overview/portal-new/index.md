@@ -18,5 +18,5 @@ Please refer to [this page](./vcd-login.md) for more details.
 ### Virtual Cloud Director (VCD) User and Permission Management
 The way VCD accounts are handled have been moved to the new Portal and the procedures have changed. Please refer to [this page](./vcd-permissions.md) for more details.
 
-### Account Management (user details and password)
---PLACEHOLDER--
+### Account Self Management (user details and password)
+Users will be able to manage their own details in the new Portal. Please refer to [this page](./portal-account-self-mgmt.md) for more details.
