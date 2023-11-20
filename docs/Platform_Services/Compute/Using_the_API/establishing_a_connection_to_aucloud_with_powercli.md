@@ -24,7 +24,7 @@ To establish a connection to AUCloud platform using PowerCLI you will need a loc
 1. [Create a local user in VMware Cloud Director](./vcd_local_user_setup.md)
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
 1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
-1. Run the following commend to establish the connection:
+1. Run the following command to establish the connection:
 
     ```
     > Connect-CIServer -Server <API-Url> \-org <Org-Id> \-User <User-Id> \-Password <Password>
@@ -88,7 +88,7 @@ To establish a connection to AUCloud platform using PowerCLI you will need a loc
         
         To import the module for all sessions, update your PowerShell profile to include the above command as documented by  [Microsoft.](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3)
 
-1. Run the following commend to establish the connection:
+1. Run the following command to establish the connection:
 
     ```
     > New-CloudToken -User <User-Id@Org-Id> \-Password <Password> \-Server <API-Url>
