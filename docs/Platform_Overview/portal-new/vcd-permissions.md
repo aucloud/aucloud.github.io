@@ -1,6 +1,6 @@
 ---
-title: Virtual Cloud Director (VCD) users and permissions management
-description: Virtual Cloud Director (VCD) users and permissions management
+title: VCD User Management
+description: Virtual Cloud Director (VCD) user and permissions management
 tags:
     - portal
 ---

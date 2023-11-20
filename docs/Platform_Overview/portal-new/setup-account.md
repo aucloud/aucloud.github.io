@@ -1,9 +1,16 @@
-# New AUCloud Portal - Setup Account
-
-This guide will walk you through the step-by-step process of setting up and logging into the new AUCloud Portal.
+---
+title: Account Setup
+description: Account Setup
+tags:
+    - portal
+---
 
 ## Overview
-### New Account Setup
+If you previously had an account on the legacy Portal, you'll be able to log in using the same email address. This guide details the process of the initial login and security setup for these customers.
+
+Please note that at this time, brand new customers without accounts on the legacy Portal will need to be onboarded via the AUCloud Support Desk (support@australiacloud.com.au) before following the steps in this guide.
+
+### Initial Setup
 
 Access the new AUCloud Portal at https://app.aucloud.com.au.
 
