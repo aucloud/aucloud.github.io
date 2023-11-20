@@ -19,7 +19,7 @@ This guide will detail how to manage and change a user's own details after loggi
 
     ![Profile popup](./assets/profile-popup.png)
 
-1. A new tab will open that will navigate to the **Keycloak Account Management** page. For context this is the identification provider that the Portal runs on.
+2. A new tab will open that will navigate to the **Account Management** page.
 
 &nbsp;
 
