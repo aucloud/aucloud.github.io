@@ -14,50 +14,41 @@ In order to configure your AUCloud IaaS tenancies using Terraform, you must firs
 There are currently 2 supported authenticated methods:
 
 1. Connecting as Org Admin, or
-1. Connecting with authorization or bearer token.
+1. Connecting with a bearer token
 
 ## Connecting as Org Admin
 
-![Connect Org Admin](./assets/connect_org_admin.jpg)
+1. To establish as an Org Admin you will need a "local" VCD user with "Organization Administrator" permissions. Follow [the steps outlined here](./vcd_local_user_setup.md) to create a "local" VCD user if you have not already done so.
+1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
+1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+1. Connect to VCD with Terraform
 
-In the above example, there are 4 arguments you must populate using information obtained from one of the [Portal API endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+    The [VMware Cloud Director Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs) requires the following inputs in order to connect as a VCD Organization Administrator:
 
-![API Mgmt](./assets/api_mgmt.jpg)
+    - **`auth_type`**: must be `"integrated"`
+    - **`user`**: username of your "local" VCD user
+    - **`password`**: password of your "local" VCD user
+    - **`org`**:  unique name of your VCD tenancy
+    - **`url`**: API URL of your VCD instance + `"/api"`, e.g. `https://api-vcd-sz201.portal.australiacloud.com.au/api`
 
-1. The required **user** argument can be found under the Username column aligned with the Service you wish to configure. It consists of the rational number before the @ symbol.
+    Once you have these values you can fill in the missing provider configuration:
 
-1. The **password** argument is identical to that which you use to login to the portal. It is for this reason that we recommend that you either secure your source code or pass the argument in as a variable.
+    ![Connect Org Admin](./assets/connect_org_admin.jpg)
 
-1. The **org** argument consists of the string to the right of the @ symbol in the Username column.
+## Connecting with a bearer token
 
-1. The **API** argument must be the URL listed under the API URL column with /api appended to the end of the string.
+1. Generate a bearer token through one of the following methods:
+    1. [Using username + password credentials of a local VCD user.](./authentication_methods.md#use-username-password)
+    1. [Using a manually generated VCD API token.](./authentication_methods.md#use-vcd-api-token)
+1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
+1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+1. Connect to VCD with Terraform
 
-    Once these arguments have been correctly defined, you may start configuring or importing vCD resources using Terraform.
+    - **`auth_type`**: must be `"token"`
+    - **`user`**: must be `"none"`
+    - **`password`**: must be `"none"`
+    - **`token`**: The API token you created in step 1
+    - **`org`**:  unique name of your VCD tenancy
+    - **`url`**: API URL of your VCD instance + `"/api"`, e.g. `https://api-vcd-sz201.portal.australiacloud.com.au/api`           
 
-    !!! note
-
-        If you have more than one service, all of the above values must be drawn from the record associated with the service you wish to configure
-
-## Connecting with authorization or bearer token
-
-![Bearer Token](./assets/bearer_token.jpg)
-
-In the above example, there are 2 arguments you must populate using information obtained from one of the [Portal API Endpoints](../../reference_urls.md#portal-api-endpoints)
-
-There is also an additional value, **token**, which needs to be obtained from an API call outside of Terraform.
-
-![API Management](./assets/api_mgmt2.jpg)
-
-1. The **org** argument consists of the string to the right of the @ symbol in the Username column.
-
-1. The **API** argument must be the URL listed under the API Url column with /api appended to the end of the string.
-
-In order to obtain the necessary value for the token argument, you must make an **HTTP POST request** to the API URL appended with /api/sessions associated with your VCD service. In this POST request you must represent your full username (including the @ symbol) and password as a base64 encoding in an Authorization header.
-
-See [https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/POST-Login.html](https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/POST-Login.html "https://developer.vmware.com/apis/1245/vmware-cloud-director/doc/doc/operations/post-login.html")
-
-A successful request will return a `x-vmware-vcloud-access-token` which can be inserted into the Terraform token argument.
-
-Below is a simple bash script to obtain this information:
-
-![Bash](./assets/bash.jpg)
+    ![Bearer Token](./assets/bearer_token.jpg)
