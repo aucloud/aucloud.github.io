@@ -3,6 +3,15 @@ title: Reference URLs
 description: Reference URLs for services in AUCLoud
 ---
 
+## Sovereignty Zone Locations
+
+| Location | Sovereignty Zone |
+| ---- | ------ |
+| Canberra |  CSZ |
+| Sydney |  SSZ |
+| Brisbane |  BSZ |
+| Melbourne |  MSZ |
+
 ## Portal UI
 
 | URL | Community environment |
@@ -23,6 +32,7 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://api-vcd-sz101.portal.australiacloud.com.au/api](https://api-vcd-sz101.portal.australiacloud.com.au/api) |  Sovereign Cloud | CSZ |
 | [https://api-vcd-sz201.portal.australiacloud.com.au/api](https://api-vcd-sz201.portal.australiacloud.com.au/api) |  Sovereign Cloud | SSZ |
+| [https://api-vcd-bsz.portal.australiacloud.com.au/api](https://api-vcd-bsz.portal.australiacloud.com.au)  | Sovereign Cloud | BSZ |
 | [https://api-vcd-msz.portal.australiacloud.com.au/api](https://api-vcd-msz.portal.australiacloud.com.au)  | Sovereign Cloud | MSZ |
 
 

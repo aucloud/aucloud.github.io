@@ -63,7 +63,7 @@ To create this session, you can:
     ```
     curl 'https://api-vcd-sz101.portal.australiacloud.com.au/api/query?type=vm' \
         --header 'Accept: application/*+json;version=37.2' \
-        --header 'Authorization: Bearer my-bearer-token'
+        --header 'Authorization: Bearer [my-bearer-token]'
     ```
 
 ### Use VCD API token
