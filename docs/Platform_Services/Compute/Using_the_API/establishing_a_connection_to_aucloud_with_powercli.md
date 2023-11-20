@@ -17,7 +17,7 @@ If your system has connection to the internet, you can perform the following to 
 
 ``` > Install-Module VMware.PowerCLI -Scope CurrentUser ```
 
-To connect to the AUCloud platform via PowerCLI, you need the API-URL, Org-ID, and User-ID which can be found by:
+To connect to the AUCloud platform via PowerCLI you will need to create a "local" user in VMware Cloud Director and authenticate with it.  Follow the steps outline [here](./vcd_local_user_setup.md) to set up that user. 
 
 1. Logging into the AUCloud Portal
 2. Selecting API Management under your User ICON in the top right menu
