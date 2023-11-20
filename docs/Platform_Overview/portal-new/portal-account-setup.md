@@ -1,6 +1,6 @@
 ---
-title: Account Setup
-description: Account Setup
+title: Portal Account Setup
+description: Portal Account Setup
 tags:
     - portal
 ---
