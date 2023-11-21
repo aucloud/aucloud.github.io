@@ -53,7 +53,7 @@ This means that it is necessary for you to set a password and set up 2FA for you
 
     ![Setup account](./assets/setup-account-5.png)
 
-You have now successfully logged into the new AUCloud Portal for the first time. 
+After verifying your email address you will have successfully logged into the new AUCloud Portal for the first time. 
 
 If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
 

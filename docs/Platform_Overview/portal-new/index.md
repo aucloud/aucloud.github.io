@@ -15,7 +15,13 @@ Modernising our identity provider solution will allow customers to reset their o
 
 In order to access our new portal and continue using our VCD service you will need to go through the [initial setup of your new portal account](./portal-account-setup.md#initial-setup).  
 
-Additionally, if you are an API user, you may need to [change the way you authenticate]() with our APIs.
+Additionally, if you interact with our VCD environments outside of the web UI, you may need to [change the way you authenticate](./api-authentication.md).  If you use one of the following tools you may be effected:
+
+- [VCD Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs)
+- [VCD API](https://docs.vmware.com/en/VMware-Cloud-Director/index.html)
+- [VCD PowerCLI cmdlets](https://developer.vmware.com/docs/powercli/latest/products/vmwareclouddirector/)
+- [VCD OVF Tool](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Install-Configure-Upgrade-Guide/GUID-2B34775B-7C96-44F2-A9A3-D6A9D3B0CAD2.html)
+
 
 ## Release Stages
 
