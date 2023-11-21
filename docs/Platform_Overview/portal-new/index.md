@@ -5,23 +5,33 @@ tags:
     - portal
 ---
 
+> :warning: **Effective from Dec 1st, 2023**
+
 ## Overview
 
-AUCloud is releasing a new Portal to address customer feedback on our existing Portal.
+AUCloud is releasing a new Portal that is built from the ground up to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
 
-Modernising our identity provider solution will allow customers to reset their own password, dramatically extend password reset intervals, remove the inactive account impediment, and allow more streamlined access to the products that our customers use our Portal for. 
+- Allow customers to reset their own password.
+- Dramatically extend password reset intervals.
+- Remove the inactive account impediment.
+- Allow more streamlined access to the products that our customers use our Portal for such as Single-Sign-On (SSO) to VMware Cloud Director once authenticated.
 
 ### What does this mean for you
 
-In order to access our new portal and continue using our VCD service you will need to go through the [initial setup of your new portal account](./portal-account-setup.md#initial-setup).  
+On the launch date, access to administer your VMware Cloud Director(vCD) services will be moved to the new portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
 
-Additionally, if you interact with our VCD environments outside of the web UI, you may need to [change the way you authenticate](./api-authentication.md).  If you use one of the following tools you may be effected:
+#### Logging in to the new portal
+
+Password and 2FA credentials are encrypted and are not able to be migrated along with the user identities and permissions. Therefore, to get setup with the new portal to continue to access vCD you will need to go through the [initial setup of your new portal account](./portal-account-setup.md#initial-setup).
+
+#### Using VMWare Cloud Director APIs and tools
+
+If you interact with our VCD environments outside of the web UI, you may need to [change the way you authenticate](./api-authentication.md).  Affected VMware tools and services include, but are not limited to:
 
 - [VCD Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs)
 - [VCD API](https://docs.vmware.com/en/VMware-Cloud-Director/index.html)
 - [VCD PowerCLI cmdlets](https://developer.vmware.com/docs/powercli/latest/products/vmwareclouddirector/)
 - [VCD OVF Tool](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Install-Configure-Upgrade-Guide/GUID-2B34775B-7C96-44F2-A9A3-D6A9D3B0CAD2.html)
-
 
 ## Release Stages
 

@@ -7,11 +7,13 @@ tags:
     - VCD
 ---
 
+> :warning: **Effective from Dec 1st, 2023**
+
 ## Overview
 
-If you interact with an AUCloud VMware Cloud Director (VCD) environment outside of the web GUI you may need to update the way that you authenticate after the release of the new AUCloud Portal on November 30th, 2023.
+If you're interacting with an AUCloud VMware Cloud Director (VCD) environment beyond the web GUI, note that the authentication method will change following the new AUCloud Portal release on November 30th, 2023.
 
-Any VMware tool or service that requires authentication may be effected.  Some of the more commonly used tools that will be effected are:
+Affected VMware tools and services include, but are not limited to:
 
 - [VCD Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs)
 - [VCD API](https://docs.vmware.com/en/VMware-Cloud-Director/index.html)
@@ -20,10 +22,17 @@ Any VMware tool or service that requires authentication may be effected.  Some o
 
 ## What's changed
 
-Our new Portal is built on top of a new identity provider that uses OIDC to facilitate access to VCD tenancies. Previously, identities in VCD were based on LDAP. 
+Our updated Portal integrates a new identity provider leveraging OIDC, replacing the previous LDAP-based identities.
 
-As of Dec 2023, VCD does not support username + password authentication with OIDC based identities.  This means that if you previously used your VCD username and password to authenticate to a VMware tool or service (like the VCD API), it will no longer work.  
+Important: As of December 2023, VCD does not support username + password authentication for OIDC identities. This means that new "local" VCD users will need to be created in order to use traditional username + password authentication for tools like the VCD API.
 
 ## What to do next
 
+
+To continue accessing AUCloud VCD instances and using related tools (APIs, Terraform Provider, OVF tool, etc.), consider these authentication methods:
+
+- Username + Password with a "local" VCD user
+- Bearer Token
+
+For detailed guidance on adapting to these changes, please refer to [this guide](../../../Platform_Services/Compute/Using_the_API_%28New%29/authentication_methods/)
 
