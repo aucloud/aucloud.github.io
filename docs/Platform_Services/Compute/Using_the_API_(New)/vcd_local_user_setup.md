@@ -1,4 +1,13 @@
-# Create a local user in VMWare Cloud Director (VCD)
+---
+title: Create a local user in VMWare Cloud Director (VCD)
+description: Create a local user in VMWare Cloud Director (VCD)
+tags:
+    - portal
+    - API
+    - VCD
+---
+
+> :warning: **Effective from Dec 1st, 2023**
 
 ## Overview
 

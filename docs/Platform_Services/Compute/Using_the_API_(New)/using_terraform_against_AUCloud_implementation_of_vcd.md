@@ -7,6 +7,8 @@ tags:
     - SDK
 ---
 
+> :warning: **Effective from Dec 1st, 2023**
+
 ## Overview
 
 In order to configure your AUCloud IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.  The account used should have the "Organization Administrator" role in VCD as this will have the required permissions to perform all resource add/change/destroy via Terraform.
