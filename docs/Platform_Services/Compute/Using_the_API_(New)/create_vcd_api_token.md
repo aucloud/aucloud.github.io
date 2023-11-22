@@ -1,4 +1,15 @@
-# Create a VMware Cloud Director API token
+---
+title: Create a VMware Cloud Director API token
+description: Create a VMware Cloud Director API token
+tags:
+    - portal
+    - API
+    - VCD
+---
+
+## Overview
+
+This guide details the steps required to create an API Token in VMware Cloud Director (VCD)
 
 ## Steps
 
