@@ -1,4 +1,13 @@
-# Authenticating into VMware Cloud Director (VCD)
+---
+title: Authenticating into VMware Cloud Director (VCD)
+description: Authenticating into VMware Cloud Director (VCD)
+tags:
+    - portal
+    - API
+    - VCD
+---
+
+> :warning: **Effective from Dec 1st, 2023**
 
 ## Overview
 
