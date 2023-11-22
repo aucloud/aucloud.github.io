@@ -29,6 +29,7 @@ centers
 centos
 cloudian
 cmdlet
+cmdlets
 com_
 commandline
 comms

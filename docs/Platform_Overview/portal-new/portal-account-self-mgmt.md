@@ -8,7 +8,8 @@ tags:
 ## Overview
 This guide will detail how to manage and change a user's own details after logging into the new Portal.
 
-### Getting to Keycloak Account Management
+### Getting to Account Management
+
 1. After [logging in](./portal-login.md) to your Portal account, click your **user name** in the bottom left.
    
     ![User badge](./assets/user-badge.png)
