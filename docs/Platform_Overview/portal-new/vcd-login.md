@@ -5,8 +5,6 @@ tags:
     - portal
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 In the new Portal, each user's VCD permissions are tied to their AUCloud login, streamlining the workflow to reach the user's VCD instance(s). This guide details the process of logging into an existing Portal account and accessing a VCD instance that account has been given access to.
 

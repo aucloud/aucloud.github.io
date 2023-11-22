@@ -5,8 +5,6 @@ tags:
     - portal
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 This guide will detail how to log into the new Portal with a user that has already been [set up](portal-account-setup.md).
 

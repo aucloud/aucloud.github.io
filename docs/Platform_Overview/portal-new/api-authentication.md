@@ -7,8 +7,6 @@ tags:
     - VCD
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 If you're interacting with an AUCloud VMware Cloud Director (VCD) environment beyond the web GUI, note that the authentication method will change following the new AUCloud Portal release on November 30th, 2023.

@@ -5,8 +5,6 @@ tags:
     - portal
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 This guide will detail how to manage and change a user's own details after logging into the new Portal.
 

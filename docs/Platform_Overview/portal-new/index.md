@@ -5,16 +5,14 @@ tags:
     - portal
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 AUCloud is releasing a new Portal that is built from the ground up to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
 
+- Allow more streamlined access to the products that our customers use our Portal for such as Single-Sign-On (SSO) to VMware Cloud Director once authenticated.
 - Allow customers to reset their own password.
 - Dramatically extend password reset intervals.
 - Remove the inactive account impediment.
-- Allow more streamlined access to the products that our customers use our Portal for such as Single-Sign-On (SSO) to VMware Cloud Director once authenticated.
 
 ### What does this mean for you
 
@@ -35,16 +33,16 @@ If you interact with our VCD environments outside of the web UI, you may need to
 
 ## Release Stages
 
-The way that key features are accessed will change as a result of this release. The stages of the release are as follows:
+The way that key features are accessed will change as a result of this release. The process of the changes are outlined below:
 
-### Stage 1 - Current state
+### Current state
 
 ![current-state](./assets/portal-initial-state.png)
 
 - Currently there is a [single Portal](https://portal.australiacloud.com.au) that handles billing and authentication into VCD.
 - The existing portal is where you currently go to gain access all features.
 
-### Stage 2 - Migrating
+### Migrating
 
 ![migration-state](./assets/portal-migration-state.png)
 
@@ -52,7 +50,7 @@ The way that key features are accessed will change as a result of this release. 
 - AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. 
 - This will create an **additional** account for all users in our new Portal.
 
-### Stage 3 - Final state
+### Final state
 
 ![final-state](./assets/portal-final-state.png)
 
@@ -66,6 +64,8 @@ The way that key features are accessed will change as a result of this release. 
     - If you click the "vCloud" or "Users" (highlighted below), you will be redirected to our new Portal to access this functionality. 
 
         ![removed-features](./assets/removed-features.png)
+
+!!! note "A future release will migrate billing functionality into the new portal, and the old portal will be decommissioned."
 
 ## Changed features
 

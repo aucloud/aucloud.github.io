@@ -15,9 +15,9 @@ Please note that at this time, brand new customers without accounts on the legac
 
 ### Initial Setup
 
-AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal.
+!!! Note "AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
 
-This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time.  This is how you do that: 
+Steps to set up your new portal account: 
 
 1. Access the new AUCloud Portal at https://app.aucloud.com.au.
 1. Enter your **email** address.
@@ -56,6 +56,12 @@ This means that it is necessary for you to set a password and set up 2FA for you
     ![Setup account](./assets/setup-account-5.png)
 
 After verifying your email address you will have successfully logged into the new AUCloud Portal for the first time. 
+
+From here you can:
+
+- [Access VMware Cloud Director (VCD) tenancies](./vcd-login.md)
+- [Manage Users and Permissions with your organisation](./vcd-permissions.md)
+- [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
 If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
 
