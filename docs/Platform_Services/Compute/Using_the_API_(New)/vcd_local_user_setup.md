@@ -7,8 +7,6 @@ tags:
     - VCD
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 In order to use the [VMWare OVF tool](../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool.md), or to interact with [VMWare Cloud Director via PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md) you will need a "local" user account in VCD. 

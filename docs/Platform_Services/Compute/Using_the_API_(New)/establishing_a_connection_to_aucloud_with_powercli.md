@@ -7,8 +7,6 @@ tags:
     - API
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 VMware PowerCLI is a Microsoft PowerShell based command line interface tool which was developed by VMware to manage and automate tasks on various VMware platforms such as vSphere, VMware Cloud Director, Horizon, etc.

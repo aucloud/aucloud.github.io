@@ -5,8 +5,6 @@ tags:
     - portal
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 If you previously had an account on the legacy Portal, you'll be able to log in using the same email address. This guide details the process of the initial login and security setup for these customers.

@@ -7,8 +7,6 @@ tags:
     - VCD
 ---
 
-> :warning: **Effective from Dec 1st, 2023**
-
 ## Overview
 
 This guide details the steps required to create an API Token in VMware Cloud Director (VCD)
