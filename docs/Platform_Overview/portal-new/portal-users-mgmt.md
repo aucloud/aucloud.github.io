@@ -11,11 +11,11 @@ This guide is for customers who have an administrator role. These customers are 
 ### Getting into the administration console
 1. [Log in](./portal-login.md) to the Portal with your account that has administration privileges.
    
-2. On the left sidebar, click the **People** tab.
+1. On the left sidebar, click the **People** tab.
    
    ![People tab](./assets/users-mgmt-1.png)
 
-3. A new tab will open that takes you to the administration console.
+1. A new tab will open that takes you to the administration console.
 
     ![Admin console](./assets/users-mgmt-2.png)
 
@@ -84,30 +84,81 @@ This guide is for customers who have an administrator role. These customers are 
     ![Successful new password](./assets/users-mgmt-edit-details-success.png)
 
 #### Change password
-1. To change a user's **password**, click the **Credentials** tab.
+1. Once on the [user's details page](#getting-to-the-user-details-page), to change a user's **password**, click the **Credentials** tab.
 
     ![Credentials tab](./assets/users-mgmt-credentials-tab.png)
 
-2. Click **Reset password**.
+1. Click **Reset password**.
 
     ![Reset password](./assets/users-mgmt-reset-password.png)
 
-3. Type the user's new password in the **Password** and **New password confirmation** input fields.
+1. Type the user's new password in the **Password** and **New password confirmation** input fields.
 
     ![New password](./assets/users-mgmt-new-password.png)
 
-4. By default, the **Temporary** toggle is on. Leaving this as **On** will force the user to reset their password upon logging in with the new password you have set in the step above.
+1. By default, the **Temporary** toggle is on. Leaving this as **On** will force the user to reset their password upon logging in with the new password you have set in the step above.
 
     ![Temporary toggle](./assets/users-mgmt-temporary.png)
 
-5. Click **Save**.
+1. Click **Save**.
 
     ![Save](./assets/users-mgmt-save-new-password.png)
 
-6. A confirmation dialog will pop up. To proceed, click **Reset password**.
+1. A confirmation dialog will pop up. To proceed, click **Reset password**.
 
     ![Reset password](./assets/users-mgmt-reset-password-confirm.png)
 
-7. A toast will pop up informing you of the successful operation.
+1. A toast will pop up informing you of the successful operation.
 
     ![Successful new password](./assets/users-mgmt-password-reset-success.png)
+
+#### Granting Portal administration privileges
+
+1. Once on the [user's details page](#getting-to-the-user-details-page), to assign administration privileges, click the **Role mapping** tab.
+
+    ![Role mapping tab](./assets/role-mapping.png)
+
+1. Click **Assign role**.
+  
+    ![Assign role button](./assets/assign-role.png)
+
+1. Click the **Filter by realm roles** dropdown.
+
+    ![Realm roles](./assets/realm-roles.png)
+
+1. Click the **Filter by clients** option.
+
+    ![Filter by clients](./assets/filter-by-clients.png)
+
+1. You will find a list of available roles that the user can be assigned. For an example, a typical user admin would be given the **manage-users**, **view-users** and **query-users** roles in the **realm-management** client. Use the checkboxes to select which roles you want to grant the user.
+
+    ![User admin roles](./assets/user-admin-roles.png)
+
+1. After selecting the roles to grant, click **Assign**.
+
+    ![Assign button](./assets/user-admin-roles-assign.png)
+
+1. The new roles will appear in the table and a toast will inform you of success.
+
+    ![Role mapping success](./assets/roles-assigned.png)
+
+#### Revoking Portal administration privileges
+1. Once on the [user's details page](#getting-to-the-user-details-page), to assign administration privileges, click the **Role mapping** tab.
+
+    ![Role mapping tab](./assets/role-mapping.png)
+
+1. Use the checkboxes to select which roles you want to revoke from the user.
+
+    ![Revoke checkboxes](./assets/checkbox-unassign-roles.png)
+
+1. Click **Unassign**.
+
+    ![Unassign](./assets/checkbox-unassign-roles-unassign.png)
+
+1. A confirmation dialog will pop up. To proceed, click **Remove**.
+
+    ![Remove](./assets/remove-button.png)
+
+1. The roles will be removed from the user and a toast will notify you of success.
+
+    ![Successfully removed](./assets/remove-roles-success.png)
