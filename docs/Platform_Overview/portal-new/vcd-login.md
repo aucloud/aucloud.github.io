@@ -27,7 +27,7 @@ Access the new AUCloud Portal at https://app.aucloud.com.au.
 
 1. You will be directed to the Services page, which displays all the VCD tenancies you have access to. Click **Login** on the tile of the tenancy you want to log into.
     
-    ![Click into tenancy](./assets/vcd-click-to-tenancy.png)
+    ![Click into tenancy](./assets/product-instance-login)
   &nbsp;
   &nbsp;
 

@@ -9,7 +9,7 @@ tags:
 
 If you previously had an account on the legacy Portal, you'll be able to log in using the same email address. This guide details the process of the initial login and security setup for these customers.
 
-Please note that at this time, brand new customers without accounts on the legacy Portal will need to be onboarded via the AUCloud Support Desk (support@australiacloud.com.au) before following the steps in this guide.
+If you are looking for a guide on how to create a new user account as an administrator, please [click here](.portal-users-mgmt.md)
 
 ### Initial Setup
 
