@@ -57,7 +57,7 @@ The steps for doing this are:
 
     ![Groups](./assets/admin-console-groups.png)
 
-1. The **Groups** page should display. Paste the value [you copied](#find-the-group-associated-with-a-vcd-tenancy--role) from **VCD Tenancies** into the **Filter groups** search box.
+1. The **Groups** page should display. Paste the value [you copied](#find-the-group-associated-with-a-vcd-tenancy-role) from **VCD Tenancies** into the **Filter groups** search box.
 
     ![Paste group](./assets/groups-paste.png)
 
