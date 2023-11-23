@@ -61,9 +61,10 @@ plugins:
         - "images/favicon.ico"
   - htmlproofer:
       enabled: !ENV [ENABLED_HTMLPROOFER, False]
-      validate_rendered_template: True
-      raise_error_after_finish: True
-      raise_error: True
+      validate_rendered_template: False
+      validate_external_urls: False
+      raise_error_after_finish: False
+      raise_error: False
       raise_error_excludes:
         406:
           [

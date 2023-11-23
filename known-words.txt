@@ -27,8 +27,10 @@ catalog
 catalogs
 centers
 centos
+checkboxes
 cloudian
 cmdlet
+cmdlets
 com_
 commandline
 comms
@@ -51,6 +53,7 @@ defragmentation
 dev
 diffie
 drawio
+dropdown
 encrypter
 encrypters
 encryptors
@@ -142,11 +145,13 @@ tkg
 todays
 Tullamarine
 tullamarine
+unassign
 unbilled
 unmount
 unremovable
 updatable
 url
+urlencoded
 vapp
 vapps
 vapptemplate

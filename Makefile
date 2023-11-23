@@ -4,6 +4,9 @@ install:
 	pip install --upgrade -r requirements.txt
 	pip install mkdocs-video
 
+start:
+	mkdocs serve --dev-addr=0.0.0.0:8000 --dirtyreload
+
 pre-commit-install:
 	pre-commit install
 

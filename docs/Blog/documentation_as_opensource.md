@@ -25,7 +25,7 @@ AUCloud has taken this approach, and extended it to be based on a static-website
 - Managing documentation 'as code' allows documentation to be easily integrated in the 'definition of done' in our agile development life cycle;
   - This includes peer review processes implicit in code development platforms.
 - The CI/CD process allows pre-flight checks to be integrated such as spell checking and link validation;
-- We can build with and contribute back to the extended `mkdocs` ecosystem (such as [`Material for mkdocs`](https://squidfunk.github.io/mkdocs-material/))
+- We can build with and contribute back to the extended `mkdocs` ecosystem (such as [`Material for mkdocs`](https://squidfunk.github.io/mkdocs-material))
 
 
 The result for AUCloud is an documentation site that is fast, easy to maintain, easily searchable and easily updatable.
@@ -64,7 +64,7 @@ One gap that we've observed since adopting github actions, is to be careful for 
 Github actions does expose [concurrency](https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency) control mechanisms. However, when dealing with branch based builds of the website we needed `exactly once` semantics for adding and removing the branch releases.
 The challenge is you want to remove a branch based build, just as you are updating the release version of the website, and all of these are on the `gh-pages` branch.
 
-As a result we experienced frequent contention issues. Our approach to date is [brute force](https://github.com/aucloud/aucloud.github.io/blob/main/automation/loop_to_push_docs.sh), however, newer features, such as [merge-queues](https://github.blog/changelog/2023-02-08-pull-request-merge-queue-public-beta/) will decrease risk when available.
+As a result we experienced frequent contention issues. Our approach to date is [brute force](https://github.com/aucloud/aucloud.github.io/blob/main/automation/loop_to_push_docs.sh), however, newer features, such as [merge-queues](https://github.blog/changelog/2023-02-08-pull-request-merge-queue-public-beta) will decrease risk when available.
 
 
 #### Bi-directional synchronization of git repositories

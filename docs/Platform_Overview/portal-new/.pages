@@ -1,0 +1,8 @@
+nav:
+    - index.md
+    - Portal Login: portal-login.md
+    - Initial Steps (first login): portal-account-setup.md
+    - Portal Account Self Management: portal-account-self-mgmt.md
+    - Portal User Management (for admins): portal-users-mgmt.md
+    - VCD Login: vcd-login.md
+    - VCD User Management (for admins): vcd-user-mgmt.md
