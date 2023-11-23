@@ -9,7 +9,7 @@ tags:
 
 If you previously had an account on the legacy Portal, you'll be able to log in using the same email address. This guide details the process of the initial login and security setup for these customers.
 
-If you are looking for a guide on how to create a new user account as an administrator, please [click here](.portal-users-mgmt.md)
+If you are looking for a guide on how to create a new user account as an administrator, please [click here](./portal-users-mgmt.md)
 
 ### Initial Setup
 
@@ -58,7 +58,7 @@ After verifying your email address you will have successfully logged into the ne
 From here you can:
 
 - [Access VMware Cloud Director (VCD) tenancies](./vcd-login.md)
-- [Manage Users and Permissions with your organisation](./vcd-permissions.md)
+- [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
 If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au

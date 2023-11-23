@@ -79,7 +79,7 @@ Please refer to [this guide](./vcd-login.md) for details on how to login to VCD 
 
 Managing users and permissions in the new Portal will be handled by our new identity provider.  Proving more ways to manage your users, and more fine grained controls over access to your organisation portal, and the VCD tenancies in it. 
 
-Please refer to [this guide](./vcd-permissions.md) for more details on how to manage users and permissions in our new Portal. 
+Please refer to [this guide](./vcd-user-mgmt.md) for more details on how to manage users and permissions in our new Portal. 
 
 ### Account Self Management (user details and password)
 
