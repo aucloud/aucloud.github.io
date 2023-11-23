@@ -58,7 +58,7 @@ After verifying your email address you will have successfully logged into the ne
 From here you can:
 
 - [Access VMware Cloud Director (VCD) tenancies](./vcd-login.md)
-- [Manage Users and Permissions with your organisation](./vcd-permissions.md)
+- [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
 If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
