@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Overview
-This guide is for customers who have an administrator role. These customers are able to manage users in their organisation, including creating new users, modifying existing users' accesses, and deleting users.
+This guide is for customers who have an [administrator role](#granting-portal-administration-privileges). These customers are able to manage users in their organisation, including creating new users, modifying existing users' accesses, and deleting users.
 
 ### Getting into the administration console
 1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://app.aucloud.com.au.

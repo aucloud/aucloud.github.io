@@ -47,7 +47,7 @@ The steps for doing this are:
 
 1. On the left sidebar, click the **People** tab.
    
-   ![People tab](./assets/users-mgmt-1.png)
+    ![People tab](./assets/users-mgmt-1.png)
 
 1. A new tab will open that takes you to the administration console.
 
