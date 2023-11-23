@@ -62,6 +62,7 @@ plugins:
   - htmlproofer:
       enabled: !ENV [ENABLED_HTMLPROOFER, False]
       validate_rendered_template: False
+      validate_external_urls: False
       raise_error_after_finish: False
       raise_error: False
       raise_error_excludes:
