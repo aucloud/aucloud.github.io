@@ -27,6 +27,7 @@ catalog
 catalogs
 centers
 centos
+checkboxes
 cloudian
 cmdlet
 cmdlets
@@ -52,6 +53,7 @@ defragmentation
 dev
 diffie
 drawio
+dropdown
 encrypter
 encrypters
 encryptors
@@ -143,6 +145,7 @@ tkg
 todays
 Tullamarine
 tullamarine
+unassign
 unbilled
 unmount
 unremovable
