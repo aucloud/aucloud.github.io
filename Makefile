@@ -14,7 +14,7 @@ pre-commit-run:
 	pre-commit run --all-files
 
 docs-validate: clean
-	mkdocs build -c -s
+	mkdocs build -c
 
 docs-validate-debug: clean
 	SITE_URL=http://localhost:8000/ mkdocs build -c -s -v
