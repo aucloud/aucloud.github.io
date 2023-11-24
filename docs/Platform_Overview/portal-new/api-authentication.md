@@ -31,5 +31,4 @@ To continue accessing AUCloud VCD instances and using related tools (APIs, Terra
 - Username + Password with a "local" VCD user
 - Bearer Token
 
-For detailed guidance on adapting to these changes, please refer to [this guide](../../Platform_Services/Compute/Using_the_API_%28New%29/authentication_methods/)
-
+For detailed guidance on adapting to these changes, please refer to [this guide](../../../Platform_Services/Compute/using-the-api-new/authentication_methods)

@@ -1,0 +1,11 @@
+nav:
+    - VMWare Cloud Director: VMware_Cloud_Director.md
+    - Catalogs: Catalogs
+    - Getting Started: Getting_Started
+    - NSX-T Networks: NSX-T_Networks
+    - NSX-V to NSX-T Migration: NSX-V to NSX-T Migration
+    - Red Hat Licensing: Red_Hat_Licensing
+    - Using the API: Using_the_API
+    - Using the API (New): using-the-api-new
+    - Windows Server Licensing: Windows_Server_Licensing
+    - Working with Virtual Machines: Working_with_Virtual_Machines
