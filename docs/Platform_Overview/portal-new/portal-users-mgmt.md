@@ -112,33 +112,48 @@ This guide is for customers who have an [administrator role](#granting-portal-ad
 
     ![Successful new password](./assets/users-mgmt-password-reset-success.png)
 
+#### Unlocking an account
+Sometimes, a user may be locked due to multiple failed attempts to log in. To unlock it as a user administrator:
+
+1. Navigate to the [user's details page](#getting-to-the-user-details-page).
+
+1. In the top right, there will be a toggle displaying the user account as **Disabled**.
+
+    ![Disabled account](./assets/disabled-account.png)
+
+1. Click the toggle to **Enable** the user account.
+
+1. The toggle will show **Enabled** and a toast will notify you of success.
+
+    ![Enabled account](./assets/enable-account-success.png)
+
 #### Granting Portal administration privileges
 
 1. Once on the [user's details page](#getting-to-the-user-details-page), to assign administration privileges, click the **Role mapping** tab.
 
     ![Role mapping tab](./assets/role-mapping.png)
 
-1. Click **Assign role**.
+2. Click **Assign role**.
   
     ![Assign role button](./assets/assign-role.png)
 
-1. Click the **Filter by realm roles** dropdown.
+3. Click the **Filter by realm roles** dropdown.
 
     ![Realm roles](./assets/realm-roles.png)
 
-1. Click the **Filter by clients** option.
+4. Click the **Filter by clients** option.
 
     ![Filter by clients](./assets/filter-by-clients.png)
 
-1. You will find a list of available roles that the user can be assigned. For an example, a typical user admin would be given the **manage-users**, **view-users** and **query-users** roles in the **realm-management** client. Use the checkboxes to select which roles you want to grant the user.
+5. You will find a list of available roles that the user can be assigned. For an example, a typical user admin would be given the **manage-users**, **view-users** and **query-users** roles in the **realm-management** client. Use the checkboxes to select which roles you want to grant the user.
 
     ![User admin roles](./assets/user-admin-roles.png)
 
-1. After selecting the roles to grant, click **Assign**.
+6. After selecting the roles to grant, click **Assign**.
 
     ![Assign button](./assets/user-admin-roles-assign.png)
 
-1. The new roles will appear in the table and a toast will inform you of success.
+7. The new roles will appear in the table and a toast will inform you of success.
 
     ![Role mapping success](./assets/roles-assigned.png)
 

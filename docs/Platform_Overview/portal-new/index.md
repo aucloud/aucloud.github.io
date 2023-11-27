@@ -86,3 +86,12 @@ Please refer to [this guide](./vcd-user-mgmt.md) for more details on how to mana
 Managing your own user in the new Portal will be handled by our new identity provider.  This includes updating your password, resetting 2FA, managing sessions across devices, and updating your personal information. 
 
 Please refer to [this guide](./portal-account-self-mgmt.md) for more details on how to manage your account using our new Portal. 
+
+### Getting Support
+
+Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
+
+For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@australiacloud.com.au](mailto:support@australiacloud.com.au).
+  
+  ![Help](./assets/help.png)
+
