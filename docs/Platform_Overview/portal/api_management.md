@@ -9,6 +9,8 @@ tags:
 
 ## Overview
 
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+
 The AUCyber Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 
 AUCyber API documentation can be accessed through the [AUCyber Portal.](../../Platform_Services/reference_urls.md#portal-ui) VMware Cloud Director documentation can be accessed through the URL link in the portal.
@@ -41,11 +43,3 @@ AUCyber API documentation can be accessed through the [AUCyber Portal.](../../Pl
 1. Access the AUCyber API documentation by clicking on the Portal Documentation tab and click View under the relevant title.
 
     ![API Token Management](./assets/api/token_mgmt.png)
-
-1. To access the VMware Cloud Director documentation, click on VMware Cloud Director Documentation and click on the URL.
-
-    ![VMware Cloud Director API Doc](./assets/api/vcloud_doc.png)
-
-1. You will be redirected to the VMware site.
-
-    ![VMware Cloud Director API Doc](./assets/api/vcd_api_doc.png)

@@ -7,6 +7,8 @@ tags:
 ---
 ## AUCyber Billing Portal
 
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+
 This guide is intended for use by administrative and financial staff responsible for the payment of invoices issued by AUCyber. Staff that require access to the Billing portal should request this access through the IT administrator responsible for the AUCyber portal management.
 
 ## Billing overview

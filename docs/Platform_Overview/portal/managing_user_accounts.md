@@ -7,6 +7,8 @@ tags:
 
 ## Overview
 
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+
 Account administrators are responsible for the management of user accounts. This guide outlines the procedures used in managing users. Users are managed from the Users tab in the ribbon bar:
 
 ![Ribbon Users](./assets/ribbon_users.png)
