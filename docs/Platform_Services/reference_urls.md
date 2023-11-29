@@ -12,11 +12,12 @@ description: Reference URLs for services in AUCyber
 | Brisbane |  BSZ |
 | Melbourne |  MSZ |
 
-## Portal UI
+## Portal UI endpoints
 
 | URL | Community environment |
 | ---- | ------ |
 | [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Sovereign Cloud |
+| [https://app.aucloud.com.au](https://app.aucloud.com.au) |  Sovereign Cloud |
 
 
 ## Portal API endpoints
