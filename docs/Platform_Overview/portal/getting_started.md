@@ -5,7 +5,7 @@ description: Getting Started
 
 ## Logging in to the AUCyber Portal
 
-!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallel with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
 
 1. Go to the appropriate [URL](../../Platform_Services/reference_urls.md#portal-ui), depending on the community where your service is located.
 

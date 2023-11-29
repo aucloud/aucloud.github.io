@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallel with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
 
 The AUCyber Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 

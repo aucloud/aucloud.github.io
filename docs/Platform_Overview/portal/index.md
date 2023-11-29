@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-!!! note "This documentation relates to the legacy Portal, which will run for a time in parallell with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
+!!! note "This documentation relates to the legacy Portal, which will run for a time in parallel with the [new Portal](../portal-new/index.md). This legacy Portal will be decommissioned in the near future."
 
 The AUCyber Portal is a secure one-stop shop for access to VMware Cloud Director and for user and account management, billing information and support.
 
