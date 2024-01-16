@@ -25,24 +25,12 @@ When you have your unique web address for logging in, you can follow these steps
     ![Enter password](./assets/login.png)
 
 1. You will be directed to the Services page, which displays all the VCD tenancies you have access to. Click **Launch** on the tile of the tenancy you want to log into.
-<<<<<<< Updated upstream
-
-    ![Click into tenancy](./assets/product-instance-login.png)
-  &nbsp;
-  &nbsp;
-=======
     
     ![Click into tenancy](./assets/launch.png)
->>>>>>> Stashed changes
 
 1. A new tab will open, directing you to the tenancy you clicked. Click **Sign In With Single Sign-On**.
 
     ![Click Single Sign-On](./assets/vcd-tenancy-sso.png)
-<<<<<<< Updated upstream
-  &nbsp;
-  &nbsp;
-=======
->>>>>>> Stashed changes
 
 1. You will be redirected into the VCD tenancy.
 
