@@ -49,7 +49,7 @@ To change **password**:
 
 1. The browser will redirect to a page where you can enter your new **password**. Please type it again in the **confirm password** box, then click **Submit**.
    
-    ![Update password](./assets/change-password-2.png)
+    ![Update password](./assets/update-password.png)
 
 &nbsp;
 
