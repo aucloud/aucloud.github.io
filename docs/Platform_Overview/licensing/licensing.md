@@ -43,11 +43,18 @@ However, customers can choose to bring their own licences (subject to applicabil
 
     Products covered by the [Flexible Virtualisation Benefit](https://www.microsoft.com/licensing/docs/view/Licensing-Guides)
     The Flexible Virtualisation benefit applies to all software products that are available under subscription licenses or licenses with Software Assurance coverage.
-    This includes server products such as Windows Server, SQL Server, Exchange Server, SharePoint Server, System Center and others.
+    This includes server products such as...SQL Server, Exchange Server, SharePoint Server, System Center and others.
     This also includes desktop products such as Windows 10/11, Office desktop applications and Microsoft 365 Apps.
 
 Customers are also able acquire and bring their own licences (for example Academic or Not For Profit) through other Microsoft licensing schemes such as the Enterprise Agreement or Open Value subscription.
 Microsoft provide specific licensing options for some [industries](https://www.microsoft.com/en-us/licensing/licensing-programs/licensing-for-industries?activetab=licensing-for-industries-pivot:primaryr4) which can be exploited.
+
+### BYOL Windows Server licences
+
+Please note that AUCloud cannot support Customers who wish to bring their own Windows Server licences to our multi-tenant platform as we already provide Windows Server licensing for these servers via Microsoft SPLA. AUCloud cannot 'mix and match' SPLA and FVB Windows Server licensing on these servers.
+
+When servers are dedicated to the Customer's use, they may bring their own licensing. Please contact [AUCloud Support](../support/index.md) or your sales team to discuss this in more detail.
+
 
 ### SQL Developer 
 
@@ -55,17 +62,7 @@ Despite being a 'free' licence, SQL Developer edition is not eligible for licens
 
 Therefore it can only be installed on a dedicated server, or a virtual machine that is hosted on your own dedicated server.
 
-### BYOL Windows Server licences
 
-In order to bring Windows servers to the AUCloud shared infrastructure.
-
-!!! note "Minimum core licences for BYOL"
-
-    There is a Microsoft mandated minimum of 8 cores per windows VM for BYOL.
-    Customers are advised that under 8 cores it is likely to be more cost effective provisioning licences via AUCloud
-
-1. Validate your licences (see the references below)
-1. Provide AUCloud Service Desk the names of the VMs (and the VDC in which they reside) to which you want to bring your own Microsoft Windows licences
 
 ### BYOL Red Hat licences
 
