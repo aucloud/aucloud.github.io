@@ -24,13 +24,14 @@ Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biz
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |
-| Windows Server | 2022        | AUCloud standard template in VCD                                     |
+| Windows Server | 2016        | AUCloud standard template in VCD                                     |
 | Windows Server | 2019        | AUCloud standard template in VCD                                     |
 | Windows Server | 2022        | AUCloud standard template in VCD                                     |
-| BYOL Windows   | Any         | Customer provided or AUCloud template, contact support for licensing |
-| SQL Server     | Standard    | Customer installed, contact support for licensing                    |
-| SQL Server     | Web         | Customer installed, contact support for licensing                    |
+| BYOL Windows Server   | Any         | Customer provided or AUCloud template, contact support for licensing |
+| SQL Server     | Web    | Customer installed, contact support for licensing                    |
+| SQL Server     | Standard         | Customer installed, contact support for licensing                    |
 | SQL Server     | Datacentre  | Customer installed, contact support for licensing                    |
+| SQL Server     | Developer   | Unsupported, see below for details                                   |
 
 ## Microsoft licensing in AUCloud's multi-tenant platform
 
@@ -40,9 +41,9 @@ However, customers can choose to bring their own licences (subject to applicabil
 
 !!! note "Flexible Virtualisation benefit"
 
-    Products covered by the [Flexible Virtualisation Benefit](https://wwlpdocumentsearch.blob.core.windows.net/prodv2/Licensing_guide_PLT_Flexible_Virtualization_Benefit_Nov2022.pdf?sv=2020-08-04&se=2123-01-09T02:48:55Z&sr=b&sp=r&sig=KRfr9gBN%2BY%2BQzJUA1U92X2WFAzu4aouo%2FZXL4sxKLM0%3D)
+    Products covered by the [Flexible Virtualisation Benefit](https://www.microsoft.com/licensing/docs/view/Licensing-Guides)
     The Flexible Virtualisation benefit applies to all software products that are available under subscription licenses or licenses with Software Assurance coverage.
-    This includes server products such as Windows Server, SQL Server, Exchange Server, SharePoint Server, System Center and others.
+    This includes server products such as...SQL Server, Exchange Server, SharePoint Server, System Center and others.
     This also includes desktop products such as Windows 10/11, Office desktop applications and Microsoft 365 Apps.
 
 Customers are also able acquire and bring their own licences (for example Academic or Not For Profit) through other Microsoft licensing schemes such as the Enterprise Agreement or Open Value subscription.
@@ -50,15 +51,18 @@ Microsoft provide specific licensing options for some [industries](https://www.m
 
 ### BYOL Windows Server licences
 
-In order to bring Windows servers to the AUCloud shared infrastructure.
+Please note that AUCloud cannot support Customers who wish to bring their own Windows Server licences to our multi-tenant platform as we already provide Windows Server licensing for these servers via Microsoft SPLA. AUCloud cannot 'mix and match' SPLA and FVB Windows Server licensing on these servers.
 
-!!! note "Minimum core licences for BYOL"
+When servers are dedicated to the Customer's use, they may bring their own licensing. Please contact [AUCloud Support](../support/index.md) or your sales team to discuss this in more detail.
 
-    There is a Microsoft mandated minimum of 8 cores per windows VM for BYOL.
-    Customers are advised that under 8 cores it is likely to be more cost effective provisioning licences via AUCloud
 
-1. Validate your licences (see the references below)
-1. Provide AUCloud Service Desk the names of the VMs (and the VDC in which they reside) to which you want to bring your own Microsoft Windows licences
+### SQL Developer 
+
+Despite being a 'free' licence, SQL Developer edition is not eligible for license mobility.
+
+Therefore it can only be installed on a dedicated server, or a virtual machine that is hosted on your own dedicated server.
+
+
 
 ### BYOL Red Hat licences
 
@@ -78,9 +82,9 @@ Customers can bring most Microsoft licences to dedicated hardware as, from Micro
 
 - [Microsoft Licensing Guides](https://www.microsoft.com/licensing/docs/view/Licensing-Guides)
 
-- [Flexible Virtualisation Benefit | Licensing Guide](https://wwlpdocumentsearch.blob.core.windows.net/prodv2/Licensing_guide_PLT_Flexible_Virtualization_Benefit_Nov2022.pdf?sv=2020-08-04&se=2123-01-09T02:48:55Z&sr=b&sp=r&sig=KRfr9gBN%2BY%2BQzJUA1U92X2WFAzu4aouo%2FZXL4sxKLM0%3D)
+- [Flexible Virtualisation Benefit | Licensing Guide](https://www.microsoft.com/licensing/docs/view/Licensing-Guides)
 
-- [Windows Server | Licensing Guide](https://wwlpdocumentsearch.blob.core.windows.net/prodv2/Licensing_guide_PLT_Windows_Server_2022_Oct2022.pdf?sv=2020-08-04&se=2123-01-09T02:48:55Z&sr=b&sp=r&sig=2rpC9wnS4kzpamtV0cM2r8hDjtC967m8fudcU6ui8fM%3D)
+- [Windows Server | Licensing Guide](https://www.microsoft.com/licensing/docs/view/Licensing-Guides)
 
 - [Training | Get Licensing Ready](https://getlicensingready.com/)
 
