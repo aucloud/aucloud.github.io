@@ -51,6 +51,7 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Sovereign Cloud | CSZ |
 | [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
+| [https://s3-bsz301.australiacloud.com.au](https://s3-bsz301.australiacloud.com.au) | Sovereign Cloud | BSZ |
 
 
 ## Object Storage API Endpoints (via VMware Object Storage Extension)
@@ -59,6 +60,7 @@ description: Reference URLs for services in AUCLoud
 | ---- | ------ | --------------------- |
 | [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Sovereign Cloud | CSZ |
 | [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
+| [https://s3.vos.bsz.australiacloud.com.au](https://s3.vos.bsz.australiacloud.com.au) | Sovereign Cloud | BSZ |
 
 
 
