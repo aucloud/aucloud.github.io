@@ -20,8 +20,7 @@ There are currently 2 supported authenticated methods:
 
 ![Connect Org Admin](./assets/connect_org_admin.jpg)
 
-In the above example, there are 4 arguments you must populate using information obtained from one of the
-[Portal API endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+In the above example, there are 4 arguments you must populate using information obtained from one of the [Portal API endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
 
 ![API Mgmt](./assets/api_mgmt.jpg)
 

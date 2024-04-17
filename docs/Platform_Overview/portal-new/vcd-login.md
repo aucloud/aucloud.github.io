@@ -7,16 +7,11 @@ tags:
 
 ## Overview
 
-In the new Portal, each user's VCD permissions are tied to their AUCloud login, streamlining the
-workflow to reach the user's VCD instance(s). This guide details the process of logging into an
-existing Portal account and accessing a VCD instance that account has been given access to.
+In the new Portal, each user's VCD permissions are tied to their AUCloud login, streamlining the workflow to reach the user's VCD instance(s). This guide details the process of logging into an existing Portal account and accessing a VCD instance that account has been given access to.
 
 ### Logging in to the Portal
 
-Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is
-specific to their account. Our Customer Success team would have shared this web address with you.
-If you're having trouble finding it, don't hesitate to
-[get in touch with the AUCloud support team](../support/index.md) for assistance.
+Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCloud support team](../support/index.md) for assistance.
 
 When you have your unique web address for logging in, you can follow these steps to access your VMWare Cloud Director tenancies.
 

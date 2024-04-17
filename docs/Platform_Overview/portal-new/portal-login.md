@@ -11,9 +11,7 @@ This guide will detail how to log into the new Portal with a user that has alrea
 
 ### Login
 
-Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their
-account. Our Customer Success team would have shared this web address with you. If you're having trouble finding
-it, don't hesitate to [get in touch with the AUCloud support team](../support/index.md) for assistance.
+Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCloud support team](../support/index.md) for assistance.
 
 When you have your unique web address for logging in, you can follow these steps to access your AUCloud portal.
 
