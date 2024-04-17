@@ -59,7 +59,7 @@ From here you can:
 - [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
-If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
+If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au
 
 ### Forgot Password
 
@@ -77,4 +77,4 @@ If you require any further assistance please email the AUCloud Support Desk at s
 
     ![Forgot password](./assets/forgot-password-3.png)
 
-If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
+If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au

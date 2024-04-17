@@ -9,7 +9,7 @@ Our AUCloud support team is here to ensure your services with AUCloud are always
 
 If you need assistance, you can contact AUCloud Support by:
 
-- Emailing AUCloud Support at [support@australiacloud.com.au](mailto:support@australiacloud.com.au)
+- Emailing AUCloud Support at [support@aucloud.com.au](mailto:support@aucloud.com.au)
 
 - Calling AUCloud Support on **1800 AUCLOUD (282 5683)**
 
@@ -28,7 +28,7 @@ If you need assistance, you can contact AUCloud Support by:
 If you require emergency support, you will need to do one of the following:
 
 - Log a support ticket in the [AUCloud Support Portal](./aucloud_support_portal.md)
-- Send an email outlining the issue to [support@australiacloud.com.au](mailto:support@australiacloud.com.au)
+- Send an email outlining the issue to [support@aucloud.com.au](mailto:support@aucloud.com.au)
 
 By raising one of the following this will alert our out of hours engineers to investigate the issue/error and provide an update once a solution has been established.
 

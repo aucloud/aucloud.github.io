@@ -108,7 +108,7 @@ Your password must meet the following conditions:
 
 1. The OTP will need to be reset if a user acquires a new mobile device.
 
-1. Administrators are to email AUCloud Support at support@australiacloud.com.au advising the user has a new mobile device and requires the OTP to be reset.
+1. Administrators are to email AUCloud Support at support@aucloud.com.au advising the user has a new mobile device and requires the OTP to be reset.
 
 1. The memorable word will need to be reset if the user does not remember the original memorable word issued. Include this detail in the email if this is the case.
 
@@ -116,7 +116,7 @@ Your password must meet the following conditions:
 
 1. AUCloud will retain contact details of the account administrator to contact with any issues pertaining to the account.
 
-1. If there is a change in account administrator, please advise AUCloud support at support@australiacloud.com.au to ensure the correct person is contacted.
+1. If there is a change in account administrator, please advise AUCloud support at support@aucloud.com.au to ensure the correct person is contacted.
 
 ## Additional Assistance
 

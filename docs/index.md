@@ -5,14 +5,29 @@ description: "AUCloud's Technical Documentation site. AUCloud is a Sovereign Clo
 
 ## Overview
 
-AUCloud, an ASX listed company, provides highly secure, standards based, sovereign cloud Infrastructure-as-a-Service to Australian Government, Critical National Industry communities and security conscious enterprises. AUCloud solutions enable customers to benefit from sovereign data protection with the scale, automation, elasticity and lower costs typically associated with global cloud offerings.
+AUCloud is an Australian owned and operated Cyber Security Managed Security Service Provider (MSSP)
+and Sovereign Cloud Service (IaaS) specialist that supports Australian Governments, Critical 
+National Industries (CNIs) and secure enterprise organisations with the latest sovereign cloud
+infrastructure, backup and cyber security threat defence and response services.
 
+AUCloud, an ASX listed company, provides highly secure, standards based, sovereign cloud
+Infrastructure-as-a-Service to Australian Government, Critical National Industry communities
+and security conscious enterprises. AUCloud solutions enable customers to benefit from sovereign
+data protection with the scale, automation, elasticity and lower costs typically associated with
+global cloud offerings.
 
-We are committed to providing a high quality of services and customer service and continuous improvement to optimise our customers’ experience with AUCloud. To ensure that our customers have access to general and technical information on our services and have access to the information they need, when it is needed, we are pleased to announce the launch of AUCloud’s Tech Docs.
+We are committed to providing a high quality of services and customer service and continuous
+improvement to optimise our customers’ experience with AUCloud. To ensure that our customers
+have access to general and technical information on our services and have access to the 
+information they need, when it is needed, we are pleased to announce the launch of AUCloud’s
+Tech Docs.
 
-This AUCloud technical documentation website has been designed to provide a wealth of information for our customers and partners to provide knowledge, guidance and further capability to help them get the most out of the AUCloud services.
+This AUCloud technical documentation website has been designed to provide a wealth of information
+for our customers and partners to provide knowledge, guidance and further capability to help them
+get the most out of the AUCloud services.
 
-We invite you to explore and revisit this website regularly as it will continually be enhanced and updated.
+We invite you to explore and revisit this website regularly as it will continually be
+enhanced and updated.
 
 ## Explore AUCloud’s Tech Docs
 
@@ -32,8 +47,8 @@ AUCloud is always here to support our customers and therefore please continue to
 
 1800-AUCLOUD (1800 282 5683)
 
-[support@australiacloud.com.au](mailto:support@australiacloud.com.au)
+[support@aucloud.com.au](mailto:support@aucloud.com.au)
 
 OR
 
-[sales@australiacloud.com.au](mailto:sales@australiacloud.com.au)
+[sales@aucloud.com.au](mailto:sales@aucloud.com.au)

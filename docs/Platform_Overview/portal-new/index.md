@@ -91,7 +91,7 @@ Please refer to [this guide](./portal-account-self-mgmt.md) for more details on 
 
 Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
 
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@australiacloud.com.au](mailto:support@australiacloud.com.au).
+For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucloud.com.au](mailto:support@aucloud.com.au).
   
   ![Help](./assets/help.png)
 

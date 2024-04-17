@@ -36,4 +36,4 @@ When you have your unique web address for logging in, you can follow these steps
 
     ![Logged in](./assets/vcd-logged-in.png)
 
-If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
+If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au
