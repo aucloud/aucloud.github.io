@@ -17,7 +17,7 @@ description: Accessing buckets from an S3 Browser
 
     - **Account Name:** Select an account name
     - **Account Type:** S3 Compatible Storage
-    - **[Rest Endpoint](../reference_urls.md#veeam-restore-web-address)**:
+    
     - **[Access Key ID](./security_credentials.md)**: Access Key
     - **[Secret Access Key](./security_credentials.md):** Secret Key
     - **Encrypt Access Keys with a password:** Select if required

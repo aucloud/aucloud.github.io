@@ -23,7 +23,7 @@ before you're able to log in for the first time."
 Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is
 specific to their account. Our Customer Success team would have shared this web address with you.
 If you're having trouble finding it, don't hesitate to
-[get in touch with the AUCloud support team](../support) for assistance.
+[get in touch with the AUCloud support team](../support/index.md) for assistance.
 
 When you have your unique web address for logging in, you can begin setting up your new portal account by following these simple steps:
 
