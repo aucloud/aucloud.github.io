@@ -22,7 +22,7 @@ Access the AUCloud Self-Service portal via this [link](https://support.australia
 
     ![Click Done](./assets/support_registration_06.png)
 
-    An email will be sent to the email address entered in the previous step from `supportcommunications@australiacloud.com.au`.
+    An email will be sent to the email address entered in the previous step from `supportcommunications@aucloud.com.au`.
     If this has not come through within 5 minutes, please check the spam or junk mail folder.
 
 1. _Click_ on the **link** in the email.
@@ -52,4 +52,4 @@ Access the AUCloud Self-Service portal via this [link](https://support.australia
     ![Pair Device and Login](./assets/support_registration_18.png)
 
 You have now successfully logged into the AUCloud Self-Service Portal for the first time.
-If you require any further assistance please email the AUCloud Support Desk at [support@australiacloud.com.au](mailto:support@australiacloud.com.au)
+If you require any further assistance please email the AUCloud Support Desk at [support@aucloud.com.au](mailto:support@aucloud.com.au)

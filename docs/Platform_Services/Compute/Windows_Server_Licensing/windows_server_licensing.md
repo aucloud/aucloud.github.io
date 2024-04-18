@@ -66,5 +66,5 @@ To change to a KMS activation from your MAK type:
 Run these commands:
 
 `slmgr /ipk` (insert Generic Volume Licence Key - see [here](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys) for reference)
-`slmgr.vbs /skms` (insert Canberra or Sydney KMS Server [IP](../../reference_urls.md#aucloud-kms-server))
+`slmgr.vbs /skms` (insert Canberra or Sydney KMS Server [IP](../../reference_urls.md#aucloud-microsoft-kms-server))
 `slmgr.vbs /ato`

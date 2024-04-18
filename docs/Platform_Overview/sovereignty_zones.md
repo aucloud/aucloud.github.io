@@ -5,7 +5,7 @@ tags:
     - zones
 ---
 
-![Sov Zones](./assets/SZMap.png)
+![Sov Zones](./assets/SZMap_Apr24.png)
 
 | City      | Sovereign Zone Short Code |
 | --------- | ------------------------- |

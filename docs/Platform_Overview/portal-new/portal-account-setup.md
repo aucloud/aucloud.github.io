@@ -9,13 +9,14 @@ tags:
 
 If you previously had an account on the legacy Portal, you'll be able to log in using the same email address. This guide details the process of the initial login and MFA setup.
 
-If you are looking for a guide on how to create a new user account as an administrator, please [click here](./portal-users-mgmt.md)
+If you are looking for a guide on how to create a new user account as an administrator, please
+[click here](./portal-users-mgmt.md)
 
 ### Initial Setup
 
-!!! Note "AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
+!!! Note "AUCloud's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
 
-Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCloud support team](../../support) for assistance.
+Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCloud support team](../support/index.md) for assistance.
 
 When you have your unique web address for logging in, you can begin setting up your new portal account by following these simple steps:
 
@@ -59,7 +60,7 @@ From here you can:
 - [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
-If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
+If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au
 
 ### Forgot Password
 
@@ -77,4 +78,4 @@ If you require any further assistance please email the AUCloud Support Desk at s
 
     ![Forgot password](./assets/forgot-password-3.png)
 
-If you require any further assistance please email the AUCloud Support Desk at support@australiacloud.com.au
+If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au

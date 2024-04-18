@@ -11,7 +11,7 @@ Buckets are containers for objects. You can have one or more buckets and control
 
 ## Accessing Object Storage
 
-1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCloud Support [support@australiacloud.com.au](mailto:support@australiacloud.com.au).
+1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCloud Support [support@aucloud.com.au](mailto:support@aucloud.com.au).
 
 2. When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select **Object Storage** from the Main Menu.
 
