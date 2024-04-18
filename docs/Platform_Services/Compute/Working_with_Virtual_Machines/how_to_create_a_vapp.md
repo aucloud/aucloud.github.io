@@ -28,9 +28,9 @@ In this guide we'll look at how to create a vApp from scratch.
 1. You can now click **Add Virtual Machine** to populate the vApp with VMs. There are several ways to create a VM:
 
     - From an existing template see [How to create a VM from a template](./how_to_create_a_vm_from_a_template.md).
-    - Catalog creation is covered in [How to create a catalog](../Catalogs/how_to_create_a_catalog.md).
+    - Catalog creation is covered in [How to create a catalog](../Catalogs/VCD%2010.4.x/how_to_create_a_catalog.md) for VCD 10.4.x. For VCD 10.5.x, the catalog creation is covered in [here](../Catalogs/VCD%2010.5.x%20(new)/how_to_create_a_catalog.md).
     - From scratch, without using a template see [How to create an empty VM](how_to_create_an_empty_vm.md).
 
-1. When you've finished creating your vApp, click **Create**.
+2. When you've finished creating your vApp, click **Create**.
 
-1. When your vApp has finished deploying, in the card for the vApp, select **Actions, Power** then **Power On** to power it on.
+3. When your vApp has finished deploying, in the card for the vApp, select **Actions, Power** then **Power On** to power it on.

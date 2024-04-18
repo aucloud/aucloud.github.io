@@ -7,7 +7,7 @@ tags:
 
 ## Compute Solutions:
 
-[**Catalog:**](./Catalogs/how_to_create_a_catalog.md) Use our public catalog to find standard VM sizes and operating systems for your VMware Cloud Director deployment. You can also create your own catalogs with specific applications or gold images for faster VM deployment.
+[**Catalog:**](../Compute/Catalogs/index.md) Use our public catalog to find standard VM sizes and operating systems for your VMware Cloud Director deployment. You can also create your own catalogs with specific applications or gold images for faster VM deployment.
 
 **Gateway**: The NSX-V edge gateway connects an organization's virtual data center (VDC) network with an external network.
 

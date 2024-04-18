@@ -17,7 +17,7 @@ Follow the below steps if you require access to a catalog created in CSZ (Canber
 
 1. Navigate to **Libraries,** then select **Catalogs**.
 
-    ![Nav Catalogs](./assets/nav_catalogs.png)
+    ![Nav Catalogs](./../assets/nav_catalogs.png)
 
 1. Click the ellipsis next to the catalog that you wish to share and select **Publish settings**.
 
@@ -27,7 +27,7 @@ Follow the below steps if you require access to a catalog created in CSZ (Canber
 
         To enable password protection on your catalog, enter a password and type the same password again to confirm then click on **Save**.
 
-    ![Publish Settings](./assets/publish_settings.png)
+    ![Publish Settings](./../assets/publish_settings.png)
 
 1. Once the publishing settings is saved, it will return to the _Catalogs_ page again.
 
@@ -37,13 +37,13 @@ Follow the below steps if you require access to a catalog created in CSZ (Canber
 
         This time it will show the subscription URL. Highlight the URL and hit **Ctrl+C** on your keyboard to copy the URL details somewhere safe i.e. notepad.
 
-    ![Publish Settings](./assets/publish_settings_2.png)
+    ![Publish Settings](./../assets/publish_settings_2.png)
 
 1. Then login to the other environment where you want to share this catalog to (e.g. SSZ).
 
 1. Navigate to **Libraries,** then select **Catalogs > New**.
 
-    ![Catalog New](./assets/catalogs_new.png)
+    ![Catalog New](./../assets/catalogs_new.png)
 
 1. Then perform the following:
 
@@ -53,10 +53,10 @@ Follow the below steps if you require access to a catalog created in CSZ (Canber
     - enter the **password** that was set earlier (Step 4), and
     - click **OK.**
 
-    ![Create Catalog](./assets/create_catalog2.png)
+    ![Create Catalog](./../assets/create_catalog2.png)
 
 1. Once the new catalog is created with subscription to the catalog (e.g. from CSZ), it will start performing synchronisation of the catalog items between Sovereignty Zones (e.g. CSZ to SSZ).  
 
-    ![List Catalog](./assets/catalog_list.png)
+    ![List Catalog](./../assets/catalog_list.png)
 
 Once the sync task is complete, the vApp templates/media from the new catalog can be utilised.

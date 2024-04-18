@@ -35,10 +35,10 @@ description: Accessing buckets from an S3 Browser
 
     ![Add new account](./assets/add_new_account.png)
 
-1. You can manage your bucket from this console including adding objects, deleting objects and downloading objects.
+2. You can manage your bucket from this console including adding objects, deleting objects and downloading objects.
 
     ![manage bucket](./assets/manage_bucket.png)
 
-1. Further information and tutorials on using the S3 browser are available on the S3 browser website under the **Getting Started with S3 Browser** heading [https://s3browser.com/help.aspx](https://s3browser.com/help.aspx)
+3. Further information and tutorials on using the S3 browser are available on the S3 browser website under the **Getting Started with S3 Browser** heading [https://s3browser.com/help.aspx](https://s3browser.com/help.aspx)
 
     ![add new account](./assets/add_new_account2.png)

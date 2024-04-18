@@ -22,7 +22,7 @@ The topology below represents a likely architecture for the AUCloud BYOFW soluti
 
 ### Upload BYOFW Image to a Content Library
 
-The first step in the BYOFW solution is to upload the appropriate image file(s) to your content library (if you do not have a content library you can create one by following this [**procedure**](../Catalogs/how_to_create_a_catalog.md)).
+The first step in the BYOFW solution is to upload the appropriate image file(s) to your content library (if you do not have a content library you can create one by following this [**procedure**](../Catalogs/VCD%2010.4.x/how_to_create_a_catalog.md) for VCD 10.4.x or this [**procedure**](../Catalogs/VCD%2010.5.x%20(new)/how_to_create_a_catalog.md) for VCD 10.5.x) )
 
 Logon to the [**AUCloud Portal**](https://portal.australiacloud.com.au).
 
