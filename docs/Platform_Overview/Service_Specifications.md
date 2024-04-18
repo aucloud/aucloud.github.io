@@ -34,9 +34,9 @@ Cloud Director provides role-based access to a HTML 5 web console that allows ad
 | -----------| -------------|
 | Elastic Virtual Datacenters | Isolated virtual resources, independent role-based authentication and fine grained control |
 | Elastic Scalable VM's | Adjust virtual machine attributes such as CPU, RAM and storage at any time |
-| Applications catalog | Upload applications and OVF files for quick deployment when creating additional Virtual Datacenters
+| Applications catalog | Upload applications and OVF files for quick deployment when creating additional Virtual Datacenters |
 | Automation | Supports infrastructure-as-code driven workflows via the AUCloud API gateway |
-| Networking | Advanced networking capabilities powered by NSX which can be isolated or routed through the provided Edge Services Gateway
+| Networking | Advanced networking capabilities powered by NSX which can be isolated or routed through the provided Edge Services Gateway |
 | Edge Gateway | Provides connectivity between one or more Cloud Director external networks and one or more Organisation VDC networks |
 
 
@@ -80,7 +80,7 @@ AUCloud M365 Backup is powered by Veeam Backup for Microsoft Office 365. The M36
 
 | Features | Benefits |
 | -----------| -------------|
-| Restore M365 objects from self-service portal | The following functions are enabled by M365 backup: <ul><li>Restore mailbox items</li><li>Restore calendar items</li><li>Restore SharePoint items</li><li>Restore OneDrive objects</li><li>Items can be restored to their original locations, to PST files or to an alternative location</li></ul>
+| Restore M365 objects from self-service portal | The following functions are enabled by M365 backup: <ul><li>Restore mailbox items</li><li>Restore calendar items</li><li>Restore SharePoint items</li><li>Restore OneDrive objects</li><li>Items can be restored to their original locations, to PST files or to an alternative location</li></ul> |
 
 ## Disaster Recovery (DRaaS)
 
@@ -125,7 +125,7 @@ AUCloud provides complimentary onboarding assistance via our Customer Success Ma
 
 AUCloud support staff are on hand to assist customers with any support issues or queries related to the platform. AUCloud support can be accessed using the following methods:
 
-- Phone: 1800-AUCLOUD (282 5 683)
+- Phone: 1800-AUCLOUD (282 568)
 - Email: support@aucloud.com.au
 - Knowledge Base: [docs.australiacloud.com.au](https://docs.australiacloud.com.au/)
 - Online: via the AUCloud Customer Support Portal.
@@ -138,8 +138,8 @@ Our terms and conditions underpin our commitment to provide an efficient and eff
 | -----------| -------------|
 | No contract lock in | Because we offer a true IaaS service there is no contract lock in and understand that customers need to be able to engage and as appropriate, disengage with services easily without penalty or cost |
 | No data egress | AUCloud does not charge for data egress; this eliminates the risk of lock-in compared to other providers who often charge punitive egress and ingress rates for removing your data at the end of a contract |
-| Assisted offboarding process | The CSM assists with the offboarding process as follows: <ul><li>Request for removal of a customer service</li><li>Service termination date</li><li>Handover of data upon the termination of service</li><li>Removal of Services/containers</li><li>Verification is provided once your content is removed from the AUCloud platform</li><li>Final bill
-</li></ul>
+| Assisted offboarding process | The CSM assists with the offboarding process as follows: <ul><li>Request for removal of a customer service</li><li>Service termination date</li><li>Handover of data upon the termination of service</li><li>Removal of Services/containers</li><li>Verification is provided once your content is removed from the AUCloud platform</li><li>Final bill</li> |
+
 
 
 
