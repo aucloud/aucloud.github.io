@@ -216,12 +216,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/how_to_create_a_catalog/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/faq/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/how_to_share_catalog_library_between_aucloud_sov_zone/</loc>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/</loc>
+         <lastmod>2024-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/VCD%2010.4.x/how_to_create_a_catalog/</loc>
+         <lastmod>2024-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/VCD%2010.4.x/how_to_share_catalog_library_between_aucloud_sov_zone/</loc>
+         <lastmod>2024-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/VCD%2010.5.x%20%28new%29/how_to_create_a_catalog/</loc>
+         <lastmod>2024-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.australiacloud.com.au/latest/Platform_Services/Compute/Catalogs/VCD%2010.5.x%20%28new%29/how_to_share_catalog_library_between_aucloud_sov_zone/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
