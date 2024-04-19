@@ -125,7 +125,7 @@ AUCloud provides complimentary onboarding assistance via our Customer Success Ma
 
 AUCloud support staff are on hand to assist customers with any support issues or queries related to the platform. AUCloud support can be accessed using the following methods:
 
-- Phone: 1800-AUCLOUD (282 568)
+- Phone: 1800 282 568
 - Email: support@aucloud.com.au
 - Knowledge Base: [docs.australiacloud.com.au](https://docs.australiacloud.com.au/)
 - Online: via the AUCloud Customer Support Portal.

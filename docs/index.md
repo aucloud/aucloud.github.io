@@ -31,7 +31,7 @@ We invite you to explore and revisit this website regularly as it will continual
 
 AUCloud is always here to support our customers and therefore please continue to reach out to your sales, [technical or support contacts](Platform_Overview/support/index.md) for any assistance you may require.
 
-1800-AUCLOUD (1800 282 568)
+1800 282 568
 
 [support@aucloud.com.au](mailto:support@aucloud.com.au)
 
