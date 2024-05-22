@@ -22,7 +22,7 @@ Affected VMware tools and services include, but are not limited to:
 
 Our updated Portal integrates a new identity provider leveraging OIDC, replacing the previous LDAP-based identities.
 
-**Important**: At the time of writing (December 2023), VCD does not support username + password authentication for OIDC identities. This means that new "local" VCD users will need to be created in order to use traditional username + password authentication for tools like the VCD API.
+**Important**: VCD does not currently support username + password authentication for OIDC identities. This means that new "local" VCD users will need to be created in order to use traditional username + password authentication for tools like the VCD API.
 
 ## What to do next
 
