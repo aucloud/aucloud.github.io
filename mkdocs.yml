@@ -160,7 +160,7 @@ extra:
   analytics:
     provider: google
     # Internal only
-    property: UA-217577494-1
+    property: G-ECW6GG6XK3
 copyright: >
   Copyright &copy; 2024 Sovereign Cloud Australia Pty Ltd. –
   <a href="#__consent">Change cookie settings</a>
