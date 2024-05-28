@@ -23,7 +23,7 @@ When you have your unique web address for logging in, you can begin setting up y
 1. Open the web browser on your device.
 1. Enter the unique web address (URL) you received from AUCloud into the browser's address bar.
 1. This will take you to the login page for your account.
-1. Click **I forgot my password**.
+1. Click **I forgot my password** (this is necessary for setting your password for the first time).
 
     ![Forgot password](./assets/forgot-password.png)
 

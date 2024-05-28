@@ -54,7 +54,7 @@ The way that key features are accessed will change as a result of this release. 
 
 ![final-state](./assets/portal-final-state.png)
 
-- Following the release on Nov 30th our [existing Portal](https://portal.australiacloud.com.au) will still be live, **both portals will be running side-by-side**. The following features will only be available in our new Portal, they will **no longer be accessible in the [existing Portal](https://portal.australiacloud.com.au)**. Follow the links below for details of each of these changes:
+- Following the release our [existing Portal](https://portal.australiacloud.com.au) will still be live, **both portals will be running side-by-side**. The following features will only be available in our new Portal, they will **no longer be accessible in the [existing Portal](https://portal.australiacloud.com.au)**. Follow the links below for details of each of these changes:
     - [Access VMware Cloud Director (VCD) tenancies](#access-vmware-cloud-director-vcd-tenancies)
     - [Manage Users and Permissions with your organisation](#manage-users-and-permissions-with-your-organisation)
     - [Account Self Management (user details and password)](#account-self-management-user-details-and-password)
