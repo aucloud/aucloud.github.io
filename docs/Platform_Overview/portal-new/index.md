@@ -5,26 +5,28 @@ tags:
     - portal
 ---
 
-## Overview
+## AUCLoud VMWare Cloud Director (vCD) Portal Overview
 
-AUCloud is releasing a new Portal that is built from the ground up to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
+AUCloud is releasing a new VMWare Cloud Director (vCD) Portal that is built to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
 
-- Allow more streamlined access to the products that our customers use our Portal for such as Single-Sign-On (SSO) to VMware Cloud Director once authenticated.
-- Allow customers to reset their own password.
-- Dramatically extend password reset intervals.
-- Remove the inactive account impediment.
+- Streamlined access to AUCloud's products
+- Single-Sign-On (SSO) to VMWare Cloud Director once authenticated
+- Allow users the ability to manage their own passwords
+- Additional functionality to manage password reset intervals
 
 ### What does this mean for you
 
-On the launch date, access to administer your VMware Cloud Director(vCD) services will be moved to the new portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
+Effective 18 June, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
 
-#### Logging in to the new portal
+#### Setting up your new Portal Account
 
-Password and 2FA credentials are encrypted and are not able to be migrated along with the user identities and permissions. Therefore, to get setup with the new portal to continue to access vCD you will need to go through the [initial setup of your new portal account](./portal-account-setup.md#initial-setup).
+!!! note "Password and 2FA credentials are encrypted and are not able to be migrated to the new Portal along with the user identities and permissions." 
 
-#### Using VMWare Cloud Director APIs and tools
+To get setup with the new portal to continue to access vCD you will need to go through the [initial setup of your new portal account](./portal-account-setup.md#initial-setup).
 
-If you interact with our VCD environments outside of the web UI, you may need to [change the way you authenticate](./api-authentication.md).  Affected VMware tools and services include, but are not limited to:
+#### Using VMWare Cloud Director (vCD) APIs and tools
+
+If you interact with our vCD environments outside of the web User Interface (UI), you need to [change the way you authenticate](./api-authentication.md).  Affected VMware tools and services include, but are not limited to:
 
 - [VCD Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs)
 - [VCD API](https://docs.vmware.com/en/VMware-Cloud-Director/index.html)
@@ -33,24 +35,24 @@ If you interact with our VCD environments outside of the web UI, you may need to
 
 ## Release Stages
 
-The way that key features are accessed will change as a result of this release. The process of the changes are outlined below:
+The way that you access key features will change as a result of this release. The process of the changes are outlined below:
 
-### Current state
+### Stage 1: Current state
 
 ![current-state](./assets/portal-initial-state.png)
 
-- Currently there is a [single Portal](https://portal.australiacloud.com.au) that handles billing and authentication into VCD.
+- Currently there is a [single Portal](https://portal.australiacloud.com.au) that handles billing and authentication into vCD.
 - The existing portal is where you currently go to gain access all features.
 
-### Migrating
+### Stage 2: Migration
 
 ![migration-state](./assets/portal-migration-state.png)
 
 - We will be copying all users and permissions over to our new identity provider.
-- AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. 
+- AUCloud's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. 
 - This will create an **additional** account for all users in our new Portal.
 
-### Final state
+### Stage 3: Accessing the new vCD Portal
 
 ![final-state](./assets/portal-final-state.png)
 
@@ -67,7 +69,7 @@ The way that key features are accessed will change as a result of this release. 
 
 !!! note "A future release will migrate billing functionality into the new portal, and the old portal will be decommissioned."
 
-## Changed features
+## Changed Features
 
 ### Access VMware Cloud Director (VCD) tenancies
 
@@ -81,7 +83,7 @@ Managing users and permissions in the new Portal will be handled by our new iden
 
 Please refer to [this guide](./vcd-user-mgmt.md) for more details on how to manage users and permissions in our new Portal. 
 
-### Account Self Management (user details and password)
+### Account Self-Management (user details and password)
 
 Managing your own user in the new Portal will be handled by our new identity provider.  This includes updating your password, resetting 2FA, managing sessions across devices, and updating your personal information. 
 
