@@ -5,7 +5,7 @@ tags:
     - portal
 ---
 
-## AUCLoud VMWare Cloud Director (vCD) Portal Overview
+## AUCloud VMWare Cloud Director (vCD) Portal Overview
 
 AUCloud is releasing a new VMWare Cloud Director (vCD) Portal that is built to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
 
