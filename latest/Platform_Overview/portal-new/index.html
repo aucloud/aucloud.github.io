@@ -114,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#aucloud-vmware-cloud-director-vcd-portal-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -5044,13 +5044,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#aucloud-vmware-cloud-director-vcd-portal-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      AUCLoud VMWare Cloud Director (vCD) Portal Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
+    <nav class="md-nav" aria-label="AUCLoud VMWare Cloud Director (vCD) Portal Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5064,18 +5064,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#logging-in-to-the-new-portal" class="md-nav__link">
+  <a href="#setting-up-your-new-portal-account" class="md-nav__link">
     <span class="md-ellipsis">
-      Logging in to the new portal
+      Setting up your new Portal Account
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-vmware-cloud-director-apis-and-tools" class="md-nav__link">
+  <a href="#using-vmware-cloud-director-vcd-apis-and-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Using VMWare Cloud Director APIs and tools
+      Using VMWare Cloud Director (vCD) APIs and tools
     </span>
   </a>
   
@@ -5102,27 +5102,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#current-state" class="md-nav__link">
+  <a href="#stage-1-current-state" class="md-nav__link">
     <span class="md-ellipsis">
-      Current state
+      Stage 1: Current state
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#migrating" class="md-nav__link">
+  <a href="#stage-2-migration" class="md-nav__link">
     <span class="md-ellipsis">
-      Migrating
+      Stage 2: Migration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#final-state" class="md-nav__link">
+  <a href="#stage-3-accessing-the-new-vcd-portal" class="md-nav__link">
     <span class="md-ellipsis">
-      Final state
+      Stage 3: Accessing the new vCD Portal
     </span>
   </a>
   
@@ -5136,11 +5136,11 @@
         <li class="md-nav__item">
   <a href="#changed-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Changed features
+      Changed Features
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Changed features">
+    <nav class="md-nav" aria-label="Changed Features">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5164,7 +5164,7 @@
           <li class="md-nav__item">
   <a href="#account-self-management-user-details-and-password" class="md-nav__link">
     <span class="md-ellipsis">
-      Account Self Management (user details and password)
+      Account Self-Management (user details and password)
     </span>
   </a>
   
@@ -5228,20 +5228,23 @@
 
   <h1>Portal (New)</h1>
 
-<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>AUCloud is releasing a new Portal that is built from the ground up to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:</p>
+<div><h2 id="aucloud-vmware-cloud-director-vcd-portal-overview">AUCLoud VMWare Cloud Director (vCD) Portal Overview<a class="headerlink" href="#aucloud-vmware-cloud-director-vcd-portal-overview" title="Permanent link">¤</a></h2>
+<p>AUCloud is releasing a new VMWare Cloud Director (vCD) Portal that is built to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:</p>
 <ul>
-<li>Allow more streamlined access to the products that our customers use our Portal for such as Single-Sign-On (SSO) to VMware Cloud Director once authenticated.</li>
-<li>Allow customers to reset their own password.</li>
-<li>Dramatically extend password reset intervals.</li>
-<li>Remove the inactive account impediment.</li>
+<li>Streamlined access to AUCloud's products</li>
+<li>Single-Sign-On (SSO) to VMWare Cloud Director once authenticated</li>
+<li>Allow users the ability to manage their own passwords</li>
+<li>Additional functionality to manage password reset intervals</li>
 </ul>
 <h3 id="what-does-this-mean-for-you">What does this mean for you<a class="headerlink" href="#what-does-this-mean-for-you" title="Permanent link">¤</a></h3>
-<p>On the launch date, access to administer your VMware Cloud Director(vCD) services will be moved to the new portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.</p>
-<h4 id="logging-in-to-the-new-portal">Logging in to the new portal<a class="headerlink" href="#logging-in-to-the-new-portal" title="Permanent link">¤</a></h4>
-<p>Password and 2FA credentials are encrypted and are not able to be migrated along with the user identities and permissions. Therefore, to get setup with the new portal to continue to access vCD you will need to go through the <a href="portal-account-setup/#initial-setup">initial setup of your new portal account</a>.</p>
-<h4 id="using-vmware-cloud-director-apis-and-tools">Using VMWare Cloud Director APIs and tools<a class="headerlink" href="#using-vmware-cloud-director-apis-and-tools" title="Permanent link">¤</a></h4>
-<p>If you interact with our VCD environments outside of the web UI, you may need to <a href="api-authentication/">change the way you authenticate</a>.  Affected VMware tools and services include, but are not limited to:</p>
+<p>Effective 18 June, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.</p>
+<h4 id="setting-up-your-new-portal-account">Setting up your new Portal Account<a class="headerlink" href="#setting-up-your-new-portal-account" title="Permanent link">¤</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Password and 2FA credentials are encrypted and are not able to be migrated to the new Portal along with the user identities and permissions.</p>
+</div>
+<p>To get setup with the new portal to continue to access vCD you will need to go through the <a href="portal-account-setup/#initial-setup">initial setup of your new portal account</a>.</p>
+<h4 id="using-vmware-cloud-director-vcd-apis-and-tools">Using VMWare Cloud Director (vCD) APIs and tools<a class="headerlink" href="#using-vmware-cloud-director-vcd-apis-and-tools" title="Permanent link">¤</a></h4>
+<p>If you interact with our vCD environments outside of the web User Interface (UI), you need to <a href="api-authentication/">change the way you authenticate</a>.  Affected VMware tools and services include, but are not limited to:</p>
 <ul>
 <li><a href="https://registry.terraform.io/providers/vmware/vcd/latest/docs">VCD Terraform Provider</a></li>
 <li><a href="https://docs.vmware.com/en/VMware-Cloud-Director/index.html">VCD API</a></li>
@@ -5249,21 +5252,21 @@
 <li><a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Install-Configure-Upgrade-Guide/GUID-2B34775B-7C96-44F2-A9A3-D6A9D3B0CAD2.html">VCD OVF Tool</a></li>
 </ul>
 <h2 id="release-stages">Release Stages<a class="headerlink" href="#release-stages" title="Permanent link">¤</a></h2>
-<p>The way that key features are accessed will change as a result of this release. The process of the changes are outlined below:</p>
-<h3 id="current-state">Current state<a class="headerlink" href="#current-state" title="Permanent link">¤</a></h3>
+<p>The way that you access key features will change as a result of this release. The process of the changes are outlined below:</p>
+<h3 id="stage-1-current-state">Stage 1: Current state<a class="headerlink" href="#stage-1-current-state" title="Permanent link">¤</a></h3>
 <p><img alt="current-state" src="assets/portal-initial-state.png"></p>
 <ul>
-<li>Currently there is a <a href="https://portal.australiacloud.com.au">single Portal</a> that handles billing and authentication into VCD.</li>
+<li>Currently there is a <a href="https://portal.australiacloud.com.au">single Portal</a> that handles billing and authentication into vCD.</li>
 <li>The existing portal is where you currently go to gain access all features.</li>
 </ul>
-<h3 id="migrating">Migrating<a class="headerlink" href="#migrating" title="Permanent link">¤</a></h3>
+<h3 id="stage-2-migration">Stage 2: Migration<a class="headerlink" href="#stage-2-migration" title="Permanent link">¤</a></h3>
 <p><img alt="migration-state" src="assets/portal-migration-state.png"></p>
 <ul>
 <li>We will be copying all users and permissions over to our new identity provider.</li>
-<li>AUClouds strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. </li>
+<li>AUCloud's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. </li>
 <li>This will create an <strong>additional</strong> account for all users in our new Portal.</li>
 </ul>
-<h3 id="final-state">Final state<a class="headerlink" href="#final-state" title="Permanent link">¤</a></h3>
+<h3 id="stage-3-accessing-the-new-vcd-portal">Stage 3: Accessing the new vCD Portal<a class="headerlink" href="#stage-3-accessing-the-new-vcd-portal" title="Permanent link">¤</a></h3>
 <p><img alt="final-state" src="assets/portal-final-state.png"></p>
 <ul>
 <li>Following the release our <a href="https://portal.australiacloud.com.au">existing Portal</a> will still be live, <strong>both portals will be running side-by-side</strong>. The following features will only be available in our new Portal, they will <strong>no longer be accessible in the <a href="https://portal.australiacloud.com.au">existing Portal</a></strong>. Follow the links below for details of each of these changes:<ul>
@@ -5285,14 +5288,14 @@
 <div class="admonition note">
 <p class="admonition-title">A future release will migrate billing functionality into the new portal, and the old portal will be decommissioned.</p>
 </div>
-<h2 id="changed-features">Changed features<a class="headerlink" href="#changed-features" title="Permanent link">¤</a></h2>
+<h2 id="changed-features">Changed Features<a class="headerlink" href="#changed-features" title="Permanent link">¤</a></h2>
 <h3 id="access-vmware-cloud-director-vcd-tenancies">Access VMware Cloud Director (VCD) tenancies<a class="headerlink" href="#access-vmware-cloud-director-vcd-tenancies" title="Permanent link">¤</a></h3>
 <p>Our new Portal is built on top of a new identity provider that allows SSO authentication into your VCD tenancies.  This means that you'll only need to provide your credentials once when logging in, then you'll be able to access all your VCD tenancies from a single dashboard with one click!</p>
 <p>Please refer to <a href="vcd-login/">this guide</a> for details on how to login to VCD using our new Portal. </p>
 <h3 id="manage-users-and-permissions-with-your-organisation">Manage Users and Permissions with your organisation<a class="headerlink" href="#manage-users-and-permissions-with-your-organisation" title="Permanent link">¤</a></h3>
 <p>Managing users and permissions in the new Portal will be handled by our new identity provider.  Proving more ways to manage your users, and more fine grained controls over access to your organisation portal, and the VCD tenancies in it. </p>
 <p>Please refer to <a href="vcd-user-mgmt/">this guide</a> for more details on how to manage users and permissions in our new Portal. </p>
-<h3 id="account-self-management-user-details-and-password">Account Self Management (user details and password)<a class="headerlink" href="#account-self-management-user-details-and-password" title="Permanent link">¤</a></h3>
+<h3 id="account-self-management-user-details-and-password">Account Self-Management (user details and password)<a class="headerlink" href="#account-self-management-user-details-and-password" title="Permanent link">¤</a></h3>
 <p>Managing your own user in the new Portal will be handled by our new identity provider.  This includes updating your password, resetting 2FA, managing sessions across devices, and updating your personal information. </p>
 <p>Please refer to <a href="portal-account-self-mgmt/">this guide</a> for more details on how to manage your account using our new Portal. </p>
 <h3 id="getting-support">Getting Support<a class="headerlink" href="#getting-support" title="Permanent link">¤</a></h3>
@@ -5319,7 +5322,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 29, 2024</span>
   </span>
 
     
