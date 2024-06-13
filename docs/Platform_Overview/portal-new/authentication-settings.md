@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-This document provides an overview of the authentication settings for the new AUCloud Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
+This document provides an overview of the authentication settings for the AUCloud Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
 
 ## Password Reset Timeout
 
@@ -26,7 +26,7 @@ Sessions in VMware Cloud Director (VCD) are configured with the following detail
 
 ## Account Inactivity Lockouts
 
-Unlike our legacy portal, our new portal does not automatically lock out user accounts due to inactivity. You can log in to your account regardless of how long it has been inactive.
+Accounts are not automatically locked out to inactivity. You can log in to your account regardless of how long it has been inactive.
 
 ## Login Lockout Policies
 
