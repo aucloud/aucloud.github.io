@@ -6,3 +6,4 @@ nav:
     - Portal User Management (for admins): portal-users-mgmt.md
     - VCD Login: vcd-login.md
     - VCD User Management (for admins): vcd-user-mgmt.md
+    - Password and Session policies: authentication-settings.md

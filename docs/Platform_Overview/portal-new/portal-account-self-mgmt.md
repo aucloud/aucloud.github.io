@@ -30,14 +30,17 @@ On the **Personal info** tab, you can change your First and Last names. Please n
   ![Personal info](./assets/account-mgmt-personal-info.png)
 
 ### Account Security
-**Account security** has two subsections: **Signing in** and **Device activity**.
+**Account security** has two sub-pages: **Signing in** and **Device activity**.
 
   ![Account security](./assets/account-security.png)
 
 &nbsp;
 
-#### Signing in
+#### Signing in page
+
 The **Signing in** page allows you to change your **password** and setup and remove applications for **two-factor authentication**. 
+
+##### Updating your password
 
 To change **password**:
 
@@ -52,6 +55,8 @@ To change **password**:
     ![Update password](./assets/update-password.png)
 
 &nbsp;
+
+##### Resetting two-factor authentication
 
 To **remove** an existing two-factor authentication application:
 
@@ -75,7 +80,8 @@ To **set up** a new two-factor authentication application:
 
 &nbsp;
 
-#### Device activity
+#### Device activity page
+
 The **device activity** page allows you to view all devices which are currently logged in with your user. You can sign out of sessions other than the current session using the **Sign out** button against the relevant session.
 
   ![Sign out of other session](./assets/sign-out-of-other-session.png)

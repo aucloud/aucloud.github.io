@@ -89,7 +89,7 @@ Managing your own user in the new Portal will be handled by our new identity pro
 
 Please refer to [this guide](./portal-account-self-mgmt.md) for more details on how to manage your account using our new Portal. 
 
-### Getting Support
+## Getting Support
 
 Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
 
