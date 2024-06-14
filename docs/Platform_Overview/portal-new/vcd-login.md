@@ -32,6 +32,8 @@ When you have your unique web address for logging in, you can follow these steps
 
     ![Click Single Sign-On](./assets/vcd-tenancy-sso.png)
 
+    !!! note "If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is no longer supported.  This option will be removed in the near future."
+
 1. You will be redirected into the VCD tenancy.
 
     ![Logged in](./assets/vcd-logged-in.png)
