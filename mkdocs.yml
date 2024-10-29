@@ -35,11 +35,11 @@ plugins:
         - Blog
   - social
   - search
+  - macros
   - table-reader:
       data_path: "docs"
   - git-revision-date-localized
   - awesome-pages
-  - macros
   - unused_files:
       strict: True
       file_types:
