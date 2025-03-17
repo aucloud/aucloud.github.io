@@ -7,9 +7,9 @@ tags:
  - Veeam
 ---
 
-## Information on how to configure your M365 service account for AUCloud's M365 Backup as a Service
+## Information on how to configure your M365 service account for AUCyber's M365 Backup as a Service
 
-This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCloud
+This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCyber
 using the modern authentication method. You will be allocated a Customer Success Manager (CSM) who
 will assist you with the on-boarding process, provide advice and act as a conduit to deeper technical support
 when required.
@@ -32,7 +32,7 @@ when required.
     * Sharepoint Administrator
     * Teams Administrator
 
-- AUCloud will provide you with a certificate (public key) to be used during application registration.
+- AUCyber will provide you with a certificate (public key) to be used during application registration.
 
 
 ## Azure Entra ID Application permissions
@@ -110,16 +110,16 @@ For each API e.g., Microsoft graph, add the appropriate delegated (restore) and 
 
     !!! note
 
-        AUCloud will provide this certificate.
+        AUCyber will provide this certificate.
 
 1. Enter a description.
 1. Select **Add**.
 
   ![Add a Certificate](./assets/add_a_certificate.png)
 
-### Join secure meeting with AUCloud
+### Join secure meeting with AUCyber
 
-A joint session with the AUCloud technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.
+A joint session with the AUCyber technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.
 
 - Service account username
 - Application ID

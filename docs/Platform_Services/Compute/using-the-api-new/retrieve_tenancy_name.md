@@ -13,7 +13,7 @@ This guide details the steps required to obtain the Organization name of your VC
 
 ## Steps
 
-1. Log in to the [AUCloud Portal](https://app.aucloud.com.au)
+1. Log in to the [AUCyber Portal](https://app.aucloud.com.au)
 1. Log in to the tenancy that you want to connect to:
 
     <!-- TODO: FIX THIS -->

@@ -1,6 +1,6 @@
 ---
 title: Reference URLs
-description: Reference URLs for services in AUCLoud
+description: Reference URLs for services in AUCyber
 ---
 
 ## Sovereignty Zone Locations
@@ -64,7 +64,7 @@ description: Reference URLs for services in AUCLoud
 
 
 
-## AUCloud Microsoft KMS Server
+## AUCyber Microsoft KMS Server
 
 | URL | IP Target |
 | ---- | ---- |
@@ -73,6 +73,6 @@ description: Reference URLs for services in AUCLoud
 
 ## Public Facing Repositories and Documentation
 
-- [AUCloud Technical Documentation](https://docs.australiacloud.com.au/latest/)
+- [AUCyber Technical Documentation](https://docs.australiacloud.com.au/latest/)
 - [ACloud Public Github Org](https://github.com/aucloud)
 

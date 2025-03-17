@@ -1,6 +1,6 @@
 ---
-title: API Management in the AUCloud Portal
-description: Instructions on how to manage the API for the AUCloud Portal
+title: API Management in the AUCyber Portal
+description: Instructions on how to manage the API for the AUCyber Portal
 tags:
     - API
     - SDK
@@ -9,9 +9,9 @@ tags:
 
 ## Overview
 
-The AUCloud Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
+The AUCyber Portal is fully API driven which allows codified functionality and allows us to implement the modern, best practice approach to automation of the tasks that we do.
 
-AUCloud API documentation can be accessed through the [AUCloud Portal.](../../Platform_Services/reference_urls.md#portal-ui) VMware Cloud Director documentation can be accessed through the URL link in the portal.
+AUCyber API documentation can be accessed through the [AUCyber Portal.](../../Platform_Services/reference_urls.md#portal-ui) VMware Cloud Director documentation can be accessed through the URL link in the portal.
 
 ## Procedure
 
@@ -38,7 +38,7 @@ AUCloud API documentation can be accessed through the [AUCloud Portal.](../../Pl
 
 1. Copy your token details.
  
-1. Access the AUCloud API documentation by clicking on the Portal Documentation tab and click View under the relevant title.
+1. Access the AUCyber API documentation by clicking on the Portal Documentation tab and click View under the relevant title.
 
     ![API Token Management](./assets/api/token_mgmt.png)
 

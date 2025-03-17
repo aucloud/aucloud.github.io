@@ -180,7 +180,7 @@ To create Firewall rules, use the following steps:
 
 ## How to find your allocated external IP Address
 
-To route traffic to your external network (for example internet) and configure settings such as NAT rules, you need to know your external IP addresses. AUCloud standard IP address allocation is 2 Public IP addresses per Org vDC.
+To route traffic to your external network (for example internet) and configure settings such as NAT rules, you need to know your external IP addresses. AUCyber standard IP address allocation is 2 Public IP addresses per Org vDC.
 
 To find your allocated IP, use the following steps:
 
@@ -217,7 +217,7 @@ There are two types of NAT within your Edge Services Gateway (ESG):
 * SNAT (required for outbound traffic)
 * DNAT (required for inbound traffic)
 
-For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud. (SNAT rule)
+For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCyber. (SNAT rule)
 
 !!! note
 
@@ -509,7 +509,7 @@ Additional information can be viewed on VMware Docs - [Customize the Security Pr
 | Local Endpoint      | IP Address      | The external IP of your ESG refer to How to find your allocated external IP Address [above.](#how-to-find-your-allocated-external-ip-address) |
 |                     | Networks        | The organisation networks that can access the VPN (separate multiple local subnets with commas). Must be entered in CIDR format. |
 | Remote Endpoint     | IP Address      | The external IP of your remote site or on-premises firewall or edge where VPN is being set up. |
-|                     | Networks        | This is the subnet on your on-premises network that you want to make accessible from your AUCloud VDC. |
+|                     | Networks        | This is the subnet on your on-premises network that you want to make accessible from your AUCyber VDC. |
 |                     | Remote ID       | Unique identifier, will default to the Remote Endpoint IP Address. |
 
 #### Security Profile

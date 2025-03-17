@@ -72,7 +72,7 @@ When a replication uses a seed vApp or VM, VMware Cloud Director Availability do
 
 ## Export a Virtual Machine or a vApp to a Removable Media
 
-To use a replication seed for configuring a replication, you must export a virtual machine to removable media and provide it to AUCloud.
+To use a replication seed for configuring a replication, you must export a virtual machine to removable media and provide it to AUCyber.
 
 1. Power off the virtual machine on the protected side by using the vSphere Client
 
@@ -90,7 +90,7 @@ To use a replication seed for configuring a replication, you must export a virtu
     ovftool 'vcloud://ORG_ADMIN@VCLOUD_DIRECTOR_IP:443?org=ORG_NAME&vdc=VDC_NAME&vapp=VAPP_NAME' VAPP_NAME.ova
     ```
 
-1. Provide the removable media containing the exported files to AUCloud.
+1. Provide the removable media containing the exported files to AUCyber.
 
 ## Configure a Replication by Using a Replication Seed
 

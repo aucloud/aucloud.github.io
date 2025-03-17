@@ -14,7 +14,7 @@ tags:
 
 ## Do you have questions?
 
-The answers to your questions could be found below! If after intensive search, you still cannot find the answer you are looking for, feel free to [contact us](mailto:support@aucloud.com.au) and we will do our best to assist.
+The answers to your questions could be found below! If after intensive search, you still cannot find the answer you are looking for, feel free to [contact us](mailto:support@aucyber.com.au) and we will do our best to assist.
 
 
 
@@ -48,7 +48,7 @@ If your environment is still on VCD 10.4.x, you will need to use the firewall gr
 
 ### 3. How do I backup my VM(s)?
 
-AUCloud is adopting Veeam Backup & Replication to enable users to backup their VMs. Please have a chat to our friendly [customer service delivery](mailto:sales@aucloud.com.au) team to get Veeam self-service backup portal plugin enabled for your environment. 
+AUCyber is adopting Veeam Backup & Replication to enable users to backup their VMs. Please have a chat to our friendly [customer service delivery](mailto:sales@aucyber.com.au) team to get Veeam self-service backup portal plugin enabled for your environment. 
 
 If you have the **Data Protection with Veeam** plugins enabled already, you can start performing backup on your VM by click on the VM, select actions - Data Protection with Veeam -> Add to Veeam backup job. 
 

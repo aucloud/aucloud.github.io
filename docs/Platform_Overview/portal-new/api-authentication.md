@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-If you're interacting with an AUCloud VMware Cloud Director (VCD) environment beyond the web GUI, note that the authentication method will change following the new AUCloud Portal release on June 18th, 2024.
+If you're interacting with an AUCyber VMware Cloud Director (VCD) environment beyond the web GUI, note that the authentication method will change following the new AUCyber Portal release on June 18th, 2024.
 
 Affected VMware tools and services include, but are not limited to:
 
@@ -26,7 +26,7 @@ Our updated Portal integrates a new identity provider leveraging OIDC, replacing
 
 ## What to do next?
 
-To continue accessing AUCloud vCD instances and using related tools (APIs, Terraform Provider, OVF tool, etc.), consider these authentication methods:
+To continue accessing AUCyber vCD instances and using related tools (APIs, Terraform Provider, OVF tool, etc.), consider these authentication methods:
 
 - Username + Password with a "local" vCD user
 - Bearer Token
@@ -35,8 +35,8 @@ For detailed guidance on adapting to these changes, please refer to [this guide]
 
 ## Getting Support
 
-Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
+Please refer to [this guide](../support/index.md) for information on getting support in general at AUCyber.
 
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucloud.com.au](mailto:support@aucloud.com.au).
+For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucyber.com.au](mailto:support@aucyber.com.au).
   
   ![Help](./assets/help.png)

@@ -11,7 +11,7 @@ jobs:
     if: github.server_url	== 'https://github.com'
     runs-on: ubuntu-latest
     env:
-      SITE_URL: https://docs.australiacloud.com.au/
+      SITE_URL: https://docs.aucyber.com.au/
       EDIT_URL: https://github.com/aucloud/aucloud.github.io/edit/main/docs
       REPO_URL: https://github.com/aucloud/aucloud.github.io
     steps:

@@ -3,20 +3,15 @@ title: Contacting Support
 description: Contacting Support
 ---
 
-## AUCloud Support
+## AUCyber Support
 
-Our AUCloud support team is here to ensure your services with AUCloud are always operating seamlessly. AUCloud offers support to customers between 8:00am to 6:00pm Monday to Friday AEST, with 24/7 emergency support at hand.
+Our AUCyber support team is here to ensure your services with AUCyber are always operating seamlessly. AUCyber offers support to customers between 8:00am to 6:00pm Monday to Friday AEST, with 24/7 emergency support at hand.
 
-If you need assistance, you can contact AUCloud Support by:
+If you need assistance, you can contact AUCyber Support by:
 
-- Emailing AUCloud Support at [support@aucloud.com.au](mailto:support@aucloud.com.au)
+- Emailing AUCyber Support at [support@aucyber.com.au](mailto:support@aucyber.com.au)
 
-- Calling AUCloud Support on **1800 282 568**
-
-- Log a support ticket in the [AUCloud Support Portal](./aucloud_support_portal.md), new self-service capability to be launched soon.
-
-  - Enter a Subject and Description with as much information as possible about the issue as this will assist our teams with troubleshooting.
-  - Attachments can be added to provide additional information.
+- Calling AUCyber Support on **1800 282 568**
 
 !!! note
 
@@ -25,22 +20,19 @@ If you need assistance, you can contact AUCloud Support by:
 
 ## 24/7 Support
 
-If you require emergency support, you will need to do one of the following:
+If you require emergency support, you will need to call AUCyber on **1800 282 568**. 
 
-- Log a support ticket in the [AUCloud Support Portal](./aucloud_support_portal.md)
-- Send an email outlining the issue to [support@aucloud.com.au](mailto:support@aucloud.com.au)
+This will alert our out of hours engineers to investigate the issue/error and provide an update once a solution has been established.
 
-By raising one of the following this will alert our out of hours engineers to investigate the issue/error and provide an update once a solution has been established.
-
-Outside of the standard support hours, AUCloud offer 24/7 emergency support for Priority 1 and Priority 2 incidents.
+Outside of the standard support hours, AUCyber offer 24/7 emergency support for Priority 1 and Priority 2 incidents.
 
 Emergency priority 1 and priority 2 incidents are classified by the following:
 
 **Priority 1 incidents:**
 
-- AUCloud systems are not functioning as expected with high impact on customer operations
+- AUCyber systems are not functioning as expected with high impact on customer operations
 
 **Priority 2 incidents:**
 
-- AUCloud systems are partially usable with medium impact on customer operations
-- Priority 1 fault to which a temporary solution has been applied by AUCloud technicians
+- AUCyber systems are partially usable with medium impact on customer operations
+- Priority 1 fault to which a temporary solution has been applied by AUCyber technicians

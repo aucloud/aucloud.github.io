@@ -56,7 +56,7 @@ plugins:
         - yml
       excluded_files:
         - .pages
-        - aucloud.svg
+        - aucyber.svg
         - "stylesheets/extra.css"
         - "images/favicon.ico"
   - htmlproofer:
@@ -107,14 +107,14 @@ plugins:
       tags_file: tags.md
 repo_name: aucloud/aucloud.github.io
 repo_url: !ENV REPO_URL
-site_description: AUCloud's technical documentation site, managed as code from GitHub
+site_description: AUCyber's technical documentation site, managed as code from GitHub
 site_name: Technical Documentation
 site_url: !ENV SITE_URL
 theme:
   locale: en # The locale for time localizations, default: system's locale
   time_format: "%Y-%m-%d %H:%M:%S" # The format used to display the time
   meta_time_format: "%Y-%m-%d %H:%M:%S"
-  logo: aucloud.svg
+  logo: aucyber.svg
   favicon: images/favicon.ico
   features:
     - content.code.annotate

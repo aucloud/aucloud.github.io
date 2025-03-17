@@ -10,7 +10,7 @@ VMware VMware Cloud Director Availability 3.0 (vCAV) is a single interface for 
 
 ## How VMware Cloud Director Availability Works
 
-**vCAV** is a single appliance that deploys all the services required to operate between an on-premises and the AUCloud environment. It integrates into the on-premises vCenter and connects to the VMware Cloud Director environment and corresponding vCAV appliance through a tunnel node. It provides three core functionalities:
+**vCAV** is a single appliance that deploys all the services required to operate between an on-premises and the AUCyber environment. It integrates into the on-premises vCenter and connects to the VMware Cloud Director environment and corresponding vCAV appliance through a tunnel node. It provides three core functionalities:
 
 - Migrating virtual machines from and to your on-premises vCenter.
 - Protect on-site virtual machines to the VMware Cloud Director environment.
@@ -20,7 +20,7 @@ All of this is managed through a single interface, VMware Cloud Director Availab
 
 ## VMware Cloud Director Availability - Tenant Requirements
 
-The following table lists the Firewall rules required to enable replication from the replication source to AUCloud.
+The following table lists the Firewall rules required to enable replication from the replication source to AUCyber.
 
 | Source | Destination | Port | Protocol | Description |
 | ---    | ---         | ---  | ---      | ---         |
@@ -50,7 +50,7 @@ The tenant deployment process is like all typical VMware OVF deployments. The te
 - **Tunnel Node.** This will connect your on-prem vCenter directly with the VMware Cloud Director environment.
 - **User Interface (UI).** Once you finish the configuration wizard, the UI plugin will be loaded into your vCenter on-prem environment.
 
-Prior to deploying the appliance, AUCloud will provide you with three pieces of information:
+Prior to deploying the appliance, AUCyber will provide you with three pieces of information:
 
 - The tunnel endpoint
 - Account credentials
@@ -123,11 +123,11 @@ The appliance is deployed now. However, you still need to **configure vCAV**:
 
 ![SSLCert](./assets/sslcert.png)
 
-h. Proceed to the configure **Cloud Details** by pairing up your on prem and AUCloud sites.
+h. Proceed to the configure **Cloud Details** by pairing up your on prem and AUCyber sites.
 
 i. Define the Public API Endpoint: [https://vcav.sz101.australiacloud.com.au:443](https://vcav.sz101.australiacloud.com.au/)
 
-j. Configure your organization’s credentials for logging in to the cloud site. Type in **Organization** **Admin** (e.g.: username@organization-name)  and the corresponding **Password** as provided by AUCloud.
+j. Configure your organization’s credentials for logging in to the cloud site. Type in **Organization** **Admin** (e.g.: username@organization-name)  and the corresponding **Password** as provided by AUCyber.
 
 k. **Optional**: Select **Allow Access from** Cloud. If you **select** this feature, the cloud provider and organization administrators can access and perform certain operations through the **VMware Cloud Director Availability Port**. Without authenticating to the on-premises site, users can:
 
@@ -190,7 +190,7 @@ Configure outgoing replications to secure a local workload by replicating it to 
 
 After deployment, you can configure local replications. This process is required if you want to replicate **from** the cloud **to** the local vCenter or use the **reverse** replication after a failover.
 
-a. Log in to the **AUCloud Portal**, enter VMware Cloud Director, click on the hamburger button and then on **Availability**.
+a. Log in to the **AUCyber Portal**, enter VMware Cloud Director, click on the hamburger button and then on **Availability**.
 
 ![Availability](./assets/availability.png)
 

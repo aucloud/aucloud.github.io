@@ -4,7 +4,7 @@ description: Prerequisites For Kubernetes Cluster creation
 ---
 
 ## Overview
-This document is aimed to provide AUCloud tenancy administrators an overview on the prerequisites that are required to be setup before a Kubernetes cluster can be deployed.
+This document is aimed to provide AUCyber tenancy administrators an overview on the prerequisites that are required to be setup before a Kubernetes cluster can be deployed.
 
 The below prerequisites *must* be completed before [Provisioning clusters from the VMware Cloud Director UI](./provisioning_clusters_vcd_ui.md)
 

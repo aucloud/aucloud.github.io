@@ -1,15 +1,15 @@
 ---
-title: AUCloud Kubernetes Service
-description: Documentation on AUCloud's Kubernetes offering, based on Tanzu Kubernetes Grid and VMware Cloud Director.
+title: AUCyber Kubernetes Service
+description: Documentation on AUCyber's Kubernetes offering, based on Tanzu Kubernetes Grid and VMware Cloud Director.
 ---
 
 
 
 ## Overview 
-The AUCloud Kubernetes service is a self-service enterprise grade Kubernetes Infrastructure based on VMware Tanzu Kubernetes Grid, which is certified to be compatible with upstream Kubernetes.
-the service is integrated with VMware Cloud Director. Users provision clusters to their NSX-T backed VDC. The clusters come with pre-configured integrations with AUCloud's network and storage fabric to maximise performance.
+The AUCyber Kubernetes service is a self-service enterprise grade Kubernetes Infrastructure based on VMware Tanzu Kubernetes Grid, which is certified to be compatible with upstream Kubernetes.
+the service is integrated with VMware Cloud Director. Users provision clusters to their NSX-T backed VDC. The clusters come with pre-configured integrations with AUCyber's network and storage fabric to maximise performance.
 
-Kubernetes is a popular open-source software system that helps automate the management and deployment of containerized applications. Containers are a way to package an application along with its dependencies, making it easier to move between different computing environments. With AUCloud's Kubernetes service, you can easily deploy and manage these containers at scale, allowing you to run complex applications reliably and efficiently on a cluster of computers. Kubernetes takes care of tasks such as scheduling containers to run on specific nodes, managing storage, and load balancing traffic between containers.
+Kubernetes is a popular open-source software system that helps automate the management and deployment of containerized applications. Containers are a way to package an application along with its dependencies, making it easier to move between different computing environments. With AUCyber's Kubernetes service, you can easily deploy and manage these containers at scale, allowing you to run complex applications reliably and efficiently on a cluster of computers. Kubernetes takes care of tasks such as scheduling containers to run on specific nodes, managing storage, and load balancing traffic between containers.
 
 
 ## Getting started

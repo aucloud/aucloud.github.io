@@ -102,7 +102,7 @@ This will enable the following IP range `10.10.1.0/24` internet access
 
 ## Deploy and configure a guest VM
 
-In this example we will be deploying a ubuntu guest VM from an AUCloud provided template, installing a GUI, installing necessary tools to connect, configure and maintain a Kubernetes cluster on VCD
+In this example we will be deploying a ubuntu guest VM from an AUCyber provided template, installing a GUI, installing necessary tools to connect, configure and maintain a Kubernetes cluster on VCD
 
 - Log into VCD as a user with system administrator rights, or a provider
 - Navigate to "Applications"

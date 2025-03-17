@@ -1,6 +1,6 @@
 ---
-title: AUCloud Sovereignty Zones
-description: AUCloud Sovereignty zones and service availability within those zones
+title: AUCyber Sovereignty Zones
+description: AUCyber Sovereignty zones and service availability within those zones
 tags:
     - zones
 ---
@@ -15,7 +15,7 @@ tags:
 | Melbourne | MSZ                       |
 
 !!! note "Global Services"
-Global services are PaaS or SaaS applications delivered by AUCloud across sovereignty zones (per community environment). If you believe you have requirements above this contact your CSM.
+Global services are PaaS or SaaS applications delivered by AUCyber across sovereignty zones (per community environment). If you believe you have requirements above this contact your CSM.
 
 ## Service availability
 
@@ -38,11 +38,11 @@ Global services are PaaS or SaaS applications delivered by AUCloud across sovere
 | Storage as a Service (Object Storage)                  | Sovereign Cloud                  | CSZ    | Object lock available                                                                                                           | UI within VCD via Object Storage Extension                   |
 |                                                        | Sovereign Cloud                  | SSZ    | Object lock available                                                                                                           | UI within VCD via Object Storage Extension                   |
 | Microsoft 365 Backup aaS                               | Sovereign Cloud         | Global | Veeam M365 backup v6                                                                                                            | -                                                            |
-| Backup as a Service - for VMs on AUCloud IaaS          | Sovereign Cloud                  | CSZ    | Veeam B&R version 11                                                                                                            | UI within VCD, Tiered storage across NVMe and Object Storage |
+| Backup as a Service - for VMs on AUCyber IaaS          | Sovereign Cloud                  | CSZ    | Veeam B&R version 11                                                                                                            | UI within VCD, Tiered storage across NVMe and Object Storage |
 |                                                        | Sovereign Cloud                  | SSZ    | Veeam B&R version 11                                                                                                            | UI within VCD, Tiered storage across NVMe and Object Storage |
 |                                                        | Sovereign Cloud                  | BSZ    | Veeam B&R version 11                                                                                                            | UI within VCD, Tiered storage across NVMe and Object Storage |
 |                                                        | Sovereign Cloud                  | MSZ    | Veeam B&R version 11                                                                                                            | UI within VCD, Tiered storage across NVMe and Object Storage |
-| Backup as a Service - for VMs outside of AUCloud IaaS  | -                     | Global | Veeam service provider console (cloud connect) v6                                                                               | Tiered storage across NVMe and Object Storage                |
+| Backup as a Service - for VMs outside of AUCyber IaaS  | -                     | Global | Veeam service provider console (cloud connect) v6                                                                               | Tiered storage across NVMe and Object Storage                |
 | Security Operations Centre as a Service                | Sovereign Cloud         | Global | -                                                                                                                               | -                                                            |
 | Sovereign Bridge (network connectivity)                | Sovereign Cloud                  | CSZ    | CDC - Connect & NextDC Axon                                                                                                     | -                                                            |
 |                                                        | Sovereign Cloud                  | SSZ    | CDC - Connect & NextDC Axon                                                                                                     | -                                                            |

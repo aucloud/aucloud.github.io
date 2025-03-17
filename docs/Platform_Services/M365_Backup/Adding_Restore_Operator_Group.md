@@ -1,6 +1,6 @@
 **Adding an Azure Security Group to control Restore Operators**
 
-It is suggested to create an **Azure Group** where AUCloud can configure the **group** to have Restore Operator privileges. This way; customers can control the members of the group through their Azure Active Directory.
+It is suggested to create an **Azure Group** where AUCyber can configure the **group** to have Restore Operator privileges. This way; customers can control the members of the group through their Azure Active Directory.
 
 
 Please follow the below instructions to set this up:

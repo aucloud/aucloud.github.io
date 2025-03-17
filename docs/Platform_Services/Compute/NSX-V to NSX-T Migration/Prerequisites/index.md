@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provided a tool that will migrate tenancies from a NSX-V backed VDC to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that underpin the AUCloud platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
+This page will outline some of the prerequisite actions that may be required before a tenancy can be migrated from NSX-V to NSX-T.  VMware have provided a tool that will migrate tenancies from a NSX-V backed VDC to NSX-T.  The tool makes a lot of network changes across multiple systems (NSX-V, NSX-T, VCD and vSphere) that underpin the AUCyber platform.  Using the migration tool allows for minimal service interruptions and downtime during the migration process.  Full details on the migration tool are found in the links at the bottom of this article.
 
 This article also outlines some caveats and details related to other products integrated to the platform.  These are in relation to:
 
@@ -18,7 +18,7 @@ This article also outlines some caveats and details related to other products in
 
 ## Assessment
 
-The VMware NSX Migration for VMware Cloud Director will first run a pre-check analysis of a customers tenancy.  The assessment may identify issues that will need to be corrected before the migration can happen and AUCloud migration technical resources will be in direct contact before migration happens for any identified issues.  Below is a list of a few common prerequisites:
+The VMware NSX Migration for VMware Cloud Director will first run a pre-check analysis of a customers tenancy.  The assessment may identify issues that will need to be corrected before the migration can happen and AUCyber migration technical resources will be in direct contact before migration happens for any identified issues.  Below is a list of a few common prerequisites:
 
 - vApps & Virtual Machines
 	* Virtual Machines cannot be suspended - they need to be powered on or off.

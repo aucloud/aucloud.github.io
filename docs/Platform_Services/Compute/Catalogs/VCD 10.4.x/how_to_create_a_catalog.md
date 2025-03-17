@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-AUCloud provides a public catalog for you to use that contains standard virtual machine (VM) sizes and operating systems. The public catalog is a good place to start when you first deploy VMs into VMware Cloud Director. However, you may want to create your own catalogs, containing specific applications or gold images, which you can then use to deploy VMs quickly.
+AUCyber provides a public catalog for you to use that contains standard virtual machine (VM) sizes and operating systems. The public catalog is a good place to start when you first deploy VMs into VMware Cloud Director. However, you may want to create your own catalogs, containing specific applications or gold images, which you can then use to deploy VMs quickly.
 
 ## Create an empty catalog
 
@@ -25,7 +25,7 @@ AUCloud provides a public catalog for you to use that contains standard virtual 
 
 1. In the _Create Catalog_ dialog box, **Name** the catalog and give it a **Description** if needed.
 
-1. To specify a storage policy for the catalog, select the **Pre-provision on specific storage policy** option then select the desired **Storage Policy**. The storage policy is dependent on what is preferred at the time your Org VDC is created. _Contact AUCloud for more information on different storage policies._
+1. To specify a storage policy for the catalog, select the **Pre-provision on specific storage policy** option then select the desired **Storage Policy**. The storage policy is dependent on what is preferred at the time your Org VDC is created. _Contact AUCyber for more information on different storage policies._
 
     ![Create Catalog](./../assets/create_catalog.png)
 

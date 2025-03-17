@@ -1,15 +1,15 @@
 ---
 title: Portal (New)
-description: The AUCloud Portal provides the front door access, account management to AUCloud's infrastructure services.
+description: The AUCyber Portal provides the front door access, account management to AUCyber's infrastructure services.
 tags:
     - portal
 ---
 
-## AUCloud VMWare Cloud Director (vCD) Portal Overview
+## AUCyber VMWare Cloud Director (vCD) Portal Overview
 
-AUCloud is releasing a new VMWare Cloud Director (vCD) Portal that is built to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
+AUCyber is releasing a new VMWare Cloud Director (vCD) Portal that is built to provide a flexible and secure platform for faster feature development for our customers. As part of the initial release, we are modernising our identity provider solution which provides customers the following benefits:
 
-- Streamlined access to AUCloud's products
+- Streamlined access to AUCyber's products
 - Single-Sign-On (SSO) to VMWare Cloud Director once authenticated
 - Allow users the ability to manage their own passwords
 - Additional functionality to manage password reset intervals
@@ -49,7 +49,7 @@ The way that you access key features will change as a result of this release. Th
 ![migration-state](./assets/portal-migration-state.png)
 
 - We will be copying all users and permissions over to our new identity provider.
-- AUCloud's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. 
+- AUCyber's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from migrating existing passwords and 2FA devices to our new Portal. 
 - This will create an **additional** account for all users in our new Portal.
 
 ### Stage 3: Accessing the new vCD Portal
@@ -91,9 +91,9 @@ Please refer to [this guide](./portal-account-self-mgmt.md) for more details on 
 
 ## Getting Support
 
-Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
+Please refer to [this guide](../support/index.md) for information on getting support in general at AUCyber.
 
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucloud.com.au](mailto:support@aucloud.com.au).
+For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucyber.com.au](mailto:support@aucyber.com.au).
   
   ![Help](./assets/help.png)
 

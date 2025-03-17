@@ -1,6 +1,6 @@
 ---
 title: Compute
-description: AUCloud Compute Solutions offers standard VM sizes, operating systems, and customizable virtual machines for VMware Cloud Director deployment. Connect to the SDDC using a dedicated connection and manage virtual machines through the API with PowerCLI and Terraform. Easily create, move, and manage vApps, customize settings, and work with OVF files
+description: AUCyber Compute Solutions offers standard VM sizes, operating systems, and customizable virtual machines for VMware Cloud Director deployment. Connect to the SDDC using a dedicated connection and manage virtual machines through the API with PowerCLI and Terraform. Easily create, move, and manage vApps, customize settings, and work with OVF files
 tags:
     - vmware-cloud-director
 ---
@@ -15,7 +15,7 @@ tags:
 
 **SDDC**: Access the SDDC from the ESG using a dedicated connection. It has a firewall and NSX-T Logical Load-Balancer for high availability and traffic distribution.
 
-[**Using the API:**](./Using_the_API/establishing_a_connection_to_aucloud_with_powercli.md) The API allows you to connect to the AUCloud platform via PowerCLI and to use Terraform against AUCloud's implementation of VMware Cloud Director 
+[**Using the API:**](./Using_the_API/establishing_a_connection_to_aucloud_with_powercli.md) The API allows you to connect to the AUCyber platform via PowerCLI and to use Terraform against AUCyber's implementation of VMware Cloud Director 
 
 **Working with Virtual Machines**:
 

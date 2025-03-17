@@ -13,7 +13,7 @@ arqit
 arqits
 aspx
 aucloud
-AUCloud
+aucyber
 australiacloud
 aws
 backend

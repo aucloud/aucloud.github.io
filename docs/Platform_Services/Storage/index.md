@@ -1,11 +1,11 @@
 ---
-title: AUCloud Storage
-description: AUCloud Storage
+title: AUCyber Storage
+description: AUCyber Storage
 ---
 
 ## Overview
 
-AUCloud uses block storage and S3 object storage.
+AUCyber uses block storage and S3 object storage.
 
 Block storage and S3 object storage have some key differences. Block storage is used for fast, random access to data like operating systems and applications. S3 object storage stores data as objects in a flat address space. It's used for large amounts of unstructured data like images, videos, and backups. Block storage is generally faster, but S3 object storage is more scalable and cost-effective.
 
@@ -21,7 +21,7 @@ Block storage allows data to be accessed quickly and directly, making it suitabl
 
 ## What is S3 object storage?
 
-S3 object storage is a secure and reliable solution for storing data in the cloud, with the added benefit of storing data across multiple servers for continued accessibility even in the event of a server failure. The S3 object storage in use at AUCloud has features to protect data, such as encryption, access controls, versioning, life cycle policies and object lock.
+S3 object storage is a secure and reliable solution for storing data in the cloud, with the added benefit of storing data across multiple servers for continued accessibility even in the event of a server failure. The S3 object storage in use at AUCyber has features to protect data, such as encryption, access controls, versioning, life cycle policies and object lock.
 
 S3 storage has several security features to protect data:
 

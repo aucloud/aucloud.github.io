@@ -4,7 +4,7 @@ description: Provisioning clusters from the VMware Cloud Director UI
 ---
 
 ## Overview
-This document is aimed to provide AUCloud tenancy administrators an overview on how to deploy a kubernetes cluster within VMware Cloud Director.
+This document is aimed to provide AUCyber tenancy administrators an overview on how to deploy a kubernetes cluster within VMware Cloud Director.
 
 Following the steps outlined in this document will create a Kubernetes cluster consisting of: three control plane nodes; a single worker node; and a load balancer configured to present the kubernetes (control plane) API.
 
@@ -61,7 +61,7 @@ Official Kubernetes documentation on [Components](https://kubernetes.io/docs/con
     !!! note
         Best practice is at least 3 nodes for the control plane to provide redundancy for ETCD.
         
-        Further information about AUCloud's node sizing, please see [AUCloud KubernetesCluster sizing guide](./cluster_sizing_guide.md).
+        Further information about AUCyber's node sizing, please see [AUCyber KubernetesCluster sizing guide](./cluster_sizing_guide.md).
         
         For more information about kubernetes control planes, please see [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components)
 

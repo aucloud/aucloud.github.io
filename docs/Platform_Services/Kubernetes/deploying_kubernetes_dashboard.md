@@ -7,8 +7,8 @@ description: Quick-start to deploy the Kubernetes dashboard and access from your
 ## Overview
 
 The kubernetes dashboard provides a high level overview of what is happening in your cluster. 
-This document describes specifically how to access the kubernetes dashboard on clusters provisioned in AUCloud.
-Deploying the Kubernetes Dashboard is [well described](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), this is a quick-start on AUCloud.
+This document describes specifically how to access the kubernetes dashboard on clusters provisioned in AUCyber.
+Deploying the Kubernetes Dashboard is [well described](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), this is a quick-start on AUCyber.
 
 ### Assumptions
 

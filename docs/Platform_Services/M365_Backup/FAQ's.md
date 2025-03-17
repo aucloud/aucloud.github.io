@@ -5,11 +5,11 @@
   - Is the same key used for all customers?
   - Can the customer bring their own key?
 
-During the onboarding process and prior to the first ingest of data, **customers set their own encryption password** for the encryption of backup data. This encryption password is required if data were to be moved out of AUCloud (such as during transition-out). The Veeam backup application stores the password in an encrypted format within the database, AUCloud cannot access the encrypted password and it is the customers responsibility to store the encryption keys.
+During the onboarding process and prior to the first ingest of data, **customers set their own encryption password** for the encryption of backup data. This encryption password is required if data were to be moved out of AUCyber (such as during transition-out). The Veeam backup application stores the password in an encrypted format within the database, AUCyber cannot access the encrypted password and it is the customers responsibility to store the encryption keys.
 
 - Can backups be scanned/sandboxed before restoration?
 
-The primary purpose of the solution is to protect and retain the M365 data, ensuring it can be recovered in case of accidental deletion, data corruption, or other data loss events. Customers do not have access to the backup data other than to perform a search and restore operation. Customers can work with AUCloud to get an export of the backup data if required. Alternatively, customers can restore their M365 data to a Development / Test Microsoft Office 365 instance where security tools and software can be run to inspect, analyse and verify the integrity of the data.  
+The primary purpose of the solution is to protect and retain the M365 data, ensuring it can be recovered in case of accidental deletion, data corruption, or other data loss events. Customers do not have access to the backup data other than to perform a search and restore operation. Customers can work with AUCyber to get an export of the backup data if required. Alternatively, customers can restore their M365 data to a Development / Test Microsoft Office 365 instance where security tools and software can be run to inspect, analyse and verify the integrity of the data.  
 
 - How is data retention handled?
 
@@ -28,7 +28,7 @@ If customers wish to scan the backed-up data for security purposes, such as runn
 
 - How is access managed within your organisation to ensure the confidentiality and integrity of customer backups?
 
-AUCloud implements the principle of least privileged access across all services provided to customers. Access to the back-end Veeam backup for M365 infrastructure is only granted to specified AUCloud backup personnel who are security-cleared at a minimum of NV1 level. The AUCloud 24x7 Security Operations Centre monitors the access of all AUCloud back-end infrastructure to ensure no unauthorised access occurs. 
+AUCyber implements the principle of least privileged access across all services provided to customers. Access to the back-end Veeam backup for M365 infrastructure is only granted to specified AUCyber backup personnel who are security-cleared at a minimum of NV1 level. The AUCyber 24x7 Security Operations Centre monitors the access of all AUCyber back-end infrastructure to ensure no unauthorised access occurs. 
 
 - Are OneDrive, SharePoint and Exchange backups included?
 
@@ -58,15 +58,15 @@ Data sits in our low-cost object storage by default
 
 - Is there accidental deletion coverage with selective rollback
 
-Not possible for customers to delete backup data. This is only controlled by authorised, security-cleared AUCloud engineers
+Not possible for customers to delete backup data. This is only controlled by authorised, security-cleared AUCyber engineers
 
 - Can you offer a smooth migration to M365 from Dropbox (MaaS)
 
-AUCloud do not offer Migration as a Service from Dropbox to M365
+AUCyber do not offer Migration as a Service from Dropbox to M365
 
 - Does the data sit on an Australian server?
 
-Yes, AUCloud is a fully sovereign cloud service provider with data stored in our secure data-centre in Australia and guarantees that no data leaves the country.
+Yes, AUCyber is a fully sovereign cloud service provider with data stored in our secure data-centre in Australia and guarantees that no data leaves the country.
 
 - What are the storage limits
 
@@ -78,7 +78,7 @@ Yes, immutability can be achieved by enabling the ‘object lock’ setting for 
 
 - Is there vendor lock-in and what is the price to move data out?
 
-Customers are not subjected to vendor lock-in to either Veeam, or AUCloud due to data portability, allowing customers to retain their data in a portable format that is independent to Veeam and AUCloud. Through AUCloud’s documented transition-out plan, customers are assisted to transition to a new provider if they choose to. There are no costs to transition out
+Customers are not subjected to vendor lock-in to either Veeam, or AUCyber due to data portability, allowing customers to retain their data in a portable format that is independent to Veeam and AUCyber. Through AUCyber’s documented transition-out plan, customers are assisted to transition to a new provider if they choose to. There are no costs to transition out
 
 - What customer support is available?
 
@@ -91,11 +91,11 @@ Yes this can be set by separating the backup jobs for users with specific retent
 
 - Are there E-discovery features?
 
-Yes, available through the Veeam backup console on a joint call with AUCloud engineers
+Yes, available through the Veeam backup console on a joint call with AUCyber engineers
 
 - Are you SOC II compliant?
 
-AUCloud is ISO27001, Certified Strategic under the DTA’s Hosting Certification Framework and IRAP assessed against PROTECTED controls. Please see [this link](https://docs.australiacloud.com.au/latest/Platform_Overview/Security/security_and_governance/) for our security artefacts.
+AUCyber is ISO27001, Certified Strategic under the DTA’s Hosting Certification Framework and IRAP assessed against PROTECTED controls. Please see [this link](https://docs.aucyber.com.au/latest/Platform_Overview/Security/security_and_governance/) for our security artefacts.
 
 - Can the solution scale up or down based on my usage?
 

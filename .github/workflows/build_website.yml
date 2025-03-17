@@ -30,7 +30,7 @@ jobs:
     - name: Setup doc deploy
       run: |
         git config --global user.name "semantic-release (via Github actions)"
-        git config --global user.email "semantic-release@aucloud.com.au"
+        git config --global user.email "semantic-release@aucyber.com.au"
     - name: Generate a release using mike
       shell: bash
       run: |
@@ -57,7 +57,7 @@ jobs:
     if: github.server_url	== 'https://github.com' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     env:
-      SITE_URL: https://docs.australiacloud.com.au/
+      SITE_URL: https://docs.aucyber.com.au/
       EDIT_URL: https://github.com/aucloud/aucloud.github.io/edit/main/docs
       REPO_URL: https://github.com/aucloud/aucloud.github.io
     steps:
@@ -78,7 +78,7 @@ jobs:
     - name: Setup doc deploy
       run: |
         git config --global user.name "semantic-release (via Github actions)"
-        git config --global user.email "semantic-release@aucloud.com.au"
+        git config --global user.email "semantic-release@aucyber.com.au"
     - name: Check the website
       shell: bash
       run: |

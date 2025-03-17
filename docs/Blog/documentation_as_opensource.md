@@ -1,6 +1,6 @@
 ---
-title: Relaunching AUCloud's documentation as an open source site.
-description: "AUCloud has relaunched it's documentation site from a closed forum, to an open source website managed as code. Read more about the technology and how we manage it using GitHub and GitHub actions."
+title: Relaunching AUCyber's documentation as an open source site.
+description: "AUCyber has relaunched it's documentation site from a closed forum, to an open source website managed as code. Read more about the technology and how we manage it using GitHub and GitHub actions."
 author: Chris Butler
 tags:
   - mkdocs
@@ -14,12 +14,12 @@ tags:
 It still surprises me that some enterprise software products do not provide their documentation openly on the internet.
 As a technologist, when evaluating technology products, whether open source or proprietary, having a robust understanding of the breadth and depth of documentation (and ease of access) is crucial.
 
-AUCloud has recently relaunched it's [documentation site](https://docs.australiacloud.com.au/latest) as a static website, built from a GitHub repository. A number of the hyperscalers use a similar method for their documentation as:
+AUCyber has recently relaunched it's [documentation site](https://docs.aucyber.com.au/latest) as a static website, built from a GitHub repository. A number of the hyperscalers use a similar method for their documentation as:
 
 - The open source documentation core allows users to propose changes to the documentation.
 - Documentation hosted on GitHub becomes searchable within GitHub, embedding it within the workspace of developers.
 
-AUCloud has taken this approach, and extended it to be based on a static-website generator: [`mkdocs`](https://www.mkdocs.org/). Using static website generation provides us some clear advantages:
+AUCyber has taken this approach, and extended it to be based on a static-website generator: [`mkdocs`](https://www.mkdocs.org/). Using static website generation provides us some clear advantages:
 
 - The static website provides a lower-risk vehicle for hosting the documentation from a security point of view;
 - Managing documentation 'as code' allows documentation to be easily integrated in the 'definition of done' in our agile development life cycle;
@@ -28,7 +28,7 @@ AUCloud has taken this approach, and extended it to be based on a static-website
 - We can build with and contribute back to the extended `mkdocs` ecosystem (such as [`Material for mkdocs`](https://squidfunk.github.io/mkdocs-material))
 
 
-The result for AUCloud is an documentation site that is fast, easy to maintain, easily searchable and easily updatable.
+The result for AUCyber is an documentation site that is fast, easy to maintain, easily searchable and easily updatable.
 
 ## Continuous Documentation Integration and Continuous Documentation Delivery (CDI/CDD)
 Our DevOps workflows have to provide functionality for two scenarios:
@@ -37,7 +37,7 @@ Our DevOps workflows have to provide functionality for two scenarios:
    1. There is only one version of the website (the current `main` branch).
    2. External contributions, which are assumed to be "small" must be validated.
 2. A private repository where:
-   1. AUCloud employees may need to stage larger contributions (e.g. for an upcoming product launch).
+   1. AUCyber employees may need to stage larger contributions (e.g. for an upcoming product launch).
       1. Implicitly this implies providing previews of the staged version of the website.
 
 We serve these from a common repository that is synchronized across our internal GitHub Enterprise Server, and the [`github.com` repository](https://github.com/aucloud/aucloud.github.io). On both of these platforms [GitHub pages](https://docs.github.com/en/pages), is the mechanism for serving internal and external copies of the documentation site.
@@ -81,5 +81,5 @@ Current approach taken requires a semi-automated process where pull requests fro
 - Learn more about [`mike`](https://github.com/jimporter/mike) for versioning MkDocs
 
 ## About the Author
-Dr. Chris Butler is National Manager - IT Strategy and Productisation at AUCloud.
-Chris spends his time trying to build cloud native experiences for AUCloud clients and our engineers internally.
+Dr. Chris Butler is National Manager - IT Strategy and Productisation at AUCyber.
+Chris spends his time trying to build cloud native experiences for AUCyber clients and our engineers internally.

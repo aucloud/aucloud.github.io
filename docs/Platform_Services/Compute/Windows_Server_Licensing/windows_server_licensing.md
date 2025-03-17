@@ -7,15 +7,15 @@ tags:
 
 ## Overview
 
-Windows Server licensing for VMs in shared environments must be provided by AUCloud via the Microsoft Service Provider License Agreement (SPLA).
+Windows Server licensing for VMs in shared environments must be provided by AUCyber via the Microsoft Service Provider License Agreement (SPLA).
 
-VMs using the Windows Server OS need to connect to AUCloud’s KMS server to activate the product key to validate that the license has been applied.
+VMs using the Windows Server OS need to connect to AUCyber’s KMS server to activate the product key to validate that the license has been applied.
 
-## Activating Windows Licensing on AUCloud Server templates
+## Activating Windows Licensing on AUCyber Server templates
 
 After deploying your server from the templates, ensure your VM is connected to the Edge Services Gateway (ESG) via a Routed network.
 
-Configure the Firewall settings on your ESG to connect with the AUCloud KMS Server using following rule:
+Configure the Firewall settings on your ESG to connect with the AUCyber KMS Server using following rule:
 
 | Source | Destination | Service | Action |
 | -----  | -----       | ----    | ----   |
@@ -66,5 +66,5 @@ To change to a KMS activation from your MAK type:
 Run these commands:
 
 `slmgr /ipk` (insert Generic Volume Licence Key - see [here](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys) for reference)
-`slmgr.vbs /skms` (insert Canberra or Sydney KMS Server [IP](../../reference_urls.md#aucloud-microsoft-kms-server))
+`slmgr.vbs /skms` (insert Canberra or Sydney KMS Server [IP](../../reference_urls.md#aucyber-microsoft-kms-server))
 `slmgr.vbs /ato`

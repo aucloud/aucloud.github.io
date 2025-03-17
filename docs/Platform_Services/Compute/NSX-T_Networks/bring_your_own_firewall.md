@@ -7,11 +7,11 @@ tags:
 
 ## Overview
 
-The AUCloud Customer Infrastructure-as-a-Service (IaaS) platform is underpinned by VMware vSphere with network virtualisation services provided by VMware NSX-T. Within a customer tenancy, an Edge Gateway is the default tenancy boundary enforcement appliance and provides Layer 2-4 firewall, IPSec VPN, NAT and routing services. Customers have the option of complementing the Edge Gateway with a bring-you-own firewall service to introduce more advanced security functionality such as Layer 7 firewall services, Intrusion Prevention and Anti-Virus filtering. In this architecture the Edge Gateway is still present but will likely only perform routing to the chosen firewall appliance.
+The AUCyber Customer Infrastructure-as-a-Service (IaaS) platform is underpinned by VMware vSphere with network virtualisation services provided by VMware NSX-T. Within a customer tenancy, an Edge Gateway is the default tenancy boundary enforcement appliance and provides Layer 2-4 firewall, IPSec VPN, NAT and routing services. Customers have the option of complementing the Edge Gateway with a bring-you-own firewall service to introduce more advanced security functionality such as Layer 7 firewall services, Intrusion Prevention and Anti-Virus filtering. In this architecture the Edge Gateway is still present but will likely only perform routing to the chosen firewall appliance.
 
-In the Networking environment provided by NSX-T, public IP addresses are not assigned directly to the Edge Gateway or BYOFW device interfaces. As such, when deploying a BYOFW device, public IP addresses can instead be assigned using DNAT and SNAT, while maintaining routing functionality via the Edge Gateway. This simplifies the deployment of a BYOFW device within the AUCloud environment and provides flexibility to use pay-as-you-go public IPv4 address assignment.
+In the Networking environment provided by NSX-T, public IP addresses are not assigned directly to the Edge Gateway or BYOFW device interfaces. As such, when deploying a BYOFW device, public IP addresses can instead be assigned using DNAT and SNAT, while maintaining routing functionality via the Edge Gateway. This simplifies the deployment of a BYOFW device within the AUCyber environment and provides flexibility to use pay-as-you-go public IPv4 address assignment.
 
-The topology below represents a likely architecture for the AUCloud BYOFW solution, which is referenced throughout this document.
+The topology below represents a likely architecture for the AUCyber BYOFW solution, which is referenced throughout this document.
 
 ![BYOFW Topology](./assets/byofw_topology.jpg)
 
@@ -24,9 +24,9 @@ The topology below represents a likely architecture for the AUCloud BYOFW soluti
 
 The first step in the BYOFW solution is to upload the appropriate image file(s) to your content library (if you do not have a content library you can create one by following this [**procedure**](../Catalogs/VCD%2010.4.x/how_to_create_a_catalog.md) for VCD 10.4.x or this [**procedure**](../Catalogs/VCD%2010.5.x%20(new)/how_to_create_a_catalog.md) for VCD 10.5.x) )
 
-Logon to the [**AUCloud Portal**](https://portal.australiacloud.com.au).
+Logon to the [**AUCyber Portal**](https://portal.australiacloud.com.au).
 
-![AUCloud Portal](./assets/aucloud_portal.png)
+![AUCyber Portal](./assets/aucloud_portal.png)
 
 Navigate to the **vCloud** tab and select the **Organisation**, to which you will deploy the **BYOFW** device.
 
@@ -68,7 +68,7 @@ Clicking **NEXT** and finally **FINISH** will see the virtual image uploaded to 
 
 ### Deploy BYOFW Networking and Appliance
 
-Login to your AUCloud **Organisation** and then select the **Virtual Data Center** into which you wish to install the BYOFW virtual appliance.
+Login to your AUCyber **Organisation** and then select the **Virtual Data Center** into which you wish to install the BYOFW virtual appliance.
 
 Once you have entered your **Virtual Data Center** you will need to create, for each subnet you want to logically sit behind the BOYFW, **isolated networks**. You will also need to create a **routed network** for transit between the BYOFW device and Edge Gateway.
 
@@ -124,7 +124,7 @@ An example of a **routed** transit network and two **isolated** networks is show
 
 ![Example Networks](./assets/example_networks.png)
 
-Within the **Canberra Sovereignty Zone (CSZ)** and the **Sydney Sovereignty Zone (SSZ)**, there is a limitation on creating static routes within a tenancy. As such AUCloud personnel must add the required static routes for public IP addressing over the routed transit network. Please raise a support case and advise what public IP addresses will be routed to the **BYOFW** device as well as the **next hop IP address** that should be used (this will be the IP address assigned to the **BYOFW** device on the **routed** transit network. From the example above the **next hop** would be on the **192.168.1.0/24** network and would be the address planned for assignment to the **BYOFW** device. It would **not** be the 192.168.1.1 address as this is assigned to the Edge Gateway).
+Within the **Canberra Sovereignty Zone (CSZ)** and the **Sydney Sovereignty Zone (SSZ)**, there is a limitation on creating static routes within a tenancy. As such AUCyber personnel must add the required static routes for public IP addressing over the routed transit network. Please raise a support case and advise what public IP addresses will be routed to the **BYOFW** device as well as the **next hop IP address** that should be used (this will be the IP address assigned to the **BYOFW** device on the **routed** transit network. From the example above the **next hop** would be on the **192.168.1.0/24** network and would be the address planned for assignment to the **BYOFW** device. It would **not** be the 192.168.1.1 address as this is assigned to the Edge Gateway).
 
 Within the **Brisbane Sovereignty Zone (BSZ)** and the **Melbourne Sovereignty Zone (MSZ)**, this limitation is not present and static routes can be created within tenancies.
 

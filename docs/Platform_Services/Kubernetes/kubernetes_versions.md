@@ -1,16 +1,16 @@
 ---
 title: Supported Kubernetes versions
-description: Supported Kubernetes versions for the AUCloud Kubernetes Service
+description: Supported Kubernetes versions for the AUCyber Kubernetes Service
 ---
 ## Overview
 
-AUCloud's Kubernetes service is based on  [VMware's Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html), combined with the VMware's "[Container Service Extension](https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0.3/rn/vmware-cloud-director-container-service-extension-403-release-notes/index.html)".
+AUCyber's Kubernetes service is based on  [VMware's Tanzu Kubernetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html), combined with the VMware's "[Container Service Extension](https://docs.vmware.com/en/VMware-Cloud-Director-Container-Service-Extension/4.0.3/rn/vmware-cloud-director-container-service-extension-403-release-notes/index.html)".
 
 The version of Kubernetes Grid currently supported is [1.5.4](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html) and [1.6.1](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.6/vmware-tanzu-kubernetes-grid-16/GUID-release-notes.html) click the product version to view details of the component versions within the distribution.
 
 ### Tanzu Kubernetes version
 
-The following kubernetes versions are available in following AUCloud sovereignty Zones, CSZ (Canberra), SSZ (Sydney), BSZ (Brisbane), MSZ (Melbourne)  
+The following kubernetes versions are available in following AUCyber sovereignty Zones, CSZ (Canberra), SSZ (Sydney), BSZ (Brisbane), MSZ (Melbourne)  
 
 |Template name                                 | Kubernetes version | TKG Product Version| Comment          |
 |:---                                          |:---                |:---                |                  |

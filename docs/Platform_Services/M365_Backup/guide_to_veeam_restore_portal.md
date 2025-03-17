@@ -310,7 +310,7 @@ Restore Portal runs the restore operation immediately and opens the Restore Sess
 
 ### Additional Functionality
 
-There are additional features and functionality that can be performed on a secure call with an AUCloud Compute & Storage Engineer. Please contact [Support](../../Platform_Overview/support/index.md) if you wish to perform any of the following:
+There are additional features and functionality that can be performed on a secure call with an AUCyber Compute & Storage Engineer. Please contact [Support](../../Platform_Overview/support/index.md) if you wish to perform any of the following:
 
 - Restore data to a different location/mailbox/tenant
 - Export data as a *pst/msg/zip* file

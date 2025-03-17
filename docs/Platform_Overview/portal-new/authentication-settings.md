@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-This document provides an overview of the authentication settings for the AUCloud Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
+This document provides an overview of the authentication settings for the AUCyber Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
 
 ## Password Reset Timeout
 
@@ -32,14 +32,14 @@ Accounts are not automatically locked out to inactivity. You can log in to your 
 
 To protect against unauthorized access, we have implemented login lockout policies. Here are the details:
 
-- After 5 unsuccessful login attempts, your account will be temporarily locked. Your account administrator can unlock your account by follow [these steps](./portal-users-mgmt.md#unlocking-an-account).  Alternatively, you can [contact AUCloud support](../support/index.md) for assistance.
+- After 5 unsuccessful login attempts, your account will be temporarily locked. Your account administrator can unlock your account by follow [these steps](./portal-users-mgmt.md#unlocking-an-account).  Alternatively, you can [contact AUCyber support](../support/index.md) for assistance.
 - The lockout duration increases incrementally with each failed attempt, up to a maximum of 15 minutes.
 - Failed login attempts are reset after 12 hours.
 
 ## Getting Support
 
-Please refer to [this guide](../support/index.md) for information on getting support in general at AUCloud.
+Please refer to [this guide](../support/index.md) for information on getting support in general at AUCyber.
 
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucloud.com.au](mailto:support@aucloud.com.au).
+For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucyber.com.au](mailto:support@aucyber.com.au).
   
   ![Help](./assets/help.png)

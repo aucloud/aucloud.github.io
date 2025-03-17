@@ -47,7 +47,7 @@ You can also find the OVF Tool User Guide at:
 
 ### Basic import/upload and export/download commands
 
-You will mainly use the OVF Tool to import (deploy/upload) and export (download) VMs or appliances into and out of your AUCloud environment.
+You will mainly use the OVF Tool to import (deploy/upload) and export (download) VMs or appliances into and out of your AUCyber environment.
 
 The basic syntax to do this using the OVF Tool is:
 
@@ -59,7 +59,7 @@ Refer to the OVF Tool User Guide for further commands and switches.
 
 To upload an ovf/ova file:
 
-1. In your AUCloud environment, create a catalog to contain the vApp template.
+1. In your AUCyber environment, create a catalog to contain the vApp template.
 
     ![Catalog](./assets/catalogs.png)
 
@@ -77,9 +77,9 @@ To upload an ovf/ova file:
     - acceptAllEulas indicates that you accept all end user licence agreements
     - overwrite indicates that you're replacing an existing vApp with the new one being uploaded
     - filename is the name of the .vmx file that are importing
-    - username is your AUCloud Portal user ID
-    - apiURL is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCloud Portal](../../../Platform_Overview/portal/api_management.md).
-    - computeServiceID is the ID of your AUCloud compute service (sometimes also called an org or vOrg)
+    - username is your AUCyber Portal user ID
+    - apiURL is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
+    - computeServiceID is the ID of your AUCyber compute service (sometimes also called an org or vOrg)
     - vappTemplate is the ID of the vApp template
     - `catalogName` is the Name of the catalog in which the vApp template is located
 
@@ -115,9 +115,9 @@ To upload an ISO image:
 
     - `sourceType` (or `st`) indicates the type of the source file: `ISO`
     - `path\\filename.iso` is the full location of the source `.iso` file you want to import
-    - `username` is your AUCloud Portal user ID
-    - `apiURL` is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCloud Portal](../../../Platform_Overview/portal/api_management.md).
-    - `computeServiceID` is the ID of your AUCloud compute service (sometimes also called an org or vOrg)
+    - `username` is your AUCyber Portal user ID
+    - `apiURL` is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
+    - `computeServiceID` is the ID of your AUCyber compute service (sometimes also called an org or vOrg)
     - `name` is the name to display for the file in VMware Cloud Director
     - `catalogName` is the Name of the catalog to which you want to upload the file
 
