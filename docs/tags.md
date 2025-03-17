@@ -1,9 +1,10 @@
 ---
-title: Some tags
+title: Tags
 description: Indexing tags across the technical docs site
 ---
 
+# Tags
 
 Following is a list of relevant tags:
 
-[TAGS]
+<!-- material/tags -->

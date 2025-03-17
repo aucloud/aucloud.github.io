@@ -103,8 +103,7 @@ plugins:
       # whether to only check in strict mode
       #strict_only: yes
   - mkdocs-video
-  - tags:
-      tags_file: tags.md
+  - tags
 repo_name: aucloud/aucloud.github.io
 repo_url: !ENV REPO_URL
 site_description: AUCyber's technical documentation site, managed as code from GitHub
