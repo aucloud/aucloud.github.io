@@ -82,5 +82,5 @@ Image 8: Edge Services Gateway configuration viewed in VMware Cloud Director
 
 ## Default Rules on the ESG
 
-- **Internal High**: which allows communication between your vOrg and the AUCloud perimeter firewall.
+- **Internal High**: which allows communication between your vOrg and the AUCyber perimeter firewall.
 - **Default Policy**: set to deny all.

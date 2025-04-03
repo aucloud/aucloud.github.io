@@ -26,7 +26,7 @@ The **Dashboard** tab contains statistics on the VMware Cloud Director backup 
 1. The **Backup Storage** widget reports on status of the backup storage assigned to the organization, on the storage quota assigned, and on the storage size used. Status indicators are as follows:
     - Green — more than 10% of storage space is free.
     - Yellow — less than 10% of storage space is free.
-    - Red – no free space on backup storage (please contact AUCloud Support to increase storage space if required).
+    - Red – no free space on backup storage (please contact AUCyber Support to increase storage space if required).
 
 1. The Last 24 hours/Last 7 days widget reports on the job session results for the corresponding period.
 

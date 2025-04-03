@@ -3,7 +3,7 @@ title: Getting Started
 description: Getting Started
 ---
 
-## Logging in to the AUCloud Portal
+## Logging in to the AUCyber Portal
 
 1. Go to the appropriate [URL](../../Platform_Services/reference_urls.md#portal-ui), depending on the community where your service is located.
 
@@ -38,8 +38,8 @@ After you log in, you will see the portal home page. The portal home page is mad
 |![Announcements Icon](./assets/icons/announcements.png)| **Announcements** | The announcements tab will display all released announcements.|
 |![Activity Icon](./assets/icons/activity.png)| **Activity** | The activity tab contains all the user activities that occur on the portal, Every user can see their own activity by default and administrators can see all account activity.|
 |![Users Icon](./assets/icons/users.png)| **Users** | The users tab is where you can view your own user account. The portal uses a role-based permissions system. If the Create New user radio button does not appear, either you do not have sufficient privileges, or your organisation has not signed the CRISP.|
-|![VMware Cloud Director Icon](./assets/icons/vcloud.png)| **VMware Cloud Director** | After your compute service and Virtual Datacentre (VDC) have been created by AUCloud you can start to build your applications. To do this, you must log in to VMware Cloud Director from the AUCloud portal.|
-|![Billing Icon](./assets/icons/billing.png)| **Billing** | The billing console provides real time information on the consumption of AUCloud services. Portal users can monitor the status of existing purchase orders, download invoices and monitor financial transactions.|
+|![VMware Cloud Director Icon](./assets/icons/vcloud.png)| **VMware Cloud Director** | After your compute service and Virtual Datacentre (VDC) have been created by AUCyber you can start to build your applications. To do this, you must log in to VMware Cloud Director from the AUCyber portal.|
+|![Billing Icon](./assets/icons/billing.png)| **Billing** | The billing console provides real time information on the consumption of AUCyber services. Portal users can monitor the status of existing purchase orders, download invoices and monitor financial transactions.|
 |![Assurance Icon](./assets/icons/assurance.png)| **Assurance** | The Assurance tab provides links to useful documentation. It also contains the link where assurance users can view the Community Rules Information Security Policy (CRISP).|
 |![Support Icon](./assets/icons/support.png)| **Support** | The support tab tracks any issues or feedback you may have with your infrastructure and the virtual estate.|
 |![Settings Icon](./assets/icons/settings.png)| **Settings** | The settings tab contains sections for Security, Announcements and Contacts. It contains the minimum password requirements as set out by the Australian Government ISM.|

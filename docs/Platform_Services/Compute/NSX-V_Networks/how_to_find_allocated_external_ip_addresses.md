@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-To route traffic to your external network (for example internet, PSN) and configure settings such as NAT rules, you need to know your external IP addresses. AUCloud standard IP address allocation is 2 Public IP addresses per Org vDC.
+To route traffic to your external network (for example internet, PSN) and configure settings such as NAT rules, you need to know your external IP addresses. AUCyber standard IP address allocation is 2 Public IP addresses per Org vDC.
 
 ## Find your IP addresses
 

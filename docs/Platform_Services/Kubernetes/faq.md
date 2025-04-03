@@ -1,11 +1,11 @@
 ---
 title: FAQ
-description: Frequently asked questions on AUCloud's Kubernetes Service
+description: Frequently asked questions on AUCyber's Kubernetes Service
 ---
 
 
 ### How much does my Kubernetes cluster cost?
-The AUCloud Kubernetes services charges based on the underlying costs of the VMs provisioned to support the cluster.
+The AUCyber Kubernetes services charges based on the underlying costs of the VMs provisioned to support the cluster.
 No extra / hidden costs exist.
 
 !!! note "Public IP consumption"
@@ -22,17 +22,17 @@ Docker provides a life cycle that simplifies the creation, management, and distr
 
 ### What is the difference between Tanzu and Kubernetes?
 Tanzu is a brand name for a suite of products and services from VMware that help organizations build, run, and manage modern applications on Kubernetes.
-AUCloud's Kubernetes service is based on VMware Tanzu Kubernetes Grid, which is a Kubernetes distribution that packages together open-source technologies and automation tooling to help you get up and running quickly with a production-ready Kubernetes cluster.
+AUCyber's Kubernetes service is based on VMware Tanzu Kubernetes Grid, which is a Kubernetes distribution that packages together open-source technologies and automation tooling to help you get up and running quickly with a production-ready Kubernetes cluster.
 
 
 ### What is the difference between a `node port` a `LoadBalancer` and an `Ingress`?
 A good description of the differences can be found on the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types).
 
-A `NodePort` is a port on a worker node that is exposes a pod directly based on the host network. It provides no redundancy from a pod perspective, and is not recommended for production use. Users of AUCloud's Kubernetes service can use `NodePort` to expose services for testing purposes. To expose to the internet a user will need to create their own DNAT or virtual service.
+A `NodePort` is a port on a worker node that is exposes a pod directly based on the host network. It provides no redundancy from a pod perspective, and is not recommended for production use. Users of AUCyber's Kubernetes service can use `NodePort` to expose services for testing purposes. To expose to the internet a user will need to create their own DNAT or virtual service.
 
-A `LoadBalancer` is a service that exposes a pod via a load balancer. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway. This provides redundancy from a pod perspective, and is recommended for production use. `LoadBalancer` services provide L4 load balancing, and can be used to expose services to the internet. 
+A `LoadBalancer` is a service that exposes a pod via a load balancer. In AUCyber's Kubernetes service this is a virtual service that is created on the edge gateway. This provides redundancy from a pod perspective, and is recommended for production use. `LoadBalancer` services provide L4 load balancing, and can be used to expose services to the internet. 
 
- An `Ingress` is a service that exposes a pod via a load balancer, and provides L7 load balancing. In AUCloud's Kubernetes service this is a virtual service that is created on the edge gateway for common protocols to an ingress controller such as NGINX, Contour or Istio. The ingress controller provides L7 routing to the correct pod.
+ An `Ingress` is a service that exposes a pod via a load balancer, and provides L7 load balancing. In AUCyber's Kubernetes service this is a virtual service that is created on the edge gateway for common protocols to an ingress controller such as NGINX, Contour or Istio. The ingress controller provides L7 routing to the correct pod.
 
 ### What IP should I use for the Kubernetes API?
 
@@ -49,13 +49,13 @@ By *Default* each load balanced service uses a separate public IP by default.
 A free public IP is defined by an IP with no existing NAT rule applied to it, or virtual service bound to it.
 
 
-### Can AUCloud's Kubernetes Service support Windows containers?
-AUCloud's Kubernetes service uses Ubuntu 20.04 as the operating system for all nodes.
-While Windows containers are [possible in Kubernetes](https://kubernetes.io/docs/concepts/windows/intro/), it requires worker nodes running [Windows Server](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/) which is not supported by AUCloud's service.
+### Can AUCyber's Kubernetes Service support Windows containers?
+AUCyber's Kubernetes service uses Ubuntu 20.04 as the operating system for all nodes.
+While Windows containers are [possible in Kubernetes](https://kubernetes.io/docs/concepts/windows/intro/), it requires worker nodes running [Windows Server](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/) which is not supported by AUCyber's service.
 
 
 ### How do I install the `tanzu` CLI on Apple silicon?
-The `tanzu` CLI which is marked for x86 from AUCloud's current experience will run on mac os systems running apple silicon.
+The `tanzu` CLI which is marked for x86 from AUCyber's current experience will run on mac os systems running apple silicon.
 
 The *core* package in the CLI pack also includes additional CLI tools such as `imgpkg` and `ytt` from the open-source [Carvel](https://carvel.dev/) project.
 

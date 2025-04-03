@@ -4,7 +4,7 @@ description: Resizing Kubernetes clusters using VCD
 ---
 
 ## Overview
-This document is aimed to provide AUCloud tenancy administrators an overview on how to resize a kubernetes cluster (Control Plane or Worker Pool) within VMware Cloud Director.
+This document is aimed to provide AUCyber tenancy administrators an overview on how to resize a kubernetes cluster (Control Plane or Worker Pool) within VMware Cloud Director.
 
 Following the steps outlined in this document will upgrade a Kubernetes cluster.
 

@@ -10,9 +10,9 @@ Support for Tanzu packages is pre-installed into the clusters allowing ease use.
 
 
 ## Prerequisites
-- An AUCloud Kubernetes service provisioned cluster
+- An AUCyber Kubernetes service provisioned cluster
 - The [`tanzu` CLI](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html) installed into your development environment
-  - Contact AUCloud support to get access to the latest `tanzu` binaries
+  - Contact AUCyber support to get access to the latest `tanzu` binaries
   - 
 
 

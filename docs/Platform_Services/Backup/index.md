@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The following information has been taken from the **Veeam Backup & Replication version 11 User Guide for VMware vSphere** and is intended to provide relevant information regarding backups within the AUCloud environment.
+The following information has been taken from the **Veeam Backup & Replication version 11 User Guide for VMware vSphere** and is intended to provide relevant information regarding backups within the AUCyber environment.
 
 The full copy of the Veeam documentation can be found online [here](https://helpcenter.veeam.com/docs/backup/vsphere/about_backup.html?ver=110) or by downloading the [PDF](https://www.veeam.com/veeam_backup_11_0_user_guide_vsphere_pg.pdf).
 
@@ -82,7 +82,7 @@ Capacity Tier is an additional tier of storage that can be attached to a scale-o
 
 !!! note
 
-    Pricing for Backup in the AUCloud Pricing Guide assumes data will be transferred to Capacity Tier Storage after one month by default.
+    Pricing for Backup in the AUCyber Pricing Guide assumes data will be transferred to Capacity Tier Storage after one month by default.
 
 ## Immutability
 

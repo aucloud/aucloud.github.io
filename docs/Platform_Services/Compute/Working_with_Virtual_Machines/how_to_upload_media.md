@@ -7,7 +7,7 @@ tags:
 
 ### Overview
 
-You may find you need to upload ISO (DVD/CD) or FLP (floppy disk) media to VMware Cloud Director that have already been provided by AUCloud. These media can then:
+You may find you need to upload ISO (DVD/CD) or FLP (floppy disk) media to VMware Cloud Director that have already been provided by AUCyber. These media can then:
 
 - Be consumed by users within your organisation.
 - Facilitate the creation of VMs from scratch, which can then be saved to your catalog for future deployment.

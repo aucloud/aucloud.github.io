@@ -11,7 +11,7 @@ tags:
 
 ## Overview
 
-There are two methods of authenticating yourself in order to connect to AUCloud VCD instances, enabling usage of the VCD APIs, VCD Terraform Provider, VCD's OVF tool, etc. These methods are:
+There are two methods of authenticating yourself in order to connect to AUCyber VCD instances, enabling usage of the VCD APIs, VCD Terraform Provider, VCD's OVF tool, etc. These methods are:
 
 - Username + password
 - Bearer token
@@ -37,7 +37,7 @@ To create this session, you can:
 
 1. Retrieve the username and password of your "local" VCD user.  Follow [this guide for setting up a "local" VCD user](./vcd_local_user_setup.md) if you do not already have one. 
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
-1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
 1. Base64 encode your organization name, username, and password in the format:
 
     ```
@@ -79,7 +79,7 @@ To create this session, you can:
 
 1. Retrieve your manually generated VCD API token.  If you don't have one, follow [this guide to set one up](./create_vcd_api_token.md)
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
-1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
 1. Send a POST request to `https://[VCD API URL]/oauth/tenant/[organization name]/token` with the a x-www-form-urlencoded body containing: `grant_type=refresh_token&refresh_token=[API Token]`
 
     Example:

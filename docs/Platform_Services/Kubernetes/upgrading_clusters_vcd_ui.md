@@ -5,7 +5,7 @@ description: Upgrading Kubernetes clusters using VCD
 
 ## Overview
 
-This document is aimed to provide AUCloud tenancy administrators an overview on how to upgrade kubernetes clusters within VMware Cloud Director (VCD).  
+This document is aimed to provide AUCyber tenancy administrators an overview on how to upgrade kubernetes clusters within VMware Cloud Director (VCD).  
 To see how to upgrade a Kubernetes component version please see [here](./upgrading_component_versions.md)
 
 Following the steps outlined in this document will upgrade a Kubernetes cluster.

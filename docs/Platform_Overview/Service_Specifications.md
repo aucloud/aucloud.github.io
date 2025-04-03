@@ -1,10 +1,10 @@
 # Service Specifications Overview
 
-AUCloud operates from geo-resilient data centres in Canberra, Sydney, Brisbane and Melbourne (CDC Data Centres and NEXTDC). AUCloud's highly qualified team is based locally, with corporate headquarters and our Security Operations Centre based in Canberra, ACT.
+AUCyber operates from geo-resilient data centres in Canberra, Sydney, Brisbane and Melbourne (CDC Data Centres and NEXTDC). AUCyber's highly qualified team is based locally, with corporate headquarters and our Security Operations Centre based in Canberra, ACT.
 
-## AUCloud Automation, Orchestration and Management Portal
+## AUCyber Automation, Orchestration and Management Portal
 
-The AUCloud Management portal is fully API driven and allows for all functions to be performed via the API Gateway or UI. The portal employs a microservices based architecture and employs TLS end to end encryption between the browser and the data store.
+The AUCyber Management portal is fully API driven and allows for all functions to be performed via the API Gateway or UI. The portal employs a microservices based architecture and employs TLS end to end encryption between the browser and the data store.
 
 | Features | Benefits |
 | -----------| -------------|
@@ -18,9 +18,9 @@ The AUCloud Management portal is fully API driven and allows for all functions t
 
 | Mode | Description |
 | ------- | ------- |
-| Internet | Un-metered connectivity to your AUCloud service (included with IaaS pricing) |
+| Internet | Un-metered connectivity to your AUCyber service (included with IaaS pricing) |
 | Direct patch | For existing customers within a CDC site (charges apply) |
-| AUCloud Sovereign Bridge |Connect your on-premise resources to your AUCloud resources via the CDC Data Centre Interconnect, or through the NEXTDC AXON network via ICON or private connection (charges apply) |
+| AUCyber Sovereign Bridge |Connect your on-premise resources to your AUCyber resources via the CDC Data Centre Interconnect, or through the NEXTDC AXON network via ICON or private connection (charges apply) |
 
 
 
@@ -35,7 +35,7 @@ Cloud Director provides role-based access to a HTML 5 web console that allows ad
 | Elastic Virtual Datacenters | Isolated virtual resources, independent role-based authentication and fine grained control |
 | Elastic Scalable VM's | Adjust virtual machine attributes such as CPU, RAM and storage at any time |
 | Applications catalog | Upload applications and OVF files for quick deployment when creating additional Virtual Datacenters |
-| Automation | Supports infrastructure-as-code driven workflows via the AUCloud API gateway |
+| Automation | Supports infrastructure-as-code driven workflows via the AUCyber API gateway |
 | Networking | Advanced networking capabilities powered by NSX which can be isolated or routed through the provided Edge Services Gateway |
 | Edge Gateway | Provides connectivity between one or more Cloud Director external networks and one or more Organisation VDC networks |
 
@@ -57,11 +57,11 @@ Cloud Director provides role-based access to a HTML 5 web console that allows ad
 
 ## Storage (STaaS)
 
-Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCloud service. Cloudian boasts the most compatible S3 API, exposing features including object lock that provides customers with ransomware protection.
+Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCyber service. Cloudian boasts the most compatible S3 API, exposing features including object lock that provides customers with ransomware protection.
 
 | Features | Benefits |
 | -----------| -------------|
-| S3 Compatible | Applications that rely on the S3 API can be migrated to AUCloud without code changes |
+| S3 Compatible | Applications that rely on the S3 API can be migrated to AUCyber without code changes |
 | Scale | Built on scale-out repositories that grow from terabytes to exabytes within a single namespace |
 | Object Lock | Protect data from ransomware with Object Lock for data immutability |
 | Cloud Director OSE | Access buckets from Cloud Director Object Storage Extension within your tenancy |
@@ -76,7 +76,7 @@ Veeam Backup Enterprise Manager supports VMware Cloud Director through a self-se
 | Fully self-manage backups of your VMs and data | <ul><li>Create new backup jobs for objects</li><li>Configure, modify and delete backup and recovery jobs</li><li>Expose reporting information for backups - failed backups, failed restores</li><li>Restore Cloud Director VMs to their original vApps and vApps to the original vDC</li><li>Perform application item restore for SQL Server and Oracle databases</li><li>Restore files from indexed and non-indexed VMs guest file system</li></ul> |
 
 ## M365 Backup (M365 BaaS)
-AUCloud M365 Backup is powered by Veeam Backup for Microsoft Office 365. The M365 administrator will create a backup service account with appropriate permissions and the backup job is configured by AUCloud staff. After initial configuration is complete, users can access a self-service portal to perform restore functions for Microsoft Exchange, OneDrive, SharePoint and Microsoft Teams data.
+AUCyber M365 Backup is powered by Veeam Backup for Microsoft Office 365. The M365 administrator will create a backup service account with appropriate permissions and the backup job is configured by AUCyber staff. After initial configuration is complete, users can access a self-service portal to perform restore functions for Microsoft Exchange, OneDrive, SharePoint and Microsoft Teams data.
 
 | Features | Benefits |
 | -----------| -------------|
@@ -91,11 +91,11 @@ Protections can be set up using either VMware Cloud Director Availability (vCDA)
 | -----------| -------------|
 | Disaster Recovery | Enable protections for vApps and VMs which can be recovered from either the on-premise vCentre plugin or via Cloud Director |
 | Test Failover | Conduct a non-disruptive test of your disaster recovery protection at any time |
-| Migrations | Migrate VMware workloads from on-prem to AUCloud or from one AUCloud data centre to another |
+| Migrations | Migrate VMware workloads from on-prem to AUCyber or from one AUCyber data centre to another |
 
 ## Active Threat Monitoring
 
-AUCloud infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCloud’s internal networks as well as the perimeter protection of all AUCloud customers.
+AUCyber infrastructure and supporting services are monitored by a 24/7 Security Operation Centre (SOC). The SOC provides proactive cyber threat monitoring of AUCyber’s internal networks as well as the perimeter protection of all AUCyber customers.
 
 | Features | Benefits |
 | -----------| -------------|
@@ -106,11 +106,11 @@ AUCloud infrastructure and supporting services are monitored by a 24/7 Security 
 
 ### Sales Support
 
-Support to ensure you are informed about AUCloud services and that you are advised of the right product for your business needs.
+Support to ensure you are informed about AUCyber services and that you are advised of the right product for your business needs.
 
 ### Onboarding Support
 
-AUCloud provides complimentary onboarding assistance via our Customer Success Managers. Our CSM’s are committed to working with you to achieve your business outcomes whether it be a free trial to become familiar with our systems, or a large-scale migration of on-premise systems to cloud.
+AUCyber provides complimentary onboarding assistance via our Customer Success Managers. Our CSM’s are committed to working with you to achieve your business outcomes whether it be a free trial to become familiar with our systems, or a large-scale migration of on-premise systems to cloud.
 
 | Features | Benefits |
 | -----------| -------------|
@@ -119,16 +119,16 @@ AUCloud provides complimentary onboarding assistance via our Customer Success Ma
 | Access to support materials | Technical documentation website available for customers to access user guides and FAQ's |
 | Assistance | We provide guidance to an organisations CISO in order to understand our CRISP. We assist finance and project managers to understand our billing process in order to monitor and control expenditure |
 | Single Point of Contact | Your allocated CSM will be a single point of contact to guide you as your requirements change and will facilitate access to our service experts when required |
-| Engagement at the right time | AUCloud CSM’s will ensure that your staff are engaged at the right time, delivering clear delineation of roles and responsibilities |
+| Engagement at the right time | AUCyber CSM’s will ensure that your staff are engaged at the right time, delivering clear delineation of roles and responsibilities |
 
 ### Ongoing Support
 
-AUCloud support staff are on hand to assist customers with any support issues or queries related to the platform. AUCloud support can be accessed using the following methods:
+AUCyber support staff are on hand to assist customers with any support issues or queries related to the platform. AUCyber support can be accessed using the following methods:
 
 - Phone: 1800 282 568
-- Email: support@aucloud.com.au
-- Knowledge Base: [docs.australiacloud.com.au](https://docs.australiacloud.com.au/)
-- Online: via the AUCloud Customer Support Portal.
+- Email: support@aucyber.com.au
+- Knowledge Base: [docs.aucyber.com.au](https://docs.aucyber.com.au/)
+- Online: via the AUCyber Customer Support Portal.
 
 ### Offboarding Support
 
@@ -137,8 +137,8 @@ Our terms and conditions underpin our commitment to provide an efficient and eff
 | Features | Benefits |
 | -----------| -------------|
 | No contract lock in | Because we offer a true IaaS service there is no contract lock in and understand that customers need to be able to engage and as appropriate, disengage with services easily without penalty or cost |
-| No data egress | AUCloud does not charge for data egress; this eliminates the risk of lock-in compared to other providers who often charge punitive egress and ingress rates for removing your data at the end of a contract |
-| Assisted offboarding process | The CSM assists with the offboarding process as follows: <ul><li>Request for removal of a customer service</li><li>Service termination date</li><li>Handover of data upon the termination of service</li><li>Removal of Services/containers</li><li>Verification is provided once your content is removed from the AUCloud platform</li><li>Final bill</li> |
+| No data egress | AUCyber does not charge for data egress; this eliminates the risk of lock-in compared to other providers who often charge punitive egress and ingress rates for removing your data at the end of a contract |
+| Assisted offboarding process | The CSM assists with the offboarding process as follows: <ul><li>Request for removal of a customer service</li><li>Service termination date</li><li>Handover of data upon the termination of service</li><li>Removal of Services/containers</li><li>Verification is provided once your content is removed from the AUCyber platform</li><li>Final bill</li> |
 
 
 

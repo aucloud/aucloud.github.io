@@ -17,7 +17,7 @@ There are two methods to upload certificates (PEM format only) into the ESG:
 
     !!! note
 
-        There is no method to export the certificate or the private key from the ESG once it is uploaded. Therefore, creating the CSR from the ESG will not provide the ability to download the certificate and private key. AUCloud recommends generating the CSR via an alternate method to the ESG so that the certificate and private key can be saved in an appropriate secure vault in case it needs to be accessed in the future.
+        There is no method to export the certificate or the private key from the ESG once it is uploaded. Therefore, creating the CSR from the ESG will not provide the ability to download the certificate and private key. AUCyber recommends generating the CSR via an alternate method to the ESG so that the certificate and private key can be saved in an appropriate secure vault in case it needs to be accessed in the future.
 
         For both certificate upload methods, there is a specific way in which the Service Certificate needs to be uploaded to include the Intermediate Certificate as outlined in the VMware KB [here](https://kb.vmware.com/s/article/2113945). As explained, if the certificate is uploaded without the Intermediate Certificate then the ESG will not send the Intermediate Certificate as part of the TLS handshake and in most cases will cause certificate chain trust warnings in the browser.
 

@@ -25,9 +25,9 @@ Before you can start building VMs in your VDC, you need to create the network th
 
 First, you need to create a network that can connect to external networks outside your VDC (including the internet). This is called an external routed network. You can find more information about routed networks in [How to create a routed VDC network](../NSX-V_Networks/how_to_create_a_routed_vdc_network.md).
 
-1. Log in to the AUCloud Portal.
+1. Log in to the AUCyber Portal.
 
-    For more detailed instructions, see the [Getting Started Guide](../../../Platform_Overview/portal/getting_started.md) for the AUCloud Portal
+    For more detailed instructions, see the [Getting Started Guide](../../../Platform_Overview/portal/getting_started.md) for the AUCyber Portal
 
 2. Select your account.
 
@@ -186,7 +186,7 @@ Now that you've set up the firewall rules, you can create NAT rules:
 
 1. In the Original Source IP/Range field, enter the range of addresses you created when you created the network in the previous exercise.
 
-1. In the Translated Source IP/Range field, enter one or more of the external IP addresses provided to you by AUCloud.
+1. In the Translated Source IP/Range field, enter one or more of the external IP addresses provided to you by AUCyber.
 
     If you are not sure what your IP addresses are, see [How to find your allocated external IP addresses](../NSX-V_Networks/how_to_find_allocated_external_ip_addresses.md).
 

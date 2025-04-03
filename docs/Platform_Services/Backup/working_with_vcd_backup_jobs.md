@@ -32,7 +32,7 @@ In the **Jobs** tab of the Self-Service Backup Portal, you can perform the fol
 
     !!! note
 
-        A scale out backup repository (SOBR) will be assigned to your vCD tenancy. The SOBR consists of a Primary Tier backup storage appliance to ingest backups and a Capacity Tier appliance (S3 based storage used for longer backup retention and archive purposes. For more information please see the [AUCloud Backup overview](./index.md).
+        A scale out backup repository (SOBR) will be assigned to your vCD tenancy. The SOBR consists of a Primary Tier backup storage appliance to ingest backups and a Capacity Tier appliance (S3 based storage used for longer backup retention and archive purposes. For more information please see the [AUCyber Backup overview](./index.md).
 
     ![GFS Policy](./assets/gfs_retention_policy.png)
 
@@ -58,7 +58,7 @@ In the **Jobs** tab of the Self-Service Backup Portal, you can perform the fol
 
     ![Enable Notifications](./assets/enable_notifications.png)
 
-4. The remaining settings (repository, processing mode, etc.) will be obtained from the repository set up in your tenancy by AUCloud.
+4. The remaining settings (repository, processing mode, etc.) will be obtained from the repository set up in your tenancy by AUCyber.
 
 ## Manage Backup Jobs
 

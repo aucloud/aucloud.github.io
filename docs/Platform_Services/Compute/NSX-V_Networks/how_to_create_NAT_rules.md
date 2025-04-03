@@ -16,7 +16,7 @@ You can use three types of NAT within your Edge Services Gateway (ESG):
 - **Source NAT (SNAT)** \- changes the source IP of the packet; and
 - **NAT64** \- allows access from IPv6 networks to IPv4.
 
-For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCloud.
+For a virtual machine (VM) to access an external network resource from its virtual data centre (VDC), the IP address of its network needs translation to the public internet IP addresses provided by AUCyber.
 
 Note for both DNAT and SNAT:
 

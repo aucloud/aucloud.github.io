@@ -1,6 +1,6 @@
 ---
-title: Establishing a connection to AUCloud platform via PowerCLI
-description: Establishing a connection to AUCloud platform via PowerCLI
+title: Establishing a connection to AUCyber platform via PowerCLI
+description: Establishing a connection to AUCyber platform via PowerCLI
 tags:
     - vmware-cloud-director
     - SDK
@@ -17,13 +17,13 @@ If your system has connection to the internet, you can perform the following to 
 
 ``` > Install-Module VMware.PowerCLI -Scope CurrentUser ```
 
-To establish a connection to AUCloud platform using PowerCLI you will need a local user, and the API server URL of the VMWare Cloud Director instance that you want to connect to. 
+To establish a connection to AUCyber platform using PowerCLI you will need a local user, and the API server URL of the VMWare Cloud Director instance that you want to connect to. 
 
-### Connect to AUCloud using username/password
+### Connect to AUCyber using username/password
 
 1. [Create a local user in VMware Cloud Director](./vcd_local_user_setup.md)
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
-1. Retrieve the API server URL for your VCD tenancy from [the list of AUCloud VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
+1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
 1. Run the following command to establish the connection:
 
     ```
@@ -40,7 +40,7 @@ To establish a connection to AUCloud platform using PowerCLI you will need a loc
 
         **Password** : password of the user you just created
 
-### Connect to AUCloud using session token
+### Connect to AUCyber using session token
 
 1. Create a session using the following PowerShell module:
 
@@ -110,7 +110,7 @@ To establish a connection to AUCloud platform using PowerCLI you will need a loc
 
     In the example above, `71337106a838432097fbf78d869194e6` is the Session-Token and `api-vcd-sz201.eportal.australiacloud.com.au` is the API-URL.
 
-1. Using this token you can establish a connection to the AUCloud platform by performing the following command.
+1. Using this token you can establish a connection to the AUCyber platform by performing the following command.
 
     ```
     > Connect-CIServer -Server <API-URL> -Session <Session-Token>

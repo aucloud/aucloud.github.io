@@ -32,7 +32,7 @@ Initially shared service engine groups, where the resources of service engines a
 
 Dedicated service engine groups, where the resources of service engines are dedicated to a single tenancy are available at an additional cost. Multiple service engine groups can be setup per tenancy, allowing the use of both shared and dedicated service engine groups within a single tenancy, as requirements dictate.
 
-Service engine groups available to the tenancy are setup by AUCloud administrators as part of on-boarding and on-going operations. These do not need to be configured by tenants and are made available automatically.
+Service engine groups available to the tenancy are setup by AUCyber administrators as part of on-boarding and on-going operations. These do not need to be configured by tenants and are made available automatically.
 
 ## NSX-V
 

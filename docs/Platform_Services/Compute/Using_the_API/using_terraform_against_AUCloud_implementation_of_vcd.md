@@ -1,6 +1,6 @@
 ---
-title: Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
-description: Using Terraform against AUCloud's implementation of VMware Cloud Director (vCD)
+title: Using Terraform against AUCyber's implementation of VMware Cloud Director (vCD)
+description: Using Terraform against AUCyber's implementation of VMware Cloud Director (vCD)
 tags:
     - vmware-cloud-director
     - API
@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-In order to configure your AUCloud IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.
+In order to configure your AUCyber IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.
 
 There are currently 2 supported authenticated methods:
 

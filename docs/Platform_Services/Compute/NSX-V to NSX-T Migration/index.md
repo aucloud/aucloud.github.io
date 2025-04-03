@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-As part of a refresh of the various infrastructure services that underpin the AUCloud platform, networking services will be migrated from NSX-V to NSX-T.
+As part of a refresh of the various infrastructure services that underpin the AUCyber platform, networking services will be migrated from NSX-V to NSX-T.
 
 [NSX-T](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-nsx-datasheet.pdf) is VMware's next generation Software Defined Networking (SDN) solution, built from the ground up as an improvement on NSX-V. As such, NSX-T is an entirely new SDN platform, better suited to the requirements of large scale cloud networks. NSX-T also provides the ability to offer additional services, such as Kubernetes Cluster Management, as well as continual support and updates from VMware.
 

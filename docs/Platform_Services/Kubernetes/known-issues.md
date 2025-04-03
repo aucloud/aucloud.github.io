@@ -1,10 +1,10 @@
 ---
 title: Known limitations
-description: Known limitations with AUCloud's Kubernetes Service.
+description: Known limitations with AUCyber's Kubernetes Service.
 ---
 
 ## Overview
-This page describes the known limitations currently of AUCloud's Kubernetes service.
+This page describes the known limitations currently of AUCyber's Kubernetes service.
 If these issues have a significant impact on your experience please let your CSM know to enhance in prioritisation of fixes, as appropriate.
 
 

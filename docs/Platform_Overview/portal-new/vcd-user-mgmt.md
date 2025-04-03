@@ -21,7 +21,7 @@ The steps for doing this are:
 
 ### Find the group associated with a VCD tenancy + Role
 
-1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://app.aucloud.com.au.
+1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://app.aucyber.com.au.
 1. Click "VCD Tenancies":
 
     ![click-vcd-tenancies](./assets/click-vcd-tenancies.png)
@@ -40,7 +40,7 @@ The steps for doing this are:
     ![copy-role](./assets/copy-role.png)
 
 1. You will now have copied the group name associated with that VCD tenancy and role to your clipboard.  You can then [assign the user](#add-a-user-to-a-group) to that group to grant them access to that VCD tenancy, with the role you have selected. 
-    1. For example, the group copied in the above screenshot will grant the user Administrator access to the `aucloud-test` tenancy when the user is assigned to that group.
+    1. For example, the group copied in the above screenshot will grant the user Administrator access to the `aucyber-test` tenancy when the user is assigned to that group.
 
 
 ### Add a user to a group

@@ -10,32 +10,32 @@ tags:
 
 ## Overview
 
-AUCloud can provide licensing for a number of Microsoft; VMware; and Red Hat products when deployed within the AUCloud infrastructure.
-Licensing models may change depending on whether AUCloud's multi-tenant platform is used; or if a customer deploys to a dedicated environment.
+AUCyber can provide licensing for a number of Microsoft; VMware; and Red Hat products when deployed within the AUCyber infrastructure.
+Licensing models may change depending on whether AUCyber's multi-tenant platform is used; or if a customer deploys to a dedicated environment.
 
 ## Operating system licence templates
 
-AUCloud provided templates for Microsoft Windows (various versions); and Red Hat Enterprise Linux by default will use AUCloud provided Licences.
+AUCyber provided templates for Microsoft Windows (various versions); and Red Hat Enterprise Linux by default will use AUCyber provided Licences.
 If you are seeking to Bring Your Own Licence (BYOL), please contact your Customer Success Manager.
 
-## Microsoft Products currently supported by AUCloud
+## Microsoft Products currently supported by AUCyber
 
-Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biztalk Server, etc. For a product not on this list please contact [AUCloud Support](../support/index.md) or your sales team.
+Microsoft's SPLA enables us to sell many products such as Sharepoint Server, Biztalk Server, etc. For a product not on this list please contact [AUCyber Support](../support/index.md) or your sales team.
 
 | Name           | Version     | How                                                                  |
 | -------------- | ----------- | -------------------------------------------------------------------- |
-| Windows Server | 2016        | AUCloud standard template in VCD                                     |
-| Windows Server | 2019        | AUCloud standard template in VCD                                     |
-| Windows Server | 2022        | AUCloud standard template in VCD                                     |
-| BYOL Windows Server   | Any         | Customer provided or AUCloud template, contact support for licensing |
+| Windows Server | 2016        | AUCyber standard template in VCD                                     |
+| Windows Server | 2019        | AUCyber standard template in VCD                                     |
+| Windows Server | 2022        | AUCyber standard template in VCD                                     |
+| BYOL Windows Server   | Any         | Customer provided or AUCyber template, contact support for licensing |
 | SQL Server     | Web    | Customer installed, contact support for licensing                    |
 | SQL Server     | Standard         | Customer installed, contact support for licensing                    |
 | SQL Server     | Datacentre  | Customer installed, contact support for licensing                    |
 | SQL Server     | Developer   | Unsupported, see below for details                                   |
 
-## Microsoft licensing in AUCloud's multi-tenant platform
+## Microsoft licensing in AUCyber's multi-tenant platform
 
-AUCloud licences Microsoft products using the Service Provider License Agreement (SPLA).
+AUCyber licences Microsoft products using the Service Provider License Agreement (SPLA).
 Unfortunately, this does not provide any not for profit or charity options for licensing.
 However, customers can choose to bring their own licences (subject to applicability), through Microsoft's recent improvements in licensing and the Flexible Virtualisation Benefit.
 
@@ -51,9 +51,9 @@ Microsoft provide specific licensing options for some [industries](https://www.m
 
 ### BYOL Windows Server licences
 
-Please note that AUCloud cannot support Customers who wish to bring their own Windows Server licences to our multi-tenant platform as we already provide Windows Server licensing for these servers via Microsoft SPLA. AUCloud cannot 'mix and match' SPLA and FVB Windows Server licensing on these servers.
+Please note that AUCyber cannot support Customers who wish to bring their own Windows Server licences to our multi-tenant platform as we already provide Windows Server licensing for these servers via Microsoft SPLA. AUCyber cannot 'mix and match' SPLA and FVB Windows Server licensing on these servers.
 
-When servers are dedicated to the Customer's use, they may bring their own licensing. Please contact [AUCloud Support](../support/index.md) or your sales team to discuss this in more detail.
+When servers are dedicated to the Customer's use, they may bring their own licensing. Please contact [AUCyber Support](../support/index.md) or your sales team to discuss this in more detail.
 
 
 ### SQL Developer 
@@ -66,11 +66,11 @@ Therefore it can only be installed on a dedicated server, or a virtual machine t
 
 ### BYOL Red Hat licences
 
-AUCloud is a registered CCSP which enables us to provide Red Hat licences to Customers. However, we are not a 'Cloud Access' partner, so cannot support customers who wish to bring their own licences at this time.
+AUCyber is a registered CCSP which enables us to provide Red Hat licences to Customers. However, we are not a 'Cloud Access' partner, so cannot support customers who wish to bring their own licences at this time.
 
-Please contact [AUCloud Support](../support/index.md) or your sales team if you require this service and we can consider your request.
+Please contact [AUCyber Support](../support/index.md) or your sales team if you require this service and we can consider your request.
 
-## AUCloud Hardware dedicated customers
+## AUCyber Hardware dedicated customers
 
 Customers can bring most Microsoft licences to dedicated hardware as, from Microsoft’s perspective, the hardware is no different to the customer running it themselves.
 

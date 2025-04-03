@@ -4,7 +4,7 @@ description: Deleting Kubernetes clusters using VCD
 ---
 
 ## Overview
-This document is aimed to provide AUCloud tenancy administrators an overview on how to delete a kubernetes cluster within VMware Cloud Director.
+This document is aimed to provide AUCyber tenancy administrators an overview on how to delete a kubernetes cluster within VMware Cloud Director.
 
 Following the steps outlined in this document will delete a Kubernetes cluster.
 

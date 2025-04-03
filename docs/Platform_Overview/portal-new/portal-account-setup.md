@@ -14,14 +14,14 @@ If you are looking for a guide on how to create a new user account as an adminis
 
 ### Initial Setup
 
-!!! Note "AUCloud's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
+!!! Note "AUCyber's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
 
-Every customer of AUCloud is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCloud support team](../support/index.md) for assistance.
+Every customer of AUCyber is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCyber support team](../support/index.md) for assistance.
 
 When you have your unique web address for logging in, you can begin setting up your new portal account by following these simple steps:
 
 1. Open the web browser on your device.
-1. Enter the unique web address (URL) you received from AUCloud into the browser's address bar.
+1. Enter the unique web address (URL) you received from AUCyber into the browser's address bar.
 1. This will take you to the login page for your account.
 1. Click **I forgot my password** (this is necessary for setting your password for the first time).
 
@@ -52,7 +52,7 @@ When you have your unique web address for logging in, you can begin setting up y
 
     ![Setup account](./assets/setup-account-5.png)
 
-After verifying your email address you will have successfully logged into the new AUCloud Portal for the first time. 
+After verifying your email address you will have successfully logged into the new AUCyber Portal for the first time. 
 
 From here you can:
 
@@ -60,7 +60,7 @@ From here you can:
 - [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
-If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au
+If you require any further assistance please email the AUCyber Support Desk at support@aucyber.com.au
 
 ### Forgot Password
 
@@ -78,4 +78,4 @@ If you require any further assistance please email the AUCloud Support Desk at s
 
     ![Forgot password](./assets/forgot-password-3.png)
 
-If you require any further assistance please email the AUCloud Support Desk at support@aucloud.com.au
+If you require any further assistance please email the AUCyber Support Desk at support@aucyber.com.au

@@ -1,6 +1,6 @@
 ---
-title: Establishing a connection to AUCloud platform via PowerCLI
-description: Establishing a connection to AUCloud platform via PowerCLI
+title: Establishing a connection to AUCyber platform via PowerCLI
+description: Establishing a connection to AUCyber platform via PowerCLI
 tags:
     - vmware-cloud-director
     - SDK
@@ -17,9 +17,9 @@ If your system has connection to the internet, you can perform the following to 
 
 ``` > Install-Module VMware.PowerCLI -Scope CurrentUser ```
 
-To connect to the AUCloud platform via PowerCLI, you need the API-URL, Org-ID, and User-ID which can be found by:
+To connect to the AUCyber platform via PowerCLI, you need the API-URL, Org-ID, and User-ID which can be found by:
 
-1. Logging into the AUCloud Portal
+1. Logging into the AUCyber Portal
 2. Selecting API Management under your User ICON in the top right menu
 3. Select the Cloud Services tab.
 
@@ -34,19 +34,19 @@ The API Url is listed in `https://<address\>` format and the Username is liste
 
         There are two methods to authenticate with VMware Cloud Director using PowerCLI: username/password or session token. Both methods are discussed in this document.
 
-To establish a connection to AUCloud platform via username and password, perform the following command:
+To establish a connection to AUCyber platform via username and password, perform the following command:
 
 ``` > Connect-CIServer -Server <API-Url> \-org <Org-Id> \-User <User-Id> \-Password <Portal\_Password> ```
 
 !!! note
 
-    **API-Url** :  remove `https://` from the API Url listed on the AUCloud Portal API
+    **API-Url** :  remove `https://` from the API Url listed on the AUCyber Portal API
 
     **User-Id** :  enter the _User-Id_ without _@Org-Id_
 
     **Org-Id** : enter the _Org-Id_ listed under username
 
-To establish a connection to the AUCloud platform via session token, first, a session token must be generated. This can be achieved using the following PowerShell module :
+To establish a connection to the AUCyber platform via session token, first, a session token must be generated. This can be achieved using the following PowerShell module :
 
 ``` powershell
 $Global:Authorization = ""
@@ -98,7 +98,7 @@ Using the username (including the Org-ID) and the API-URL copied from the Portal
 
 !!! note
 
-    **API-Url** :  remove `https://` from the API URL listed on the AUCloud Portal API
+    **API-Url** :  remove `https://` from the API URL listed on the AUCyber Portal API
 
     **User-Id** :  enter the _User-Id_ including _@Org-Id_
 
@@ -108,7 +108,7 @@ A new session token, along with the API-URL will be the output of this command :
 
 In the example above, "71337106a838432097fbf78d869194e6" is the Session-Token and "api-vcd-sz201.eportal.australiacloud.com.au" is the API-URL.
 
-Using this information, you can then establish a connection to the AUCloud platform by performing the following command.
+Using this information, you can then establish a connection to the AUCyber platform by performing the following command.
 
 ```> Connect-CIServer -Server <API-URL> -Session <Session-Token> ```
 

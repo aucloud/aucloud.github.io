@@ -5,7 +5,7 @@ description: Upgrading Kubernetes clusters components using CLI
 
 ## Overview
 
-This document is aimed to provide AUCloud tenancy administrators an overview on how to upgrade kubernetes components within VMware Cloud Director (VCD).  
+This document is aimed to provide AUCyber tenancy administrators an overview on how to upgrade kubernetes components within VMware Cloud Director (VCD).  
 To see how to upgrade a Kubernetes cluster version please see [here](./upgrading_clusters_vcd_ui.md)
 
 ## Upgrading Tanzu Kubernetes components

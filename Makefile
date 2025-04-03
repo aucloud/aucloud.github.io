@@ -5,7 +5,7 @@ install:
 	pip install mkdocs-video
 
 start:
-	mkdocs serve --dev-addr=0.0.0.0:8000 --dirtyreload
+	SITE_URL=http://localhost:8000/ mkdocs serve --dirtyreload
 
 pre-commit-install:
 	pre-commit install

@@ -8,7 +8,7 @@ tags:
 ### Overview
 
 This article is to provide a step by step procedure to perform guest customisation on the newly built VM from a template.
-By default, the vApp templates provided by AUCloud in vCD catalog have guest customisation enabled.
+By default, the vApp templates provided by AUCyber in vCD catalog have guest customisation enabled.
 
 ### Process
 

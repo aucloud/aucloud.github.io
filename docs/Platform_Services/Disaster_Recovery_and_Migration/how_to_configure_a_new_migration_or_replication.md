@@ -24,7 +24,7 @@ When a virtual machine reaches its RPO target, the VMware Cloud Director Availab
 
 You can configure for a virtual machine or a vApp to be migrated to a destination site. After successful failover of the migration to the destination site, you can power on the source virtual machine on the destination site.
 
-1. From the side menu in your Availability service in the AUCloud Portal, select either **Incoming Replication** or **Outgoing Replication**.
+1. From the side menu in your Availability service in the AUCyber Portal, select either **Incoming Replication** or **Outgoing Replication**.
 
     ![Replication selection](./assets/ReplicationSelection.png)
 

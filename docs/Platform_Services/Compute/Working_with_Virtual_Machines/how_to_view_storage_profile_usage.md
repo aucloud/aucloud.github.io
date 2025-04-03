@@ -7,7 +7,7 @@ tags:
 
 ### Overview
 
-Before allocating more disk space in your AUCloud for VMware account, it is useful to check how much of your allocated space has been used.  
+Before allocating more disk space in your AUCyber for VMware account, it is useful to check how much of your allocated space has been used.  
 
 ### Viewing your storage usage (VMware Cloud Director)
 

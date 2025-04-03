@@ -7,7 +7,7 @@ tags:
 
 ### Overview
 
-AUCloud provides a public catalog which contains VM templates with various OS flavours. Each of these VM templates is configured with 1 Hard Disk with the following default disk sizes :  
+AUCyber provides a public catalog which contains VM templates with various OS flavours. Each of these VM templates is configured with 1 Hard Disk with the following default disk sizes :  
 
 | OS  | Disk Size | VM Size |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ It is recommended to utilise this Hard Disk as a dedicated OS drive/partition a
 
 ### Process
 
-The following steps provides guidance on how to resize VM level disk on AUCloud:
+The following steps provides guidance on how to resize VM level disk on AUCyber:
 
 1. Once you are logged in VMware Cloud Director through the portal, navigate to the Virtual Datacentre - _Compute - Virtual Machines_:  
 

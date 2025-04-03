@@ -1,17 +1,17 @@
 ---
-title: How to share catalog library between AUCloud Sovereignty Zones
-description: How to share catalog library between AUCloud Sovereignty Zones
+title: How to share catalog library between AUCyber Sovereignty Zones
+description: How to share catalog library between AUCyber Sovereignty Zones
 tags:
     - vmware-cloud-director
 ---
 
 ## Overview
 
-You can share catalog library between AUCloud Sovereignty Zones (*SZ) by performing Catalog publishing/subscription.
+You can share catalog library between AUCyber Sovereignty Zones (*SZ) by performing Catalog publishing/subscription.
 
 Follow the below steps if you require access to a catalog created in CSZ (Canberra) when in SSZ (Sydney), or vice versa.
 
-## Share catalog library between AUCloud Sovereignty Zones (e.g. CSZ to SSZ)
+## Share catalog library between AUCyber Sovereignty Zones (e.g. CSZ to SSZ)
 
 1. Log in to the environment where the catalog you want to share is stored (e.g. CSZ)
 

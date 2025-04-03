@@ -15,7 +15,7 @@ After the migration existing back-up chains will not allow for in-place back-ups
 
 2. Edit and update existing job to point at the new Organization Virtual Data Center (OrgVDC) and migrated vApps/VMs.
 
-AUCloud recommends "Option 1" as this creates a clean backup chain.
+AUCyber recommends "Option 1" as this creates a clean backup chain.
 
 Restoration of files and entire VMs from previous backups will require restoration to a new location. Restoration of vApps is not supported from the Self-service portal. Should a vApp restoration be required a job may logged with the help desk. VApp/VMs are also to a new vApp.
 
