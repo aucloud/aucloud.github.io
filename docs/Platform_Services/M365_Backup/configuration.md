@@ -60,7 +60,9 @@ To grant the Global Reader role to the Azure AD application, do the following:
 
 3.    Sign in to the Azure portal.
 
-4.    Go to **Microsoft Entra Admin Centre** > **Roles and administrators**.
+4.    Go to **Microsoft Entra Admin Centre** > **Roles and admins**.
+
+    ![M365 Global Reader Assignment](./assets/m365-global-reader-assignment.png)
 
 5.    In the **Administrative roles** list, find the **Global Reader** role and click on it.
 
