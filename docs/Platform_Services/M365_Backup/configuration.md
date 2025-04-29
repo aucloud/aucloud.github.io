@@ -53,6 +53,31 @@ registration.
 
   ![Register an Application](./assets/register_an_application.svg)
 
+
+### Grant Global Reader permission
+
+To grant the Global Reader role to the Azure AD application, do the following:
+
+3.    Sign in to the Azure portal.
+
+4.    Go to **Microsoft Entra Admin Centre** > **Roles and admins**.
+
+    ![M365 Global Reader Assignment](./assets/m365-global-reader-assignment.png)
+
+5.    In the **Administrative roles** list, find the **Global Reader** role and click on it.
+
+6.    In the **Global Reader** window, click **Add assignments**.
+
+The **Add assignment** wizard runs.
+
+1.    In the **Select member(s)** section, click the link.
+
+2.    In the **Select a member** window, select the Azure AD application in the list and click **Select**.
+
+The selected application appears in the **Selected member(s)** list.
+
+1.    Click **Next** and then **Assign** to finish the wizard.
+
 ### Configure Application permissions
 
 Select the newly registered application, select API permissions, and add permissions for:
