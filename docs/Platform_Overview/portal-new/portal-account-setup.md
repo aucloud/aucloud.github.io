@@ -16,39 +16,37 @@ If you are looking for a guide on how to create a new user account as an adminis
 
 !!! Note "AUCyber's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
 
-Every customer of AUCyber is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to [get in touch with the AUCyber support team](../support/index.md) for assistance.
-
-When you have your unique web address for logging in, you can begin setting up your new portal account by following these simple steps:
+You can begin setting up your new portal account by following these simple steps:
 
 1. Open the web browser on your device.
-1. Enter the unique web address (URL) you received from AUCyber into the browser's address bar.
-1. This will take you to the login page for your account.
-1. Click **I forgot my password** (this is necessary for setting your password for the first time).
+1. Enter the URL for the new portal: https://app.aucloud.com.au
+1. Enter the email associated with your old portal account and click 'Log in'.
+1. You will be redirected to auth.aucloud.com.au to log in securely.
+1. Click **Forgot Password?** (this is necessary for setting your password for the first time).
 
-    ![Forgot password](./assets/forgot-password.png)
+    ![Forgot password](./assets/forgot-password.png){: style="width:500px;border:1px solid black;"}
 
-1. Enter your **Email**.
 1. Click **Submit**.
 
-    ![Forgot password](./assets/submit-forgot-password.png)
+    ![Forgot password](./assets/submit-forgot-password.png){: style="width:500px;border:1px solid black;"}
 
 1. An email will be sent to your inbox with instructions to follow to complete your password reset.
 
-    ![Forgot password](./assets/forgot-password-3.png)
+    ![Forgot password](./assets/forgot-password-3.png){: style="width:500px;border:1px solid black;"}
 
 1. You will be prompted to setup your **Mobile Authenticator**. Follow the instructions to install application on your mobile.
 1. For **One-time Code**, enter the code from your **Mobile Authenticator** app.
 1. Click **Submit** to complete the setup.
 
-    ![Setup account](./assets/mfa-setup.png)
+    ![Setup account](./assets/mfa-setup.png){: style="width:500px;border:1px solid black;"}
 
 1. You will be asked to change the password for your account. Enter your **New Password**.
 1. Confirm your new password by enter it again in **Confirm Password**.
 1. Click **Submit**
 
-    ![Setup account](./assets/update-password.png)
+    ![Setup account](./assets/update-password.png){: style="width:500px;border:1px solid black;"}
 
-1. You will be asked to confirm your email address. An email will be sent to your inbox with instructions to follow to confirm your email address.
+1. You will be asked to confirm your email address. An email will be sent to your inbox with instructions to follow to confirm your email address. TODO: is email verification required? It is not required in the current flow
 
     ![Setup account](./assets/setup-account-5.png)
 
@@ -64,18 +62,19 @@ If you require any further assistance please email the AUCyber Support Desk at s
 
 ### Forgot Password
 
-1. Go to your account login page.
-1. Click **I forgot my password**.
-
-    ![Forgot password](./assets/forgot-password.png)
-
+1. Go to the portal login page https://app.aucloud.com.au
 1. Enter your **Email**.
+1. Click **Log In**
+1. Click **Forgot Password?**.
+
+    ![Forgot password](./assets/forgot-password.png){: style="width:500px;border:1px solid black;"}
+
 1. Click **Submit**.
 
-    ![Forgot password](./assets/submit-forgot-password.png)
+    ![Forgot password](./assets/submit-forgot-password.png){: style="width:500px;border:1px solid black;"}
 
 1. An email will be sent to your inbox with instructions to follow to complete your password reset.
 
-    ![Forgot password](./assets/forgot-password-3.png)
+    ![Forgot password](./assets/forgot-password-3.png){: style="width:500px;border:1px solid black;"}
 
 If you require any further assistance please email the AUCyber Support Desk at support@aucyber.com.au
