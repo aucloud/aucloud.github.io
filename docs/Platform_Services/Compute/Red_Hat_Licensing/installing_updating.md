@@ -47,18 +47,21 @@ AUCyber will update as appropriate the latest minor versions. Once running throu
 
 Depending on your version of RHEL, download the appropriate version to the desired guest OS ie `/tmp`  
 
-- [RedHat Enterprise Linux 8 entitlement](./assets/RHE8-2023-06-26-1.0-1.noarch.rpm)
-- [RedHat Enterprise Linux 9 entitlement](./assets/RHE9-2023-06-26-1.0-1.noarch.rpm)
+- [RedHat Enterprise Linux 8 entitlement](./assets/RHEL8-2025-07-03-2.0-1.noarch.rpm)
+- [RedHat Enterprise Linux 9 entitlement](./assets/RHEL9-2025-07-03-2.0-1.noarch.rpm)
+- [RedHat Enterprise Linux 10 entitlement](./assets/RHEL10-2025-07-03-2.0-1.noarch.rpm)
 
 To install run the following appending the version
 
 ```bash
-#Example RHE8
+#Example RHEL8
+sudo rpm -i /tmp/RHEL8-2025-07-03-2.0-1.noarch.rpm
 
-sudo rpm -i /tmp/RHE8-2023-06-26-1.0-1.noarch.rpm
+#Example RHEL9
+sudo rpm -i /tmp/RHEL9-2025-07-03-2.0-1.noarch.rpm
 
-#Example RHE9
-sudo rpm -i /tmp/RHE9-2023-06-26-1.0-1.noarch.rpm
+#Example RHEL10
+sudo rpm -i /tmp/RHEL10-2025-07-03-2.0-1.noarch.rpm
 
 ```
 
@@ -67,11 +70,10 @@ sudo rpm -i /tmp/RHE9-2023-06-26-1.0-1.noarch.rpm
 To uninstall you uninstall based on the RPM name *NOT THE FILE*
 
 ```bash
-#Example RHE8
-
+#Example RHEL8
 sudo rpm -e RHE8-2023-06-26-1.0-1.noarch
 
-#Example RHE9
+#Example RHEL9
 sudo rpm -e RHE9-2023-06-26-1.0-1.noarch
 
 ```
