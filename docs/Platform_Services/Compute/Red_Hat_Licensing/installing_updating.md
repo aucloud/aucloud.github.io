@@ -19,7 +19,7 @@ The AUCyber YUM repositories are at `rhui.australiacloud.com.au`. This domain is
 In order to consume updates the RHEL virtual machines will need to be able to reach `rhui.australiacloud.com.au` over TCP 443.
 Users will need to appropriately configure edge gateway firewalls for their VMware Cloud Director tenancies to allow access outbound to `rhui.australiacloud.com.au`
 
-!!! note: "3rd party internet gateways"
+!!! note "3rd party internet gateways"
     Access to the RHUI infrastructure is explicitly limited to the public IP range allocated to tenancies in AUCyber.
     3rd Party internet gateways may inhibit access.
 
