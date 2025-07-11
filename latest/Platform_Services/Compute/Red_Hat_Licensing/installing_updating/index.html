@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5535,7 +5535,7 @@
 
 
   
-    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Compute/Red_Hat_Licensing/installing_updating.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Compute/Red_Hat_Licensing/installing_updating.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5564,9 +5564,11 @@ This will install AUCybers YUM repositories and copy entitlement certificates to
 <p>The AUCyber YUM repositories are at <code>rhui.australiacloud.com.au</code>. This domain is in public DNS records and your RHEL box, when installed, will need to be able to resolve the address.</p>
 <p>In order to consume updates the RHEL virtual machines will need to be able to reach <code>rhui.australiacloud.com.au</code> over TCP 443.
 Users will need to appropriately configure edge gateway firewalls for their VMware Cloud Director tenancies to allow access outbound to <code>rhui.australiacloud.com.au</code></p>
-<p>!!! note: "3rd party internet gateways"
-    Access to the RHUI infrastructure is explicitly limited to the public IP range allocated to tenancies in AUCyber.
-    3rd Party internet gateways may inhibit access.</p>
+<div class="admonition note">
+<p class="admonition-title">3rd party internet gateways</p>
+<p>Access to the RHUI infrastructure is explicitly limited to the public IP range allocated to tenancies in AUCyber.
+3rd Party internet gateways may inhibit access.</p>
+</div>
 <h2 id="accessing-and-provisioning-from-rhel-isos">Accessing and provisioning from RHEL ISOs<a class="headerlink" href="#accessing-and-provisioning-from-rhel-isos" title="Permanent link">¤</a></h2>
 <p>Users can provision VM's from ISO's in AUCyber's standard catalog.
 VM's are provisioned from ISO's using type 'NEW' rather than type 'From Template'.</p>
@@ -5584,24 +5586,26 @@ VM's are provisioned from ISO's using type 'NEW' rather than type 'From Template
 <h2 id="installing-rhel-entitlements">Installing RHEL entitlements<a class="headerlink" href="#installing-rhel-entitlements" title="Permanent link">¤</a></h2>
 <p>Depending on your version of RHEL, download the appropriate version to the desired guest OS ie <code>/tmp</code>  </p>
 <ul>
-<li><a href="../assets/RHE8-2023-06-26-1.0-1.noarch.rpm">RedHat Enterprise Linux 8 entitlement</a></li>
-<li><a href="../assets/RHE9-2023-06-26-1.0-1.noarch.rpm">RedHat Enterprise Linux 9 entitlement</a></li>
+<li><a href="../assets/RHEL8-2025-07-03-2.0-1.noarch.rpm">RedHat Enterprise Linux 8 entitlement</a></li>
+<li><a href="../assets/RHEL9-2025-07-03-2.0-1.noarch.rpm">RedHat Enterprise Linux 9 entitlement</a></li>
+<li><a href="../assets/RHEL10-2025-07-03-2.0-1.noarch.rpm">RedHat Enterprise Linux 10 entitlement</a></li>
 </ul>
 <p>To install run the following appending the version</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#Example RHE8</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#Example RHEL8</span>
+sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>/tmp/RHEL8-2025-07-03-2.0-1.noarch.rpm
 
-sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>/tmp/RHE8-2023-06-26-1.0-1.noarch.rpm
+<span class="c1">#Example RHEL9</span>
+sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>/tmp/RHEL9-2025-07-03-2.0-1.noarch.rpm
 
-<span class="c1">#Example RHE9</span>
-sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>/tmp/RHE9-2023-06-26-1.0-1.noarch.rpm
+<span class="c1">#Example RHEL10</span>
+sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>/tmp/RHEL10-2025-07-03-2.0-1.noarch.rpm
 </code></pre></div>
 <h2 id="uninstalling-rhel-entitlements">Uninstalling RHEL entitlements<a class="headerlink" href="#uninstalling-rhel-entitlements" title="Permanent link">¤</a></h2>
 <p>To uninstall you uninstall based on the RPM name <em>NOT THE FILE</em></p>
-<div class="highlight"><pre><span></span><code><span class="c1">#Example RHE8</span>
-
+<div class="highlight"><pre><span></span><code><span class="c1">#Example RHEL8</span>
 sudo<span class="w"> </span>rpm<span class="w"> </span>-e<span class="w"> </span>RHE8-2023-06-26-1.0-1.noarch
 
-<span class="c1">#Example RHE9</span>
+<span class="c1">#Example RHEL9</span>
 sudo<span class="w"> </span>rpm<span class="w"> </span>-e<span class="w"> </span>RHE9-2023-06-26-1.0-1.noarch
 </code></pre></div>
 <div class="admonition note">
@@ -5628,7 +5632,7 @@ sudo<span class="w"> </span>rpm<span class="w"> </span>-e<span class="w"> </span
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2025 05:48:37">March 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 10, 2025 06:25:59 UTC">July 10, 2025</span>
   </span>
 
     
@@ -5760,10 +5764,10 @@ sudo<span class="w"> </span>rpm<span class="w"> </span>-e<span class="w"> </span
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
