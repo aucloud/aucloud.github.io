@@ -17,7 +17,7 @@ description: Reference URLs for services in AUCyber
 | URL | Community environment |
 | ---- | ------ |
 | [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Sovereign Cloud |
-| [https://app.aucloud.com.au](https://app.aucloud.com.au) |  Sovereign Cloud |
+| [https://portal.aucyber.com.au](https://portal.aucyber.com.au) |  Sovereign Cloud |
 
 
 ## Portal API endpoints
