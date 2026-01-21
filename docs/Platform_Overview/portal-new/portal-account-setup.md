@@ -19,9 +19,9 @@ If you are looking for a guide on how to create a new user account as an adminis
 You can begin setting up your new portal account by following these simple steps:
 
 1. Open the web browser on your device.
-1. Enter the URL for the new portal: https://app.aucloud.com.au
+1. Enter the URL for the new portal: https://portal.aucyber.com.au
 1. Enter the email associated with your old portal account and click 'Log in'.
-1. You will be redirected to auth.aucloud.com.au to log in securely.
+1. You will be redirected to auth.aucyber.com.au to log in securely.
 1. Click **Forgot Password?** (this is necessary for setting your password for the first time).
 
     ![Forgot password](./assets/forgot-password.png){: style="width:500px;border:1px solid black;"}
@@ -46,11 +46,7 @@ You can begin setting up your new portal account by following these simple steps
 
     ![Setup account](./assets/update-password.png){: style="width:500px;border:1px solid black;"}
 
-1. You will be asked to confirm your email address. An email will be sent to your inbox with instructions to follow to confirm your email address. TODO: is email verification required? It is not required in the current flow
-
-    ![Setup account](./assets/setup-account-5.png)
-
-After verifying your email address you will have successfully logged into the new AUCyber Portal for the first time. 
+You will have successfully logged into the new AUCyber Portal for the first time. 
 
 From here you can:
 
