@@ -14,7 +14,7 @@ This guide will detail how to log into the new Portal with a user that has alrea
 You can follow these steps to access your AUCyber portal.
 
 1. Open the web browser on your device.
-1. Navigate to the new portal https://app.aucloud.com.au
+1. Navigate to the new portal https://portal.aucyber.com.au
 1. Enter your **email** address.
 1. Click **Log In**
 

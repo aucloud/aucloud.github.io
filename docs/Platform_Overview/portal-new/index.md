@@ -16,7 +16,7 @@ AUCyber is releasing a new VMWare Cloud Director (vCD) Portal that is built to p
 
 ### What does this mean for you
 
-Effective 18 June, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
+Effective TBA, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
 
 #### Setting up your new Portal Account
 
