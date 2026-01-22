@@ -11,108 +11,57 @@ This guide is for customers who have an [administrator role](#granting-portal-ad
 ### Getting into the administration console
 1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://app.aucyber.com.au.
    
-2. On the left sidebar, click the **People** tab.
+1. On the left sidebar, click the **People** tab.
    
-   ![People tab](./assets/users-mgmt-1.png)
+    ![People tab](./assets/users-mgmt-1.png){: style="width:300px;border:1px solid black;"}
 
-3. A new tab will open that takes you to the administration console.
-
-    ![Admin console](./assets/users-mgmt-2.png)
+1. The browser will navigate you to the user management page.
 
 ### Adding A New User
-1. Click **Users**.
+1. Click the **Create User** button.
 
-    ![Users tab](./assets/users-mgmt-3.png)
+    ![Add user](./assets/create-user.png){: style="border:1px solid black;"}
 
-1. The **Users** page will open, with a list of users and some controls. Click the **Add user** button.
+1. The create user dialog will open. Enter the users's name, email, password, and set any required permissions using the dropdowns before clicking submit to create the user.
 
-    ![Add user](./assets/users-mgmt-4.png)
+    ![Create user](./assets/create-user-2.png){: style="border:1px solid black;"}
 
-1. The website will navigate to the **Create user** screen.
-
-1. Set any **required user actions** you want the new user to perform using the dropdown menu.
-  
-   - 'Verify email' sends an email to the user to verify their email address. 
-   - 'Update profile' requires user to enter in new personal information. 
-   - 'Update password' requires user to enter in a new password. 
-   - 'Configure OTP' requires setup of a mobile password generator.
-
-    ![Required user actions](./assets/users-mgmt-req-actions.png)
-    ![Required user actions](./assets/users-mgmt-req-actions-2.png)
-
- 1. Enter the new user's email into the **Email** field. Please note this email must not already belong to a Portal user.
-
-    ![Email](./assets/users-mgmt-new-email.png)
-
-1. Choose whether the new account's email is verified. Selecting **No** will force the user to verify their email when they first log in.
-
-    ![Email verified](./assets/users-mgmt-email-verified.png)
-
-1. Enter the new user's **First** and **Last names**.
-
-    ![First and Last names](./assets/users-mgmt-first-last-name.png)
-
-1. The Groups section covers VCD permissions. Please refer to [this]() section for more information.
-
-1. Click **Create**.
-
-    ![Create](./assets/users-mgmt-new-user-create.png)
-
-1. The new user will have been created and the website will navigate to that user's details page.
-
-&nbsp;
+1. The browser will navigate back to the list of people after successfully creating the user. The user will be required to set up an MFA token and reset their password on their first login.
 
 ### Editing a User's Details
+
 #### Getting to the User Details page
-1. Click **Users**.
 
-    ![Users tab](./assets/users-mgmt-3.png)
+1. Click the username of the user you wish to edit. You can also use the search bar to search for the user if required.
 
-1. The **Users** page will open, with a list of users and some controls. Click the username of the user you wish to edit.
-
-    ![Select user](./assets/users-mgmt-select-user.png)
+    ![Select user](./assets/users-mgmt-select-user.png){: style="border:1px solid black;"}
 
 1. The website will navigate to that user's details page.
 
-#### Change personal details
-1. Once on the [user's details page](#getting-to-the-user-details-page), to change **required actions, email, email verified status, First name and Last name**, enter the new details in the relevant fields of this page and press **Save**.
+#### Change personal details and permissions
+1. Once on the [user's details page](#getting-to-the-user-details-page), you can click the **Edit User** button to update that user's details.
 
-    ![Edit user details](./assets/edit-user-details.png)
+    ![Edit user details](./assets/edit-user-details.png){: style="border:1px solid black;"}
 
-1. A toast will pop up informing you of the successful operation.
+1. Update any required details and permissions and click submit.
 
-    ![Successful new password](./assets/users-mgmt-edit-details-success.png)
+    ![Successful new password](./assets/edit-user-details-2.png){: style="border:1px solid black;"}
 
 #### Change password
-1. Once on the [user's details page](#getting-to-the-user-details-page), to change a user's **password**, click the **Credentials** tab.
+1. Once on the [user's details page](#getting-to-the-user-details-page), to change a user's **password**, click the **Reset Password** button.
 
-    ![Credentials tab](./assets/users-mgmt-credentials-tab.png)
+    ![Reset password](./assets/users-mgmt-reset-password.png){: style="border:1px solid black;"}
 
-1. Click **Reset password**.
+1. Type the user's new password in the **Password** and **Confirm Password** input fields and click **Submit**.
 
-    ![Reset password](./assets/users-mgmt-reset-password.png)
+    ![New password](./assets/users-mgmt-new-password.png){: style="border:1px solid black;"}
 
-1. Type the user's new password in the **Password** and **New password confirmation** input fields.
-
-    ![New password](./assets/users-mgmt-new-password.png)
-
-1. By default, the **Temporary** toggle is on. Leaving this as **On** will force the user to reset their password upon logging in with the new password you have set in the step above.
-
-    ![Temporary toggle](./assets/users-mgmt-temporary.png)
-
-1. Click **Save**.
-
-    ![Save](./assets/users-mgmt-save-new-password.png)
-
-1. A confirmation dialog will pop up. To proceed, click **Reset password**.
-
-    ![Reset password](./assets/users-mgmt-reset-password-confirm.png)
-
-1. A toast will pop up informing you of the successful operation.
-
-    ![Successful new password](./assets/users-mgmt-password-reset-success.png)
+1. The users password has now been changed. This is a temporary password, and the user will be prompted to change it on their next login.
 
 #### Unlocking an account
+
+//TODO: the user does not get disabled, there is a temporarily locked field that gets set to true. We do not have access to this in the current user management UI. An API change would be required to expose this and allow it to be changed.
+
 Sometimes, a user may be locked due to multiple failed attempts to log in. To unlock it as a user administrator:
 
 1. Navigate to the [user's details page](#getting-to-the-user-details-page).
@@ -129,51 +78,8 @@ Sometimes, a user may be locked due to multiple failed attempts to log in. To un
 
 #### Granting Portal administration privileges
 
-1. Once on the [user's details page](#getting-to-the-user-details-page), to assign administration privileges, click the **Role mapping** tab.
-
-    ![Role mapping tab](./assets/role-mapping.png)
-
-2. Click **Assign role**.
-  
-    ![Assign role button](./assets/assign-role.png)
-
-3. Click the **Filter by realm roles** dropdown.
-
-    ![Realm roles](./assets/realm-roles.png)
-
-4. Click the **Filter by clients** option.
-
-    ![Filter by clients](./assets/filter-by-clients.png)
-
-5. You will find a list of available roles that the user can be assigned. For an example, a typical user admin would be given the **manage-users**, **view-users** and **query-users** roles in the **realm-management** client. Use the checkboxes to select which roles you want to grant the user.
-
-    ![User admin roles](./assets/user-admin-roles.png)
-
-6. After selecting the roles to grant, click **Assign**.
-
-    ![Assign button](./assets/user-admin-roles-assign.png)
-
-7. The new roles will appear in the table and a toast will inform you of success.
-
-    ![Role mapping success](./assets/roles-assigned.png)
+To assign roles granting a user admin permissions in the portal, simply update that users permissions on the edit user screen (see [Change personal details and permissions](#change-personal-details-and-permissions)).
 
 #### Revoking Portal administration privileges
-1. Once on the [user's details page](#getting-to-the-user-details-page), to assign administration privileges, click the **Role mapping** tab.
 
-    ![Role mapping tab](./assets/role-mapping.png)
-
-1. Use the checkboxes to select which roles you want to revoke from the user.
-
-    ![Revoke checkboxes](./assets/checkbox-unassign-roles.png)
-
-1. Click **Unassign**.
-
-    ![Unassign](./assets/checkbox-unassign-roles-unassign.png)
-
-1. A confirmation dialog will pop up. To proceed, click **Remove**.
-
-    ![Remove](./assets/remove-button.png)
-
-1. The roles will be removed from the user and a toast will notify you of success.
-
-    ![Successfully removed](./assets/remove-roles-success.png)
+To unassign roles granting a user admin permissions in the portal, simply update that user's relevant permission to be 'Unassigned' on the edit user screen (see [Change personal details and permissions](#change-personal-details-and-permissions)).
