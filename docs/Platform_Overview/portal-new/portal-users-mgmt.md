@@ -60,21 +60,17 @@ This guide is for customers who have an [administrator role](#granting-portal-ad
 
 #### Unlocking an account
 
-//TODO: the user does not get disabled, there is a temporarily locked field that gets set to true. We do not have access to this in the current user management UI. An API change would be required to expose this and allow it to be changed.
-
 Sometimes, a user may be locked due to multiple failed attempts to log in. To unlock it as a user administrator:
 
 1. Navigate to the [user's details page](#getting-to-the-user-details-page).
 
-1. In the top right, there will be a toggle displaying the user account as **Disabled**.
+1. On a disabled user, there will be a warning message stating that the user is temporarily locked. To unlock them, click the **Unlock User** button.
+    ![Unlock User](./assets/unlock-user.png){: style="border:1px solid black;"}
 
-    ![Disabled account](./assets/disabled-account.png)
+1. A window will pop up asking you to confirm the action. Click the **Unlock User** button to confirm.
+    ![Unlock User Confirm](./assets/unlock-user-confirm.png){: style="border:1px solid black;"}
 
-1. Click the toggle to **Enable** the user account.
-
-1. The toggle will show **Enabled** and a toast will notify you of success.
-
-    ![Enabled account](./assets/enable-account-success.png)
+1. The user is now unlocked and can attempt to log in once more.
 
 #### Granting Portal administration privileges
 
