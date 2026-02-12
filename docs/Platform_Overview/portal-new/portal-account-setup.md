@@ -51,7 +51,7 @@ You will have successfully logged into the new AUCyber Portal for the first time
 From here you can:
 
 - [Access VMware Cloud Director (VCD) tenancies](./vcd-login.md)
-- [Manage Users and Permissions with your organisation](./vcd-user-mgmt.md)
+- [Manage Users and Permissions with your organisation](./portal-users-mgmt.md)
 - [Account Self Management (user details and password)](./portal-account-self-mgmt.md)
 
 If you require any further assistance please email the AUCyber Support Desk at support@aucyber.com.au

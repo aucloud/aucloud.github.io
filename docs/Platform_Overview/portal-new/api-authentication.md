@@ -36,7 +36,3 @@ For detailed guidance on adapting to these changes, please refer to [this guide]
 ## Getting Support
 
 Please refer to [this guide](../support/index.md) for information on getting support in general at AUCyber.
-
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucyber.com.au](mailto:support@aucyber.com.au).
-  
-  ![Help](./assets/help.png)
