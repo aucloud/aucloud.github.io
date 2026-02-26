@@ -16,7 +16,7 @@ AUCyber is releasing a new VMWare Cloud Director (vCD) Portal that is built to p
 
 ### What does this mean for you
 
-Effective 18 June, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
+Effective TBA, access to administer your VMware Cloud Director (vCD) services will be automatically migrated to the new Portal. This will coincide with a replication of the current Portal User Database and associated vCD permissions to our new Identity provider.
 
 #### Setting up your new Portal Account
 
@@ -81,7 +81,7 @@ Please refer to [this guide](./vcd-login.md) for details on how to login to VCD 
 
 Managing users and permissions in the new Portal will be handled by our new identity provider.  Proving more ways to manage your users, and more fine grained controls over access to your organisation portal, and the VCD tenancies in it. 
 
-Please refer to [this guide](./vcd-user-mgmt.md) for more details on how to manage users and permissions in our new Portal. 
+Please refer to [this guide](./portal-users-mgmt.md) for more details on how to manage users and permissions in our new Portal. 
 
 ### Account Self-Management (user details and password)
 
@@ -92,8 +92,3 @@ Please refer to [this guide](./portal-account-self-mgmt.md) for more details on 
 ## Getting Support
 
 Please refer to [this guide](../support/index.md) for information on getting support in general at AUCyber.
-
-For convenience, once you have [logged in](./portal-login.md) to the Portal, there is a **Help** button on the left sidebar. Click this to open an email to [support@aucyber.com.au](mailto:support@aucyber.com.au).
-  
-  ![Help](./assets/help.png)
-
