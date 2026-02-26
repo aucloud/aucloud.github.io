@@ -16,14 +16,14 @@
         <link rel="prev" href="../portal-users-mgmt/">
       
       
-        <link rel="next" href="../vcd-user-mgmt/">
+        <link rel="next" href="../authentication-settings/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1189,8 +1189,6 @@
       
         
       
-        
-      
     
     
     
@@ -1430,10 +1428,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#logging-in-to-the-portal" class="md-nav__link">
+  <a href="#accessing-a-vcd-instance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Logging in to the Portal
+        Accessing a VCD instance
       
     </span>
   </a>
@@ -1449,34 +1447,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../vcd-user-mgmt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    VCD User Management (for admins)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -6337,10 +6307,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#logging-in-to-the-portal" class="md-nav__link">
+  <a href="#accessing-a-vcd-instance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Logging in to the Portal
+        Accessing a VCD instance
       
     </span>
   </a>
@@ -6400,33 +6370,25 @@
 
 <div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
 <p>In the new Portal, each user's VCD permissions are tied to their AUCyber login, streamlining the workflow to reach the user's VCD instance(s). This guide details the process of logging into an existing Portal account and accessing a VCD instance that account has been given access to.</p>
-<h3 id="logging-in-to-the-portal">Logging in to the Portal<a class="headerlink" href="#logging-in-to-the-portal" title="Permanent link">¤</a></h3>
-<p>Every customer of AUCyber is provided with a unique web address (URL) for logging in, which is specific to their account. Our Customer Success team would have shared this web address with you. If you're having trouble finding it, don't hesitate to <a href="../../support/">get in touch with the AUCyber support team</a> for assistance.</p>
-<p>When you have your unique web address for logging in, you can follow these steps to access your VMWare Cloud Director tenancies.</p>
+<h3 id="accessing-a-vcd-instance">Accessing a VCD instance<a class="headerlink" href="#accessing-a-vcd-instance" title="Permanent link">¤</a></h3>
 <ol>
-<li>Open the web browser on your device.</li>
-<li>Enter the unique web address (URL) you received from AUCyber into the browser's address bar.</li>
-<li>This will take you to the login page for your account.</li>
-<li>Enter your <strong>email</strong> address.</li>
-<li>Enter your <strong>password</strong>.</li>
 <li>
-<p>Click <strong>Sign In</strong>.</p>
-<p><img alt="Enter password" src="../assets/login.png"></p>
+<p><a href="../portal-login/">Log in</a> to your Portal account.</p>
 </li>
 <li>
 <p>You will be directed to the Services page, which displays all the VCD tenancies you have access to. Click <strong>Launch</strong> on the tile of the tenancy you want to log into.</p>
-<p><img alt="Click into tenancy" src="../assets/launch.png"></p>
+<p><img alt="Click into tenancy" src="../assets/launch.png" style="border:1px solid black;"></p>
 </li>
 <li>
 <p>A new tab will open, directing you to the tenancy you clicked. Click <strong>Sign In With Single Sign-On</strong>.</p>
-<p><img alt="Click Single Sign-On" src="../assets/vcd-tenancy-sso.png"></p>
+<p><img alt="Click Single Sign-On" src="../assets/vcd-tenancy-sso.png" style="border:1px solid black;"></p>
 <div class="admonition note">
 <p class="admonition-title">If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is no longer supported.  This option will be removed in the near future.</p>
 </div>
 </li>
 <li>
 <p>You will be redirected into the VCD tenancy.</p>
-<p><img alt="Logged in" src="../assets/vcd-logged-in.png"></p>
+<p><img alt="Logged in" src="../assets/vcd-logged-in.png" style="border:1px solid black;"></p>
 </li>
 </ol>
 <p>If you require any further assistance please email the AUCyber Support Desk at <a href="mailto:support@aucyber.com.au">support@aucyber.com.au</a></p></div>
@@ -6450,7 +6412,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2025 05:48:37 UTC">March 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 22, 2026 06:00:11 UTC">January 22, 2026</span>
   </span>
 
     
@@ -6583,10 +6545,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

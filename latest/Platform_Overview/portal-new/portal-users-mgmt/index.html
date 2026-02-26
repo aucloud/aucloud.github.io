@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1189,8 +1189,6 @@
       
         
       
-        
-      
     
     
     
@@ -1447,10 +1445,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#change-personal-details" class="md-nav__link">
+  <a href="#change-personal-details-and-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Change personal details
+        Change personal details and permissions
       
     </span>
   </a>
@@ -1535,34 +1533,6 @@
     
   
     VCD Login
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../vcd-user-mgmt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    VCD User Management (for admins)
   
 
     
@@ -6476,10 +6446,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#change-personal-details" class="md-nav__link">
+  <a href="#change-personal-details-and-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Change personal details
+        Change personal details and permissions
       
     </span>
   </a>
@@ -6595,120 +6565,60 @@
 </li>
 <li>
 <p>On the left sidebar, click the <strong>People</strong> tab.</p>
+<p><img alt="People tab" src="../assets/users-mgmt-1.png" style="width:300px;border:1px solid black;"></p>
 </li>
-</ol>
-<p><img alt="People tab" src="../assets/users-mgmt-1.png"></p>
-<ol>
 <li>
-<p>A new tab will open that takes you to the administration console.</p>
-<p><img alt="Admin console" src="../assets/users-mgmt-2.png"></p>
+<p>The browser will navigate you to the user management page.</p>
 </li>
 </ol>
 <h3 id="adding-a-new-user">Adding A New User<a class="headerlink" href="#adding-a-new-user" title="Permanent link">¤</a></h3>
 <ol>
 <li>
-<p>Click <strong>Users</strong>.</p>
-<p><img alt="Users tab" src="../assets/users-mgmt-3.png"></p>
+<p>Click the <strong>Create User</strong> button.</p>
+<p><img alt="Add user" src="../assets/create-user.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>The <strong>Users</strong> page will open, with a list of users and some controls. Click the <strong>Add user</strong> button.</p>
-<p><img alt="Add user" src="../assets/users-mgmt-4.png"></p>
+<p>The create user dialog will open. Enter the users's name, email, password, and set any required permissions using the dropdowns before clicking submit to create the user.</p>
+<p><img alt="Create user" src="../assets/create-user-2.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>The website will navigate to the <strong>Create user</strong> screen.</p>
-</li>
-<li>
-<p>Set any <strong>required user actions</strong> you want the new user to perform using the dropdown menu.</p>
-</li>
-<li>
-<p>'Verify email' sends an email to the user to verify their email address. </p>
-</li>
-<li>'Update profile' requires user to enter in new personal information. </li>
-<li>'Update password' requires user to enter in a new password. </li>
-<li>
-<p>'Configure OTP' requires setup of a mobile password generator.</p>
-<p><img alt="Required user actions" src="../assets/users-mgmt-req-actions.png">
-<img alt="Required user actions" src="../assets/users-mgmt-req-actions-2.png"></p>
-</li>
-<li>
-<p>Enter the new user's email into the <strong>Email</strong> field. Please note this email must not already belong to a Portal user.</p>
-<p><img alt="Email" src="../assets/users-mgmt-new-email.png"></p>
-</li>
-<li>
-<p>Choose whether the new account's email is verified. Selecting <strong>No</strong> will force the user to verify their email when they first log in.</p>
-<p><img alt="Email verified" src="../assets/users-mgmt-email-verified.png"></p>
-</li>
-<li>
-<p>Enter the new user's <strong>First</strong> and <strong>Last names</strong>.</p>
-<p><img alt="First and Last names" src="../assets/users-mgmt-first-last-name.png"></p>
-</li>
-<li>
-<p>The Groups section covers VCD permissions. Please refer to <a href="">this</a> section for more information.</p>
-</li>
-<li>
-<p>Click <strong>Create</strong>.</p>
-<p><img alt="Create" src="../assets/users-mgmt-new-user-create.png"></p>
-</li>
-<li>
-<p>The new user will have been created and the website will navigate to that user's details page.</p>
+<p>The browser will navigate back to the list of people after successfully creating the user. The user will be required to set up an MFA token and reset their password on their first login.</p>
 </li>
 </ol>
-<p> </p>
 <h3 id="editing-a-users-details">Editing a User's Details<a class="headerlink" href="#editing-a-users-details" title="Permanent link">¤</a></h3>
 <h4 id="getting-to-the-user-details-page">Getting to the User Details page<a class="headerlink" href="#getting-to-the-user-details-page" title="Permanent link">¤</a></h4>
 <ol>
 <li>
-<p>Click <strong>Users</strong>.</p>
-<p><img alt="Users tab" src="../assets/users-mgmt-3.png"></p>
-</li>
-<li>
-<p>The <strong>Users</strong> page will open, with a list of users and some controls. Click the username of the user you wish to edit.</p>
-<p><img alt="Select user" src="../assets/users-mgmt-select-user.png"></p>
+<p>Click the username of the user you wish to edit. You can also use the search bar to search for the user if required.</p>
+<p><img alt="Select user" src="../assets/users-mgmt-select-user.png" style="border:1px solid black;"></p>
 </li>
 <li>
 <p>The website will navigate to that user's details page.</p>
 </li>
 </ol>
-<h4 id="change-personal-details">Change personal details<a class="headerlink" href="#change-personal-details" title="Permanent link">¤</a></h4>
+<h4 id="change-personal-details-and-permissions">Change personal details and permissions<a class="headerlink" href="#change-personal-details-and-permissions" title="Permanent link">¤</a></h4>
 <ol>
 <li>
-<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, to change <strong>required actions, email, email verified status, First name and Last name</strong>, enter the new details in the relevant fields of this page and press <strong>Save</strong>.</p>
-<p><img alt="Edit user details" src="../assets/edit-user-details.png"></p>
+<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, you can click the <strong>Edit User</strong> button to update that user's details.</p>
+<p><img alt="Edit user details" src="../assets/edit-user-details.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>A toast will pop up informing you of the successful operation.</p>
-<p><img alt="Successful new password" src="../assets/users-mgmt-edit-details-success.png"></p>
+<p>Update any required details and permissions and click submit.</p>
+<p><img alt="Successful new password" src="../assets/edit-user-details-2.png" style="border:1px solid black;"></p>
 </li>
 </ol>
 <h4 id="change-password">Change password<a class="headerlink" href="#change-password" title="Permanent link">¤</a></h4>
 <ol>
 <li>
-<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, to change a user's <strong>password</strong>, click the <strong>Credentials</strong> tab.</p>
-<p><img alt="Credentials tab" src="../assets/users-mgmt-credentials-tab.png"></p>
+<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, to change a user's <strong>password</strong>, click the <strong>Reset Password</strong> button.</p>
+<p><img alt="Reset password" src="../assets/users-mgmt-reset-password.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>Click <strong>Reset password</strong>.</p>
-<p><img alt="Reset password" src="../assets/users-mgmt-reset-password.png"></p>
+<p>Type the user's new password in the <strong>Password</strong> and <strong>Confirm Password</strong> input fields and click <strong>Submit</strong>.</p>
+<p><img alt="New password" src="../assets/users-mgmt-new-password.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>Type the user's new password in the <strong>Password</strong> and <strong>New password confirmation</strong> input fields.</p>
-<p><img alt="New password" src="../assets/users-mgmt-new-password.png"></p>
-</li>
-<li>
-<p>By default, the <strong>Temporary</strong> toggle is on. Leaving this as <strong>On</strong> will force the user to reset their password upon logging in with the new password you have set in the step above.</p>
-<p><img alt="Temporary toggle" src="../assets/users-mgmt-temporary.png"></p>
-</li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-<p><img alt="Save" src="../assets/users-mgmt-save-new-password.png"></p>
-</li>
-<li>
-<p>A confirmation dialog will pop up. To proceed, click <strong>Reset password</strong>.</p>
-<p><img alt="Reset password" src="../assets/users-mgmt-reset-password-confirm.png"></p>
-</li>
-<li>
-<p>A toast will pop up informing you of the successful operation.</p>
-<p><img alt="Successful new password" src="../assets/users-mgmt-password-reset-success.png"></p>
+<p>The users password has now been changed. This is a temporary password, and the user will be prompted to change it on their next login.</p>
 </li>
 </ol>
 <h4 id="unlocking-an-account">Unlocking an account<a class="headerlink" href="#unlocking-an-account" title="Permanent link">¤</a></h4>
@@ -6718,71 +6628,21 @@
 <p>Navigate to the <a href="#getting-to-the-user-details-page">user's details page</a>.</p>
 </li>
 <li>
-<p>In the top right, there will be a toggle displaying the user account as <strong>Disabled</strong>.</p>
-<p><img alt="Disabled account" src="../assets/disabled-account.png"></p>
+<p>On a disabled user, there will be a warning message stating that the user is temporarily locked. To unlock them, click the <strong>Unlock User</strong> button.
+    <img alt="Unlock User" src="../assets/unlock-user.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>Click the toggle to <strong>Enable</strong> the user account.</p>
+<p>A window will pop up asking you to confirm the action. Click the <strong>Unlock User</strong> button to confirm.
+    <img alt="Unlock User Confirm" src="../assets/unlock-user-confirm.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>The toggle will show <strong>Enabled</strong> and a toast will notify you of success.</p>
-<p><img alt="Enabled account" src="../assets/enable-account-success.png"></p>
+<p>The user is now unlocked and can attempt to log in once more.</p>
 </li>
 </ol>
 <h4 id="granting-portal-administration-privileges">Granting Portal administration privileges<a class="headerlink" href="#granting-portal-administration-privileges" title="Permanent link">¤</a></h4>
-<ol>
-<li>
-<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, to assign administration privileges, click the <strong>Role mapping</strong> tab.</p>
-<p><img alt="Role mapping tab" src="../assets/role-mapping.png"></p>
-</li>
-<li>
-<p>Click <strong>Assign role</strong>.</p>
-<p><img alt="Assign role button" src="../assets/assign-role.png"></p>
-</li>
-<li>
-<p>Click the <strong>Filter by realm roles</strong> dropdown.</p>
-<p><img alt="Realm roles" src="../assets/realm-roles.png"></p>
-</li>
-<li>
-<p>Click the <strong>Filter by clients</strong> option.</p>
-<p><img alt="Filter by clients" src="../assets/filter-by-clients.png"></p>
-</li>
-<li>
-<p>You will find a list of available roles that the user can be assigned. For an example, a typical user admin would be given the <strong>manage-users</strong>, <strong>view-users</strong> and <strong>query-users</strong> roles in the <strong>realm-management</strong> client. Use the checkboxes to select which roles you want to grant the user.</p>
-<p><img alt="User admin roles" src="../assets/user-admin-roles.png"></p>
-</li>
-<li>
-<p>After selecting the roles to grant, click <strong>Assign</strong>.</p>
-<p><img alt="Assign button" src="../assets/user-admin-roles-assign.png"></p>
-</li>
-<li>
-<p>The new roles will appear in the table and a toast will inform you of success.</p>
-<p><img alt="Role mapping success" src="../assets/roles-assigned.png"></p>
-</li>
-</ol>
+<p>To assign roles granting a user admin permissions in the portal, simply update that users permissions on the edit user screen (see <a href="#change-personal-details-and-permissions">Change personal details and permissions</a>).</p>
 <h4 id="revoking-portal-administration-privileges">Revoking Portal administration privileges<a class="headerlink" href="#revoking-portal-administration-privileges" title="Permanent link">¤</a></h4>
-<ol>
-<li>
-<p>Once on the <a href="#getting-to-the-user-details-page">user's details page</a>, to assign administration privileges, click the <strong>Role mapping</strong> tab.</p>
-<p><img alt="Role mapping tab" src="../assets/role-mapping.png"></p>
-</li>
-<li>
-<p>Use the checkboxes to select which roles you want to revoke from the user.</p>
-<p><img alt="Revoke checkboxes" src="../assets/checkbox-unassign-roles.png"></p>
-</li>
-<li>
-<p>Click <strong>Unassign</strong>.</p>
-<p><img alt="Unassign" src="../assets/checkbox-unassign-roles-unassign.png"></p>
-</li>
-<li>
-<p>A confirmation dialog will pop up. To proceed, click <strong>Remove</strong>.</p>
-<p><img alt="Remove" src="../assets/remove-button.png"></p>
-</li>
-<li>
-<p>The roles will be removed from the user and a toast will notify you of success.</p>
-<p><img alt="Successfully removed" src="../assets/remove-roles-success.png"></p>
-</li>
-</ol></div>
+<p>To unassign roles granting a user admin permissions in the portal, simply update that user's relevant permission to be 'Unassigned' on the edit user screen (see <a href="#change-personal-details-and-permissions">Change personal details and permissions</a>).</p></div>
 
 
 
@@ -6803,7 +6663,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2025 05:48:37 UTC">March 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 5, 2026 03:24:11 UTC">February 5, 2026</span>
   </span>
 
     
@@ -6936,10 +6796,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
