@@ -137,3 +137,5 @@ thumbs.db
 # Environment vars
 .envrc
  
+# Python virtual env
+docs-venv
