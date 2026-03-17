@@ -17,7 +17,7 @@ when required.
 ## Prerequisites
 
 - Customers must have a Microsoft Office 365 account that has an active subscription.
-- The Microsoft Office 365 account used for configuration must have permission to manage applications in Azure Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:
+- The Microsoft Office 365 account used for configuration must have permission to manage applications in Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:
 
     * [Application administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)
     * [Application developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)
@@ -56,7 +56,7 @@ registration.
 
 ### Grant Global Reader permission
 
-To grant the Global Reader role to the Azure AD application, do the following:
+To grant the Global Reader role to the Azure Entra ID application, do the following:
 
 3.    Sign in to the Azure portal.
 
@@ -72,7 +72,7 @@ The **Add assignment** wizard runs.
 
 1.    In the **Select member(s)** section, click the link.
 
-2.    In the **Select a member** window, select the Azure AD application in the list and click **Select**.
+2.    In the **Select a member** window, select the Azure Entra ID application in the list and click **Select**.
 
 The selected application appears in the **Selected member(s)** list.
 
@@ -153,24 +153,24 @@ A joint session with the AUCyber technical team is required for you to enter the
 
 ### Restore Portal Access Requirements
 
-To access the Veeam restore portal, you must add an Enterprise Application in Azure AD
+To access the Veeam restore portal, you must add an Enterprise Application in Entra ID
 
 #### Prerequisite
 
 For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Entra ID PowerShell cmdlet. To install this, open PowerShell and run the following command:
 
 ```
-Install-Module -Name AzureAD
+Install-Module Microsoft.Graph -Scope CurrentUser -Force
 ```
 
 !!! note
 
     You may be prompted to install and import the **NuGet** provider. Please press Y to continue through this.
 
-The next command will connect your PowerShell to AzureAD. Use credentials with admin rights to perform an Enterprise Application install:
+The next command will connect your PowerShell to Entra ID. Use credentials with admin rights to perform an Enterprise Application install:
 
 ```
-Connect-AzureAD 
+Connect-MgGraph -Scopes "Application.ReadWrite.All"
 ```
 
 This will open a traditional username and password Microsoft popup:
@@ -183,7 +183,7 @@ We should see something like this if everything worked smoothly:
 And the final step which brings everything together:
 
 ```
-New-AzureADServicePrincipal -AppId "33831092-5ae1-4b51-9eb2-a90033803540"
+New-MgServicePrincipal -AppId "33831092-5ae1-4b51-9eb2-a90033803540"
 ```
 
 If everything works as expected, the output should show something similar to this:
@@ -192,7 +192,7 @@ If everything works as expected, the output should show something similar to thi
 
 !!! note
 
-    If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Azure AD and then repeat the above command.
+    If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Entra ID and then repeat the above command.
 
 
 **Last-Step - Give permission to the new Application on Entra ID**
