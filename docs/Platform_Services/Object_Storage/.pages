@@ -3,7 +3,6 @@ nav:
     - Best Practices: best_practices.md
     - Limiting bucket access to specific access keys: limiting_bucket_access_to_specific_access_keys.md
     - Accessing Object Storage: accessing_object_storage.md
-    - Accessing buckets from an S3 Browser: accessing_from_an_s3browser.md
     - Security Credentials: security_credentials.md
     - Creating a Bucket: creating_a_bucket.md
     - Add an object to a bucket: add_an_object_to_a_bucket.md

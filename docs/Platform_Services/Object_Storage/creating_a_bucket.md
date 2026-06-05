@@ -7,7 +7,6 @@ description: Creating a Bucket
 
 1. To begin, you will first need to create a bucket. Click on **Buckets** from the left-hand menu then click on **GET STARTED**.
 
-    ![Create Bucket](./assets/bucket.png)  
 
 1. Enter a name for your bucket. The name must comply with the validation rules:
 
@@ -20,10 +19,8 @@ description: Creating a Bucket
 		- Adjacent labels are separated by a single period (.)  
     - Must not be formatted as an IP address (for example, 192.168.5.4).
 
-    ![Create Bucket](./assets/create_bucket.png)
 
 1. Click **SAVE.** The bucket you have just created will now be displayed in your list of buckets.
 
 1. To create additional buckets, click on **+NEW BUCKET** and follow the wizard to create as many buckets as you require.
 
-    ![Additional Buckets](./assets/new_bucket.png)

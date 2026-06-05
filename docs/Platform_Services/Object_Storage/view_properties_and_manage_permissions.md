@@ -11,11 +11,9 @@ description: View properties and manage permissions
 
 1. To view the properties of a bucket, click on the **Properties** tab after going to your selected bucket.
 
-    ![Bucket Properties](./assets/bucket_properties.png)  
 
 1. To view selected permissions, click on the **Permissions** tab in your selected bucket.
 
-    ![Bucket Permissions](./assets/bucket_permissions.png)  
 
 1. Permission can be edited by clicking on the EDIT button.
 
@@ -23,4 +21,3 @@ description: View properties and manage permissions
 
 1. Click **SAVE** to save the changes.
 
-    ![Bucket Save](./assets/bucket_save.png)
