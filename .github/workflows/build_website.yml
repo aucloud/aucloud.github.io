@@ -25,8 +25,6 @@ jobs:
       with:
         python-version: "3.12"
 
-    - name: Install system deps
-      run: make ubuntu-deps
     - name: Install dependencies
       run: CPPFLAGS="-I${pythonLocation}/include/python3.12" make install
     - name: Setup doc deploy
