@@ -5,17 +5,15 @@ description: View an object
 
 ## View an object
 
-1. Once an object has been added to a bucket, you can view information about the object and download the object to your local computer.
+List and download objects with an S3 client pointed at `https://s3.aucyber.com.au` (see [Accessing Object Storage](./accessing_object_storage.md)).
 
-1. Click on the Object name to view properties and permissions.
+```bash
+# list objects in a bucket
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 ls s3://mybucket
 
+# download an object to the current directory
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 cp s3://mybucket/myfile.txt ./
 
-1. The properties of the object will be displayed under the **Properties** tab.
-
-1. Select **Preview** to view the document without downloading.
-
-1. Select download to download the object. The object will be downloaded to the default location on your PC.
-
-
-1. You can grant other users basic read/write permissions by clicking on the permissions tab and editing the Access Control List (ACL).
-
+# view an object's metadata
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3api head-object --bucket mybucket --key myfile.txt
+```
