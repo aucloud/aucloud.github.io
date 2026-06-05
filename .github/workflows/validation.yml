@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 jobs:
   validate_website_gh_com:
-    if: github.server_url	== 'https://github.com'
+    if: github.server_url == 'https://github.com'
     runs-on: ubuntu-latest
     env:
       SITE_URL: https://docs.aucyber.com.au/
@@ -41,7 +41,7 @@ jobs:
         make docs-validate
 
   validate_website_ghes:
-    if: github.server_url	!= 'https://github.com'
+    if: github.server_url != 'https://github.com'
     runs-on: self-hosted
     env:
       SITE_URL: ${{ secrets.SITE_URL }}

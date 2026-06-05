@@ -11,7 +11,7 @@ on:
 
 jobs:
   cleanup_website_version:
-    if: github.server_url	!= 'https://github.com'
+    if: github.server_url != 'https://github.com'
     runs-on: self-hosted
     env:
       SITE_URL: ${{ secrets.SITE_URL }}
