@@ -30,7 +30,7 @@ osx-deps:
 
 ubuntu-deps:
 	sudo apt-get -y update
-	sudo apt-get -y install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+	sudo apt-get -y install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev libssl-dev openssl
 
 clean:
 	rm -rf site

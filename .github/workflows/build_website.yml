@@ -23,10 +23,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: "3.12"
 
+    - name: Install system deps
+      run: make ubuntu-deps
     - name: Install dependencies
-      run: CPPFLAGS="-I${pythonLocation}/include/python3.9" make install
+      run: CPPFLAGS="-I${pythonLocation}/include/python3.12" make install
     - name: Setup doc deploy
       run: |
         git config --global user.name "semantic-release (via Github actions)"
@@ -68,7 +70,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: "3.12"
 
     - name: Install system deps
       run: make ubuntu-deps
