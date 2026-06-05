@@ -57,14 +57,14 @@ Cloud Director provides role-based access to a HTML 5 web console that allows ad
 
 ## Storage (STaaS)
 
-Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCyber service. Cloudian boasts the most compatible S3 API, exposing features including object lock that provides customers with ransomware protection.
+NetApp StorageGRID object storage can be consumed via the StorageGRID Tenant Manager, a web browser, or any compatible S3 client or object browser. You can deploy, manage and consume S3-compatible storage from within your AUCyber service. StorageGRID provides a highly S3-compatible API, including object lock that provides customers with ransomware protection.
 
 | Features | Benefits |
 | -----------| -------------|
 | S3 Compatible | Applications that rely on the S3 API can be migrated to AUCyber without code changes |
 | Scale | Built on scale-out repositories that grow from terabytes to exabytes within a single namespace |
 | Object Lock | Protect data from ransomware with Object Lock for data immutability |
-| Cloud Director OSE | Access buckets from Cloud Director Object Storage Extension within your tenancy |
+| Tenant Manager | Manage buckets, users and access keys from the StorageGRID Tenant Manager at s3-tenant.aucyber.com.au |
 
 ## Backup (BaaS)
 

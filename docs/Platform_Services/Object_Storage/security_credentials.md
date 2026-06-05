@@ -7,7 +7,7 @@ description: Security Credentials
 
 1. Security Credentials are required to access buckets programmatically [via S3 API's.](./accessing_from_an_s3browser.md)
 
-    [The AUCyber S3 API endpoints](../reference_urls.md#object-storage-api-endpoints-direct-use)
+    [The AUCyber S3 API endpoint](../reference_urls.md#object-storage-s3-api)
 
 2. To create user credentials, click **+CREATE**.
 

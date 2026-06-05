@@ -2,7 +2,7 @@
 title: Accessing Object Storage
 description: Accessing Object Storage
 ---
- 
+ 
 ## Overview
 
 Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manages data as a file hierarchy. Each object typically includes the data itself, an amount of metadata and a globally unique identifier which is stored within a bucket.
@@ -11,20 +11,11 @@ Buckets are containers for objects. You can have one or more buckets and control
 
 ## Accessing Object Storage
 
-1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCyber Support [support@aucyber.com.au](mailto:support@aucyber.com.au).
+1. Object storage is managed directly through the StorageGRID **Tenant Manager** at [https://s3-tenant.aucyber.com.au](https://s3-tenant.aucyber.com.au). Log in with the tenant ID and root credentials supplied by AUCyber. If you do not have these, contact your Customer Success Manager, Sales Executive or AUCyber Support [support@aucyber.com.au](mailto:support@aucyber.com.au).
 
-2. When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select **Object Storage** from the Main Menu.
+    ![Log in](./assets/login.png)
 
-    ![nav object storage](./assets/nav_object_storage.png)  
-
-3. You will be presented with the dashboard which displays an overall view of your object store including:
-
-    - Total Buckets
-    - Total Objects
-    - Storage Used
-    - Users
-
-    ![associated tenants](./assets/associated_tenants.png)
+1. From the Tenant Manager you can create and manage buckets, users and S3 access keys, and view a summary of your object store including total buckets, objects, storage used and users.
 
 !!! note
 
@@ -36,26 +27,8 @@ Buckets are containers for objects. You can have one or more buckets and control
     aws configure --profile=aucloud
     ```
 
-1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`, using the CSZ endpoint)
+1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`):
 
     ```bash
-    aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://mybucket
+    aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 ls s3://mybucket
     ```
-
-
-## Path vs Host based bucket access
-Files can be accessed using s3, across two methods - host based and path based access.
-
-For a bucket `bucket`, and a file `bar.txt` using path based access in AUCyber's **SSZ** environment. would have a path of:
-
-`https://s3-sz201.australiacloud.com.au/api/v1/s3/bucket/bar.txt`
-
-using host based access:
-
-`https://bucket.s3-sz201.australiacloud.com.au/bar.txt`
-
-Note that the result is that each bucket name is globally unique.
-
-!!! warning "Restrictions on host based access"
-    Currently **CSZ** does not support host based access.
-
