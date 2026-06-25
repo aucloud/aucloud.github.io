@@ -186,3 +186,7 @@ xamplify
 entra
 Entra
 faq
+misconfiguration
+Cyberduck
+cyberduck
+s5cmd

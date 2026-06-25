@@ -11,7 +11,7 @@ on:
 
 jobs:
   cleanup_website_version:
-    if: github.server_url	!= 'https://github.com'
+    if: github.server_url != 'https://github.com'
     runs-on: self-hosted
     env:
       SITE_URL: ${{ secrets.SITE_URL }}
@@ -26,7 +26,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: "3.12"
     - name: Install dependencies
       run: make install
 

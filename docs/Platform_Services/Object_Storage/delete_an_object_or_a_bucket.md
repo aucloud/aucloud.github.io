@@ -5,28 +5,28 @@ description: Delete an object or a bucket
 
 ## Delete an object
 
-1. To delete an object, click the check box of the object you want to delete.
+Delete objects with an S3 client (see [Accessing Object Storage](./accessing_object_storage.md)).
 
-    ![Delete Object](./assets/delete_object.png)
+```bash
+# delete a single object
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 rm s3://mybucket/myfile.txt
 
-1. Under **ACTIONS** select **Delete**.
-
-    ![Delete Object](./assets/delete_object2.png)
-
-1. Review the objects you want to delete and select **Delete**.
-
-    ![Delect Object](./assets/delete_object3.png)
+# delete everything under a prefix
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 rm s3://mybucket/mydir/ --recursive
+```
 
 ## Delete a bucket
 
-1. To delete a bucket, click the ellipsis next to the bucket you want to delete.
+A bucket must be empty before it can be deleted. Empty and remove it with an S3 client:
 
-    ![Delete Bucket](./assets/delete_bucket.png)
+```bash
+# empty the bucket, then delete it
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 rm s3://mybucket --recursive
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 rb s3://mybucket
+```
 
-1. Select **Delete**.
+You can also delete an empty bucket from the **Buckets** page of the [Tenant Manager](https://s3-tenant.aucyber.com.au).
 
-    ![Delete Bucket](./assets/delete_bucket2.png)
+!!! warning
 
-1. Confirm the deletion of the bucket you want to delete and select **Delete**.
-
-    ![Delete Bucket](./assets/delete_bucket3.png)
+    Deletion is permanent. With versioning or object lock enabled, deleting an object may leave a delete marker or be blocked until the lock retention expires.

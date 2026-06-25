@@ -5,27 +5,18 @@ description: Add an object to a bucket
 
 ## Add an object to a bucket
 
-1. To upload objects into the S3 bucket through the user interface, click on name of the bucket you want to upload files to. Under the **Objects** tab, click **UPLOAD**.
+Objects are uploaded with an S3 client. See [Accessing Object Storage](./accessing_object_storage.md) for how to configure a client with the `https://s3.aucyber.com.au` endpoint and your access keys.
 
-    ![new test bucket](./assets/new_test_bucket.png)  
+Using the AWS CLI, upload with `s3 cp`:
 
-1. The upload wizard will open. Click **Select Objects** to upload.
+```bash
+# upload a single file
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 cp myfile.txt s3://mybucket/
 
-    ![upload objects](./assets/upload_objects.png)  
-
-1. Select the file or files you want to upload and click **Open**.
-
-    ![files for upload](./assets/files_for_upload.png)  
-
-1. Confirm the upload and select UPLOAD. Additional objects can be selected at this point.
-
-    ![confirm upload](./assets/confirm_upload.png)
+# upload a whole directory
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 cp ./mydir s3://mybucket/mydir/ --recursive
+```
 
 !!! note
 
-    For Linux systems there are some comparable options available:
-
-    - [rclone](https://rclone.org/)
-    - [Cyberduck](https://cyberduck.io/)
-    - [Minio client](https://min.io/download)
-    - [AWS CLI v2](https://aws.amazon.com/cli/)
+    Other S3 clients work equally well - see [Accessing Object Storage](./accessing_object_storage.md) for s5cmd, Cyberduck and S3 Browser. On Linux, [rclone](https://rclone.org/) and the [MinIO client](https://min.io/download) are also good options.

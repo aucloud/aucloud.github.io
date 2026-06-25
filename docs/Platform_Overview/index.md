@@ -17,7 +17,7 @@ AUCyber operates from geo-resilient data centres in Canberra, Sydney, and Brisba
 
 AUCyber is a Sovereign Community Cloud built specifically for Australian Government, Critical National Industry (CNI) and security conscious communities.  We are 100% owned by Sovereign Cloud Holdings Ltd.
 
-With ambitions to export AUCyber expertise, services and IP across Asia, Sovereign Cloud Holdings, currently only operates within Australian territorial jurisdiction. However, deep relationships with Cisco, Cloudian, Pure Storage, VMware and a range of global systems integrators and Defence primes, provide AUCyber with a global footprint of expertise and a wide network of relationships. These relationships have underpinned global and Australian firsts in innovation and technology releases (e.g. Cloudian Object Lock anti-ransomware solutions).
+With ambitions to export AUCyber expertise, services and IP across Asia, Sovereign Cloud Holdings, currently only operates within Australian territorial jurisdiction. However, deep relationships with Cisco, NetApp, Pure Storage, VMware and a range of global systems integrators and Defence primes, provide AUCyber with a global footprint of expertise and a wide network of relationships. These relationships have underpinned global and Australian firsts in innovation and technology releases (e.g. NetApp Object Lock anti-ransomware solutions).
 
 AUCyber invests in Australian technologies and expertise; a review of AUCyber financials indicates that nearly 70% of our spend can be traced to Australian organisations.
 

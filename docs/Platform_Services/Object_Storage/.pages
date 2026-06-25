@@ -1,0 +1,12 @@
+nav:
+    - index.md
+    - Best Practices: best_practices.md
+    - Limiting bucket access to specific access keys: limiting_bucket_access_to_specific_access_keys.md
+    - Accessing Object Storage: accessing_object_storage.md
+    - Security Credentials: security_credentials.md
+    - Creating a Bucket: creating_a_bucket.md
+    - Add an object to a bucket: add_an_object_to_a_bucket.md
+    - View an object: view_an_object.md
+    - Copy an object: copy_an_object.md
+    - View properties and manage permissions: view_properties_and_manage_permissions.md
+    - Delete an object or a bucket: delete_an_object_or_a_bucket.md

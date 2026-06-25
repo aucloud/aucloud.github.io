@@ -42,25 +42,16 @@ description: Reference URLs for services in AUCyber
 | ---- | ------ |
 | [https://vbo-csz.australiacloud.com.au/](https://vbo-csz.australiacloud.com.au/) | Sovereign Cloud |
 
-## Object Storage API Endpoints (direct use)
+## Object Storage S3 API
 
-!!! note "Path based s3 access only"
-    The object storage endpoints in Canberra (CSZ) do not support host based addressing of s3 buckets.
+S3-compatible object storage is provided by NetApp StorageGRID. There is a **single S3 API endpoint** serving all sovereignty zones; the zone (CSZ or SSZ) is selected per bucket when the bucket is created in the Tenant Manager.
 
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://s3-sz101.australiacloud.com.au](https://s3-sz101.australiacloud.com.au) | Sovereign Cloud | CSZ |
-| [https://s3-sz201.australiacloud.com.au](https://s3-sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
-| [https://s3-bsz301.australiacloud.com.au](https://s3-bsz301.australiacloud.com.au) | Sovereign Cloud | BSZ |
+| URL | Purpose |
+| ---- | ------ |
+| [https://s3.aucyber.com.au](https://s3.aucyber.com.au) | S3 API endpoint - S3 clients, SDKs and CLI tools |
+| [https://s3-tenant.aucyber.com.au](https://s3-tenant.aucyber.com.au) | Tenant Manager - web UI for buckets, users and access keys |
 
-
-## Object Storage API Endpoints (via VMware Object Storage Extension)
-
-| URL | Community environment | Sovereignty Zone |
-| ---- | ------ | --------------------- |
-| [https://vos.s3-sz101.australiacloud.com.au/api/v1/s3](https://vos.s3-sz101.australiacloud.com.au/api/v1/s3) | Sovereign Cloud | CSZ |
-| [https://s3.vos.sz201.australiacloud.com.au](https://s3.vos.sz201.australiacloud.com.au) | Sovereign Cloud | SSZ |
-| [https://s3.vos.bsz.australiacloud.com.au](https://s3.vos.bsz.australiacloud.com.au) | Sovereign Cloud | BSZ |
+Both path-style (`https://s3.aucyber.com.au/<bucket>/<key>`) and host based (`https://<bucket>.s3.aucyber.com.au/<key>`) addressing are supported.
 
 
 

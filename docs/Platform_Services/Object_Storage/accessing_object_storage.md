@@ -2,60 +2,96 @@
 title: Accessing Object Storage
 description: Accessing Object Storage
 ---
- 
+
 ## Overview
 
-Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manages data as a file hierarchy. Each object typically includes the data itself, an amount of metadata and a globally unique identifier which is stored within a bucket.
+Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manage data as a file hierarchy. Each object includes the data itself, an amount of metadata, and a globally unique identifier, and is stored within a bucket. Buckets are containers for objects. You can have one or more buckets and control who has access to each.
 
-Buckets are containers for objects. You can have one or more buckets and control who has access to each bucket.
+AUCyber object storage is provided by NetApp StorageGRID. There is a single S3 API endpoint, `https://s3.aucyber.com.au`, serving all sovereignty zones; the zone (CSZ or SSZ) is selected per bucket when the bucket is created. Both path-style (`https://s3.aucyber.com.au/<bucket>/<key>`) and host based (`https://<bucket>.s3.aucyber.com.au/<key>`) addressing are supported.
 
-## Accessing Object Storage
+To use any S3 client you need:
 
-1. S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCyber Support [support@aucyber.com.au](mailto:support@aucyber.com.au).
+- **Endpoint**: `https://s3.aucyber.com.au`
+- **Access Key ID** and **Secret Access Key** - see [Security Credentials](./security_credentials.md)
 
-2. When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select **Object Storage** from the Main Menu.
+## Web UI
 
-    ![nav object storage](./assets/nav_object_storage.png)  
+Object storage is managed through the StorageGRID **Tenant Manager** at [https://s3-tenant.aucyber.com.au](https://s3-tenant.aucyber.com.au). Log in with the tenant ID and root credentials supplied by AUCyber. If you do not have these, contact your Customer Success Manager, Sales Executive or AUCyber Support [support@aucyber.com.au](mailto:support@aucyber.com.au).
 
-3. You will be presented with the dashboard which displays an overall view of your object store including:
+![Log in](./assets/login.png)
 
-    - Total Buckets
-    - Total Objects
-    - Storage Used
-    - Users
+From the Tenant Manager you can create and manage buckets, users and S3 access keys, and view a summary of your object store including total buckets, objects, storage used and users.
 
-    ![associated tenants](./assets/associated_tenants.png)
+## AWS CLI
 
-!!! note
-
-    An AWS specific example on how to make this work using the aws command line tool:
-
-1. Create an AWS credentials file (have your `access_key_id` and `secret_access_key` ready):
+1. Configure a profile with your access key and secret key:
 
     ```bash
     aws configure --profile=aucloud
     ```
 
-1. Test connectivity to the s3 bucket you created previously (assumed in this example to be `mybucket`, using the CSZ endpoint)
+1. Use the `--endpoint-url` flag to target AUCyber object storage:
 
     ```bash
-    aws --profile=aucloud --endpoint-url=https://vos.s3-sz101.australiacloud.com.au/api/v1/s3 s3 ls s3://mybucket
+    # list your buckets
+    aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 ls
+
+    # list objects in a bucket
+    aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 ls s3://mybucket
+
+    # upload a file
+    aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 cp myfile.txt s3://mybucket/
     ```
 
+## s5cmd
 
-## Path vs Host based bucket access
-Files can be accessed using s3, across two methods - host based and path based access.
+[s5cmd](https://github.com/peak/s5cmd) is a very fast, parallel S3 client. It reads credentials from the standard AWS environment variables or `~/.aws/credentials`, and takes the endpoint as a flag:
 
-For a bucket `bucket`, and a file `bar.txt` using path based access in AUCyber's **SSZ** environment. would have a path of:
+```bash
+export AWS_ACCESS_KEY_ID=<access key id>
+export AWS_SECRET_ACCESS_KEY=<secret access key>
 
-`https://s3-sz201.australiacloud.com.au/api/v1/s3/bucket/bar.txt`
+# list your buckets
+s5cmd --endpoint-url https://s3.aucyber.com.au ls
 
-using host based access:
+# upload a file
+s5cmd --endpoint-url https://s3.aucyber.com.au cp myfile.txt s3://mybucket/
+```
 
-`https://bucket.s3-sz201.australiacloud.com.au/bar.txt`
+## Cyberduck
 
-Note that the result is that each bucket name is globally unique.
+[Cyberduck](https://cyberduck.io/) is a graphical S3 client for Windows and macOS.
 
-!!! warning "Restrictions on host based access"
-    Currently **CSZ** does not support host based access.
+1. Click **Open Connection**.
+1. Select **Amazon S3** from the drop-down.
+1. Enter the connection details:
+    - **Server**: `s3.aucyber.com.au`
+    - **Port**: `443`
+    - **Access Key ID**: your access key
+    - **Secret Access Key**: your secret key
+1. Click **Connect**.
 
+## S3 Browser
+
+[S3 Browser](https://s3browser.com/) is a graphical S3 client for Windows. The free version restricts upload and download to two concurrent connections; paid versions allow up to 10.
+
+1. Navigate to [https://s3browser.com/](https://s3browser.com/) and download S3 Browser.
+
+    ![S3 Browser](./assets/s3_browser.png)
+
+1. Add a new account with the following parameters:
+
+    - **Account Name**: a name of your choice
+    - **Account Type**: S3 Compatible Storage
+    - **REST Endpoint**: `s3.aucyber.com.au`
+    - **Access Key ID**: your access key
+    - **Secret Access Key**: your secret key
+    - **Signature Version**: Signature V4
+    - **Addressing Model**: Path Style
+    - Click **Add new account**
+
+    ![Add new account](./assets/add_new_account.png)
+
+1. You can now manage your buckets - add, delete and download objects.
+
+    ![Manage bucket](./assets/manage_bucket.png)

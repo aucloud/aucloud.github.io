@@ -5,20 +5,14 @@ description: Copy an object
 
 ## Copy an object
 
-1. To copy an object to another bucket, click the check box of the object you want to copy.
+Copy objects within or between buckets with an S3 client (see [Accessing Object Storage](./accessing_object_storage.md)).
 
-    ![copy object](./assets/copy_object.png)  
+```bash
+# copy an object to another bucket
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 cp s3://sourcebucket/myfile.txt s3://destbucket/myfile.txt
 
-1. Under **ACTIONS** select **Copy to**.
+# copy (sync) everything under a prefix
+aws --profile=aucloud --endpoint-url=https://s3.aucyber.com.au s3 sync s3://sourcebucket/mydir/ s3://destbucket/mydir/
+```
 
-    ![copy object](./assets/copy_object2.png)  
-
-1. The **Copy Objects** wizard will open
-
-    ![copy object](./assets/copy_object3.png)
-
-1. Select the destination bucket.
-
-1. Check the tick box to acknowledge your understanding.
-
-1. Click **COPY**.
+Bucket names are globally unique across AUCyber object storage.

@@ -5,22 +5,16 @@ description: Security Credentials
 
 ## Security Credentials
 
-1. Security Credentials are required to access buckets programmatically [via S3 API's.](./accessing_from_an_s3browser.md)
+Security credentials (an **Access Key ID** and **Secret Access Key**) are required to access buckets programmatically [via the S3 API](./accessing_object_storage.md). They are managed in the StorageGRID **Tenant Manager** at [https://s3-tenant.aucyber.com.au](https://s3-tenant.aucyber.com.au).
 
-    [The AUCyber S3 API endpoints](../reference_urls.md#object-storage-api-endpoints-direct-use)
+1. To create access keys for your own user, open the user menu (top right) and select **My access keys**, then create a new key.
 
-2. To create user credentials, click **+CREATE**.
+1. To create access keys for another tenant user, select **Users**, choose the user, and create an access key for them.
 
-    ![security credentials](./assets/security_credentials.png)
+1. Optionally set an expiry for the key. When the key is created, copy the **Secret Access Key** immediately - it is shown only once and cannot be retrieved later.
 
-3. To view the Access and Secret Key, click on the key symbol next to the access key to view the key pair.
+!!! warning
 
-4. Click on the 'eye' symbol to reveal the complete Secret Key.
+    Treat access keys like passwords. Store them securely, never commit them to source control, and rotate or remove keys that are no longer needed.
 
-    ![security credentials](./assets/security_credentials2.png)
-
-5. Application credentials are stored within an application and created using the same process as for user Credentials.
-
-6. You can select the Application Credential to apply to all buckets or selected buckets.
-
-    ![security credentials](./assets/security_credentials3.png)
+For a worked example of creating a dedicated user with keys scoped to a single bucket, see [Limiting bucket access to specific access keys](./limiting_bucket_access_to_specific_access_keys.md).
