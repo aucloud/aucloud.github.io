@@ -13,17 +13,17 @@
         <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/view_properties_and_manage_permissions/">
       
       
-        <link rel="prev" href="../view_an_object/">
+        <link rel="prev" href="../copy_an_object/">
       
       
-        <link rel="next" href="../../Storage/">
+        <link rel="next" href="../delete_an_object_or_a_bucket/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5412,6 +5412,8 @@
       
         
       
+        
+      
     
     
     
@@ -5471,14 +5473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5527,42 +5557,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../security_credentials/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Add an object to a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../copy_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Copy an object
+    Security Credentials
   
 
     
@@ -5611,42 +5613,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
+    Add an object to a bucket
   
 
     
@@ -5675,6 +5649,34 @@
     
   
     View an object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copy_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy an object
   
 
     
@@ -5765,6 +5767,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete an object or a bucket
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -6326,28 +6356,18 @@
 <div><h2 id="view-properties-and-manage-permissions">View properties and manage permissions<a class="headerlink" href="#view-properties-and-manage-permissions" title="Permanent link">¤</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Customers should be careful as to what data they are exposing to the internet.</p>
+<p>Be careful what data you expose to the internet. Grant the minimum access required.</p>
 </div>
+<p>Bucket configuration and access are managed in the StorageGRID <strong>Tenant Manager</strong> at <a href="https://s3-tenant.aucyber.com.au">https://s3-tenant.aucyber.com.au</a>.</p>
 <ol>
 <li>
-<p>To view the properties of a bucket, click on the <strong>Properties</strong> tab after going to your selected bucket.</p>
-<p><img alt="Bucket Properties" src="../assets/bucket_properties.png">  </p>
+<p>Select <strong>Buckets</strong> and choose your bucket to view its details - region, object count, space used, and versioning and object lock status.</p>
 </li>
 <li>
-<p>To view selected permissions, click on the <strong>Permissions</strong> tab in your selected bucket.</p>
-<p><img alt="Bucket Permissions" src="../assets/bucket_permissions.png">  </p>
+<p>Access is controlled with <strong>bucket policies</strong> - a JSON document attached to the bucket that defines who can perform which actions on the bucket and its objects.</p>
 </li>
-<li>
-<p>Permission can be edited by clicking on the EDIT button.</p>
-</li>
-<li>
-<p>Access controls can be adjusted, and new users can be added.</p>
-</li>
-<li>
-<p>Click <strong>SAVE</strong> to save the changes.</p>
-<p><img alt="Bucket Save" src="../assets/bucket_save.png"></p>
-</li>
-</ol></div>
+</ol>
+<p>For a worked example of creating a user, generating access keys and attaching a bucket policy that grants access to a single bucket, see <a href="../limiting_bucket_access_to_specific_access_keys/">Limiting bucket access to specific access keys</a>. For guidance on writing least-privilege policies, see <a href="../best_practices/">Best Practices</a>.</p></div>
 
 
 
@@ -6368,7 +6388,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 19, 2023 02:17:47 UTC">January 19, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 07:11:15 UTC">June 5, 2026</span>
   </span>
 
     

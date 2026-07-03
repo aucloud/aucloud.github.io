@@ -13,17 +13,17 @@
         <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/add_an_object_to_a_bucket/">
       
       
-        <link rel="prev" href="../accessing_object_storage/">
+        <link rel="prev" href="../creating_a_bucket/">
       
       
-        <link rel="next" href="../copy_an_object/">
+        <link rel="next" href="../view_an_object/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5412,6 +5412,8 @@
       
         
       
+        
+      
     
     
     
@@ -5471,14 +5473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5507,6 +5537,62 @@
     
   
     Accessing Object Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security_credentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security Credentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating a Bucket
   
 
     
@@ -5609,118 +5695,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../copy_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Copy an object
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../creating_a_bucket/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Creating a Bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../view_an_object/" class="md-nav__link">
         
   
@@ -5749,6 +5723,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../copy_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy an object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
         
   
@@ -5757,6 +5759,34 @@
     
   
     View properties and manage permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete an object or a bucket
   
 
     
@@ -6324,33 +6354,17 @@
   <h1>Add an object to a bucket</h1>
 
 <div><h2 id="add-an-object-to-a-bucket">Add an object to a bucket<a class="headerlink" href="#add-an-object-to-a-bucket" title="Permanent link">¤</a></h2>
-<ol>
-<li>
-<p>To upload objects into the S3 bucket through the user interface, click on name of the bucket you want to upload files to. Under the <strong>Objects</strong> tab, click <strong>UPLOAD</strong>.</p>
-<p><img alt="new test bucket" src="../assets/new_test_bucket.png">  </p>
-</li>
-<li>
-<p>The upload wizard will open. Click <strong>Select Objects</strong> to upload.</p>
-<p><img alt="upload objects" src="../assets/upload_objects.png">  </p>
-</li>
-<li>
-<p>Select the file or files you want to upload and click <strong>Open</strong>.</p>
-<p><img alt="files for upload" src="../assets/files_for_upload.png">  </p>
-</li>
-<li>
-<p>Confirm the upload and select UPLOAD. Additional objects can be selected at this point.</p>
-<p><img alt="confirm upload" src="../assets/confirm_upload.png"></p>
-</li>
-</ol>
+<p>Objects are uploaded with an S3 client. See <a href="../accessing_object_storage/">Accessing Object Storage</a> for how to configure a client with the <code>https://s3.aucyber.com.au</code> endpoint and your access keys.</p>
+<p>Using the AWS CLI, upload with <code>s3 cp</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># upload a single file</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>cp<span class="w"> </span>myfile.txt<span class="w"> </span>s3://mybucket/
+
+<span class="c1"># upload a whole directory</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>cp<span class="w"> </span>./mydir<span class="w"> </span>s3://mybucket/mydir/<span class="w"> </span>--recursive
+</code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For Linux systems there are some comparable options available:</p>
-<ul>
-<li><a href="https://rclone.org/">rclone</a></li>
-<li><a href="https://cyberduck.io/">Cyberduck</a></li>
-<li><a href="https://min.io/download">Minio client</a></li>
-<li><a href="https://aws.amazon.com/cli/">AWS CLI v2</a></li>
-</ul>
+<p>Other S3 clients work equally well - see <a href="../accessing_object_storage/">Accessing Object Storage</a> for s5cmd, Cyberduck and S3 Browser. On Linux, <a href="https://rclone.org/">rclone</a> and the <a href="https://min.io/download">MinIO client</a> are also good options.</p>
 </div></div>
 
 
@@ -6372,7 +6386,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 18, 2023 02:55:26 UTC">January 18, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 07:11:15 UTC">June 5, 2026</span>
   </span>
 
     

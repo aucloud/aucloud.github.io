@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5632,6 +5632,8 @@
       
         
       
+        
+      
     
     
     
@@ -5691,14 +5693,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Platform_Services/Object_Storage/accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../../Platform_Services/Object_Storage/best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Services/Object_Storage/limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5747,42 +5777,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Platform_Services/Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../../Platform_Services/Object_Storage/security_credentials/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Add an object to a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Platform_Services/Object_Storage/copy_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Copy an object
+    Security Credentials
   
 
     
@@ -5831,42 +5833,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Platform_Services/Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../../Platform_Services/Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Platform_Services/Object_Storage/security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
+    Add an object to a bucket
   
 
     
@@ -5915,6 +5889,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Platform_Services/Object_Storage/copy_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy an object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Platform_Services/Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
         
   
@@ -5923,6 +5925,34 @@
     
   
     View properties and manage permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform_Services/Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete an object or a bucket
   
 
     
@@ -6801,7 +6831,7 @@
 </tbody>
 </table>
 <h2 id="storage-staas">Storage (STaaS)<a class="headerlink" href="#storage-staas" title="Permanent link">¤</a></h2>
-<p>Cloudian Object Storage can be consumed directly from Cloud Director or via a web browser or compatible S3 object browser. With Cloudian you can deploy, manage and consume S3-compatible storage from within your AUCyber service. Cloudian boasts the most compatible S3 API, exposing features including object lock that provides customers with ransomware protection.</p>
+<p>NetApp StorageGRID object storage can be consumed via the StorageGRID Tenant Manager, a web browser, or any compatible S3 client or object browser. You can deploy, manage and consume S3-compatible storage from within your AUCyber service. StorageGRID provides a highly S3-compatible API, including object lock that provides customers with ransomware protection.</p>
 <table>
 <thead>
 <tr>
@@ -6823,8 +6853,8 @@
 <td>Protect data from ransomware with Object Lock for data immutability</td>
 </tr>
 <tr>
-<td>Cloud Director OSE</td>
-<td>Access buckets from Cloud Director Object Storage Extension within your tenancy</td>
+<td>Tenant Manager</td>
+<td>Manage buckets, users and access keys from the StorageGRID Tenant Manager at s3-tenant.aucyber.com.au</td>
 </tr>
 </tbody>
 </table>
@@ -6996,7 +7026,7 @@ Protections can be set up using either VMware Cloud Director Availability (vCDA)
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2025 05:48:37 UTC">March 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 06:57:33 UTC">June 5, 2026</span>
   </span>
 
     

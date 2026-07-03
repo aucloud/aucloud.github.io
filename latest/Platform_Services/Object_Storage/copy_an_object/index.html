@@ -13,17 +13,17 @@
         <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/copy_an_object/">
       
       
-        <link rel="prev" href="../add_an_object_to_a_bucket/">
+        <link rel="prev" href="../view_an_object/">
       
       
-        <link rel="next" href="../creating_a_bucket/">
+        <link rel="next" href="../view_properties_and_manage_permissions/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5412,6 +5412,8 @@
       
         
       
+        
+      
     
     
     
@@ -5471,14 +5473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5527,6 +5557,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../security_credentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security Credentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating a Bucket
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
         
   
@@ -5535,6 +5621,34 @@
     
   
     Add an object to a bucket
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    View an object
   
 
     
@@ -5637,14 +5751,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../creating_a_bucket/" class="md-nav__link">
+      <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Creating a Bucket
+    View properties and manage permissions
   
 
     
@@ -5673,90 +5787,6 @@
     
   
     Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../view_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    View an object
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    View properties and manage permissions
   
 
     
@@ -6324,29 +6354,14 @@
   <h1>Copy an object</h1>
 
 <div><h2 id="copy-an-object">Copy an object<a class="headerlink" href="#copy-an-object" title="Permanent link">¤</a></h2>
-<ol>
-<li>
-<p>To copy an object to another bucket, click the check box of the object you want to copy.</p>
-<p><img alt="copy object" src="../assets/copy_object.png">  </p>
-</li>
-<li>
-<p>Under <strong>ACTIONS</strong> select <strong>Copy to</strong>.</p>
-<p><img alt="copy object" src="../assets/copy_object2.png">  </p>
-</li>
-<li>
-<p>The <strong>Copy Objects</strong> wizard will open</p>
-<p><img alt="copy object" src="../assets/copy_object3.png"></p>
-</li>
-<li>
-<p>Select the destination bucket.</p>
-</li>
-<li>
-<p>Check the tick box to acknowledge your understanding.</p>
-</li>
-<li>
-<p>Click <strong>COPY</strong>.</p>
-</li>
-</ol></div>
+<p>Copy objects within or between buckets with an S3 client (see <a href="../accessing_object_storage/">Accessing Object Storage</a>).</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># copy an object to another bucket</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>cp<span class="w"> </span>s3://sourcebucket/myfile.txt<span class="w"> </span>s3://destbucket/myfile.txt
+
+<span class="c1"># copy (sync) everything under a prefix</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>sync<span class="w"> </span>s3://sourcebucket/mydir/<span class="w"> </span>s3://destbucket/mydir/
+</code></pre></div>
+<p>Bucket names are globally unique across AUCyber object storage.</p></div>
 
 
 
@@ -6367,7 +6382,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 18, 2023 02:55:26 UTC">January 18, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 07:11:15 UTC">June 5, 2026</span>
   </span>
 
     

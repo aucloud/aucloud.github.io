@@ -13,17 +13,17 @@
         <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/accessing_object_storage/">
       
       
-        <link rel="prev" href="../accessing_from_an_s3browser/">
+        <link rel="prev" href="../limiting_bucket_access_to_specific_access_keys/">
       
       
-        <link rel="next" href="../add_an_object_to_a_bucket/">
+        <link rel="next" href="../security_credentials/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5412,6 +5412,8 @@
       
         
       
+        
+      
     
     
     
@@ -5471,14 +5473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5566,10 +5596,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-object-storage" class="md-nav__link">
+  <a href="#web-ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Object Storage
+        Web UI
       
     </span>
   </a>
@@ -5577,10 +5607,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#path-vs-host-based-bucket-access" class="md-nav__link">
+  <a href="#aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Path vs Host based bucket access
+        AWS CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s5cmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        s5cmd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyberduck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyberduck
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S3 Browser
       
     </span>
   </a>
@@ -5603,42 +5666,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../security_credentials/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Add an object to a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../copy_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Copy an object
+    Security Credentials
   
 
     
@@ -5687,42 +5722,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
+    Add an object to a bucket
   
 
     
@@ -5771,6 +5778,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../copy_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy an object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
         
   
@@ -5779,6 +5814,34 @@
     
   
     View properties and manage permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete an object or a bucket
   
 
     
@@ -6311,10 +6374,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-object-storage" class="md-nav__link">
+  <a href="#web-ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Object Storage
+        Web UI
       
     </span>
   </a>
@@ -6322,10 +6385,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#path-vs-host-based-bucket-access" class="md-nav__link">
+  <a href="#aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Path vs Host based bucket access
+        AWS CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s5cmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        s5cmd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyberduck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyberduck
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S3 Browser
       
     </span>
   </a>
@@ -6368,55 +6464,88 @@
   <h1>Accessing Object Storage</h1>
 
 <div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manages data as a file hierarchy. Each object typically includes the data itself, an amount of metadata and a globally unique identifier which is stored within a bucket.</p>
-<p>Buckets are containers for objects. You can have one or more buckets and control who has access to each bucket.</p>
-<h2 id="accessing-object-storage">Accessing Object Storage<a class="headerlink" href="#accessing-object-storage" title="Permanent link">¤</a></h2>
-<ol>
-<li>
-<p>S3 Object Storage can be accessed via a plug-in through VMware Cloud Director and is enabled by default. If you do not have access contact your Customer Success Manager, Sales Executive or AUCyber Support <a href="mailto:support@aucyber.com.au">support@aucyber.com.au</a>.</p>
-</li>
-<li>
-<p>When the plug-in has been enabled, you will be able to access Object Storage and commence creating your buckets. Select <strong>Object Storage</strong> from the Main Menu.</p>
-<p><img alt="nav object storage" src="../assets/nav_object_storage.png">  </p>
-</li>
-<li>
-<p>You will be presented with the dashboard which displays an overall view of your object store including:</p>
+<p>Object storage is a data storage architecture that manages data as objects, as opposed to other storage architectures which manage data as a file hierarchy. Each object includes the data itself, an amount of metadata, and a globally unique identifier, and is stored within a bucket. Buckets are containers for objects. You can have one or more buckets and control who has access to each.</p>
+<p>AUCyber object storage is provided by NetApp StorageGRID. There is a single S3 API endpoint, <code>https://s3.aucyber.com.au</code>, serving all sovereignty zones; the zone (CSZ or SSZ) is selected per bucket when the bucket is created. Both path-style (<code>https://s3.aucyber.com.au/&lt;bucket&gt;/&lt;key&gt;</code>) and host based (<code>https://&lt;bucket&gt;.s3.aucyber.com.au/&lt;key&gt;</code>) addressing are supported.</p>
+<p>To use any S3 client you need:</p>
 <ul>
-<li>Total Buckets</li>
-<li>Total Objects</li>
-<li>Storage Used</li>
-<li>Users</li>
+<li><strong>Endpoint</strong>: <code>https://s3.aucyber.com.au</code></li>
+<li><strong>Access Key ID</strong> and <strong>Secret Access Key</strong> - see <a href="../security_credentials/">Security Credentials</a></li>
 </ul>
-<p><img alt="associated tenants" src="../assets/associated_tenants.png"></p>
-</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>An AWS specific example on how to make this work using the aws command line tool:</p>
-</div>
+<h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Permanent link">¤</a></h2>
+<p>Object storage is managed through the StorageGRID <strong>Tenant Manager</strong> at <a href="https://s3-tenant.aucyber.com.au">https://s3-tenant.aucyber.com.au</a>. Log in with the tenant ID and root credentials supplied by AUCyber. If you do not have these, contact your Customer Success Manager, Sales Executive or AUCyber Support <a href="mailto:support@aucyber.com.au">support@aucyber.com.au</a>.</p>
+<p><img alt="Log in" src="../assets/login.png"></p>
+<p>From the Tenant Manager you can create and manage buckets, users and S3 access keys, and view a summary of your object store including total buckets, objects, storage used and users.</p>
+<h2 id="aws-cli">AWS CLI<a class="headerlink" href="#aws-cli" title="Permanent link">¤</a></h2>
 <ol>
 <li>
-<p>Create an AWS credentials file (have your <code>access_key_id</code> and <code>secret_access_key</code> ready):</p>
+<p>Configure a profile with your access key and secret key:</p>
 <div class="highlight"><pre><span></span><code>aws<span class="w"> </span>configure<span class="w"> </span>--profile<span class="o">=</span>aucloud
 </code></pre></div>
 </li>
 <li>
-<p>Test connectivity to the s3 bucket you created previously (assumed in this example to be <code>mybucket</code>, using the CSZ endpoint)</p>
-<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://vos.s3-sz101.australiacloud.com.au/api/v1/s3<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>s3://mybucket
+<p>Use the <code>--endpoint-url</code> flag to target AUCyber object storage:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># list your buckets</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>ls
+
+<span class="c1"># list objects in a bucket</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>s3://mybucket
+
+<span class="c1"># upload a file</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span>s3<span class="w"> </span>cp<span class="w"> </span>myfile.txt<span class="w"> </span>s3://mybucket/
 </code></pre></div>
 </li>
 </ol>
-<h2 id="path-vs-host-based-bucket-access">Path vs Host based bucket access<a class="headerlink" href="#path-vs-host-based-bucket-access" title="Permanent link">¤</a></h2>
-<p>Files can be accessed using s3, across two methods - host based and path based access.</p>
-<p>For a bucket <code>bucket</code>, and a file <code>bar.txt</code> using path based access in AUCyber's <strong>SSZ</strong> environment. would have a path of:</p>
-<p><code>https://s3-sz201.australiacloud.com.au/api/v1/s3/bucket/bar.txt</code></p>
-<p>using host based access:</p>
-<p><code>https://bucket.s3-sz201.australiacloud.com.au/bar.txt</code></p>
-<p>Note that the result is that each bucket name is globally unique.</p>
-<div class="admonition warning">
-<p class="admonition-title">Restrictions on host based access</p>
-<p>Currently <strong>CSZ</strong> does not support host based access.</p>
-</div></div>
+<h2 id="s5cmd">s5cmd<a class="headerlink" href="#s5cmd" title="Permanent link">¤</a></h2>
+<p><a href="https://github.com/peak/s5cmd">s5cmd</a> is a very fast, parallel S3 client. It reads credentials from the standard AWS environment variables or <code>~/.aws/credentials</code>, and takes the endpoint as a flag:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span>&lt;access<span class="w"> </span>key<span class="w"> </span>id&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>&lt;secret<span class="w"> </span>access<span class="w"> </span>key&gt;
+
+<span class="c1"># list your buckets</span>
+s5cmd<span class="w"> </span>--endpoint-url<span class="w"> </span>https://s3.aucyber.com.au<span class="w"> </span>ls
+
+<span class="c1"># upload a file</span>
+s5cmd<span class="w"> </span>--endpoint-url<span class="w"> </span>https://s3.aucyber.com.au<span class="w"> </span>cp<span class="w"> </span>myfile.txt<span class="w"> </span>s3://mybucket/
+</code></pre></div>
+<h2 id="cyberduck">Cyberduck<a class="headerlink" href="#cyberduck" title="Permanent link">¤</a></h2>
+<p><a href="https://cyberduck.io/">Cyberduck</a> is a graphical S3 client for Windows and macOS.</p>
+<ol>
+<li>Click <strong>Open Connection</strong>.</li>
+<li>Select <strong>Amazon S3</strong> from the drop-down.</li>
+<li>Enter the connection details:<ul>
+<li><strong>Server</strong>: <code>s3.aucyber.com.au</code></li>
+<li><strong>Port</strong>: <code>443</code></li>
+<li><strong>Access Key ID</strong>: your access key</li>
+<li><strong>Secret Access Key</strong>: your secret key</li>
+</ul>
+</li>
+<li>Click <strong>Connect</strong>.</li>
+</ol>
+<h2 id="s3-browser">S3 Browser<a class="headerlink" href="#s3-browser" title="Permanent link">¤</a></h2>
+<p><a href="https://s3browser.com/">S3 Browser</a> is a graphical S3 client for Windows. The free version restricts upload and download to two concurrent connections; paid versions allow up to 10.</p>
+<ol>
+<li>
+<p>Navigate to <a href="https://s3browser.com/">https://s3browser.com/</a> and download S3 Browser.</p>
+<p><img alt="S3 Browser" src="../assets/s3_browser.png"></p>
+</li>
+<li>
+<p>Add a new account with the following parameters:</p>
+<ul>
+<li><strong>Account Name</strong>: a name of your choice</li>
+<li><strong>Account Type</strong>: S3 Compatible Storage</li>
+<li><strong>REST Endpoint</strong>: <code>s3.aucyber.com.au</code></li>
+<li><strong>Access Key ID</strong>: your access key</li>
+<li><strong>Secret Access Key</strong>: your secret key</li>
+<li><strong>Signature Version</strong>: Signature V4</li>
+<li><strong>Addressing Model</strong>: Path Style</li>
+<li>Click <strong>Add new account</strong></li>
+</ul>
+<p><img alt="Add new account" src="../assets/add_new_account.png"></p>
+</li>
+<li>
+<p>You can now manage your buckets - add, delete and download objects.</p>
+<p><img alt="Manage bucket" src="../assets/manage_bucket.png"></p>
+</li>
+</ol></div>
 
 
 
@@ -6437,7 +6566,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2025 05:48:37 UTC">March 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 07:05:23 UTC">June 5, 2026</span>
   </span>
 
     

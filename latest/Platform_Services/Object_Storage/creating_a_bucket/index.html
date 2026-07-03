@@ -13,17 +13,17 @@
         <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/creating_a_bucket/">
       
       
-        <link rel="prev" href="../copy_an_object/">
+        <link rel="prev" href="../security_credentials/">
       
       
-        <link rel="next" href="../delete_an_object_or_a_bucket/">
+        <link rel="next" href="../add_an_object_to_a_bucket/">
       
       
         
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5412,6 +5412,8 @@
       
         
       
+        
+      
     
     
     
@@ -5471,14 +5473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessing_from_an_s3browser/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Accessing buckets from an S3 Browser
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limiting bucket access to specific access keys
   
 
     
@@ -5527,42 +5557,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../security_credentials/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Add an object to a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../copy_an_object/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Copy an object
+    Security Credentials
   
 
     
@@ -5665,42 +5667,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Delete an object or a bucket
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security_credentials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Credentials
+    Add an object to a bucket
   
 
     
@@ -5749,6 +5723,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../copy_an_object/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy an object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
         
   
@@ -5757,6 +5759,34 @@
     
   
     View properties and manage permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete an object or a bucket
   
 
     
@@ -6324,33 +6354,29 @@
   <h1>Creating a Bucket</h1>
 
 <div><h2 id="creating-a-bucket">Creating a Bucket<a class="headerlink" href="#creating-a-bucket" title="Permanent link">¤</a></h2>
+<p>Buckets are created in the StorageGRID <strong>Tenant Manager</strong> at <a href="https://s3-tenant.aucyber.com.au">https://s3-tenant.aucyber.com.au</a>. See <a href="../accessing_object_storage/">Accessing Object Storage</a> for how to log in.</p>
 <ol>
 <li>
-<p>To begin, you will first need to create a bucket. Click on <strong>Buckets</strong> from the left-hand menu then click on <strong>GET STARTED</strong>.</p>
-<p><img alt="Create Bucket" src="../assets/bucket.png">  </p>
+<p>In the Tenant Manager, select <strong>Buckets</strong> and create a new bucket.</p>
 </li>
 <li>
-<p>Enter a name for your bucket. The name must comply with the validation rules:</p>
+<p>Enter a name for your bucket. The name must comply with S3 (DNS) naming rules:</p>
 <ul>
-<li>Must be unique across all existing names.</li>
-<li>Must comply with DNS naming conventions.  </li>
-<li>Must be at least 3 and no more than 63 characters long.</li>
-<li>Must be a series of one or more labels.  <ul>
-<li>Each label can contain lowercase letters, numbers and hyphens.  </li>
-<li>Each label must start and end with a lowercase letter or a number.  </li>
-<li>Adjacent labels are separated by a single period (.)  </li>
-</ul>
-</li>
+<li>Must be unique across all existing bucket names.</li>
+<li>Must be between 3 and 63 characters long.</li>
+<li>May contain only lowercase letters, numbers, hyphens and periods.</li>
+<li>Must start and end with a lowercase letter or a number.</li>
 <li>Must not be formatted as an IP address (for example, 192.168.5.4).</li>
 </ul>
-<p><img alt="Create Bucket" src="../assets/create_bucket.png"></p>
 </li>
 <li>
-<p>Click <strong>SAVE.</strong> The bucket you have just created will now be displayed in your list of buckets.</p>
+<p>Select the <strong>region</strong> for the bucket - <code>csz</code> (Canberra) or <code>ssz</code> (Sydney). The region is fixed for the life of the bucket and determines which sovereignty zone stores its data.</p>
 </li>
 <li>
-<p>To create additional buckets, click on <strong>+NEW BUCKET</strong> and follow the wizard to create as many buckets as you require.</p>
-<p><img alt="Additional Buckets" src="../assets/new_bucket.png"></p>
+<p>If you require <strong>object lock</strong> for ransomware protection, enable it now. Object lock also enables versioning and <strong>cannot be turned on after the bucket is created</strong>. See <a href="../best_practices/">Best Practices</a>.</p>
+</li>
+<li>
+<p>Create the bucket. It will now appear in your list of buckets.</p>
 </li>
 </ol></div>
 
@@ -6373,7 +6399,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 18, 2023 02:55:26 UTC">January 18, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2026 07:11:15 UTC">June 5, 2026</span>
   </span>
 
     
