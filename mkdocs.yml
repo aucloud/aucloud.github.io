@@ -28,6 +28,9 @@ plugins:
         - Blog/blog_template.md
   - blogging:
       template: templates/aucloud_blog.html
+      locale: en # babel locale for date localization; without it the runner's LC_TIME=C breaks newer babel (UnknownLocaleError: 'c')
+      time_format: "%Y-%m-%d %H:%M:%S" # The format used to display the time
+      meta_time_format: "%Y-%m-%d %H:%M:%S"
 
       features:
         tags: {}
@@ -110,9 +113,6 @@ site_description: AUCyber's technical documentation site, managed as code from G
 site_name: Technical Documentation
 site_url: !ENV SITE_URL
 theme:
-  locale: en # The locale for time localizations, default: system's locale
-  time_format: "%Y-%m-%d %H:%M:%S" # The format used to display the time
-  meta_time_format: "%Y-%m-%d %H:%M:%S"
   logo: aucyber.svg
   favicon: images/favicon.ico
   features:
