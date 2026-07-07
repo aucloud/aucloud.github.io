@@ -6,35 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to create a VM from a template">
+        <meta name="description" content="Enable object versioning, recover and restore previous versions, and understand the storage and cost implications">
       
       
       
-        <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/">
+        <link rel="canonical" href="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/object_versioning/">
       
       
-        <link rel="prev" href="../how_to_create_a_vapp/">
+        <link rel="prev" href="../best_practices/">
       
       
-        <link rel="next" href="../how_to_create_an_empty_vm/">
+        <link rel="next" href="../limiting_bucket_access_to_specific_access_keys/">
       
       
         
       
       
-      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>How to create a VM from a template - Technical Documentation</title>
+        <title>Object versioning - Technical Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -73,17 +73,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="How to create a VM from a template - Technical Documentation" />
-<meta property="og:description" content="How to create a VM from a template" />
-<meta property="og:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template.png" />
+<meta property="og:title" content="Object versioning - Technical Documentation" />
+<meta property="og:description" content="Enable object versioning, recover and restore previous versions, and understand the storage and cost implications" />
+<meta property="og:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/Object_Storage/object_versioning.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://docs.aucyber.com.au/latest/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/" />
+<meta property="og:url" content="https://docs.aucyber.com.au/latest/Platform_Services/Object_Storage/object_versioning/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="How to create a VM from a template - Technical Documentation" />
-<meta property="twitter:description" content="How to create a VM from a template" />
-<meta property="twitter:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template.png" />
+<meta property="twitter:title" content="Object versioning - Technical Documentation" />
+<meta property="twitter:description" content="Enable object versioning, recover and restore previous versions, and understand the storage and cost implications" />
+<meta property="twitter:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/Object_Storage/object_versioning.png" />
 </head>
   
   
@@ -123,9 +123,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Technical Documentation" class="md-header__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
+    <a href="../../.." title="Technical Documentation" class="md-header__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
       
-  <img src="../../../../aucyber.svg" alt="logo">
+  <img src="../../../aucyber.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -142,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to create a VM from a template
+              Object versioning
             
           </span>
         </div>
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Platform_Overview/Service_Specifications/" class="md-tabs__link">
+        <a href="../../../Platform_Overview/Service_Specifications/" class="md-tabs__link">
           
   
   
@@ -273,7 +273,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -314,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Blog/" class="md-tabs__link">
+        <a href="../../../Blog/" class="md-tabs__link">
           
   
   
@@ -391,7 +391,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../tags/" class="md-tabs__link">
+      <a href="../../../tags/" class="md-tabs__link">
         
   
   
@@ -432,9 +432,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Technical Documentation" class="md-nav__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
+    <a href="../../.." title="Technical Documentation" class="md-nav__button md-logo" aria-label="Technical Documentation" data-md-component="logo">
       
-  <img src="../../../../aucyber.svg" alt="logo">
+  <img src="../../../aucyber.svg" alt="logo">
 
     </a>
     Technical Documentation
@@ -527,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/Service_Specifications/" class="md-nav__link">
+      <a href="../../../Platform_Overview/Service_Specifications/" class="md-nav__link">
         
   
   
@@ -555,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
+      <a href="../../../Platform_Overview/sovereignty_zones/" class="md-nav__link">
         
   
   
@@ -612,7 +612,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Platform_Overview/Security/" class="md-nav__link ">
+            <a href="../../../Platform_Overview/Security/" class="md-nav__link ">
               
   
   
@@ -656,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/Security/network_security/" class="md-nav__link">
+      <a href="../../../Platform_Overview/Security/network_security/" class="md-nav__link">
         
   
   
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
+      <a href="../../../Platform_Overview/Security/security_and_governance/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
+      <a href="../../../Platform_Overview/Security/shared_service_model/" class="md-nav__link">
         
   
   
@@ -763,7 +763,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Platform_Overview/Security/CRISP/" class="md-nav__link ">
+            <a href="../../../Platform_Overview/Security/CRISP/" class="md-nav__link ">
               
   
   
@@ -807,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/Security/CRISP/Community_Rules_Information_Security_Policy_%28CRISP%29/" class="md-nav__link">
+      <a href="../../../Platform_Overview/Security/CRISP/Community_Rules_Information_Security_Policy_%28CRISP%29/" class="md-nav__link">
         
   
   
@@ -905,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/licensing/licensing/" class="md-nav__link">
+      <a href="../../../Platform_Overview/licensing/licensing/" class="md-nav__link">
         
   
   
@@ -972,7 +972,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Platform_Overview/portal/" class="md-nav__link ">
+            <a href="../../../Platform_Overview/portal/" class="md-nav__link ">
               
   
   
@@ -1016,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal/api_management/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal/api_management/" class="md-nav__link">
         
   
   
@@ -1044,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal/billing_portal/" class="md-nav__link">
         
   
   
@@ -1072,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal/getting_started/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal/getting_started/" class="md-nav__link">
         
   
   
@@ -1100,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal/known_limitations/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal/known_limitations/" class="md-nav__link">
         
   
   
@@ -1128,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal/managing_user_accounts/" class="md-nav__link">
         
   
   
@@ -1197,7 +1197,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Platform_Overview/portal-new/" class="md-nav__link ">
+            <a href="../../../Platform_Overview/portal-new/" class="md-nav__link ">
               
   
   
@@ -1241,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/portal-login/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/portal-login/" class="md-nav__link">
         
   
   
@@ -1269,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/portal-account-setup/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/portal-account-setup/" class="md-nav__link">
         
   
   
@@ -1297,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/portal-account-self-mgmt/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/portal-account-self-mgmt/" class="md-nav__link">
         
   
   
@@ -1325,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/portal-users-mgmt/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/portal-users-mgmt/" class="md-nav__link">
         
   
   
@@ -1353,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/vcd-login/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/vcd-login/" class="md-nav__link">
         
   
   
@@ -1381,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/portal-new/authentication-settings/" class="md-nav__link">
+      <a href="../../../Platform_Overview/portal-new/authentication-settings/" class="md-nav__link">
         
   
   
@@ -1442,7 +1442,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Platform_Overview/support/" class="md-nav__link ">
+            <a href="../../../Platform_Overview/support/" class="md-nav__link ">
               
   
   
@@ -1486,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/support/Terms_Conditions/" class="md-nav__link">
+      <a href="../../../Platform_Overview/support/Terms_Conditions/" class="md-nav__link">
         
   
   
@@ -1514,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Platform_Overview/support/vulnerability_disclosure_policy/" class="md-nav__link">
+      <a href="../../../Platform_Overview/support/vulnerability_disclosure_policy/" class="md-nav__link">
         
   
   
@@ -1603,7 +1603,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -1647,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference_urls/" class="md-nav__link">
+      <a href="../../reference_urls/" class="md-nav__link">
         
   
   
@@ -1675,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sovereign_bridge/" class="md-nav__link">
+      <a href="../../sovereign_bridge/" class="md-nav__link">
         
   
   
@@ -1734,7 +1734,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Backup/" class="md-nav__link ">
+            <a href="../../Backup/" class="md-nav__link ">
               
   
   
@@ -1778,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backup/about_backup/" class="md-nav__link">
+      <a href="../../Backup/about_backup/" class="md-nav__link">
         
   
   
@@ -1806,7 +1806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backup/getting_started/" class="md-nav__link">
+      <a href="../../Backup/getting_started/" class="md-nav__link">
         
   
   
@@ -1834,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backup/restoring_vms_and_vapps/" class="md-nav__link">
+      <a href="../../Backup/restoring_vms_and_vapps/" class="md-nav__link">
         
   
   
@@ -1862,7 +1862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backup/statistics_on_vcd_backups/" class="md-nav__link">
+      <a href="../../Backup/statistics_on_vcd_backups/" class="md-nav__link">
         
   
   
@@ -1890,7 +1890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
+      <a href="../../Backup/working_with_vcd_backup_jobs/" class="md-nav__link">
         
   
   
@@ -1923,10 +1923,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1959,11 +1957,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -1984,7 +1982,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2002,7 +2000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../VMware_Cloud_Director/" class="md-nav__link">
+      <a href="../../Compute/VMware_Cloud_Director/" class="md-nav__link">
         
   
   
@@ -2055,7 +2053,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Catalogs/" class="md-nav__link ">
+            <a href="../../Compute/Catalogs/" class="md-nav__link ">
               
   
   
@@ -2155,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Catalogs/VCD%2010.4.x/how_to_create_a_catalog/" class="md-nav__link">
+      <a href="../../Compute/Catalogs/VCD%2010.4.x/how_to_create_a_catalog/" class="md-nav__link">
         
   
   
@@ -2183,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Catalogs/VCD%2010.4.x/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+      <a href="../../Compute/Catalogs/VCD%2010.4.x/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
         
   
   
@@ -2275,7 +2273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Catalogs/VCD%2010.5.x%20%28new%29/how_to_create_a_catalog/" class="md-nav__link">
+      <a href="../../Compute/Catalogs/VCD%2010.5.x%20%28new%29/how_to_create_a_catalog/" class="md-nav__link">
         
   
   
@@ -2303,7 +2301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Catalogs/VCD%2010.5.x%20%28new%29/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
+      <a href="../../Compute/Catalogs/VCD%2010.5.x%20%28new%29/how_to_share_catalog_library_between_aucloud_sov_zone/" class="md-nav__link">
         
   
   
@@ -2403,7 +2401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Getting_Started/getting_started_with_vcd/" class="md-nav__link">
+      <a href="../../Compute/Getting_Started/getting_started_with_vcd/" class="md-nav__link">
         
   
   
@@ -2431,7 +2429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Getting_Started/use_case/" class="md-nav__link">
+      <a href="../../Compute/Getting_Started/use_case/" class="md-nav__link">
         
   
   
@@ -2529,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-T_Networks/bring_your_own_firewall/" class="md-nav__link">
+      <a href="../../Compute/NSX-T_Networks/bring_your_own_firewall/" class="md-nav__link">
         
   
   
@@ -2557,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
+      <a href="../../Compute/NSX-T_Networks/create_a_routed_vdc_network/" class="md-nav__link">
         
   
   
@@ -2585,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
+      <a href="../../Compute/NSX-T_Networks/create_an_isolated_vdc_network/" class="md-nav__link">
         
   
   
@@ -2613,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
+      <a href="../../Compute/NSX-T_Networks/edge_services_gateway/" class="md-nav__link">
         
   
   
@@ -2641,7 +2639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-T_Networks/vapp_networks/" class="md-nav__link">
+      <a href="../../Compute/NSX-T_Networks/vapp_networks/" class="md-nav__link">
         
   
   
@@ -2712,7 +2710,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../NSX-V%20to%20NSX-T%20Migration/" class="md-nav__link ">
+            <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/" class="md-nav__link ">
               
   
   
@@ -2756,7 +2754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/VPN/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/VPN/" class="md-nav__link">
         
   
   
@@ -2784,7 +2782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/edge_gateway/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/edge_gateway/" class="md-nav__link">
         
   
   
@@ -2812,7 +2810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/faq/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/faq/" class="md-nav__link">
         
   
   
@@ -2840,7 +2838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/firewall_rules/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/firewall_rules/" class="md-nav__link">
         
   
   
@@ -2868,7 +2866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/load_balancer/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/load_balancer/" class="md-nav__link">
         
   
   
@@ -2896,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/nat/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/nat/" class="md-nav__link">
         
   
   
@@ -2947,7 +2945,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../NSX-V%20to%20NSX-T%20Migration/Prerequisites/" class="md-nav__link ">
+            <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/" class="md-nav__link ">
               
   
   
@@ -2991,7 +2989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../NSX-V%20to%20NSX-T%20Migration/Prerequisites/veeam/" class="md-nav__link">
+      <a href="../../Compute/NSX-V%20to%20NSX-T%20Migration/Prerequisites/veeam/" class="md-nav__link">
         
   
   
@@ -3058,7 +3056,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Red_Hat_Licensing/" class="md-nav__link ">
+            <a href="../../Compute/Red_Hat_Licensing/" class="md-nav__link ">
               
   
   
@@ -3102,7 +3100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Red_Hat_Licensing/installing_updating/" class="md-nav__link">
+      <a href="../../Compute/Red_Hat_Licensing/installing_updating/" class="md-nav__link">
         
   
   
@@ -3194,7 +3192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Using_the_API/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+      <a href="../../Compute/Using_the_API/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
         
   
   
@@ -3222,7 +3220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+      <a href="../../Compute/Using_the_API/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
         
   
   
@@ -3322,7 +3320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/authentication_methods/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/authentication_methods/" class="md-nav__link">
         
   
   
@@ -3350,7 +3348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/create_vcd_api_token/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/create_vcd_api_token/" class="md-nav__link">
         
   
   
@@ -3378,7 +3376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/establishing_a_connection_to_aucloud_with_powercli/" class="md-nav__link">
         
   
   
@@ -3406,7 +3404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/retrieve_tenancy_name/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/retrieve_tenancy_name/" class="md-nav__link">
         
   
   
@@ -3434,7 +3432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/using_terraform_against_AUCloud_implementation_of_vcd/" class="md-nav__link">
         
   
   
@@ -3462,7 +3460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using-the-api-new/vcd_local_user_setup/" class="md-nav__link">
+      <a href="../../Compute/using-the-api-new/vcd_local_user_setup/" class="md-nav__link">
         
   
   
@@ -3552,7 +3550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Windows_Server_Licensing/windows_server_licensing/" class="md-nav__link">
+      <a href="../../Compute/Windows_Server_Licensing/windows_server_licensing/" class="md-nav__link">
         
   
   
@@ -3585,10 +3583,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3625,11 +3621,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_10" >
         
           
           <label class="md-nav__link" for="__nav_2_5_10" id="__nav_2_5_10_label" tabindex="0">
@@ -3650,7 +3646,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3668,7 +3664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/hot_to_migrate_vapps_between_virtual_data_centres/" class="md-nav__link">
         
   
   
@@ -3696,7 +3692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_create_a_vapp/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_a_vapp/" class="md-nav__link">
         
   
   
@@ -3721,35 +3717,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to create a VM from a template
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template/" class="md-nav__link">
         
   
   
@@ -3765,46 +3736,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-vm-from-a-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating a VM from a template
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3817,7 +3748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_create_an_empty_vm/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_create_an_empty_vm/" class="md-nav__link">
         
   
   
@@ -3845,7 +3776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_increase_an_hdd_or_add_hdd_to_a_vm/" class="md-nav__link">
         
   
   
@@ -3873,7 +3804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_perform_guest_customisation/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_perform_guest_customisation/" class="md-nav__link">
         
   
   
@@ -3901,7 +3832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_resize_vm_disk/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_resize_vm_disk/" class="md-nav__link">
         
   
   
@@ -3929,7 +3860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_upload_media/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_upload_media/" class="md-nav__link">
         
   
   
@@ -3957,7 +3888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_use_affinity_rules/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_use_affinity_rules/" class="md-nav__link">
         
   
   
@@ -3985,7 +3916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_view_and_update_virtual_machine_settings/" class="md-nav__link">
         
   
   
@@ -4013,7 +3944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_view_storage_profile_usage/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_view_storage_profile_usage/" class="md-nav__link">
         
   
   
@@ -4041,7 +3972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool/" class="md-nav__link">
         
   
   
@@ -4069,7 +4000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vmware_tools_installation/" class="md-nav__link">
+      <a href="../../Compute/Working_with_Virtual_Machines/vmware_tools_installation/" class="md-nav__link">
         
   
   
@@ -4105,7 +4036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../Compute/faq/" class="md-nav__link">
         
   
   
@@ -4182,7 +4113,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Disaster_Recovery_and_Migration/" class="md-nav__link ">
+            <a href="../../Disaster_Recovery_and_Migration/" class="md-nav__link ">
               
   
   
@@ -4226,7 +4157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_conduct_a_test_failover/" class="md-nav__link">
         
   
   
@@ -4254,7 +4185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_configure_a_new_migration_or_replication/" class="md-nav__link">
         
   
   
@@ -4282,7 +4213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_configure_a_new_protection/" class="md-nav__link">
         
   
   
@@ -4310,7 +4241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_configure_the_network_settings_of_a_replication/" class="md-nav__link">
         
   
   
@@ -4338,7 +4269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_perform_a_failover_task/" class="md-nav__link">
         
   
   
@@ -4366,7 +4297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/how_to_perform_a_reverse_task/" class="md-nav__link">
         
   
   
@@ -4394,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/installing_and_configuring_vcda_on_premise/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/installing_and_configuring_vcda_on_premise/" class="md-nav__link">
         
   
   
@@ -4422,7 +4353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_aucloud_sites/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/vcd_availability_aucloud_sites/" class="md-nav__link">
         
   
   
@@ -4450,7 +4381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/vcd_availability_quick_start_guide/" class="md-nav__link">
         
   
   
@@ -4478,7 +4409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
+      <a href="../../Disaster_Recovery_and_Migration/vcd_availability_replication_policies/" class="md-nav__link">
         
   
   
@@ -4563,7 +4494,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Kubernetes/" class="md-nav__link ">
+            <a href="../../Kubernetes/" class="md-nav__link ">
               
   
   
@@ -4607,7 +4538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/cluster_sizing_guide/" class="md-nav__link">
+      <a href="../../Kubernetes/cluster_sizing_guide/" class="md-nav__link">
         
   
   
@@ -4635,7 +4566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/deleting_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../Kubernetes/deleting_clusters_vcd_ui/" class="md-nav__link">
         
   
   
@@ -4663,7 +4594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/deploying_example_wordpress_with_sql/" class="md-nav__link">
+      <a href="../../Kubernetes/deploying_example_wordpress_with_sql/" class="md-nav__link">
         
   
   
@@ -4691,7 +4622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/deploying_kubernetes_dashboard/" class="md-nav__link">
+      <a href="../../Kubernetes/deploying_kubernetes_dashboard/" class="md-nav__link">
         
   
   
@@ -4719,7 +4650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/faq/" class="md-nav__link">
+      <a href="../../Kubernetes/faq/" class="md-nav__link">
         
   
   
@@ -4747,7 +4678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/known-issues/" class="md-nav__link">
+      <a href="../../Kubernetes/known-issues/" class="md-nav__link">
         
   
   
@@ -4775,7 +4706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/kubernetes_networking/" class="md-nav__link">
+      <a href="../../Kubernetes/kubernetes_networking/" class="md-nav__link">
         
   
   
@@ -4803,7 +4734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/kubernetes_versions/" class="md-nav__link">
+      <a href="../../Kubernetes/kubernetes_versions/" class="md-nav__link">
         
   
   
@@ -4831,7 +4762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/obtaining_kube_config/" class="md-nav__link">
+      <a href="../../Kubernetes/obtaining_kube_config/" class="md-nav__link">
         
   
   
@@ -4859,7 +4790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/provisioning_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../Kubernetes/provisioning_clusters_vcd_ui/" class="md-nav__link">
         
   
   
@@ -4887,7 +4818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/resizing_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../Kubernetes/resizing_clusters_vcd_ui/" class="md-nav__link">
         
   
   
@@ -4915,7 +4846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/upgrading_clusters_vcd_ui/" class="md-nav__link">
+      <a href="../../Kubernetes/upgrading_clusters_vcd_ui/" class="md-nav__link">
         
   
   
@@ -4943,7 +4874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/upgrading_component_versions/" class="md-nav__link">
+      <a href="../../Kubernetes/upgrading_component_versions/" class="md-nav__link">
         
   
   
@@ -5000,7 +4931,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Kubernetes/tanzu_packages/" class="md-nav__link ">
+            <a href="../../Kubernetes/tanzu_packages/" class="md-nav__link ">
               
   
   
@@ -5044,7 +4975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/tanzu_packages/customizing_tanzu_packages/" class="md-nav__link">
+      <a href="../../Kubernetes/tanzu_packages/customizing_tanzu_packages/" class="md-nav__link">
         
   
   
@@ -5072,7 +5003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/tanzu_packages/deploying_monitoring/" class="md-nav__link">
+      <a href="../../Kubernetes/tanzu_packages/deploying_monitoring/" class="md-nav__link">
         
   
   
@@ -5100,7 +5031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/tanzu_packages/kapp_to_install/" class="md-nav__link">
+      <a href="../../Kubernetes/tanzu_packages/kapp_to_install/" class="md-nav__link">
         
   
   
@@ -5128,7 +5059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Kubernetes/tanzu_packages/tanzu_cli_install/" class="md-nav__link">
+      <a href="../../Kubernetes/tanzu_packages/tanzu_cli_install/" class="md-nav__link">
         
   
   
@@ -5207,7 +5138,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../M365_Backup/" class="md-nav__link ">
+            <a href="../../M365_Backup/" class="md-nav__link ">
               
   
   
@@ -5251,7 +5182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/Adding_Restore_Operator_Group/" class="md-nav__link">
+      <a href="../../M365_Backup/Adding_Restore_Operator_Group/" class="md-nav__link">
         
   
   
@@ -5279,7 +5210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/Certificate_Update/" class="md-nav__link">
+      <a href="../../M365_Backup/Certificate_Update/" class="md-nav__link">
         
   
   
@@ -5307,7 +5238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/EntraID_application_permission_requirements/" class="md-nav__link">
+      <a href="../../M365_Backup/EntraID_application_permission_requirements/" class="md-nav__link">
         
   
   
@@ -5335,7 +5266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/FAQ%27s/" class="md-nav__link">
+      <a href="../../M365_Backup/FAQ%27s/" class="md-nav__link">
         
   
   
@@ -5363,7 +5294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/M365_Backup_common_errors_and_actions/" class="md-nav__link">
+      <a href="../../M365_Backup/M365_Backup_common_errors_and_actions/" class="md-nav__link">
         
   
   
@@ -5391,7 +5322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/configuration/" class="md-nav__link">
+      <a href="../../M365_Backup/configuration/" class="md-nav__link">
         
   
   
@@ -5419,7 +5350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
+      <a href="../../M365_Backup/guide_to_veeam_restore_portal/" class="md-nav__link">
         
   
   
@@ -5452,6 +5383,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5490,15 +5423,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Object_Storage/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -5522,7 +5455,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -5542,7 +5475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/best_practices/" class="md-nav__link">
+      <a href="../best_practices/" class="md-nav__link">
         
   
   
@@ -5567,10 +5500,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../Object_Storage/object_versioning/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object versioning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -5586,6 +5544,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable versioning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable versioning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenant-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWS CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-with-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Work with versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-and-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete and restore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-and-cost-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage and cost considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5598,7 +5657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
+      <a href="../limiting_bucket_access_to_specific_access_keys/" class="md-nav__link">
         
   
   
@@ -5626,7 +5685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/accessing_object_storage/" class="md-nav__link">
+      <a href="../accessing_object_storage/" class="md-nav__link">
         
   
   
@@ -5654,7 +5713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/security_credentials/" class="md-nav__link">
+      <a href="../security_credentials/" class="md-nav__link">
         
   
   
@@ -5682,7 +5741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/creating_a_bucket/" class="md-nav__link">
+      <a href="../creating_a_bucket/" class="md-nav__link">
         
   
   
@@ -5710,7 +5769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/add_an_object_to_a_bucket/" class="md-nav__link">
+      <a href="../add_an_object_to_a_bucket/" class="md-nav__link">
         
   
   
@@ -5738,7 +5797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/view_an_object/" class="md-nav__link">
+      <a href="../view_an_object/" class="md-nav__link">
         
   
   
@@ -5766,7 +5825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/copy_an_object/" class="md-nav__link">
+      <a href="../copy_an_object/" class="md-nav__link">
         
   
   
@@ -5794,7 +5853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/view_properties_and_manage_permissions/" class="md-nav__link">
+      <a href="../view_properties_and_manage_permissions/" class="md-nav__link">
         
   
   
@@ -5822,7 +5881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Object_Storage/delete_an_object_or_a_bucket/" class="md-nav__link">
+      <a href="../delete_an_object_or_a_bucket/" class="md-nav__link">
         
   
   
@@ -5879,7 +5938,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Storage/" class="md-nav__link ">
+            <a href="../../Storage/" class="md-nav__link ">
               
   
   
@@ -5953,7 +6012,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Symmetric_Key_Agreement_Platform/" class="md-nav__link ">
+            <a href="../../Symmetric_Key_Agreement_Platform/" class="md-nav__link ">
               
   
   
@@ -5997,7 +6056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Symmetric_Key_Agreement_Platform/IPsec/" class="md-nav__link">
+      <a href="../../Symmetric_Key_Agreement_Platform/IPsec/" class="md-nav__link">
         
   
   
@@ -6025,7 +6084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Symmetric_Key_Agreement_Platform/SDKs/" class="md-nav__link">
+      <a href="../../Symmetric_Key_Agreement_Platform/SDKs/" class="md-nav__link">
         
   
   
@@ -6053,7 +6112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Symmetric_Key_Agreement_Platform/bootstrapping/" class="md-nav__link">
+      <a href="../../Symmetric_Key_Agreement_Platform/bootstrapping/" class="md-nav__link">
         
   
   
@@ -6146,7 +6205,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Blog/" class="md-nav__link ">
+            <a href="../../../Blog/" class="md-nav__link ">
               
   
   
@@ -6190,7 +6249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Blog/documentation_as_opensource/" class="md-nav__link">
+      <a href="../../../Blog/documentation_as_opensource/" class="md-nav__link">
         
   
   
@@ -6306,7 +6365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tags/" class="md-nav__link">
+      <a href="../../../tags/" class="md-nav__link">
         
   
   
@@ -6362,10 +6421,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-vm-from-a-template" class="md-nav__link">
+  <a href="#enable-versioning" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating a VM from a template
+        Enable versioning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable versioning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenant-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWS CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-with-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Work with versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-and-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete and restore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-and-cost-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage and cost considerations
       
     </span>
   </a>
@@ -6387,20 +6507,9 @@
                 
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-      
-        <a href="../../../../tags/#tag:vmware-cloud-director" class="md-tag">vmware-cloud-director</a>
-      
-    
-  </nav>
-
 
   
-    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/aucloud/aucloud.github.io/edit/main/docs/Platform_Services/Object_Storage/object_versioning.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -6409,79 +6518,101 @@
     
       
     
-    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/Compute/Working_with_Virtual_Machines/how_to_create_a_vm_from_a_template.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/aucloud/aucloud.github.io/raw/main/docs/Platform_Services/Object_Storage/object_versioning.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-  <h1>How to create a VM from a template</h1>
+  <h1>Object versioning</h1>
 
 <div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>To simplify the process of creating a VM, you can use a pre-built VM template from a catalog.</p>
-<p>For information about creating a VM from scratch, see <a href="../how_to_create_an_empty_vm/">How to create an empty VM</a>.  </p>
-<h2 id="creating-a-vm-from-a-template">Creating a VM from a template<a class="headerlink" href="#creating-a-vm-from-a-template" title="Permanent link">¤</a></h2>
+<p>Object versioning keeps a copy of every version of an object in a bucket. With versioning enabled, each time you upload an object under an existing key StorageGRID keeps the old version and adds a new <em>current</em> version, and a delete removes the object from view without destroying the underlying data. This lets you recover from an accidental overwrite or deletion at any time.</p>
+<p>Every version is identified by a unique <strong>version ID</strong>. The most recent version is the <em>current</em> version; all earlier versions are <em>non-current</em> but remain fully retrievable by their version ID.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Versioning is set per bucket. Once enabled it can be <strong>suspended</strong> (StorageGRID stops creating new versions) but it cannot be turned off completely, and versions already created are always retained until you delete them explicitly. Object lock is built on versioning and, unlike versioning, must be enabled <strong>when the bucket is created</strong> - see <a href="../best_practices/">Best Practices</a>.</p>
+</div>
+<p>The examples below use the AWS CLI against the AUCyber endpoint. Set up a profile first - see <a href="../accessing_object_storage/">Accessing Object Storage</a>. Versioning operations use the lower-level <code>s3api</code> commands.</p>
+<h2 id="enable-versioning">Enable versioning<a class="headerlink" href="#enable-versioning" title="Permanent link">¤</a></h2>
+<h3 id="tenant-manager">Tenant Manager<a class="headerlink" href="#tenant-manager" title="Permanent link">¤</a></h3>
 <ol>
-<li>
-<p>In the VMware Cloud Director <em>Virtual Datacenters</em> dashboard, select the VDC that contains the vApp in which you want to create the VM.</p>
-</li>
-<li>
-<p>In the left navigation panel, select <strong>vApps</strong> to view a list of vApps within the VDC.</p>
-</li>
-<li>
-<p>In the card for the vApp in which you want to create the VM, select <strong>Actions</strong> then <strong>Add VM</strong>.</p>
-<p><img alt="Add VM" src="../assets/add_vm.png"></p>
-</li>
-<li>
-<p>In the <em>Add VMs</em> dialog box, click <strong>Add Virtual Machine</strong>.</p>
-<p><img alt="Add VM" src="../assets/add_virtual_machine.png"></p>
-</li>
-<li>
-<p>In the <em>New VM</em> dialog box, from the <strong>Type</strong> radio buttons, select <strong>From Template</strong>.</p>
-</li>
-<li>
-<p>Enter a <strong>Name</strong>, <strong>Computer Name</strong> and <strong>Description</strong> for your VM.</p>
-</li>
-<li>
-<p>In the <em>Templates</em> section, select the template that you want to use for your VM, depending on your required operating system and VM size.</p>
-<p><img alt="Add Template" src="../assets/templates.png"></p>
-</li>
-<li>
-<p>When you're done, click <strong>OK</strong>.</p>
-</li>
-<li>
-<p>Back in the <em>Add VMs</em> dialog box, you can create more VMs or click <strong>Add</strong> when you're done.</p>
-<p>You can monitor progress in the <em>Add VMs</em> dialog box or click <strong>Cancel</strong> to return to the list of vApps while the VM is created in the background.</p>
-</li>
-<li>
-<p>In the left navigation panel, select <strong>Virtual Machines</strong> to view a list of VMs within the VDC.</p>
-<p><img alt="Virtual Machines" src="../assets/virtual_machines.png"></p>
-</li>
-<li>
-<p>In the card for your new VM, select <strong>Details</strong>.</p>
-</li>
-<li>
-<p>In the <em>General</em> section, from the <strong>Storage Policy</strong> list, select a storage policy to assign the VM to. The storage policy will be assigned when your account is initially created.</p>
-<p><img alt="Edit Virtual Machines" src="../assets/edit_vm.png"></p>
-<p><img alt="Edit Virtual Machines" src="../assets/edit_vm_virtual_machine.png"></p>
-</li>
-<li>
-<p>View the <em>Hardware</em> section.</p>
-<p>Here, you can:</p>
+<li>Sign in to the <a href="https://s3-tenant.aucyber.com.au">Tenant Manager</a> and open the <strong>Buckets</strong> page.</li>
+<li>Select the bucket, open the <strong>Bucket options</strong> (or <strong>Bucket versioning</strong>) section and set versioning to <strong>Enabled</strong>.</li>
+</ol>
+<h3 id="aws-cli">AWS CLI<a class="headerlink" href="#aws-cli" title="Permanent link">¤</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># enable versioning</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>s3api<span class="w"> </span>put-bucket-versioning<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--versioning-configuration<span class="w"> </span><span class="nv">Status</span><span class="o">=</span>Enabled
+
+<span class="c1"># confirm it is on</span>
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>s3api<span class="w"> </span>get-bucket-versioning<span class="w"> </span>--bucket<span class="w"> </span>mybucket
+<span class="c1"># -&gt; { "Status": "Enabled" }</span>
+</code></pre></div>
+<h2 id="work-with-versions">Work with versions<a class="headerlink" href="#work-with-versions" title="Permanent link">¤</a></h2>
+<p>Each upload to the same key creates a new current version and pushes the previous one to non-current:</p>
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>put-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span>--body<span class="w"> </span>v1.txt<span class="w">   </span><span class="c1"># creates version 1</span>
+aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>put-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span>--body<span class="w"> </span>v2.txt<span class="w">   </span><span class="c1"># v2 current, v1 retained</span>
+</code></pre></div>
+<p>List every version and delete marker for a key. <code>IsLatest</code> marks the current version:</p>
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>s3api<span class="w"> </span>list-object-versions<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--prefix<span class="w"> </span>report.txt
+</code></pre></div>
+<p>Retrieve the current version, or any earlier one by its <code>VersionId</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># current version</span>
+aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>get-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span>current.txt
+
+<span class="c1"># a specific previous version</span>
+aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>get-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--version-id<span class="w"> </span>&lt;VersionId&gt;<span class="w"> </span>previous.txt
+</code></pre></div>
+<h2 id="delete-and-restore">Delete and restore<a class="headerlink" href="#delete-and-restore" title="Permanent link">¤</a></h2>
+<p>On a versioned bucket, a normal delete does <strong>not</strong> erase data - it adds a <em>delete marker</em> that becomes the new current version, so the object stops appearing in listings and a plain <code>get-object</code> returns <code>NoSuchKey</code>. Every earlier version is still there.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># "delete" the object -&gt; creates a delete marker</span>
+aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>delete-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt
+</code></pre></div>
+<p>There are two ways to restore:</p>
+<p><strong>Undelete</strong> - remove the delete marker so the most recent version becomes current again. Find the delete marker's <code>VersionId</code> with <code>list-object-versions</code>, then delete that specific version:</p>
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>delete-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--version-id<span class="w"> </span>&lt;DeleteMarkerVersionId&gt;
+</code></pre></div>
+<p><strong>Roll back to an earlier version</strong> - copy an old version over the key. This makes a new current version whose contents are the old version's, while leaving the version history intact:</p>
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>...<span class="w"> </span>s3api<span class="w"> </span>copy-object<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span>--key<span class="w"> </span>report.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--copy-source<span class="w"> </span><span class="s2">"mybucket/report.txt?versionId=&lt;OldVersionId&gt;"</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Deleting a version by its <code>VersionId</code> (rather than omitting it) is <strong>permanent</strong> - that version's data is destroyed and cannot be recovered. Deleting <em>without</em> a version ID is the safe, reversible operation that only adds a delete marker.</p>
+</div>
+<h2 id="storage-and-cost-considerations">Storage and cost considerations<a class="headerlink" href="#storage-and-cost-considerations" title="Permanent link">¤</a></h2>
+<p>Versioning trades storage for safety. Because nothing is ever truly overwritten or deleted while versions exist, storage usage - and therefore cost - grows with the number and size of versions you keep:</p>
 <ul>
-<li>Configure <em>CPU</em> and <em>Memory</em>.</li>
-<li>In the <em>Storage</em> section, you can configure storage or <strong>Add</strong> more disks.</li>
-<li>In the <em>NICs</em> section, you can <strong>Add</strong> the VM to a network and select an <strong>IP Mode</strong> to determine how IP addresses are assigned:<br>
-<strong>•  DHCP</strong> VMware Cloud Director interacts with the OS via VMware Tools to use DHCP rather than static IPs. You'll need to define a DHCP server on your edge gateway.<br>
-<strong>•  Static - IP Pool</strong> is the usual method, which injects an IP address into the VM via VMware Tools from a list of available IP addresses. The address may vary with each boot, but there is a check box to keep IP address assignments elsewhere within the UI once the VMs are created.<br>
-<strong>•  Static - Manual</strong> is like IP Pool, but you need to enter a valid <strong>IP Address</strong> from the pool, which the VM will then keep.</li>
+<li><strong>Every version is billed.</strong> Ten edits of a 100 MB object consume roughly 1 GB, not 100 MB, until the old versions are removed.</li>
+<li><strong>Overwrites and deletes do not free space.</strong> A delete only adds a (tiny) delete marker; the data stays until every version is explicitly deleted.</li>
+<li><strong>High-churn workloads cost the most.</strong> Objects that are frequently updated (logs, databases, state files) accumulate versions quickly.</li>
 </ul>
-</li>
-<li>
-<p>When you're done, click <strong>Save</strong>.</p>
-</li>
-</ol></div>
+<p>Control the growth with an S3 <strong>lifecycle rule</strong> that automatically expires non-current versions and cleans up orphaned delete markers, so you keep a recovery window without paying to retain history forever:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>lifecycle.json<span class="w"> </span><span class="s">&lt;&lt;'EOF'</span>
+<span class="s">{</span>
+<span class="s">  "Rules": [{</span>
+<span class="s">    "ID": "expire-old-versions",</span>
+<span class="s">    "Status": "Enabled",</span>
+<span class="s">    "Filter": {},</span>
+<span class="s">    "NoncurrentVersionExpiration": { "NoncurrentDays": 30 },</span>
+<span class="s">    "Expiration": { "ExpiredObjectDeleteMarker": true }</span>
+<span class="s">  }]</span>
+<span class="s">}</span>
+<span class="s">EOF</span>
+
+aws<span class="w"> </span>--profile<span class="o">=</span>aucloud<span class="w"> </span>--endpoint-url<span class="o">=</span>https://s3.aucyber.com.au<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>s3api<span class="w"> </span>put-bucket-lifecycle-configuration<span class="w"> </span>--bucket<span class="w"> </span>mybucket<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--lifecycle-configuration<span class="w"> </span>file://lifecycle.json
+</code></pre></div>
+<p>The rule above keeps non-current versions for 30 days (adjust <code>NoncurrentDays</code> to your recovery needs) and then deletes them, and removes delete markers once no versions remain behind them. To stop creating new versions entirely without deleting existing ones, suspend versioning (<code>Status=Suspended</code>).</p>
+<p>For details refer to NetApp's official documentation: <a href="https://docs.netapp.com/us-en/storagegrid/tenant/changing-bucket-versioning.html">Change bucket versioning state</a> and <a href="https://docs.netapp.com/us-en/storagegrid/s3/create-s3-lifecycle-configuration.html">S3 lifecycle configuration</a>.</p></div>
 
 
 
@@ -6502,7 +6633,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 9, 2023 23:45:04 UTC">July 9, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 7, 2026 00:26:14 UTC">July 7, 2026</span>
   </span>
 
     
@@ -6635,10 +6766,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

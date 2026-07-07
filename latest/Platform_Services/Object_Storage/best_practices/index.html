@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../limiting_bucket_access_to_specific_access_keys/">
+        <link rel="next" href="../object_versioning/">
       
       
         
@@ -5414,6 +5414,8 @@
       
         
       
+        
+      
     
     
     
@@ -5582,6 +5584,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -6442,6 +6472,7 @@
 <p>For details refer to NetApp's official document: <a href="https://docs.netapp.com/us-en/storagegrid/tenant/using-s3-object-lock.html#s3-object-lock-tasks">Manage objects with S3 Object Lock</a>.</p>
 <h3 id="always-enable-object-versioning">Always enable object versioning<a class="headerlink" href="#always-enable-object-versioning" title="Permanent link">¤</a></h3>
 <p>Always enable object versioning. With versioning enabled, every update or deletion of an object retains the previous version rather than overwriting it, so you can recover from an accidental deletion or update. The only downside of versioning is increased object storage costs.</p>
+<p>For how to enable versioning, retrieve and restore previous versions, and manage the storage and cost implications, see <a href="../object_versioning/">Object versioning</a>.</p>
 <p>For details refer to NetApp's official document: <a href="https://docs.netapp.com/us-en/storagegrid/tenant/changing-bucket-versioning.html">Change bucket versioning state</a>.</p>
 <h3 id="use-bucket-policies">Use bucket policies<a class="headerlink" href="#use-bucket-policies" title="Permanent link">¤</a></h3>
 <p>A bucket policy is a JSON document attached to a bucket that defines exactly who can perform which actions on the bucket and its objects. Use bucket policies to grant the minimum access required and to explicitly control which users, access keys, or accounts can read or write your data. This prevents accidental exposure or access - for example, leaving a bucket open more broadly than intended.</p>
@@ -6467,7 +6498,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 2, 2026 03:03:52 UTC">June 2, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 7, 2026 00:26:14 UTC">July 7, 2026</span>
   </span>
 
     
