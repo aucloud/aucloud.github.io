@@ -1,0 +1,9 @@
+nav:
+    - index.md
+    - configuration.md
+    - EntraID_application_permission_requirements.md
+    - Adding_Restore_Operator_Group.md
+    - Certificate_Update.md
+    - guide_to_veeam_restore_portal.md
+    - M365_Backup_common_errors_and_actions.md
+    - FAQ's.md
