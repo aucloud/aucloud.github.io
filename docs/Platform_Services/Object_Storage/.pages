@@ -1,6 +1,7 @@
 nav:
     - index.md
     - Best Practices: best_practices.md
+    - Object versioning: object_versioning.md
     - Limiting bucket access to specific access keys: limiting_bucket_access_to_specific_access_keys.md
     - Accessing Object Storage: accessing_object_storage.md
     - Security Credentials: security_credentials.md

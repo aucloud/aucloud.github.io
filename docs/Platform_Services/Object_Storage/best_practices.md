@@ -20,6 +20,8 @@ For details refer to NetApp's official document: [Manage objects with S3 Object 
 
 Always enable object versioning. With versioning enabled, every update or deletion of an object retains the previous version rather than overwriting it, so you can recover from an accidental deletion or update. The only downside of versioning is increased object storage costs.
 
+For how to enable versioning, retrieve and restore previous versions, and manage the storage and cost implications, see [Object versioning](./object_versioning.md).
+
 For details refer to NetApp's official document: [Change bucket versioning state](https://docs.netapp.com/us-en/storagegrid/tenant/changing-bucket-versioning.html).
 
 ### Use bucket policies
