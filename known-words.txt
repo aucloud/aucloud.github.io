@@ -190,3 +190,5 @@ misconfiguration
 Cyberduck
 cyberduck
 s5cmd
+subfolder
+contoso
