@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -6446,16 +6446,20 @@
   <h1>Entra ID Application Permission Requirements</h1>
 
 <div><h2 id="permissions-for-modern-app-only-authentication">Permissions for Modern App-Only Authentication<a class="headerlink" href="#permissions-for-modern-app-only-authentication" title="Permanent link">¤</a></h2>
-<p>Tables in this section list permissions for Entra ID applications that are granted automatically by Veeam Backup for Microsoft Office 365 when you add organizations using the <a href="https://helpcenter.veeam.com/docs/vbo365/guide/adding_o365_organizations_sd.html">modern app-only authentication method</a>.</p>
+<p>Tables in this section list the permissions required by the Microsoft Entra ID application that AUCyber's M365 Backup service uses with the <a href="https://helpcenter.veeam.com/docs/vbo365/guide/adding_o365_organizations_sd.html?ver=8">modern app-only authentication method</a>.</p>
+<p>Restores are performed using the Entra ID application certificate, so every permission listed on this page is of the <strong>Application</strong> type. No delegated permissions are required. Grant the permissions from both tables to the same application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Exchange Web Services (EWS) retirement</p>
+<p>Microsoft disables EWS in Exchange Online on 1 October 2026. The Microsoft Graph permissions listed below (User.Read.All, MailboxItem.ImportExport.All, MailboxFolder.ReadWrite.All and MailboxItem.Read.All) allow Exchange data to be backed up and restored through the Microsoft Graph API instead of EWS, and must be in place before that date. See the <a href="https://www.veeam.com/kb4820">Veeam support statement</a> for details.</p>
+</div>
 <h2 id="permissions-for-backup">Permissions for Backup<a class="headerlink" href="#permissions-for-backup" title="Permanent link">¤</a></h2>
-<p>All listed permissions are of the <strong>Application</strong> type.</p>
 <table>
 <thead>
 <tr>
 <th>API</th>
 <th>Permission Name</th>
 <th>Exchange Online</th>
-<th>SharePoint Online and OneDrive for Business</th>
+<th>SharePoint Online and Microsoft OneDrive</th>
 <th>Microsoft Teams</th>
 <th>Description</th>
 </tr>
@@ -6467,15 +6471,15 @@
 <td>✔</td>
 <td>✔</td>
 <td>✔</td>
-<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+<td>Querying Microsoft Entra ID for organization properties, the list of users and groups and their properties.</td>
 </tr>
 <tr>
 <td></td>
-<td>Group.Read.Write.All</td>
-<td></td>
+<td>Group.Read.All</td>
 <td>✔</td>
 <td>✔</td>
-<td>Querying Azure AD for the list of groups and group sites.</td>
+<td>✔</td>
+<td>Querying Microsoft Entra ID for the list of groups and group sites.</td>
 </tr>
 <tr>
 <td></td>
@@ -6483,7 +6487,7 @@
 <td></td>
 <td>✔</td>
 <td>✔</td>
-<td>Querying Azure AD for the list of sites and getting download URLs for files and their versions.</td>
+<td>Querying Microsoft Entra ID for the list of sites and getting download URLs for files and their versions.</td>
 </tr>
 <tr>
 <td></td>
@@ -6499,11 +6503,51 @@
 <td></td>
 <td></td>
 <td>✔</td>
-<td>Accessing all Teams public channel messages. Note: This permission is only required if you want to back up team chats using Teams Export APIs. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/vbo_object_types.html#team_chats">Organization Object Types</a>.</td>
+<td>Accessing Microsoft Teams public channel messages.</td>
+</tr>
+<tr>
+<td></td>
+<td>ChannelMember.Read.All</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>Accessing Microsoft Teams private and shared channels.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailboxes that belong to a user (getting mailbox IDs).</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxItem.ImportExport.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Exporting Exchange mailbox item data and creating a session to import an Exchange mailbox item.</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxFolder.ReadWrite.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailbox folders.</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxItem.Read.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailbox items: getting item properties, and getting items that were added, deleted or updated in a mailbox folder.</td>
 </tr>
 <tr>
 <td>Office 365 Exchange Online<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
-<td>Full Access As App</td>
+<td>full_access_as_app</td>
 <td>✔</td>
 <td></td>
 <td>✔</td>
@@ -6515,10 +6559,10 @@
 <td>✔</td>
 <td></td>
 <td></td>
-<td>Accessing Exchange Online PowerShell to do the following: Back up public folder and discovery search mailboxes and determine object type for shared mailboxes as Shared Mailbox.</td>
+<td>Accessing Exchange Online PowerShell to back up public folder and discovery search mailboxes, and to determine the object type for shared mailboxes as Shared Mailbox. This permission works along with the Global Reader role granted to the application.</td>
 </tr>
 <tr>
-<td>SharePoint</td>
+<td>Office 365 SharePoint Online</td>
 <td>Sites.FullControl.All</td>
 <td></td>
 <td>✔</td>
@@ -6531,19 +6575,19 @@
 <td></td>
 <td>✔</td>
 <td>✔</td>
-<td>Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with SharePoint Online and OneDrive for Business permission to add Microsoft 365 organization successfully.</td>
+<td>Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with the SharePoint Online and OneDrive permissions to add a Microsoft 365 organization successfully.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="permissions-for-restore">Permissions for Restore<a class="headerlink" href="#permissions-for-restore" title="Permanent link">¤</a></h2>
-<p>All listed permissions are of the <strong>Delegated</strong> type and required for data restore using Veeam Explorers.</p>
+<p>Restores use the Entra ID application certificate, so these permissions are also of the <strong>Application</strong> type.</p>
 <table>
 <thead>
 <tr>
 <th>API</th>
 <th>Permission Name</th>
 <th>Exchange Online</th>
-<th>SharePoint Online and OneDrive for Business</th>
+<th>SharePoint Online and Microsoft OneDrive</th>
 <th>Microsoft Teams</th>
 <th>Description</th>
 </tr>
@@ -6553,17 +6597,17 @@
 <td>Microsoft Graph</td>
 <td>Directory.Read.All</td>
 <td>✔</td>
+<td></td>
 <td>✔</td>
-<td>✔</td>
-<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
+<td>Querying Microsoft Entra ID for organization properties, the list of users and groups and their properties.</td>
 </tr>
 <tr>
 <td></td>
 <td>Group.ReadWrite.All</td>
 <td></td>
-<td></td>
 <td>✔</td>
-<td>Recreating in Azure AD an associated group in case of teams restore.</td>
+<td>✔</td>
+<td>Recreating an associated group in Microsoft Entra ID in case of a deleted team site restore. Note: This permission is only required for restore of SharePoint site data through REST API and PowerShell.</td>
 </tr>
 <tr>
 <td></td>
@@ -6577,29 +6621,69 @@
 <td></td>
 <td>Directory.ReadWrite.All</td>
 <td></td>
-<td></td>
 <td>✔</td>
-<td>Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.</td>
+<td>✔</td>
+<td>Setting the preferred data location and creating sites that have Microsoft Teams templates, when creating or accessing a M365 group for a Multi-Geo tenant.</td>
 </tr>
 <tr>
 <td></td>
-<td>Offline Access</td>
+<td>Files.ReadWrite.All</td>
+<td></td>
+<td></td>
 <td>✔</td>
+<td>Reading the current state and restoring files of Microsoft Teams shared channels.</td>
+</tr>
+<tr>
+<td></td>
+<td>ChannelMember.ReadWrite.All</td>
+<td></td>
+<td></td>
 <td>✔</td>
+<td>Reading the current state and restoring Microsoft Teams private and shared channels.</td>
+</tr>
+<tr>
+<td></td>
+<td>User.Read.All</td>
 <td>✔</td>
-<td>Obtaining a refresh token from Azure AD.</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailboxes that belong to a user (getting mailbox IDs).</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxItem.ImportExport.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Exporting Exchange mailbox item data and creating a session to import an Exchange mailbox item.</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxFolder.ReadWrite.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailbox folders: reading folder properties, getting folders that were added, deleted or removed, and creating a new folder or subfolder in a user mailbox.</td>
+</tr>
+<tr>
+<td></td>
+<td>MailboxItem.Read.All</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>Accessing Exchange mailbox items: getting item properties, and getting items that were added, deleted or updated in a mailbox folder.</td>
 </tr>
 <tr>
 <td>Office 365 Exchange Online<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
-<td>EWS.AccessAsUser.All</td>
+<td>full_access_as_app</td>
 <td>✔</td>
 <td></td>
 <td></td>
-<td>Accessing mailboxes as the signed-in user (impersonation) through EWS.</td>
+<td>Reading the current state and restoring mailboxes content.</td>
 </tr>
 <tr>
-<td>SharePoint</td>
-<td>AllSites.FullControl</td>
+<td>Office 365 SharePoint Online</td>
+<td>Sites.FullControl.All</td>
 <td></td>
 <td>✔</td>
 <td>✔</td>
@@ -6619,7 +6703,7 @@
 <hr>
 <ol>
 <li id="fn:1">
-<p>You can check permissions for Office 365 Exchange Online API. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/permissions_exchange_online_api_checking.html">Checking Permissions for Office 365 Exchange Online API</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>You can check permissions for Office 365 Exchange Online API. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/permissions_exchange_online_api_checking.html?ver=8">Checking Permissions for Office 365 Exchange Online API</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
 </div></div>
@@ -6643,7 +6727,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 28, 2023 02:15:43 UTC">August 28, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 27, 2026 01:50:47 UTC">July 27, 2026</span>
   </span>
 
     
@@ -6779,7 +6863,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Configuration of Microsoft M365 Service Account">
+        <meta name="description" content="Configuration of the Microsoft Entra ID application for AUCyber's M365 Backup as a Service">
       
       
       
@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -74,7 +74,7 @@
   
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Configuration of Microsoft M365 Veeam Backup App Registration - Technical Documentation" />
-<meta property="og:description" content="Configuration of Microsoft M365 Service Account" />
+<meta property="og:description" content="Configuration of the Microsoft Entra ID application for AUCyber's M365 Backup as a Service" />
 <meta property="og:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/M365_Backup/configuration.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -82,7 +82,7 @@
 <meta property="og:url" content="https://docs.aucyber.com.au/latest/Platform_Services/M365_Backup/configuration/" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="Configuration of Microsoft M365 Veeam Backup App Registration - Technical Documentation" />
-<meta property="twitter:description" content="Configuration of Microsoft M365 Service Account" />
+<meta property="twitter:description" content="Configuration of the Microsoft Entra ID application for AUCyber's M365 Backup as a Service" />
 <meta property="twitter:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Services/M365_Backup/configuration.png" />
 </head>
   
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information-on-how-to-configure-your-m365-service-account-for-aucybers-m365-backup-as-a-service" class="md-skip">
+        <a href="#information-on-how-to-configure-your-m365-tenant-for-aucybers-m365-backup-as-a-service" class="md-skip">
           Skip to content
         </a>
       
@@ -5380,10 +5380,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information-on-how-to-configure-your-m365-service-account-for-aucybers-m365-backup-as-a-service" class="md-nav__link">
+  <a href="#information-on-how-to-configure-your-m365-tenant-for-aucybers-m365-backup-as-a-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Information on how to configure your M365 service account for AUCyber's M365 Backup as a Service
+        Information on how to configure your M365 tenant for AUCyber's M365 Backup as a Service
       
     </span>
   </a>
@@ -5402,15 +5402,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-entra-id-application-permissions" class="md-nav__link">
+  <a href="#microsoft-entra-id-application-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Azure Entra ID Application permissions
+        Microsoft Entra ID application permissions
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Azure Entra ID Application permissions">
+    <nav class="md-nav" aria-label="Microsoft Entra ID application permissions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -6449,10 +6449,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information-on-how-to-configure-your-m365-service-account-for-aucybers-m365-backup-as-a-service" class="md-nav__link">
+  <a href="#information-on-how-to-configure-your-m365-tenant-for-aucybers-m365-backup-as-a-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Information on how to configure your M365 service account for AUCyber's M365 Backup as a Service
+        Information on how to configure your M365 tenant for AUCyber's M365 Backup as a Service
       
     </span>
   </a>
@@ -6471,15 +6471,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-entra-id-application-permissions" class="md-nav__link">
+  <a href="#microsoft-entra-id-application-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Azure Entra ID Application permissions
+        Microsoft Entra ID application permissions
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Azure Entra ID Application permissions">
+    <nav class="md-nav" aria-label="Microsoft Entra ID application permissions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -6630,46 +6630,36 @@
 
   <h1>Configuration of Microsoft M365 Veeam Backup App Registration</h1>
 
-<div><h2 id="information-on-how-to-configure-your-m365-service-account-for-aucybers-m365-backup-as-a-service">Information on how to configure your M365 service account for AUCyber's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-service-account-for-aucybers-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
+<div><h2 id="information-on-how-to-configure-your-m365-tenant-for-aucybers-m365-backup-as-a-service">Information on how to configure your M365 tenant for AUCyber's M365 Backup as a Service<a class="headerlink" href="#information-on-how-to-configure-your-m365-tenant-for-aucybers-m365-backup-as-a-service" title="Permanent link">¤</a></h2>
 <p>This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCyber
-using the modern authentication method. You will be allocated a Customer Success Manager (CSM) who
-will assist you with the on-boarding process, provide advice and act as a conduit to deeper technical support
-when required.</p>
+using the modern app-only authentication method. Backup and restore both authenticate with a certificate
+against a Microsoft Entra ID application registered in your tenant, so no backup service account is
+required. You will be allocated a Customer Success Manager (CSM) who will assist you with the
+on-boarding process, provide advice and act as a conduit to deeper technical support when required.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¤</a></h2>
 <ul>
-<li>Customers must have a Microsoft Office 365 account that has an active subscription.</li>
+<li>Customers must have a Microsoft 365 account that has an active subscription.</li>
 <li>
-<p>The Microsoft Office 365 account used for configuration must have permission to manage applications in Entra ID (formerly known as Active Directory). Any of the following Entra ID roles include the required permissions:</p>
+<p>The account used for configuration must have permission to manage applications in Microsoft Entra ID (formerly Azure Active Directory). Any of the following Entra ID roles include the required permissions:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator">Application administrator</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer">Application developer</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator">Cloud application administrator</a></li>
+<li><a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator">Application administrator</a></li>
+<li><a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-developer">Application developer</a></li>
+<li><a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator">Cloud application administrator</a></li>
 </ul>
 </li>
 <li>
-<p>Navigate to <a href="https://portal.azure.com">portal.azure.com</a> to begin and click on <strong>Azure Entra ID</strong></p>
+<p>Granting tenant-wide admin consent to the application permissions requires a Global Administrator.</p>
 </li>
-<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-create-delete-users">Create a backup service account</a> in Azure Entra ID (eg. <a href="mailto:backup@domain.com">backup@domain.com</a>)</li>
-<li>
-<p><a href="https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal">Assign roles</a> to the service account with the following assignments:</p>
-<ul>
-<li>Global Reader</li>
-<li>Exchange Administrator</li>
-<li>Sharepoint Administrator</li>
-<li>Teams Administrator</li>
+<li>AUCyber will provide you with a certificate (public key) to be used during application registration. This certificate is used to authenticate both backup and restore operations.</li>
+<li>Configuration is performed in the <a href="https://entra.microsoft.com">Microsoft Entra admin center</a>.</li>
 </ul>
-</li>
-<li>
-<p>AUCyber will provide you with a certificate (public key) to be used during application registration.</p>
-</li>
-</ul>
-<h2 id="azure-entra-id-application-permissions">Azure Entra ID Application permissions<a class="headerlink" href="#azure-entra-id-application-permissions" title="Permanent link">¤</a></h2>
+<h2 id="microsoft-entra-id-application-permissions">Microsoft Entra ID application permissions<a class="headerlink" href="#microsoft-entra-id-application-permissions" title="Permanent link">¤</a></h2>
 <h3 id="register-an-application">Register an application<a class="headerlink" href="#register-an-application" title="Permanent link">¤</a></h3>
 <ol>
-<li>In the Microsoft Office 365 Admin Centre, navigate to <strong>Azure Entra ID</strong>.</li>
-<li>Under <strong>Manage</strong>, select <strong>App registrations</strong> &gt; <strong>New registration</strong>.</li>
+<li>In the <a href="https://entra.microsoft.com">Microsoft Entra admin center</a>, go to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong>.</li>
+<li>Select <strong>New registration</strong>.</li>
 <li>
-<p>Enter a display <strong>Name</strong> and select the <strong>Accounts in this organizational directory
+<p>Enter a display <strong>Name</strong> and select <strong>Accounts in this organizational directory
 only</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -6683,224 +6673,55 @@ registration.</p>
 </ol>
 <p><img alt="Register an Application" src="../assets/register_an_application.svg"></p>
 <h3 id="grant-global-reader-permission">Grant Global Reader permission<a class="headerlink" href="#grant-global-reader-permission" title="Permanent link">¤</a></h3>
-<p>To grant the Global Reader role to the Azure Entra ID application, do the following:</p>
+<p>The Global Reader role must be assigned to the application itself. It is required by the
+Exchange.ManageAsApp permission to back up public folder and discovery search mailboxes. To grant the
+role, do the following:</p>
 <ol>
 <li>
-<p>Sign in to the Azure portal.</p>
-</li>
-<li>
-<p>Go to <strong>Microsoft Entra Admin Centre</strong> &gt; <strong>Roles and admins</strong>.</p>
+<p>In the <a href="https://entra.microsoft.com">Microsoft Entra admin center</a>, go to <strong>Identity</strong> &gt; <strong>Roles &amp; admins</strong> &gt; <strong>Roles &amp; admins</strong>.</p>
 <p><img alt="M365 Global Reader Assignment" src="../assets/m365-global-reader-assignment.png"></p>
 </li>
 <li>
 <p>In the <strong>Administrative roles</strong> list, find the <strong>Global Reader</strong> role and click on it.</p>
 </li>
-<li>
-<p>In the <strong>Global Reader</strong> window, click <strong>Add assignments</strong>.</p>
-</li>
-</ol>
-<p>The <strong>Add assignment</strong> wizard runs.</p>
-<ol>
-<li>
-<p>In the <strong>Select member(s)</strong> section, click the link.</p>
-</li>
-<li>
-<p>In the <strong>Select a member</strong> window, select the Azure Entra ID application in the list and click <strong>Select</strong>.</p>
-</li>
-</ol>
-<p>The selected application appears in the <strong>Selected member(s)</strong> list.</p>
-<ol>
+<li>In the <strong>Global Reader</strong> window, click <strong>Add assignments</strong>.</li>
+<li>In the <strong>Select member(s)</strong> section, click the link.</li>
+<li>In the <strong>Select a member</strong> window, select the application you registered and click <strong>Select</strong>.</li>
+<li>The selected application appears in the <strong>Selected member(s)</strong> list.</li>
 <li>Click <strong>Next</strong> and then <strong>Assign</strong> to finish the wizard.</li>
 </ol>
 <h3 id="configure-application-permissions">Configure Application permissions<a class="headerlink" href="#configure-application-permissions" title="Permanent link">¤</a></h3>
-<p>Select the newly registered application, select API permissions, and add permissions for:</p>
+<p>Select the newly registered application, select <strong>API permissions</strong>, and add permissions for:</p>
 <ul>
 <li>Microsoft Graph</li>
 <li>Office 365 Exchange Online</li>
 <li>
-<p>SharePoint</p>
+<p>Office 365 SharePoint Online</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To search for other API, select <strong>APIs my organisation uses</strong>.</p>
+<p>To search for other APIs, select <strong>APIs my organisation uses</strong>.</p>
 </div>
 </li>
 </ul>
 <p><img alt="API Permissions" src="../assets/api_permissions.png"></p>
-<p>For each API e.g., Microsoft graph, add the appropriate delegated (restore) and application (backup) type permissions as per below:</p>
+<p>All required permissions are of the <strong>Application</strong> type. Delegated permissions are not required:
+restores are performed using the application certificate, not a signed-in user.</p>
 <p><img alt="Request API Permissions" src="../assets/request_api_permission.png"></p>
+<p>Add every permission listed in both tables on the
+<a href="../EntraID_application_permission_requirements/">Entra ID Application Permission Requirements</a> page:</p>
 <ol>
-<li><a href="../EntraID_application_permission_requirements/#permissions-for-restore"><strong>Delegated (restore) permissions</strong></a></li>
+<li><a href="../EntraID_application_permission_requirements/#permissions-for-backup">Permissions for backup</a></li>
+<li><a href="../EntraID_application_permission_requirements/#permissions-for-restore">Permissions for restore</a></li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>API</th>
-<th>Permission Name</th>
-<th>Exchange Online</th>
-<th>SharePoint Online and OneDrive for Business</th>
-<th>Microsoft Teams</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Microsoft Graph</td>
-<td>Directory.Read.All</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
-</tr>
-<tr>
-<td></td>
-<td>Group.ReadWrite.All</td>
-<td></td>
-<td></td>
-<td>✔</td>
-<td>Recreating in Azure AD an associated group in case of teams restore.</td>
-</tr>
-<tr>
-<td></td>
-<td>Sites.Read.All</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Accessing sites of the applications that are installed from the SharePoint store.</td>
-</tr>
-<tr>
-<td></td>
-<td>Directory.ReadWrite.All</td>
-<td></td>
-<td></td>
-<td>✔</td>
-<td>Setting the preferred data location when creating a new M365 group for a multi-geo tenant in case of teams restore.</td>
-</tr>
-<tr>
-<td></td>
-<td>Offline Access</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-<td>Obtaining a refresh token from Azure AD.</td>
-</tr>
-<tr>
-<td>Office 365 Exchange Online[^1]</td>
-<td>EWS.AccessAsUser.All</td>
-<td>✔</td>
-<td></td>
-<td></td>
-<td>Accessing mailboxes as the signed-in user (impersonation) through EWS.</td>
-</tr>
-<tr>
-<td>SharePoint</td>
-<td>AllSites.FullControl</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Reading the current state and restoring SharePoint sites and OneDrive accounts content.</td>
-</tr>
-<tr>
-<td></td>
-<td>User.Read.All</td>
-<td></td>
-<td>✔</td>
-<td></td>
-<td>Resolving OneDrive accounts (getting site IDs). Note: This permission is not required to restore SharePoint Online data.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li><a href="../EntraID_application_permission_requirements/#permissions-for-backup"><strong>Application (backup) permissions</strong></a></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>API</th>
-<th>Permission Name</th>
-<th>Exchange Online</th>
-<th>SharePoint Online and OneDrive for Business</th>
-<th>Microsoft Teams</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Microsoft Graph</td>
-<td>Directory.Read.All</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-<td>Querying Azure AD for organization properties, the list of users and groups and their properties.</td>
-</tr>
-<tr>
-<td></td>
-<td>Group.Read.Write.All</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Querying Azure AD for the list of groups and group sites.</td>
-</tr>
-<tr>
-<td></td>
-<td>Sites.Read.All</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Querying Azure AD for the list of sites and getting download URLs for files and their versions.</td>
-</tr>
-<tr>
-<td></td>
-<td>TeamSettings.ReadWrite.All</td>
-<td></td>
-<td></td>
-<td>✔</td>
-<td>Accessing archived teams.</td>
-</tr>
-<tr>
-<td></td>
-<td>ChannelMessage.Read.All</td>
-<td></td>
-<td></td>
-<td>✔</td>
-<td>Accessing all Teams public channel messages. Note: This permission is only required if you want to back up team chats using Teams Export APIs. For more information, see <a href="https://helpcenter.veeam.com/docs/vbo365/guide/vbo_object_types.html#team_chats">Organization Object Types</a>.</td>
-</tr>
-<tr>
-<td>Office 365 Exchange Online[^1]</td>
-<td>Full Access As App</td>
-<td>✔</td>
-<td></td>
-<td>✔</td>
-<td>Reading mailboxes content.</td>
-</tr>
-<tr>
-<td></td>
-<td>Exchange.ManageAsApp</td>
-<td>✔</td>
-<td></td>
-<td></td>
-<td>Accessing Exchange Online PowerShell to do the following: Back up public folder and discovery search mailboxes and determine object type for shared mailboxes as Shared Mailbox.</td>
-</tr>
-<tr>
-<td>SharePoint</td>
-<td>Sites.FullControl.All</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Reading SharePoint sites and OneDrive accounts content.</td>
-</tr>
-<tr>
-<td></td>
-<td>User.Read.All</td>
-<td></td>
-<td>✔</td>
-<td>✔</td>
-<td>Reading OneDrive accounts (getting site IDs). Note: This permission is not used to back up Microsoft Teams data, but you must grant it along with SharePoint Online and OneDrive for Business permission to add Microsoft 365 organization successfully.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>After all APIs are added, you will need to <strong>grant admin consent</strong></li>
-</ol>
+<div class="admonition warning">
+<p class="admonition-title">Exchange Web Services (EWS) retirement</p>
+<p>Microsoft disables EWS in Exchange Online on 1 October 2026. The Microsoft Graph mailbox
+permissions in the tables (User.Read.All, MailboxItem.ImportExport.All, MailboxFolder.ReadWrite.All
+and MailboxItem.Read.All) allow Exchange data to be backed up and restored through the Microsoft
+Graph API instead of EWS. Make sure they are granted, otherwise Exchange backups will fail once
+Microsoft retires EWS.</p>
+</div>
+<p>After all permissions are added, you will need to <strong>grant admin consent</strong>:</p>
 <p><img alt="Grant Admin Consent" src="../assets/grant_admin_consent.png"></p>
 <h3 id="add-a-certificate-public-key">Add a Certificate (public key)<a class="headerlink" href="#add-a-certificate-public-key" title="Permanent link">¤</a></h3>
 <ol>
@@ -6920,16 +6741,18 @@ registration.</p>
 </ol>
 <p><img alt="Add a Certificate" src="../assets/add_a_certificate.png"></p>
 <h3 id="join-secure-meeting-with-aucyber">Join secure meeting with AUCyber<a class="headerlink" href="#join-secure-meeting-with-aucyber" title="Permanent link">¤</a></h3>
-<p>A joint session with the AUCyber technical team is required for you to enter the necessary credentials to finalise the configuration of the Veeam Backup for Office 365 application. This can be organised via Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.</p>
+<p>A joint session with the AUCyber technical team is required for you to provide the details needed to
+finalise the configuration of the Veeam Backup for Microsoft 365 application. This can be organised via
+Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.</p>
 <ul>
-<li>Service account username</li>
-<li>Application ID</li>
+<li>Application (client) ID of the registered application</li>
+<li>Your Microsoft 365 organization name (for example contoso.onmicrosoft.com)</li>
 </ul>
 <p><img alt="Edit Organisation" src="../assets/edit_organisation.png"></p>
 <h3 id="restore-portal-access-requirements">Restore Portal Access Requirements<a class="headerlink" href="#restore-portal-access-requirements" title="Permanent link">¤</a></h3>
 <p>To access the Veeam restore portal, you must add an Enterprise Application in Entra ID</p>
 <h4 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">¤</a></h4>
-<p>For the below, you need to use a Service Account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Entra ID PowerShell cmdlet. To install this, open PowerShell and run the following command:</p>
+<p>For the below, you need to use an account with enough rights to perform an Enterprise Application install on Entra ID. In order to perform these steps, we will need the Microsoft Graph PowerShell module. To install this, open PowerShell and run the following command:</p>
 <div class="highlight"><pre><span></span><code>Install-Module Microsoft.Graph -Scope CurrentUser -Force
 </code></pre></div>
 <div class="admonition note">
@@ -6940,7 +6763,7 @@ registration.</p>
 <div class="highlight"><pre><span></span><code>Connect-MgGraph -Scopes "Application.ReadWrite.All"
 </code></pre></div>
 <p>This will open a traditional username and password Microsoft popup:
-Please enter your service account username and password in this popup including MFA if prompted.</p>
+Please enter your username and password in this popup including MFA if prompted.</p>
 <p>We should see something like this if everything worked smoothly:</p>
 <p><img alt="Powershell" src="../assets/powershell.svg"></p>
 <p>And the final step which brings everything together:</p>
@@ -6950,11 +6773,11 @@ Please enter your service account username and password in this popup including 
 <p><img alt="Powershell" src="../assets/powershell2.svg"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application ‘Veeam VBO’ from your Entra ID and then repeat the above command.</p>
+<p>If you receive an error that the application ID already exists, you must delete the pre-existing Enterprise Application 'Veeam VBO' from your Entra ID and then repeat the above command.</p>
 </div>
 <p><strong>Last-Step - Give permission to the new Application on Entra ID</strong></p>
 <ul>
-<li>Under Enterprise Applications, remove the enterprise applications filter, and order them by date.</li>
+<li>In the <a href="https://entra.microsoft.com">Microsoft Entra admin center</a>, go to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>Enterprise applications</strong>, remove the application type filter, and order by created date.</li>
 </ul>
 <p>You should see a new Veeam VBO application (the name of the Restore Portal).</p>
 <p><img alt="Veeam VBO" src="../assets/veeam_vbo.png"></p>
@@ -6985,7 +6808,7 @@ Please enter your service account username and password in this popup including 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2026 00:59:35 UTC">March 17, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 27, 2026 01:50:47 UTC">July 27, 2026</span>
   </span>
 
     
@@ -7121,7 +6944,7 @@ Please enter your service account username and password in this popup including 
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
