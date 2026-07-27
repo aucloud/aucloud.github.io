@@ -193,3 +193,5 @@ s5cmd
 undelete
 versioned
 lifecycle
+subfolder
+contoso
