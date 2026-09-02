@@ -6666,7 +6666,7 @@ projects.registry.vmware.com/vmware-cloud-director/cloud-director-named-disk-csi
 </code></pre></div>
 <h2 id="upgrading-tanzu-components-cli-only">Upgrading Tanzu components <strong>CLI ONLY</strong><a class="headerlink" href="#upgrading-tanzu-components-cli-only" title="Permanent link">¤</a></h2>
 <h3 id="cloud-provider-for-vcd-capvcd_1">Cloud Provider for VCD (CAPVCD)<a class="headerlink" href="#cloud-provider-for-vcd-capvcd_1" title="Permanent link">¤</a></h3>
-<p>`capvcd-system capvcd-controller-manager``</p>
+<p><code>apvcd-system capvcd-controller-manager</code></p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>patch<span class="w"> </span>deployment<span class="w"> </span>-n<span class="w"> </span>capvcd-system<span class="w"> </span>capvcd-controller-manager<span class="w"> </span>-p<span class="w"> </span><span class="s1">'{"spec": {"template": {"spec": {"containers": [ {"name": "manager", "image": "projects.registry.vmware.com/vmware-cloud-director/cluster-api-provider-cloud-director:1.0.1"}]}}}}'</span>
 </code></pre></div>
 <h3 id="cluster-api-provider-cpi_1">Cluster API Provider (CPI)<a class="headerlink" href="#cluster-api-provider-cpi_1" title="Permanent link">¤</a></h3>
