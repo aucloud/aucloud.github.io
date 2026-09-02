@@ -31,13 +31,13 @@ Your CSM will arrange for an account to be created for you in the AUCyber Portal
 
 Once your account has been created, your security contact will be required to sign the Community Rules Information Security Policy (CRISP) electronically in the Portal. The CRISP dictates the behaviours and responsibilities for both AUCyber and all customers that we must jointly adhere to.  
   
-## Configuration of Microsoft M365 Service account
+## Configuration of the Microsoft M365 Veeam Backup App Registration
 
-You will need to configure a Microsoft Veeam Backup Service account. To prevent Microsoft throttling of the backups, we recommend creating 8 users under this account.  
+You will need to register an application in Microsoft Entra ID, grant it the required permissions and upload the certificate provided by AUCyber. The steps are covered in [Configuration of Microsoft M365 Veeam Backup App Registration](./configuration.md).
 
 ## Provide details to AUCyber
 
-The backup service account username and app password need to be provided to AUCyber to complete the setup of your account. These details can be entered via Webex, Zoom, Teams chat or by coming to our office and entering them manually.  
+You provide AUCyber with the Application (client) ID of the registered application and the username of the Microsoft 365 account Veeam uses to connect to your tenant. These details can be entered via Webex, Zoom, Teams chat or by coming to our office and entering them manually.  
 
 ## Restore records through the Self-Service portal
 
