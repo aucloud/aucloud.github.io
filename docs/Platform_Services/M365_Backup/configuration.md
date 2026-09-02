@@ -11,13 +11,16 @@ tags:
 
 This guide outlines the steps required to configure and implement your Microsoft 365 Backup with AUCyber
 using the modern app-only authentication method. Backup and restore both authenticate with a certificate
-against a Microsoft Entra ID application registered in your tenant, so no backup service account is
-required. You will be allocated a Customer Success Manager (CSM) who will assist you with the
-on-boarding process, provide advice and act as a conduit to deeper technical support when required.
+against a Microsoft Entra ID application registered in your tenant, so you never share a password or
+an app password with AUCyber. Veeam Backup for Microsoft 365 does still need the username of one
+account in your tenant when your organisation is added. You will be allocated a Customer Success
+Manager (CSM) who will assist you with the on-boarding process, provide advice and act as a conduit
+to deeper technical support when required.
 
 ## Prerequisites
 
 - Customers must have a Microsoft 365 account that has an active subscription.
+- One Microsoft 365 user account in your tenant. Veeam Backup for Microsoft 365 asks for its username when your organisation is added, and uses the account for Exchange impersonation. Any account in the tenant will do, and you give AUCyber the username only, never a password. If your backup includes public folder mailboxes, the account also needs an active mailbox, an Exchange Online licence and Owner permission on the public folders.
 - The account used for configuration must have permission to manage applications in Microsoft Entra ID (formerly Azure Active Directory). Any of the following Entra ID roles include the required permissions:
 
     * [Application administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator)
@@ -27,6 +30,15 @@ on-boarding process, provide advice and act as a conduit to deeper technical sup
 - Granting tenant-wide admin consent to the application permissions requires a Global Administrator.
 - AUCyber will provide you with a certificate (public key) to be used during application registration. This certificate is used to authenticate both backup and restore operations.
 - Configuration is performed in the [Microsoft Entra admin center](https://entra.microsoft.com).
+
+!!! note "Public folder mailboxes"
+
+    Grant the Owner permission from Exchange Online PowerShell:
+
+    ```
+    $folders = Get-PublicFolder "\" -Recurse
+    foreach ($folder in $folders) { Add-PublicFolderClientPermission -Identity $folder.Identity -User <user_account> -AccessRights Owner }
+    ```
 
 ## Microsoft Entra ID application permissions
 
@@ -123,7 +135,12 @@ finalise the configuration of the Veeam Backup for Microsoft 365 application. Th
 Webex, Zoom, Teams chat or face-to-face meeting. Please advise your CSM on what suits best.
 
 - Application (client) ID of the registered application
-- Your Microsoft 365 organization name (for example contoso.onmicrosoft.com)
+- The username of the Microsoft 365 account from the prerequisites (for example backup@contoso.com)
+
+    !!! note
+
+        If your backup covers SharePoint Online and OneDrive only, Veeam asks for your Microsoft 365
+        organisation name (for example contoso.onmicrosoft.com) instead of the username.
 
   ![Edit Organisation](./assets/edit_organisation.png)
 
