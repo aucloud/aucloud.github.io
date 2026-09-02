@@ -37,7 +37,7 @@ You will need to register an application in Microsoft Entra ID, grant it the req
 
 ## Provide details to AUCyber
 
-The Application (client) ID of the registered application and your Microsoft 365 organization name need to be provided to AUCyber to complete the setup of your account. These details can be entered via Webex, Zoom, Teams chat or by coming to our office and entering them manually.  
+You provide AUCyber with the Application (client) ID of the registered application and the username of the Microsoft 365 account Veeam uses to connect to your tenant. These details can be entered via Webex, Zoom, Teams chat or by coming to our office and entering them manually.  
 
 ## Restore records through the Self-Service portal
 
