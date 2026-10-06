@@ -3,6 +3,6 @@ nav:
     - AUCyber Sovereignty Zones: sovereignty_zones.md
     - Security
     - Licensing: licensing
-    - Portal: portal
-    - Portal (New): portal-new
+    - Portal (Legacy): portal
+    - Portal: portal-new
     - Support: support

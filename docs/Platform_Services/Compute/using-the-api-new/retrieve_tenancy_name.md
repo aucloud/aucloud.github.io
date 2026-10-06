@@ -1,6 +1,6 @@
 ---
-title: Retrieve your VMWare Cloud Director (VCD) Organization name
-description: Retrieve your VMWare Cloud Director (VCD) Organization name
+title: Retrieve your VMware Cloud Director (VCD) Organization name
+description: Retrieve your VMware Cloud Director (VCD) Organization name
 tags:
     - portal
     - API
@@ -13,7 +13,7 @@ This guide details the steps required to obtain the Organization name of your VC
 
 ## Steps
 
-1. Log in to the [AUCyber Portal](https://app.aucloud.com.au)
+1. Log in to the [AUCyber Portal](https://portal.aucyber.com.au)
 1. Log in to the tenancy that you want to connect to:
 
     <!-- TODO: FIX THIS -->

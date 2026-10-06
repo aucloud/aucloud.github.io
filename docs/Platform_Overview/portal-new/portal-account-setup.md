@@ -14,7 +14,7 @@ If you are looking for a guide on how to create a new user account as an adminis
 
 ### Initial Setup
 
-!!! Note "AUCyber's strong security controls mean that passwords and 2FA credentials are encrypted in our database, preventing us from copying existing passwords and 2FA devices to our new Portal. This means that it is necessary for you to set a password and set up 2FA for your new portal account before you're able to log in for the first time."
+!!! Note "AUCyber's strong security controls mean that passwords and MFA credentials are encrypted in our database, preventing us from copying existing passwords and MFA devices to our new Portal. This means that it is necessary for you to set a password and set up MFA for your new portal account before you're able to log in for the first time."
 
 You can begin setting up your new portal account by following these simple steps:
 
@@ -58,7 +58,7 @@ If you require any further assistance please email the AUCyber Support Desk at s
 
 ### Forgot Password
 
-1. Go to the portal login page https://app.aucloud.com.au
+1. Go to the portal login page https://portal.aucyber.com.au
 1. Enter your **Email**.
 1. Click **Log In**
 1. Click **Forgot Password?**.

@@ -1,11 +1,13 @@
 ---
-title: Portal
+title: Portal (Legacy)
 description: The AUCyber portal provides the front door access, account management to AUCyber's infrastructure services.
 tags:
     - portal
 ---
 
 ## Overview
+
+!!! warning "This section describes the legacy AUCyber Portal at portal.australiacloud.com.au, which will no longer function once the new Portal is released. For the current Portal at [https://portal.aucyber.com.au](https://portal.aucyber.com.au), see the [Portal](../portal-new/index.md) section."
 
 The AUCyber Portal is a secure one-stop shop for access to VMware Cloud Director and for user and account management, billing information and support.
 

@@ -6,10 +6,10 @@ tags:
 ---
 
 ## Overview
-This guide is for customers who have an [administrator role](#granting-portal-administration-privileges). These customers are able to manage users in their organisation, including creating new users, modifying existing users' accesses, and deleting users.
+This guide is for customers who have an [administrator role](#granting-portal-administration-privileges). These customers are able to manage users in their organisation, including creating new users and modifying existing users' accesses.
 
 ### Getting into the administration console
-1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://app.aucyber.com.au.
+1. [Log in](./portal-login.md) to the Portal with your account that has Portal user management privileges at https://portal.aucyber.com.au.
    
 1. On the left sidebar, click the **People** tab.
    

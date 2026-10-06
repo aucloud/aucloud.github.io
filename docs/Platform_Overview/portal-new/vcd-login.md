@@ -1,6 +1,6 @@
 ---
 title: VCD Login
-description: Virtual Cloud Director (VCD) Login
+description: VMware Cloud Director (VCD) Login
 tags:
     - portal
 ---
@@ -21,7 +21,7 @@ In the new Portal, each user's VCD permissions are tied to their AUCyber login, 
 
     ![Click Single Sign-On](./assets/vcd-tenancy-sso.png){: style="border:1px solid black;"}
 
-    !!! note "If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is no longer supported.  This option will be removed in the near future."
+    !!! note "If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is not supported."
 
 1. You will be redirected into the VCD tenancy.
 

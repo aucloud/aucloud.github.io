@@ -1,6 +1,6 @@
 ---
-title: Create a local user in VMWare Cloud Director (VCD)
-description: Create a local user in VMWare Cloud Director (VCD)
+title: Create a local user in VMware Cloud Director (VCD)
+description: Create a local user in VMware Cloud Director (VCD)
 tags:
     - portal
     - API
@@ -9,13 +9,13 @@ tags:
 
 ## Overview
 
-In order to use the [VMWare OVF tool](../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool.md), or to interact with [VMWare Cloud Director via PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md) you will need a "local" user account in VCD. 
+In order to use the [VMware OVF tool](../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool.md), or to interact with [VMware Cloud Director via PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md) you will need a "local" user account in VCD. 
 
 This document details the steps required to set up this user. 
 
 ## Steps
 
-1. Log in to the [AUCyber Portal](https://app.aucloud.com.au)
+1. Log in to the [AUCyber Portal](https://portal.aucyber.com.au)
 1. Log in to the tenancy that you want to connect to:
 
     <!-- TODO: FIX THIS -->
@@ -37,4 +37,4 @@ This document details the steps required to set up this user.
 
     ![vcd-user-created](./assets/new-portal/vcd-user-created.png)
 
-1. You can now use the username and password of this user to use the [VMWare OVF tool](../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool.md), or to interact with [VMWare Cloud Director via PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md)
+1. You can now use the username and password of this user to use the [VMware OVF tool](../../Compute/Working_with_Virtual_Machines/how_to_vmtemplate_media_using_ovf_tool.md), or to interact with [VMware Cloud Director via PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md)
