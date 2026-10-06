@@ -25,9 +25,9 @@ Before you can start building VMs in your VDC, you need to create the network th
 
 First, you need to create a network that can connect to external networks outside your VDC (including the internet). This is called an external routed network. You can find more information about routed networks in [How to create a routed VDC network](../NSX-V_Networks/how_to_create_a_routed_vdc_network.md).
 
-1. Log in to the AUCyber Portal.
+1. Log in to the legacy AUCyber Portal. Once the [Portal](../../../Platform_Overview/portal-new/index.md) is released, scheduled for Q4 2026, use the [VCD Login](../../../Platform_Overview/portal-new/vcd-login.md) guide instead.
 
-    For more detailed instructions, see the [Getting Started Guide](../../../Platform_Overview/portal/getting_started.md) for the AUCyber Portal
+    For more detailed instructions, see the [Getting Started Guide](../../../Platform_Overview/portal/getting_started.md) for the legacy AUCyber Portal
 
 2. Select your account.
 

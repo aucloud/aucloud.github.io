@@ -7,6 +7,10 @@ tags:
     - API
 ---
 
+
+!!! warning "Legacy Portal documentation"
+    This page describes authentication through the legacy AUCyber Portal at portal.australiacloud.com.au. The AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au) is scheduled for release in Q4 2026. Once it is released, the legacy Portal will no longer function and the [Using the API](../using-the-api-new/authentication_methods.md) documentation applies.
+
 ## Overview
 
 VMware PowerCLI is a Microsoft PowerShell based command line interface tool which was developed by VMware to manage and automate tasks on various VMware platforms such as vSphere, VMware Cloud Director, Horizon, etc.
@@ -19,7 +23,7 @@ If your system has connection to the internet, you can perform the following to 
 
 To connect to the AUCyber platform via PowerCLI, you need the API-URL, Org-ID, and User-ID which can be found by:
 
-1. Logging into the AUCyber Portal
+1. Logging into the legacy AUCyber Portal
 2. Selecting API Management under your User ICON in the top right menu
 3. Select the Cloud Services tab.
 

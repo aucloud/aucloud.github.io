@@ -5,16 +5,20 @@ tags:
     - portal
 ---
 
+
+!!! info "Effective from the Portal release"
+    This page describes the AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au), scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au and its documentation.
+
 ## Overview
 
-This guide will detail how to log into the new Portal with a user that has already been [set up](portal-account-setup.md).
+This guide will detail how to log into the Portal with a user that has already been [set up](portal-account-setup.md).
 
 ### Login
 
 You can follow these steps to access your AUCyber portal.
 
 1. Open the web browser on your device.
-1. Navigate to the new portal https://portal.aucyber.com.au
+1. Navigate to the Portal at https://portal.aucyber.com.au
 1. Enter your **email** address.
 1. Click **Log In**
 

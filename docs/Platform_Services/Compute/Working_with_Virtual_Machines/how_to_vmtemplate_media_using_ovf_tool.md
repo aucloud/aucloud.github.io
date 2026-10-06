@@ -78,7 +78,7 @@ To upload an ovf/ova file:
     - overwrite indicates that you're replacing an existing vApp with the new one being uploaded
     - filename is the name of the .vmx file that are importing
     - username is your AUCyber Portal user ID
-    - apiURL is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
+    - apiURL is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the legacy AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
     - computeServiceID is the ID of your AUCyber compute service (sometimes also called an org or vOrg)
     - vappTemplate is the ID of the vApp template
     - `catalogName` is the Name of the catalog in which the vApp template is located
@@ -116,7 +116,7 @@ To upload an ISO image:
     - `sourceType` (or `st`) indicates the type of the source file: `ISO`
     - `path\\filename.iso` is the full location of the source `.iso` file you want to import
     - `username` is your AUCyber Portal user ID
-    - `apiURL` is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
+    - `apiURL` is your VMware Cloud Director API URL. This URL is different depending on the region in which your environment is located. For more information, see [API Management in the legacy AUCyber Portal](../../../Platform_Overview/portal/api_management.md).
     - `computeServiceID` is the ID of your AUCyber compute service (sometimes also called an org or vOrg)
     - `name` is the name to display for the file in VMware Cloud Director
     - `catalogName` is the Name of the catalog to which you want to upload the file
