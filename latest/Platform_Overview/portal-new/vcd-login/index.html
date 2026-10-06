@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Virtual Cloud Director (VCD) Login">
+        <meta name="description" content="VMware Cloud Director (VCD) Login">
       
       
       
@@ -74,7 +74,7 @@
   
 <meta property="og:type" content="website" />
 <meta property="og:title" content="VCD Login - Technical Documentation" />
-<meta property="og:description" content="Virtual Cloud Director (VCD) Login" />
+<meta property="og:description" content="VMware Cloud Director (VCD) Login" />
 <meta property="og:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Overview/portal-new/vcd-login.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -82,7 +82,7 @@
 <meta property="og:url" content="https://docs.aucyber.com.au/latest/Platform_Overview/portal-new/vcd-login/" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="VCD Login - Technical Documentation" />
-<meta property="twitter:description" content="Virtual Cloud Director (VCD) Login" />
+<meta property="twitter:description" content="VMware Cloud Director (VCD) Login" />
 <meta property="twitter:image" content="https://docs.aucyber.com.au/latest/assets/images/social/Platform_Overview/portal-new/vcd-login.png" />
 </head>
   
@@ -960,8 +960,6 @@
       
         
       
-        
-      
     
     
     
@@ -984,7 +982,7 @@
   <span class="md-ellipsis">
     
   
-    Portal
+    Portal (Legacy)
   
 
     
@@ -1006,7 +1004,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Portal
+    Portal (Legacy)
   
 
           </label>
@@ -1085,34 +1083,6 @@
     
   
     Getting Started
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../portal/known_limitations/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Known limitations
   
 
     
@@ -1213,7 +1183,7 @@
   <span class="md-ellipsis">
     
   
-    Portal (New)
+    Portal
   
 
     
@@ -1235,7 +1205,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Portal (New)
+    Portal
   
 
           </label>
@@ -1285,7 +1255,7 @@
   <span class="md-ellipsis">
     
   
-    Initial Steps (first login)
+    Portal Account Setup
   
 
     
@@ -3266,7 +3236,7 @@
   <span class="md-ellipsis">
     
   
-    Using the API
+    Using the API (Legacy)
   
 
     
@@ -3282,7 +3252,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Using the API
+    Using the API (Legacy)
   
 
           </label>
@@ -3394,7 +3364,7 @@
   <span class="md-ellipsis">
     
   
-    Using the API (New)
+    Using the API
   
 
     
@@ -3410,7 +3380,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Using the API (New)
+    Using the API
   
 
           </label>
@@ -3514,7 +3484,7 @@
   <span class="md-ellipsis">
     
   
-    Retrieve your VMWare Cloud Director (VCD) Organization name
+    Retrieve your VMware Cloud Director (VCD) Organization name
   
 
     
@@ -3570,7 +3540,7 @@
   <span class="md-ellipsis">
     
   
-    Create a local user in VMWare Cloud Director (VCD)
+    Create a local user in VMware Cloud Director (VCD)
   
 
     
@@ -6458,8 +6428,12 @@
 
   <h1>VCD Login</h1>
 
-<div><h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
-<p>In the new Portal, each user's VCD permissions are tied to their AUCyber login, streamlining the workflow to reach the user's VCD instance(s). This guide details the process of logging into an existing Portal account and accessing a VCD instance that account has been given access to.</p>
+<div><div class="admonition info">
+<p class="admonition-title">Effective from the Portal release</p>
+<p>This page describes the AUCyber Portal at <a href="https://portal.aucyber.com.au">portal.aucyber.com.au</a>, scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the <a href="../../portal/">legacy Portal</a> at portal.australiacloud.com.au and its documentation.</p>
+</div>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¤</a></h2>
+<p>In the Portal, each user's VCD permissions are tied to their AUCyber login, streamlining the workflow to reach the user's VCD instance(s). This guide details the process of logging into an existing Portal account and accessing a VCD instance that account has been given access to.</p>
 <h3 id="accessing-a-vcd-instance">Accessing a VCD instance<a class="headerlink" href="#accessing-a-vcd-instance" title="Permanent link">¤</a></h3>
 <ol>
 <li>
@@ -6473,7 +6447,7 @@
 <p>A new tab will open, directing you to the tenancy you clicked. Click <strong>Sign In With Single Sign-On</strong>.</p>
 <p><img alt="Click Single Sign-On" src="../assets/vcd-tenancy-sso.png" style="border:1px solid black;"></p>
 <div class="admonition note">
-<p class="admonition-title">If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is no longer supported.  This option will be removed in the near future.</p>
+<p class="admonition-title">If you are given an option to "Sign in with LDAP" please ignore it. LDAP authentication is not supported.</p>
 </div>
 </li>
 <li>
@@ -6502,7 +6476,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 22, 2026 06:00:11 UTC">January 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 6, 2026 06:22:37 UTC">October 6, 2026</span>
   </span>
 
     
