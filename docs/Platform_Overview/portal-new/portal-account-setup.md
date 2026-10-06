@@ -50,7 +50,7 @@ You can begin setting up your Portal account by following these simple steps:
 
     ![Setup account](./assets/update-password.png){: style="width:500px;border:1px solid black;"}
 
-You will have successfully logged into the new AUCyber Portal for the first time. 
+You will have successfully logged into the AUCyber Portal for the first time. 
 
 From here you can:
 
