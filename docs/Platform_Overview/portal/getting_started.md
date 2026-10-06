@@ -5,6 +5,9 @@ description: Getting Started
 
 ## Logging in to the AUCyber Portal
 
+!!! warning "Legacy Portal documentation"
+    This page describes the legacy AUCyber Portal at portal.australiacloud.com.au. The AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au) is scheduled for release in Q4 2026. Once it is released, the legacy Portal will no longer function and the [Portal](../portal-new/index.md) documentation applies.
+
 1. Go to the appropriate [URL](../../Platform_Services/reference_urls.md#portal-ui), depending on the community where your service is located.
 
 1. Enter the organisational login credentials provided.
@@ -38,7 +41,7 @@ After you log in, you will see the portal home page. The portal home page is mad
 |![Announcements Icon](./assets/icons/announcements.png)| **Announcements** | The announcements tab will display all released announcements.|
 |![Activity Icon](./assets/icons/activity.png)| **Activity** | The activity tab contains all the user activities that occur on the portal, Every user can see their own activity by default and administrators can see all account activity.|
 |![Users Icon](./assets/icons/users.png)| **Users** | The users tab is where you can view your own user account. The portal uses a role-based permissions system. If the Create New user radio button does not appear, either you do not have sufficient privileges, or your organisation has not signed the CRISP.|
-|![VMware Cloud Director Icon](./assets/icons/vcloud.png)| **VMware Cloud Director** | After your compute service and Virtual Datacentre (VDC) have been created by AUCyber you can start to build your applications. To do this, you must log in to VMware Cloud Director from the AUCyber portal.|
+|![VMware Cloud Director Icon](./assets/icons/vcloud.png)| **VMware Cloud Director** | After your compute service and Virtual Datacentre (VDC) have been created by AUCyber you can start to build your applications. To do this, you must log in to VMware Cloud Director from the legacy AUCyber portal. Once the [Portal](../portal-new/index.md) is released, use the [VCD Login](../portal-new/vcd-login.md) guide instead.|
 |![Billing Icon](./assets/icons/billing.png)| **Billing** | The billing console provides real time information on the consumption of AUCyber services. Portal users can monitor the status of existing purchase orders, download invoices and monitor financial transactions.|
 |![Assurance Icon](./assets/icons/assurance.png)| **Assurance** | The Assurance tab provides links to useful documentation. It also contains the link where assurance users can view the Community Rules Information Security Policy (CRISP).|
 |![Support Icon](./assets/icons/support.png)| **Support** | The support tab tracks any issues or feedback you may have with your infrastructure and the virtual estate.|

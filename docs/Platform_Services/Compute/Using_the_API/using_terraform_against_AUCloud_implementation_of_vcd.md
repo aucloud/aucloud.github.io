@@ -7,6 +7,10 @@ tags:
     - SDK
 ---
 
+
+!!! warning "Legacy Portal documentation"
+    This page describes authentication through the legacy AUCyber Portal at portal.australiacloud.com.au. The AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au) is scheduled for release in Q4 2026. Once it is released, the legacy Portal will no longer function and the [Using the API](../using-the-api-new/authentication_methods.md) documentation applies.
+
 ## Overview
 
 In order to configure your AUCyber IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.

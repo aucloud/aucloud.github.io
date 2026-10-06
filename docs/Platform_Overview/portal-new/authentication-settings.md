@@ -5,6 +5,10 @@ tags:
     - portal
 ---
 
+
+!!! info "Effective from the Portal release"
+    This page describes the AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au), scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au and its documentation.
+
 ## Overview
 
 This document provides an overview of the authentication settings for the AUCyber Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.

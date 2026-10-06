@@ -1,12 +1,16 @@
 ---
 title: Portal Account Self Management
-description: Change user details and password in the new Portal
+description: Change user details and password in the Portal
 tags:
     - portal
 ---
 
+
+!!! info "Effective from the Portal release"
+    This page describes the AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au), scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au and its documentation.
+
 ## Overview
-This guide will detail how to manage and change your user account's own details after logging into the new Portal.
+This guide will detail how to manage and change your user account's own details after logging into the Portal.
 
 ### Getting to Account Management
 

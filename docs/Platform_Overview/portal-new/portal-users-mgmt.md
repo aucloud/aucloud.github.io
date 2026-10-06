@@ -5,6 +5,10 @@ tags:
     - portal
 ---
 
+
+!!! info "Effective from the Portal release"
+    This page describes the AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au), scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au and its documentation.
+
 ## Overview
 This guide is for customers who have an [administrator role](#granting-portal-administration-privileges). These customers are able to manage users in their organisation, including creating new users and modifying existing users' accesses.
 

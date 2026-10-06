@@ -17,7 +17,7 @@ Once enabled, the self-service backup portal can be accessed via a plug-in throu
 
 The portal can be accessed via a plug-in through VMware Cloud Director. If you would like access to back-up your VM's in your VMware Cloud Director service, please contact your Customer Success Manager or AUCyber support to request to have this feature enabled. Please provide an estimation of the storage space required (if known)
 
-## Assigning permissions within the AUCyber Portal
+## Assigning permissions within the legacy AUCyber Portal
 
 1. To assign permissions to a user within your tenancy navigate to the Users page
 

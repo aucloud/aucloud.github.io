@@ -7,6 +7,9 @@ tags:
 ---
 ## AUCyber Billing Portal
 
+!!! warning "Legacy Portal documentation"
+    This page describes the legacy AUCyber Portal at portal.australiacloud.com.au. The AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au) is scheduled for release in Q4 2026. Once it is released, the legacy Portal will no longer function and the [Portal](../portal-new/index.md) documentation applies.
+
 This guide is intended for use by administrative and financial staff responsible for the payment of invoices issued by AUCyber. Staff that require access to the Billing portal should request this access through the IT administrator responsible for the AUCyber portal management.
 
 ## Billing overview

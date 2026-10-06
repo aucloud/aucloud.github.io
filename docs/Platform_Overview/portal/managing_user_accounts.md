@@ -7,6 +7,9 @@ tags:
 
 ## Overview
 
+!!! warning "Legacy Portal documentation"
+    This page describes the legacy AUCyber Portal at portal.australiacloud.com.au. The AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au) is scheduled for release in Q4 2026. Once it is released, the legacy Portal will no longer function and the [Portal](../portal-new/index.md) documentation applies.
+
 Account administrators are responsible for the management of user accounts. This guide outlines the procedures used in managing users. Users are managed from the Users tab in the ribbon bar:
 
 ![Ribbon Users](./assets/ribbon_users.png)
