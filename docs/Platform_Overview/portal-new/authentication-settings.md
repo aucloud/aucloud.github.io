@@ -11,7 +11,20 @@ tags:
 
 ## Overview
 
-This document provides an overview of the authentication settings for the AUCyber Portal. It covers password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
+This document provides an overview of the authentication settings for the AUCyber Portal. It covers password requirements, password reset timeouts, VMware Cloud Director (VCD) session durations, and account inactivity policies.
+
+## Password Requirements
+
+Your password must meet the following conditions:
+
+- Minimum of 14 characters in length
+- Contain at least one lower-case alphabetical character (a-z)
+- Contain at least one upper-case alphabetical character (A-Z)
+- Contain at least one numeric character (0-9)
+- Contain at least one special character
+- Has not been used as one of your last 3 passwords
+
+These requirements apply whenever a password is set or changed, including when an administrator sets a password on your behalf.
 
 ## Password Reset Timeout
 
