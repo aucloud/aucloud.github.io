@@ -26,7 +26,10 @@ This guide is for customers who have an [administrator role](#granting-portal-ad
 
     ![Add user](./assets/create-user.png){: style="border:1px solid black;"}
 
-1. The create user dialog will open. Enter the users's name, email, password, and set any required permissions using the dropdowns before clicking submit to create the user.
+1. The create user dialog will open. Enter the user's name, email and password, tick the **Enabled** checkbox so that the user is able to log in, and set any required permissions using the dropdowns before clicking submit to create the user.
+
+    !!! note "A user that is not enabled cannot log in"
+        If you do not tick the **Enabled** checkbox, the user is created but cannot log in until an administrator edits the user and enables them.
 
     ![Create user](./assets/create-user-2.png){: style="border:1px solid black;"}
 
@@ -61,6 +64,18 @@ This guide is for customers who have an [administrator role](#granting-portal-ad
     ![New password](./assets/users-mgmt-new-password.png){: style="border:1px solid black;"}
 
 1. The users password has now been changed. This is a temporary password, and the user will be prompted to change it on their next login.
+
+#### Resetting a user's MFA
+
+If a user has lost access to their authenticator app, for example after changing phones, an administrator can remove the user's existing MFA credentials so that they can set up MFA again.
+
+1. Navigate to the [user's details page](#getting-to-the-user-details-page).
+
+1. Click the **Reset MFA** button.
+
+1. A confirmation dialog will appear warning that the action cannot be reversed. Click the **Delete MFA Credentials** button to confirm.
+
+1. On their next login, the user will be prompted to set up new MFA credentials. The setup steps are the same as [steps 8 to 10 of the initial account setup](./portal-account-setup.md#initial-setup).
 
 #### Unlocking an account
 

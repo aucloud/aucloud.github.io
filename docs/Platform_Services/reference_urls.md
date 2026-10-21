@@ -24,7 +24,7 @@ description: Reference URLs for services in AUCyber
 
 | URL | Community environment |
 | ---- | ------ |
-| [https://api.portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) |  Sovereign Cloud |
+| [https://api.portal.australiacloud.com.au/login](https://api.portal.australiacloud.com.au/login) |  Sovereign Cloud |
 
 
 ## VMware Cloud Director API endpoints
@@ -65,6 +65,6 @@ Both path-style (`https://s3.aucyber.com.au/<bucket>/<key>`) and host based (`ht
 
 ## Public Facing Repositories and Documentation
 
-- [AUCyber Technical Documentation](https://docs.australiacloud.com.au/latest/)
+- [AUCyber Technical Documentation](https://docs.aucyber.com.au/latest/)
 - [ACloud Public Github Org](https://github.com/aucloud)
 
