@@ -1439,6 +1439,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#resetting-a-users-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting a user's MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#unlocking-an-account" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6528,6 +6539,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#resetting-a-users-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting a user's MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#unlocking-an-account" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6642,7 +6664,11 @@
 <p><img alt="Add user" src="../assets/create-user.png" style="border:1px solid black;"></p>
 </li>
 <li>
-<p>The create user dialog will open. Enter the users's name, email, password, and set any required permissions using the dropdowns before clicking submit to create the user.</p>
+<p>The create user dialog will open. Enter the user's name, email and password, tick the <strong>Enabled</strong> checkbox so that the user is able to log in, and set any required permissions using the dropdowns before clicking submit to create the user.</p>
+<div class="admonition note">
+<p class="admonition-title">A user that is not enabled cannot log in</p>
+<p>If you do not tick the <strong>Enabled</strong> checkbox, the user is created but cannot log in until an administrator edits the user and enables them.</p>
+</div>
 <p><img alt="Create user" src="../assets/create-user-2.png" style="border:1px solid black;"></p>
 </li>
 <li>
@@ -6683,6 +6709,22 @@
 </li>
 <li>
 <p>The users password has now been changed. This is a temporary password, and the user will be prompted to change it on their next login.</p>
+</li>
+</ol>
+<h4 id="resetting-a-users-mfa">Resetting a user's MFA<a class="headerlink" href="#resetting-a-users-mfa" title="Permanent link">¤</a></h4>
+<p>If a user has lost access to their authenticator app, for example after changing phones, an administrator can remove the user's existing MFA credentials so that they can set up MFA again.</p>
+<ol>
+<li>
+<p>Navigate to the <a href="#getting-to-the-user-details-page">user's details page</a>.</p>
+</li>
+<li>
+<p>Click the <strong>Reset MFA</strong> button.</p>
+</li>
+<li>
+<p>A confirmation dialog will appear warning that the action cannot be reversed. Click the <strong>Delete MFA Credentials</strong> button to confirm.</p>
+</li>
+<li>
+<p>On their next login, the user will be prompted to set up new MFA credentials. The setup steps are the same as <a href="../portal-account-setup/#initial-setup">steps 8 to 10 of the initial account setup</a>.</p>
 </li>
 </ol>
 <h4 id="unlocking-an-account">Unlocking an account<a class="headerlink" href="#unlocking-an-account" title="Permanent link">¤</a></h4>
@@ -6727,7 +6769,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 6, 2026 06:22:37 UTC">October 6, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 21, 2026 01:39:23 UTC">October 21, 2026</span>
   </span>
 
     
