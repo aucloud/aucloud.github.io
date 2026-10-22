@@ -11,7 +11,7 @@ tags:
 
 In order to configure your AUCyber IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.
 
-The provider authenticates using a VCD API token. The token has the same role and permissions as the user that created it, so the token should be created by a user with the "Organization Administrator" role in VCD. This role has the required permissions to perform all resource add/change/destroy via Terraform.
+The provider authenticates using a VCD API token. If you already have a local VCD user you can continue to use it with the provider's `integrated` authentication type, see [Existing local users](./authentication_methods.md#existing-local-users). The token has the same role and permissions as the user that created it, so the token should be created by a user with the "Organization Administrator" role in VCD. This role has the required permissions to perform all resource add/change/destroy via Terraform.
 
 ## Connecting with a VCD API token
 

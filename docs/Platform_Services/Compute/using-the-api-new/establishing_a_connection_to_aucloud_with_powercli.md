@@ -17,7 +17,7 @@ If your system has connection to the internet, you can perform the following to 
 
 ``` > Install-Module VMware.PowerCLI -Scope CurrentUser ```
 
-To establish a connection to the AUCyber platform using PowerCLI you will need a VCD API token, the unique name of your VCD tenancy and the API server URL of the VMware Cloud Director instance that you want to connect to. Username and password authentication is not available for AUCyber Portal accounts.
+To establish a connection to the AUCyber platform using PowerCLI you will need a VCD API token, the unique name of your VCD tenancy and the API server URL of the VMware Cloud Director instance that you want to connect to. Username and password authentication is not available for AUCyber Portal accounts. If you already have a local VCD user you can continue to use it, see [Existing local users](./authentication_methods.md#existing-local-users).
 
 !!! note
 
