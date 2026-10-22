@@ -30,34 +30,39 @@ runs:
         set +e
         echo "::group::Runner environment"
         uname -a
-        cat /etc/os-release 2>/dev/null
-        echo "ldd: $(command -v ldd || echo missing)"; ldd --version 2>&1 | head -1
-        ls -l /lib64/ld-linux* /lib/ld-linux* /lib/ld-musl* /usr/lib64/ld-linux* 2>/dev/null
-        echo "python3: $(command -v python3 || echo missing)"; python3 --version 2>&1
-        python3 -m pip --version 2>&1
+        grep PRETTY_NAME /etc/os-release 2>/dev/null
+        ldd --version 2>&1 | head -1
+        file /bin/sh 2>&1
+        /lib64/ld-linux-x86-64.so.2 --version 2>&1 | head -1
+        echo "python3: $(command -v python3 || echo missing) $(python3 --version 2>&1)"
         uv --version
         df -h "$HOME" "$GITHUB_WORKSPACE"
         echo "::endgroup::"
 
     - name: Install Python ${{ inputs.python-version }}
       shell: bash
+      env:
+        # The runners are Oracle Linux 9 (glibc). uv's automatic libc detection fails
+        # there, so tell it explicitly which flavour of standalone build to fetch.
+        UV_LIBC: gnu
       run: |
         set -uo pipefail
-        # Prefer a managed download so every runner gets the same interpreter.
-        # If uv cannot identify the platform, fall back to the runner's system python3.
-        if uv python install -v "${{ inputs.python-version }}"; then
-          echo "PYTHON_FOR_VENV=${{ inputs.python-version }}" >> "$GITHUB_ENV"
-        else
-          echo "::warning::uv could not install a managed Python; falling back to system python3"
-          command -v python3 >/dev/null || { echo "::error::no python3 on this runner"; exit 1; }
-          echo "PYTHON_FOR_VENV=$(command -v python3)" >> "$GITHUB_ENV"
+        if ! uv python install "${{ inputs.python-version }}"; then
+          echo "::group::uv trace without UV_LIBC override"
+          env -u UV_LIBC uv python install -vv "${{ inputs.python-version }}" 2>&1 | grep -i "libc\|ld\.so\|ld path\|glibc\|musl" | head -20
+          echo "::endgroup::"
+          echo "::error::uv could not install a managed Python ${{ inputs.python-version }}"
+          exit 1
         fi
+        uv python find "${{ inputs.python-version }}"
 
     - name: Create virtual environment
       shell: bash
+      env:
+        UV_LIBC: gnu
       run: |
         set -euo pipefail
-        uv venv --seed --python "$PYTHON_FOR_VENV" "$GITHUB_WORKSPACE/.venv"
+        uv venv --seed --python "${{ inputs.python-version }}" "$GITHUB_WORKSPACE/.venv"
         echo "$GITHUB_WORKSPACE/.venv/bin" >> "$GITHUB_PATH"
         echo "VIRTUAL_ENV=$GITHUB_WORKSPACE/.venv" >> "$GITHUB_ENV"
         python_location="$("$GITHUB_WORKSPACE/.venv/bin/python" -c 'import sys; print(sys.base_prefix)')"
