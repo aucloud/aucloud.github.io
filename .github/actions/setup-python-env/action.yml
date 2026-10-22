@@ -72,3 +72,21 @@ runs:
           echo "SSL_CERT_FILE=$cert" >> "$GITHUB_ENV"
         fi
         echo "UV_NATIVE_TLS=true" >> "$GITHUB_ENV"
+
+    - name: Install cairo for social cards
+      shell: bash
+      run: |
+        set -euo pipefail
+        # The mkdocs social plugin needs the cairo C library, which the runner image
+        # does not ship and the runner user cannot install with the package manager.
+        # Fetch it from conda-forge into the job's temp area with micromamba instead.
+        mamba_root="$RUNNER_TEMP/micromamba"
+        prefix="$RUNNER_TEMP/cairo"
+        mkdir -p "$mamba_root/bin"
+        curl -Ls -o "$mamba_root/bin/micromamba" \
+          https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-linux-64
+        chmod +x "$mamba_root/bin/micromamba"
+        MAMBA_ROOT_PREFIX="$mamba_root" "$mamba_root/bin/micromamba" create -y -q -p "$prefix" -c conda-forge cairo
+        lib_path="$prefix/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+        echo "LD_LIBRARY_PATH=$lib_path" >> "$GITHUB_ENV"
+        LD_LIBRARY_PATH="$lib_path" python -c "import ctypes; ctypes.CDLL('libcairo.so.2'); print('cairo library loads')"
