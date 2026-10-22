@@ -55,3 +55,20 @@ runs:
         # breaks isolated builds of source packages. Use the runner's own temp area instead.
         echo "TMPDIR=$RUNNER_TEMP" >> "$GITHUB_ENV"
         "$GITHUB_WORKSPACE/.venv/bin/python" --version
+
+    - name: Point uv at the runner's package index
+      shell: bash
+      run: |
+        set -euo pipefail
+        # The runners carry a pip.conf for an internal mirror with its own CA.
+        # uv does not read pip.conf, so pass the same settings through.
+        index_url="$(pip config get global.index-url 2>/dev/null || true)"
+        if [ -n "$index_url" ]; then
+          echo "UV_INDEX_URL=$index_url" >> "$GITHUB_ENV"
+          echo "Using package index $index_url"
+        fi
+        cert="$(pip config get global.cert 2>/dev/null || true)"
+        if [ -n "$cert" ]; then
+          echo "SSL_CERT_FILE=$cert" >> "$GITHUB_ENV"
+        fi
+        echo "UV_NATIVE_TLS=true" >> "$GITHUB_ENV"

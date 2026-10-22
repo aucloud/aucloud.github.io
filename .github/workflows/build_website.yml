@@ -24,7 +24,7 @@ jobs:
       uses: ./.github/actions/setup-python-env
 
     - name: Install dependencies
-      run: CPPFLAGS="-I${pythonLocation}/include/python3.12" make install
+      run: make install-uv
     - name: Setup doc deploy
       run: |
         git config --global user.name "semantic-release (via Github actions)"

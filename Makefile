@@ -4,6 +4,9 @@ install:
 	pip install --upgrade -r requirements.txt
 	pip install mkdocs-video
 
+install-uv:
+	uv pip install --upgrade -r requirements.txt mkdocs-video
+
 start:
 	SITE_URL=http://localhost:8000/ mkdocs serve --dirtyreload
 

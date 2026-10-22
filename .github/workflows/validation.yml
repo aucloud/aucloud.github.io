@@ -54,7 +54,7 @@ jobs:
     - name: Set up Python
       uses: ./.github/actions/setup-python-env
     - name: Install dependencies
-      run: make install
+      run: make install-uv
 
     - name: pre-commit
       run: |
