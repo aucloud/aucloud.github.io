@@ -9,46 +9,37 @@ tags:
 
 ## Overview
 
-In order to configure your AUCyber IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.  The account used should have the "Organization Administrator" role in VCD as this will have the required permissions to perform all resource add/change/destroy via Terraform.
+In order to configure your AUCyber IaaS tenancies using Terraform, you must first pass the necessary authentication information to the VMware Cloud Director (vCD) Terraform provider.
 
-There are currently 2 supported authenticated methods:
+The provider authenticates using a VCD API token. The token has the same role and permissions as the user that created it, so the token should be created by a user with the "Organization Administrator" role in VCD. This role has the required permissions to perform all resource add/change/destroy via Terraform.
 
-1. Connecting with username & password, or
-1. Connecting with an API token
+## Connecting with a VCD API token
 
-## Connecting with username & password
-
-1. Follow [the steps outlined here](./vcd_local_user_setup.md) to create a "local" VCD user if you have not already done so.
+1. Create a VCD API token by following [this guide](./create_vcd_api_token.md) if you do not already have one
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
 1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
 1. Connect to VCD with Terraform
 
-    The [VMware Cloud Director Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs) requires the following inputs in order to connect as a VCD Organization Administrator:
+    The [VMware Cloud Director Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs) (version 3.5.0 or later) requires the following inputs in order to connect with an API token:
 
-    - **`auth_type`**: must be `"integrated"`
-    - **`user`**: username of your "local" VCD user
-    - **`password`**: password of your "local" VCD user
+    - **`auth_type`**: must be `"api_token"`
+    - **`api_token`**: the API token you created in step 1
     - **`org`**:  unique name of your VCD tenancy
     - **`url`**: API URL of your VCD instance + `"/api"`, e.g. `https://api-vcd-sz201.portal.australiacloud.com.au/api`
 
-    Once you have these values you can fill in the missing provider configuration:
+    For example:
 
-    ![Connect Org Admin](./assets/connect_org_admin.jpg)
+    ``` hcl
+    provider "vcd" {
+      auth_type = "api_token"
+      api_token = var.vcd_api_token
+      org       = "<Org-Id>"
+      url       = "https://api-vcd-sz201.portal.australiacloud.com.au/api"
+    }
+    ```
 
-## Connecting with a VCD user API token
+    The provider exchanges the API token for a bearer token on your behalf. Treat the token as a secret: pass it in as a variable or environment variable rather than committing it to source control.
 
-1. Generate a VCD API token, [Using a manually generated VCD API token.](./authentication_methods.md#use-vcd-api-token)
-1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
-1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
-1. Connect to VCD with Terraform
+    !!! note
 
-    The [VMware Cloud Director Terraform Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs) requires the following inputs in order to connect as a VCD Organization Administrator:
-
-    - **`auth_type`**: must be `"token"`
-    - **`user`**: must be `"none"`
-    - **`password`**: must be `"none"`
-    - **`token`**: The API token you created in step 1
-    - **`org`**:  unique name of your VCD tenancy
-    - **`url`**: API URL of your VCD instance + `"/api"`, e.g. `https://api-vcd-sz201.portal.australiacloud.com.au/api`           
-
-    ![Bearer Token](./assets/bearer_token.jpg)
+        Sessions authenticated with an API token cannot change passwords, manage users or create further API tokens.

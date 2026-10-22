@@ -11,76 +11,23 @@ tags:
 
 ## Overview
 
-There are two methods of authenticating yourself in order to connect to AUCyber VCD instances, enabling usage of the VCD APIs, VCD Terraform Provider, VCD's OVF tool, etc. These methods are:
+The AUCyber Portal logs you in to VMware Cloud Director (VCD) using Single Sign-On (SSO). SSO accounts cannot authenticate with a username and password outside of the Portal, and customers are not able to create local VCD users.
 
-- Username + password
-- Bearer token
+To connect to an AUCyber VCD instance from outside the Portal, for example to use the VCD API, the VCD Terraform Provider or PowerCLI, you authenticate with a VCD API token. The API token is exchanged for a bearer token, which is then sent in the `Authorization` header of all subsequent requests.
 
-## Username + password authentication
+An API token has the same role and permissions as the user that created it. Create a separate token for each client or integration so that access can be revoked on a per client basis.
 
-This method of authentication required a "local" VCD user.
+Tool specific guidance is available for:
 
-Follow [this guide for setting up a "local" VCD user](./vcd_local_user_setup.md) to create this user. 
+- [Terraform](./using_terraform_against_AUCloud_implementation_of_vcd.md)
+- [PowerCLI](./establishing_a_connection_to_aucloud_with_powercli.md)
 
-The username and password of this user can then be used to authenticate and establish a connection with VCD. 
+## Use VCD API token
 
-## Bearer token authentication
-
-Creating a session by sending a HTTP POST request to the VCD `/api/sessions` endpoint generates a bearer token.  This token can then be used to connect to your VCD instance with many different tools, such as Terraform.  
-
-To create this session, you can:
-
-- Use the username + password of a "local" VCD user
-- Use a manually generated VCD API token
-
-### Use username + password
-
-1. Retrieve the username and password of your "local" VCD user.  Follow [this guide for setting up a "local" VCD user](./vcd_local_user_setup.md) if you do not already have one. 
+1. Retrieve your VCD API token.  If you don't have one, follow [this guide to set one up](./create_vcd_api_token.md)
 1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
 1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
-1. Base64 encode your organization name, username, and password in the format:
-
-    ```
-    [username]@[organization name]:[password]
-    ```
-
-1. Send a POST request to the `/api/sessions` endpoint of the VCD API where your tenancy is located:
-
-    ```
-    curl --request POST 'https://[VCD API URL]/api/sessions' \
-        --header 'Accept: application/*;version=37.2' \
-        --header 'Authorization: Basic [Base64 encoded credentials]'
-    ```
-
-    For example:
-    ```
-    curl --request POST 'https://api-vcd-sz101.portal.australiacloud.com.au/api/sessions' \
-        --header 'Accept: application/*;version=37.2' \
-        --header 'Authorization: Basic e3t2Y2RfdXNlcm5hbWV9fTp7e3ZjZF9wYXNzd29ydh9'
-    ```
-
-1. A successful response will include an authorization header in this format:
-
-    ```
-    X-VMWARE-VCLOUD-ACCESS-TOKEN: *token*
-    ```
-
-    This token can be used as a Bearer token in the `Authorization` header of all future requests, e.g. `Authorization: Bearer *token*`. 
-
-    Here's an example of retrieving VMs using the VCD API using a bearer token of `my-bearer-token`:
-
-    ```
-    curl 'https://api-vcd-sz101.portal.australiacloud.com.au/api/query?type=vm' \
-        --header 'Accept: application/*+json;version=37.2' \
-        --header 'Authorization: Bearer [my-bearer-token]'
-    ```
-
-### Use VCD API token
-
-1. Retrieve your manually generated VCD API token.  If you don't have one, follow [this guide to set one up](./create_vcd_api_token.md)
-1. [Retrieve the unique name of your VCD tenancy](./retrieve_tenancy_name.md)
-1. Retrieve the API server URL for your VCD tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints)
-1. Send a POST request to `https://[VCD API URL]/oauth/tenant/[organization name]/token` with the a x-www-form-urlencoded body containing: `grant_type=refresh_token&refresh_token=[API Token]`
+1. Send a POST request to `https://[VCD API URL]/oauth/tenant/[organization name]/token` with an x-www-form-urlencoded body containing: `grant_type=refresh_token&refresh_token=[API Token]`
 
     Example:
     ```
@@ -90,7 +37,7 @@ To create this session, you can:
         --data-urlencode 'refresh_token=zmLd5LZ1by2gSHjePgMPWr'
     ```
     
-1. A successful request will return a body containing an `access_token`. Subsequent interactions with VCD can now use this as as a Bearer token:
+1. A successful request will return a body containing an `access_token`. Subsequent interactions with VCD can now use this as a Bearer token in the `Authorization` header:
 
     Example:
     ```
@@ -98,3 +45,5 @@ To create this session, you can:
         --header 'Accept: application/*+json;version=37.2' \
         --header 'Authorization: Bearer [access_token]'
     ```
+
+    The `access_token` expires after a period of time. When it expires, repeat the POST request above to obtain a new one. The API token itself does not expire unless you revoke it.

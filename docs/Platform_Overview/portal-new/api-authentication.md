@@ -26,16 +26,16 @@ Affected VMware tools and services include, but are not limited to:
 
 The Portal logs you in to VCD using Single Sign-On (SSO), replacing the previous LDAP-based accounts.
 
-**Important**: VCD does not currently support username + password authentication for SSO accounts. This means that new "local" VCD users will need to be created in order to use traditional username + password authentication for tools like the VCD API.
+**Important**: VCD does not support username + password authentication for SSO accounts, and customers are not able to create local VCD users. Any tool or integration that previously authenticated to VCD with a username and password must be updated to use a VCD API token.
 
 ## What to do next?
 
-To continue accessing AUCyber vCD instances and using related tools (APIs, Terraform Provider, OVF tool, etc.), consider these authentication methods:
+To continue accessing AUCyber VCD instances and using related tools (APIs, Terraform Provider, PowerCLI, etc.), create a VCD API token and use it to authenticate:
 
-- Username + Password with a "local" vCD user
-- Bearer Token
+1. [Create a VCD API token](../../Platform_Services/Compute/using-the-api-new/create_vcd_api_token.md) from the Portal
+1. Follow [Authenticating into VMware Cloud Director](../../Platform_Services/Compute/using-the-api-new/authentication_methods.md) to exchange the token for a bearer token
 
-For detailed guidance on adapting to these changes, please refer to [this guide](../../Platform_Services/Compute/using-the-api-new/authentication_methods.md)
+Tool specific guidance is available for [Terraform](../../Platform_Services/Compute/using-the-api-new/using_terraform_against_AUCloud_implementation_of_vcd.md) and [PowerCLI](../../Platform_Services/Compute/using-the-api-new/establishing_a_connection_to_aucloud_with_powercli.md).
 
 ## Getting Support
 
