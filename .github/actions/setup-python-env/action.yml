@@ -27,17 +27,8 @@ runs:
     - name: Show runner environment
       shell: bash
       run: |
-        set +e
-        echo "::group::Runner environment"
-        uname -a
-        grep PRETTY_NAME /etc/os-release 2>/dev/null
-        ldd --version 2>&1 | head -1
-        file /bin/sh 2>&1
-        /lib64/ld-linux-x86-64.so.2 --version 2>&1 | head -1
-        echo "python3: $(command -v python3 || echo missing) $(python3 --version 2>&1)"
-        uv --version
-        df -h "$HOME" "$GITHUB_WORKSPACE"
-        echo "::endgroup::"
+        echo "$(grep PRETTY_NAME /etc/os-release | cut -d= -f2), $(ldd --version 2>&1 | head -1), $(uv --version)"
+        df -h "$GITHUB_WORKSPACE" | tail -1
 
     - name: Install Python ${{ inputs.python-version }}
       shell: bash
@@ -46,15 +37,8 @@ runs:
         # there, so tell it explicitly which flavour of standalone build to fetch.
         UV_LIBC: gnu
       run: |
-        set -uo pipefail
-        if ! uv python install "${{ inputs.python-version }}"; then
-          echo "::group::uv trace without UV_LIBC override"
-          env -u UV_LIBC uv python install -vv "${{ inputs.python-version }}" 2>&1 | grep -i "libc\|ld\.so\|ld path\|glibc\|musl" | head -20
-          echo "::endgroup::"
-          echo "::error::uv could not install a managed Python ${{ inputs.python-version }}"
-          exit 1
-        fi
-        uv python find "${{ inputs.python-version }}"
+        set -euo pipefail
+        uv python install "${{ inputs.python-version }}"
 
     - name: Create virtual environment
       shell: bash
@@ -67,4 +51,7 @@ runs:
         echo "VIRTUAL_ENV=$GITHUB_WORKSPACE/.venv" >> "$GITHUB_ENV"
         python_location="$("$GITHUB_WORKSPACE/.venv/bin/python" -c 'import sys; print(sys.base_prefix)')"
         echo "pythonLocation=$python_location" >> "$GITHUB_ENV"
+        # /tmp on the runners refuses reads of files pip has just written there, which
+        # breaks isolated builds of source packages. Use the runner's own temp area instead.
+        echo "TMPDIR=$RUNNER_TEMP" >> "$GITHUB_ENV"
         "$GITHUB_WORKSPACE/.venv/bin/python" --version

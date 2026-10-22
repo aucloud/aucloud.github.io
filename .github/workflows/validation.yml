@@ -53,20 +53,6 @@ jobs:
         fetch-depth: 0
     - name: Set up Python
       uses: ./.github/actions/setup-python-env
-    - name: Debug dependency build
-      shell: bash
-      run: |
-        set +e
-        echo "::group::pip environment"
-        env | grep -i "^PIP_\|^PYTHON\|^TMPDIR\|^UV_\|^VIRTUAL_ENV\|_PROXY\|_proxy"
-        pip --version
-        pip config list -v 2>&1 | grep -v "^$" | head -20
-        pip index versions setuptools 2>&1 | head -2
-        python -c "import sysconfig, sys; print(sys.executable); print(sysconfig.get_paths())"
-        echo "::endgroup::"
-        echo "::group::verbose build of mkdocs-exclude"
-        pip install -v --no-cache-dir mkdocs-exclude 2>&1 | grep -v "Using cached\|^Collecting\|Requirement already\|Downloading" | tail -80
-        echo "::endgroup::"
     - name: Install dependencies
       run: make install
 
