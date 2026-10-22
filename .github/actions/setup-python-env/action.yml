@@ -1,12 +1,13 @@
 ---
 name: Set up Python environment
 description: >
-  Installs a project-local Python 3.12 using uv and creates a virtual environment
-  on PATH, so the job does not depend on the runner's tool cache or on sudo.
+  Installs uv, a Python 3.12 interpreter, a virtual environment on PATH and the
+  cairo library the social cards plugin needs, without relying on the runner's
+  tool cache or on sudo. Works on both the Ubuntu and the Oracle Linux runners.
 
 inputs:
   python-version:
-    description: Python version to install
+    description: Python version to use
     required: false
     default: "3.12"
 
@@ -16,11 +17,16 @@ runs:
     - name: Install uv
       shell: bash
       run: |
-        set -euo pipefail
-        # The standalone installer works on every runner image. Newer system Pythons
-        # refuse user-level pip installs (PEP 668), so pip is only the fallback.
-        if ! curl -LsSf https://astral.sh/uv/install.sh | sh; then
-          python3 -m pip install --user --upgrade --quiet uv
+        set -uo pipefail
+        # Ubuntu runners reach PyPI but not astral.sh; Oracle Linux runners reach both.
+        # Newer system Pythons refuse user-level pip installs unless told otherwise (PEP 668).
+        if python3 -m pip install --user --quiet uv 2>/dev/null \
+          || python3 -m pip install --user --quiet --break-system-packages uv 2>/dev/null; then
+          echo "uv installed with pip"
+        elif curl -LsSf --connect-timeout 15 --max-time 180 https://astral.sh/uv/install.sh | sh; then
+          echo "uv installed with the standalone installer"
+        else
+          echo "::error::could not install uv from PyPI or astral.sh"; exit 1
         fi
         echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
@@ -30,15 +36,40 @@ runs:
         echo "$(grep PRETTY_NAME /etc/os-release | cut -d= -f2), $(ldd --version 2>&1 | head -1), $(uv --version)"
         df -h "$GITHUB_WORKSPACE" | tail -1
 
+    - name: Point uv at the runner's package index
+      shell: bash
+      run: |
+        set -euo pipefail
+        # The Oracle Linux runners carry a pip.conf for an internal mirror with its own CA.
+        # uv does not read pip.conf, so pass the same settings through.
+        index_url="$(python3 -m pip config get global.index-url 2>/dev/null || true)"
+        if [ -n "$index_url" ]; then
+          echo "UV_INDEX_URL=$index_url" >> "$GITHUB_ENV"
+          echo "Using package index $index_url"
+        fi
+        cert="$(python3 -m pip config get global.cert 2>/dev/null || true)"
+        if [ -n "$cert" ]; then
+          echo "SSL_CERT_FILE=$cert" >> "$GITHUB_ENV"
+        fi
+        echo "UV_NATIVE_TLS=true" >> "$GITHUB_ENV"
+        # uv's automatic libc detection fails on the Oracle Linux runners; both families are glibc.
+        echo "UV_LIBC=gnu" >> "$GITHUB_ENV"
+        # /tmp on the Oracle Linux runners refuses reads of files pip has just written there,
+        # which breaks isolated builds of source packages. Use the runner's own temp area.
+        echo "TMPDIR=$RUNNER_TEMP" >> "$GITHUB_ENV"
+
     - name: Install Python ${{ inputs.python-version }}
       shell: bash
       env:
-        # The runners are Oracle Linux 9 (glibc). uv's automatic libc detection fails
-        # there, so tell it explicitly which flavour of standalone build to fetch.
         UV_LIBC: gnu
       run: |
-        set -euo pipefail
-        uv python install "${{ inputs.python-version }}"
+        set -uo pipefail
+        # Prefer a managed download so every runner gets the same interpreter. Runners
+        # without access to github.com fall back to any ${{ inputs.python-version }} already on the host.
+        if ! uv python install "${{ inputs.python-version }}"; then
+          echo "::warning::managed Python download failed, looking for an existing ${{ inputs.python-version }} on the runner"
+        fi
+        uv python find "${{ inputs.python-version }}" || { echo "::error::no Python ${{ inputs.python-version }} available on this runner"; exit 1; }
 
     - name: Create virtual environment
       shell: bash
@@ -51,42 +82,24 @@ runs:
         echo "VIRTUAL_ENV=$GITHUB_WORKSPACE/.venv" >> "$GITHUB_ENV"
         python_location="$("$GITHUB_WORKSPACE/.venv/bin/python" -c 'import sys; print(sys.base_prefix)')"
         echo "pythonLocation=$python_location" >> "$GITHUB_ENV"
-        # /tmp on the runners refuses reads of files pip has just written there, which
-        # breaks isolated builds of source packages. Use the runner's own temp area instead.
-        echo "TMPDIR=$RUNNER_TEMP" >> "$GITHUB_ENV"
         "$GITHUB_WORKSPACE/.venv/bin/python" --version
-
-    - name: Point uv at the runner's package index
-      shell: bash
-      run: |
-        set -euo pipefail
-        # The runners carry a pip.conf for an internal mirror with its own CA.
-        # uv does not read pip.conf, so pass the same settings through.
-        index_url="$(pip config get global.index-url 2>/dev/null || true)"
-        if [ -n "$index_url" ]; then
-          echo "UV_INDEX_URL=$index_url" >> "$GITHUB_ENV"
-          echo "Using package index $index_url"
-        fi
-        cert="$(pip config get global.cert 2>/dev/null || true)"
-        if [ -n "$cert" ]; then
-          echo "SSL_CERT_FILE=$cert" >> "$GITHUB_ENV"
-        fi
-        echo "UV_NATIVE_TLS=true" >> "$GITHUB_ENV"
 
     - name: Install cairo for social cards
       shell: bash
       run: |
-        set -euo pipefail
-        # The mkdocs social plugin needs the cairo C library, which the runner image
-        # does not ship and the runner user cannot install with the package manager.
-        # Fetch it from conda-forge into the job's temp area with micromamba instead.
+        set -uo pipefail
+        if python3 -c "import ctypes; ctypes.CDLL('libcairo.so.2')" 2>/dev/null; then
+          echo "cairo already present on the runner"; exit 0
+        fi
+        # The Oracle Linux runners do not ship cairo and the runner user cannot use the
+        # package manager. Fetch it from conda-forge into the job's temp area with micromamba.
         mamba_root="$RUNNER_TEMP/micromamba"
         prefix="$RUNNER_TEMP/cairo"
         mkdir -p "$mamba_root/bin"
-        curl -Ls -o "$mamba_root/bin/micromamba" \
+        curl -Ls --connect-timeout 15 --max-time 300 -o "$mamba_root/bin/micromamba" \
           https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-linux-64
         chmod +x "$mamba_root/bin/micromamba"
         MAMBA_ROOT_PREFIX="$mamba_root" "$mamba_root/bin/micromamba" create -y -q -p "$prefix" -c conda-forge cairo
         lib_path="$prefix/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
         echo "LD_LIBRARY_PATH=$lib_path" >> "$GITHUB_ENV"
-        LD_LIBRARY_PATH="$lib_path" python -c "import ctypes; ctypes.CDLL('libcairo.so.2'); print('cairo library loads')"
+        LD_LIBRARY_PATH="$lib_path" python3 -c "import ctypes; ctypes.CDLL('libcairo.so.2'); print('cairo library loads')"
