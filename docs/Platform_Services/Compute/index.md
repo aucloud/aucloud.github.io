@@ -15,7 +15,7 @@ tags:
 
 **SDDC**: Access the SDDC from the ESG using a dedicated connection. It has a firewall and NSX-T Logical Load-Balancer for high availability and traffic distribution.
 
-[**Using the API:**](./Using_the_API/establishing_a_connection_to_aucloud_with_powercli.md) The API allows you to connect to the AUCyber platform via PowerCLI and to use Terraform against AUCyber's implementation of VMware Cloud Director 
+[**Using the API:**](./using-the-api-new/authentication_methods.md) The API allows you to connect to the AUCyber platform via PowerCLI and to use Terraform against AUCyber's implementation of VMware Cloud Director 
 
 **Working with Virtual Machines**:
 

@@ -16,15 +16,7 @@ description: Reference URLs for services in AUCyber
 
 | URL | Community environment |
 | ---- | ------ |
-| [https://portal.aucyber.com.au](https://portal.aucyber.com.au) (Portal, scheduled for release in Q4 2026) |  Sovereign Cloud |
-| [https://portal.australiacloud.com.au/login](https://portal.australiacloud.com.au/login) (legacy Portal, no longer functions once the Portal is released) |  Sovereign Cloud |
-
-
-## Portal API endpoints
-
-| URL | Community environment |
-| ---- | ------ |
-| [https://api.portal.australiacloud.com.au/login](https://api.portal.australiacloud.com.au/login) |  Sovereign Cloud |
+| [https://portal.aucyber.com.au](https://portal.aucyber.com.au) |  Sovereign Cloud |
 
 
 ## VMware Cloud Director API endpoints
