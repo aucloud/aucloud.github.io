@@ -21,32 +21,20 @@ Before allocating more disk space in your AUCyber for VMware account, it is usef
 
 To check your storage profile usage programmatically, you need to call the appropriate VMware Cloud Director REST API endpoint.
 
-The example assumes that you have set up the following three environment variables to hold your user credentials:
+The example assumes that you have [created a VCD API token](../using-the-api-new/create_vcd_api_token.md) and set up the following three environment variables:
 
-- `VCD\_ORG`
-- `VCD\_USERNAME`
-- `VCD\_PASSWORD`
+- `VCD_API_URL`: the API server URL for your tenancy from [the list of AUCyber VMware Cloud Director API Endpoints](../../reference_urls.md#vmware-cloud-director-api-endpoints), without the `https://` prefix
+- `VCD_ORG`: the [unique name of your VCD tenancy](../using-the-api-new/retrieve_tenancy_name.md)
+- `VCD_API_TOKEN`: your VCD API token
 
-The example makes two calls to the API. The first call authenticates the session:
+The example makes two calls to the API. The first call exchanges the API token for an access token, as described in [Authenticating into VMware Cloud Director](../using-the-api-new/authentication_methods.md):
 
-`application/*+xml;version=5.6" -X POST -i https://api.vcd.portal.skyscapecloud.com/api/sessions`
+`curl -X POST "https://$VCD_API_URL/oauth/tenant/$VCD_ORG/token" -H "Content-Type: application/x-www-form-urlencoded" --data-urlencode "grant_type=refresh_token" --data-urlencode "refresh_token=$VCD_API_TOKEN"`
 
-Having authenticated successfully and received an ``x-vcloud-authorisation`` header in the response, the second call passes the authentication token as a header on the request:
+Having received an `access_token` in the response body, the second call passes it as a Bearer token in the `Authorization` header:
 
-`curl -H "x-vcloud-authorization: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6" -H "Accept: application/*+xml;version=5.6" -i https://api.vcd.portal.skyscapecloud.com/api/query?type=orgVdcStorageProfile`
+`curl -H "Authorization: Bearer <access_token>" -H "Accept: application/*+xml;version=37.2" -i "https://$VCD_API_URL/api/query?type=orgVdcStorageProfile"`
 
-This call returns an XML structure, in which you can see an `OrgVdcStorageProfileRecord` element containing the following properties:
+This call returns an XML structure, in which you can see an `OrgVdcStorageProfileRecord` element containing the following properties:
 
 `storageLimitMB="512000" storageUsedMB="65536"`
-
-The GitHub repository also provides a ruby example. Again, the script assumes the above environment variables have been set up with your user credentials.
-
-You can use the ruby script by running:
-
-`ruby storage_profile.rb`
-
-The output will look similar to the following:
-
-`Name        Used GB   Total GB   Percent   VDC`
-
-`BASIC-Any   192       500        38.5%     XXXX`

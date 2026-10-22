@@ -52,11 +52,9 @@ jobs:
       with:
         fetch-depth: 0
     - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: "3.12"
+      uses: ./.github/actions/setup-python-env
     - name: Install dependencies
-      run: make install
+      run: make install-uv
 
     - name: pre-commit
       run: |

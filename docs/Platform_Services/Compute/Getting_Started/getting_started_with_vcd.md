@@ -25,67 +25,55 @@ Before you can start building VMs in your VDC, you need to create the network th
 
 First, you need to create a network that can connect to external networks outside your VDC (including the internet). This is called an external routed network. You can find more information about routed networks in [How to create a routed VDC network](../NSX-V_Networks/how_to_create_a_routed_vdc_network.md).
 
-1. Log in to the legacy AUCyber Portal. Once the [Portal](../../../Platform_Overview/portal-new/index.md) is released, scheduled for Q4 2026, use the [VCD Login](../../../Platform_Overview/portal-new/vcd-login.md) guide instead.
+1. Log in to VMware Cloud Director for the compute service in which you want to create your VM. See the [VCD Login](../../../Platform_Overview/portal-new/vcd-login.md) guide for detailed instructions.
 
-    For more detailed instructions, see the [Getting Started Guide](../../../Platform_Overview/portal/getting_started.md) for the legacy AUCyber Portal
+2. In the VMware Cloud Director dashboard, select your VDC.
 
-2. Select your account.
-
-3. In the Portal navigation panel, expand VMware Cloud Director and then select the compute service in which you want to create your VM.
-
-     ![Select the service](./assets/network_001.png)
-
-4. On the VMware Cloud Director tab, enter your Portal password and click Confirm.
-
-     ![Enter Portal password](assets/network_002.png)
-
-5. In the VMware Cloud Director dashboard, select your VDC.
-
-6. In the left navigation panel, select Networks.
+3. In the left navigation panel, select Networks.
 
      ![Select Networks](assets/network_003.png)
 
-7. To create a new network, click the New button.
+4. To create a new network, click the New button.
 
      ![Select Networks](assets/network_004.png)
 
-8. Select Routed as the network type as in this example you want your VM to connect to the internet.
+5. Select Routed as the network type as in this example you want your VM to connect to the internet.
 
     ![Select Routed](assets/network_005.png)
 
-9. Click Next.
+6. Click Next.
 
-10. When you connect a network to the outside world, it's important that you control exactly what can access your environment via that network. VMware Cloud Director uses edge gateways to do this.
+7. When you connect a network to the outside world, it's important that you control exactly what can access your environment via that network. VMware Cloud Director uses edge gateways to do this.
 
     In the Edge Connection page, select the edge that you want your new network to use.
 
     ![Select edge](assets/network_006.png)
 
-11. In the General page, give the network a Name and Description.
+8. In the General page, give the network a Name and Description.
 
-12. In the Gateway CIDR field, enter the details for the gateway address.
+9. In the Gateway CIDR field, enter the details for the gateway address.
 
-13. You can make your network available to other VDCs within the same region so that VMs can communicate with each other, regardless of which VDC they are in. Select Shared to enable this feature.
+10. You can make your network available to other VDCs within the same region so that VMs can communicate with each other, regardless of which VDC they are in. Select Shared to enable this feature.
 
     ![Select Shared](assets/network_007.png)
 
-14. Click Next.
+11. Click Next.
 
-15. A VM needs an IP address to identify it on the network.
+12. A VM needs an IP address to identify it on the network.
 
     In the Static IP Pools page, identify the range of IP addresses that VMs connecting to this network can use then click Add. For example, if your Gateway CIDR is 192.168.1.0/24, you can use the 192.168.1.10-192.168.1.100 range for your static IP pool, giving 91 usable internal IP addresses.
 
     ![Identify IP range](assets/network_008.png)
 
-16. Click Next.
+13. Click Next.
 
-17. In the DNS page, enter your DNS information.
+14. In the DNS page, enter your DNS information.
 
     ![Enter DNS information](assets/network_009.png)
 
-18. Click Next.
+15. Click Next.
 
-19. In the Ready to Complete page, review your selections then click Finish.
+16. In the Ready to Complete page, review your selections then click Finish.
 
     ![Complete and Finish](assets/network_010.png)
 

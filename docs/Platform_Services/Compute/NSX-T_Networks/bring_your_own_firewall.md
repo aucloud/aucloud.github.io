@@ -24,15 +24,9 @@ The topology below represents a likely architecture for the AUCyber BYOFW soluti
 
 The first step in the BYOFW solution is to upload the appropriate image file(s) to your content library (if you do not have a content library you can create one by following this [**procedure**](../Catalogs/VCD%2010.4.x/how_to_create_a_catalog.md) for VCD 10.4.x or this [**procedure**](../Catalogs/VCD%2010.5.x%20(new)/how_to_create_a_catalog.md) for VCD 10.5.x) )
 
-Logon to the [**legacy AUCyber Portal**](https://portal.australiacloud.com.au). Once the [Portal](../../../Platform_Overview/portal-new/index.md) is released, scheduled for Q4 2026, use the [VCD Login](../../../Platform_Overview/portal-new/vcd-login.md) guide to reach VMware Cloud Director instead.
+Log in to VMware Cloud Director for the **Organisation** to which you will deploy the **BYOFW** device. See the [VCD Login](../../../Platform_Overview/portal-new/vcd-login.md) guide for detailed instructions.
 
-![AUCyber Portal](./assets/aucloud_portal.png)
-
-Navigate to the **vCloud** tab and select the **Organisation**, to which you will deploy the **BYOFW** device.
-
-Select the **vCloud Director** icon, this will redirect you to an additional login page. After entering your password, select **Continue** to proceed to the vCD portal.
-
-Once redirected to the vCD portal, select the **Libraries** option from the top of the page.
+Once in VMware Cloud Director, select the **Libraries** option from the top of the page.
 
 ![Libraries](./assets/libraries.png)
 

@@ -5,12 +5,9 @@ tags:
     - portal
 ---
 
-!!! info "Effective from the Portal release"
-    This page describes the AUCyber Portal at [portal.aucyber.com.au](https://portal.aucyber.com.au), scheduled for release in Q4 2026. These instructions take effect once the Portal is released. Until then, continue to use the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au and its documentation.
-
 ## AUCyber VMware Cloud Director (VCD) Portal overview
 
-The AUCyber VMware Cloud Director (VCD) Portal at [https://portal.aucyber.com.au](https://portal.aucyber.com.au) is built to provide a flexible and secure platform for faster feature development for our customers. It replaces the [legacy Portal](../portal/index.md) at portal.australiacloud.com.au, which will no longer function once the Portal is released.
+The AUCyber VMware Cloud Director (VCD) Portal at [https://portal.aucyber.com.au](https://portal.aucyber.com.au) is built to provide a flexible and secure platform for faster feature development for our customers. It replaces the legacy Portal at portal.australiacloud.com.au, which is no longer in use.
 
 As part of this release, we are modernising how you log in, which provides customers the following benefits:
 
@@ -21,7 +18,7 @@ As part of this release, we are modernising how you log in, which provides custo
 
 ### What does this mean for you
 
-Access to administer your VMware Cloud Director (VCD) services moves to the Portal. Your user account and associated VCD permissions are copied across from the legacy Portal. The legacy Portal will no longer function once the Portal is live, and you will need to use the Portal for all access.
+Access to administer your VMware Cloud Director (VCD) services is through the Portal. Your user account and associated VCD permissions were copied across from the legacy Portal, which no longer functions. You need to use the Portal for all access.
 
 #### Setting up your Portal account
 

@@ -39,3 +39,9 @@ This guide details the steps required to create an API Token in VMware Cloud Dir
 
     ![view-tokens](./assets/new-portal/view-tokens.png)
 
+
+!!! note
+
+    An API token has the same role and permissions as the user that created it. Sessions authenticated with an API token cannot change passwords, manage users or create further API tokens.
+
+Once you have your token, follow [Authenticating into VMware Cloud Director](./authentication_methods.md) to exchange it for a bearer token.

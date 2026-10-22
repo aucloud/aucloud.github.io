@@ -17,11 +17,11 @@ Once enabled, the self-service backup portal can be accessed via a plug-in throu
 
 The portal can be accessed via a plug-in through VMware Cloud Director. If you would like access to back-up your VM's in your VMware Cloud Director service, please contact your Customer Success Manager or AUCyber support to request to have this feature enabled. Please provide an estimation of the storage space required (if known)
 
-## Assigning permissions within the legacy AUCyber Portal
+## Assigning permissions within the AUCyber Portal
 
 1. To assign permissions to a user within your tenancy navigate to the Users page
 
-    Select Create New User or edit, to edit an existing user’s permissions. Further details on how to manage user permission are contained in [Managing User Accounts](../../Platform_Overview/portal/managing_user_accounts.md).  
+    Select Create New User, or edit an existing user to change their permissions. Further details on how to manage user permissions are contained in [Portal User Management](../../Platform_Overview/portal-new/portal-users-mgmt.md).
 
 1. The backup user requires Administrator access to the VMware Cloud Director service. The administrator access role provides the user with full administrator rights within the vCD tenancy. A specific backup administrator role does not currently reside within the portal access; however; this is currently in development. 
 
