@@ -95,3 +95,26 @@ s5cmd --endpoint-url https://s3.aucyber.com.au cp myfile.txt s3://mybucket/
 1. You can now manage your buckets - add, delete and download objects.
 
     ![Manage bucket](./assets/manage_bucket.png)
+
+## S3 Explorer
+
+[S3 Explorer](https://s3explorer.accessdevops.com/) is a graphical S3 client for Windows, macOS and Linux. It is free for up to 5 connection profiles.
+
+1. Navigate to [https://s3explorer.accessdevops.com/](https://s3explorer.accessdevops.com/) and download S3 Explorer.
+1. Click **+ Add** next to **Connections**, then choose **Custom / Other**.
+
+    ![Choose a provider](./assets/s3_explorer_provider_picker.png)
+
+1. Enter the connection details:
+
+    - **Profile Name**: a name of your choice
+    - **Endpoint URL**: `https://s3.aucyber.com.au`
+    - **Region**: `us-east-1`
+    - **Access Key**: your access key
+    - **Secret Key**: your secret key
+    - **Force path-style addressing**: selected
+    - Click **Test Connection**, then **Save**
+
+1. You can now browse your buckets, upload and download objects, and preview files.
+
+    ![Preview an object](./assets/s3_explorer_preview.png)
